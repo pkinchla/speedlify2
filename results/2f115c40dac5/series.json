@@ -1,0 +1,3 @@
+{"version":1,"url":"https://hoten.cc/","updated":"2026-08-20T23:34:43.738Z","points":[
+{"t":1787268860926,"performance":99,"accessibility":93,"best-practices":100,"seo":70,"lcp":1634,"cls":0,"tbt":0,"fcp":1634,"si":1634,"ttfb":669,"total":11766,"requests":5,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":110,"longTasks":0,"elements":89,"failingCount":1,"failingNodes":2,"axeViolations":2,"axePasses":194,"bench":2406,"runs":3,"reqRuns":3,"ms":22811,"spread":0}
+]}

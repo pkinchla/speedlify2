@@ -1,0 +1,201 @@
+{
+  "url": "https://hamburg.stefanimhoff.de/",
+  "name": "hamburg.stefanimhoff.de",
+  "group": "11ty-emeritus",
+  "groupName": "11ty Emeritus",
+  "timestamp": 1787268744895,
+  "date": "2026-08-20T23:32:24.895Z",
+  "runId": "2026-08-20T23-24-40-687Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 30412,
+  "error": null,
+  "variance": {
+    "min": 96,
+    "max": 97,
+    "spread": 1,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://hamburg.stefanimhoff.de/",
+    "finalUrl": "https://hamburg.stefanimhoff.de/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 97,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1545,
+      "lcp": 2460,
+      "si": 2843,
+      "tbt": 0,
+      "tti": 2460,
+      "cls": 0,
+      "ttfb": 614,
+      "maxPotentialFid": 17,
+      "serverResponseTime": 97,
+      "networkRtt": 98.7,
+      "networkServerLatency": 14.2
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 349.6,
+      "resourceLoadDelay": 95.2,
+      "resourceLoadDuration": 385.2,
+      "elementRenderDelay": 681.8
+    },
+    "weight": {
+      "total": 1070154,
+      "requests": 30,
+      "mainDocument": 9483,
+      "byType": {
+        "total": {
+          "bytes": 1069585,
+          "requests": 29
+        },
+        "image": {
+          "bytes": 953349,
+          "requests": 21
+        },
+        "font": {
+          "bytes": 99148,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 9483,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 4980,
+          "requests": 4
+        },
+        "script": {
+          "bytes": 2625,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 3393,
+          "requests": 3
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 0,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 3393,
+      "mainThreadMs": 1.6,
+      "top": [
+        {
+          "entity": "kogakure.cloud",
+          "bytes": 3393,
+          "mainThreadMs": 1.6
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 460.2,
+      "byGroup": {
+        "other": 330.4,
+        "styleLayout": 47.5,
+        "paintCompositeRender": 33.4,
+        "scriptEvaluation": 33.2,
+        "parseHTML": 12.6,
+        "scriptParseCompile": 3
+      },
+      "bootupMs": 27.9,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 177,
+      "depth": 8,
+      "maxChildren": 20
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 23,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 34
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2488.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T23:32:26.187Z",
+      "runtimeMs": 9977.3
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "astro",
+      "name": "Astro",
+      "icon": "Astro",
+      "version": "7.0.9",
+      "source": "meta",
+      "raw": "Astro v7.0.9"
+    },
+    "host": {
+      "id": "self-hosted",
+      "name": "Self-hosted",
+      "icon": null,
+      "detail": "nginx",
+      "detailIcon": "Nginx",
+      "source": "server"
+    },
+    "headers": {
+      "server": "nginx/1.27.5"
+    },
+    "violations": 0,
+    "passes": 436,
+    "incomplete": 0,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
