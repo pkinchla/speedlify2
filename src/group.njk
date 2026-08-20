@@ -64,9 +64,13 @@ eleventyComputed:
 <section class="panel">
 	<h2>Leaderboard</h2>
 	<p class="muted small">
-		Ranked by the sum of all four Lighthouse categories, then fewest failing Core Web
-		Vitals from real users, then fewest axe violations, then Speed Index per KB — so a fast heavy
-		site outranks a fast empty one.
+		Ranked by the circles first — the four Lighthouse categories and axe: all green
+		beats any row carrying an amber, and an amber beats a red, whatever the points
+		say. Core Web Vitals is left out of that, being unknown for most sites here.
+		Rows level on colour are then ranked by the sum of all four Lighthouse
+		categories, then fewest failing Core Web Vitals from real users, then fewest
+		axe violations, then Speed Index per KB — so a fast heavy site outranks a fast
+		empty one.
 	</p>
 	<div class="table-scroll">
 	<table class="grid">

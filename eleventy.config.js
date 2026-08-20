@@ -8,6 +8,7 @@ import path from "node:path";
 
 import * as simpleIcons from "simple-icons";
 import { lowerIsBetter } from "./lib/compare.js";
+import { scoreBand, axeBand, cwvBand } from "./lib/rank.js";
 
 const ICONS_DIR = "src/icons";
 
@@ -166,13 +167,14 @@ export default async function ($config) {
 
 	/* ----------------------------------------------------------------- class */
 
-	/** Lighthouse's own banding: <50 poor, 50–89 average, 90+ good. */
-	$config.addFilter("scoreClass", (v) => {
-		if (typeof v !== "number") return "none";
-		if (v >= 90) return "good";
-		if (v >= 50) return "average";
-		return "poor";
-	});
+	/**
+	 * Lighthouse's own banding: <50 poor, 50–89 average, 90+ good.
+	 *
+	 * From lib/rank.js, because the leaderboard now ranks on these bands before
+	 * it ranks on points. A local copy of "90" here would be a way for a row to
+	 * be ranked as all-green while drawing an amber ring.
+	 */
+	$config.addFilter("scoreClass", scoreBand);
 
 	$config.addFilter("ratingClass", (r) => {
 		if (r === "good") return "good";
@@ -394,7 +396,7 @@ export default async function ($config) {
 	/** One of the four Lighthouse categories: the arc is the score itself. */
 	$config.addShortcode("scoreRing", function (value, label = "", size = 37) {
 		return ring({
-			band: typeof value !== "number" ? "none" : value >= 90 ? "good" : value >= 50 ? "average" : "poor",
+			band: scoreBand(value),
 			text: value ?? "–",
 			label: label ? `${label}: ${value ?? "no data"}` : String(value ?? "no data"),
 			pct: typeof value === "number" ? value / 100 : null,
@@ -424,11 +426,9 @@ export default async function ($config) {
 	}
 
 	/**
-	 * Axe violations, where the scale runs the other way.
-	 *
-	 * A Lighthouse score is better when higher; a violation count is better when
-	 * zero. Banding it by the same thresholds would paint "2 violations" green
-	 * for being a small number, so it gets its own: clean, or not clean.
+	 * Axe violations. Banded by lib/rank.js, which ranks on these bands before it
+	 * ranks on points — a local copy of the thresholds here is how a row ends up
+	 * ranked above one it visibly ties with.
 	 */
 	$config.addShortcode("axeRing", function (axe, size = 37) {
 		const value = axe && !axe.error ? axe.violations : null;
@@ -438,7 +438,7 @@ export default async function ($config) {
 
 		const rules = axe.violationRules;
 		return ring({
-			band: value === 0 ? "good" : value <= 5 ? "average" : "poor",
+			band: axeBand(value),
 			text: shortCount(value),
 			label:
 				`Axe: ${value} violating node${value === 1 ? "" : "s"}` +
@@ -467,7 +467,7 @@ export default async function ($config) {
 		}
 
 		return ring({
-			band: failures === 0 ? "good" : "poor",
+			band: cwvBand(failures),
 			text: failures === 0 ? "✓" : "✗",
 			label: `Core Web Vitals: ${failures} of ${assessed ?? "?"} failing at p75`,
 			pct: 1,

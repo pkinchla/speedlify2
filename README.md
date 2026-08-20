@@ -179,9 +179,10 @@ The favicons are the **one external request** the built site makes, via the same
 
 Ports the leaderboard algorithm from [performance-leaderboard](https://github.com/zachleat/performance-leaderboard), as described in [Eleventy Leaderboard](https://www.zachleat.com/web/eleventy-leaderboard-speedlify/#the-algorithm-and-tiebreaker-changes):
 
-1. **Sum of all four Lighthouse categories** (0–400), higher wins. Using all four rather than Performance alone stops a fast but inaccessible site outranking a well-rounded one.
-2. **Fewest axe violations**, counted as violating *nodes* — one rule broken across eight elements is eight violations.
-3. **Tiebreaker value**, lower wins:
+1. **Band profile**, worst ring first. The four Lighthouse categories and axe are each reduced to green / amber / red / grey and compared worst-first. All five green beats any site carrying an amber; any amber beats any red.
+2. **Sum of all four Lighthouse categories** (0–400), higher wins. Using all four rather than Performance alone stops a fast but inaccessible site outranking a well-rounded one. This settles order *within* a band profile rather than across profiles.
+3. **Fewest axe violations**, counted as violating *nodes* — one rule broken across eight elements is eight violations.
+4. **Tiebreaker value**, lower wins:
 
 ```
 50000 * speedIndex / weight + TTFB + TBT
@@ -192,6 +193,14 @@ Speed Index per KB. A fast *heavy* site is more impressive than a fast empty one
 The weight in that ratio counts document, CSS and JS in full but caps **images at 400 kB** and **fonts at 100 kB** — otherwise a site could climb the board by shipping enormous images it doesn't need.
 
 Sites with no successful measurement sort last rather than being treated as a zero score. Row order *is* the ranking, so a row's position and its printed rank can never disagree.
+
+### Why bands rank ahead of points
+
+A total treats the categories as a currency, so one can be sold off to buy points elsewhere: 100/100/100/80 sums to 380 and beats 90/90/90/90 on 360, while showing an amber ring against four greens — a row that looks worse than the row beneath it. Banding first says that a ring dropping out of green is a fact about the site that no amount of points elsewhere buys back.
+
+Grey — no data — ranks with red on both banded rings. A Lighthouse category with no score and an axe run that never happened are both unchecked, and unchecked is not clean: a site must not climb by failing to be measured.
+
+**Core Web Vitals is not banded.** Most of this corpus is too small for CrUX to sample, so that ring is grey more often than it is any colour, and a criterion unknown for most rows cannot carry the top tier of a ranking. It remains a tiebreaker at its own tier, below the total, where a missing assessment costs nothing. One consequence worth knowing: because axe *is* banded, a green axe ring beats an amber one before any vitals are read.
 
 ### Accessibility comes from a real axe run
 

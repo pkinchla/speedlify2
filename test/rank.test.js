@@ -1,6 +1,8 @@
 import { test, describe } from "node:test";
 import assert from "node:assert/strict";
 import {
+	scoreBand,
+	bandProfile,
 	lighthouseSum,
 	tiebreakerWeight,
 	tiebreakerValue,
@@ -14,9 +16,10 @@ import { countNodes } from "../lib/axe.js";
 
 /**
  * The leaderboard algorithm, ported from performance-leaderboard:
- *   1. sum of all four Lighthouse categories, higher wins
- *   2. fewest axe violations (nodes), lower wins
- *   3. 50000 * speedIndex / weight + TTFB + TBT, lower wins
+ *   1. band profile — four categories and axe — worst ring first
+ *   2. sum of all four Lighthouse categories, higher wins
+ *   3. fewest axe violations (nodes), lower wins
+ *   4. 50000 * speedIndex / weight + TTFB + TBT, lower wins
  */
 
 function entry({
@@ -127,11 +130,20 @@ describe("tiebreakerValue", () => {
 describe("compareEntries", () => {
 	const first = (a, b) => (compareEntries(a, b) < 0 ? "a" : "b");
 
-	test("total Lighthouse score decides before anything else", () => {
-		// b is worse on every tiebreaker but has the higher total.
+	test("the total decides once the bands are level", () => {
+		// Same bands on every ring — both all-green with a clean axe run — so the
+		// points settle it, and b is worse on every tier below.
+		const a = entry({ performance: 90, violations: 0, si: 500 });
+		const b = entry({ performance: 100, violations: 0, si: 9000 });
+		assert.equal(first(a, b), "b", "ten points of performance outweigh a slower Speed Index");
+	});
+
+	test("points cannot buy a site out of a worse band", () => {
+		// b has the higher total by ten points, and fifty axe violations.
 		const a = entry({ performance: 90, violations: 0, si: 500 });
 		const b = entry({ performance: 100, violations: 50, si: 9000 });
-		assert.equal(first(a, b), "b");
+		assert.ok(lighthouseSum(b) > lighthouseSum(a));
+		assert.equal(first(a, b), "a", "a red axe ring loses to a green one regardless of points");
 	});
 
 	test("uses all four categories, not performance alone", () => {
@@ -268,9 +280,19 @@ describe("Core Web Vitals tier", () => {
 	});
 
 	test("failing real-user vitals lose to passing ones at the same total", () => {
+		// Both amber on the axe ring, so the band tier is level and this is decided
+		// where it always was: field failures outrank a better axe count.
+		const passes = withCwv({ violations: 5 }, field("good", "good", "good"));
+		const fails = withCwv({ violations: 3 }, field("poor", "good", "good"));
+		assert.equal(first(passes, fails), "a", "field failures outrank a better axe count");
+	});
+
+	test("but the axe band still decides ahead of the field tier", () => {
+		// Green beats amber on the ring itself, and that is settled before any
+		// vitals are read — the price of banding axe alongside the categories.
 		const passes = withCwv({ violations: 5 }, field("good", "good", "good"));
 		const fails = withCwv({ violations: 0 }, field("poor", "good", "good"));
-		assert.equal(first(passes, fails), "a", "field failures outrank a better axe score");
+		assert.equal(first(passes, fails), "b", "amber loses to green before the tier is reached");
 	});
 
 	test("a site with no field data is not demoted by the tier", () => {
@@ -307,5 +329,103 @@ describe("Core Web Vitals tier", () => {
 		const cmp = createComparator({});
 		const sorted = [...list].sort(cmp);
 		assert.deepEqual([...sorted].sort(cmp), sorted);
+	});
+});
+
+describe("score bands", () => {
+	test("uses Lighthouse's own thresholds", () => {
+		assert.equal(scoreBand(100), "good");
+		assert.equal(scoreBand(90), "good", "90 is green");
+		assert.equal(scoreBand(89), "average");
+		assert.equal(scoreBand(50), "average", "50 is amber");
+		assert.equal(scoreBand(49), "poor");
+		assert.equal(scoreBand(0), "poor");
+		assert.equal(scoreBand(null), "none");
+	});
+
+	// good 0, amber 2, red and grey 3. Five entries: the four categories and axe.
+	test("ranks the four categories and axe, worst first", () => {
+		assert.deepEqual(bandProfile(entry()), [0, 0, 0, 0, 0]);
+		assert.deepEqual(bandProfile(entry({ seo: 80 })), [2, 0, 0, 0, 0]);
+		assert.deepEqual(bandProfile(entry({ seo: 30 })), [3, 0, 0, 0, 0]);
+		assert.deepEqual(bandProfile(entry({ violations: 3 })), [2, 0, 0, 0, 0], "the axe ring counts too");
+		assert.deepEqual(bandProfile(entry({ violations: 40 })), [3, 0, 0, 0, 0]);
+	});
+
+	test("a missing category ranks with red, not as skipped", () => {
+		// Not scored is not green: an incomplete run must not outrank a complete
+		// one by having fewer rings to fail in.
+		assert.deepEqual(bandProfile(entry({ seo: null })), [3, 0, 0, 0, 0]);
+	});
+
+	test("a site axe never ran against ranks with red", () => {
+		assert.deepEqual(bandProfile(entry({ axe: false })), [3, 0, 0, 0, 0]);
+	});
+
+	test("Core Web Vitals do not enter the band profile", () => {
+		// Left out on purpose: CrUX has no sample for most of this corpus, so the
+		// ring is grey more often than it is any colour, and a criterion that is
+		// unknown for most rows cannot carry the top tier. It still ranks a tier
+		// below, where a missing assessment costs nothing.
+		const withCwv = (ratings) => ({
+			...entry(),
+			cwv: { source: "field-history", parts: ratings.map((rating, i) => ({ key: i, rating })) },
+		});
+
+		const green = bandProfile(withCwv(["good", "good", "good"]));
+		const red = bandProfile(withCwv(["poor", "poor", "poor"]));
+		const grey = bandProfile(entry());
+
+		assert.deepEqual(green, grey);
+		assert.deepEqual(red, grey, "even three failing vitals leave the profile untouched");
+	});
+
+	test("is null when the site has no scores", () => {
+		assert.equal(bandProfile(entry({ measured: false })), null);
+	});
+});
+
+describe("bands outrank points", () => {
+	const first = (a, b) => (compareEntries(a, b) < 0 ? "a" : "b");
+
+	test("all green beats a higher total carrying an amber", () => {
+		const allGreen = entry({ performance: 90, accessibility: 90, bestPractices: 90, seo: 90 });
+		const oneAmber = entry({ performance: 100, accessibility: 100, bestPractices: 100, seo: 80 });
+
+		assert.ok(lighthouseSum(oneAmber) > lighthouseSum(allGreen), "the amber site has 20 more points");
+		assert.equal(first(allGreen, oneAmber), "a");
+	});
+
+	test("amber beats red", () => {
+		const amber = entry({ performance: 50, accessibility: 50, bestPractices: 50, seo: 50 });
+		const red = entry({ performance: 49, accessibility: 100, bestPractices: 100, seo: 100 });
+
+		assert.ok(lighthouseSum(red) > lighthouseSum(amber), "the red site has 149 more points");
+		assert.equal(first(amber, red), "a");
+	});
+
+	test("fewer ambers wins when neither has a red", () => {
+		const one = entry({ seo: 80 });
+		const two = entry({ seo: 80, bestPractices: 85 });
+		assert.equal(first(one, two), "a");
+	});
+
+	test("points still decide within the same band profile", () => {
+		const better = entry({ seo: 85 });
+		const worse = entry({ seo: 60 });
+		assert.deepEqual(bandProfile(better), bandProfile(worse));
+		assert.equal(first(better, worse), "a");
+	});
+
+	test("remains a consistent comparator", () => {
+		const list = [
+			entry({ performance: 90, accessibility: 90, bestPractices: 90, seo: 90 }),
+			entry({ performance: 100, accessibility: 100, bestPractices: 100, seo: 80 }),
+			entry({ performance: 49 }),
+			entry({ seo: 80, violations: 3 }),
+			entry({ measured: false }),
+		];
+		const sorted = [...list].sort(compareEntries);
+		assert.deepEqual([...sorted].sort(compareEntries), sorted);
 	});
 });
