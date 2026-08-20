@@ -1,0 +1,201 @@
+{
+  "url": "https://fumes.junglestar.org/",
+  "name": "fumes.junglestar.org",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787264938631,
+  "date": "2026-08-20T22:28:58.631Z",
+  "runId": "2026-08-20T22-26-38-665Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 28987,
+  "error": null,
+  "variance": {
+    "min": 97,
+    "max": 99,
+    "spread": 2,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://fumes.junglestar.org/",
+    "finalUrl": "https://fumes.junglestar.org/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 989,
+      "lcp": 1842,
+      "si": 989,
+      "tbt": 0,
+      "tti": 1842,
+      "cls": 0.04,
+      "ttfb": 605,
+      "maxPotentialFid": 20,
+      "serverResponseTime": 5,
+      "networkRtt": 0.3,
+      "networkServerLatency": 6.1
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 6.2,
+      "elementRenderDelay": 64.1
+    },
+    "weight": {
+      "total": 243757,
+      "requests": 16,
+      "mainDocument": 35824,
+      "byType": {
+        "total": {
+          "bytes": 243757,
+          "requests": 16
+        },
+        "image": {
+          "bytes": 181974,
+          "requests": 10
+        },
+        "document": {
+          "bytes": 35824,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 17882,
+          "requests": 2
+        },
+        "other": {
+          "bytes": 8077,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 199856,
+          "requests": 12
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 0,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 3,
+      "bytes": 199856,
+      "mainThreadMs": 13.8,
+      "top": [
+        {
+          "entity": "cloudfront.net",
+          "bytes": 181916,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Google/Doubleclick Ads",
+          "bytes": 17273,
+          "mainThreadMs": 4.4
+        },
+        {
+          "entity": "Google Analytics",
+          "bytes": 667,
+          "mainThreadMs": 9.4
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 327.9,
+      "byGroup": {
+        "other": 123.2,
+        "styleLayout": 80.9,
+        "scriptEvaluation": 72.8,
+        "parseHTML": 22.2,
+        "paintCompositeRender": 20.7,
+        "scriptParseCompile": 8
+      },
+      "bootupMs": 22.2,
+      "longTasks": 1,
+      "longestTaskMs": 50
+    },
+    "dom": {
+      "elements": 1180,
+      "depth": 11,
+      "maxChildren": 108
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 13444.85,
+      "poorlyCachedCount": 2
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 22,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 7
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2319,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T22:29:17.849Z",
+      "runtimeMs": 7959.4
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0GMP6Q8BSV00Z5RSRYTMPK8"
+    },
+    "violations": 0,
+    "passes": 2000,
+    "incomplete": 19,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

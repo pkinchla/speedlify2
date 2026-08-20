@@ -1,0 +1,208 @@
+{
+  "url": "https://example.chobble.com/",
+  "name": "example.chobble.com",
+  "group": "11ty-starters",
+  "groupName": "Build Awesome Starters",
+  "timestamp": 1787264946396,
+  "date": "2026-08-20T22:29:06.396Z",
+  "runId": "2026-08-20T22-26-39-504Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 156415,
+  "error": null,
+  "variance": {
+    "min": 56,
+    "max": 93,
+    "spread": 37,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://example.chobble.com/",
+    "finalUrl": "https://example.chobble.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 93,
+      "accessibility": 80,
+      "best-practices": 96,
+      "seo": 100,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 2472,
+      "lcp": 2622,
+      "si": 2472,
+      "tbt": 41,
+      "tti": 3148,
+      "cls": 0,
+      "ttfb": 619,
+      "maxPotentialFid": 99,
+      "serverResponseTime": 3,
+      "networkRtt": 204.3,
+      "networkServerLatency": 150.7
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 4.5,
+      "elementRenderDelay": 138.9
+    },
+    "weight": {
+      "total": 9185720,
+      "requests": 112,
+      "mainDocument": 26853,
+      "byType": {
+        "total": {
+          "bytes": 9183001,
+          "requests": 92
+        },
+        "other": {
+          "bytes": 6604305,
+          "requests": 32
+        },
+        "script": {
+          "bytes": 1642842,
+          "requests": 23
+        },
+        "image": {
+          "bytes": 650254,
+          "requests": 24
+        },
+        "document": {
+          "bytes": 132691,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 98556,
+          "requests": 8
+        },
+        "font": {
+          "bytes": 54353,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 8520408,
+          "requests": 65
+        }
+      },
+      "scripts": 24,
+      "stylesheets": 8,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 0,
+      "bytes": 0,
+      "mainThreadMs": 0,
+      "top": []
+    },
+    "mainThread": {
+      "total": 1209.1,
+      "byGroup": {
+        "other": 533.7,
+        "scriptEvaluation": 315.4,
+        "styleLayout": 207.1,
+        "paintCompositeRender": 108.3,
+        "parseHTML": 43.7,
+        "scriptParseCompile": 1
+      },
+      "bootupMs": 305,
+      "longTasks": 2,
+      "longestTaskMs": 99
+    },
+    "dom": {
+      "elements": 1173,
+      "depth": 12,
+      "maxChildren": 30
+    },
+    "waste": {
+      "unusedJsBytes": 22892,
+      "unusedCssBytes": 16890,
+      "legacyJsBytes": 10390,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 3883,
+      "renderBlockingMs": 450,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 26327.25,
+      "poorlyCachedCount": 2
+    },
+    "accessibility": {
+      "failingCount": 6,
+      "applicableCount": 33,
+      "failingNodes": 20,
+      "failing": [
+        {
+          "id": "aria-prohibited-attr",
+          "title": "Elements use prohibited ARIA attributes",
+          "nodes": 7
+        },
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "nodes": 6
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 3
+        },
+        {
+          "id": "aria-hidden-focus",
+          "title": "`[aria-hidden=\"true\"]` elements contain focusable descendents",
+          "nodes": 2
+        },
+        {
+          "id": "button-name",
+          "title": "Buttons do not have an accessible name",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 59
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 3268,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T22:29:18.472Z",
+      "runtimeMs": 14835.8
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": null,
+    "headers": {},
+    "violations": null,
+    "passes": null,
+    "incomplete": null,
+    "violationRules": null,
+    "version": null,
+    "top": [],
+    "error": "Navigation timeout of 120000 ms exceeded"
+  },
+  "consecutiveFailures": 0
+}

@@ -1,0 +1,197 @@
+{
+  "url": "https://hylia.website/",
+  "name": "hylia.website",
+  "group": "11ty-starters",
+  "groupName": "Build Awesome Starters",
+  "timestamp": 1787268886737,
+  "date": "2026-08-20T23:34:46.737Z",
+  "runId": "2026-08-20T23-24-40-687Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 22776,
+  "error": null,
+  "variance": {
+    "min": 98,
+    "max": 99,
+    "spread": 1,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://hylia.website/",
+    "finalUrl": "https://hylia.website/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1649,
+      "lcp": 1649,
+      "si": 1649,
+      "tbt": 54,
+      "tti": 2201,
+      "cls": 0,
+      "ttfb": 737,
+      "maxPotentialFid": 104,
+      "serverResponseTime": 139,
+      "networkRtt": 2.9,
+      "networkServerLatency": 136.6
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 210.5,
+      "elementRenderDelay": 41.1
+    },
+    "weight": {
+      "total": 126604,
+      "requests": 7,
+      "mainDocument": 6853,
+      "byType": {
+        "total": {
+          "bytes": 126604,
+          "requests": 7
+        },
+        "script": {
+          "bytes": 68182,
+          "requests": 3
+        },
+        "font": {
+          "bytes": 31000,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 20569,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 6853,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 66888,
+          "requests": 2
+        }
+      },
+      "scripts": 3,
+      "stylesheets": 0,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 66888,
+      "mainThreadMs": 28.6,
+      "top": [
+        {
+          "entity": "Netlify",
+          "bytes": 55311,
+          "mainThreadMs": 24.8
+        },
+        {
+          "entity": "Cloudflare",
+          "bytes": 11577,
+          "mainThreadMs": 3.8
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 321.1,
+      "byGroup": {
+        "scriptEvaluation": 118.4,
+        "other": 99.1,
+        "styleLayout": 61.4,
+        "scriptParseCompile": 24.2,
+        "parseHTML": 13,
+        "paintCompositeRender": 5
+      },
+      "bootupMs": 121.8,
+      "longTasks": 1,
+      "longestTaskMs": 104
+    },
+    "dom": {
+      "elements": 75,
+      "depth": 9,
+      "maxChildren": 9
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 21305,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 13107,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 4630.8,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 24,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 10
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2485,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T23:34:48.027Z",
+      "runtimeMs": 7303
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "cf-ray": "a2e53650aee088d0-IAD",
+      "server": "cloudflare",
+      "x-nf-request-id": "01M0GREBM65TGDG4NA6DDAJMQH"
+    },
+    "violations": 0,
+    "passes": 194,
+    "incomplete": 1,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

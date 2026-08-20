@@ -1,0 +1,206 @@
+{
+  "url": "https://faceftw.dev/",
+  "name": "faceftw.dev",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787265003902,
+  "date": "2026-08-20T22:30:03.902Z",
+  "runId": "2026-08-20T22-26-41-938Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 24576,
+  "error": null,
+  "variance": {
+    "min": 99,
+    "max": 99,
+    "spread": 0,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://faceftw.dev/",
+    "finalUrl": "https://faceftw.dev/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 99,
+      "accessibility": 96,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1560,
+      "lcp": 1710,
+      "si": 1560,
+      "tbt": 0,
+      "tti": 1710,
+      "cls": 0.002,
+      "ttfb": 475,
+      "maxPotentialFid": 17,
+      "serverResponseTime": 38,
+      "networkRtt": 0,
+      "networkServerLatency": 34.7
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 39.9,
+      "resourceLoadDelay": 10.4,
+      "resourceLoadDuration": 28.4,
+      "elementRenderDelay": 38.5
+    },
+    "weight": {
+      "total": 344675,
+      "requests": 10,
+      "mainDocument": 8204,
+      "byType": {
+        "total": {
+          "bytes": 334352,
+          "requests": 9
+        },
+        "font": {
+          "bytes": 289237,
+          "requests": 2
+        },
+        "script": {
+          "bytes": 15797,
+          "requests": 2
+        },
+        "image": {
+          "bytes": 12448,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 8204,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 7636,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 1030,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 11451,
+          "requests": 1
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 1,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 11451,
+      "mainThreadMs": 2.3,
+      "top": [
+        {
+          "entity": "Cloudflare",
+          "bytes": 11451,
+          "mainThreadMs": 2.3
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 647.2,
+      "byGroup": {
+        "other": 253.8,
+        "paintCompositeRender": 162.7,
+        "styleLayout": 145.4,
+        "scriptEvaluation": 62.7,
+        "parseHTML": 15.4,
+        "scriptParseCompile": 7.2
+      },
+      "bootupMs": 20.4,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 324,
+      "depth": 15,
+      "maxChildren": 14
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 175,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 5884.2150902777785,
+      "poorlyCachedCount": 2
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 22,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 34
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2700.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T22:30:19.155Z",
+      "runtimeMs": 6447.3
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e4d7a6afde170b-LAX",
+      "server": "cloudflare"
+    },
+    "violations": 1,
+    "passes": 73,
+    "incomplete": 0,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "meta-refresh",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Delayed refresh under 20 hours must not be used"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

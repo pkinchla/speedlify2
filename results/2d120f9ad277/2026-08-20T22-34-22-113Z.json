@@ -1,0 +1,258 @@
+{
+  "url": "https://francoamericanmowing.com/",
+  "name": "francoamericanmowing.com",
+  "group": "11ty-emeritus",
+  "groupName": "11ty Emeritus",
+  "timestamp": 1787265262113,
+  "date": "2026-08-20T22:34:22.113Z",
+  "runId": "2026-08-20T22-26-37-830Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 24651,
+  "error": null,
+  "variance": {
+    "min": 74,
+    "max": 74,
+    "spread": 0,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://francoamericanmowing.com/",
+    "finalUrl": "https://francoamericanmowing.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 74,
+      "accessibility": 87,
+      "best-practices": 100,
+      "seo": 92,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 1972,
+      "lcp": 7983,
+      "si": 1972,
+      "tbt": 9,
+      "tti": 7983,
+      "cls": 0.026,
+      "ttfb": 461,
+      "maxPotentialFid": 59,
+      "serverResponseTime": 219,
+      "networkRtt": 0.2,
+      "networkServerLatency": 11.2
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 221.1,
+      "resourceLoadDelay": 11.2,
+      "resourceLoadDuration": 33.3,
+      "elementRenderDelay": 84.8
+    },
+    "weight": {
+      "total": 4673787,
+      "requests": 33,
+      "mainDocument": 22737,
+      "byType": {
+        "total": {
+          "bytes": 4673788,
+          "requests": 32
+        },
+        "image": {
+          "bytes": 4475100,
+          "requests": 10
+        },
+        "script": {
+          "bytes": 104604,
+          "requests": 13
+        },
+        "font": {
+          "bytes": 37993,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 22737,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 20673,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 12681,
+          "requests": 5
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 13386,
+          "requests": 3
+        }
+      },
+      "scripts": 14,
+      "stylesheets": 5,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 13386,
+      "mainThreadMs": 3.6,
+      "top": [
+        {
+          "entity": "Cloudflare",
+          "bytes": 11451,
+          "mainThreadMs": 2.9
+        },
+        {
+          "entity": "WordPress Site Stats",
+          "bytes": 1935,
+          "mainThreadMs": 0.7
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 838.9,
+      "byGroup": {
+        "other": 284.4,
+        "scriptEvaluation": 247.3,
+        "styleLayout": 186.1,
+        "scriptParseCompile": 43.9,
+        "parseHTML": 43.3,
+        "paintCompositeRender": 33.9
+      },
+      "bootupMs": 183.5,
+      "longTasks": 2,
+      "longestTaskMs": 78
+    },
+    "dom": {
+      "elements": 282,
+      "depth": 18,
+      "maxChildren": 18
+    },
+    "waste": {
+      "unusedJsBytes": 25452,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 2005,
+      "renderBlockingCount": 5,
+      "poorlyCachedBytes": 466491.6049074073,
+      "poorlyCachedCount": 27
+    },
+    "accessibility": {
+      "failingCount": 4,
+      "applicableCount": 26,
+      "failingNodes": 13,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 6
+        },
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "nodes": 5
+        },
+        {
+          "id": "list",
+          "title": "Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 38
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2308,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T22:34:38.546Z",
+      "runtimeMs": 7002.8
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "wordpress",
+      "name": "WordPress",
+      "icon": "Wordpress",
+      "version": "6.9.5",
+      "source": "meta",
+      "raw": "WordPress 6.9.5"
+    },
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e4de00c8c8f268-IAD",
+      "server": "cloudflare",
+      "x-powered-by": "PHP/8.2.31"
+    },
+    "violations": 19,
+    "passes": 550,
+    "incomplete": 7,
+    "violationRules": 5,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 10,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 6,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "aria-allowed-role",
+        "impact": "minor",
+        "nodes": 1,
+        "help": "ARIA role should be appropriate for the element"
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should have one main landmark"
+      },
+      {
+        "id": "list",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

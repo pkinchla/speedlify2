@@ -1,0 +1,274 @@
+{
+  "url": "https://fossgaming.codeberg.page/",
+  "name": "fossgaming.codeberg.page",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787265435656,
+  "date": "2026-08-20T22:37:15.656Z",
+  "runId": "2026-08-20T22-26-41-938Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 295702,
+  "error": null,
+  "variance": {
+    "min": 33,
+    "max": 40,
+    "spread": 7,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://fossgaming.codeberg.page/",
+    "finalUrl": "https://fossgaming.codeberg.page/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 35,
+      "accessibility": 81,
+      "best-practices": 92,
+      "seo": 91,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 35462,
+      "lcp": 37679,
+      "si": 35462,
+      "tbt": 886,
+      "tti": 37685,
+      "cls": 0.011,
+      "ttfb": 1084,
+      "maxPotentialFid": 340,
+      "serverResponseTime": 385,
+      "networkRtt": 143,
+      "networkServerLatency": 483.8
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 722.4,
+      "resourceLoadDelay": 1786.4,
+      "resourceLoadDuration": 369.1,
+      "elementRenderDelay": 239.1
+    },
+    "weight": {
+      "total": 10020380,
+      "requests": 118,
+      "mainDocument": 6819430,
+      "byType": {
+        "total": {
+          "bytes": 10017792,
+          "requests": 111
+        },
+        "document": {
+          "bytes": 6819430,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 2708502,
+          "requests": 74
+        },
+        "font": {
+          "bytes": 315347,
+          "requests": 5
+        },
+        "image": {
+          "bytes": 135961,
+          "requests": 25
+        },
+        "stylesheet": {
+          "bytes": 38552,
+          "requests": 6
+        },
+        "script": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "other": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 3043754,
+          "requests": 81
+        }
+      },
+      "scripts": 0,
+      "stylesheets": 6,
+      "fonts": 5
+    },
+    "thirdParty": {
+      "count": 8,
+      "bytes": 33173139,
+      "mainThreadMs": 0,
+      "top": [
+        {
+          "entity": "masto.host",
+          "bytes": 16003415,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "c.im",
+          "bytes": 6102948,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "mastodon.social",
+          "bytes": 5791425,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "techhub.social",
+          "bytes": 2550578,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "fosstodon.org",
+          "bytes": 1934621,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 7119.2,
+      "byGroup": {
+        "other": 3338.8,
+        "styleLayout": 1982.9,
+        "paintCompositeRender": 928.3,
+        "parseHTML": 716.4,
+        "scriptEvaluation": 151.7,
+        "scriptParseCompile": 1.2
+      },
+      "bootupMs": 150.6,
+      "longTasks": 20,
+      "longestTaskMs": 448
+    },
+    "dom": {
+      "elements": 81221,
+      "depth": 12,
+      "maxChildren": 2523
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 17978,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 2497,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 141723.99999999997,
+      "poorlyCachedCount": 31
+    },
+    "accessibility": {
+      "failingCount": 3,
+      "applicableCount": 18,
+      "failingNodes": 4102,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 2487
+        },
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "nodes": 1133
+        },
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "nodes": 482
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": null,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 1,
+      "baselineLimitedFeatures": 8
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2691.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T22:37:16.952Z",
+      "runtimeMs": 74579.8
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "self-hosted",
+      "name": "Self-hosted",
+      "icon": null,
+      "detail": "git-pages",
+      "detailIcon": "Forgejo",
+      "source": "server"
+    },
+    "headers": {
+      "server": "git-pages (git-pages), pages-server",
+      "via": "1.1 Caddy"
+    },
+    "violations": 3417,
+    "passes": 28394,
+    "incomplete": 127,
+    "violationRules": 7,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 2450,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "nodes": 482,
+        "help": "Links must have discernible text"
+      },
+      {
+        "id": "empty-heading",
+        "impact": "minor",
+        "nodes": 480,
+        "help": "Headings should not be empty"
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 2,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      },
+      {
+        "id": "landmark-main-is-top-level",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Main landmark should not be contained in another landmark"
+      },
+      {
+        "id": "landmark-no-duplicate-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should not have more than one main landmark"
+      },
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Page should contain a level-one heading"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

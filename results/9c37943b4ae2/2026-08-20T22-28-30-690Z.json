@@ -1,0 +1,192 @@
+{
+  "url": "https://freshjuice.dev/",
+  "name": "freshjuice.dev",
+  "group": "11ty-emeritus",
+  "groupName": "11ty Emeritus",
+  "timestamp": 1787264910690,
+  "date": "2026-08-20T22:28:30.690Z",
+  "runId": "2026-08-20T22-26-38-665Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 24940,
+  "error": null,
+  "variance": {
+    "min": 100,
+    "max": 100,
+    "spread": 0,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://freshjuice.dev/",
+    "finalUrl": "https://freshjuice.dev/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1450,
+      "lcp": 1525,
+      "si": 1450,
+      "tbt": 0,
+      "tti": 1525,
+      "cls": 0.001,
+      "ttfb": 625,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 35,
+      "networkRtt": 0,
+      "networkServerLatency": 25.2
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 36.6,
+      "elementRenderDelay": 142
+    },
+    "weight": {
+      "total": 116864,
+      "requests": 10,
+      "mainDocument": 27887,
+      "byType": {
+        "total": {
+          "bytes": 111736,
+          "requests": 9
+        },
+        "font": {
+          "bytes": 41522,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 27887,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 22360,
+          "requests": 4
+        },
+        "stylesheet": {
+          "bytes": 19489,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 478,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 0,
+          "requests": 0
+        }
+      },
+      "scripts": 4,
+      "stylesheets": 1,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 0,
+      "bytes": 0,
+      "mainThreadMs": 0,
+      "top": []
+    },
+    "mainThread": {
+      "total": 477.8,
+      "byGroup": {
+        "styleLayout": 204.3,
+        "other": 171,
+        "scriptEvaluation": 46.7,
+        "parseHTML": 26.1,
+        "paintCompositeRender": 23.6,
+        "scriptParseCompile": 6.1
+      },
+      "bootupMs": 35.1,
+      "longTasks": 2,
+      "longestTaskMs": 86
+    },
+    "dom": {
+      "elements": 627,
+      "depth": 12,
+      "maxChildren": 21
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 300,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 25,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": null,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 37
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2345,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T22:28:46.405Z",
+      "runtimeMs": 6826.4
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "astro",
+      "name": "Astro",
+      "icon": "Astro",
+      "version": "7.2.0",
+      "source": "meta",
+      "raw": "Astro v7.2.0"
+    },
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e4d566996bc54f-IAD",
+      "server": "cloudflare"
+    },
+    "violations": 0,
+    "passes": 666,
+    "incomplete": 57,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

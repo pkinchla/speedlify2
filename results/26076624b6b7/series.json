@@ -1,0 +1,3 @@
+{"version":1,"url":"https://fly.io/","updated":"2026-08-20T22:37:12.658Z","points":[
+{"t":1787265393766,"performance":58,"accessibility":100,"best-practices":58,"seo":92,"lcp":9269,"cls":0,"tbt":667,"fcp":1523,"si":1523,"ttfb":612,"total":2493024,"requests":43,"bytes":286862,"mainThreadMs":57.9,"unusedJsBytes":763276,"unusedCssBytes":98907,"mainThreadTotal":2083.6,"longTasks":10,"elements":438,"failingCount":0,"failingNodes":0,"axeViolations":1,"axePasses":666,"field-lcp":2557,"field-inp":137,"field-cls":0,"field-fcp":2109,"field-ttfb":840,"bench":2697.5,"runs":3,"reqRuns":3,"ms":38890,"spread":2}
+]}

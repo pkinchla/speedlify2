@@ -1,0 +1,227 @@
+{
+  "url": "https://fettblog.eu/",
+  "name": "fettblog.eu",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787265079343,
+  "date": "2026-08-20T22:31:19.343Z",
+  "runId": "2026-08-20T22-26-37-830Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 20746,
+  "error": null,
+  "variance": {
+    "min": 88,
+    "max": 88,
+    "spread": 0,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://fettblog.eu/",
+    "finalUrl": "https://fettblog.eu/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 88,
+      "accessibility": 90,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1535,
+      "lcp": 3785,
+      "si": 1535,
+      "tbt": 0,
+      "tti": 3785,
+      "cls": 0.005,
+      "ttfb": 467,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 30,
+      "networkRtt": 0,
+      "networkServerLatency": 18
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 31.7,
+      "elementRenderDelay": 56.8
+    },
+    "weight": {
+      "total": 538927,
+      "requests": 10,
+      "mainDocument": 4317,
+      "byType": {
+        "total": {
+          "bytes": 538927,
+          "requests": 10
+        },
+        "image": {
+          "bytes": 427980,
+          "requests": 3
+        },
+        "font": {
+          "bytes": 86934,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 11451,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 4317,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 4297,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 3948,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 11451,
+          "requests": 1
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 1,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 11451,
+      "mainThreadMs": 3.2,
+      "top": [
+        {
+          "entity": "Cloudflare",
+          "bytes": 11451,
+          "mainThreadMs": 3.2
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 199.5,
+      "byGroup": {
+        "other": 95.7,
+        "scriptEvaluation": 46,
+        "styleLayout": 40.3,
+        "paintCompositeRender": 8,
+        "parseHTML": 7.4,
+        "scriptParseCompile": 2
+      },
+      "bootupMs": 32.1,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 114,
+      "depth": 8,
+      "maxChildren": 11
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 167,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 4580.400000000001,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 15,
+      "failingNodes": 4,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 3
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 12
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2334.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T22:31:27.045Z",
+      "runtimeMs": 5953.7
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e4d971fe4d05d1-IAD",
+      "server": "cloudflare"
+    },
+    "violations": 7,
+    "passes": 286,
+    "incomplete": 0,
+    "violationRules": 4,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 3,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 2,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should have one main landmark"
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

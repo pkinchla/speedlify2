@@ -1,0 +1,220 @@
+{
+  "url": "https://eventua11y.com/",
+  "name": "eventua11y.com",
+  "group": "11ty-emeritus",
+  "groupName": "11ty Emeritus",
+  "timestamp": 1787264903211,
+  "date": "2026-08-20T22:28:23.211Z",
+  "runId": "2026-08-20T22-26-41-938Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 31384,
+  "error": null,
+  "variance": {
+    "min": 65,
+    "max": 92,
+    "spread": 27,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://eventua11y.com/",
+    "finalUrl": "https://eventua11y.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 92,
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1220,
+      "lcp": 1970,
+      "si": 1220,
+      "tbt": 334,
+      "tti": 3911,
+      "cls": 0.027,
+      "ttfb": 620,
+      "maxPotentialFid": 290,
+      "serverResponseTime": 232,
+      "networkRtt": 0.1,
+      "networkServerLatency": 50
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 234.1,
+      "elementRenderDelay": 75.2
+    },
+    "weight": {
+      "total": 297130,
+      "requests": 43,
+      "mainDocument": 13642,
+      "byType": {
+        "total": {
+          "bytes": 295723,
+          "requests": 40
+        },
+        "script": {
+          "bytes": 176734,
+          "requests": 20
+        },
+        "other": {
+          "bytes": 56171,
+          "requests": 13
+        },
+        "font": {
+          "bytes": 36589,
+          "requests": 3
+        },
+        "document": {
+          "bytes": 13642,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 12152,
+          "requests": 2
+        },
+        "image": {
+          "bytes": 435,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 43483,
+          "requests": 13
+        }
+      },
+      "scripts": 20,
+      "stylesheets": 2,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 4,
+      "bytes": 43483,
+      "mainThreadMs": 0.6,
+      "top": [
+        {
+          "entity": "Google Fonts",
+          "bytes": 37562,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Fathom Analytics",
+          "bytes": 3167,
+          "mainThreadMs": 0.6
+        },
+        {
+          "entity": "FontAwesome CDN",
+          "bytes": 2698,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Sentry",
+          "bytes": 56,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1810.5,
+      "byGroup": {
+        "scriptEvaluation": 728.4,
+        "other": 457,
+        "paintCompositeRender": 341.8,
+        "styleLayout": 234.6,
+        "parseHTML": 39,
+        "scriptParseCompile": 9.8
+      },
+      "bootupMs": 714.9,
+      "longTasks": 4,
+      "longestTaskMs": 290
+    },
+    "dom": {
+      "elements": 986,
+      "depth": 20,
+      "maxChildren": 12
+    },
+    "waste": {
+      "unusedJsBytes": 21387,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 150,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 27,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 1,
+      "baselineLimitedFeatures": 45
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2703,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T22:28:45.295Z",
+      "runtimeMs": 7726.3
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "astro",
+      "name": "Astro",
+      "icon": "Astro",
+      "version": null,
+      "source": "meta",
+      "raw": "Astro"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0GMMZN0TSTJMKTM5G68GPFC"
+    },
+    "violations": 1,
+    "passes": 1295,
+    "incomplete": 2,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "label-title-only",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Form elements should have a visible label"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

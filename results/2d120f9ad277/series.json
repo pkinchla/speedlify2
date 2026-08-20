@@ -1,0 +1,3 @@
+{"version":1,"url":"https://francoamericanmowing.com/","updated":"2026-08-20T22:34:46.765Z","points":[
+{"t":1787265262113,"performance":74,"accessibility":87,"best-practices":100,"seo":92,"lcp":7983,"cls":0.026,"tbt":9,"fcp":1972,"si":1972,"ttfb":461,"total":4673787,"requests":33,"bytes":13386,"mainThreadMs":3.6,"unusedJsBytes":25452,"unusedCssBytes":0,"mainThreadTotal":838.9,"longTasks":2,"elements":282,"failingCount":4,"failingNodes":13,"axeViolations":19,"axePasses":550,"bench":2308,"runs":3,"reqRuns":3,"ms":24651,"spread":0}
+]}

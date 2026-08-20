@@ -1,0 +1,3 @@
+{"version":1,"url":"https://fudge.org/","updated":"2026-08-20T22:37:51.145Z","points":[
+{"t":1787265448662,"performance":100,"accessibility":92,"best-practices":100,"seo":100,"lcp":1238,"cls":0,"tbt":0,"fcp":987,"si":987,"ttfb":638,"total":277917,"requests":14,"bytes":0,"mainThreadMs":0,"unusedJsBytes":57400,"unusedCssBytes":10327,"mainThreadTotal":344,"longTasks":0,"elements":265,"failingCount":2,"failingNodes":5,"axeViolations":6,"axePasses":540,"bench":3371.5,"runs":3,"reqRuns":3,"ms":22482,"spread":0}
+]}

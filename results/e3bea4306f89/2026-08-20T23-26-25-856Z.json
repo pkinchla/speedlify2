@@ -1,0 +1,195 @@
+{
+  "url": "https://geshov.ru/",
+  "name": "geshov.ru",
+  "group": "11ty-emeritus",
+  "groupName": "11ty Emeritus",
+  "timestamp": 1787268385856,
+  "date": "2026-08-20T23:26:25.856Z",
+  "runId": "2026-08-20T23-24-40-687Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 33849,
+  "error": null,
+  "variance": {
+    "min": 90,
+    "max": 94,
+    "spread": 4,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://geshov.ru/",
+    "finalUrl": "https://geshov.ru/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 94,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1323,
+      "lcp": 2823,
+      "si": 2992,
+      "tbt": 79,
+      "tti": 2823,
+      "cls": 0.003,
+      "ttfb": 723,
+      "maxPotentialFid": 117,
+      "serverResponseTime": 130,
+      "networkRtt": 0,
+      "networkServerLatency": 122.7
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 131.5,
+      "elementRenderDelay": 1213.9
+    },
+    "weight": {
+      "total": 413038,
+      "requests": 32,
+      "mainDocument": 24770,
+      "byType": {
+        "total": {
+          "bytes": 413038,
+          "requests": 32
+        },
+        "script": {
+          "bytes": 275334,
+          "requests": 17
+        },
+        "stylesheet": {
+          "bytes": 47073,
+          "requests": 4
+        },
+        "font": {
+          "bytes": 39527,
+          "requests": 2
+        },
+        "other": {
+          "bytes": 26334,
+          "requests": 8
+        },
+        "document": {
+          "bytes": 24770,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 0,
+          "requests": 0
+        }
+      },
+      "scripts": 17,
+      "stylesheets": 4,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 0,
+      "bytes": 0,
+      "mainThreadMs": 0,
+      "top": []
+    },
+    "mainThread": {
+      "total": 1444,
+      "byGroup": {
+        "scriptEvaluation": 646,
+        "other": 367.5,
+        "styleLayout": 177.5,
+        "paintCompositeRender": 100.5,
+        "scriptParseCompile": 98.3,
+        "parseHTML": 46.6,
+        "garbageCollection": 7.6
+      },
+      "bootupMs": 660.4,
+      "longTasks": 2,
+      "longestTaskMs": 117
+    },
+    "dom": {
+      "elements": 501,
+      "depth": 12,
+      "maxChildren": 36
+    },
+    "waste": {
+      "unusedJsBytes": 53644,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 13745,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 300,
+      "renderBlockingCount": 3,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 23,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 41
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2463,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T23:26:37.720Z",
+      "runtimeMs": 10401.4
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "nextjs",
+      "name": "Next.js",
+      "icon": "Nextdotjs",
+      "version": null,
+      "source": "dom",
+      "raw": null
+    },
+    "host": {
+      "id": "self-hosted",
+      "name": "Self-hosted",
+      "icon": null,
+      "detail": "nginx",
+      "detailIcon": "Nginx",
+      "source": "server"
+    },
+    "headers": {
+      "server": "nginx/1.28.3",
+      "x-powered-by": "Next.js"
+    },
+    "violations": 0,
+    "passes": 600,
+    "incomplete": 56,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

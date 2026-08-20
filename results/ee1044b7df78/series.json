@@ -1,0 +1,3 @@
+{"version":1,"url":"https://jekyllrb.com/","updated":"2026-08-20T23:32:59.647Z","points":[
+{"t":1787268758371,"performance":99,"accessibility":93,"best-practices":100,"seo":100,"lcp":1956,"cls":0,"tbt":56,"fcp":902,"si":902,"ttfb":602,"total":367535,"requests":12,"bytes":228982,"mainThreadMs":62.5,"unusedJsBytes":98055,"unusedCssBytes":12062,"mainThreadTotal":554.3,"longTasks":1,"elements":143,"failingCount":2,"failingNodes":8,"axeViolations":13,"axePasses":232,"field-lcp":1084,"field-inp":75,"field-cls":0,"field-fcp":1121,"field-ttfb":596,"bench":2499,"runs":3,"reqRuns":3,"ms":21275,"spread":5}
+]}

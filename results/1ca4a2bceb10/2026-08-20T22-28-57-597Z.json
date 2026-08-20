@@ -1,0 +1,228 @@
+{
+  "url": "https://evilpedia.online/",
+  "name": "evilpedia.online",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787264937597,
+  "date": "2026-08-20T22:28:57.597Z",
+  "runId": "2026-08-20T22-26-41-938Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 36210,
+  "error": null,
+  "variance": {
+    "min": 91,
+    "max": 97,
+    "spread": 6,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://evilpedia.online/",
+    "finalUrl": "https://evilpedia.online/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 92,
+      "accessibility": 92,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 67
+    },
+    "timings": {
+      "fcp": 1286,
+      "lcp": 1707,
+      "si": 1286,
+      "tbt": 332,
+      "tti": 1936,
+      "cls": 0.006,
+      "ttfb": 479,
+      "maxPotentialFid": 242,
+      "serverResponseTime": 50,
+      "networkRtt": 0,
+      "networkServerLatency": 28.7
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 51.2,
+      "elementRenderDelay": 227.2
+    },
+    "weight": {
+      "total": 57366,
+      "requests": 10,
+      "mainDocument": 18625,
+      "byType": {
+        "total": {
+          "bytes": 57366,
+          "requests": 10
+        },
+        "document": {
+          "bytes": 18625,
+          "requests": 1
+        },
+        "font": {
+          "bytes": 15175,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 13181,
+          "requests": 2
+        },
+        "script": {
+          "bytes": 4598,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 3265,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 2522,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 0,
+          "requests": 0
+        }
+      },
+      "scripts": 3,
+      "stylesheets": 1,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 0,
+      "bytes": 0,
+      "mainThreadMs": 0,
+      "top": []
+    },
+    "mainThread": {
+      "total": 1755.8,
+      "byGroup": {
+        "other": 846.7,
+        "styleLayout": 644,
+        "paintCompositeRender": 208.1,
+        "scriptEvaluation": 27.9,
+        "parseHTML": 26.3,
+        "scriptParseCompile": 2.8
+      },
+      "bootupMs": 8.8,
+      "longTasks": 8,
+      "longestTaskMs": 242
+    },
+    "dom": {
+      "elements": 2924,
+      "depth": 9,
+      "maxChildren": 203
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 179,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 22,
+      "failingNodes": 12,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 11
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 7
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2701.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T22:29:10.154Z",
+      "runtimeMs": 9975
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": null,
+      "source": "meta",
+      "raw": "Eleventy"
+    },
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e4d64d29fa17c1-LAX",
+      "server": "cloudflare"
+    },
+    "violations": 24,
+    "passes": 4702,
+    "incomplete": 33,
+    "violationRules": 4,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 11,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 11,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "empty-heading",
+        "impact": "minor",
+        "nodes": 1,
+        "help": "Headings should not be empty"
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should have one main landmark"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
