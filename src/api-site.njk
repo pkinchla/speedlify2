@@ -56,6 +56,12 @@ eleventyExcludeFromCollections: true
       {%- endfor -%}
     ]
   }{% else %}null{% endif %},
+  {#
+    Detections only. A presumed mark comes from the listing a site is on rather
+    than from the page, and this file is what was measured — so a site that
+    emits no generator tag reports none here, rather than reporting the claim
+    that put it on the list.
+  #}
   "generator": {% if entry.generator %}{{ entry.generator.name | dump | safe }}{% else %}null{% endif %},
   "host": {% if entry.host %}{{ entry.host.name | dump | safe }}{% else %}null{% endif %}
   {%- endif %}

@@ -214,7 +214,24 @@ class SpeedlifyScore extends HTMLElement {
 .tip dt { opacity: .65; }
 .tip dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; }
 .tip .name { font-weight: 700; word-break: break-all; }
-.tip .stale { color: #ffa400; }
+/*
+ * The age reads as a pill, the same shape the leaderboard gives it, so a badge
+ * and the page it links to label freshness the same way. Literal colours rather
+ * than custom properties: this stylesheet ships to pages whose palette we know
+ * nothing about, and the tooltip it sits in is dark either way.
+ */
+.age {
+	display: inline-block;
+	margin-top: .2em;
+	padding: .1em .55em;
+	border-radius: 50px;
+	font-size: .85em;
+	font-variant-numeric: tabular-nums;
+	color: rgb(255 255 255 / .72);
+	background: rgb(255 255 255 / .12);
+	white-space: nowrap;
+}
+.age.stale { color: #ffa400; background: rgb(255 164 0 / .16); }
 .tip a { color: #7cc0ff; }
 `;
 
@@ -436,7 +453,7 @@ class SpeedlifyScore extends HTMLElement {
 		if (data.generator) row("Built with", data.generator);
 		if (data.host) row("Hosted by", data.host);
 
-		const measured = `<span class="${data.stale ? "stale" : ""}">${this.since(data.updated)} old</span>`;
+		const measured = `<span class="age${data.stale ? " stale" : ""}">${this.since(data.updated)} old</span>`;
 		const link = `<a href="${SpeedlifyStore.join(this.speedlifyUrl, data.page)}">Full report</a>`;
 
 		return [

@@ -19,7 +19,9 @@ title: Embed
 	<h2>Live examples</h2>
 	<p class="muted small">
 		Hover or tab to a set of scores to see its summary. Each example is a real
-		lookup against this instance.
+		lookup against this instance. The last one is a site that emits a generator
+		tag, so its summary carries a "Built with" row — most sites here emit none,
+		and the row is simply absent for those.
 	</p>
 
 	{#
@@ -37,11 +39,41 @@ title: Embed
 	{% endfor %}
 
 	{% set demo = [] %}
+	{% set demoUrls = [] %}
 	{% if measured.length %}
 		{% set demo = (demo.push(measured[0]), demo) %}
-		{% if measured.length > 2 %}{% set demo = (demo.push(measured[(measured.length / 2) | round | int]), demo) %}{% endif %}
-		{% if measured.length > 1 %}{% set demo = (demo.push(measured[measured.length - 1]), demo) %}{% endif %}
+		{% set demoUrls = (demoUrls.push(measured[0].url), demoUrls) %}
+		{% if measured.length > 2 %}
+			{% set mid = measured[(measured.length / 2) | round | int] %}
+			{% set demo = (demo.push(mid), demo) %}
+			{% set demoUrls = (demoUrls.push(mid.url), demoUrls) %}
+		{% endif %}
+		{% if measured.length > 1 %}
+			{% set last = measured[measured.length - 1] %}
+			{% set demo = (demo.push(last), demo) %}
+			{% set demoUrls = (demoUrls.push(last.url), demoUrls) %}
+		{% endif %}
 	{% endif %}
+
+	{#
+		And one more, chosen for what its tooltip contains rather than for its
+		scores: a site that actually emits a generator tag. Most of this corpus
+		does not — a static site usually ships no generator meta at all — so the
+		three picked above can easily all be sites where the "Built with" row is
+		absent, which makes the examples misrepresent the component.
+
+		Pushing into an array declared outside the loop is the only way to carry a
+		value out of one: a `set` inside a loop does not survive it, but the array
+		reference does, which is also what makes the length check work as a "first
+		match wins" guard.
+	#}
+	{% set withGenerator = [] %}
+	{% for entry in measured %}
+		{% if entry.generator and not withGenerator.length and entry.url not in demoUrls %}
+			{% set withGenerator = (withGenerator.push(entry), withGenerator) %}
+		{% endif %}
+	{% endfor %}
+	{% if withGenerator.length %}{% set demo = (demo.push(withGenerator[0]), demo) %}{% endif %}
 
 	<div class="embed-demo">
 		{% for entry in demo %}
@@ -54,6 +86,13 @@ title: Embed
 			#}
 			<speedlify-score speedlify-url="{{ '/' | htmlBaseUrl }}" url="{{ entry.url }}"></speedlify-score>
 			<code>{{ entry.displayUrl }}</code>
+			{#
+				Only where the page said so itself. A site whose mark is presumed from
+				a listing has no generator in its data file and no "Built with" row in
+				the tooltip, so naming one here would promise something the hover does
+				not deliver.
+			#}
+			{% if entry.generator %}<span class="muted small">Built with {{ entry.generator.name }}</span>{% endif %}
 		</div>
 		{% endfor %}
 	</div>
@@ -73,7 +112,7 @@ title: Embed
 	<p class="muted small">
 		Two, and one of them is optional. There is nothing to configure about the
 		output: every instance renders the same six circles — the four Lighthouse
-		categories, axe violations, and Core Web Vitals — so a page carrying
+		categories, Core Web Vitals, and axe violations — so a page carrying
 		several reads as one table rather than a row of different shapes.
 		Everything else is in the tooltip.
 	</p>
