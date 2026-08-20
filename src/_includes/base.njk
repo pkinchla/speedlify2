@@ -20,7 +20,7 @@ try { if (localStorage.getItem("speedlify-theme") === "light") document.document
 		<h1 class="masthead-hed"><a href="/">{{ meta.title }}</a></h1>
 		<p class="masthead-subhed">{{ meta.description }}</p>
 		<p class="masthead-subhed">
-			<a href="/runs/">Measurement runs</a> · <a href="/embed/">Embed a score</a>{% if meta.repo %} · <a href="{{ meta.repo }}">Source</a>{% endif %}
+			<a href="/runs/">Measurement runs</a> · <a href="/embed/">Embed a score</a>
 			{%- if sites.hasFieldData %} · Field data from the Chrome UX Report{% endif %}
 			<!-- Hidden until scripted: without JS the choice cannot be stored,
 			     and a button that silently does nothing is worse than none. -->
@@ -41,7 +41,8 @@ try { if (localStorage.getItem("speedlify-theme") === "light") document.document
 	<div class="wrap">
 		<p>
 			{{ sites.stats.totalMeasurements | num }} measurements across
-			{{ sites.stats.total }} sites · built <time datetime="{{ sites.generated }}">{{ sites.generated | date("long") }}</time>
+			{{ sites.stats.total }} sites · built <time datetime="{{ sites.generated }}">{{ sites.generated | date("long") }}</time>{% if meta.repo %} ·
+			<a href="{{ meta.repo }}">Source on GitHub</a>{% endif %}
 		</p>
 		<p class="muted">
 			Lab data from Lighthouse{% if sites.hasFieldData %}, field data from the Chrome UX Report (28-day trailing p75){% endif %}.

@@ -9,7 +9,10 @@ export default {
 	// would resolve against their domain. No trailing slash: the templates add
 	// one, and two would give //js/speedlify-score.js.
 	url: process.env.SPEEDLIFY_SITE_URL || "https://zachleat.github.io/speedlify2",
-	repo: process.env.SPEEDLIFY_REPO_URL || "",
+	// Where the source lives, linked from the footer. Defaulted rather than left
+	// blank: an empty string silently drops the link, which is how the header one
+	// went unnoticed for so long. Override it when running your own instance.
+	repo: process.env.SPEEDLIFY_REPO_URL || "https://github.com/zachleat/speedlify2",
 
 	// Favicon service for the site list. `{url}` is replaced with the
 	// encoded site URL. Set to "" for a build that makes no external requests
