@@ -1,0 +1,225 @@
+{
+  "url": "https://coralseacablecompany.com/",
+  "name": "coralseacablecompany.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787252889085,
+  "date": "2026-08-20T19:08:09.085Z",
+  "runId": "2026-08-20T19-02-58-586Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 27093,
+  "error": null,
+  "variance": {
+    "min": 60,
+    "max": 72,
+    "spread": 12,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://coralseacablecompany.com/",
+    "finalUrl": "https://coralseacablecompany.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 69,
+      "accessibility": 97,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 2830,
+      "lcp": 6021,
+      "si": 3181,
+      "tbt": 225,
+      "tti": 9555,
+      "cls": 0,
+      "ttfb": 720,
+      "maxPotentialFid": 202,
+      "serverResponseTime": 37,
+      "networkRtt": 0.1,
+      "networkServerLatency": 120
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 38.7,
+      "elementRenderDelay": 148.4
+    },
+    "weight": {
+      "total": 1608194,
+      "requests": 61,
+      "mainDocument": 29608,
+      "byType": {
+        "total": {
+          "bytes": 1608194,
+          "requests": 61
+        },
+        "script": {
+          "bytes": 916135,
+          "requests": 35
+        },
+        "image": {
+          "bytes": 307309,
+          "requests": 8
+        },
+        "font": {
+          "bytes": 188032,
+          "requests": 7
+        },
+        "stylesheet": {
+          "bytes": 159876,
+          "requests": 7
+        },
+        "document": {
+          "bytes": 29608,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 7234,
+          "requests": 3
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 1578428,
+          "requests": 58
+        }
+      },
+      "scripts": 35,
+      "stylesheets": 7,
+      "fonts": 7
+    },
+    "thirdParty": {
+      "count": 4,
+      "bytes": 1578428,
+      "mainThreadMs": 193,
+      "top": [
+        {
+          "entity": "Squarespace",
+          "bytes": 995691,
+          "mainThreadMs": 184.4
+        },
+        {
+          "entity": "squarespace-cdn.com",
+          "bytes": 337003,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Adobe TypeKit",
+          "bytes": 172397,
+          "mainThreadMs": 2
+        },
+        {
+          "entity": "sqspcdn.com",
+          "bytes": 73337,
+          "mainThreadMs": 6.6
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1448.6,
+      "byGroup": {
+        "scriptEvaluation": 586.9,
+        "scriptParseCompile": 319.5,
+        "other": 253,
+        "styleLayout": 182.6,
+        "parseHTML": 78.4,
+        "garbageCollection": 15.9,
+        "paintCompositeRender": 12.4
+      },
+      "bootupMs": 799.9,
+      "longTasks": 4,
+      "longestTaskMs": 202
+    },
+    "dom": {
+      "elements": 379,
+      "depth": 17,
+      "maxChildren": 16
+    },
+    "waste": {
+      "unusedJsBytes": 380683,
+      "unusedCssBytes": 139207,
+      "legacyJsBytes": 107686,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 2724,
+      "renderBlockingCount": 5,
+      "poorlyCachedBytes": 718.7999999999998,
+      "poorlyCachedCount": 2
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 18,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 38
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 3059,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T19:08:27.377Z",
+      "runtimeMs": 7782.5
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": null,
+      "name": "Squarespace",
+      "icon": null,
+      "source": "server"
+    },
+    "headers": {
+      "server": "Squarespace"
+    },
+    "violations": 2,
+    "passes": 290,
+    "incomplete": 7,
+    "violationRules": 2,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Heading levels should only increase by one"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

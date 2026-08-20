@@ -1,0 +1,3 @@
+{"version":1,"url":"https://11ty-serene.vercel.app/","updated":"2026-08-20T19:05:31.993Z","points":[
+{"t":1787252711990,"performance":99,"accessibility":84,"best-practices":100,"seo":90,"lcp":1712,"cls":0.006,"tbt":0,"fcp":1712,"si":1712,"ttfb":623,"total":463129,"requests":9,"bytes":459969,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":139.9,"longTasks":0,"elements":43,"failingCount":3,"failingNodes":7,"axeViolations":8,"axePasses":101,"bench":3009.5,"runs":3,"reqRuns":3,"ms":20002,"spread":6}
+]}
