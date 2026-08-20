@@ -1,0 +1,3 @@
+{"version":1,"url":"https://cw2architects.com/","updated":"2026-08-20T19:32:50.027Z","points":[
+{"t":1787254345553,"performance":88,"accessibility":97,"best-practices":100,"seo":92,"lcp":3394,"cls":0,"tbt":78,"fcp":2512,"si":2512,"ttfb":684,"total":806599,"requests":23,"bytes":776097,"mainThreadMs":79.2,"unusedJsBytes":138069,"unusedCssBytes":0,"mainThreadTotal":671.1,"longTasks":3,"elements":131,"failingCount":1,"failingNodes":1,"axeViolations":1,"axePasses":211,"bench":2489.5,"runs":3,"reqRuns":3,"ms":24473,"spread":15}
+]}

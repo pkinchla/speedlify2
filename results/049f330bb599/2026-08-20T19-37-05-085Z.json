@@ -1,0 +1,22 @@
+{
+  "url": "https://debitpay.directory/",
+  "name": "debitpay.directory",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787254625085,
+  "date": "2026-08-20T19:37:05.085Z",
+  "runId": "2026-08-20T19-30-13-948Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 0,
+  "durationMs": 270151,
+  "error": "NO_FCP: The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)",
+  "errors": [
+    "lighthouse timed out after 120000ms",
+    "The \"start lh:driver:navigate\" performance mark has not been set",
+    "NO_FCP: The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+  ],
+  "field": null,
+  "axe": null,
+  "consecutiveFailures": 1
+}

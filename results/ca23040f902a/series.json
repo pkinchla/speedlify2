@@ -1,0 +1,3 @@
+{"version":1,"url":"https://daslaf.dev/","updated":"2026-08-20T19:35:13.229Z","points":[
+{"t":1787254485671,"performance":91,"accessibility":92,"best-practices":100,"seo":100,"lcp":3417,"cls":0.005,"tbt":12,"fcp":1595,"si":1595,"ttfb":671,"total":442930,"requests":24,"bytes":40564,"mainThreadMs":0,"unusedJsBytes":27385,"unusedCssBytes":0,"mainThreadTotal":747,"longTasks":1,"elements":62,"failingCount":2,"failingNodes":3,"axeViolations":5,"axePasses":136,"bench":2487.5,"runs":3,"reqRuns":3,"ms":27557,"spread":5}
+]}
