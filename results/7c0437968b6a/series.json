@@ -1,0 +1,3 @@
+{"version":1,"url":"https://anchorthemes.com/","updated":"2026-08-20T16:26:31.078Z","points":[
+{"t":1787243163681,"performance":100,"accessibility":87,"best-practices":100,"seo":100,"lcp":1206,"cls":0,"tbt":0,"fcp":906,"si":906,"ttfb":606,"total":447105,"requests":28,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":502.7,"longTasks":1,"elements":1039,"failingCount":3,"failingNodes":232,"axeViolations":232,"axePasses":1791,"bench":2416,"runs":3,"reqRuns":3,"ms":27396,"spread":0}
+]}

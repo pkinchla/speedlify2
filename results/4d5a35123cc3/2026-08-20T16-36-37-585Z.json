@@ -1,0 +1,252 @@
+{
+  "url": "https://auradix.com/",
+  "name": "auradix.com",
+  "group": "11ty-emeritus",
+  "groupName": "11ty Emeritus",
+  "timestamp": 1787243797585,
+  "date": "2026-08-20T16:36:37.585Z",
+  "runId": "2026-08-20T16-23-41-380Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 29194,
+  "error": null,
+  "variance": {
+    "min": 94,
+    "max": 96,
+    "spread": 2,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://auradix.com/",
+    "finalUrl": "https://auradix.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 95,
+      "accessibility": 82,
+      "best-practices": 96,
+      "seo": 100,
+      "agentic-browsing": 49
+    },
+    "timings": {
+      "fcp": 2015,
+      "lcp": 2148,
+      "si": 2015,
+      "tbt": 129,
+      "tti": 3235,
+      "cls": 0.059,
+      "ttfb": 620,
+      "maxPotentialFid": 107,
+      "serverResponseTime": 27,
+      "networkRtt": 0.3,
+      "networkServerLatency": 27.5
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 28.7,
+      "elementRenderDelay": 138.9
+    },
+    "weight": {
+      "total": 317393,
+      "requests": 17,
+      "mainDocument": 16759,
+      "byType": {
+        "total": {
+          "bytes": 317393,
+          "requests": 17
+        },
+        "script": {
+          "bytes": 221188,
+          "requests": 10
+        },
+        "font": {
+          "bytes": 48797,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 17220,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 16759,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 6931,
+          "requests": 2
+        },
+        "other": {
+          "bytes": 6498,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 210630,
+          "requests": 5
+        }
+      },
+      "scripts": 10,
+      "stylesheets": 1,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 4,
+      "bytes": 210630,
+      "mainThreadMs": 89.7,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 172612,
+          "mainThreadMs": 54.6
+        },
+        {
+          "entity": "JSDelivr CDN",
+          "bytes": 26461,
+          "mainThreadMs": 29.4
+        },
+        {
+          "entity": "Cloudflare",
+          "bytes": 11450,
+          "mainThreadMs": 5.7
+        },
+        {
+          "entity": "vercel.app",
+          "bytes": 107,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 2020.3,
+      "byGroup": {
+        "other": 754.3,
+        "scriptEvaluation": 520.4,
+        "styleLayout": 485.8,
+        "paintCompositeRender": 157.6,
+        "scriptParseCompile": 63.2,
+        "parseHTML": 39
+      },
+      "bootupMs": 527.3,
+      "longTasks": 6,
+      "longestTaskMs": 107
+    },
+    "dom": {
+      "elements": 456,
+      "depth": 12,
+      "maxChildren": 15
+    },
+    "waste": {
+      "unusedJsBytes": 75882,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 1204,
+      "renderBlockingCount": 7,
+      "poorlyCachedBytes": 4580,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 4,
+      "applicableCount": 21,
+      "failingNodes": 31,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 28
+        },
+        {
+          "id": "button-name",
+          "title": "Buttons do not have an accessible name",
+          "nodes": 1
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 1
+        },
+        {
+          "id": "select-name",
+          "title": "Select elements do not have associated label elements.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 1,
+      "baselineLimitedFeatures": 35
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2449,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T16:36:47.955Z",
+      "runtimeMs": 8688
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e2d21289879c11-IAD",
+      "server": "cloudflare"
+    },
+    "violations": 31,
+    "passes": 545,
+    "incomplete": 29,
+    "violationRules": 4,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 28,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "button-name",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Buttons must have discernible text"
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Heading levels should only increase by one"
+      },
+      {
+        "id": "select-name",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Select element must have an accessible name"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

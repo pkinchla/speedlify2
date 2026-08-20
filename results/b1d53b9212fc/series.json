@@ -1,0 +1,3 @@
+{"version":1,"url":"https://angular.pridontetradze.com/","updated":"2026-08-20T16:27:22.743Z","points":[
+{"t":1787243218123,"to":"https://angular.tetradze.com/","perm":1,"performance":94,"accessibility":96,"best-practices":100,"seo":100,"lcp":2436,"cls":0,"tbt":0,"fcp":2436,"si":2436,"ttfb":617,"total":162162,"requests":19,"bytes":161701,"mainThreadMs":9,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":543.1,"longTasks":1,"elements":387,"failingCount":1,"failingNodes":1,"axeViolations":1,"axePasses":69,"bench":2475,"runs":3,"reqRuns":3,"ms":24619,"spread":0}
+]}

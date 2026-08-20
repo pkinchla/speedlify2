@@ -1,0 +1,255 @@
+{
+  "url": "https://bruijn.me/",
+  "name": "bruijn.me",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787243030819,
+  "date": "2026-08-20T16:23:50.819Z",
+  "runId": "2026-08-20T16-23-37-116Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 32038,
+  "error": null,
+  "variance": {
+    "min": 44,
+    "max": 70,
+    "spread": 26,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://bruijn.me/",
+    "finalUrl": "https://bruijn.me/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 70,
+      "accessibility": 75,
+      "best-practices": 100,
+      "seo": 92,
+      "agentic-browsing": 42
+    },
+    "timings": {
+      "fcp": 1571,
+      "lcp": 21679,
+      "si": 2677,
+      "tbt": 0,
+      "tti": 21679,
+      "cls": 0.121,
+      "ttfb": 490,
+      "maxPotentialFid": 46,
+      "serverResponseTime": 40,
+      "networkRtt": 7.4,
+      "networkServerLatency": 198.5
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 54.2,
+      "resourceLoadDelay": 11,
+      "resourceLoadDuration": 54.5,
+      "elementRenderDelay": 62
+    },
+    "weight": {
+      "total": 3888282,
+      "requests": 16,
+      "mainDocument": 3404,
+      "byType": {
+        "total": {
+          "bytes": 3888282,
+          "requests": 16
+        },
+        "image": {
+          "bytes": 3777003,
+          "requests": 5
+        },
+        "script": {
+          "bytes": 84296,
+          "requests": 3
+        },
+        "font": {
+          "bytes": 17374,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 5140,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 3404,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 1065,
+          "requests": 4
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 14770,
+          "requests": 4
+        }
+      },
+      "scripts": 3,
+      "stylesheets": 1,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 14770,
+      "mainThreadMs": 4.4,
+      "top": [
+        {
+          "entity": "Cloudflare",
+          "bytes": 11450,
+          "mainThreadMs": 2.8
+        },
+        {
+          "entity": "umami.is",
+          "bytes": 3320,
+          "mainThreadMs": 1.6
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1168.6,
+      "byGroup": {
+        "other": 421.4,
+        "styleLayout": 396.6,
+        "scriptEvaluation": 220.8,
+        "paintCompositeRender": 95.6,
+        "scriptParseCompile": 27.4,
+        "parseHTML": 6.8
+      },
+      "bootupMs": 228,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 127,
+      "depth": 11,
+      "maxChildren": 14
+    },
+    "waste": {
+      "unusedJsBytes": 39287,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 17177,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 190,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 2635954.24,
+      "poorlyCachedCount": 10
+    },
+    "accessibility": {
+      "failingCount": 4,
+      "applicableCount": 20,
+      "failingNodes": 10,
+      "failing": [
+        {
+          "id": "aria-valid-attr",
+          "title": "`[aria-*]` attributes are not valid or misspelled",
+          "nodes": 4
+        },
+        {
+          "id": "image-alt",
+          "title": "Image elements do not have `[alt]` attributes",
+          "nodes": 4
+        },
+        {
+          "id": "button-name",
+          "title": "Buttons do not have an accessible name",
+          "nodes": 1
+        },
+        {
+          "id": "list",
+          "title": "Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 24
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 3224.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T16:24:07.914Z",
+      "runtimeMs": 6970.5
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "2.0.1",
+      "source": "meta",
+      "raw": "Eleventy v2.0.1"
+    },
+    "host": {
+      "id": "github",
+      "name": "GitHub Pages",
+      "icon": "Github",
+      "source": "x-github-request-id"
+    },
+    "headers": {
+      "cf-ray": "a2e2bf462e3eb0a3-YYZ",
+      "server": "cloudflare",
+      "via": "1.1 varnish",
+      "x-fastly-request-id": "50451b2494ae0c4d3afb6bae0ab9221fc8cf6a16",
+      "x-github-request-id": "CF80:16344F:C4AB1:CDF4C:6A872A1D",
+      "x-served-by": "cache-yyz4539-YYZ"
+    },
+    "violations": 10,
+    "passes": 236,
+    "incomplete": 15,
+    "violationRules": 4,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "aria-valid-attr",
+        "impact": "critical",
+        "nodes": 4,
+        "help": "ARIA attributes must conform to valid names"
+      },
+      {
+        "id": "image-alt",
+        "impact": "critical",
+        "nodes": 4,
+        "help": "Images must have alternative text"
+      },
+      {
+        "id": "button-name",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Buttons must have discernible text"
+      },
+      {
+        "id": "list",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

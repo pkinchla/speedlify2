@@ -1,0 +1,239 @@
+{
+  "url": "https://angular.pridontetradze.com/",
+  "name": "angular.pridontetradze.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787243218123,
+  "date": "2026-08-20T16:26:58.123Z",
+  "runId": "2026-08-20T16-23-41-380Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 24619,
+  "error": null,
+  "variance": {
+    "min": 94,
+    "max": 94,
+    "spread": 0,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://angular.pridontetradze.com/",
+    "finalUrl": "https://angular.tetradze.com/",
+    "redirect": {
+      "from": "https://angular.pridontetradze.com/",
+      "to": "https://angular.tetradze.com/",
+      "chain": [
+        {
+          "url": "https://angular.pridontetradze.com/",
+          "status": 301
+        },
+        {
+          "url": "https://angular.tetradze.com/",
+          "status": 200
+        }
+      ],
+      "statuses": [
+        301
+      ],
+      "change": "host",
+      "permanent": true,
+      "schemeUpgrade": false,
+      "hops": 1
+    },
+    "statusCode": "ok",
+    "scores": {
+      "performance": 94,
+      "accessibility": 96,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 2436,
+      "lcp": 2436,
+      "si": 2436,
+      "tbt": 0,
+      "tti": 2436,
+      "cls": 0,
+      "ttfb": 617,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 22,
+      "networkRtt": 0.2,
+      "networkServerLatency": 20.4
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 31.7,
+      "elementRenderDelay": 64.9
+    },
+    "weight": {
+      "total": 162162,
+      "requests": 19,
+      "mainDocument": 12516,
+      "byType": {
+        "total": {
+          "bytes": 162162,
+          "requests": 19
+        },
+        "font": {
+          "bytes": 124422,
+          "requests": 6
+        },
+        "script": {
+          "bytes": 16403,
+          "requests": 4
+        },
+        "document": {
+          "bytes": 12516,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 3612,
+          "requests": 2
+        },
+        "other": {
+          "bytes": 2839,
+          "requests": 4
+        },
+        "image": {
+          "bytes": 2370,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 139860,
+          "requests": 10
+        }
+      },
+      "scripts": 4,
+      "stylesheets": 2,
+      "fonts": 6
+    },
+    "thirdParty": {
+      "count": 4,
+      "bytes": 161701,
+      "mainThreadMs": 9,
+      "top": [
+        {
+          "entity": "Google Fonts",
+          "bytes": 127000,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "tetradze.com",
+          "bytes": 21908,
+          "mainThreadMs": 5.6
+        },
+        {
+          "entity": "Cloudflare",
+          "bytes": 11451,
+          "mainThreadMs": 3.4
+        },
+        {
+          "entity": "licensebuttons.net",
+          "bytes": 1342,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 543.1,
+      "byGroup": {
+        "styleLayout": 227,
+        "other": 188.5,
+        "scriptEvaluation": 59.1,
+        "paintCompositeRender": 48,
+        "parseHTML": 18.8,
+        "scriptParseCompile": 1.6
+      },
+      "bootupMs": 36,
+      "longTasks": 1,
+      "longestTaskMs": 52
+    },
+    "dom": {
+      "elements": 387,
+      "depth": 12,
+      "maxChildren": 10
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 4781.700000000001,
+      "poorlyCachedCount": 2
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 21,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 755.8,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 24
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2475,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T16:27:06.611Z",
+      "runtimeMs": 6236.8
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e2c3c07a1392dc-IAD",
+      "server": "cloudflare"
+    },
+    "violations": 1,
+    "passes": 69,
+    "incomplete": 0,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "meta-refresh",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Delayed refresh under 20 hours must not be used"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

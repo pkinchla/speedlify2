@@ -1,0 +1,3 @@
+{"version":1,"url":"https://cfam.es/","updated":"2026-08-20T16:29:40.497Z","points":[
+{"t":1787243352284,"performance":90,"accessibility":69,"best-practices":100,"seo":100,"lcp":3122,"cls":0.046,"tbt":57,"fcp":2073,"si":3709,"ttfb":1511,"total":4446440,"requests":38,"bytes":238875,"mainThreadMs":55.4,"unusedJsBytes":92902,"unusedCssBytes":18252,"mainThreadTotal":1081.9,"longTasks":4,"elements":263,"failingCount":6,"failingNodes":14,"axeViolations":19,"axePasses":575,"field-lcp":3586,"field-inp":105,"field-cls":0,"field-fcp":3647,"field-ttfb":2933,"bench":3204.5,"runs":3,"reqRuns":3,"ms":28213,"spread":33}
+]}

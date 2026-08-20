@@ -1,0 +1,331 @@
+{
+  "url": "https://antithesis.com/",
+  "name": "antithesis.com",
+  "group": "11ty-emeritus",
+  "groupName": "11ty Emeritus",
+  "timestamp": 1787243272117,
+  "date": "2026-08-20T16:27:52.117Z",
+  "runId": "2026-08-20T16-23-41-380Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 37624,
+  "error": null,
+  "variance": {
+    "min": 49,
+    "max": 55,
+    "spread": 6,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://antithesis.com/",
+    "finalUrl": "https://antithesis.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 54,
+      "accessibility": 96,
+      "best-practices": 58,
+      "seo": 92,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 1447,
+      "lcp": 5863,
+      "si": 1447,
+      "tbt": 1164,
+      "tti": 14886,
+      "cls": 0,
+      "ttfb": 613,
+      "maxPotentialFid": 288,
+      "serverResponseTime": 4,
+      "networkRtt": 0.9,
+      "networkServerLatency": 190.4
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 5.6,
+      "resourceLoadDelay": 17.3,
+      "resourceLoadDuration": 39.6,
+      "elementRenderDelay": 87.1
+    },
+    "weight": {
+      "total": 2085355,
+      "requests": 96,
+      "mainDocument": 65498,
+      "byType": {
+        "total": {
+          "bytes": 2051445,
+          "requests": 90
+        },
+        "script": {
+          "bytes": 1126614,
+          "requests": 41
+        },
+        "font": {
+          "bytes": 782568,
+          "requests": 9
+        },
+        "document": {
+          "bytes": 65498,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 36592,
+          "requests": 13
+        },
+        "stylesheet": {
+          "bytes": 28272,
+          "requests": 8
+        },
+        "other": {
+          "bytes": 11901,
+          "requests": 18
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 959090,
+          "requests": 45
+        }
+      },
+      "scripts": 41,
+      "stylesheets": 8,
+      "fonts": 9
+    },
+    "thirdParty": {
+      "count": 14,
+      "bytes": 959090,
+      "mainThreadMs": 380,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 339264,
+          "mainThreadMs": 129.8
+        },
+        {
+          "entity": "Facebook",
+          "bytes": 251536,
+          "mainThreadMs": 126.9
+        },
+        {
+          "entity": "posthog.com",
+          "bytes": 129197,
+          "mainThreadMs": 50.7
+        },
+        {
+          "entity": "Usercentrics CMP",
+          "bytes": 118867,
+          "mainThreadMs": 22.5
+        },
+        {
+          "entity": "reo.dev",
+          "bytes": 54570,
+          "mainThreadMs": 21.9
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 3277.6,
+      "byGroup": {
+        "scriptEvaluation": 1973.7,
+        "other": 593.4,
+        "scriptParseCompile": 347.3,
+        "styleLayout": 173.8,
+        "parseHTML": 102.7,
+        "garbageCollection": 44.8,
+        "paintCompositeRender": 41.8
+      },
+      "bootupMs": 2185.8,
+      "longTasks": 14,
+      "longestTaskMs": 288
+    },
+    "dom": {
+      "elements": 1244,
+      "depth": 17,
+      "maxChildren": 31
+    },
+    "waste": {
+      "unusedJsBytes": 388519,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 30305,
+      "duplicatedJsBytes": 4751,
+      "unminifiedJsBytes": 35425,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 150,
+      "renderBlockingCount": 8,
+      "poorlyCachedBytes": 1392508.1624999999,
+      "poorlyCachedCount": 56
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 25,
+      "failingNodes": 3,
+      "failing": [
+        {
+          "id": "aria-hidden-focus",
+          "title": "`[aria-hidden=\"true\"]` elements contain focusable descendents",
+          "nodes": 3
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 59
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2477.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T16:28:16.849Z",
+      "runtimeMs": 10873.9
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-22",
+      "last": "2026-08-18"
+    },
+    "metrics": {
+      "ttfb": {
+        "p75": 721,
+        "rating": "good",
+        "distribution": {
+          "good": 78.4,
+          "needsImprovement": 17.1,
+          "poor": 4.6
+        }
+      },
+      "fcp": {
+        "p75": 1416,
+        "rating": "good",
+        "distribution": {
+          "good": 84.9,
+          "needsImprovement": 10.9,
+          "poor": 4.2
+        }
+      },
+      "inp": {
+        "p75": 140,
+        "rating": "good",
+        "distribution": {
+          "good": 90,
+          "needsImprovement": 8.9,
+          "poor": 1.1
+        }
+      },
+      "lcp": {
+        "p75": 1490,
+        "rating": "good",
+        "distribution": {
+          "good": 91.2,
+          "needsImprovement": 6.2,
+          "poor": 2.6
+        }
+      },
+      "rtt": {
+        "p75": 117,
+        "rating": null,
+        "distribution": {
+          "good": 56,
+          "needsImprovement": 38.6,
+          "poor": 5.4
+        }
+      },
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 99.9,
+          "needsImprovement": 0.1,
+          "poor": 0
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": {
+      "id": "astro",
+      "name": "Astro",
+      "icon": "Astro",
+      "version": "6.4.0",
+      "source": "meta",
+      "raw": "Astro v6.4.0"
+    },
+    "host": {
+      "id": "amazons3",
+      "name": "Amazon S3",
+      "icon": "Amazon",
+      "source": "server"
+    },
+    "headers": {
+      "server": "AmazonS3",
+      "via": "1.1 598d87b7aabfe9af537b98f78145120e.cloudfront.net (CloudFront)",
+      "x-amz-cf-id": "SSw3BFlO1zaeh1l5HGuzmw3Cp8m16qreBajQAx2wMtMxbqrtPGIFhA=="
+    },
+    "violations": 16,
+    "passes": 1394,
+    "incomplete": 99,
+    "violationRules": 6,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 5,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "listitem",
+        "impact": "serious",
+        "nodes": 4,
+        "help": "<li> elements must be contained in a <ul> or <ol>"
+      },
+      {
+        "id": "aria-hidden-focus",
+        "impact": "serious",
+        "nodes": 3,
+        "help": "ARIA hidden element must not be focusable or contain focusable elements"
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 2,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Links must have discernible text"
+      },
+      {
+        "id": "list",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
