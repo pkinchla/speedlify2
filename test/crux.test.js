@@ -14,7 +14,15 @@ let lastBody = null;
 function mockResponse(payload, status = 200) {
 	globalThis.fetch = async (url, opts) => {
 		lastBody = JSON.parse(opts.body);
-		return { ok: status === 200, status, json: async () => payload };
+		return {
+			ok: status === 200,
+			status,
+			// Real responses carry headers, and the client reads Retry-After from
+			// them. Zero so a throttling test exhausts its retries immediately
+			// rather than sitting through the real backoff.
+			headers: { get: (name) => (name.toLowerCase() === "retry-after" ? "0" : null) },
+			json: async () => payload,
+		};
 	};
 }
 
@@ -116,9 +124,16 @@ describe("fetchFieldData", () => {
 		await assert.rejects(() => fetchFieldData("https://example.com/", {}), /API key/);
 	});
 
-	test("propagates non-404 errors", async () => {
+	test("propagates non-404 errors once retries are exhausted", async () => {
+		// A 429 is retried first — see the pacing suite — but persistent
+		// throttling still has to surface rather than being swallowed.
 		mockResponse({ error: { message: "quota exceeded" } }, 429);
 		await assert.rejects(() => fetchFieldData("https://example.com/", { apiKey: "k" }), /quota exceeded/);
+	});
+
+	test("a non-retryable error surfaces immediately", async () => {
+		mockResponse({ error: { message: "API key not valid" } }, 403);
+		await assert.rejects(() => fetchFieldData("https://example.com/", { apiKey: "k" }), /API key not valid/);
 	});
 });
 
@@ -187,5 +202,66 @@ describe("rate", () => {
 		assert.equal(rate("lcp", null), null);
 		assert.equal(rate("lcp", undefined), null);
 		assert.equal(rate("nonsense", 100), null);
+	});
+});
+
+describe("request pacing", () => {
+	/**
+	 * CrUX allows 150 queries a minute per project. A sequential loop is not slow
+	 * enough on its own — the API answers in a couple of hundred milliseconds, so
+	 * an unpaced run exceeds the quota within about thirty seconds and then fails
+	 * for the rest of its duration.
+	 */
+	const realFetch = globalThis.fetch;
+	afterEach(() => {
+		globalThis.fetch = realFetch;
+	});
+
+	function stubFetch(responses) {
+		const calls = [];
+		globalThis.fetch = async () => {
+			const at = Date.now();
+			const next = responses.shift() ?? { ok: true, body: {} };
+			calls.push({ at, status: next.ok ? 200 : next.status });
+			return {
+				ok: next.ok,
+				status: next.ok ? 200 : next.status,
+				headers: { get: () => next.retryAfter ?? null },
+				json: async () => next.body ?? {},
+			};
+		};
+		return calls;
+	}
+
+	test("leaves a gap between consecutive requests", async () => {
+		const calls = stubFetch([{ ok: true }, { ok: true }, { ok: true }]);
+
+		await fetchFieldData("https://a.example/", { apiKey: "k" }).catch(() => {});
+		await fetchFieldData("https://b.example/", { apiKey: "k" }).catch(() => {});
+
+		assert.ok(calls.length >= 2, "made at least two requests");
+		const gap = calls[1].at - calls[0].at;
+		// Allow a little slack for timer resolution; the point is that it waited.
+		assert.ok(gap >= 300, `expected a pause between requests, got ${gap}ms`);
+	});
+
+	test("retries after a 429 rather than dropping the site", async () => {
+		// Being throttled says nothing about the site — only about how fast we
+		// asked — so the request is worth repeating.
+		const calls = stubFetch([
+			{ ok: false, status: 429, retryAfter: "1" },
+			{ ok: true, body: { record: { metrics: {} } } },
+		]);
+
+		await fetchFieldData("https://c.example/", { apiKey: "k" }).catch(() => {});
+		assert.ok(calls.length >= 2, `expected a retry, saw ${calls.length} request(s)`);
+		assert.equal(calls[0].status, 429);
+	});
+
+	test("gives up after repeated throttling instead of looping forever", async () => {
+		const calls = stubFetch(Array.from({ length: 10 }, () => ({ ok: false, status: 429, retryAfter: "0" })));
+
+		await assert.rejects(() => fetchFieldData("https://d.example/", { apiKey: "k" }));
+		assert.ok(calls.length <= 5, `bounded retries, saw ${calls.length}`);
 	});
 });
