@@ -1,0 +1,3 @@
+{"version":1,"url":"https://blades.ninja/","updated":"2026-08-20T19:16:29.151Z","points":[
+{"t":1787253191625,"performance":67,"accessibility":77,"best-practices":100,"seo":82,"lcp":7176,"cls":0.005,"tbt":163,"fcp":3205,"si":3721,"ttfb":629,"total":629758,"requests":43,"bytes":605602,"mainThreadMs":83.8,"unusedJsBytes":138208,"unusedCssBytes":39766,"mainThreadTotal":1190.6,"longTasks":5,"elements":501,"failingCount":5,"failingNodes":29,"axeViolations":29,"axePasses":831,"bench":2265.5,"runs":2,"reqRuns":3,"ms":197525,"spread":15}
+]}

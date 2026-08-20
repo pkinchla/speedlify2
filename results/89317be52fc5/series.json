@@ -1,0 +1,3 @@
+{"version":1,"url":"https://blame.design/","updated":"2026-08-20T19:17:02.376Z","points":[
+{"t":1787253392153,"performance":92,"accessibility":92,"best-practices":100,"seo":100,"lcp":3364,"cls":0,"tbt":20,"fcp":1212,"si":1358,"ttfb":612,"total":513612,"requests":22,"bytes":3520,"mainThreadMs":3.8,"unusedJsBytes":0,"unusedCssBytes":11497,"mainThreadTotal":4397.5,"longTasks":4,"elements":1277,"failingCount":2,"failingNodes":7,"axeViolations":7,"axePasses":927,"bench":2321.5,"runs":3,"reqRuns":3,"ms":30222,"spread":1}
+]}
