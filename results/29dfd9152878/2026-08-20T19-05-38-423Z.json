@@ -1,0 +1,198 @@
+{
+  "url": "https://11tyby.netlify.app/",
+  "name": "11tyby.netlify.app",
+  "group": "11ty-starters",
+  "groupName": "Build Awesome Starters",
+  "timestamp": 1787252738423,
+  "date": "2026-08-20T19:05:38.423Z",
+  "runId": "2026-08-20T19-03-02-490Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 20438,
+  "error": null,
+  "variance": {
+    "min": 100,
+    "max": 100,
+    "spread": 0,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://11tyby.netlify.app/",
+    "finalUrl": "https://11tyby.netlify.app/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 773,
+      "lcp": 773,
+      "si": 773,
+      "tbt": 0,
+      "tti": 773,
+      "cls": 0.001,
+      "ttfb": 611,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 17,
+      "networkRtt": 0,
+      "networkServerLatency": 22.9
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 18.5,
+      "elementRenderDelay": 29.3
+    },
+    "weight": {
+      "total": 53032,
+      "requests": 8,
+      "mainDocument": 987,
+      "byType": {
+        "total": {
+          "bytes": 53032,
+          "requests": 8
+        },
+        "font": {
+          "bytes": 41257,
+          "requests": 3
+        },
+        "script": {
+          "bytes": 9602,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 987,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 608,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 578,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 41835,
+          "requests": 4
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 1,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 41835,
+      "mainThreadMs": 0,
+      "top": [
+        {
+          "entity": "Google Fonts",
+          "bytes": 41835,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 169.9,
+      "byGroup": {
+        "other": 84.6,
+        "styleLayout": 40,
+        "scriptEvaluation": 31.4,
+        "paintCompositeRender": 5.9,
+        "parseHTML": 4,
+        "scriptParseCompile": 4
+      },
+      "bootupMs": 8.7,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 12,
+      "depth": 4,
+      "maxChildren": 4
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 11,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": null,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 1
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2258,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T19:05:46.217Z",
+      "runtimeMs": 5507.1
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0G91MXVR168G3AP1S5FX0AP"
+    },
+    "violations": 1,
+    "passes": 30,
+    "incomplete": 0,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Page should contain a level-one heading"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

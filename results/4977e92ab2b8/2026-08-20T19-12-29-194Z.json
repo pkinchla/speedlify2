@@ -1,0 +1,216 @@
+{
+  "url": "https://brewventy.vercel.app/",
+  "name": "brewventy.vercel.app",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787253149194,
+  "date": "2026-08-20T19:12:29.194Z",
+  "runId": "2026-08-20T19-03-02-110Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 24615,
+  "error": null,
+  "variance": {
+    "min": 80,
+    "max": 88,
+    "spread": 8,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://brewventy.vercel.app/",
+    "finalUrl": "https://brewventy.vercel.app/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 82,
+      "accessibility": 95,
+      "best-practices": 100,
+      "seo": 91,
+      "agentic-browsing": 78
+    },
+    "timings": {
+      "fcp": 2611,
+      "lcp": 2611,
+      "si": 2611,
+      "tbt": 0,
+      "tti": 2611,
+      "cls": 0.223,
+      "ttfb": 608,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 2,
+      "networkRtt": 0,
+      "networkServerLatency": 217.2
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 4,
+      "elementRenderDelay": 130.8
+    },
+    "weight": {
+      "total": 67422,
+      "requests": 9,
+      "mainDocument": 3544,
+      "byType": {
+        "total": {
+          "bytes": 67422,
+          "requests": 9
+        },
+        "font": {
+          "bytes": 48464,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 10759,
+          "requests": 2
+        },
+        "script": {
+          "bytes": 3718,
+          "requests": 3
+        },
+        "document": {
+          "bytes": 3544,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 937,
+          "requests": 2
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 50974,
+          "requests": 4
+        }
+      },
+      "scripts": 3,
+      "stylesheets": 2,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 50974,
+      "mainThreadMs": 3.5,
+      "top": [
+        {
+          "entity": "Google Fonts",
+          "bytes": 49606,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "tinylytics.app",
+          "bytes": 1368,
+          "mainThreadMs": 3.5
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 912.9,
+      "byGroup": {
+        "styleLayout": 561.1,
+        "other": 258.8,
+        "paintCompositeRender": 49.9,
+        "scriptEvaluation": 29.9,
+        "parseHTML": 10.3,
+        "scriptParseCompile": 2.9
+      },
+      "bootupMs": 6.9,
+      "longTasks": 3,
+      "longestTaskMs": 97
+    },
+    "dom": {
+      "elements": 176,
+      "depth": 12,
+      "maxChildren": 11
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 943,
+      "renderBlockingCount": 4,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 20,
+      "failingNodes": 15,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 15
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": null,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 7
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2477,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T19:12:38.583Z",
+      "runtimeMs": 6821
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": null,
+      "source": "meta",
+      "raw": "Eleventy"
+    },
+    "host": {
+      "id": "vercel",
+      "name": "Vercel",
+      "icon": "Vercel",
+      "source": "x-vercel-id"
+    },
+    "headers": {
+      "server": "Vercel",
+      "x-vercel-id": "sfo1::vz7dg-1787253172089-da91f854b3de"
+    },
+    "violations": 16,
+    "passes": 336,
+    "incomplete": 6,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 16,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

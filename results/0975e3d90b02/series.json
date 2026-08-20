@@ -1,0 +1,3 @@
+{"version":1,"url":"https://binnyva.com/","updated":"2026-08-20T19:08:22.252Z","points":[
+{"t":1787252874312,"performance":67,"accessibility":100,"best-practices":100,"seo":100,"lcp":5759,"cls":0,"tbt":88,"fcp":4538,"si":4538,"ttfb":803,"total":589601,"requests":12,"bytes":426468,"mainThreadMs":67.8,"unusedJsBytes":137873,"unusedCssBytes":0,"mainThreadTotal":534,"longTasks":3,"elements":57,"failingCount":0,"failingNodes":0,"axeViolations":1,"axePasses":118,"bench":2364.5,"runs":3,"reqRuns":3,"ms":27939,"spread":19}
+]}

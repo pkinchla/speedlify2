@@ -1,0 +1,3 @@
+{"version":1,"url":"https://blog.felipestanzani.com/","updated":"2026-08-20T19:09:43.855Z","points":[
+{"t":1787252950966,"performance":74,"accessibility":91,"best-practices":100,"seo":100,"lcp":4419,"cls":0,"tbt":74,"fcp":3732,"si":4978,"ttfb":776,"total":602545,"requests":10,"bytes":213875,"mainThreadMs":55.3,"unusedJsBytes":72654,"unusedCssBytes":0,"mainThreadTotal":663.2,"longTasks":4,"elements":461,"failingCount":2,"failingNodes":13,"axeViolations":17,"axePasses":856,"bench":2480.5,"runs":3,"reqRuns":3,"ms":32888,"spread":6}
+]}

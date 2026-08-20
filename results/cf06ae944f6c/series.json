@@ -1,0 +1,3 @@
+{"version":1,"url":"https://11ty-feedback.netlify.app/","updated":"2026-08-20T19:04:04.296Z","points":[
+{"t":1787252622756,"performance":100,"accessibility":100,"best-practices":100,"seo":100,"lcp":1503,"cls":0,"tbt":0,"fcp":1203,"si":1203,"ttfb":603,"total":126180,"requests":6,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":192.2,"longTasks":0,"elements":67,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":136,"bench":2501,"runs":3,"reqRuns":3,"ms":21540,"spread":0}
+]}

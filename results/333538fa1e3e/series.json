@@ -1,0 +1,3 @@
+{"version":1,"url":"https://benediktmeurer.de/","updated":"2026-08-20T19:06:50.292Z","points":[
+{"t":1787252787403,"performance":93,"accessibility":81,"best-practices":100,"seo":100,"lcp":798,"cls":0.161,"tbt":0,"fcp":798,"si":798,"ttfb":603,"total":181541,"requests":10,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":261.9,"longTasks":0,"elements":192,"failingCount":3,"failingNodes":48,"axeViolations":51,"axePasses":345,"bench":2499.5,"runs":3,"reqRuns":3,"ms":22889,"spread":7}
+]}

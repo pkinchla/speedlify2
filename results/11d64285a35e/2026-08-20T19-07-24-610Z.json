@@ -1,0 +1,208 @@
+{
+  "url": "https://bholmes.dev/",
+  "name": "bholmes.dev",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787252844610,
+  "date": "2026-08-20T19:07:24.610Z",
+  "runId": "2026-08-20T19-03-02-490Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 26701,
+  "error": null,
+  "variance": {
+    "min": 86,
+    "max": 93,
+    "spread": 7,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://bholmes.dev/",
+    "finalUrl": "https://bholmes.dev/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 90,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1779,
+      "lcp": 3476,
+      "si": 1779,
+      "tbt": 10,
+      "tti": 3476,
+      "cls": 0,
+      "ttfb": 610,
+      "maxPotentialFid": 60,
+      "serverResponseTime": 18,
+      "networkRtt": 0.1,
+      "networkServerLatency": 72.8
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 19.8,
+      "elementRenderDelay": 83.1
+    },
+    "weight": {
+      "total": 321333,
+      "requests": 20,
+      "mainDocument": 21819,
+      "byType": {
+        "total": {
+          "bytes": 321333,
+          "requests": 20
+        },
+        "font": {
+          "bytes": 212140,
+          "requests": 10
+        },
+        "script": {
+          "bytes": 48704,
+          "requests": 4
+        },
+        "image": {
+          "bytes": 23894,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 21819,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 13231,
+          "requests": 2
+        },
+        "other": {
+          "bytes": 1545,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 238707,
+          "requests": 13
+        }
+      },
+      "scripts": 4,
+      "stylesheets": 2,
+      "fonts": 10
+    },
+    "thirdParty": {
+      "count": 3,
+      "bytes": 238707,
+      "mainThreadMs": 2.7,
+      "top": [
+        {
+          "entity": "Google Fonts",
+          "bytes": 212140,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "YouTube",
+          "bytes": 23894,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Plausible",
+          "bytes": 2673,
+          "mainThreadMs": 2.7
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 827.6,
+      "byGroup": {
+        "other": 370.2,
+        "styleLayout": 213.9,
+        "scriptEvaluation": 141.8,
+        "paintCompositeRender": 75.2,
+        "parseHTML": 24.5,
+        "scriptParseCompile": 2
+      },
+      "bootupMs": 141.8,
+      "longTasks": 1,
+      "longestTaskMs": 60
+    },
+    "dom": {
+      "elements": 287,
+      "depth": 14,
+      "maxChildren": 17
+    },
+    "waste": {
+      "unusedJsBytes": 21380,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 17920.5,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 24,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 37
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2333.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T19:07:43.543Z",
+      "runtimeMs": 6901.7
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "astro",
+      "name": "Astro",
+      "icon": "Astro",
+      "version": null,
+      "source": "dom",
+      "raw": null
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0G952VT1RRYN9EV98ESN4X2"
+    },
+    "violations": 0,
+    "passes": 375,
+    "incomplete": 10,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

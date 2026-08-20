@@ -1,0 +1,3 @@
+{"version":1,"url":"https://11ty-blog-njk-starter.netlify.app/","updated":"2026-08-20T19:03:39.756Z","points":[
+{"t":1787252594597,"performance":100,"accessibility":100,"best-practices":100,"seo":100,"lcp":1515,"cls":0,"tbt":0,"fcp":1515,"si":1515,"ttfb":603,"total":18611,"requests":7,"bytes":906,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":162.1,"longTasks":0,"elements":67,"failingCount":0,"failingNodes":0,"axeViolations":2,"axePasses":151,"bench":2490,"runs":3,"reqRuns":3,"ms":25157,"spread":1}
+]}
