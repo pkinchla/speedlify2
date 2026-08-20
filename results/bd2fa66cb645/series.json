@@ -1,0 +1,3 @@
+{"version":1,"url":"https://eleventy-blog-mnml.netlify.app/","updated":"2026-08-20T21:28:18.476Z","points":[
+{"t":1787261276398,"performance":100,"accessibility":96,"best-practices":100,"seo":100,"lcp":1189,"cls":0.004,"tbt":0,"fcp":904,"si":1387,"ttfb":739,"total":37723,"requests":5,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":111,"longTasks":0,"elements":23,"failingCount":1,"failingNodes":1,"axeViolations":2,"axePasses":51,"bench":2501.5,"runs":3,"reqRuns":3,"ms":22077,"spread":0}
+]}

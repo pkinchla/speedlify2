@@ -1,0 +1,3 @@
+{"version":1,"url":"https://estelafranco.com/","updated":"2026-08-20T21:41:44.104Z","points":[
+{"t":1787262082033,"performance":100,"accessibility":100,"best-practices":100,"seo":100,"lcp":1511,"cls":0,"tbt":53,"fcp":787,"si":787,"ttfb":604,"total":214696,"requests":6,"bytes":182314,"mainThreadMs":62,"unusedJsBytes":73787,"unusedCssBytes":0,"mainThreadTotal":384.2,"longTasks":2,"elements":75,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":138,"bench":2502.5,"runs":3,"reqRuns":3,"ms":22070,"spread":3}
+]}
