@@ -11,8 +11,8 @@
     "measure": "node ./bin/speedlify.js measure",
     "backfill": "node ./bin/speedlify.js backfill",
     "report": "node ./bin/speedlify.js report",
-    "build": "npm run report && eleventy",
-    "start": "npm run report && eleventy --serve",
+    "build": "npm run report && npx @awesome.me/buildawesome",
+    "start": "npm run report && npx @awesome.me/buildawesome --serve --incremental",
     "check": "node ./bin/speedlify.js check",
     "list": "node ./bin/speedlify.js list",
     "test": "node --test \"test/*.test.js\"",
@@ -22,7 +22,7 @@
     "import:11ty-starters": "node ./scripts/import-11ty-starters.mjs"
   },
   "dependencies": {
-    "@11ty/eleventy": "^4.0.0-alpha.10",
+    "@awesome.me/buildawesome": "4.0.0-alpha.10",
     "@axe-core/puppeteer": "^4.13.0",
     "axe-core": "^4.13.0",
     "chrome-launcher": "^1.2.1",

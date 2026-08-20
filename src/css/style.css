@@ -184,7 +184,17 @@ pre code { font-size: inherit; }
 
 /* ------------------------------------------------------------------ tables */
 
-.table-scroll { overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
+/* Pulled out by one cell's padding each side, so the table's outer columns sit
+   flush with the surrounding text rather than indented by their own padding.
+   On the scroller rather than the table: a negative margin inside an
+   overflow-x container is clipped, not pulled out. */
+.table-scroll {
+	overflow-x: auto;
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+	background: var(--surface);
+	margin-inline: -0.7rem;
+}
 
 table.grid { width: 100%; border-collapse: collapse; font-size: 0.87rem; }
 table.grid th {

@@ -1,0 +1,7 @@
+# Every measurement shard appends to this file in the same cycle, so a rebase
+# sees two versions that both grew at the end — and, the first time around, two
+# that both *added* it. Union takes both sides' lines rather than raising a
+# conflict, which is correct here for the same reason it is usually wrong: the
+# file is append-only (lib/log.js appends one line per run and never rewrites),
+# every line stands alone, and the timestamps are what order it, not position.
+logs/runs.ndjson merge=union

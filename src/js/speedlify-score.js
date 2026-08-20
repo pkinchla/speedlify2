@@ -124,7 +124,7 @@ class SpeedlifyScore extends HTMLElement {
 :host {
 	display: inline-flex;
 	align-items: center;
-	gap: .4em;
+	gap: .3em;
 	position: relative;
 	font-family: inherit;
 	font-size: inherit;
@@ -133,25 +133,33 @@ class SpeedlifyScore extends HTMLElement {
 }
 :host([hidden]) { display: none; }
 
-.score {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	/* Sized for the widest value it ever holds: "100" is three bold tabular
-	   digits, roughly 1.8em, so 2.2em left barely a tenth of an em either side
-	   and read as cramped. Equal width and height, because a circle that grows
-	   to fit its text is an oval. */
-	width: 2.6em;
-	height: 2.6em;
-	border: 2px solid currentColor;
-	border-radius: 50%;
-	font-size: .75em;
-	font-weight: 700;
+/*
+ * The ring geometry lives in the viewBox (37 units across, 3 of stroke, text at
+ * 12), which is the build-time scoreRing shortcode's box exactly — so a score
+ * embedded on someone else's page and the same score on the leaderboard are the
+ * same picture, padding included. Only the outer size is in em units, so the
+ * whole thing still scales with whatever font size it is dropped into.
+ */
+.ring {
+	display: block;
+	flex: none;
+	overflow: visible;
+	width: 2.467em;
+	height: 2.467em;
+}
+.ring-track { stroke: rgb(136 136 136 / .35); }
+.ring-arc { stroke: currentColor; }
+.ring-text {
+	font-family: inherit;
+	font-size: 12px;
+	font-weight: 650;
 	font-variant-numeric: tabular-nums;
+	fill: currentColor;
 }
 /*
- * The placeholder. Same box as a real circle — that is what stops the swap from
- * moving anything — with the value and colour withheld until they are known.
+ * The placeholder: the track alone, at the size the finished ring occupies —
+ * that is what stops the swap from moving anything — with the arc, the value
+ * and the colour all withheld until they are known.
  */
 .skeleton {
 	color: #888;
@@ -176,7 +184,7 @@ class SpeedlifyScore extends HTMLElement {
 	all: unset;
 	display: inline-flex;
 	align-items: center;
-	gap: .4em;
+	gap: .3em;
 	cursor: help;
 }
 .trigger:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; border-radius: 4px; }
@@ -209,6 +217,30 @@ class SpeedlifyScore extends HTMLElement {
 .tip .stale { color: #ffa400; }
 .tip a { color: #7cc0ff; }
 `;
+
+	/**
+	 * The one description of a ring, in viewBox units, shared with the build-time
+	 * scoreRing shortcode in eleventy.config.js.
+	 *
+	 * 31 units of hole for 12 units of text: "100" is three bold tabular digits
+	 * that fill roughly 21 of them, which leaves a comfortable five either side.
+	 * A tighter ring is legible but reads as cramped, and these sit six in a row.
+	 */
+	static geometry = (() => {
+		const size = 37;
+		const stroke = 3;
+		const r = (size - stroke) / 2;
+		return { size, stroke, r, c: size / 2, circumference: 2 * Math.PI * r };
+	})();
+
+	/** Labels are ours, but they carry measured values — escape them anyway. */
+	static escape(value) {
+		return String(value ?? "")
+			.replace(/&/g, "&amp;")
+			.replace(/</g, "&lt;")
+			.replace(/>/g, "&gt;")
+			.replace(/"/g, "&quot;");
+	}
 
 	connectedCallback() {
 		if (this.shadowRoot) return;
@@ -247,9 +279,10 @@ class SpeedlifyScore extends HTMLElement {
 		// but a span and a button are not guaranteed the same box, and any
 		// difference here is the shift this method exists to prevent. Inert while
 		// loading: there is nothing to describe yet.
+		const placeholder = this.ring({ band: "skeleton", text: "", label: "", pct: null });
 		wrapper.innerHTML =
 			`<button class="trigger" type="button" tabindex="-1" aria-hidden="true">` +
-			'<span class="score skeleton"></span>'.repeat(6) +
+			placeholder.repeat(6) +
 			`</button>`;
 
 		this.setAttribute("aria-busy", "true");
@@ -290,8 +323,42 @@ class SpeedlifyScore extends HTMLElement {
 		return "poor";
 	}
 
+	/**
+	 * One ring, drawn exactly as the build-time `scoreRing` shortcode draws it:
+	 * a grey track, an arc dashed to the value, and the number in the middle.
+	 * Kept in step with eleventy.config.js by hand — the two run in different
+	 * places and there is nothing to share between them but the numbers.
+	 *
+	 * `pct` is what fills the arc, and it is not always the value: axe counts and
+	 * a Core Web Vitals verdict have no percentage, so they pass 1 and read as a
+	 * closed ring whose colour carries the answer. `null` leaves the track bare,
+	 * which is how "no data" looks in both renderers.
+	 */
+	ring({ band, text, label, pct }) {
+		const { size, stroke, r, c, circumference } = SpeedlifyScore.geometry;
+		const arc =
+			typeof pct === "number"
+				? `<circle class="ring-arc" cx="${c}" cy="${c}" r="${r}" fill="none" stroke-width="${stroke}"` +
+					` stroke-dasharray="${(circumference * Math.max(0, Math.min(1, pct))).toFixed(2)} ${circumference.toFixed(2)}"` +
+					` stroke-linecap="round" transform="rotate(-90 ${c} ${c})"/>`
+				: "";
+
+		return [
+			`<svg class="ring ${band}" viewBox="0 0 ${size} ${size}" role="img" aria-label="${SpeedlifyScore.escape(label)}">`,
+			`<circle class="ring-track" cx="${c}" cy="${c}" r="${r}" fill="none" stroke-width="${stroke}"/>`,
+			arc,
+			`<text class="ring-text" x="${c}" y="${c}" text-anchor="middle" dominant-baseline="central">${SpeedlifyScore.escape(text)}</text>`,
+			`</svg>`,
+		].join("");
+	}
+
 	scoreHtml(label, value) {
-		return `<span class="score ${this.scoreClass(value)}" title="${label}">${value ?? "–"}</span>`;
+		return this.ring({
+			band: this.scoreClass(value),
+			text: value ?? "–",
+			label: `${label}: ${value ?? "no data"}`,
+			pct: typeof value === "number" ? value / 100 : null,
+		});
 	}
 
 	/**
@@ -303,11 +370,14 @@ class SpeedlifyScore extends HTMLElement {
 	 */
 	axeHtml(value) {
 		if (typeof value !== "number") {
-			return `<span class="score none" title="Axe: did not run">–</span>`;
+			return this.ring({ band: "none", text: "–", label: "Axe: did not run", pct: null });
 		}
-		const band = value === 0 ? "good" : value <= 5 ? "average" : "poor";
-		const label = `Axe: ${value} violating node${value === 1 ? "" : "s"}`;
-		return `<span class="score ${band}" title="${label}">${value}</span>`;
+		return this.ring({
+			band: value === 0 ? "good" : value <= 5 ? "average" : "poor",
+			text: value,
+			label: `Axe: ${value} violating node${value === 1 ? "" : "s"}`,
+			pct: 1,
+		});
 	}
 
 	/**
@@ -319,11 +389,15 @@ class SpeedlifyScore extends HTMLElement {
 	 */
 	cwvHtml(cwv) {
 		if (!cwv || cwv.pass === null || cwv.pass === undefined) {
-			return `<span class="score none" title="Core Web Vitals: no data">–</span>`;
+			return this.ring({ band: "none", text: "–", label: "Core Web Vitals: no data", pct: null });
 		}
 		const source = cwv.source === "field" ? "real users" : "lab approximation";
-		const label = `Core Web Vitals: ${cwv.pass ? "pass" : "fail"} (${source})`;
-		return `<span class="score ${cwv.pass ? "good" : "poor"}" title="${label}">${cwv.pass ? "✓" : "✗"}</span>`;
+		return this.ring({
+			band: cwv.pass ? "good" : "poor",
+			text: cwv.pass ? "✓" : "✗",
+			label: `Core Web Vitals: ${cwv.pass ? "pass" : "fail"} (${source})`,
+			pct: 1,
+		});
 	}
 
 	bytes(n) {

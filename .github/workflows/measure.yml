@@ -74,12 +74,21 @@ jobs:
         # a content conflict — only a "branch moved" rejection, which is what the
         # retry loop below handles.
         #
-        # results/aliases.json is the one exception: a single shared file every
-        # shard rewrites. Two shards adding it in the same cycle is an add/add
-        # conflict that no amount of retrying resolves. It is also *derived* —
-        # learnAliases recomputes it from stored results across every configured
-        # site — so one shard owning it loses nothing: whatever the others would
-        # have learned is relearned from their committed results next cycle.
+        # Two shared files are the exceptions.
+        #
+        # results/aliases.json: a single file every shard rewrites. Two shards
+        # adding it in the same cycle is an add/add conflict that no amount of
+        # retrying resolves. It is also *derived* — learnAliases recomputes it
+        # from stored results across every configured site — so one shard owning
+        # it loses nothing: whatever the others would have learned is relearned
+        # from their committed results next cycle.
+        #
+        # logs/runs.ndjson: appended by every shard, so it cannot be owned the
+        # same way without losing three quarters of the log. .gitattributes
+        # marks it merge=union instead, which takes both sides' lines. The
+        # rebase --abort below is for anything union cannot settle: without it a
+        # conflicted rebase is left in progress and the four remaining attempts
+        # all fail on that rather than on the race they were meant to retry.
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -95,6 +104,7 @@ jobs:
 
           for attempt in 1 2 3 4 5; do
             git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && exit 0
+            git rebase --abort 2>/dev/null || true
             echo "push race on attempt $attempt, retrying"
             sleep $((RANDOM % 10 + 5))
           done
@@ -131,6 +141,7 @@ jobs:
           git commit -m "CrUX field history"
           for attempt in 1 2 3 4 5; do
             git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && exit 0
+            git rebase --abort 2>/dev/null || true
             sleep $((RANDOM % 10 + 5))
           done
           exit 1

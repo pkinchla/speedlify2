@@ -357,8 +357,14 @@ export default async function ($config) {
 	 * Speedlify draws these with a web component that inlines the whole result
 	 * as JSON per row. The same picture is a circle with a dash offset, so it
 	 * costs one SVG and no JavaScript.
+	 *
+	 * The geometry is shared with <speedlify-score> — see `static geometry` in
+	 * src/js/speedlify-score.js. 37 across with 3 of stroke leaves a 31-unit
+	 * hole for 12-unit text, which is the padding the component has always had;
+	 * the two draw the same ring, so a badge embedded elsewhere and the ring it
+	 * links back to here do not read as two different components.
 	 */
-	$config.addShortcode("scoreRing", function (value, label = "", size = 34) {
+	$config.addShortcode("scoreRing", function (value, label = "", size = 37) {
 		const band = typeof value !== "number" ? "none" : value >= 90 ? "good" : value >= 50 ? "average" : "poor";
 
 		const stroke = 3;
