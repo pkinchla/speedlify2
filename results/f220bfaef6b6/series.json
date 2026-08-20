@@ -1,0 +1,3 @@
+{"version":1,"url":"https://djlint.com/","updated":"2026-08-20T21:27:06.983Z","points":[
+{"t":1787261198255,"performance":95,"accessibility":94,"best-practices":100,"seo":100,"lcp":2910,"cls":0.007,"tbt":0,"fcp":1560,"si":1560,"ttfb":470,"total":402737,"requests":32,"bytes":24366,"mainThreadMs":9.7,"unusedJsBytes":0,"unusedCssBytes":14873,"mainThreadTotal":461.9,"longTasks":0,"elements":384,"failingCount":2,"failingNodes":2,"axeViolations":21,"axePasses":447,"bench":2324.5,"runs":3,"reqRuns":3,"ms":28726,"spread":12}
+]}

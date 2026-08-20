@@ -1,0 +1,3 @@
+{"version":1,"url":"https://danurbanowicz.com/","updated":"2026-08-20T21:27:27.447Z","points":[
+{"t":1787261200268,"to":"https://github.com/danurbanowicz","perm":0,"performance":60,"accessibility":97,"best-practices":100,"seo":100,"lcp":7779,"cls":0,"tbt":80,"fcp":6053,"si":6053,"ttfb":608,"total":1191269,"requests":93,"bytes":1192030,"mainThreadMs":118.9,"unusedJsBytes":311958,"unusedCssBytes":145906,"mainThreadTotal":2572.4,"longTasks":8,"elements":2484,"failingCount":2,"failingNodes":10,"axeViolations":0,"axePasses":6618,"bench":2359.5,"runs":3,"reqRuns":3,"ms":47178,"spread":7}
+]}

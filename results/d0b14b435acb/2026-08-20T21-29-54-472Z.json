@@ -1,0 +1,197 @@
+{
+  "url": "https://engaged.ca.gov/",
+  "name": "engaged.ca.gov",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787261394472,
+  "date": "2026-08-20T21:29:54.472Z",
+  "runId": "2026-08-20T21-26-30-820Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 27663,
+  "error": null,
+  "variance": {
+    "min": 81,
+    "max": 91,
+    "spread": 10,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://engaged.ca.gov/",
+    "finalUrl": "https://engaged.ca.gov/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 84,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 92,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1813,
+      "lcp": 3838,
+      "si": 1813,
+      "tbt": 218,
+      "tti": 6685,
+      "cls": 0.005,
+      "ttfb": 613,
+      "maxPotentialFid": 193,
+      "serverResponseTime": 13,
+      "networkRtt": 0.2,
+      "networkServerLatency": 32
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 14.3,
+      "elementRenderDelay": 125.5
+    },
+    "weight": {
+      "total": 1399358,
+      "requests": 39,
+      "mainDocument": 8337,
+      "byType": {
+        "total": {
+          "bytes": 1399358,
+          "requests": 38
+        },
+        "image": {
+          "bytes": 672634,
+          "requests": 23
+        },
+        "script": {
+          "bytes": 498302,
+          "requests": 6
+        },
+        "font": {
+          "bytes": 144965,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 73373,
+          "requests": 4
+        },
+        "document": {
+          "bytes": 8337,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 1747,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 522035,
+          "requests": 6
+        }
+      },
+      "scripts": 6,
+      "stylesheets": 4,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 522035,
+      "mainThreadMs": 115.8,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 464705,
+          "mainThreadMs": 115.8
+        },
+        {
+          "entity": "Google Fonts",
+          "bytes": 57330,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 988.1,
+      "byGroup": {
+        "scriptEvaluation": 407.4,
+        "other": 255.6,
+        "styleLayout": 159.4,
+        "scriptParseCompile": 103.8,
+        "parseHTML": 33,
+        "paintCompositeRender": 29
+      },
+      "bootupMs": 484.7,
+      "longTasks": 4,
+      "longestTaskMs": 193
+    },
+    "dom": {
+      "elements": 219,
+      "depth": 11,
+      "maxChildren": 11
+    },
+    "waste": {
+      "unusedJsBytes": 236702,
+      "unusedCssBytes": 42930,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 1827,
+      "renderBlockingCount": 5,
+      "poorlyCachedBytes": 866951,
+      "poorlyCachedCount": 29
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 27,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 26
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 3231,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T21:30:12.676Z",
+      "runtimeMs": 8287.3
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "amazons3",
+      "name": "Amazon S3",
+      "icon": "Amazon",
+      "source": "server"
+    },
+    "headers": {
+      "server": "AmazonS3",
+      "via": "1.1 64d5385c423c2207e3680beec4636de8.cloudfront.net (CloudFront)",
+      "x-amz-cf-id": "BfknYHl3FEZB6eWRjgAoJ30IyAqS3FFts2MFBc2hiLwbnrF8YXy56w=="
+    },
+    "violations": 0,
+    "passes": 452,
+    "incomplete": 7,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

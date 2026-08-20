@@ -1,0 +1,3 @@
+{"version":1,"url":"https://doropesch.it/","updated":"2026-08-20T21:29:01.284Z","points":[
+{"t":1787261307160,"performance":72,"accessibility":82,"best-practices":96,"seo":100,"lcp":13709,"cls":0,"tbt":56,"fcp":1210,"si":4345,"ttfb":610,"total":4798580,"requests":115,"bytes":1580342,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":28102,"mainThreadTotal":1391.1,"longTasks":7,"elements":1315,"failingCount":6,"failingNodes":33,"axeViolations":54,"axePasses":857,"bench":2320,"runs":3,"reqRuns":3,"ms":34124,"spread":16}
+]}
