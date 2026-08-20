@@ -1,0 +1,274 @@
+{
+  "url": "https://gametime.events/",
+  "name": "gametime.events",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787268381177,
+  "date": "2026-08-20T23:26:21.177Z",
+  "runId": "2026-08-20T23-24-40-450Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 73110,
+  "error": null,
+  "variance": {
+    "min": 41,
+    "max": 46,
+    "spread": 5,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://gametime.events/",
+    "finalUrl": "https://gametime.events/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 46,
+      "accessibility": 91,
+      "best-practices": 96,
+      "seo": 100,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 1725,
+      "lcp": 9795,
+      "si": 5503,
+      "tbt": 1190,
+      "tti": 15747,
+      "cls": 0.004,
+      "ttfb": 630,
+      "maxPotentialFid": 282,
+      "serverResponseTime": 28,
+      "networkRtt": 1.1,
+      "networkServerLatency": 92.7
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 29.3,
+      "resourceLoadDelay": 26.5,
+      "resourceLoadDuration": 137.5,
+      "elementRenderDelay": 250.5
+    },
+    "weight": {
+      "total": 21386569,
+      "requests": 106,
+      "mainDocument": 20217,
+      "byType": {
+        "total": {
+          "bytes": 21386569,
+          "requests": 106
+        },
+        "media": {
+          "bytes": 13154716,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 6307255,
+          "requests": 27
+        },
+        "script": {
+          "bytes": 1585001,
+          "requests": 43
+        },
+        "stylesheet": {
+          "bytes": 133066,
+          "requests": 4
+        },
+        "document": {
+          "bytes": 106385,
+          "requests": 3
+        },
+        "font": {
+          "bytes": 91092,
+          "requests": 4
+        },
+        "other": {
+          "bytes": 9054,
+          "requests": 24
+        },
+        "third-party": {
+          "bytes": 1869063,
+          "requests": 71
+        }
+      },
+      "scripts": 43,
+      "stylesheets": 4,
+      "fonts": 4
+    },
+    "thirdParty": {
+      "count": 7,
+      "bytes": 663497,
+      "mainThreadMs": 350.9,
+      "top": [
+        {
+          "entity": "Google CDN",
+          "bytes": 343973,
+          "mainThreadMs": 81.4
+        },
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 165448,
+          "mainThreadMs": 116.7
+        },
+        {
+          "entity": "FullStory",
+          "bytes": 83344,
+          "mainThreadMs": 74.6
+        },
+        {
+          "entity": "Unpkg",
+          "bytes": 55053,
+          "mainThreadMs": 0.6
+        },
+        {
+          "entity": "honeybadger.io",
+          "bytes": 11899,
+          "mainThreadMs": 74.7
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 6398.6,
+      "byGroup": {
+        "scriptEvaluation": 2691.5,
+        "other": 1845.7,
+        "paintCompositeRender": 955.2,
+        "scriptParseCompile": 360.4,
+        "styleLayout": 358.8,
+        "parseHTML": 109.2,
+        "garbageCollection": 77.8
+      },
+      "bootupMs": 2900.9,
+      "longTasks": 17,
+      "longestTaskMs": 517
+    },
+    "dom": {
+      "elements": 695,
+      "depth": 19,
+      "maxChildren": 17
+    },
+    "waste": {
+      "unusedJsBytes": 287309,
+      "unusedCssBytes": 30839,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 856,
+      "unminifiedJsBytes": 17505,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 450,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 95653.45000000001,
+      "poorlyCachedCount": 5
+    },
+    "accessibility": {
+      "failingCount": 3,
+      "applicableCount": 29,
+      "failingNodes": 8,
+      "failing": [
+        {
+          "id": "button-name",
+          "title": "Buttons do not have an accessible name",
+          "nodes": 6
+        },
+        {
+          "id": "list",
+          "title": "Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
+          "nodes": 1
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 57
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2367,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T23:26:38.948Z",
+      "runtimeMs": 13677.3
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": null,
+      "source": "meta",
+      "raw": "eleventy"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0GR00DXFATD6PY3DR4C4NQQ"
+    },
+    "violations": 12,
+    "passes": 1071,
+    "incomplete": 34,
+    "violationRules": 6,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "button-name",
+        "impact": "critical",
+        "nodes": 6,
+        "help": "Buttons must have discernible text"
+      },
+      {
+        "id": "list",
+        "impact": "serious",
+        "nodes": 2,
+        "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements"
+      },
+      {
+        "id": "aria-allowed-attr",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Elements must only use supported ARIA attributes"
+      },
+      {
+        "id": "aria-prohibited-attr",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Elements must only use permitted ARIA attributes"
+      },
+      {
+        "id": "empty-heading",
+        "impact": "minor",
+        "nodes": 1,
+        "help": "Headings should not be empty"
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "All page content should be contained by landmarks"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

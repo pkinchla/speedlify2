@@ -1,0 +1,210 @@
+{
+  "url": "https://httpster.io/",
+  "name": "httpster.io",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787268729443,
+  "date": "2026-08-20T23:32:09.443Z",
+  "runId": "2026-08-20T23-24-40-450Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 32483,
+  "error": null,
+  "variance": {
+    "min": 100,
+    "max": 100,
+    "spread": 0,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://httpster.io/",
+    "finalUrl": "https://httpster.io/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 813,
+      "lcp": 1083,
+      "si": 813,
+      "tbt": 0,
+      "tti": 1083,
+      "cls": 0.012,
+      "ttfb": 633,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 36,
+      "networkRtt": 48.9,
+      "networkServerLatency": 800.1
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 38.2,
+      "elementRenderDelay": 138.8
+    },
+    "weight": {
+      "total": 425321,
+      "requests": 16,
+      "mainDocument": 3755,
+      "byType": {
+        "total": {
+          "bytes": 422280,
+          "requests": 15
+        },
+        "font": {
+          "bytes": 230197,
+          "requests": 2
+        },
+        "image": {
+          "bytes": 99774,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 78801,
+          "requests": 6
+        },
+        "stylesheet": {
+          "bytes": 7598,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 3755,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 2155,
+          "requests": 3
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 722,
+          "requests": 3
+        }
+      },
+      "scripts": 3,
+      "stylesheets": 2,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 770,
+      "mainThreadMs": 0,
+      "top": [
+        {
+          "entity": "vercel.app",
+          "bytes": 722,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "neatstats.net",
+          "bytes": 48,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 415.4,
+      "byGroup": {
+        "styleLayout": 163.6,
+        "other": 159.6,
+        "paintCompositeRender": 57,
+        "scriptEvaluation": 24.4,
+        "parseHTML": 9.2,
+        "scriptParseCompile": 1.7
+      },
+      "bootupMs": 8,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 107,
+      "depth": 8,
+      "maxChildren": 7
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 19,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 15
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2334.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T23:32:32.840Z",
+      "runtimeMs": 7987.1
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "2.0.1",
+      "source": "meta",
+      "raw": "Eleventy v2.0.1"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0GRA0V8BBDJ90VB27D47PX1"
+    },
+    "violations": 1,
+    "passes": 231,
+    "incomplete": 9,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Page should contain a level-one heading"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

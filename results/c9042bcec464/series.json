@@ -1,0 +1,3 @@
+{"version":1,"url":"https://hexo.io/","updated":"2026-08-20T23:31:36.660Z","points":[
+{"t":1787268672182,"performance":97,"accessibility":62,"best-practices":100,"seo":92,"lcp":2305,"cls":0,"tbt":64,"fcp":1855,"si":1855,"ttfb":633,"total":861908,"requests":25,"bytes":540033,"mainThreadMs":62,"unusedJsBytes":101231,"unusedCssBytes":21887,"mainThreadTotal":653.3,"longTasks":2,"elements":173,"failingCount":6,"failingNodes":10,"axeViolations":19,"axePasses":329,"field-lcp":1407,"field-cls":0,"field-fcp":1407,"field-ttfb":985,"bench":2355,"runs":3,"reqRuns":3,"ms":24478,"spread":28}
+]}

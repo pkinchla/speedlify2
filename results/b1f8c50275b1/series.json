@@ -1,0 +1,3 @@
+{"version":1,"url":"https://gurumedia.com/","updated":"2026-08-20T23:29:48.747Z","points":[
+{"t":1787268558405,"performance":67,"accessibility":92,"best-practices":58,"seo":100,"lcp":5687,"cls":0.001,"tbt":486,"fcp":944,"si":1703,"ttfb":631,"total":796884,"requests":35,"bytes":405024,"mainThreadMs":156.7,"unusedJsBytes":193067,"unusedCssBytes":0,"mainThreadTotal":3486.3,"longTasks":6,"elements":640,"failingCount":2,"failingNodes":6,"axeViolations":79,"axePasses":605,"field-lcp":2081,"field-inp":294,"field-cls":0,"field-fcp":1445,"field-ttfb":780,"bench":2328,"runs":3,"reqRuns":3,"ms":30342,"spread":12}
+]}

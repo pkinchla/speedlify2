@@ -1,0 +1,214 @@
+{
+  "url": "https://gaurav-singh.info/",
+  "name": "gaurav-singh.info",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787268477292,
+  "date": "2026-08-20T23:27:57.292Z",
+  "runId": "2026-08-20T23-24-40-450Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 21885,
+  "error": null,
+  "variance": {
+    "min": 95,
+    "max": 95,
+    "spread": 0,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://gaurav-singh.info/",
+    "finalUrl": "https://gaurav-singh.info/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 95,
+      "accessibility": 92,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 778,
+      "lcp": 2865,
+      "si": 778,
+      "tbt": 58,
+      "tti": 3163,
+      "cls": 0,
+      "ttfb": 615,
+      "maxPotentialFid": 115,
+      "serverResponseTime": 15,
+      "networkRtt": 0,
+      "networkServerLatency": 36.5
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 16.3,
+      "resourceLoadDelay": 10.3,
+      "resourceLoadDuration": 21.3,
+      "elementRenderDelay": 37.8
+    },
+    "weight": {
+      "total": 590003,
+      "requests": 7,
+      "mainDocument": 2080,
+      "byType": {
+        "total": {
+          "bytes": 590003,
+          "requests": 7
+        },
+        "image": {
+          "bytes": 407100,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 171547,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 9228,
+          "requests": 3
+        },
+        "document": {
+          "bytes": 2080,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 48,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 171595,
+          "requests": 2
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 3,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 171595,
+      "mainThreadMs": 55.3,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 171547,
+          "mainThreadMs": 55.3
+        },
+        {
+          "entity": "Google Analytics",
+          "bytes": 48,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 349.9,
+      "byGroup": {
+        "scriptEvaluation": 189.2,
+        "other": 85.9,
+        "scriptParseCompile": 44.7,
+        "styleLayout": 18.7,
+        "parseHTML": 8.8,
+        "paintCompositeRender": 2.6
+      },
+      "bootupMs": 227.7,
+      "longTasks": 2,
+      "longestTaskMs": 115
+    },
+    "dom": {
+      "elements": 36,
+      "depth": 6,
+      "maxChildren": 7
+    },
+    "waste": {
+      "unusedJsBytes": 68468,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 3,
+      "poorlyCachedBytes": 381634.00000000006,
+      "poorlyCachedCount": 4
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 13,
+      "failingNodes": 8,
+      "failing": [
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "nodes": 8
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 6
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2306.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T23:28:12.007Z",
+      "runtimeMs": 5953.8
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "github",
+      "name": "GitHub Pages",
+      "icon": "Github",
+      "source": "x-github-request-id"
+    },
+    "headers": {
+      "server": "GitHub.com",
+      "via": "1.1 varnish",
+      "x-fastly-request-id": "65b7f365ff39c1ee4556cef829dd6da7b2a79d30",
+      "x-github-request-id": "0B3A:35B0F5:1DC574:224988:6A878D7E",
+      "x-served-by": "cache-chi-kmdw8640046-CHI"
+    },
+    "violations": 8,
+    "passes": 97,
+    "incomplete": 0,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "link-in-text-block",
+        "impact": "serious",
+        "nodes": 8,
+        "help": "Links must be distinguishable without relying on color"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

@@ -1,0 +1,3 @@
+{"version":1,"url":"https://huphtur.nl/","updated":"2026-08-20T23:33:09.504Z","points":[
+{"t":1787268764927,"performance":100,"accessibility":100,"best-practices":100,"seo":100,"lcp":1752,"cls":0,"tbt":0,"fcp":1077,"si":1077,"ttfb":538,"total":362925,"requests":16,"bytes":205371,"mainThreadMs":2.1,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":324.3,"longTasks":0,"elements":200,"failingCount":0,"failingNodes":0,"axeViolations":1,"axePasses":393,"bench":2299,"runs":3,"reqRuns":3,"ms":24577,"spread":5}
+]}
