@@ -1,0 +1,228 @@
+{
+  "url": "https://fershad.com/",
+  "name": "fershad.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787261594466,
+  "date": "2026-08-20T21:33:14.466Z",
+  "runId": "2026-08-20T21-26-30-820Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 26169,
+  "error": null,
+  "variance": {
+    "min": 90,
+    "max": 96,
+    "spread": 6,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://fershad.com/",
+    "finalUrl": "https://fershad.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 94,
+      "accessibility": 91,
+      "best-practices": 100,
+      "seo": 92,
+      "agentic-browsing": 30
+    },
+    "timings": {
+      "fcp": 2099,
+      "lcp": 2126,
+      "si": 3190,
+      "tbt": 0,
+      "tti": 2126,
+      "cls": 0.101,
+      "ttfb": 1263,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 1186,
+      "networkRtt": 29.7,
+      "networkServerLatency": 133.7
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 1262.9,
+      "resourceLoadDelay": 10.2,
+      "resourceLoadDuration": 218.4,
+      "elementRenderDelay": 172.2
+    },
+    "weight": {
+      "total": 1685236,
+      "requests": 16,
+      "mainDocument": 6782,
+      "byType": {
+        "total": {
+          "bytes": 1685236,
+          "requests": 16
+        },
+        "image": {
+          "bytes": 1619430,
+          "requests": 3
+        },
+        "script": {
+          "bytes": 22758,
+          "requests": 4
+        },
+        "other": {
+          "bytes": 17169,
+          "requests": 3
+        },
+        "font": {
+          "bytes": 10793,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 8304,
+          "requests": 4
+        },
+        "document": {
+          "bytes": 6782,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 22867,
+          "requests": 5
+        }
+      },
+      "scripts": 4,
+      "stylesheets": 4,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 22867,
+      "mainThreadMs": 1.5,
+      "top": [
+        {
+          "entity": "ESM>CDN",
+          "bytes": 19290,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Fathom Analytics",
+          "bytes": 3577,
+          "mainThreadMs": 1.5
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 896.9,
+      "byGroup": {
+        "other": 561.4,
+        "styleLayout": 192.8,
+        "paintCompositeRender": 69.6,
+        "scriptEvaluation": 55.7,
+        "parseHTML": 12.1,
+        "scriptParseCompile": 5.3
+      },
+      "bootupMs": 29,
+      "longTasks": 3,
+      "longestTaskMs": 131
+    },
+    "dom": {
+      "elements": 198,
+      "depth": 13,
+      "maxChildren": 12
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 2244,
+      "renderBlockingCount": 4,
+      "poorlyCachedBytes": 1628366.75,
+      "poorlyCachedCount": 8
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 25,
+      "failingNodes": 8,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 7
+        },
+        {
+          "id": "button-name",
+          "title": "Buttons do not have an accessible name",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 33
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 3270.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T21:33:15.704Z",
+      "runtimeMs": 8925.9
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e48451ce9fe1b6-ORD",
+      "server": "cloudflare"
+    },
+    "violations": 6,
+    "passes": 456,
+    "incomplete": 5,
+    "violationRules": 3,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 3,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 2,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "button-name",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Buttons must have discernible text"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

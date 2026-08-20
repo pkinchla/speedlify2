@@ -1,0 +1,265 @@
+{
+  "url": "https://eu-testbook.com/",
+  "name": "eu-testbook.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787261544055,
+  "date": "2026-08-20T21:32:24.055Z",
+  "runId": "2026-08-20T21-26-30-820Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 24093,
+  "error": null,
+  "variance": {
+    "min": 71,
+    "max": 76,
+    "spread": 5,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://eu-testbook.com/",
+    "finalUrl": "https://eu-testbook.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 72,
+      "accessibility": 89,
+      "best-practices": 100,
+      "seo": 92,
+      "agentic-browsing": 2
+    },
+    "timings": {
+      "fcp": 2065,
+      "lcp": 2215,
+      "si": 2065,
+      "tbt": 0,
+      "tti": 2215,
+      "cls": 0.937,
+      "ttfb": 654,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 51,
+      "networkRtt": 0.2,
+      "networkServerLatency": 59.2
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 52.6,
+      "elementRenderDelay": 169.8
+    },
+    "weight": {
+      "total": 609076,
+      "requests": 40,
+      "mainDocument": 4093,
+      "byType": {
+        "total": {
+          "bytes": 609076,
+          "requests": 40
+        },
+        "image": {
+          "bytes": 495564,
+          "requests": 18
+        },
+        "script": {
+          "bytes": 57652,
+          "requests": 10
+        },
+        "font": {
+          "bytes": 39283,
+          "requests": 5
+        },
+        "stylesheet": {
+          "bytes": 11152,
+          "requests": 5
+        },
+        "document": {
+          "bytes": 4093,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 1332,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 101367,
+          "requests": 14
+        }
+      },
+      "scripts": 10,
+      "stylesheets": 5,
+      "fonts": 5
+    },
+    "thirdParty": {
+      "count": 4,
+      "bytes": 101367,
+      "mainThreadMs": 16.5,
+      "top": [
+        {
+          "entity": "Cloudflare CDN",
+          "bytes": 42795,
+          "mainThreadMs": 14
+        },
+        {
+          "entity": "Google Fonts",
+          "bytes": 40367,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "parsleyjs.org",
+          "bytes": 12344,
+          "mainThreadMs": 2.2
+        },
+        {
+          "entity": "Unpkg",
+          "bytes": 5861,
+          "mainThreadMs": 0.3
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 426,
+      "byGroup": {
+        "other": 202.2,
+        "styleLayout": 102.1,
+        "scriptEvaluation": 63.9,
+        "paintCompositeRender": 27.8,
+        "parseHTML": 15.4,
+        "scriptParseCompile": 14.5
+      },
+      "bootupMs": 59.3,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 195,
+      "depth": 13,
+      "maxChildren": 6
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 10052,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 8404,
+      "renderBlockingCount": 15,
+      "poorlyCachedBytes": 11315.333333333332,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 3,
+      "applicableCount": 21,
+      "failingNodes": 12,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 7
+        },
+        {
+          "id": "aria-hidden-focus",
+          "title": "`[aria-hidden=\"true\"]` elements contain focusable descendents",
+          "nodes": 4
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 4
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 3211,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T21:32:33.220Z",
+      "runtimeMs": 6576.8
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0GHEFDJ32F85AW07JHME5JH"
+    },
+    "violations": 21,
+    "passes": 301,
+    "incomplete": 5,
+    "violationRules": 7,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 8,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 5,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "aria-hidden-focus",
+        "impact": "serious",
+        "nodes": 4,
+        "help": "ARIA hidden element must not be focusable or contain focusable elements"
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Heading levels should only increase by one"
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should have one main landmark"
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      },
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Page should contain a level-one heading"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
