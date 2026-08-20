@@ -1,0 +1,276 @@
+{
+  "url": "https://jeremenichelli.io/",
+  "name": "jeremenichelli.io",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787268782647,
+  "date": "2026-08-20T23:33:02.647Z",
+  "runId": "2026-08-20T23-24-41-499Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 62106,
+  "error": null,
+  "variance": {
+    "min": 48,
+    "max": 62,
+    "spread": 14,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://jeremenichelli.io/",
+    "finalUrl": "https://jeremenichelli.io/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 61,
+      "accessibility": 79,
+      "best-practices": 96,
+      "seo": 100,
+      "agentic-browsing": 33
+    },
+    "timings": {
+      "fcp": 3067,
+      "lcp": 44378,
+      "si": 3067,
+      "tbt": 348,
+      "tti": 46673,
+      "cls": 0.001,
+      "ttfb": 535,
+      "maxPotentialFid": 234,
+      "serverResponseTime": 533,
+      "networkRtt": 1.1,
+      "networkServerLatency": 81.1
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 534.8,
+      "resourceLoadDelay": 169.2,
+      "resourceLoadDuration": 393.7,
+      "elementRenderDelay": 150.1
+    },
+    "weight": {
+      "total": 12809265,
+      "requests": 141,
+      "mainDocument": 52075,
+      "byType": {
+        "total": {
+          "bytes": 12807633,
+          "requests": 140
+        },
+        "image": {
+          "bytes": 12142975,
+          "requests": 100
+        },
+        "script": {
+          "bytes": 380934,
+          "requests": 20
+        },
+        "other": {
+          "bytes": 101793,
+          "requests": 8
+        },
+        "stylesheet": {
+          "bytes": 77934,
+          "requests": 9
+        },
+        "document": {
+          "bytes": 52075,
+          "requests": 1
+        },
+        "font": {
+          "bytes": 51922,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 3018494,
+          "requests": 57
+        }
+      },
+      "scripts": 20,
+      "stylesheets": 9,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 6,
+      "bytes": 3018494,
+      "mainThreadMs": 93.8,
+      "top": [
+        {
+          "entity": "cloudfont.xyz",
+          "bytes": 2160425,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "cloudfiledinary.com",
+          "bytes": 495537,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Tawk.to",
+          "bytes": 345156,
+          "mainThreadMs": 89.5
+        },
+        {
+          "entity": "Cloudflare",
+          "bytes": 11451,
+          "mainThreadMs": 4.3
+        },
+        {
+          "entity": "JSDelivr CDN",
+          "bytes": 4846,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 6333.2,
+      "byGroup": {
+        "other": 2791.5,
+        "paintCompositeRender": 1234.7,
+        "scriptEvaluation": 1147.4,
+        "styleLayout": 926.4,
+        "scriptParseCompile": 125.5,
+        "parseHTML": 107.8
+      },
+      "bootupMs": 1188.9,
+      "longTasks": 10,
+      "longestTaskMs": 234
+    },
+    "dom": {
+      "elements": 1891,
+      "depth": 14,
+      "maxChildren": 53
+    },
+    "waste": {
+      "unusedJsBytes": 129048,
+      "unusedCssBytes": 51482,
+      "legacyJsBytes": 23740,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 4555,
+      "renderBlockingCount": 6,
+      "poorlyCachedBytes": 55346.94999999999,
+      "poorlyCachedCount": 10
+    },
+    "accessibility": {
+      "failingCount": 5,
+      "applicableCount": 28,
+      "failingNodes": 26,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 20
+        },
+        {
+          "id": "button-name",
+          "title": "Buttons do not have an accessible name",
+          "nodes": 3
+        },
+        {
+          "id": "aria-dialog-name",
+          "title": "Elements with `role=\"dialog\"` or `role=\"alertdialog\"` do not have accessible names.",
+          "nodes": 1
+        },
+        {
+          "id": "frame-title",
+          "title": "`<frame>` or `<iframe>` elements do not have a title",
+          "nodes": 1
+        },
+        {
+          "id": "meta-viewport",
+          "title": "`[user-scalable=\"no\"]` is used in the `<meta name=\"viewport\">` element or the `[maximum-scale]` attribute is less than 5.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 34
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2470,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T23:33:25.452Z",
+      "runtimeMs": 18117.3
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e534d45b1af4a2-ORD",
+      "server": "cloudflare"
+    },
+    "violations": 132,
+    "passes": 1244,
+    "incomplete": 30,
+    "violationRules": 6,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 106,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 20,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "button-name",
+        "impact": "critical",
+        "nodes": 3,
+        "help": "Buttons must have discernible text"
+      },
+      {
+        "id": "aria-dialog-name",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "ARIA dialog and alertdialog nodes should have an accessible name"
+      },
+      {
+        "id": "marquee",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "<marquee> elements are deprecated and must not be used"
+      },
+      {
+        "id": "meta-viewport",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Zooming and scaling must not be disabled"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

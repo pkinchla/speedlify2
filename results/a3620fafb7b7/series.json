@@ -1,0 +1,3 @@
+{"version":1,"url":"https://heyflow.com/","updated":"2026-08-20T23:26:23.962Z","points":[
+{"t":1787268318770,"performance":42,"accessibility":92,"best-practices":58,"seo":100,"lcp":20629,"cls":0.03,"tbt":1570,"fcp":1098,"si":6852,"ttfb":638,"total":12407119,"requests":201,"bytes":6928994,"mainThreadMs":565,"unusedJsBytes":573574,"unusedCssBytes":18504,"mainThreadTotal":12120,"longTasks":20,"elements":1005,"failingCount":3,"failingNodes":10,"axeViolations":1,"axePasses":73,"field-lcp":2178,"field-inp":514,"field-cls":0.02,"field-fcp":1741,"field-ttfb":810,"bench":2482,"runs":3,"reqRuns":3,"ms":65188,"spread":7}
+]}

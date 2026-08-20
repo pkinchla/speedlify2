@@ -1,0 +1,193 @@
+{
+  "url": "https://jfroehlich.net/",
+  "name": "jfroehlich.net",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787268872241,
+  "date": "2026-08-20T23:34:32.241Z",
+  "runId": "2026-08-20T23-24-41-499Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 26246,
+  "error": null,
+  "variance": {
+    "min": 100,
+    "max": 100,
+    "spread": 0,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://jfroehlich.net/",
+    "finalUrl": "https://jfroehlich.net/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1115,
+      "lcp": 1231,
+      "si": 2625,
+      "tbt": 0,
+      "tti": 1231,
+      "cls": 0,
+      "ttfb": 781,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 388,
+      "networkRtt": 0,
+      "networkServerLatency": 180.8
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 389.9,
+      "elementRenderDelay": 1160.6
+    },
+    "weight": {
+      "total": 90094,
+      "requests": 10,
+      "mainDocument": 20085,
+      "byType": {
+        "total": {
+          "bytes": 90094,
+          "requests": 10
+        },
+        "font": {
+          "bytes": 37716,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 20085,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 17016,
+          "requests": 2
+        },
+        "other": {
+          "bytes": 8073,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 6608,
+          "requests": 2
+        },
+        "script": {
+          "bytes": 596,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 0,
+          "requests": 0
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 2,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 0,
+      "bytes": 0,
+      "mainThreadMs": 0,
+      "top": []
+    },
+    "mainThread": {
+      "total": 171.3,
+      "byGroup": {
+        "other": 92.7,
+        "styleLayout": 44.2,
+        "parseHTML": 11.7,
+        "scriptEvaluation": 11.1,
+        "paintCompositeRender": 10,
+        "scriptParseCompile": 1.5
+      },
+      "bootupMs": 10.2,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 149,
+      "depth": 8,
+      "maxChildren": 6
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 23,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": null,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 20
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2494,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T23:34:49.485Z",
+      "runtimeMs": 7641.1
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": null,
+      "source": "meta",
+      "raw": "Eleventy"
+    },
+    "host": {
+      "id": "self-hosted",
+      "name": "Self-hosted",
+      "icon": null,
+      "detail": "nginx",
+      "detailIcon": "Nginx",
+      "source": "server"
+    },
+    "headers": {
+      "server": "nginx"
+    },
+    "violations": 0,
+    "passes": 319,
+    "incomplete": 17,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
