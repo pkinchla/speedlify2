@@ -1,0 +1,3 @@
+{"version":1,"url":"https://helenchong.dev/","updated":"2026-08-20T23:37:16.028Z","points":[
+{"t":1787269008203,"performance":97,"accessibility":100,"best-practices":100,"seo":100,"lcp":2170,"cls":0,"tbt":0,"fcp":1045,"si":3728,"ttfb":745,"total":157649,"requests":26,"bytes":51340,"mainThreadMs":1.1,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":270,"longTasks":0,"elements":267,"failingCount":1,"failingNodes":1,"axeViolations":0,"axePasses":600,"bench":2320.5,"runs":3,"reqRuns":3,"ms":27824,"spread":9}
+]}

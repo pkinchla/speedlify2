@@ -1,0 +1,206 @@
+{
+  "url": "https://gemma.ee/",
+  "name": "gemma.ee",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787268764920,
+  "date": "2026-08-20T23:32:44.920Z",
+  "runId": "2026-08-20T23-24-39-006Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 24307,
+  "error": null,
+  "variance": {
+    "min": 87,
+    "max": 94,
+    "spread": 7,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://gemma.ee/",
+    "finalUrl": "https://gemma.ee/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 93,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1615,
+      "lcp": 3127,
+      "si": 1615,
+      "tbt": 0,
+      "tti": 3127,
+      "cls": 0,
+      "ttfb": 686,
+      "maxPotentialFid": 41,
+      "serverResponseTime": 73,
+      "networkRtt": 6,
+      "networkServerLatency": 85.6
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 112.1,
+      "resourceLoadDelay": 10.7,
+      "resourceLoadDuration": 242.5,
+      "elementRenderDelay": 12.2
+    },
+    "weight": {
+      "total": 1171119,
+      "requests": 23,
+      "mainDocument": 11232,
+      "byType": {
+        "total": {
+          "bytes": 1167225,
+          "requests": 22
+        },
+        "image": {
+          "bytes": 1027428,
+          "requests": 12
+        },
+        "font": {
+          "bytes": 94622,
+          "requests": 2
+        },
+        "script": {
+          "bytes": 28286,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 11232,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 4369,
+          "requests": 4
+        },
+        "stylesheet": {
+          "bytes": 1288,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 11577,
+          "requests": 1
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 1,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 11577,
+      "mainThreadMs": 3.8,
+      "top": [
+        {
+          "entity": "Cloudflare",
+          "bytes": 11577,
+          "mainThreadMs": 3.8
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 899.8,
+      "byGroup": {
+        "other": 468.4,
+        "styleLayout": 208.3,
+        "paintCompositeRender": 109.5,
+        "scriptEvaluation": 90.5,
+        "parseHTML": 16.1,
+        "scriptParseCompile": 7
+      },
+      "bootupMs": 78.7,
+      "longTasks": 2,
+      "longestTaskMs": 76
+    },
+    "dom": {
+      "elements": 289,
+      "depth": 9,
+      "maxChildren": 32
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 4630.8,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 26,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 29
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2374.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T23:32:46.221Z",
+      "runtimeMs": 7729.4
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "3.1.2",
+      "source": "meta",
+      "raw": "Eleventy v3.1.2"
+    },
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e533853be473f7-IAD",
+      "server": "cloudflare"
+    },
+    "violations": 0,
+    "passes": 500,
+    "incomplete": 2,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

@@ -1,0 +1,212 @@
+{
+  "url": "https://helenchong.dev/",
+  "name": "helenchong.dev",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787269008203,
+  "date": "2026-08-20T23:36:48.203Z",
+  "runId": "2026-08-20T23-24-39-006Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 27824,
+  "error": null,
+  "variance": {
+    "min": 91,
+    "max": 100,
+    "spread": 9,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://helenchong.dev/",
+    "finalUrl": "https://helenchong.dev/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 97,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1045,
+      "lcp": 2170,
+      "si": 3728,
+      "tbt": 0,
+      "tti": 2192,
+      "cls": 0,
+      "ttfb": 745,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 100,
+      "networkRtt": 0.2,
+      "networkServerLatency": 144.6
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 101.6,
+      "resourceLoadDelay": 10.3,
+      "resourceLoadDuration": 180.6,
+      "elementRenderDelay": 2068.9
+    },
+    "weight": {
+      "total": 157649,
+      "requests": 26,
+      "mainDocument": 5689,
+      "byType": {
+        "total": {
+          "bytes": 156839,
+          "requests": 24
+        },
+        "font": {
+          "bytes": 80584,
+          "requests": 4
+        },
+        "image": {
+          "bytes": 57040,
+          "requests": 5
+        },
+        "stylesheet": {
+          "bytes": 11804,
+          "requests": 12
+        },
+        "document": {
+          "bytes": 5689,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 1722,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "other": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 51340,
+          "requests": 4
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 12,
+      "fonts": 4
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 51340,
+      "mainThreadMs": 1.1,
+      "top": [
+        {
+          "entity": "Cloudinary",
+          "bytes": 50240,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Unpkg",
+          "bytes": 1100,
+          "mainThreadMs": 1.1
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 270,
+      "byGroup": {
+        "other": 130.5,
+        "styleLayout": 77.3,
+        "paintCompositeRender": 30.3,
+        "scriptEvaluation": 15.8,
+        "parseHTML": 14.7,
+        "scriptParseCompile": 1.3
+      },
+      "bootupMs": 9.9,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 267,
+      "depth": 10,
+      "maxChildren": 9
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 150,
+      "renderBlockingCount": 12,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 24,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 21
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2320.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T23:36:58.915Z",
+      "runtimeMs": 8854.4
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "3.1.6",
+      "source": "meta",
+      "raw": "Eleventy v3.1.6"
+    },
+    "host": {
+      "id": "self-hosted",
+      "name": "Self-hosted",
+      "icon": null,
+      "detail": "Caddy",
+      "detailIcon": "Caddy",
+      "source": "server"
+    },
+    "headers": {
+      "server": "Caddy"
+    },
+    "violations": 0,
+    "passes": 600,
+    "incomplete": 0,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

@@ -1,0 +1,3 @@
+{"version":1,"url":"https://gemma.ee/","updated":"2026-08-20T23:33:09.228Z","points":[
+{"t":1787268764920,"performance":93,"accessibility":100,"best-practices":100,"seo":100,"lcp":3127,"cls":0,"tbt":0,"fcp":1615,"si":1615,"ttfb":686,"total":1171119,"requests":23,"bytes":11577,"mainThreadMs":3.8,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":899.8,"longTasks":2,"elements":289,"failingCount":1,"failingNodes":1,"axeViolations":0,"axePasses":500,"bench":2374.5,"runs":3,"reqRuns":3,"ms":24307,"spread":7}
+]}

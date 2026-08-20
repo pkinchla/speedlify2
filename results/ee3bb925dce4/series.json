@@ -1,0 +1,3 @@
+{"version":1,"url":"https://gridsome.org/","updated":"2026-08-20T23:36:00.542Z","points":[
+{"t":1787268930801,"performance":75,"accessibility":97,"best-practices":100,"seo":91,"lcp":5565,"cls":0.061,"tbt":199,"fcp":1832,"si":1832,"ttfb":614,"total":1244464,"requests":120,"bytes":180787,"mainThreadMs":47.1,"unusedJsBytes":173501,"unusedCssBytes":0,"mainThreadTotal":2188.7,"longTasks":7,"elements":512,"failingCount":2,"failingNodes":2,"axeViolations":37,"axePasses":760,"bench":2335,"runs":3,"reqRuns":3,"ms":29741,"spread":23}
+]}
