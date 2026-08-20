@@ -1,0 +1,146 @@
+---
+layout: base.njk
+pagination:
+  data: sites.groups
+  size: 1
+  alias: group
+permalink: "/group/{{ group.id }}/"
+eleventyComputed:
+  title: "{{ group.name }}"
+---
+
+<header class="detail-head">
+	<h2 class="page-hed">{{ group.name }}</h2>
+	{% if group.description %}<p class="lede">{{ group.description }}</p>{% endif %}
+	<p class="muted">{{ group.measured }} of {{ group.entries.length | countOf("site") }} measured</p>
+</header>
+
+{% if not group.entries.length %}
+<div class="empty"><p>No sites in this group.</p></div>
+{% else %}
+
+{#
+	Computed before the section so the section itself can be skipped. An empty
+	"Biggest movers" heading followed by an apology is worse than no heading:
+	most groups have nothing significant to report most of the time, and a
+	permanent empty panel trains you to scroll past it.
+#}
+{% set movers = [] %}
+{% for entry in group.entries %}
+	{% if entry.trends.performance and entry.trends.performance.significant %}
+		{% set movers = (movers.push(entry), movers) %}
+	{% endif %}
+{% endfor %}
+
+{#
+	Skipped entirely for a large category. "Biggest" implies a shortlist, and in
+	a group of thousands the significance test alone leaves far too many to be
+	one — the panel stops being a summary and becomes a second, worse table.
+#}
+{% if movers.length and group.entries.length <= 200 %}
+<section class="panel">
+	<h2>Biggest movers</h2>
+	<p class="muted small">
+		Sites whose performance score moved more than this group's normal
+		run-to-run noise. Everything else is jitter and is deliberately hidden.
+	</p>
+	<ul class="mover-cards">
+		{% for entry in movers %}
+		{% set t = entry.trends.performance %}
+		<li class="mover-card {{ t.vsPrevious | deltaClass }}">
+			<a class="site-link" href="/site/{{ entry.slug }}/">
+				{% set avatar = entry.url | avatar(meta.avatarService) %}
+				{% if avatar %}<img class="favicon" src="{{ avatar }}" width="32" height="32" alt="" loading="lazy" decoding="async">{% endif %}
+				<span>{{ entry.displayUrl }}</span>
+			</a>
+			<span class="mover-delta">{{ t.vsPrevious | deltaArrow }} {{ t.vsPrevious | deltaText }}</span>
+			<span class="mover-scores">{{ t.previous }} &rarr; {{ t.current }}</span>
+		</li>
+		{% endfor %}
+	</ul>
+</section>
+{% endif %}
+
+<section class="panel">
+	<h2>Leaderboard</h2>
+	<p class="muted small">
+		Ranked by the sum of all four Lighthouse categories, then fewest failing Core Web
+		Vitals from real users, then fewest axe violations, then Speed Index per KB — so a fast heavy
+		site outranks a fast empty one.
+	</p>
+	<div class="table-scroll">
+	<table class="grid">
+		<thead>
+			<tr>
+				<th class="col-rank">#</th>
+				<th class="col-site">Site</th>
+				<th class="col-stack" title="What built the site and who serves it, both detected on the same page load">Stack</th>
+				<th class="col-rings" title="The four Lighthouse categories, then their sum — the primary ranking">Lighthouse</th>
+				<th class="col-cwv" title="Failing Core Web Vitals from real users — the first ranking tiebreaker">CWV</th>
+				<th class="col-axe" title="Violating nodes from a full axe run — the second ranking tiebreaker">Axe</th>
+				<th class="col-trend">Perf trend</th>
+				<th>LCP</th><th>CLS</th><th>TBT</th>
+				<th>Weight</th><th>Req</th>
+			</tr>
+		</thead>
+		<tbody>
+		{% for entry in group.entries %}
+			<tr{% if entry.currentlyFailing %} class="row-failing"{% endif %}>
+				<td class="col-rank">
+					{% if entry.groupRanks[group.id].overall %}
+					<span class="trophy">{{ entry.groupRanks[group.id].overall | trophy }}</span><span class="hash">#</span>{{ entry.groupRanks[group.id].overall }}
+					{% else %}—{% endif %}
+				</td>
+				<td class="col-site">
+					<a class="site-link" href="/site/{{ entry.slug }}/">
+						{% set avatar = entry.url | avatar(meta.avatarService) %}
+						{% if avatar %}<img class="favicon" src="{{ avatar }}" width="32" height="32" alt="" loading="lazy" decoding="async">{% endif %}
+						<span>{{ entry.displayUrl }}</span>
+					</a>
+					{% if entry.latest %}<span class="updated-tag {{ 'stale-age' if entry.dataStale }}" title="Measured {{ entry.latest.date | date('long') }}">{{ entry.latest.date | since }}</span>{% else %}<span class="updated-tag never">never</span>{% endif %}
+					{% if entry.currentlyFailing %}<span class="badge badge-error" title="{{ entry.lastError }}">failing</span>{% endif %}
+					{% if entry.redirectTo and entry.redirectTo != entry.url %}<span class="badge badge-redirect" title="Measured through a redirect to {{ entry.redirectTo }}{% if entry.redirectConfirmed %} — confirmed, so history will follow it{% else %} — {{ entry.redirectReason }}{% endif %}">&#8618; redirect</span>
+					{% elif entry.canonicalUrl %}<span class="badge badge-redirect" title="Measured through a redirect to {{ entry.canonicalUrl }} — the site's canonical form of this URL">&#8618; redirect</span>{% endif %}
+					{% if entry.unlisted %}<span class="badge badge-unlisted" title="Built with {{ entry.unlisted.generator }} but not in {{ entry.unlisted.groupName }} — nobody has submitted it to the 11ty/11ty-community repository">unlisted</span>{% endif %}
+				</td>
+				{% if entry.latest %}
+					<td class="col-stack">
+						<span class="stack-pair">
+						{% if entry.generator %}{% stackIcon entry.generator %}
+						{% elif entry.presumedGenerator %}{% stackIcon entry.presumedGenerator %}{% endif %}
+						{% if entry.host %}{% stackIcon entry.host %}{% endif %}
+						{% if not entry.generator and not entry.presumedGenerator and not entry.host %}<span class="stack-none" title="Nothing detected">·</span>{% endif %}
+						</span>
+					</td>
+					<td class="col-rings">
+						<span class="rings">
+						{% for score in metrics.SCORES %}
+							{% scoreRing entry.latest.lab.scores[score.key], score.label %}
+						{% endfor %}
+						<span class="rings-total" title="Sum of all four Lighthouse categories — the primary ranking">{{ entry.lighthouseTotal }}</span>
+						</span>
+					</td>
+					<td class="col-cwv num {{ 'cwv-pass' if entry.cwvFailures == 0 }}{{ ' cwv-fail' if entry.cwvFailures > 0 }}"
+						title="{% if entry.cwvFailures != null %}{{ entry.cwvFailures }} of {{ entry.cwv.assessed }} Core Web Vitals failing at p75{% else %}no real-user data — not counted in the ranking{% endif %}">
+						{{ entry.cwvFailures if entry.cwvFailures != null else "—" }}
+					</td>
+					<td class="col-axe num {{ 'axe-clean' if entry.axeViolations == 0 }}{{ ' axe-bad' if entry.axeViolations > 0 }}"
+						title="{% if entry.axe and not entry.axe.error %}{{ entry.axe.violations }} violating node(s) across {{ entry.axe.violationRules }} rule(s){% else %}axe did not run{% endif %}">
+						{{ entry.axeViolations if entry.axeViolations != null else "—" }}
+					</td>
+					<td class="col-trend">{% sparkline entry.trends.performance %}</td>
+					<td class="num">{{ entry.latest.lab.timings.lcp | ms }}</td>
+					<td class="num">{{ entry.latest.lab.timings.cls | unit("") }}</td>
+					<td class="num">{{ entry.latest.lab.timings.tbt | ms }}</td>
+					<td class="num">{{ entry.latest.lab.weight.total | bytes }}</td>
+					<td class="num">{{ entry.latest.lab.weight.requests | num }}</td>
+				{% else %}
+					<td colspan="10" class="muted">not measured yet</td>
+				{% endif %}
+			</tr>
+		{% endfor %}
+		</tbody>
+	</table>
+	</div>
+</section>
+{% endif %}

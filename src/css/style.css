@@ -1,0 +1,856 @@
+/* speedlify — one stylesheet, no build step, no client JS. */
+
+/*
+ * Dark is the default, unconditionally — not "dark unless your OS says light".
+ * Light is an explicit choice, applied by setting data-theme="light" on <html>
+ * and remembered in localStorage.
+ */
+:root {
+	color-scheme: dark;
+
+	--bg: #2e2e2e;
+	--surface: #383838;
+	--border: #4a4a4a;
+	--border-strong: #5c5c5c;
+	--text: #ffffff;
+	--text-muted: #b0b0b0;
+
+	/* Lighthouse's own score banding, used for the rings and the numbers. */
+	--good: #0cce6b;
+	--good-bg: #143a28;
+	--average: #ffa400;
+	--average-bg: #3d2f14;
+	--poor: #ff4e42;
+	--poor-bg: #3d1f1d;
+
+	--accent: #7cc0ff;
+	--button: #444444;
+	--radius: 8px;
+	--pill: 50px;
+	--mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+	--sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+:root[data-theme="light"] {
+	color-scheme: light;
+
+	--bg: #fbfbfd;
+	--surface: #ffffff;
+	--border: #e3e5ea;
+	--border-strong: #cdd1da;
+	--text: #14161a;
+	--text-muted: #666d7a;
+
+	/* Darkened for contrast on white — the rings keep the Lighthouse hues. */
+	--good: #0a7c42;
+	--good-bg: #e6f5ec;
+	--average: #9a6200;
+	--average-bg: #fdf3e0;
+	--poor: #c02026;
+	--poor-bg: #fdeaea;
+
+	--accent: #1a5fd0;
+	--button: #eceef2;
+}
+
+* { box-sizing: border-box; }
+
+body {
+	margin: 0;
+	background: var(--bg);
+	color: var(--text);
+	font-family: var(--sans);
+	font-size: 15px;
+	line-height: 1.55;
+	-webkit-text-size-adjust: 100%;
+}
+
+/*
+ * Wide enough that the leaderboard fits without horizontal scrolling — the
+ * table needs ~1195px with the current columns, so this leaves headroom for
+ * another one or two before it starts scrolling again.
+ */
+.wrap { max-width: 1400px; margin: 0 auto; padding: 0 1.25rem; }
+/* Content only. The masthead and footer share `.wrap` and set their own
+   vertical rhythm, and the masthead is sticky — padding there would deepen the
+   bar that follows you down the page. */
+main.wrap { padding-top: 1.5rem; }
+
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { text-decoration-thickness: 2px; }
+
+code { font-family: var(--mono); font-size: 0.88em; }
+
+pre {
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+	padding: 0.9rem 1rem;
+	overflow-x: auto;
+	font-size: 0.85rem;
+	line-height: 1.6;
+}
+pre code { font-size: inherit; }
+
+.muted { color: var(--text-muted); }
+.small { font-size: 0.85rem; }
+.block { display: block; }
+
+/* ------------------------------------------------------------------ header */
+
+.masthead {
+	border-bottom: 1px solid var(--border);
+	background: var(--surface);
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+.masthead .wrap {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	min-height: 56px;
+	flex-wrap: wrap;
+}
+.brand {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-weight: 650;
+	font-size: 1.05rem;
+	color: var(--text);
+	text-decoration: none;
+}
+.brand-mark { font-size: 1.15rem; }
+.nav { display: flex; gap: 1.25rem; font-size: 0.9rem; }
+
+/* -------------------------------------------------------------------- hero */
+
+.hero { padding: 2.5rem 0 1.5rem; }
+.hero h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); margin: 0 0 0.4rem; letter-spacing: -0.02em; }
+.lede { color: var(--text-muted); max-width: 62ch; margin: 0; }
+
+.statbar {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	gap: 0.75rem;
+	margin-bottom: 2.5rem;
+}
+.stat {
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+	padding: 0.9rem 1rem;
+}
+.stat-value { display: block; font-size: 1.5rem; font-weight: 650; letter-spacing: -0.02em; }
+.stat-label { display: block; font-size: 0.78rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; }
+/* A second figure under a stat: the share of that number attributable to one
+   thing, with the marks standing in for naming it twice. */
+.stat-sub {
+	display: flex;
+	align-items: center;
+	gap: 0.3rem;
+	margin: 0.5rem 0 0;
+	font-size: 0.95rem;
+	font-weight: 650;
+	font-variant-numeric: tabular-nums;
+	color: var(--text-muted);
+}
+.stat-sub .stack-icon { flex: none; }
+/* A shape under a stat, not a chart in its own right: no axes, no labels, and
+   the value above it is the number that matters. */
+.stat-spark { display: block; margin-top: 0.5rem; }
+.stat-sub-pct { font-weight: 400; font-size: 0.85rem; }
+
+/* ------------------------------------------------------------------ groups */
+
+.coverage {
+	font-size: 0.86rem;
+	color: var(--text-muted);
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+	padding: 0.6rem 0.9rem;
+	margin: 0 0 2.5rem;
+}
+
+
+.group { margin-bottom: 3rem; }
+.group-head { margin-bottom: 0.9rem; }
+.group-head h2 { margin: 0 0 0.15rem; font-size: 1.2rem; letter-spacing: -0.01em; }
+.group-head h2 a { color: var(--text); text-decoration: none; }
+.group-head h2 a:hover { color: var(--accent); }
+
+/* ------------------------------------------------------------------ tables */
+
+.table-scroll { overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
+
+table.grid { width: 100%; border-collapse: collapse; font-size: 0.87rem; }
+table.grid th {
+	text-align: right;
+	font-size: 0.72rem;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: var(--text-muted);
+	font-weight: 600;
+	padding: 0.6rem 0.7rem;
+	border-bottom: 1px solid var(--border);
+	white-space: nowrap;
+}
+table.grid td { padding: 0.6rem 0.7rem; border-bottom: 1px solid var(--border); text-align: right; white-space: nowrap; }
+table.grid tbody tr:last-child td { border-bottom: 0; }
+table.grid tbody tr:hover { background: color-mix(in srgb, var(--accent) 5%, transparent); }
+table.grid.compact td, table.grid.compact th { padding: 0.4rem 0.7rem; font-size: 0.82rem; }
+
+.col-site { text-align: left !important; white-space: normal !important; min-width: 150px; }
+
+/*
+ * Leaderboard site cells only — scoped with :has() so the same class stays
+ * narrow where it holds a metric name or a date. Wide enough that the CWV and
+ * failing badges sit beside the URL instead of wrapping onto their own line.
+ * Older browsers without :has() just get the wrap, which is still readable.
+ */
+.col-site:has(.site-link) { min-width: 260px; }
+.col-rank { text-align: right !important; width: 2.5rem; }
+.col-trend { text-align: right !important; width: 130px; }
+/* The sparkline fills its cell, so the heading centres over the chart rather
+   than sitting against one end of it. */
+th.col-trend { text-align: center !important; }
+.col-dist { text-align: left !important; min-width: 200px; }
+.num { font-variant-numeric: tabular-nums; }
+
+.row-failing { background: var(--poor-bg); }
+
+/* ------------------------------------------------------------------ scores */
+
+.score { font-variant-numeric: tabular-nums; font-weight: 650; }
+.score-good { color: var(--good); }
+.score-average { color: var(--average); }
+.score-poor { color: var(--poor); }
+.score-none { color: var(--text-muted); }
+
+/* ------------------------------------------------------------------ panels */
+
+.panel {
+	margin-bottom: 2.5rem;
+}
+.panel > h2 {
+	font-size: 1.1rem;
+	margin: 0 0 0.5rem;
+	letter-spacing: -0.01em;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	flex-wrap: wrap;
+}
+.panel h3 { font-size: 0.95rem; margin: 1.5rem 0 0.5rem; }
+
+.detail-head { padding: 2rem 0 1.25rem; }
+.detail-head h1 { margin: 0 0 0.25rem; font-size: clamp(1.5rem, 4vw, 2rem); letter-spacing: -0.02em; }
+.detail-url { margin: 0 0 0.35rem; font-family: var(--mono); font-size: 0.85rem; word-break: break-all; }
+
+/* ------------------------------------------------------------------- cards */
+
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+.card {
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+	padding: 0.9rem 1rem;
+}
+.card-value { font-size: 2rem; font-weight: 650; line-height: 1.1; letter-spacing: -0.03em; }
+.card-label { font-size: 0.78rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 0.4rem; }
+.card-spark { margin-top: 0.3rem; }
+.card-delta { font-size: 0.78rem; font-variant-numeric: tabular-nums; }
+
+.better { color: var(--good); }
+.worse { color: var(--poor); }
+.flat { color: var(--text-muted); }
+
+/* --------------------------------------------------------------- sparkline */
+
+.spark { display: block; overflow: visible; }
+.spark-line { fill: none; stroke-width: 1.5; stroke-linejoin: round; stroke-linecap: round; }
+.spark-area { stroke: none; opacity: 0.12; }
+.spark-dot { stroke: none; }
+
+.spark-better .spark-line, .spark-better .spark-dot { stroke: var(--good); fill: var(--good); }
+.spark-better .spark-area { fill: var(--good); }
+.spark-worse .spark-line, .spark-worse .spark-dot { stroke: var(--poor); fill: var(--poor); }
+.spark-worse .spark-area { fill: var(--poor); }
+.spark-flat .spark-line, .spark-flat .spark-dot { stroke: var(--text-muted); fill: var(--text-muted); }
+.spark-flat .spark-area { fill: var(--text-muted); }
+
+/* --------------------------------------------------------------------- cwv */
+
+.cwv { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+.cwv-item {
+	border: 1px solid var(--border);
+	border-left-width: 3px;
+	border-radius: var(--radius);
+	padding: 0.8rem 1rem;
+	background: var(--surface);
+}
+.cwv-good { border-left-color: var(--good); background: var(--good-bg); }
+.cwv-average { border-left-color: var(--average); background: var(--average-bg); }
+.cwv-poor { border-left-color: var(--poor); background: var(--poor-bg); }
+.cwv-none { border-left-color: var(--border-strong); }
+.cwv-key { display: block; font-size: 0.75rem; font-weight: 650; letter-spacing: 0.05em; color: var(--text-muted); }
+.cwv-value { display: block; font-size: 1.5rem; font-weight: 650; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.cwv-rating { display: block; font-size: 0.78rem; color: var(--text-muted); }
+
+/* --------------------------------------------------------------- breakdown */
+
+.breakdown { display: flex; flex-direction: column; gap: 0.3rem; }
+.breakdown-row { display: grid; grid-template-columns: minmax(90px, 190px) 1fr minmax(110px, auto); gap: 0.75rem; align-items: center; font-size: 0.85rem; }
+.breakdown-label { color: var(--text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Data keys as Title Case. Done here rather than in the template so a copy-paste
+   yields ordinary words, and so it never reaches third-party entity names, which
+   are real names rather than keys. `capitalize` leaves the rest of each word
+   alone, so the acronym in "parse HTML" survives. */
+.breakdown-key { text-transform: capitalize; }
+.breakdown-value { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+.bar { display: block; height: 8px; background: color-mix(in srgb, var(--border) 70%, transparent); border-radius: 4px; overflow: hidden; }
+.bar-fill { display: block; height: 100%; background: var(--accent); border-radius: 4px; }
+.bar-warn .bar-fill { background: var(--average); }
+
+/* ------------------------------------------------------------ distribution */
+
+.dist { display: flex; height: 8px; border-radius: 4px; overflow: hidden; margin-bottom: 0.2rem; min-width: 140px; }
+.dist-good { background: var(--good); }
+.dist-avg { background: var(--average); }
+.dist-poor { background: var(--poor); }
+
+/* ----------------------------------------------------- badges, pills, tags */
+
+.badge {
+	display: inline-block;
+	font-size: 0.68rem;
+	font-weight: 650;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	padding: 0.1rem 0.4rem;
+	border-radius: 4px;
+	background: color-mix(in srgb, var(--text-muted) 15%, transparent);
+	color: var(--text-muted);
+	vertical-align: middle;
+}
+.badge-error { background: var(--poor-bg); color: var(--poor); }
+.badge-stale { background: var(--average-bg); color: var(--average); }
+.badge-pass, .badge-cwv { background: var(--good-bg); color: var(--good); }
+.badge-sig { background: var(--average-bg); color: var(--average); }
+/* The measurement went somewhere other than the URL we asked for. Amber rather
+   than red: the numbers are real, they just describe the destination. */
+.badge-redirect { background: var(--average-bg); color: var(--average); }
+/* Built with the thing a register exists for, but missing from it. Accent
+   rather than amber: nothing is wrong here, there is just a submission nobody
+   has made. */
+.badge-unlisted {
+	background: color-mix(in srgb, var(--accent) 15%, transparent);
+	color: var(--accent);
+}
+
+.pill {
+	display: inline-block;
+	padding: 0.05rem 0.45rem;
+	border-radius: 10px;
+	font-size: 0.8rem;
+	font-variant-numeric: tabular-nums;
+}
+.pill-good { background: var(--good-bg); color: var(--good); }
+.pill-average { background: var(--average-bg); color: var(--average); }
+.pill-poor { background: var(--poor-bg); color: var(--poor); }
+.pill-none { color: var(--text-muted); }
+
+.tag {
+	font-size: 0.72rem;
+	font-weight: 500;
+	text-transform: none;
+	letter-spacing: 0;
+	color: var(--text-muted);
+	background: color-mix(in srgb, var(--text-muted) 12%, transparent);
+	padding: 0.1rem 0.45rem;
+	border-radius: 4px;
+}
+
+.chips { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.chip { font-size: 0.8rem; padding: 0.2rem 0.6rem; border-radius: 20px; border: 1px solid var(--border); }
+.chip-good { background: var(--good-bg); color: var(--good); border-color: color-mix(in srgb, var(--good) 30%, transparent); }
+.chip-poor { background: var(--poor-bg); color: var(--poor); border-color: color-mix(in srgb, var(--poor) 30%, transparent); }
+.chip-none { color: var(--text-muted); }
+
+/* ----------------------------------------------------------------- notices */
+
+.notice {
+	border: 1px solid var(--border);
+	border-left-width: 3px;
+	border-radius: var(--radius);
+	padding: 0.9rem 1.1rem;
+	margin-bottom: 1.75rem;
+	font-size: 0.9rem;
+}
+.notice p { margin: 0.4rem 0 0; }
+.notice-error { border-left-color: var(--poor); background: var(--poor-bg); }
+.notice-warn { border-left-color: var(--average); background: var(--average-bg); }
+.notice-info { border-left-color: var(--accent); background: color-mix(in srgb, var(--accent) 7%, transparent); }
+
+.empty {
+	border: 1px dashed var(--border-strong);
+	border-radius: var(--radius);
+	padding: 2rem;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+.empty h2 { margin-top: 0; }
+.empty pre { text-align: left; display: inline-block; }
+
+/* ------------------------------------------------------------------- lists */
+
+.failures { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.35rem; }
+.failures li {
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+	padding: 0.5rem 0.8rem;
+	font-size: 0.86rem;
+	display: flex;
+	gap: 0.6rem;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.mover-delta { font-variant-numeric: tabular-nums; font-weight: 600; }
+
+/*
+ * Movers as a row of cards above the table rather than a stacked list below it.
+ * Auto-fill so a group with two movers does not stretch them across the page,
+ * and wrapping rather than scrolling so none are hidden off the edge.
+ */
+.mover-cards {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+	gap: 0.6rem;
+}
+.mover-card {
+	display: flex;
+	flex-direction: column;
+	gap: 0.15rem;
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-left-width: 3px;
+	border-radius: var(--radius);
+	padding: 0.6rem 0.8rem;
+	font-size: 0.86rem;
+	min-width: 0;
+}
+/* The direction is the point, so it colours the edge and the number both. */
+.mover-card.better { border-left-color: var(--good); }
+.mover-card.better .mover-delta { color: var(--good); }
+.mover-card.worse { border-left-color: var(--poor); }
+.mover-card.worse .mover-delta { color: var(--poor); }
+.mover-card.flat { border-left-color: var(--border-strong); }
+/* The URL is the one thing here that can overrun a fixed-width card. */
+.mover-card .site-link { min-width: 0; }
+.mover-card .site-link span { overflow: hidden; text-overflow: ellipsis; }
+.mover-scores { color: var(--text-muted); font-variant-numeric: tabular-nums; }
+
+.orphans ul { font-size: 0.86rem; }
+
+/* ------------------------------------------------------------------ footer */
+
+.footer {
+	border-top: 1px solid var(--border);
+	margin-top: 3rem;
+	padding: 1.5rem 0 2.5rem;
+	font-size: 0.83rem;
+	color: var(--text-muted);
+}
+.footer p { margin: 0 0 0.35rem; }
+
+@media (max-width: 640px) {
+	.breakdown-row { grid-template-columns: 1fr; gap: 0.15rem; }
+	.breakdown-value { text-align: left; }
+	.bar { order: 3; }
+}
+
+/* ------------------------------------------------------------ data age */
+
+.col-updated { text-align: right !important; white-space: nowrap; font-variant-numeric: tabular-nums; color: var(--text-muted); }
+.col-updated.stale-age { color: var(--average); font-weight: 600; }
+
+.data-age { margin: 0.15rem 0 0; font-size: 0.86rem; color: var(--text-muted); }
+.data-age.stale-age { color: var(--average); }
+
+/* --------------------------------------------------- leaderboard columns */
+
+/* The sum rides at the end of the rings it is the sum of. Tabular and fixed
+   width so the totals form a column of their own inside the cell. */
+.rings-total {
+	font-variant-numeric: tabular-nums;
+	min-width: 2.4ch;
+	text-align: right;
+	padding-left: 0.15rem;
+}
+.col-axe { text-align: right !important; font-variant-numeric: tabular-nums; }
+.col-axe.axe-clean { color: var(--good); }
+.col-axe.axe-bad { color: var(--average); }
+
+/* ==================================================== leaderboard look ==== */
+
+.masthead { position: static; border-bottom: 1px solid var(--border); background: transparent; }
+.masthead .wrap { display: block; text-align: center; padding-top: 2.5rem; padding-bottom: 1.75rem; min-height: 0; }
+.masthead-hed { margin: 0 0 0.5rem; font-size: clamp(2rem, 6vw, 3rem); font-weight: 700; letter-spacing: -0.02em; }
+.masthead-hed a { color: var(--text); text-decoration: none; }
+.masthead-subhed { margin: 0; font-size: 0.95rem; color: var(--text-muted); }
+
+/* ------------------------------------------------------------ score rings */
+
+.rings { display: inline-flex; gap: 0.3rem; align-items: center; }
+.col-rings { text-align: right !important; white-space: nowrap; }
+/* The heading sits over the rings, which start at the cell's left edge — the
+   right-aligned numbers below are the total, not the column. */
+th.col-rings { text-align: left !important; }
+
+.ring { display: block; overflow: visible; }
+.ring-track { stroke: var(--border); }
+.ring-arc { stroke: var(--text-muted); }
+.ring-text { font-size: 12px; font-weight: 650; fill: var(--text); font-family: var(--sans); }
+
+.ring-good .ring-arc { stroke: var(--good); }
+.ring-good .ring-text { fill: var(--good); }
+.ring-average .ring-arc { stroke: var(--average); }
+.ring-average .ring-text { fill: var(--average); }
+.ring-poor .ring-arc { stroke: var(--poor); }
+.ring-poor .ring-text { fill: var(--poor); }
+.ring-none .ring-text { fill: var(--text-muted); }
+
+/* --------------------------------------------------------- rank and title */
+
+.col-rank { white-space: nowrap; font-variant-numeric: tabular-nums; font-weight: 650; }
+.col-rank .hash { color: var(--text-muted); font-weight: 400; }
+.col-rank .trophy { margin-right: 0.15rem; }
+
+/*
+ * An inline-flex box takes its baseline from its first flex item — here the
+ * favicon — which sits well below the text baseline. Any inline sibling (the
+ * CWV and failing badges) then aligns to that and drops. Aligning the link to
+ * `middle` puts it on the same reference the badges already use.
+ */
+.site-link {
+	display: inline-flex;
+	align-items: center;
+	vertical-align: middle;
+	gap: 0.5rem;
+	font-family: var(--mono);
+	font-size: 1rem;
+}
+.favicon { width: 24px; height: 24px; border-radius: 4px; flex: none; background: var(--surface); }
+
+.detail-head .site-link { font-size: inherit; }
+
+.page-hed { margin: 0 0 0.25rem; font-size: clamp(1.5rem, 4vw, 2rem); letter-spacing: -0.02em; font-weight: 700; }
+
+.stat-suffix { font-size: 0.9rem; font-weight: 400; color: var(--text-muted); letter-spacing: 0; }
+
+/* ------------------------------------------------------------ theme toggle */
+
+.theme-toggle {
+	font: inherit;
+	font-size: 0.95em;
+	color: var(--accent);
+	background: none;
+	border: 0;
+	padding: 0;
+	cursor: pointer;
+	/* inline-flex to seat the icon beside the label, but it sits in a sentence
+	   between separators — without this the button drops off the text baseline. */
+	display: inline-flex;
+	align-items: center;
+	vertical-align: middle;
+	gap: 0.35em;
+}
+.theme-toggle .theme-toggle-text {
+	text-decoration: underline;
+	text-underline-offset: 2px;
+}
+.theme-toggle:hover .theme-toggle-text { text-decoration-thickness: 2px; }
+
+/*
+ * The icon shows what you would switch *to*, not the mode you are in: a sun
+ * while dark, a moon while light. Swapped in CSS rather than by the script,
+ * which keeps the toggle's only job the one it already had.
+ */
+.theme-icon { flex: none; }
+.theme-icon-moon { display: none; }
+:root[data-theme="light"] .theme-icon-sun { display: none; }
+:root[data-theme="light"] .theme-icon-moon { display: inline; }
+
+.col-cwv { text-align: right !important; font-variant-numeric: tabular-nums; }
+.col-cwv.cwv-pass { color: var(--good); }
+.col-cwv.cwv-fail { color: var(--poor); }
+
+/*
+ * Prose does not want the full table width. The wrap is sized for the
+ * leaderboard; running text and the centred intro stay at a readable measure.
+ */
+.masthead-subhed { max-width: 68ch; margin-inline: auto; }
+.coverage, .panel > p, .group-head p, .detail-head p { max-width: 90ch; }
+
+/* ------------------------------------------------------- built with / host */
+
+.col-stack { text-align: center !important; white-space: nowrap; width: 3.5rem; }
+
+/* Generator and host share one cell. Centred as a pair so a row with only one
+   of the two does not sit off to one side of the column. */
+.stack-pair {
+	display: inline-flex;
+	gap: 0.3rem;
+	align-items: center;
+	justify-content: center;
+}
+.stack-icon { display: inline-block; vertical-align: middle; }
+.stack-chip {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 0.62rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 16px;
+	min-width: 16px;
+	padding: 0 3px;
+	border-radius: 3px;
+	background: color-mix(in srgb, var(--text-muted) 25%, transparent);
+	color: var(--text-muted);
+}
+
+/* Holding a mark rather than letters: centre it and drop the text padding.
+   Height is pinned because `inline-flex` ignores the line-height that gives a
+   letter chip its box, and a 16px chip next to an 11px one reads as misaligned. */
+.stack-chip-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 16px;
+	height: 16px;
+	padding: 0;
+}
+/* Listed as, not detected as. Half opacity is the whole signal — same glyph,
+   visibly hedged, and the tooltip says which. */
+.stack-presumed { opacity: 0.5; }
+.stack-none { color: var(--text-muted); opacity: 0.4; }
+
+/* Detected stack on the site detail page. */
+.stack-list { display: flex; flex-wrap: wrap; gap: 1.25rem; }
+.stack-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; }
+.stack-item .stack-label { color: var(--text-muted); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em; }
+
+/* Monochrome marks inherit the theme's text colour so they stay visible. */
+.stack-icon-mono { color: var(--text); }
+
+/* ---------------------------------------------------------------- contents */
+
+.contents {
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+	padding: 0.7rem 0.9rem;
+	margin: 0 0 2.5rem;
+	display: flex;
+	align-items: baseline;
+	gap: 0.75rem;
+	flex-wrap: wrap;
+}
+.contents-label {
+	font-size: 0.72rem;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: var(--text-muted);
+	font-weight: 600;
+}
+.contents ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem 1.1rem;
+}
+.contents li { display: inline-flex; align-items: baseline; gap: 0.35rem; font-size: 0.9rem; }
+.contents-count {
+	font-size: 0.72rem;
+	font-variant-numeric: tabular-nums;
+	color: var(--text-muted);
+	background: color-mix(in srgb, var(--text-muted) 15%, transparent);
+	padding: 0.05rem 0.35rem;
+	border-radius: 10px;
+}
+
+/*
+ * Anchored sections sit clear of the top edge when jumped to.
+ *
+ * Deliberately no `scroll-behavior: smooth`. With the whole address book on one
+ * page the document runs past 100,000px tall, and animating a jump of tens of
+ * thousands of pixels is slow and disorienting — an instant jump is the right
+ * behaviour at this length.
+ */
+:target { scroll-margin-top: 1.5rem; }
+
+.see-all {
+	margin: 0.6rem 0 0;
+	font-size: 0.86rem;
+	color: var(--text-muted);
+}
+.see-all a { margin-left: 0.35rem; }
+
+/* ------------------------------------------------------------ embed demo */
+
+.embed-demo { display: flex; flex-direction: column; gap: 0.9rem; }
+.embed-row {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	flex-wrap: wrap;
+	padding: 0.75rem 0.9rem;
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+}
+.embed-row code { flex: 1; min-width: 12rem; }
+
+/* ------------------------------------------------- built with / hosted by */
+
+.stacks {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	gap: 0.75rem;
+	margin-bottom: 1rem;
+}
+.tally {
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+	padding: 0.8rem 0.95rem;
+}
+.tally-head {
+	margin: 0 0 0.6rem;
+	font-size: 0.72rem;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: var(--text-muted);
+	font-weight: 600;
+	display: flex;
+	justify-content: space-between;
+	gap: 0.75rem;
+	flex-wrap: wrap;
+}
+.tally-meta { text-transform: none; letter-spacing: 0; font-weight: 400; opacity: 0.8; }
+
+.tally-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.tally-item {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.35rem;
+	font-size: 0.85rem;
+	padding: 0.2rem 0.5rem;
+	border: 1px solid var(--border);
+	border-radius: var(--pill);
+	background: var(--bg);
+}
+.tally-name { white-space: nowrap; }
+.tally-count {
+	font-variant-numeric: tabular-nums;
+	font-weight: 650;
+	color: var(--text-muted);
+	font-size: 0.8rem;
+}
+
+/* The folded-up one-offs: present and countable, but not a thing you can click
+   into, so they drop the pill's border and fill and read as a plain note. */
+.tally-rare {
+	border: 0;
+	background: none;
+	padding-left: 0;
+	opacity: 0.7;
+	font-style: italic;
+}
+
+/* ------------------------------------------------------------- redirects */
+
+/* Was sharing `.orphans`, which meant one rename away from styling the wrong
+   thing. Grouped by verdict, so the reason is a heading rather than a badge
+   repeated on every row. */
+.redirects { margin-bottom: 2.5rem; }
+.redirects-head {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-size: 0.95rem;
+	margin: 1.5rem 0 0.25rem;
+}
+.redirects-count {
+	font-size: 0.75rem;
+	font-variant-numeric: tabular-nums;
+	color: var(--text-muted);
+	background: color-mix(in srgb, var(--text-muted) 18%, transparent);
+	border-radius: var(--pill);
+	padding: 0.05rem 0.45rem;
+}
+.redirects-list {
+	list-style: none;
+	margin: 0.5rem 0 0;
+	padding: 0;
+	display: grid;
+	gap: 0.3rem;
+	font-size: 0.88rem;
+}
+.redirects-list li {
+	display: flex;
+	align-items: baseline;
+	gap: 0.45rem;
+	flex-wrap: wrap;
+}
+.redirects-arrow { color: var(--text-muted); }
+/* Which lists this URL belongs to. Quiet by design — it is context for the
+   row, not a second thing to read. */
+.redirects-group {
+	font-size: 0.72rem;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	color: var(--text-muted);
+	border: 1px solid var(--border);
+	border-radius: var(--pill);
+	padding: 0.02rem 0.45rem;
+	white-space: nowrap;
+}
+
+/* ----------------------------------------------------------- updated tag */
+
+/*
+ * Leaderboard site cells keep the URL on one line. `:has()` gives this higher
+ * specificity than the `white-space: normal !important` above, which exists so
+ * metric-name cells in the trend tables can wrap.
+ */
+.col-site:has(.site-link) { white-space: nowrap !important; }
+.site-link > span { white-space: nowrap; }
+
+.updated-tag {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 0.4rem;
+	padding: 0.05rem 0.4rem;
+	border-radius: var(--pill);
+	font-size: 0.72rem;
+	font-variant-numeric: tabular-nums;
+	color: var(--text-muted);
+	background: color-mix(in srgb, var(--text-muted) 15%, transparent);
+	white-space: nowrap;
+}
+.updated-tag.stale-age {
+	color: var(--average);
+	background: color-mix(in srgb, var(--average) 18%, transparent);
+}
+.updated-tag.never { opacity: 0.6; }

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if title %}{{ title }} · {% endif %}{{ meta.title }}</title>
+<meta name="description" content="{{ description or meta.description }}">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='13' font-size='14'>⚡</text></svg>">
+<script>
+/* Applied before first paint so a light-mode reader never sees a dark flash.
+   Dark is the default; only a stored choice of "light" changes anything. */
+try { if (localStorage.getItem("speedlify-theme") === "light") document.documentElement.dataset.theme = "light"; } catch (e) {}
+</script>
+</head>
+<body>
+
+<header class="masthead">
+	<div class="wrap">
+		<h1 class="masthead-hed"><a href="/">{{ meta.title }}</a></h1>
+		<p class="masthead-subhed">{{ meta.description }}</p>
+		<p class="masthead-subhed">
+			<a href="/runs/">Measurement runs</a>{% if meta.repo %} · <a href="{{ meta.repo }}">Source</a>{% endif %}
+			{%- if sites.hasFieldData %} · Field data from the Chrome UX Report{% endif %}
+			<!-- Hidden until scripted: without JS the choice cannot be stored,
+			     and a button that silently does nothing is worse than none. -->
+			· <button class="theme-toggle" type="button" id="theme-toggle" hidden>
+			<svg class="theme-icon theme-icon-sun" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+			<svg class="theme-icon theme-icon-moon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 13.4A8.6 8.6 0 1 1 10.6 3.5a6.7 6.7 0 0 0 9.9 9.9z"/></svg>
+			<span class="theme-toggle-text">Light mode</span>
+		</button>
+		</p>
+	</div>
+</header>
+
+<main class="wrap">
+	{{ content | safe }}
+</main>
+
+<footer class="footer">
+	<div class="wrap">
+		<p>
+			{{ sites.stats.totalMeasurements | num }} measurements across
+			{{ sites.stats.total }} sites · built {{ sites.generated | date("long") }}
+		</p>
+		<p class="muted">
+			Lab data from Lighthouse{% if sites.hasFieldData %}, field data from the Chrome UX Report (28-day trailing p75){% endif %}.
+			Lab numbers are a simulation on one machine and will not match real users exactly.
+		</p>
+	</div>
+</footer>
+
+<script>
+/* The only scripted behaviour on the site. Everything else — including the
+   sparklines and score rings — is rendered at build time. */
+(function () {
+	var root = document.documentElement;
+	var button = document.getElementById("theme-toggle");
+	if (!button) return;
+
+	// Only the text node is rewritten: the icons are siblings of it, and
+	// assigning to button.textContent would remove them.
+	var text = button.querySelector(".theme-toggle-text") || button;
+
+	function label() {
+		var light = root.dataset.theme === "light";
+		text.textContent = light ? "Dark mode" : "Light mode";
+		button.setAttribute("aria-pressed", String(light));
+	}
+
+	button.hidden = false;
+	label();
+
+	button.addEventListener("click", function () {
+		var light = root.dataset.theme !== "light";
+		if (light) root.dataset.theme = "light";
+		else delete root.dataset.theme;
+
+		try { localStorage.setItem("speedlify-theme", light ? "light" : "dark"); } catch (e) {}
+		label();
+	});
+})();
+</script>
+
+</body>
+</html>

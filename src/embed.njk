@@ -1,0 +1,90 @@
+---
+layout: base.njk
+permalink: /embed/index.html
+title: Embed
+---
+
+<header class="detail-head">
+	<h2 class="page-hed">Embed a score</h2>
+	<p class="lede">
+		A standalone custom element that shows one site's Lighthouse scores, with a
+		summary on hover or focus. Drop it on any page — it needs nothing but the
+		script and this instance's URL.
+	</p>
+</header>
+
+<script type="module" src="/js/speedlify-score.js"></script>
+
+<section class="panel">
+	<h2>Live examples</h2>
+	<p class="muted small">
+		Hover or tab to a set of scores to see its summary. Each example is a real
+		lookup against this instance.
+	</p>
+
+	<div class="embed-demo">
+		{% set demo = sites.entries | limit(3) %}
+		{% for entry in demo %}
+		<div class="embed-row">
+			<code>{{ entry.displayUrl }}</code>
+			<speedlify-score speedlify-url="/" url="{{ entry.url }}"></speedlify-score>
+		</div>
+		{% endfor %}
+
+		<div class="embed-row">
+			<code>with extras</code>
+			<speedlify-score speedlify-url="/" url="{{ demo[0].url }}" score total rank weight></speedlify-score>
+		</div>
+	</div>
+</section>
+
+<section class="panel">
+	<h2>Usage</h2>
+	<pre><code>&lt;script type="module" src="{{ meta.url }}/js/speedlify-score.js"&gt;&lt;/script&gt;
+
+&lt;!-- Scores for the page it sits on --&gt;
+&lt;speedlify-score speedlify-url="{{ meta.url or 'https://your-speedlify-instance/' }}"&gt;&lt;/speedlify-score&gt;
+
+&lt;!-- Or a specific URL --&gt;
+&lt;speedlify-score speedlify-url="{{ meta.url or 'https://your-speedlify-instance/' }}" url="https://example.com/"&gt;&lt;/speedlify-score&gt;</code></pre>
+
+	<h3>Attributes</h3>
+	<div class="table-scroll">
+	<table class="grid">
+		<thead>
+			<tr><th class="col-site">Attribute</th><th class="col-site">Effect</th></tr>
+		</thead>
+		<tbody>
+			<tr><td class="col-site"><code>speedlify-url</code></td><td class="col-site">Required. This instance's URL.</td></tr>
+			<tr><td class="col-site"><code>url</code></td><td class="col-site">Which site to show. Defaults to the current page.</td></tr>
+			<tr><td class="col-site"><code>score</code></td><td class="col-site">The four rings. Implicit unless another output attribute is used.</td></tr>
+			<tr><td class="col-site"><code>total</code>, <code>rank</code>, <code>weight</code>, <code>requests</code>, <code>axe</code>, <code>cwv</code></td><td class="col-site">Opt-in extras beside the scores.</td></tr>
+		</tbody>
+	</table>
+	</div>
+</section>
+
+<section class="panel">
+	<h2>How it finds the data</h2>
+	<p class="muted small">
+		There is no index to download. The component slugifies the URL in the
+		browser with the same rules the generator uses and fetches
+		<code>/api/site/&lt;slug&gt;.json</code> directly. One request, under a
+		kilobyte, for exactly the site being shown.
+	</p>
+	<p class="muted small">
+		Several components on one page share a single fetch per URL. Normalization
+		matches the generator's, so <code>https://Example.com</code> and
+		<code>https://example.com/</code> resolve to the same record.
+	</p>
+	<p class="muted small">
+		Working out the filename is string manipulation, not cryptography, so the
+		component needs no secure context and runs on a page served over plain
+		http. If two sites ever claim one slug, both are published under a hash
+		instead and read here as unmeasured — a miss rather than another site's
+		numbers.
+	</p>
+	<p class="muted small">
+		<a href="/api/site/{{ demo[0].slug }}.json">See {{ demo[0].displayUrl }}'s data file</a>
+	</p>
+</section>

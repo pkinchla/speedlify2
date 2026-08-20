@@ -1,0 +1,551 @@
+---
+layout: base.njk
+pagination:
+  data: sites.entries
+  size: 1
+  alias: entry
+permalink: "/site/{{ entry.slug }}/"
+eleventyComputed:
+  title: "{{ entry.displayUrl }}"
+---
+
+<article class="detail">
+
+<header class="detail-head">
+	<h2 class="page-hed">{{ entry.displayUrl }}</h2>
+	<p class="detail-url"><a href="{{ entry.url }}">{{ entry.url }}</a></p>
+	<p class="data-age {{ 'stale-age' if entry.dataStale }}">
+		{% if entry.latest %}
+			Data from {{ entry.latest.date | date("long") }} — <strong>{{ entry.latest.date | since }} old</strong>
+			{%- if entry.dataStale %}, older than the {{ sites.coverage.staleAfterHours }}h freshness target{% endif %}.
+		{% else %}
+			No successful measurement yet.
+		{% endif %}
+	</p>
+	<p class="muted">
+		{% for g in entry.groups %}<a href="/group/{{ g }}/">{{ entry.groupNames[loop.index0] }}</a>{{ ", " if not loop.last }}{% endfor %} ·
+		{{ entry.totalCount }} measurement{{ "s" if entry.totalCount != 1 }}
+		{% if entry.windowed %}<span title="The report charts the most recent {{ entry.historyCount }}; the rest stay on disk">(charting last {{ entry.historyCount }})</span>{% endif %}
+		{% if entry.firstMeasured %}· since {{ entry.firstMeasured | date }}{% endif %}
+		{% if entry.lastMeasured %}· last attempt {{ entry.lastMeasured | since }}{% endif %}
+	</p>
+</header>
+
+{% if entry.stale and entry.latest %}
+<div class="notice notice-warn">
+	<strong>This data is {{ entry.latest.date | since }} old.</strong>
+	<p>
+		Sites are measured on a rolling schedule, so figures here are the newest
+		successful measurement rather than a reading taken just now. Comparisons
+		against other sites may span different points in time.
+	</p>
+</div>
+{% endif %}
+
+{% if entry.redirectTo %}
+<div class="notice notice-warn">
+	<strong>This URL redirects to <code>{{ entry.redirectTo }}</code>.</strong>
+	<p>
+		Lighthouse follows the redirect, so the numbers below describe the
+		<em>destination</em> page, not this one.
+		{% if entry.redirectConfirmed %}
+		The move is confirmed, so measurement has already followed it — no config
+		change needed, and the history came along.
+		{% elif entry.redirectReason == "temporary" %}
+		The redirect is temporary (302/303/307), so it is treated as a detour
+		rather than a move and history stays here.
+		{% elif entry.redirectReason == "unstable" %}
+		The destination has not been consistent across recent runs — that pattern
+		usually means an A/B test or a geo split rather than a move.
+		{% else %}
+		Not yet confirmed as a move; it needs to lead to the same place on
+		several consecutive runs first.
+		{% endif %}
+	</p>
+</div>
+{% endif %}
+
+{% if entry.canonicalUrl and not entry.redirectTo %}
+<div class="notice notice-info">
+	<strong>This URL redirects to <code>{{ entry.canonicalUrl }}</code>.</strong>
+	<p>
+		A trailing slash only, so both forms are treated as one site rather than
+		two — one history, measured once. Lighthouse follows the redirect, so the
+		numbers below describe the canonical page; the only cost is an extra hop
+		on each run.
+	</p>
+</div>
+{% endif %}
+
+{% if entry.movedFrom %}
+<div class="notice notice-info">
+	<strong>Moved from <code>{{ entry.movedFrom }}</code>.</strong>
+	<p>
+		History from the previous URL is included below{% if entry.moveAt %}, with the
+		move on {{ entry.moveAt | date }}{% endif %}. A step-change around that point is
+		likely the change of address rather than a regression.
+	</p>
+</div>
+{% endif %}
+
+{% if entry.currentlyFailing %}
+<div class="notice notice-error">
+	<strong>
+		The most recent attempt failed{% if entry.consecutiveFailures > 1 %} ({{ entry.consecutiveFailures }} in a row){% endif %}.
+	</strong>
+	<code>{{ entry.lastError }}</code>
+	{% if entry.latest %}
+	<p>Numbers below are from the last successful run, {{ entry.latest.date | since }} old.</p>
+	{% else %}
+	<p>There is no successful measurement for this site yet.</p>
+	{% endif %}
+	{% if entry.consecutiveFailures > 2 %}
+	<p class="small">Retries are backing off, so this site is being attempted less often than the rest.</p>
+	{% endif %}
+</div>
+{% endif %}
+
+{% if entry.environmentDrift and entry.environmentDrift.suspect %}
+<div class="notice notice-warn">
+	<strong>The measuring machine was {{ entry.environmentDrift.direction }} than usual.</strong>
+	<p>
+		Lighthouse benchmark index was {{ entry.environmentDrift.current }} against a
+		baseline of {{ entry.environmentDrift.baseline }}
+		({{ entry.environmentDrift.ratio * 100 | round }}%). CPU-bound metrics — TBT,
+		TTI, main thread work — are affected by this and may have moved without the
+		site changing at all.
+	</p>
+</div>
+{% endif %}
+
+{% if not entry.latest %}
+<div class="empty"><p>No successful measurements recorded for this site yet.</p></div>
+{% else %}
+
+{% if entry.generator or entry.host %}
+<section class="panel">
+	<h2>Stack</h2>
+	<p class="muted small">
+		Detected on the same page load as the accessibility pass — the generator
+		from <code>&lt;meta name="generator"&gt;</code> or the shape of the page,
+		the host from response headers.
+	</p>
+	<div class="stack-list">
+		{% if entry.generator %}
+		<div class="stack-item">
+			{% stackIcon entry.generator, 24 %}
+			<span>
+				<span class="stack-label block">Built with</span>
+				{{ entry.generator.name }}{% if entry.generator.version %} {{ entry.generator.version }}{% endif %}
+			</span>
+		</div>
+		{% endif %}
+		{% if entry.host %}
+		<div class="stack-item">
+			{% stackIcon entry.host, 24 %}
+			<span>
+				<span class="stack-label block">Hosted by</span>
+				{{ entry.host.name }}
+			</span>
+		</div>
+		{% endif %}
+	</div>
+</section>
+{% endif %}
+
+{% if entry.cwv %}
+<section class="panel">
+	<h2>
+		Core Web Vitals
+		{% if entry.cwv.source == "lab" %}
+		<span class="tag">lab approximation</span>
+		{% else %}
+		<span class="tag">field data{% if entry.cwv.period.scope %}, {{ entry.cwv.period.scope }}-level{% endif %}</span>
+		{% endif %}
+	</h2>
+
+	{% if entry.cwv.source == "lab" %}
+	<p class="muted small">
+		No Chrome UX Report data for this URL, so this is a lab approximation using
+		TBT in place of INP. Lighthouse cannot measure INP in a lab run — only real
+		users produce it.
+	</p>
+	{% else %}
+	<p class="muted small">
+		Real Chrome users, 28-day window
+		{%- if entry.cwv.period.first %} ({{ entry.cwv.period.first }} → {{ entry.cwv.period.last }}){% endif %}.
+		{% if entry.cwv.source == "field-history" %}
+		From the backfilled CrUX history rather than this measurement, which predates the API key.
+		{% endif %}
+		This is what Google measures you on.
+	</p>
+	{% endif %}
+	<div class="cwv">
+		{% for part in entry.cwv.parts %}
+		<div class="cwv-item cwv-{{ part.rating | ratingClass }}">
+			<span class="cwv-key">{{ part.key | upper }}{% if part.proxyFor %} <span class="tag">for {{ part.proxyFor | upper }}</span>{% endif %}</span>
+			<span class="cwv-value">{{ part.value | unit("ms" if part.key != "cls" else "") }}</span>
+			<span class="cwv-rating">{{ part.rating or "no data" }}</span>
+		</div>
+		{% endfor %}
+	</div>
+</section>
+{% endif %}
+
+<section class="panel">
+	<h2>Scores</h2>
+	<div class="cards">
+		{% for score in metrics.SCORES %}
+		{% set t = entry.trends[score.key] %}
+		{% set value = entry.latest.lab.scores[score.key] %}
+		<div class="card">
+			<div class="card-value score-{{ value | scoreClass }}">{{ value if value != null else "—" }}</div>
+			<div class="card-label">{{ score.label }}</div>
+			{% if t %}
+			<div class="card-spark">{% sparkline t %}</div>
+			{% if t.vsPrevious and not t.vsPrevious.unchanged %}
+			<div class="card-delta {{ t.vsPrevious | deltaClass }}">
+				{{ t.vsPrevious | deltaArrow }} {{ t.vsPrevious | deltaText }}
+			</div>
+			{% else %}
+			<div class="card-delta flat">no change</div>
+			{% endif %}
+			{% endif %}
+		</div>
+		{% endfor %}
+	</div>
+</section>
+
+{% macro trendtable(rows, entryData, prefix="") %}
+<div class="table-scroll">
+<table class="grid">
+	<thead>
+		<tr>
+			<th class="col-site">Metric</th>
+			<th>Current</th>
+			<th>Previous</th>
+			<th>Change</th>
+			<th>Best</th>
+			<th>Worst</th>
+			<th class="col-trend">Trend</th>
+		</tr>
+	</thead>
+	<tbody>
+	{% for row in rows %}
+	{% set t = entryData.trends[prefix + row.key] %}
+	{% if t %}
+		<tr>
+			<td class="col-site">
+				<strong>{{ row.label }}</strong>
+				{% if row.note %}<span class="muted small block">{{ row.note }}</span>{% endif %}
+			</td>
+			<td class="num">{{ t.current | unit(row.unit) }}</td>
+			<td class="num muted">{{ t.previous | unit(row.unit) }}</td>
+			<td class="num {{ t.vsPrevious | deltaClass }}">
+				{% if t.vsPrevious %}{{ t.vsPrevious | deltaArrow }} {{ t.vsPrevious | deltaText(row.unit) }}{% else %}—{% endif %}
+				{% if t.significant %}<span class="badge badge-sig" title="Larger than this metric's normal run-to-run noise">significant</span>{% endif %}
+			</td>
+			<td class="num muted">{{ (t.min if t.lowerIsBetter else t.max) | unit(row.unit) }}</td>
+			<td class="num muted">{{ (t.max if t.lowerIsBetter else t.min) | unit(row.unit) }}</td>
+			<td class="col-trend">{% sparkline t %}</td>
+		</tr>
+	{% endif %}
+	{% endfor %}
+	</tbody>
+</table>
+</div>
+{% endmacro %}
+
+<section class="panel">
+	<h2>Lab metrics <span class="tag">Lighthouse, {{ entry.latest.formFactor }}</span></h2>
+	{{ trendtable(metrics.LAB_METRICS, entry) }}
+
+	{% if entry.latest.lab.lcpBreakdown %}
+	<h3>What LCP is made of</h3>
+	<p class="muted small">
+		A flat LCP number tells you something regressed. The subparts tell you
+		whether it was the server, resource discovery, the download, or rendering.
+	</p>
+	<div class="breakdown">
+		{% set lcpMax = entry.latest.lab.lcpBreakdown | sortByValue | maxValue("value") %}
+		{% for part in entry.latest.lab.lcpBreakdown | sortByValue %}
+		<div class="breakdown-row">
+			<span class="breakdown-label breakdown-key">{{ part.key | humanize }}</span>
+			{% bar part.value, lcpMax, "warn" %}
+			<span class="breakdown-value">{{ part.value | ms }}</span>
+		</div>
+		{% endfor %}
+	</div>
+	{% endif %}
+</section>
+
+{% if entry.latest.field %}
+<section class="panel">
+	<h2>
+		Field data <span class="tag">Chrome UX Report, {{ entry.latest.field.scope }}-level</span>
+	</h2>
+	<p class="muted small">
+		Real Chrome users, 28-day trailing window
+		({{ entry.latest.field.collectionPeriod.first }} → {{ entry.latest.field.collectionPeriod.last }}).
+		This is what Google measures you on.
+	</p>
+
+	<div class="table-scroll">
+	<table class="grid">
+		<thead>
+			<tr>
+				<th class="col-site">Metric</th>
+				<th>p75</th>
+				<th>Rating</th>
+				<th class="col-dist">Distribution (good / needs work / poor)</th>
+			</tr>
+		</thead>
+		<tbody>
+		{% for row in metrics.FIELD_METRICS %}
+		{% set m = entry.latest.field.metrics[row.key] %}
+		{% if m %}
+			<tr>
+				<td class="col-site">
+					<strong>{{ row.label }}</strong>
+					{% if row.coreWebVital %}<span class="badge badge-cwv">CWV</span>{% endif %}
+					{% if row.note %}<span class="muted small block">{{ row.note }}</span>{% endif %}
+				</td>
+				<td class="num">{{ m.p75 | unit(row.unit) }}</td>
+				<td><span class="pill pill-{{ m.rating | ratingClass }}">{{ m.rating or "—" }}</span></td>
+				<td class="col-dist">
+					{% if m.distribution %}
+					<span class="dist" title="{{ m.distribution.good }}% good, {{ m.distribution.needsImprovement }}% needs improvement, {{ m.distribution.poor }}% poor">
+						<span class="dist-good" style="width:{{ m.distribution.good }}%"></span>
+						<span class="dist-avg" style="width:{{ m.distribution.needsImprovement }}%"></span>
+						<span class="dist-poor" style="width:{{ m.distribution.poor }}%"></span>
+					</span>
+					<span class="muted small">{{ m.distribution.good }}% good</span>
+					{% else %}—{% endif %}
+				</td>
+			</tr>
+		{% endif %}
+		{% endfor %}
+		</tbody>
+	</table>
+	</div>
+
+	{% if entry.labVsField %}
+	<h3>Lab vs field</h3>
+	<p class="muted small">
+		Lab LCP {{ entry.labVsField.lab | ms }} · field p75 {{ entry.labVsField.field | ms }} ·
+		real users are <strong>{{ entry.labVsField.ratio }}×</strong>
+		{{ "slower" if entry.labVsField.fieldWorse else "faster" }} than the lab.
+		{% if entry.labVsField.fieldWorse and entry.labVsField.ratio > 1.5 %}
+		A gap this wide usually means real users are on slower devices or networks
+		than the simulated ones — the lab number is flattering you.
+		{% endif %}
+	</p>
+	{% endif %}
+</section>
+{% endif %}
+
+{% if entry.fieldHistory and entry.fieldHistory.series.length %}
+<section class="panel">
+	<h2>Field history <span class="tag">{{ entry.fieldHistory.series.length }} weeks</span></h2>
+	<p class="muted small">
+		Weekly p75 from the CrUX History API, backfilled in a single request.
+	</p>
+	<div class="table-scroll">
+	<table class="grid compact">
+		<thead>
+			<tr>
+				<th class="col-site">Week ending</th>
+				<th>LCP</th><th>INP</th><th>CLS</th><th>FCP</th><th>TTFB</th>
+			</tr>
+		</thead>
+		<tbody>
+		{% for point in entry.fieldHistory.series | reverse | limit(12) %}
+			<tr>
+				<td class="col-site muted">{{ point.date }}</td>
+				{% for key in ["lcp", "inp", "cls", "fcp", "ttfb"] %}
+				{% set m = point.metrics[key] %}
+				<td class="num"><span class="pill pill-{{ m.rating | ratingClass }}">{{ m.p75 | unit("" if key == "cls" else "ms") }}</span></td>
+				{% endfor %}
+			</tr>
+		{% endfor %}
+		</tbody>
+	</table>
+	</div>
+</section>
+{% endif %}
+
+<section class="panel">
+	<h2>Page weight</h2>
+	{{ trendtable(metrics.WEIGHT_METRICS, entry) }}
+
+	<h3>By resource type</h3>
+	<div class="breakdown">
+		{% set types = [] %}
+		{% for key, val in entry.latest.lab.weight.byType %}
+			{% if key != "total" and val.bytes %}{% set types = (types.push({key: key, value: val.bytes, requests: val.requests}), types) %}{% endif %}
+		{% endfor %}
+		{% set typeMax = types | maxValue("value") %}
+		{% for t in types %}
+		<div class="breakdown-row">
+			<span class="breakdown-label breakdown-key">{{ t.key | humanize }}</span>
+			{% bar t.value, typeMax, "neutral" %}
+			<span class="breakdown-value">{{ t.value | bytes }} <span class="muted">· {{ t.requests }} req</span></span>
+		</div>
+		{% endfor %}
+	</div>
+
+	{% if entry.latest.lab.thirdParty and entry.latest.lab.thirdParty.count %}
+	<h3>Third parties <span class="tag">{{ entry.latest.lab.thirdParty.count }} entities</span></h3>
+	<p class="muted small">
+		{{ entry.latest.lab.thirdParty.bytes | bytes }} transferred,
+		{{ entry.latest.lab.thirdParty.mainThreadMs | ms }} of main thread time.
+		This is the number most likely to regress without anyone on your team
+		shipping anything.
+	</p>
+	<div class="breakdown">
+		{% set tpMax = entry.latest.lab.thirdParty.top | maxValue("bytes") %}
+		{% for tp in entry.latest.lab.thirdParty.top %}
+		<div class="breakdown-row">
+			<span class="breakdown-label">{{ tp.entity }}</span>
+			{% bar tp.bytes, tpMax, "warn" %}
+			<span class="breakdown-value">{{ tp.bytes | bytes }} <span class="muted">· {{ tp.mainThreadMs | ms }} CPU</span></span>
+		</div>
+		{% endfor %}
+	</div>
+	{% endif %}
+</section>
+
+<section class="panel">
+	<h2>Page health</h2>
+	{{ trendtable(metrics.HEALTH_METRICS, entry) }}
+
+	{% if entry.latest.lab.mainThread and entry.latest.lab.mainThread.byGroup %}
+	<h3>Main thread work</h3>
+	<div class="breakdown">
+		{% set mtMax = entry.latest.lab.mainThread.byGroup | sortByValue | maxValue("value") %}
+		{% for part in entry.latest.lab.mainThread.byGroup | sortByValue %}
+		<div class="breakdown-row">
+			<span class="breakdown-label breakdown-key">{{ part.key | humanize }}</span>
+			{% bar part.value, mtMax, "neutral" %}
+			<span class="breakdown-value">{{ part.value | ms }}</span>
+		</div>
+		{% endfor %}
+	</div>
+	{% endif %}
+
+	{% if entry.axe %}
+	<h3>
+		Axe violations
+		<span class="tag">axe-core {{ entry.axe.version }}, full rule set</span>
+	</h3>
+	{% if entry.axe.error %}
+	<p class="muted small">The axe run failed: <code>{{ entry.axe.error }}</code></p>
+	{% else %}
+	<p class="muted small">
+		<strong>{{ entry.axe.violations }}</strong> violating node{{ "s" if entry.axe.violations != 1 }}
+		across {{ entry.axe.violationRules }} rule{{ "s" if entry.axe.violationRules != 1 }},
+		{{ entry.axe.passes }} passing. This is a standalone axe run, stricter than the
+		subset Lighthouse folds into its score above — and it is the second tiebreaker
+		in the ranking.
+	</p>
+	{% if entry.axe.top.length %}
+	<ul class="failures">
+		{% for v in entry.axe.top %}
+		<li>
+			<span class="badge badge-{{ 'error' if v.impact == 'critical' or v.impact == 'serious' else 'stale' }}">{{ v.impact }}</span>
+			<code>{{ v.id }}</code> — {{ v.help }}
+			<span class="badge">{{ v.nodes }} node{{ "s" if v.nodes != 1 }}</span>
+		</li>
+		{% endfor %}
+	</ul>
+	{% endif %}
+	{% endif %}
+	{% endif %}
+
+	{% if entry.latest.lab.accessibility.failing.length %}
+	<h3>Accessibility failures <span class="tag">{{ entry.latest.lab.accessibility.failingCount }} of {{ entry.latest.lab.accessibility.applicableCount }} audits</span></h3>
+	<p class="muted small">
+		Tracked as a count, not just the score — the weighted score is coarse
+		enough that you can ship a broken component and barely move it.
+	</p>
+	<ul class="failures">
+		{% for fail in entry.latest.lab.accessibility.failing %}
+		<li>
+			<code>{{ fail.id }}</code> — {{ fail.title }}
+			{% if fail.nodes %}<span class="badge">{{ fail.nodes }} node{{ "s" if fail.nodes != 1 }}</span>{% endif %}
+		</li>
+		{% endfor %}
+	</ul>
+	{% endif %}
+</section>
+
+<section class="panel">
+	<h2>Hygiene</h2>
+	<p class="muted small">Changes rarely — which is exactly why a change is worth noticing.</p>
+	<div class="chips">
+		{% set h = entry.latest.lab.hygiene %}
+		{% for check in [
+			{k: "https", label: "HTTPS"},
+			{k: "hsts", label: "HSTS"},
+			{k: "csp", label: "CSP"},
+			{k: "clickjacking", label: "Clickjacking protection"},
+			{k: "originIsolation", label: "Origin isolation"},
+			{k: "trustedTypes", label: "Trusted Types"},
+			{k: "bfCache", label: "bfcache"}
+		] %}
+		<span class="chip chip-{{ 'good' if h[check.k] == 1 else ('poor' if h[check.k] == 0 else 'none') }}">
+			{{ check.label }}
+		</span>
+		{% endfor %}
+		<span class="chip chip-none">{{ h.protocol or "—" }}</span>
+		{% if h.consoleErrors %}<span class="chip chip-poor">{{ h.consoleErrors }} console error{{ "s" if h.consoleErrors != 1 }}</span>{% endif %}
+	</div>
+</section>
+
+<section class="panel">
+	<h2>Measurement log</h2>
+	<p class="muted small">
+		Every stored run for this URL, newest first. Failures are kept as records —
+		"this site was down on Tuesday" is data too.
+	</p>
+	<div class="table-scroll">
+	<table class="grid compact">
+		<thead>
+			<tr>
+				<th class="col-site">When</th>
+				<th>Perf</th><th>LCP</th><th>CLS</th><th>TBT</th><th>Weight</th>
+				<th>Runs</th><th>Spread</th><th>Bench</th><th>Took</th>
+			</tr>
+		</thead>
+		<tbody>
+		{% for point in entry.history | reverse | limit(30) %}
+			<tr{% if point.error %} class="row-failing"{% endif %}>
+				<td class="col-site">
+					{{ point.date | date("long") }}
+					{% if entry.movedFrom and point.via != entry.url %}
+					<span class="badge" title="Measured at {{ point.via }}, before the move">old URL</span>
+					{% endif %}
+				</td>
+				{% if point.error %}
+					<td colspan="8" class="muted"><code>{{ point.error }}</code></td>
+					<td class="num muted">{{ (point.durationMs / 1000) | round(1) }}s</td>
+				{% else %}
+					<td class="score score-{{ point.performance | scoreClass }}">{{ point.performance }}</td>
+					<td class="num">{{ point.lcp | ms }}</td>
+					<td class="num">{{ point.cls | unit("") }}</td>
+					<td class="num">{{ point.tbt | ms }}</td>
+					<td class="num">{{ point.total | bytes }}</td>
+					<td class="num muted">{{ point.completedRuns }}/{{ point.requestedRuns }}</td>
+					<td class="num muted">{{ ("±" + point.spread) if point.spread != null else "—" }}</td>
+					<td class="num muted" title="Lighthouse benchmark index of the measuring machine">{{ point.bench | num }}</td>
+					<td class="num muted">{{ (point.durationMs / 1000) | round(1) }}s</td>
+				{% endif %}
+			</tr>
+		{% endfor %}
+		</tbody>
+	</table>
+	</div>
+</section>
+
+{% endif %}
+</article>

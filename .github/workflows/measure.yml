@@ -1,0 +1,119 @@
+name: Measure
+
+# Measurement is a rolling process, decoupled from publishing.
+#
+# This workflow measures a bounded batch of the stalest sites and commits the
+# results. It does not try to cover the whole list, and it does not need to
+# succeed for the site to build — see publish.yml, which deploys whatever data
+# exists whenever it runs.
+#
+# To go faster, raise `batch` or add shards to the matrix. To go slower, run it
+# less often. Neither choice requires changing anything else.
+
+on:
+  schedule:
+    # Every 2 hours. With batch=40 and 4 shards that is 480 sites/day.
+    - cron: "0 */2 * * *"
+  workflow_dispatch:
+    inputs:
+      batch:
+        description: "Sites per shard this run"
+        type: string
+        default: "40"
+      force:
+        description: "Ignore the freshness window"
+        type: boolean
+        default: false
+
+# Runs may overlap in time without conflicting — each shard owns a disjoint
+# slice of the site list — but two runs of the SAME shard would duplicate work.
+concurrency:
+  group: measure
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  measure:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    strategy:
+      # One shard failing must not stop the others; partial coverage is fine.
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        shard: [1, 2, 3, 4]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Measure batch
+        env:
+          CRUX_API_KEY: ${{ secrets.CRUX_API_KEY }}
+        run: |
+          node bin/speedlify.js measure \
+            --shard=${{ matrix.shard }}/4 \
+            --limit=${{ inputs.batch || '40' }} \
+            ${{ inputs.force && '--force' || '' }}
+
+      - name: Commit results
+        # Shards write to disjoint directories, but they push to one branch, so
+        # rebase-and-retry rather than failing on a race with another shard.
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add results
+          git diff --staged --quiet && exit 0
+
+          git commit -m "Measurements: shard ${{ matrix.shard }}/4"
+
+          for attempt in 1 2 3 4 5; do
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && exit 0
+            echo "push race on attempt $attempt, retrying"
+            sleep $((RANDOM % 10 + 5))
+          done
+          echo "could not push after 5 attempts" >&2
+          exit 1
+
+  # Field data is cheap (one request per site) and independent of Lighthouse,
+  # so it runs on its own schedule rather than blocking the measurement job.
+  field:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    if: github.event_name == 'schedule'
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: Refresh CrUX history
+        env:
+          CRUX_API_KEY: ${{ secrets.CRUX_API_KEY }}
+        if: env.CRUX_API_KEY != ''
+        run: node bin/speedlify.js backfill
+
+      - name: Commit field history
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add results
+          git diff --staged --quiet && exit 0
+          git commit -m "CrUX field history"
+          for attempt in 1 2 3 4 5; do
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && exit 0
+            sleep $((RANDOM % 10 + 5))
+          done
+          exit 1

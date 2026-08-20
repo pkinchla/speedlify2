@@ -1,0 +1,338 @@
+---
+layout: base.njk
+permalink: /index.html
+---
+
+<section class="statbar">
+	<div class="stat" title="Mean of the four-category total, which is what the leaderboard ranks by">
+		<span class="stat-value">{{ sites.stats.avgTotal if sites.stats.avgTotal else "—" }}<span class="stat-suffix">/400</span></span>
+		<span class="stat-label">Avg Lighthouse total</span>
+	</div>
+	<div class="stat" title="Sites scoring 100 in all four Lighthouse categories">
+		<span class="stat-value">{{ sites.stats.perfect }}<span class="stat-suffix">/{{ sites.stats.measured }}</span></span>
+		<span class="stat-label">Perfect {{ sites.stats.perfect | plural("score") }}</span>
+		{% if sites.stats.perfectEleventy %}
+		<p class="stat-sub" title="{{ sites.stats.perfectEleventy }} of the {{ sites.stats.perfect }} perfect scores are built with Eleventy or Build Awesome, counting sites listed in the community repo that emit no generator tag">
+			{{ sites.stats.perfectEleventy | num }}
+			{% for mark in sites.stats.perfectEleventyMarks %}{% stackIcon mark %}{% endfor %}
+			<span class="stat-sub-pct">({{ (sites.stats.perfectEleventy / sites.stats.perfect * 100) | round }}%)</span>
+		</p>
+		{% endif %}
+	</div>
+	<div class="stat">
+		<span class="stat-value">{{ sites.stats.avgWeight | bytes }}</span>
+		<span class="stat-label">Avg page weight</span>
+		{#
+			Absent until the report has enough days to be worth drawing — see
+			MIN_WEIGHT_HISTORY_DAYS in lib/report.js.
+		#}
+		{% if sites.stats.weightHistory.length %}
+		{% set weightTrend = { values: [] } %}
+		{% for point in sites.stats.weightHistory %}
+			{% set weightTrend = (weightTrend.values.push(point.avgWeight), weightTrend) %}
+		{% endfor %}
+		<span class="stat-spark" title="Daily average across every site measured that day, {{ sites.stats.weightHistory[0].date }} to {{ sites.stats.weightHistory[sites.stats.weightHistory.length - 1].date }}">
+			{% sparkline weightTrend, { width: 150, height: 24 } %}
+		</span>
+		{% endif %}
+	</div>
+	{% if sites.cwvAvailable %}
+	<div class="stat">
+		<span class="stat-value">{{ sites.stats.cwvPassing }}<span class="stat-suffix">/{{ sites.stats.cwvAssessed }}</span></span>
+		<span class="stat-label">Passing Core Web Vitals</span>
+	</div>
+	{% endif %}
+</section>
+
+{% if sites.coverage.measured %}
+<p class="coverage">
+	Measured continuously — each site refreshed on its own schedule, newest data shown.
+	<strong>{{ sites.coverage.measured }}/{{ sites.coverage.total }}</strong>
+	{{ sites.coverage.measured | plural("site") }} {{ sites.coverage.measured | verb("has", "have") }} data
+	{%- if sites.coverage.medianAgeHours %}, median age
+	{% if sites.coverage.medianAgeHours < 48 %}{{ sites.coverage.medianAgeHours }}h{% else %}{{ (sites.coverage.medianAgeHours / 24) | round(1) }}d{% endif %}
+	{%- endif %}.
+	{% if sites.coverage.stale %}<span class="worse">{{ sites.coverage.stale }} stale</span> (over {{ sites.coverage.staleAfterHours }}h).{% endif %}
+	{% if sites.coverage.never %}<span class="muted">{{ sites.coverage.never }} not yet measured.</span>{% endif %}
+	{% if sites.stats.failing %}<span class="worse">{{ sites.stats.failing | num }} currently failing.</span>{% endif %}
+</p>
+{% endif %}
+
+{% if not sites.stats.measured %}
+<div class="empty">
+	<h2>No measurements yet</h2>
+	<p>Run a measurement pass to populate this page:</p>
+	<pre><code>npm run measure</code></pre>
+	<p class="muted">
+		Sites are configured in <code>config/sites.js</code>. For real-user Core Web
+		Vitals — including INP, which Lighthouse cannot measure in a lab run — set
+		<code>CRUX_API_KEY</code> and run <code>npx speedlify backfill</code> to seed
+		six months of field history.
+	</p>
+</div>
+{% endif %}
+
+{% macro stacktally(tally, label, title) %}
+{% if tally.items.length %}
+<div class="tally">
+	<h3 class="tally-head">
+		{{ label }}
+		<span class="tally-meta">{{ tally.distinct }} distinct · {{ tally.detected }} of {{ tally.detected + tally.unknown }} detected</span>
+	</h3>
+	<ul class="tally-list">
+		{% for item in tally.items %}
+		<li class="tally-item" title="{{ item.count }} {{ item.count | plural('site') }} {{ title }} {{ item.name }}">
+			{% if item.icon %}{% stackIcon item %}{% endif %}
+			<span class="tally-name">{{ item.name }}</span>
+			<span class="tally-count">{{ item.count | num }}</span>
+		</li>
+		{% endfor %}
+		{% if tally.rare %}
+		{# One-offs with no brand mark, folded into a single row so the list stays
+		   readable without the count silently disagreeing with the heading. #}
+		<li class="tally-item tally-rare" title="{{ tally.rareNames | join(', ') }} — one site each">
+			<span class="tally-name">…and {{ tally.rare }} one-off{{ tally.rare | plural('', 's') }}</span>
+		</li>
+		{% endif %}
+	</ul>
+</div>
+{% endif %}
+{% endmacro %}
+
+
+{% if sites.groups.length > 1 or sites.moving.length or sites.orphans.length %}
+<nav class="contents" aria-label="Categories">
+	<span class="contents-label">Categories</span>
+	<ul>
+		{% for group in sites.groups %}
+		{% if group.entries.length %}
+		<li>
+			<a href="/group/{{ group.id }}/">{{ group.name }}</a>
+			<span class="contents-count">{{ group.entries.length | num }}</span>
+		</li>
+		{% endif %}
+		{% endfor %}
+		{% if sites.moving.length %}
+		<li>
+			<a href="#moving">{{ sites.moving.length | plural("Site") }} that {{ sites.moving.length | verb("redirects", "redirect") }}</a>
+			<span class="contents-count">{{ sites.moving.length }}</span>
+		</li>
+		{% endif %}
+		{% if sites.orphans.length %}
+		<li>
+			<a href="#orphans">Orphaned {{ sites.orphans.length | plural("history", "histories") }}</a>
+			<span class="contents-count">{{ sites.orphans.length }}</span>
+		</li>
+		{% endif %}
+	</ul>
+</nav>
+{% endif %}
+
+{#
+	One ranked list across every category. The category pages carry the same
+	table filtered and re-ranked within themselves; this is the overall view, so
+	`ranks.overall` rather than `groupRanks`.
+#}
+{% set perfectTotal = metrics.SCORES.length * 100 %}
+{#
+	Both counts are computed before the section so the heading can state them.
+	`shown` is every site on a perfect total — not a truncation, and the ceiling
+	comes from the score list rather than a hardcoded 400.
+
+	The Eleventy share of these is counted in the report instead — the stat tile
+	that shows it renders above this, and `{% set %}` inside a loop does not
+	survive the loop in Nunjucks.
+#}
+{% set shown = [] %}
+{% for entry in sites.entries %}
+	{% if entry.lighthouseTotal == perfectTotal %}{% set shown = (shown.push(entry), shown) %}{% endif %}
+{% endfor %}
+<section class="group" id="leaderboard">
+	<div class="group-head">
+		<h2>Perfect scores</h2>
+		<p class="muted">
+			Every site scoring {{ perfectTotal }} — full marks in all
+			{{ metrics.SCORES.length }} Lighthouse categories — across every category,
+			newest data. With the totals tied, the order is decided entirely by the
+			tiebreakers: fewest failing Core Web Vitals from real users, then fewest
+			axe violations, then Speed Index per KB, so a fast heavy site outranks a
+			fast empty one.
+		</p>
+	</div>
+
+	<div class="table-scroll">
+	<table class="grid">
+		<thead>
+			<tr>
+				<th class="col-rank">#</th>
+				<th class="col-site">Site</th>
+				<th class="col-stack" title="What built the site and who serves it, both detected on the same page load">Stack</th>
+				<th class="col-rings" title="The four Lighthouse categories, then their sum — the primary ranking">Lighthouse</th>
+				<th class="col-cwv" title="Failing Core Web Vitals from real users — the first ranking tiebreaker">CWV</th>
+				<th class="col-axe" title="Violating nodes from a full axe run — the second ranking tiebreaker">Axe</th>
+				<th class="col-trend">Trend</th>
+				<th>LCP</th>
+				<th>CLS</th>
+				<th>TBT</th>
+				<th>Weight</th>
+				<th>Req</th>
+			</tr>
+		</thead>
+		<tbody>
+		{#
+			Not a truncation any more: this is every site on a perfect total. The
+			ceiling is derived from the score list rather than hardcoded to 400, so
+			adding or removing a Lighthouse category cannot silently empty the table.
+			`sites.entries` arrives already ranked, so filtering preserves that order.
+		#}
+		{% for entry in shown %}
+			<tr{% if entry.currentlyFailing %} class="row-failing"{% endif %}>
+				<td class="col-rank">
+					{% if entry.ranks.overall %}
+					<span class="trophy">{{ entry.ranks.overall | trophy }}</span><span class="hash">#</span>{{ entry.ranks.overall }}
+					{% else %}—{% endif %}
+				</td>
+				<td class="col-site">
+					<a class="site-link" href="/site/{{ entry.slug }}/">
+						{% set avatar = entry.url | avatar(meta.avatarService) %}
+						{% if avatar %}<img class="favicon" src="{{ avatar }}" width="32" height="32" alt="" loading="lazy" decoding="async">{% endif %}
+						<span>{{ entry.displayUrl }}</span>
+					</a>
+					{% if entry.latest %}<span class="updated-tag {{ 'stale-age' if entry.dataStale }}" title="Measured {{ entry.latest.date | date('long') }}">{{ entry.latest.date | since }}</span>{% else %}<span class="updated-tag never">never</span>{% endif %}
+					{% if entry.currentlyFailing %}<span class="badge badge-error" title="{{ entry.lastError }}">failing</span>{% endif %}
+					{% if entry.redirectTo and entry.redirectTo != entry.url %}<span class="badge badge-redirect" title="Measured through a redirect to {{ entry.redirectTo }}{% if entry.redirectConfirmed %} — confirmed, so history will follow it{% else %} — {{ entry.redirectReason }}{% endif %}">&#8618; redirect</span>
+					{% elif entry.canonicalUrl %}<span class="badge badge-redirect" title="Measured through a redirect to {{ entry.canonicalUrl }} — the site's canonical form of this URL">&#8618; redirect</span>{% endif %}
+					{% if entry.unlisted %}<span class="badge badge-unlisted" title="Built with {{ entry.unlisted.generator }} but not in {{ entry.unlisted.groupName }} — nobody has submitted it to the 11ty/11ty-community repository">unlisted</span>{% endif %}
+				</td>
+
+				{% if entry.latest %}
+					<td class="col-stack">
+						<span class="stack-pair">
+						{% if entry.generator %}{% stackIcon entry.generator %}
+						{% elif entry.presumedGenerator %}{% stackIcon entry.presumedGenerator %}{% endif %}
+						{% if entry.host %}{% stackIcon entry.host %}{% endif %}
+						{% if not entry.generator and not entry.presumedGenerator and not entry.host %}<span class="stack-none" title="Nothing detected">·</span>{% endif %}
+						</span>
+					</td>
+					<td class="col-rings">
+						<span class="rings">
+						{% for score in metrics.SCORES %}
+							{% scoreRing entry.latest.lab.scores[score.key], score.label %}
+						{% endfor %}
+						<span class="rings-total" title="Sum of all four Lighthouse categories — the primary ranking">{{ entry.lighthouseTotal }}</span>
+						</span>
+					</td>
+
+					<td class="col-cwv num {{ 'cwv-pass' if entry.cwvFailures == 0 }}{{ ' cwv-fail' if entry.cwvFailures > 0 }}"
+						title="{% if entry.cwvFailures != null %}{{ entry.cwvFailures }} of {{ entry.cwv.assessed }} Core Web Vitals failing at p75{% else %}no real-user data — not counted in the ranking{% endif %}">
+						{{ entry.cwvFailures if entry.cwvFailures != null else "—" }}
+					</td>
+					<td class="col-axe num {{ 'axe-clean' if entry.axeViolations == 0 }}{{ ' axe-bad' if entry.axeViolations > 0 }}"
+						title="{% if entry.axe and not entry.axe.error %}{{ entry.axe.violations }} violating node(s) across {{ entry.axe.violationRules }} rule(s){% else %}axe did not run{% endif %}">
+						{{ entry.axeViolations if entry.axeViolations != null else "—" }}
+					</td>
+					<td class="col-trend">{% sparkline entry.trends.performance %}</td>
+					<td class="num">{{ entry.latest.lab.timings.lcp | ms }}</td>
+					<td class="num">{{ entry.latest.lab.timings.cls | unit("") }}</td>
+					<td class="num">{{ entry.latest.lab.timings.tbt | ms }}</td>
+					<td class="num">{{ entry.latest.lab.weight.total | bytes }}</td>
+					<td class="num">{{ entry.latest.lab.weight.requests | num }}</td>
+				{% else %}
+					<td class="num muted" colspan="10">
+						{% if entry.currentlyFailing %}every attempt failed{% else %}awaiting first measurement{% endif %}
+					</td>
+				{% endif %}
+			</tr>
+		{% endfor %}
+		</tbody>
+	</table>
+	</div>
+
+	<p class="see-all">
+		{% if shown.length %}
+		{{ shown.length | countOf("site") }} of {{ sites.stats.measured | num }} measured
+		{{ shown.length | verb("is", "are") }} on a perfect {{ perfectTotal }}.
+		The full lists are on the category pages.
+		{% else %}
+		No site is on a perfect {{ perfectTotal }} yet. The full lists are on the
+		category pages.
+		{% endif %}
+	</p>
+</section>
+
+{% if sites.stacks.generators.items.length or sites.stacks.hosts.items.length %}
+<section class="stacks">
+	{{ stacktally(sites.stacks.generators, "Built with", "built with") }}
+	{{ stacktally(sites.stacks.hosts, "Hosted by", "hosted by") }}
+</section>
+{% endif %}
+
+
+{% if sites.moving.length %}
+<section class="redirects" id="moving">
+	<h2>{{ sites.moving.length | plural("Site") }} that {{ sites.moving.length | verb("redirects", "redirect") }}</h2>
+	<p class="muted">
+		Lighthouse follows a redirect, so these are already measured at their
+		destination — the numbers are real, they just describe the page the URL
+		leads to. What is pending is whether the move is permanent enough to move
+		the <em>history</em> too, which happens on its own once a redirect proves
+		stable. Nothing here needs a config change.
+	</p>
+
+	{#
+		Grouped by verdict rather than listed flat. A hundred rows each stamped
+		with the same machine-readable reason tells you nothing; the reason is
+		the interesting part, so it becomes the heading and is said once.
+	#}
+	{% set reasons = [] %}
+	{% for move in sites.moving %}
+		{% set key = "confirmed" if move.confirmed else (move.reason or "unknown") %}
+		{% if key not in reasons %}{% set reasons = (reasons.push(key), reasons) %}{% endif %}
+	{% endfor %}
+
+	{% for reason in reasons %}
+	{% set group = [] %}
+	{% for move in sites.moving %}
+		{% if ("confirmed" if move.confirmed else (move.reason or "unknown")) == reason %}
+			{% set group = (group.push(move), group) %}
+		{% endif %}
+	{% endfor %}
+
+	<h3 class="redirects-head">
+		{% if reason == "confirmed" %}Confirmed — history follows{% else %}{{ reason | redirectReason }}{% endif %}
+		<span class="redirects-count">{{ group.length | num }}</span>
+	</h3>
+	<p class="muted small">
+		{% if reason == "confirmed" %}
+		The destination has been consistent and permanent across several runs, so
+		measurement has already followed it and the history came along.
+		{% else %}{{ reason | redirectExplanation }}{% endif %}
+	</p>
+	<ul class="redirects-list">
+		{% for move in group %}
+		<li>
+			<a href="/site/{{ move.slug }}/">{{ move.from }}</a>
+			<span class="redirects-arrow">&rarr;</span>
+			<code>{{ move.to }}</code>
+			{% for group in move.groups %}<span class="redirects-group">{{ group }}</span>{% endfor %}
+		</li>
+		{% endfor %}
+	</ul>
+	{% endfor %}
+</section>
+{% endif %}
+
+{% if sites.orphans.length %}
+<section class="orphans" id="orphans">
+	<h2>Orphaned {{ sites.orphans.length | plural("history","histories") }}</h2>
+	<p class="muted">
+		These URLs have stored measurements but are no longer in
+		<code>config/sites.js</code>. Their history is kept, not deleted.
+	</p>
+	<ul>
+		{% for orphan in sites.orphans %}
+		<li><code>{{ orphan.url or orphan.hash }}</code>{% if orphan.name %} — {{ orphan.name }}{% endif %}</li>
+		{% endfor %}
+	</ul>
+</section>
+{% endif %}

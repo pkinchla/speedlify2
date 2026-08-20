@@ -1,0 +1,37 @@
+---
+pagination:
+  data: sites.entries
+  size: 1
+  alias: entry
+permalink: "/api/{{ entry.shortHash }}.json"
+eleventyExcludeFromCollections: true
+---
+{#
+  Compatibility route for the original Speedlify's API.
+
+  The documented, preferred usage of `<speedlify-score>` hardcodes a hash in the
+  markup, so pages we do not control request this filename directly. It is the
+  one route whose absence breaks an embed that is already deployed.
+
+  Only the four Lighthouse scores are emitted, because they are the only fields
+  whose absence produces a broken render: with no attributes the component shows
+  exactly these. Everything else it reads — weight.summary, ranks.cumulative,
+  previousRanks.cumulative — sits behind an opt-in attribute and a guard, and
+  renders nothing at all when missing rather than failing.
+
+  Sites with no successful measurement emit an empty object: the component
+  reads through optional chaining, so it draws nothing instead of erroring.
+-#}
+{% set lab = entry.latest.lab if entry.latest -%}
+{% if lab -%}
+{
+  "lighthouse": {
+    "performance": {{ lab.scores.performance | dump | safe }},
+    "accessibility": {{ lab.scores.accessibility | dump | safe }},
+    "bestPractices": {{ lab.scores["best-practices"] | dump | safe }},
+    "seo": {{ lab.scores.seo | dump | safe }}
+  }
+}
+{%- else -%}
+{}
+{%- endif %}

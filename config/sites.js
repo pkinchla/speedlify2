@@ -1,0 +1,289 @@
+// import addressbook from "./addressbook.json" with { type: "json" };
+import community from "./11ty-community.json" with { type: "json" };
+// import emeritus from "./11ty-emeritus.json" with { type: "json" };
+
+/**
+ * The list of sites to measure.
+ *
+ * Add or remove entries here — everything else (results, history, the static
+ * site) keys off of the `url`, so renaming a site keeps its history but
+ * changing a URL starts a fresh history for that URL.
+ */
+export default {
+	// Lighthouse runs per URL per measurement. The median run is kept.
+	// 3 is a decent tradeoff between noise and wall-clock time.
+	runs: 3,
+
+	// "mobile" (throttled, Moto G Power emulation) or "desktop"
+	formFactor: "mobile",
+
+	// Skip a URL if it was already measured within this many hours.
+	// Set to 0 to always re-measure.
+	freshnessHours: 24 * 7,
+
+	// How many sites a single `speedlify measure` will do before stopping.
+	// Measurement is a rolling process: each run spends this budget on whichever
+	// sites are most out of date, so you size this to the time you're willing to
+	// give one invocation, not to the length of the site list.
+	//
+	// With ~2,300 sites this must not be null — an unbounded run would try the
+	// whole list and take about eleven hours. At 40, a run is roughly 12 minutes,
+	// and four shards every two hours cover every site in a bit over a day.
+	batchSize: 500,
+
+	// Data older than this is shown as stale in the report and in `speedlify list`.
+	staleAfterHours: 24 * 7 * 2,
+
+	// How many recent points the report charts. Since the build reads the compact
+	// series.json rather than the raw records, this is a readability choice
+	// rather than a performance guard — set it to null to chart everything.
+	historyLimit: 120,
+
+	// How long a site whose last attempt errored waits before being tried again.
+	// An error is not data, so a failure never earns the site a freshness window
+	// — this is the only thing holding it back. 0 means the very next run.
+	//
+	// Overridable per category, same as freshnessHours: a handful of framework
+	// home pages can retry immediately while thousands of personal sites wait.
+	retryErrorsAfterHours: 6,
+
+	// Escalate that wait exponentially with each consecutive failure — 1h, 2, 4,
+	// 8, 16, capped at 24 — so a URL that has been dead for a week stops
+	// consuming a slot in every batch. The two compose: the wait is whichever of
+	// the curve and retryErrorsAfterHours is longer.
+	failureBackoff: true,
+
+	// A redirect must lead to the same destination on this many consecutive
+	// successful measurements before it is treated as a real site move. Guards
+	// against A/B tests, geo splits and maintenance pages, which all look like
+	// redirects for a run or two.
+	redirectConfirmations: 3,
+
+	// Any category can be switched off with `enabled: false`. It stops being
+	// measured and stops appearing on the site, but nothing is deleted — its
+	// stored history stays put and comes straight back when it is re-enabled.
+	//
+	// A site listed in a disabled category and nowhere else drops out of the
+	// corpus entirely, so its history will read as orphaned meanwhile.
+	groups: {
+		ssg: {
+			name: "Site Generators",
+			enabled: true,
+			description: "Home pages for popular site generators and frameworks.",
+			freshnessHours: 24,
+  		staleAfterHours: 48,
+			// The list from https://www.speedlify.dev/ssg/, in its order.
+			sites: [
+				{ name: "Eleventy", url: "https://www.11ty.dev/" },
+				{ name: "Astro", url: "https://astro.build/" },
+				{ name: "Svelte", url: "https://svelte.dev/" },
+				{ name: "Hugo", url: "https://gohugo.io/" },
+				{ name: "Jekyll", url: "https://jekyllrb.com/" },
+				{ name: "VuePress", url: "https://vuepress.vuejs.org/" },
+				{ name: "VitePress", url: "https://vitepress.dev/" },
+				{ name: "Docusaurus", url: "https://docusaurus.io/" },
+				{ name: "Gridsome", url: "https://gridsome.org/" },
+				{ name: "Next.js", url: "https://nextjs.org/" },
+				{ name: "Gatsby", url: "https://www.gatsbyjs.com/" },
+				{ name: "React Router", url: "https://reactrouter.com/" },
+				{ name: "Lume", url: "https://lume.land/" },
+				{ name: "Hexo", url: "https://hexo.io/" },
+				{ name: "Remix", url: "https://remix.run/" },
+				{ name: "SolidJS", url: "https://www.solidjs.com/" },
+				{ name: "Qwik", url: "https://qwik.dev/" },
+				{ name: "TanStack", url: "https://tanstack.com/" },
+				{ name: "Nuxt", url: "https://nuxt.com/" },
+			],
+		},
+
+		"test-runners": {
+			name: "Test Runners",
+			enabled: true,
+			description: "Home pages for JavaScript test runners and linters.",
+			freshnessHours: 24,
+  		staleAfterHours: 48,
+			// The list from https://www.speedlify.dev/test-runners/, in its order.
+			sites: [
+				{ name: "QUnit", url: "https://qunitjs.com/" },
+				{ name: "webhint", url: "https://webhint.io/" },
+				{ name: "Mocha", url: "https://mochajs.org/" },
+				{ name: "ESLint", url: "https://eslint.org/" },
+				{ name: "Istanbul", url: "https://istanbul.js.org/" },
+				{ name: "gulp", url: "https://gulpjs.com/" },
+				{ name: "Grunt", url: "https://gruntjs.com/" },
+				{ name: "WebdriverIO", url: "https://webdriver.io/" },
+				{ name: "Intern", url: "https://theintern.io/" },
+			],
+		},
+
+		hosts: {
+			name: "Web Hosts",
+			enabled: true,
+			description:
+				"Home pages of the hosting and deploy platforms this project detects in the Host column.",
+
+			// A curated handful of company sites, so the same cadence as the other
+			// hand-maintained categories rather than the address book's weekly pace.
+			freshnessHours: 24,
+			staleAfterHours: 48,
+
+			sites: [
+				{ name: "Netlify", url: "https://www.netlify.com/" },
+				{ name: "Vercel", url: "https://vercel.com/" },
+				{ name: "Cloudflare", url: "https://www.cloudflare.com/" },
+				{ name: "Cloudflare Pages", url: "https://pages.cloudflare.com/" },
+				{ name: "GitHub Pages", url: "https://pages.github.com/" },
+				{ name: "GitLab Pages", url: "https://docs.gitlab.com/user/project/pages/" },
+				{ name: "Fly.io", url: "https://fly.io/" },
+				{ name: "Render", url: "https://render.com/" },
+				{ name: "Railway", url: "https://railway.com/" },
+				{ name: "Deno Deploy", url: "https://deno.com/deploy" },
+				{ name: "Fastly", url: "https://www.fastly.com/" },
+				{ name: "Bunny", url: "https://bunny.net/" },
+				{ name: "DigitalOcean", url: "https://www.digitalocean.com/" },
+				{ name: "Heroku", url: "https://www.heroku.com/" },
+				{ name: "Surge", url: "https://surge.sh/" },
+				{ name: "Neocities", url: "https://neocities.org/" },
+				{ name: "Codeberg Pages", url: "https://codeberg.page/" },
+
+				// Product pages rather than roots: these three are hosting products
+				// inside far larger sites, and the company's front door would be
+				// measuring something else entirely.
+				{ name: "Firebase Hosting", url: "https://firebase.google.com/products/hosting" },
+				{ name: "AWS Amplify", url: "https://aws.amazon.com/amplify/" },
+				{ name: "Azure Static Web Apps", url: "https://azure.microsoft.com/en-us/products/app-service/static" },
+			],
+		},
+
+		zachleat: {
+			name: "zachleat.com",
+			enabled: true,
+			description: "Pages from zachleat.com.",
+
+			// A handful of pages on one site, so the curated cadence — and one
+			// origin serving all of them, so the same politeness the other
+			// many-pages-per-host categories get.
+			freshnessHours: 24,
+			staleAfterHours: 48,
+			rateLimit: {
+				delayMs: 3000,
+				hostCooldownMs: 60000,
+			},
+
+			sites: [
+				{ url: "https://www.zachleat.com/" },
+				{ url: "https://www.zachleat.com/about/" },
+				{ url: "https://www.zachleat.com/resume/" },
+				{ url: "https://www.zachleat.com/twitter/" },
+				{ url: "https://www.zachleat.com/web/" },
+				{ url: "https://www.zachleat.com/web/eleventy/" },
+				{ url: "https://www.zachleat.com/web/fonts/" },
+				{ url: "https://www.zachleat.com/web/speedlify/" },
+				{ url: "https://www.zachleat.com/web/lighthouse-in-footer/" },
+				{ url: "https://www.zachleat.com/web/comprehensive-webfonts/" },
+				{ url: "https://www.zachleat.com/web/google-fonts-display/" },
+			],
+		},
+
+		"11ty-community": {
+			name: "Built Awesome",
+			enabled: true,
+			description: "Community-submitted sites from the 11ty/11ty-community repository.",
+
+			// Same reasoning as Personal Websites: other people's sites, most on
+			// modest hosting, measured at a deliberate pace.
+			rateLimit: {
+				delayMs: 3000,
+				hostCooldownMs: 60000,
+			},
+
+			freshnessHours: 24 * 7,
+			staleAfterHours: 24 * 7 * 2,
+
+			// The list is a record of what was submitted, not of what is true now.
+			// A site measured as something other than Eleventy has moved on, so it
+			// moves to the category below rather than inflating this one.
+			//
+			// Matched on the detected generator's id, and only when there is one:
+			// no generator tag is the normal case for a static site and proves
+			// nothing either way, so those stay put. Both names for the same
+			// project qualify — "Build Awesome" is Eleventy's newer branding and
+			// reports under its own id, so it has to be listed explicitly.
+			requireGenerator: ["eleventy", "build-awesome"],
+			emeritusGroup: "11ty-emeritus",
+
+			// Most static sites emit no generator tag at all, so a blank is the
+			// common case here rather than a suspicious one. Being on this list is
+			// itself a claim about what built the site — shown faded, because it is
+			// what someone submitted rather than what we measured.
+			presumedGenerator: "build-awesome",
+
+			// Generated by scripts/import-11ty-community.mjs — re-run it to refresh.
+			sites: community.urls.map((url) => ({ url })),
+		},
+
+		"11ty-emeritus": {
+			name: "11ty Emeritus",
+			enabled: false,
+			description:
+				"Sites that used to be built with Eleventy or Build Awesome and are not any more. Still measured — one that returns moves back to Built Awesome on its own.",
+
+			// Same deliberate pace as the community list it came from.
+			rateLimit: {
+				delayMs: 3000,
+				hostCooldownMs: 60000,
+			},
+
+			freshnessHours: 24 * 7,
+			staleAfterHours: 24 * 7 * 2,
+
+			// Two ways in. Sites listed here were deleted from the community repo
+			// upstream — recovered from its git history, since a deletion removes
+			// the URL entirely and the generator rule never gets to see it.
+			//
+			// The rest arrive at report time: anything still on the community list
+			// that measures as a different generator is moved here automatically.
+			// The category is defined by what a site *used* to be built with, so one
+			// measuring as Eleventy again does not belong here — it has come back,
+			// and saying otherwise would state the opposite of the truth. The
+			// mirror image of requireGenerator above.
+			//
+			// As there, an undetected generator decides nothing: most static sites
+			// emit no tag, and absence is not evidence of a return.
+			rejectGenerator: ["eleventy", "build-awesome"],
+			rejectGroup: "11ty-community",
+
+			sites: [],
+			// sites: emeritus.urls.map((url) => ({ url })),
+		},
+
+		addressbook: {
+			name: "Personal Websites",
+			enabled: false,
+			description: "Personal home pages of contacts, imported from the address-book project.",
+
+			/**
+			 * These are real people's sites, mostly on modest hosting, and there
+			 * are thousands of them — so this group is measured deliberately
+			 * slowly. Measurement is already sequential (one Chrome, one run at a
+			 * time), so nothing is ever requested concurrently; these settings
+			 * govern the *pace* on top of that.
+			 *
+			 * At 3s between sites plus ~15s to measure one, a batch of 40 takes
+			 * about 12 minutes and each person's server sees a handful of page
+			 * loads once per cycle — no more than a single visitor would generate.
+			 */
+			rateLimit: {
+				delayMs: 3000,
+				// Belt and braces: nothing should hit one host twice in a minute,
+				// even if two contacts end up sharing a domain.
+				hostCooldownMs: 60000,
+			},
+
+			// Generated by scripts/import-addressbook.mjs — re-run it to refresh.
+			// Only URLs are imported; names and everything else stay private.
+			sites: [],
+			// sites: addressbook.urls.map((url) => ({ url })),
+		},
+	},
+};

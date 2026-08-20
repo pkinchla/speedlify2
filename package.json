@@ -1,0 +1,32 @@
+{
+  "name": "speedlify",
+  "version": "1.0.0",
+  "description": "Measure web performance metrics across a list of sites and compare them over time. Static output.",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "speedlify": "./bin/speedlify.js"
+  },
+  "scripts": {
+    "measure": "node ./bin/speedlify.js measure",
+    "backfill": "node ./bin/speedlify.js backfill",
+    "report": "node ./bin/speedlify.js report",
+    "build": "npm run report && eleventy",
+    "start": "npm run report && eleventy --serve",
+    "check": "node ./bin/speedlify.js check",
+    "list": "node ./bin/speedlify.js list",
+    "test": "node --test \"test/*.test.js\"",
+    "clean": "node ./bin/speedlify.js prune",
+    "import:addressbook": "node ./scripts/import-addressbook.mjs",
+    "import:11ty-community": "node ./scripts/import-11ty-community.mjs"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^4.0.0-alpha.10",
+    "@axe-core/puppeteer": "^4.13.0",
+    "axe-core": "^4.13.0",
+    "chrome-launcher": "^1.2.1",
+    "lighthouse": "^13.4.1",
+    "puppeteer-core": "^25.7.0",
+    "simple-icons": "^16.28.0"
+  }
+}

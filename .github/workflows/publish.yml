@@ -1,0 +1,72 @@
+name: Publish
+
+# Publishing is fully independent of measurement.
+#
+# The report renders whatever successful data exists at build time, preferring
+# the newest per site. It never waits for a measurement pass, never fails
+# because a site is missing, and is safe to run at any moment — including while
+# measurement jobs are mid-flight.
+
+on:
+  schedule:
+    # Hourly. Measurement runs on its own cadence; this just publishes the
+    # latest state of the dataset.
+    - cron: "30 * * * *"
+  push:
+    branches: [main]
+    # Rebuild when data lands or when the site itself changes.
+    paths:
+      - "results/**"
+      - "src/**"
+      - "lib/**"
+      - "config/**"
+      - "eleventy.config.js"
+  workflow_dispatch:
+
+# A newer publish supersedes an in-flight one — there is no value in deploying
+# a slightly older snapshot after a newer one has started.
+concurrency:
+  group: publish
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: Generate report
+        run: node bin/speedlify.js report
+
+      - name: Build
+        run: npx eleventy
+
+      - name: Report coverage
+        # Surfaces how complete the published snapshot is, so a shrinking
+        # coverage number is visible in the Actions log rather than only on the
+        # rendered page.
+        run: node bin/speedlify.js list | tail -3
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4

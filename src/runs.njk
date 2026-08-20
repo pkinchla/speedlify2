@@ -1,0 +1,72 @@
+---
+layout: base.njk
+permalink: /runs/index.html
+title: Runs
+---
+
+<header class="detail-head">
+	<h2 class="page-hed">Measurement runs</h2>
+	<p class="lede">
+		Every measurement pass, read from the NDJSON run log. When a number looks
+		wrong, the first question is whether that run actually finished — this
+		answers it without shell access to the build machine.
+	</p>
+</header>
+
+{% if not runs.recent.length %}
+<div class="empty">
+	<p>No runs logged yet. Run <code>npm run measure</code> to create one.</p>
+</div>
+{% else %}
+
+<section class="panel">
+	<div class="table-scroll">
+	<table class="grid">
+		<thead>
+			<tr>
+				<th class="col-site">Started</th>
+				<th>Duration</th>
+				<th>Measured</th>
+				<th>Skipped</th>
+				<th>Failed</th>
+				<th>Warnings</th>
+				<th>Form factor</th>
+				<th>Log file</th>
+			</tr>
+		</thead>
+		<tbody>
+		{% for run in runs.recent %}
+			<tr{% if run.failed %} class="row-failing"{% endif %}>
+				<td class="col-site">{{ run.startedAt | date("long") }}</td>
+				<td class="num">{{ (run.durationMs / 1000) | round(1) }}s</td>
+				<td class="num">{{ run.measured or run.written or 0 }}</td>
+				<td class="num muted">{{ run.skipped or 0 }}</td>
+				<td class="num {{ 'worse' if run.failed }}">{{ run.failed or 0 }}</td>
+				<td class="num muted">{{ run.counts.warn or 0 }}</td>
+				<td class="muted">{{ run.formFactor or "—" }}</td>
+				<td class="muted"><code>{{ run.logFile }}</code></td>
+			</tr>
+		{% endfor %}
+		</tbody>
+	</table>
+	</div>
+</section>
+
+<section class="panel">
+	<h2>Reading the logs</h2>
+	<p class="muted small">
+		Each run writes a full NDJSON log to <code>logs/&lt;runId&gt;.ndjson</code>,
+		one JSON object per line, plus a summary line appended to
+		<code>logs/runs.ndjson</code>. Both are greppable:
+	</p>
+	<pre><code># Every warning and error across all runs
+grep -h '"level":"warn"\|"level":"error"' logs/*.ndjson | jq .
+
+# What happened to one site in one run
+jq 'select(.data.url == "https://example.com/")' logs/2026-01-01*.ndjson
+
+# Run history at a glance
+npx speedlify runs</code></pre>
+</section>
+
+{% endif %}
