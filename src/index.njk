@@ -104,11 +104,19 @@ permalink: /index.html
 <nav class="contents" aria-label="Categories">
 	<span class="contents-label">Categories</span>
 	<ul>
+		{#
+			Measured over listed, not just listed. Measurement is rolling — a
+			category is added in one commit and fills in over the following days —
+			so a bare total says how many URLs someone typed, while this says how
+			much of the category the site can actually show you.
+		#}
 		{% for group in sites.groups %}
 		{% if group.entries.length %}
 		<li>
 			<a href="/group/{{ group.id }}/">{{ group.name }}</a>
-			<span class="contents-count">{{ group.entries.length | num }}</span>
+			<span class="contents-count" title="{{ group.measured | num }} of {{ group.entries.length | num }} measured at least once">
+				{{ group.measured | num }}<span class="contents-of">/{{ group.entries.length | num }}</span>
+			</span>
 		</li>
 		{% endif %}
 		{% endfor %}

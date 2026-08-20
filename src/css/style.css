@@ -675,6 +675,10 @@ th.col-rings { text-align: left !important; }
 	gap: 0.4rem 1.1rem;
 }
 .contents li { display: inline-flex; align-items: baseline; gap: 0.35rem; font-size: 0.9rem; }
+/* The denominator is context, not the number being reported — dimmed so the
+   measured count is what the eye lands on. */
+.contents-of { opacity: 0.6; }
+
 .contents-count {
 	font-size: 0.72rem;
 	font-variant-numeric: tabular-nums;
