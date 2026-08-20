@@ -801,21 +801,15 @@ th.col-rings { text-align: left !important; }
 	border-radius: var(--pill);
 	padding: 0.05rem 0.45rem;
 }
-.redirects-list {
-	list-style: none;
-	margin: 0.5rem 0 0;
-	padding: 0;
-	display: grid;
-	gap: 0.3rem;
-	font-size: 0.88rem;
-}
-.redirects-list li {
-	display: flex;
-	align-items: baseline;
-	gap: 0.45rem;
-	flex-wrap: wrap;
-}
-.redirects-arrow { color: var(--text-muted); }
+/*
+ * A URL column: left aligned like `.col-site`, but held on one line so a long
+ * pair of URLs scrolls the table inside its box rather than wrapping every row
+ * to three lines. `.col-site` cannot be reused — it forces `white-space:
+ * normal` so metric-name cells in the trend tables can wrap.
+ */
+.col-url { text-align: left !important; white-space: nowrap; }
+.col-url + .col-url { padding-left: 0.9rem; }
+.redirects-arrow { color: var(--text-muted); padding-right: 0.15rem; }
 /* Which lists this URL belongs to. Quiet by design — it is context for the
    row, not a second thing to read. */
 .redirects-group {

@@ -163,19 +163,11 @@ permalink: /index.html
 	<div class="group-head">
 		<h2>Perfect scores</h2>
 		<p class="muted">
-			Every site scoring {{ perfectTotal }} — full marks in all
-			{{ metrics.SCORES.length }} Lighthouse categories — with no axe violations and
-			no Core Web Vital failing real users, across every category, newest data.
-			Lighthouse's own accessibility score samples the rules axe runs in full, and
-			its timings are one simulated load where CrUX is 28 days of real visits, so
-			the extra two rings have to hold too. A site CrUX has no sample for still
-			qualifies — most sites here are too small to appear in it, which says
-			nothing about how fast they are — but a failing one does not. With the totals
-			tied — and every row here is all green with a clean axe run, so the colours are
-			tied too — the order
-			is decided entirely by the tiebreakers: fewest failing Core Web Vitals, then
-			fewest axe violations, then Speed Index per KB, so a fast heavy site outranks
-			a fast empty one.
+			{{ perfectTotal }} in all {{ metrics.SCORES.length }} Lighthouse categories, no axe
+			violations, and no Core Web Vital failing real users. Sites CrUX has no data
+			for still qualify; sites failing it do not. Every row here is tied on all of
+			that, so the order comes down to the last tiebreaker: Speed Index per KB,
+			plus TTFB and blocking time — a fast heavy site outranks a fast empty one.
 		</p>
 	</div>
 
@@ -272,11 +264,10 @@ permalink: /index.html
 	<p class="see-all">
 		{% if shown.length %}
 		{{ shown.length | countOf("site") }} of {{ sites.stats.measured | num }} measured
-		{{ shown.length | verb("is", "are") }} on a perfect {{ perfectTotal }} with nothing
-		failing beside it. The full lists are on the category pages.
-		{% else %}
-		No site is on a perfect {{ perfectTotal }} with nothing failing beside it yet.
+		{{ shown.length | verb("is", "are") }} {{ shown.length | verb("a perfect score", "perfect scores") }}.
 		The full lists are on the category pages.
+		{% else %}
+		No site is a perfect score yet. The full lists are on the category pages.
 		{% endif %}
 	</p>
 </section>
@@ -329,16 +320,33 @@ permalink: /index.html
 		measurement has already followed it and the history came along.
 		{% else %}{{ reason | redirectExplanation }}{% endif %}
 	</p>
-	<ul class="redirects-list">
-		{% for move in group %}
-		<li>
-			<a href="/site/{{ move.slug }}/">{{ move.from }}</a>
-			<span class="redirects-arrow">&rarr;</span>
-			<code>{{ move.to }}</code>
-			{% for group in move.groups %}<span class="redirects-group">{{ group }}</span>{% endfor %}
-		</li>
-		{% endfor %}
-	</ul>
+	{#
+		The same scrolling grid the leaderboards use. Two full URLs per row is
+		more than the column can hold on a narrow screen, and a table that
+		scrolls inside its own box beats one that wraps every row to three lines
+		or pushes the page sideways.
+	#}
+	<div class="table-scroll">
+	<table class="grid compact">
+		<thead>
+			<tr>
+				<th class="col-url">From</th>
+				<th class="col-url">To</th>
+				<th class="col-url">Categories</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for move in group %}
+			<tr>
+				<td class="col-url"><a href="/site/{{ move.slug }}/">{{ move.from }}</a></td>
+				<td class="col-url"><span class="redirects-arrow">&rarr;</span> <code>{{ move.to }}</code></td>
+				{# `cat`, not `group` — the outer loop is already using that name. #}
+				<td class="col-url">{% for cat in move.groups %}<span class="redirects-group">{{ cat }}</span>{% endfor %}</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+	</div>
 	{% endfor %}
 </section>
 {% endif %}
