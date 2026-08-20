@@ -480,7 +480,7 @@ async function runsCmd() {
  * Generate the static JSON report the site is built from.
  *
  * This is the analysis step: it reads the measurements, computes every trend,
- * ranking and comparison, and writes the result to a single file. The Eleventy
+ * ranking and comparison, and writes the result to a single file. The Build Awesome
  * build then renders that file and nothing else — it never opens a measurement,
  * so it works against a read-only checkout and cannot mutate any cache as a
  * side effect.

@@ -59,7 +59,7 @@ jobs:
         # their own domain. Empty locally, which falls back to a placeholder.
         env:
           SPEEDLIFY_SITE_URL: ${{ steps.pages.outputs.base_url }}
-        run: npx eleventy
+        run: npx @awesome.me/buildawesome
 
       - name: Report coverage
         # Surfaces how complete the published snapshot is, so a shrinking

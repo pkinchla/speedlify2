@@ -1,6 +1,6 @@
 # speedlify2
 
-Measure web performance across a list of sites and compare the results over time. Lighthouse for lab data, the Chrome UX Report for real-user field data, append-only JSON logs for history, and a static Eleventy site for output.
+Measure web performance across a list of sites and compare the results over time. Lighthouse for lab data, the Chrome UX Report for real-user field data, append-only JSON logs for history, and a static Build Awesome site for output.
 
 The successor to [`zachleat/speedlify`](https://github.com/zachleat/speedlify).
 
@@ -16,14 +16,14 @@ npm start           # generate the report, then build and serve at localhost:808
 Three independent steps. None waits for another, and none needs a previous one to have completed fully.
 
 ```
-speedlify measure  →  results/      collect
-speedlify report   →  report.json   analyse
-eleventy           →  _site/        render
+speedlify measure            →  results/      collect
+speedlify report             →  report.json   analyse
+npx @awesome.me/buildawesome →  _site/        render
 ```
 
 1. **`speedlify measure --limit=N`** measures the **N stalest sites** and stops. Lighthouse N times per URL, median kept, one JSON file per measurement in `results/`. Run it as often as you like, from as many machines as you like — each invocation independently picks whatever is most out of date, so coverage converges with no coordination, lock, or queue.
 2. **`speedlify report`** reads the measurements and does all the analysis — trends, rankings, deltas, significance, coverage — writing a single `report.json`.
-3. **`eleventy`** renders that one file. It opens **no** measurements, so the build is a pure function of the report, works against a read-only checkout, and can't mutate a cache as a side effect.
+3. **`npx @awesome.me/buildawesome`** renders that one file. It opens **no** measurements, so the build is a pure function of the report, works against a read-only checkout, and can't mutate a cache as a side effect.
 
 `npm run build` runs steps 2 and 3.
 
@@ -385,7 +385,7 @@ lib/
   store.js             append-only archive + derived series
   log.js               NDJSON run logger
 bin/speedlify.js           CLI
-src/                   Eleventy templates and build-time data
+src/                   Build Awesome templates and build-time data
 report.json            the generated report (derived, gitignored)
 results/               the dataset (committed)
 logs/                  run logs (committed)

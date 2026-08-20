@@ -1,4 +1,4 @@
-import { HtmlBasePlugin } from "@11ty/eleventy";
+import { HtmlBasePlugin } from "@awesome.me/buildawesome";
 
 // Must stay first: loads .env before the data files read process.env.
 import "./lib/env.js";
