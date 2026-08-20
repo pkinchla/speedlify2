@@ -29,7 +29,7 @@ export default {
 	// With ~2,300 sites this must not be null — an unbounded run would try the
 	// whole list and take about eleven hours. At 40, a run is roughly 12 minutes,
 	// and four shards every two hours cover every site in a bit over a day.
-	batchSize: 500,
+	batchSize: 40,
 
 	// Data older than this is shown as stale in the report and in `speedlify list`.
 	staleAfterHours: 24 * 7 * 2,
