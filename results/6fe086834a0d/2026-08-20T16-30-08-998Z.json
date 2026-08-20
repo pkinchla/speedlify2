@@ -1,0 +1,183 @@
+{
+  "url": "https://cg21.in/",
+  "name": "cg21.in",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787243408998,
+  "date": "2026-08-20T16:30:08.998Z",
+  "runId": "2026-08-20T16-23-37-116Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 363359,
+  "error": null,
+  "variance": {
+    "min": 63,
+    "max": 63,
+    "spread": 0,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://cg21.in/",
+    "finalUrl": "https://cg21.in/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 63,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1722,
+      "lcp": 2207,
+      "si": 5833,
+      "tbt": 166179,
+      "tti": 176101,
+      "cls": 0,
+      "ttfb": 634,
+      "maxPotentialFid": 1304,
+      "serverResponseTime": 32,
+      "networkRtt": 0.1,
+      "networkServerLatency": 42.5
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 33.3,
+      "elementRenderDelay": 1321
+    },
+    "weight": {
+      "total": 216365,
+      "requests": 18,
+      "mainDocument": 13066,
+      "byType": {
+        "total": {
+          "bytes": 215294,
+          "requests": 14
+        },
+        "image": {
+          "bytes": 102573,
+          "requests": 5
+        },
+        "script": {
+          "bytes": 63684,
+          "requests": 4
+        },
+        "font": {
+          "bytes": 34284,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 13066,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 1687,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 55355,
+          "requests": 1
+        }
+      },
+      "scripts": 4,
+      "stylesheets": 0,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 55355,
+      "mainThreadMs": 20.4,
+      "top": [
+        {
+          "entity": "Netlify",
+          "bytes": 55355,
+          "mainThreadMs": 20.4
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 176905.9,
+      "byGroup": {
+        "other": 176364,
+        "scriptEvaluation": 333,
+        "styleLayout": 87,
+        "paintCompositeRender": 75.4,
+        "scriptParseCompile": 24.8,
+        "parseHTML": 21.7
+      },
+      "bootupMs": 315,
+      "longTasks": 20,
+      "longestTaskMs": 1304
+    },
+    "dom": {
+      "elements": 460,
+      "depth": 16,
+      "maxChildren": 24
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 21305,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 13107,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 25,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 22
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 3390.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T16:31:32.949Z",
+      "runtimeMs": 79392.5
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": null,
+    "headers": {},
+    "violations": null,
+    "passes": null,
+    "incomplete": null,
+    "violationRules": null,
+    "version": null,
+    "top": [],
+    "error": "Navigation timeout of 120000 ms exceeded"
+  },
+  "consecutiveFailures": 0
+}

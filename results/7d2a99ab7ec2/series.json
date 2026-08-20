@@ -1,0 +1,3 @@
+{"version":1,"url":"https://chrishannah.me/","updated":"2026-08-20T16:38:24.724Z","points":[
+{"t":1787243880364,"performance":74,"accessibility":89,"best-practices":100,"seo":92,"lcp":7744,"cls":0.077,"tbt":0,"fcp":1728,"si":1728,"ttfb":497,"total":3856951,"requests":18,"bytes":132452,"mainThreadMs":5.4,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":375.3,"longTasks":0,"elements":289,"failingCount":2,"failingNodes":85,"axeViolations":87,"axePasses":557,"field-lcp":1251,"field-cls":0,"field-fcp":1253,"bench":3285,"runs":3,"reqRuns":3,"ms":24360,"spread":31}
+]}
