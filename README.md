@@ -16,8 +16,9 @@ npm start           # generate the report, then build and serve at localhost:808
 Three independent steps. None waits for another, and none needs a previous one to have completed fully.
 
 ```
-speedlify measure  →  results/       →  speedlify report  →  report.json  →  eleventy  →  _site/
-   collect          the data          analyse         the report      render      the site
+speedlify measure  →  results/      collect
+speedlify report   →  report.json   analyse
+eleventy           →  _site/        render
 ```
 
 1. **`speedlify measure --limit=N`** measures the **N stalest sites** and stops. Lighthouse N times per URL, median kept, one JSON file per measurement in `results/`. Run it as often as you like, from as many machines as you like — each invocation independently picks whatever is most out of date, so coverage converges with no coordination, lock, or queue.
