@@ -12,14 +12,18 @@ name: Measure
 
 on:
   schedule:
-    # Every 2 hours. With batch=40 and 4 shards that is 480 sites/day.
-    - cron: "0 */2 * * *"
+    # Hourly. With batch=20 and 4 shards that is 1,920 sites/day — the same
+    # throughput as before, arriving in smaller, more frequent pieces. Shorter
+    # runs matter more than the total: Lighthouse does not fully release memory
+    # between runs, and a job that ends sooner is a job that cannot exhaust the
+    # heap or overrun the timeout mid-batch.
+    - cron: "0 * * * *"
   workflow_dispatch:
     inputs:
       batch:
         description: "Sites per shard this run"
         type: string
-        default: "40"
+        default: "20"
       force:
         description: "Ignore the freshness window"
         type: boolean
@@ -62,7 +66,7 @@ jobs:
         run: |
           node bin/speedlify.js measure \
             --shard=${{ matrix.shard }}/4 \
-            --limit=${{ inputs.batch || '40' }} \
+            --limit=${{ inputs.batch || '20' }} \
             ${{ inputs.force && '--force' || '' }}
 
       - name: Commit results
