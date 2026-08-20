@@ -1,0 +1,3 @@
+{"version":1,"url":"https://azure.microsoft.com/en-us/products/app-service/static","updated":"2026-08-20T16:32:07.075Z","points":[
+{"t":1787243458800,"performance":26,"accessibility":97,"best-practices":54,"seo":85,"lcp":39666,"cls":0.103,"tbt":1598,"fcp":18929,"si":18929,"ttfb":631,"total":7182621,"requests":175,"bytes":808430,"mainThreadMs":360.6,"unusedJsBytes":1464739,"unusedCssBytes":174659,"mainThreadTotal":8016.6,"longTasks":20,"elements":1985,"failingCount":1,"failingNodes":4,"axeViolations":5,"axePasses":1996,"field-lcp":3556,"field-cls":0.11,"field-fcp":2274,"field-ttfb":953,"bench":2484.5,"runs":3,"reqRuns":3,"ms":68274,"spread":2}
+]}

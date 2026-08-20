@@ -1,0 +1,198 @@
+{
+  "url": "https://arpit.tk/",
+  "name": "arpit.tk",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787243392097,
+  "date": "2026-08-20T16:29:52.097Z",
+  "runId": "2026-08-20T16-23-38-957Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 20500,
+  "error": null,
+  "variance": {
+    "min": 67,
+    "max": 90,
+    "spread": 23,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://arpit.tk/",
+    "finalUrl": "https://arpit.tk/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 85,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 81
+    },
+    "timings": {
+      "fcp": 2435,
+      "lcp": 2435,
+      "si": 2435,
+      "tbt": 0,
+      "tti": 2435,
+      "cls": 0.203,
+      "ttfb": 623,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 14,
+      "networkRtt": 0.1,
+      "networkServerLatency": 22.7
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 15.8,
+      "elementRenderDelay": 57
+    },
+    "weight": {
+      "total": 1800329,
+      "requests": 8,
+      "mainDocument": 1962,
+      "byType": {
+        "total": {
+          "bytes": 1800329,
+          "requests": 8
+        },
+        "image": {
+          "bytes": 1750238,
+          "requests": 1
+        },
+        "font": {
+          "bytes": 43547,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 2565,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 1962,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 1565,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 452,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 45337,
+          "requests": 2
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 2,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 45337,
+      "mainThreadMs": 0,
+      "top": [
+        {
+          "entity": "fontshare.com",
+          "bytes": 45337,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 206.2,
+      "byGroup": {
+        "other": 148.3,
+        "styleLayout": 26.9,
+        "scriptEvaluation": 16.8,
+        "paintCompositeRender": 6.4,
+        "parseHTML": 5.7,
+        "scriptParseCompile": 2
+      },
+      "bootupMs": 8.2,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 30,
+      "depth": 6,
+      "maxChildren": 4
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 757,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 5070.699999999999,
+      "poorlyCachedCount": 2
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 20,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 7
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2482,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T16:30:06.323Z",
+      "runtimeMs": 5846.5
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "3.0.0",
+      "source": "meta",
+      "raw": "Eleventy v3.0.0"
+    },
+    "host": {
+      "id": "vercel",
+      "name": "Vercel",
+      "icon": "Vercel",
+      "source": "x-vercel-id"
+    },
+    "headers": {
+      "server": "Vercel",
+      "x-vercel-id": "pdx1::l9blb-1787243411190-9fe83b43b10e"
+    },
+    "violations": 0,
+    "passes": 88,
+    "incomplete": 0,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
