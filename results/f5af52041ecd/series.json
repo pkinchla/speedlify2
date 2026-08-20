@@ -1,0 +1,3 @@
+{"version":1,"url":"https://3lp.me/","updated":"2026-08-20T16:11:35.179Z","points":[
+{"t":1787242270306,"performance":100,"accessibility":100,"best-practices":100,"seo":100,"lcp":1404,"cls":0,"tbt":55,"fcp":1133,"si":2370,"ttfb":879,"total":126512,"requests":14,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":641.9,"longTasks":4,"elements":480,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":1422,"bench":2966.5,"runs":3,"reqRuns":3,"ms":24872,"spread":0}
+]}
