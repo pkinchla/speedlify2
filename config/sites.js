@@ -1,6 +1,6 @@
 // import addressbook from "./addressbook.json" with { type: "json" };
 import community from "./11ty-community.json" with { type: "json" };
-// import emeritus from "./11ty-emeritus.json" with { type: "json" };
+import emeritus from "./11ty-emeritus.json" with { type: "json" };
 
 /**
  * The list of sites to measure.
@@ -224,7 +224,7 @@ export default {
 
 		"11ty-emeritus": {
 			name: "11ty Emeritus",
-			enabled: false,
+			enabled: true,
 			description:
 				"Sites that used to be built with Eleventy or Build Awesome and are not any more. Still measured — one that returns moves back to Built Awesome on its own.",
 
@@ -253,8 +253,7 @@ export default {
 			rejectGenerator: ["eleventy", "build-awesome"],
 			rejectGroup: "11ty-community",
 
-			sites: [],
-			// sites: emeritus.urls.map((url) => ({ url })),
+			sites: emeritus.urls.map((url) => ({ url })),
 		},
 
 		addressbook: {
