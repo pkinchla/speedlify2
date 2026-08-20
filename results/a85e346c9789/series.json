@@ -1,0 +1,3 @@
+{"version":1,"url":"https://design.saschadiercks.de/","updated":"2026-08-20T20:30:02.834Z","points":[
+{"t":1787257785810,"error":"INSECURE_DOCUMENT_REQUEST: The URL you have provided does not have a valid security certificate. net::ERR_CERT_COMMON_NAME_INVALID","fails":1,"runs":0,"reqRuns":3,"ms":17024}
+]}

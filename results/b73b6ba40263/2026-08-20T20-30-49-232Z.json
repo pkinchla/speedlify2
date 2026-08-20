@@ -1,0 +1,237 @@
+{
+  "url": "https://disjfa.github.io/eleventy-encore",
+  "name": "disjfa.github.io",
+  "group": "11ty-starters",
+  "groupName": "Build Awesome Starters",
+  "timestamp": 1787257849232,
+  "date": "2026-08-20T20:30:49.232Z",
+  "runId": "2026-08-20T20-26-59-192Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 22043,
+  "error": null,
+  "variance": {
+    "min": 93,
+    "max": 95,
+    "spread": 2,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://disjfa.github.io/eleventy-encore",
+    "finalUrl": "https://disjfa.github.io/eleventy-encore/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 95,
+      "accessibility": 92,
+      "best-practices": 100,
+      "seo": 91,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1803,
+      "lcp": 2774,
+      "si": 1803,
+      "tbt": 21,
+      "tti": 2774,
+      "cls": 0,
+      "ttfb": 603,
+      "maxPotentialFid": 71,
+      "serverResponseTime": 2,
+      "networkRtt": 0,
+      "networkServerLatency": 3
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 9.9,
+      "resourceLoadDelay": 8.9,
+      "resourceLoadDuration": 5.2,
+      "elementRenderDelay": 50.6
+    },
+    "weight": {
+      "total": 290530,
+      "requests": 10,
+      "mainDocument": 1828,
+      "byType": {
+        "total": {
+          "bytes": 288140,
+          "requests": 8
+        },
+        "font": {
+          "bytes": 156506,
+          "requests": 2
+        },
+        "script": {
+          "bytes": 61491,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 36454,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 31663,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 1828,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 198,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 288140,
+          "requests": 8
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 1,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 31663,
+      "mainThreadMs": 0,
+      "top": [
+        {
+          "entity": "unsplash.com",
+          "bytes": 31663,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 249.6,
+      "byGroup": {
+        "other": 91.7,
+        "scriptEvaluation": 56,
+        "styleLayout": 48.9,
+        "scriptParseCompile": 24.8,
+        "parseHTML": 23.2,
+        "paintCompositeRender": 5.1
+      },
+      "bootupMs": 77.5,
+      "longTasks": 1,
+      "longestTaskMs": 71
+    },
+    "dom": {
+      "elements": 81,
+      "depth": 9,
+      "maxChildren": 7
+    },
+    "waste": {
+      "unusedJsBytes": 44989,
+      "unusedCssBytes": 35267,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 302,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 233246.74999999997,
+      "poorlyCachedCount": 5
+    },
+    "accessibility": {
+      "failingCount": 3,
+      "applicableCount": 22,
+      "failingNodes": 21,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 18
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 2
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 753,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 7
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2503.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T20:31:04.441Z",
+      "runtimeMs": 5779.4
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "github",
+      "name": "GitHub Pages",
+      "icon": "Github",
+      "source": "x-github-request-id"
+    },
+    "headers": {
+      "server": "GitHub.com",
+      "via": "1.1 varnish",
+      "x-fastly-request-id": "9ef57ce4594b0e61c8430f29a36d2450dfa47083",
+      "x-github-request-id": "D4A4:2C9B20:1A5DB3:1B78B1:6A8763F5",
+      "x-served-by": "cache-pao-kpao1770045-PAO"
+    },
+    "violations": 23,
+    "passes": 141,
+    "incomplete": 0,
+    "violationRules": 4,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 18,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 2,
+        "help": "Heading levels should only increase by one"
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 2,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should have one main landmark"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

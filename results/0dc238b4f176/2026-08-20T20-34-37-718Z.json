@@ -1,0 +1,223 @@
+{
+  "url": "https://eartothenoise.com/",
+  "name": "eartothenoise.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787258077718,
+  "date": "2026-08-20T20:34:37.718Z",
+  "runId": "2026-08-20T20-26-59-192Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 24191,
+  "error": null,
+  "variance": {
+    "min": 70,
+    "max": 92,
+    "spread": 22,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://eartothenoise.com/",
+    "finalUrl": "https://eartothenoise.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 89,
+      "accessibility": 98,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 2733,
+      "lcp": 3183,
+      "si": 2733,
+      "tbt": 0,
+      "tti": 3183,
+      "cls": 0,
+      "ttfb": 720,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 120,
+      "networkRtt": 0,
+      "networkServerLatency": 213.4
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 121.2,
+      "elementRenderDelay": 118.6
+    },
+    "weight": {
+      "total": 836643,
+      "requests": 9,
+      "mainDocument": 27596,
+      "byType": {
+        "total": {
+          "bytes": 836643,
+          "requests": 9
+        },
+        "other": {
+          "bytes": 604734,
+          "requests": 2
+        },
+        "font": {
+          "bytes": 101518,
+          "requests": 3
+        },
+        "image": {
+          "bytes": 100687,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 27596,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 1062,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 1046,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 103928,
+          "requests": 6
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 1,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 103928,
+      "mainThreadMs": 3.4,
+      "top": [
+        {
+          "entity": "Google Fonts",
+          "bytes": 102564,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "tinylytics.app",
+          "bytes": 1364,
+          "mainThreadMs": 3.4
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 238.5,
+      "byGroup": {
+        "other": 155.8,
+        "styleLayout": 42.5,
+        "scriptEvaluation": 22.4,
+        "parseHTML": 9.2,
+        "paintCompositeRender": 6.9,
+        "scriptParseCompile": 1.7
+      },
+      "bootupMs": 8.6,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 74,
+      "depth": 12,
+      "maxChildren": 7
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 805,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 24,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 3
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2493,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T20:34:47.147Z",
+      "runtimeMs": 6735
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": null,
+      "source": "meta",
+      "raw": "Eleventy"
+    },
+    "host": {
+      "id": null,
+      "name": "Google Frontend",
+      "icon": null,
+      "source": "server"
+    },
+    "headers": {
+      "server": "Google Frontend",
+      "via": "1.1 google",
+      "x-cloud-trace-context": "899a11c40dcc6909e6a8386a35b0ef81"
+    },
+    "violations": 2,
+    "passes": 178,
+    "incomplete": 16,
+    "violationRules": 2,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should have one main landmark"
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "All page content should be contained by landmarks"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

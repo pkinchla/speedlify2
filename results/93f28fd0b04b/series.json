@@ -1,0 +1,3 @@
+{"version":1,"url":"https://eastford.news/","updated":"2026-08-20T20:35:27.882Z","points":[
+{"t":1787258104910,"performance":99,"accessibility":100,"best-practices":100,"seo":100,"lcp":1686,"cls":0,"tbt":0,"fcp":1536,"si":1536,"ttfb":466,"total":52304,"requests":14,"bytes":12068,"mainThreadMs":3.4,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":249.4,"longTasks":0,"elements":287,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":612,"bench":2503.5,"runs":3,"reqRuns":3,"ms":22972,"spread":0}
+]}
