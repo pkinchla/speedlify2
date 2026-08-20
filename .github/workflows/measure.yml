@@ -66,11 +66,24 @@ jobs:
             ${{ inputs.force && '--force' || '' }}
 
       - name: Commit results
-        # Shards write to disjoint directories, but they push to one branch, so
-        # rebase-and-retry rather than failing on a race with another shard.
+        # Shards write to disjoint per-site directories, so a rebase never hits
+        # a content conflict — only a "branch moved" rejection, which is what the
+        # retry loop below handles.
+        #
+        # results/aliases.json is the one exception: a single shared file every
+        # shard rewrites. Two shards adding it in the same cycle is an add/add
+        # conflict that no amount of retrying resolves. It is also *derived* —
+        # learnAliases recomputes it from stored results across every configured
+        # site — so one shard owning it loses nothing: whatever the others would
+        # have learned is relearned from their committed results next cycle.
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if [ "${{ matrix.shard }}" != "1" ]; then
+            git checkout -- results/aliases.json 2>/dev/null || true
+          fi
+
           git add results
           git diff --staged --quiet && exit 0
 
