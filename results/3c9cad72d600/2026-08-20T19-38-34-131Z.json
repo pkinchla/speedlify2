@@ -1,0 +1,243 @@
+{
+  "url": "https://clhenrick.github.io/color-legend-element",
+  "name": "clhenrick.github.io",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787254714131,
+  "date": "2026-08-20T19:38:34.131Z",
+  "runId": "2026-08-20T19-30-11-987Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 21385,
+  "error": null,
+  "variance": {
+    "min": 98,
+    "max": 98,
+    "spread": 0,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://clhenrick.github.io/color-legend-element",
+    "finalUrl": "https://clhenrick.github.io/color-legend-element/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 98,
+      "accessibility": 77,
+      "best-practices": 100,
+      "seo": 90,
+      "agentic-browsing": 47
+    },
+    "timings": {
+      "fcp": 907,
+      "lcp": 1970,
+      "si": 907,
+      "tbt": 10,
+      "tti": 1970,
+      "cls": 0.083,
+      "ttfb": 607,
+      "maxPotentialFid": 60,
+      "serverResponseTime": 6,
+      "networkRtt": 0,
+      "networkServerLatency": 12.7
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 15.4,
+      "elementRenderDelay": 42.6
+    },
+    "weight": {
+      "total": 112985,
+      "requests": 13,
+      "mainDocument": 6188,
+      "byType": {
+        "total": {
+          "bytes": 112985,
+          "requests": 8
+        },
+        "script": {
+          "bytes": 104658,
+          "requests": 4
+        },
+        "document": {
+          "bytes": 6188,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 1950,
+          "requests": 2
+        },
+        "other": {
+          "bytes": 189,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 112985,
+          "requests": 8
+        }
+      },
+      "scripts": 4,
+      "stylesheets": 2,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 90659,
+      "mainThreadMs": 6.4,
+      "top": [
+        {
+          "entity": "JSDelivr CDN",
+          "bytes": 90659,
+          "mainThreadMs": 6.4
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 291.5,
+      "byGroup": {
+        "styleLayout": 84.3,
+        "scriptEvaluation": 81.3,
+        "other": 73.6,
+        "paintCompositeRender": 17.7,
+        "scriptParseCompile": 16.3,
+        "parseHTML": 9.2,
+        "garbageCollection": 9
+      },
+      "bootupMs": 63.9,
+      "longTasks": 1,
+      "longestTaskMs": 60
+    },
+    "dom": {
+      "elements": 1110,
+      "depth": 10,
+      "maxChildren": 61
+    },
+    "waste": {
+      "unusedJsBytes": 70718,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 14619.916666666666,
+      "poorlyCachedCount": 5
+    },
+    "accessibility": {
+      "failingCount": 3,
+      "applicableCount": 13,
+      "failingNodes": 61,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 42
+        },
+        {
+          "id": "aria-hidden-focus",
+          "title": "`[aria-hidden=\"true\"]` elements contain focusable descendents",
+          "nodes": 18
+        },
+        {
+          "id": "html-has-lang",
+          "title": "`<html>` element does not have a `[lang]` attribute",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 756.7,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 13
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 4491,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T19:38:48.424Z",
+      "runtimeMs": 5954.7
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": null,
+      "source": "meta",
+      "raw": "Eleventy"
+    },
+    "host": {
+      "id": "github",
+      "name": "GitHub Pages",
+      "icon": "Github",
+      "source": "x-github-request-id"
+    },
+    "headers": {
+      "server": "GitHub.com",
+      "via": "1.1 varnish",
+      "x-fastly-request-id": "abf27d634c71938e38d5fe3c81d970938da46b99",
+      "x-github-request-id": "B316:3097:13D2A6:14A9CD:6A8757B3",
+      "x-served-by": "cache-bfi-krnt7300098-BFI"
+    },
+    "violations": 71,
+    "passes": 1516,
+    "incomplete": 61,
+    "violationRules": 4,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 42,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "aria-hidden-focus",
+        "impact": "serious",
+        "nodes": 18,
+        "help": "ARIA hidden element must not be focusable or contain focusable elements"
+      },
+      {
+        "id": "scrollable-region-focusable",
+        "impact": "serious",
+        "nodes": 10,
+        "help": "Scrollable region must have keyboard access"
+      },
+      {
+        "id": "html-has-lang",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "<html> element must have a lang attribute"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
