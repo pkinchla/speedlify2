@@ -191,7 +191,10 @@ class SpeedlifyScore extends HTMLElement {
 
 .tip {
 	position: absolute;
-	bottom: calc(100% + .5em);
+	/* Flush against the trigger. Any gap here is a dead zone — the pointer
+	   leaves the host before it reaches the card, the hover drops, and the card
+	   the pointer was travelling to disappears mid-journey. */
+	bottom: 100%;
 	left: 0;
 	z-index: 20;
 	min-width: 15em;
@@ -207,13 +210,18 @@ class SpeedlifyScore extends HTMLElement {
 	visibility: hidden;
 	transition: opacity .12s ease;
 }
-:host(:hover) .tip, .trigger:focus ~ .tip, .tip:hover { opacity: 1; visibility: visible; }
+/*
+ * :focus-within is what makes the links inside reachable by keyboard: tabbing
+ * off the trigger moves focus into the tooltip, at which point .trigger:focus
+ * no longer matches and the card would otherwise vanish under the cursor.
+ */
+:host(:hover) .tip, .trigger:focus ~ .tip, .tip:hover, .tip:focus-within { opacity: 1; visibility: visible; }
 @media (prefers-reduced-motion: reduce) { .tip { transition: none; } }
 
 .tip dl { display: grid; grid-template-columns: auto auto; gap: .15em .75em; margin: .4em 0 0; }
 .tip dt { opacity: .65; }
 .tip dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; }
-.tip .name { font-weight: 700; word-break: break-all; }
+.tip .name { display: inline-block; font-weight: 700; word-break: break-all; }
 /*
  * The age reads as a pill, the same shape the leaderboard gives it, so a badge
  * and the page it links to label freshness the same way. Literal colours rather
@@ -379,6 +387,27 @@ class SpeedlifyScore extends HTMLElement {
 	}
 
 	/**
+	 * A violation count short enough to fit inside a ring.
+	 *
+	 * The only ring value that can outgrow its circle. Lighthouse scores stop at
+	 * 100 and Core Web Vitals is a glyph, but axe counts violating *nodes* — one
+	 * bad rule on a long table is thousands — and four digits at this size render
+	 * 32 units wide in a 31-unit hole, spilling over the stroke and onto the
+	 * neighbouring rings, which do not clip because the stroke's round cap needs
+	 * overflow visible.
+	 *
+	 * The exact number stays in the label, so this costs nothing but precision no
+	 * one reads off a 12-unit glyph anyway.
+	 */
+	shortCount(n) {
+		if (n < 1000) return String(n);
+		const k = n / 1000;
+		if (k < 10) return `${k.toFixed(1).replace(/\.0$/, "")}k`;
+		if (k < 99.5) return `${Math.round(k)}k`;
+		return "99k+";
+	}
+
+	/**
 	 * Axe violations, where the scale runs the other way.
 	 *
 	 * A Lighthouse score is better when higher; a violation count is better when
@@ -391,7 +420,7 @@ class SpeedlifyScore extends HTMLElement {
 		}
 		return this.ring({
 			band: value === 0 ? "good" : value <= 5 ? "average" : "poor",
-			text: value,
+			text: this.shortCount(value),
 			label: `Axe: ${value} violating node${value === 1 ? "" : "s"}`,
 			pct: 1,
 		});
@@ -455,10 +484,14 @@ class SpeedlifyScore extends HTMLElement {
 
 		const measured = `<span class="age${data.stale ? " stale" : ""}">${this.since(data.updated)} old</span>`;
 		const link = `<a href="${SpeedlifyStore.join(this.speedlifyUrl, data.page)}">Full report</a>`;
+		// The heading is the site itself, so it goes to the site — the report it
+		// links to is one line below, and conflating the two would leave no way to
+		// reach the thing being measured.
+		const name = `<a class="name" href="${SpeedlifyScore.escape(data.url)}">${SpeedlifyScore.escape(data.name)}</a>`;
 
 		return [
 			`<span class="tip" role="tooltip" id="tip">`,
-			`<span class="name">${data.name}</span><br>`,
+			`${name}<br>`,
 			measured,
 			`<dl>${rows.join("")}</dl>`,
 			`<div style="margin-top:.5em">${link}</div>`,

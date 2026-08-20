@@ -403,6 +403,27 @@ export default async function ($config) {
 	});
 
 	/**
+	 * A violation count short enough to fit inside a ring.
+	 *
+	 * The only ring value that can outgrow its circle. Lighthouse scores stop at
+	 * 100 and Core Web Vitals is a glyph, but axe counts violating *nodes* — one
+	 * bad rule on a long table is thousands — and four digits at this size render
+	 * 32 units wide in a 31-unit hole, spilling over the stroke and onto the
+	 * neighbouring rings, which do not clip because the stroke's round cap needs
+	 * overflow visible.
+	 *
+	 * The exact number stays in the label, so this costs nothing but precision no
+	 * one reads off a 12-unit glyph anyway.
+	 */
+	function shortCount(n) {
+		if (n < 1000) return String(n);
+		const k = n / 1000;
+		if (k < 10) return `${k.toFixed(1).replace(/\.0$/, "")}k`;
+		if (k < 99.5) return `${Math.round(k)}k`;
+		return "99k+";
+	}
+
+	/**
 	 * Axe violations, where the scale runs the other way.
 	 *
 	 * A Lighthouse score is better when higher; a violation count is better when
@@ -418,7 +439,7 @@ export default async function ($config) {
 		const rules = axe.violationRules;
 		return ring({
 			band: value === 0 ? "good" : value <= 5 ? "average" : "poor",
-			text: value,
+			text: shortCount(value),
 			label:
 				`Axe: ${value} violating node${value === 1 ? "" : "s"}` +
 				(typeof rules === "number" ? ` across ${rules} rule${rules === 1 ? "" : "s"}` : ""),

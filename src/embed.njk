@@ -19,9 +19,9 @@ title: Embed
 	<h2>Live examples</h2>
 	<p class="muted small">
 		Hover or tab to a set of scores to see its summary. Each example is a real
-		lookup against this instance. The last one is a site that emits a generator
-		tag, so its summary carries a "Built with" row — most sites here emit none,
-		and the row is simply absent for those.
+		lookup against this instance. At least one emits a generator tag, so its
+		summary carries a "Built with" row — most sites here emit none, and the row
+		is simply absent for those.
 	</p>
 
 	{#
@@ -30,50 +30,69 @@ title: Embed
 		whole job is showing where a site actually sits, so at least one example
 		has to be a site with problems.
 
-		Picked by walking the ranked list from both ends rather than hardcoding
-		URLs, which would rot the moment those sites changed or left the corpus.
+		Picked by walking the ranked list from both ends, so the set follows the
+		corpus rather than needing maintenance. The one pinned URL below is looked
+		up in that list rather than assumed, for the same reason.
 	#}
 	{% set measured = [] %}
 	{% for entry in sites.entries %}
 		{% if entry.latest %}{% set measured = (measured.push(entry), measured) %}{% endif %}
 	{% endfor %}
 
+	{#
+		Pinned first, then the spread. A named URL is a liability in a template —
+		it rots the moment that site leaves the corpus — so it is looked up rather
+		than trusted: no match in `measured`, no row, and the rest still renders.
+	#}
 	{% set demo = [] %}
 	{% set demoUrls = [] %}
+	{% for url in ["https://arielsalminen.com/"] %}
+		{% for entry in measured %}
+			{% if entry.url == url and entry.url not in demoUrls %}
+				{% set demo = (demo.push(entry), demo) %}
+				{% set demoUrls = (demoUrls.push(entry.url), demoUrls) %}
+			{% endif %}
+		{% endfor %}
+	{% endfor %}
+
+	{% set picks = [] %}
 	{% if measured.length %}
-		{% set demo = (demo.push(measured[0]), demo) %}
-		{% set demoUrls = (demoUrls.push(measured[0].url), demoUrls) %}
-		{% if measured.length > 2 %}
-			{% set mid = measured[(measured.length / 2) | round | int] %}
-			{% set demo = (demo.push(mid), demo) %}
-			{% set demoUrls = (demoUrls.push(mid.url), demoUrls) %}
-		{% endif %}
-		{% if measured.length > 1 %}
-			{% set last = measured[measured.length - 1] %}
-			{% set demo = (demo.push(last), demo) %}
-			{% set demoUrls = (demoUrls.push(last.url), demoUrls) %}
-		{% endif %}
+		{% set picks = (picks.push(measured[0]), picks) %}
+		{% if measured.length > 2 %}{% set picks = (picks.push(measured[(measured.length / 2) | round | int]), picks) %}{% endif %}
+		{% if measured.length > 1 %}{% set picks = (picks.push(measured[measured.length - 1]), picks) %}{% endif %}
 	{% endif %}
+	{% for entry in picks %}
+		{% if entry.url not in demoUrls %}
+			{% set demo = (demo.push(entry), demo) %}
+			{% set demoUrls = (demoUrls.push(entry.url), demoUrls) %}
+		{% endif %}
+	{% endfor %}
 
 	{#
-		And one more, chosen for what its tooltip contains rather than for its
-		scores: a site that actually emits a generator tag. Most of this corpus
-		does not — a static site usually ships no generator meta at all — so the
-		three picked above can easily all be sites where the "Built with" row is
-		absent, which makes the examples misrepresent the component.
+		One more only if the set so far has none: a site that actually emits a
+		generator tag. Most of this corpus does not — a static site usually ships
+		no generator meta at all — so a spread picked purely by rank can easily be
+		all sites where the "Built with" row is absent, which makes the examples
+		misrepresent the component.
 
 		Pushing into an array declared outside the loop is the only way to carry a
 		value out of one: a `set` inside a loop does not survive it, but the array
 		reference does, which is also what makes the length check work as a "first
 		match wins" guard.
 	#}
-	{% set withGenerator = [] %}
-	{% for entry in measured %}
-		{% if entry.generator and not withGenerator.length and entry.url not in demoUrls %}
-			{% set withGenerator = (withGenerator.push(entry), withGenerator) %}
-		{% endif %}
+	{% set detected = [] %}
+	{% for entry in demo %}
+		{% if entry.generator %}{% set detected = (detected.push(entry), detected) %}{% endif %}
 	{% endfor %}
-	{% if withGenerator.length %}{% set demo = (demo.push(withGenerator[0]), demo) %}{% endif %}
+	{% if not detected.length %}
+		{% set withGenerator = [] %}
+		{% for entry in measured %}
+			{% if entry.generator and not withGenerator.length and entry.url not in demoUrls %}
+				{% set withGenerator = (withGenerator.push(entry), withGenerator) %}
+			{% endif %}
+		{% endfor %}
+		{% if withGenerator.length %}{% set demo = (demo.push(withGenerator[0]), demo) %}{% endif %}
+	{% endif %}
 
 	<div class="embed-demo">
 		{% for entry in demo %}
