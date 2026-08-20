@@ -22,19 +22,40 @@ title: Embed
 		lookup against this instance.
 	</p>
 
+	{#
+		A deliberate spread, not the top of the leaderboard. Three perfect scores
+		in a row demonstrate the green state and nothing else — the component's
+		whole job is showing where a site actually sits, so at least one example
+		has to be a site with problems.
+
+		Picked by walking the ranked list from both ends rather than hardcoding
+		URLs, which would rot the moment those sites changed or left the corpus.
+	#}
+	{% set measured = [] %}
+	{% for entry in sites.entries %}
+		{% if entry.latest %}{% set measured = (measured.push(entry), measured) %}{% endif %}
+	{% endfor %}
+
+	{% set demo = [] %}
+	{% if measured.length %}
+		{% set demo = (demo.push(measured[0]), demo) %}
+		{% if measured.length > 2 %}{% set demo = (demo.push(measured[(measured.length / 2) | round | int]), demo) %}{% endif %}
+		{% if measured.length > 1 %}{% set demo = (demo.push(measured[measured.length - 1]), demo) %}{% endif %}
+	{% endif %}
+
 	<div class="embed-demo">
-		{% set demo = sites.entries | limit(3) %}
 		{% for entry in demo %}
 		<div class="embed-row">
+			{#
+				Prefixed with the plugin's own filter. HtmlBasePlugin rewrites href
+				and src, but `speedlify-url` is a custom attribute it knows nothing
+				about — left as "/" these would ask the domain root for their data
+				and 404 on a project site served from a subdirectory.
+			#}
+			<speedlify-score speedlify-url="{{ '/' | htmlBaseUrl }}" url="{{ entry.url }}"></speedlify-score>
 			<code>{{ entry.displayUrl }}</code>
-			<speedlify-score speedlify-url="/" url="{{ entry.url }}"></speedlify-score>
 		</div>
 		{% endfor %}
-
-		<div class="embed-row">
-			<code>with extras</code>
-			<speedlify-score speedlify-url="/" url="{{ demo[0].url }}" score total rank weight></speedlify-score>
-		</div>
 	</div>
 </section>
 
@@ -49,6 +70,13 @@ title: Embed
 &lt;speedlify-score speedlify-url="{{ meta.url or 'https://your-speedlify-instance/' }}" url="https://example.com/"&gt;&lt;/speedlify-score&gt;</code></pre>
 
 	<h3>Attributes</h3>
+	<p class="muted small">
+		Two, and one of them is optional. There is nothing to configure about the
+		output: every instance renders the same six circles — the four Lighthouse
+		categories, axe violations, and Core Web Vitals — so a page carrying
+		several reads as one table rather than a row of different shapes.
+		Everything else is in the tooltip.
+	</p>
 	<div class="table-scroll">
 	<table class="grid">
 		<thead>
@@ -57,8 +85,6 @@ title: Embed
 		<tbody>
 			<tr><td class="col-site"><code>speedlify-url</code></td><td class="col-site">Required. This instance's URL.</td></tr>
 			<tr><td class="col-site"><code>url</code></td><td class="col-site">Which site to show. Defaults to the current page.</td></tr>
-			<tr><td class="col-site"><code>score</code></td><td class="col-site">The four rings. Implicit unless another output attribute is used.</td></tr>
-			<tr><td class="col-site"><code>total</code>, <code>rank</code>, <code>weight</code>, <code>requests</code>, <code>axe</code>, <code>cwv</code></td><td class="col-site">Opt-in extras beside the scores.</td></tr>
 		</tbody>
 	</table>
 	</div>

@@ -14,8 +14,8 @@
  *
  *   <speedlify-score speedlify-url="https://your-speedlify/" url="https://example.com/"></speedlify-score>
  *
- * Opt into extra output with attributes: `rank`, `weight`, `requests`, `axe`,
- * `cwv`, `total`. With none of them, only the four scores render.
+ * Always renders the same four Lighthouse scores. Everything else about the
+ * site is in the tooltip on hover or focus.
  *
  * A site whose slug collided with another is published under its hash instead,
  * and will read here as unmeasured rather than as the wrong site. That is the
@@ -118,14 +118,6 @@ class SpeedlifyScore extends HTMLElement {
 	static attrs = {
 		speedlifyUrl: "speedlify-url",
 		url: "url",
-		// Opt-in extras.
-		score: "score",
-		total: "total",
-		rank: "rank",
-		weight: "weight",
-		requests: "requests",
-		axe: "axe",
-		cwv: "cwv",
 	};
 
 	static css = `
@@ -145,20 +137,39 @@ class SpeedlifyScore extends HTMLElement {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	width: 2.2em;
-	height: 2.2em;
+	/* Sized for the widest value it ever holds: "100" is three bold tabular
+	   digits, roughly 1.8em, so 2.2em left barely a tenth of an em either side
+	   and read as cramped. Equal width and height, because a circle that grows
+	   to fit its text is an oval. */
+	width: 2.6em;
+	height: 2.6em;
 	border: 2px solid currentColor;
 	border-radius: 50%;
 	font-size: .75em;
 	font-weight: 700;
 	font-variant-numeric: tabular-nums;
 }
+/*
+ * The placeholder. Same box as a real circle — that is what stops the swap from
+ * moving anything — with the value and colour withheld until they are known.
+ */
+.skeleton {
+	color: #888;
+	opacity: .45;
+	animation: speedlify-pulse 1.4s ease-in-out infinite;
+}
+@keyframes speedlify-pulse {
+	0%, 100% { opacity: .25; }
+	50%      { opacity: .6; }
+}
+@media (prefers-reduced-motion: reduce) {
+	.skeleton { animation: none; }
+}
+
 .good    { color: #0cce6b; }
 .average { color: #ffa400; }
 .poor    { color: #ff4e42; }
 .none    { color: #888; }
-
-.meta { display: inline-flex; gap: .5em; font-size: .8em; opacity: .8; }
 
 /* The trigger is a button so it is reachable by keyboard, not just hover. */
 .trigger {
@@ -203,6 +214,14 @@ class SpeedlifyScore extends HTMLElement {
 		if (this.shadowRoot) return;
 
 		this.attachShadow({ mode: "open" });
+
+		// Painted before the fetch starts, at exactly the size the real circles
+		// occupy. The data arrives one request later; without this the element is
+		// zero-width until then and every score that loads pushes the text around
+		// it. Reserving the space is the whole point — the pulse is just so the
+		// placeholder reads as loading rather than as six empty results.
+		this.renderSkeleton();
+
 		this.init().catch((error) => {
 			// A widget that cannot load its data should disappear, not shout on
 			// someone else's page. The reason stays available for debugging.
@@ -215,6 +234,26 @@ class SpeedlifyScore extends HTMLElement {
 		const value = this.getAttribute(SpeedlifyScore.attrs.speedlifyUrl);
 		if (!value) throw new Error(`<${SpeedlifyScore.tagName}> requires a ${SpeedlifyScore.attrs.speedlifyUrl} attribute`);
 		return value;
+	}
+
+	renderSkeleton() {
+		const style = document.createElement("style");
+		style.textContent = SpeedlifyScore.css;
+
+		const wrapper = document.createElement("div");
+		wrapper.style.display = "contents";
+		// Six, matching render(): four Lighthouse categories, axe, Core Web Vitals.
+		// A button, matching render() exactly — `all: unset` normalises most of it,
+		// but a span and a button are not guaranteed the same box, and any
+		// difference here is the shift this method exists to prevent. Inert while
+		// loading: there is nothing to describe yet.
+		wrapper.innerHTML =
+			`<button class="trigger" type="button" tabindex="-1" aria-hidden="true">` +
+			'<span class="score skeleton"></span>'.repeat(6) +
+			`</button>`;
+
+		this.setAttribute("aria-busy", "true");
+		this.shadowRoot.replaceChildren(style, wrapper);
 	}
 
 	async init() {
@@ -236,6 +275,7 @@ class SpeedlifyScore extends HTMLElement {
 		wrapper.innerHTML = this.render(data);
 
 		this.shadowRoot.replaceChildren(style, wrapper);
+		this.removeAttribute("aria-busy");
 
 		// Escape closes the tooltip for keyboard users.
 		this.shadowRoot.addEventListener("keydown", (event) => {
@@ -252,6 +292,38 @@ class SpeedlifyScore extends HTMLElement {
 
 	scoreHtml(label, value) {
 		return `<span class="score ${this.scoreClass(value)}" title="${label}">${value ?? "–"}</span>`;
+	}
+
+	/**
+	 * Axe violations, where the scale runs the other way.
+	 *
+	 * A Lighthouse score is better when higher; a violation count is better when
+	 * zero. Banding it by the same thresholds would paint "2 violations" green
+	 * for being a small number, so it gets its own: clean, or not clean.
+	 */
+	axeHtml(value) {
+		if (typeof value !== "number") {
+			return `<span class="score none" title="Axe: did not run">–</span>`;
+		}
+		const band = value === 0 ? "good" : value <= 5 ? "average" : "poor";
+		const label = `Axe: ${value} violating node${value === 1 ? "" : "s"}`;
+		return `<span class="score ${band}" title="${label}">${value}</span>`;
+	}
+
+	/**
+	 * Core Web Vitals, which is a verdict rather than a number.
+	 *
+	 * A glyph instead of a value, because the underlying figure is three
+	 * separate metrics and no single number represents them. The tooltip below
+	 * carries the detail for anyone who wants it.
+	 */
+	cwvHtml(cwv) {
+		if (!cwv || cwv.pass === null || cwv.pass === undefined) {
+			return `<span class="score none" title="Core Web Vitals: no data">–</span>`;
+		}
+		const source = cwv.source === "field" ? "real users" : "lab approximation";
+		const label = `Core Web Vitals: ${cwv.pass ? "pass" : "fail"} (${source})`;
+		return `<span class="score ${cwv.pass ? "good" : "poor"}" title="${label}">${cwv.pass ? "✓" : "✗"}</span>`;
 	}
 
 	bytes(n) {
@@ -303,29 +375,29 @@ class SpeedlifyScore extends HTMLElement {
 		].join("");
 	}
 
+	/**
+	 * Six circles: the four Lighthouse scores, axe violations, and Core Web
+	 * Vitals.
+	 *
+	 * There is no configuration here on purpose: every instance of the component
+	 * looks the same, so a page carrying several of them reads as one table
+	 * rather than as a row of differently-shaped badges.
+	 *
+	 * These six are the ones the leaderboard ranks by — the four categories,
+	 * then axe and Core Web Vitals as its tiebreakers. Total, rank, weight and
+	 * requests are all in the tooltip, which costs nothing until asked for.
+	 */
 	render(data) {
-		const attrs = SpeedlifyScore.attrs;
-		const has = (name) => this.hasAttribute(name);
-
-		const extras = [attrs.total, attrs.rank, attrs.weight, attrs.requests, attrs.axe, attrs.cwv];
-		const onlyExtras = extras.some(has) && !has(attrs.score);
-
-		const parts = [];
-		if (!onlyExtras) {
-			parts.push(this.scoreHtml("Performance", data.lighthouse?.performance));
-			parts.push(this.scoreHtml("Accessibility", data.lighthouse?.accessibility));
-			parts.push(this.scoreHtml("Best Practices", data.lighthouse?.bestPractices));
-			parts.push(this.scoreHtml("SEO", data.lighthouse?.seo));
-		}
-
-		const meta = [];
-		if (has(attrs.total)) meta.push(`<span class="total">${data.total}</span>`);
-		if (has(attrs.rank) && data.rank) meta.push(`<span class="rank">#${data.rank}</span>`);
-		if (has(attrs.weight)) meta.push(`<span class="weight">${this.bytes(data.metrics?.weight)}</span>`);
-		if (has(attrs.requests)) meta.push(`<span class="requests">${data.metrics?.requests} req</span>`);
-		if (has(attrs.axe) && data.axe !== null) meta.push(`<span class="axe">${data.axe} axe</span>`);
-		if (has(attrs.cwv) && data.cwv) meta.push(`<span class="cwv">${data.cwv.pass ? "CWV" : "CWV ✗"}</span>`);
-		if (meta.length) parts.push(`<span class="meta">${meta.join("")}</span>`);
+		const parts = [
+			this.scoreHtml("Performance", data.lighthouse?.performance),
+			this.scoreHtml("Accessibility", data.lighthouse?.accessibility),
+			this.scoreHtml("Best Practices", data.lighthouse?.bestPractices),
+			this.scoreHtml("SEO", data.lighthouse?.seo),
+			// The two the ranking uses as tiebreakers, which Lighthouse's own four
+			// do not cover: a full axe run, and real-user Core Web Vitals.
+			this.axeHtml(data.axe),
+			this.cwvHtml(data.cwv),
+		];
 
 		return [
 			`<button class="trigger" type="button" aria-describedby="tip">${parts.join("")}</button>`,

@@ -110,13 +110,37 @@ export default async function ($config) {
 		return Number.isInteger(v) ? v.toLocaleString("en-US") : v.toFixed(3);
 	});
 
+	/**
+	 * A timestamp, formatted in UTC and labelled as such.
+	 *
+	 * The zone is pinned rather than left to the machine. Everything here is
+	 * rendered once at build time, so "local" would mean local to whoever ran
+	 * the build — the same page reads differently after a CI build than after
+	 * one on your laptop, and neither says which. UTC is the one zone that is
+	 * the same answer for every reader.
+	 */
 	$config.addFilter("date", (v, style = "short") => {
 		if (!v) return "never";
 		const d = new Date(v);
 		if (style === "long") {
-			return d.toLocaleString("en-US", { dateStyle: "medium", timeStyle: "short" });
+			// Explicit components, not dateStyle/timeStyle: Intl rejects those in
+			// combination with timeZoneName, which is the whole point here.
+			return d.toLocaleString("en-US", {
+				year: "numeric",
+				month: "short",
+				day: "numeric",
+				hour: "numeric",
+				minute: "2-digit",
+				timeZone: "UTC",
+				timeZoneName: "short",
+			});
 		}
-		return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+		return d.toLocaleDateString("en-US", {
+			month: "short",
+			day: "numeric",
+			year: "numeric",
+			timeZone: "UTC",
+		});
 	});
 
 	/**
