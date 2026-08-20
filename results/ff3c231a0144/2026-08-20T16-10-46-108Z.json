@@ -1,0 +1,243 @@
+{
+  "url": "https://ademhatay.com/",
+  "name": "ademhatay.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787242246108,
+  "date": "2026-08-20T16:10:46.108Z",
+  "runId": "2026-08-20T16-09-42-956Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 41965,
+  "error": null,
+  "variance": {
+    "min": 57,
+    "max": 63,
+    "spread": 6,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://ademhatay.com/",
+    "finalUrl": "https://ademhatay.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 57,
+      "accessibility": 96,
+      "best-practices": 96,
+      "seo": 92,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 8581,
+      "lcp": 14028,
+      "si": 8581,
+      "tbt": 0,
+      "tti": 14028,
+      "cls": 0,
+      "ttfb": 462,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 184,
+      "networkRtt": 0.9,
+      "networkServerLatency": 50.3
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 185.3,
+      "elementRenderDelay": 2182.2
+    },
+    "weight": {
+      "total": 2103481,
+      "requests": 57,
+      "mainDocument": 4906,
+      "byType": {
+        "total": {
+          "bytes": 2100294,
+          "requests": 56
+        },
+        "script": {
+          "bytes": 998562,
+          "requests": 14
+        },
+        "image": {
+          "bytes": 583818,
+          "requests": 7
+        },
+        "font": {
+          "bytes": 317741,
+          "requests": 13
+        },
+        "document": {
+          "bytes": 120197,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 68520,
+          "requests": 7
+        },
+        "other": {
+          "bytes": 11456,
+          "requests": 12
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 1495920,
+          "requests": 47
+        }
+      },
+      "scripts": 14,
+      "stylesheets": 7,
+      "fonts": 13
+    },
+    "thirdParty": {
+      "count": 4,
+      "bytes": 359805,
+      "mainThreadMs": 31.8,
+      "top": [
+        {
+          "entity": "Google Fonts",
+          "bytes": 264125,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Unpkg",
+          "bytes": 83602,
+          "mainThreadMs": 26.7
+        },
+        {
+          "entity": "Cloudflare",
+          "bytes": 11420,
+          "mainThreadMs": 5.1
+        },
+        {
+          "entity": "netlify.app",
+          "bytes": 658,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 513.6,
+      "byGroup": {
+        "other": 182.1,
+        "scriptEvaluation": 167.1,
+        "styleLayout": 97.9,
+        "scriptParseCompile": 32.6,
+        "parseHTML": 24,
+        "paintCompositeRender": 9.8
+      },
+      "bootupMs": 145.1,
+      "longTasks": 1,
+      "longestTaskMs": 108
+    },
+    "dom": {
+      "elements": 134,
+      "depth": 8,
+      "maxChildren": 12
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 5665,
+      "renderBlockingCount": 4,
+      "poorlyCachedBytes": 407801.793417824,
+      "poorlyCachedCount": 11
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 23,
+      "failingNodes": 14,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 14
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 41
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2502,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T16:11:15.602Z",
+      "runtimeMs": 10304.9
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e2ac3ede1c9203-SJC",
+      "server": "cloudflare"
+    },
+    "violations": 23,
+    "passes": 465,
+    "incomplete": 1,
+    "violationRules": 5,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 14,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 3,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "aria-allowed-attr",
+        "impact": "critical",
+        "nodes": 2,
+        "help": "Elements must only use supported ARIA attributes"
+      },
+      {
+        "id": "aria-prohibited-attr",
+        "impact": "serious",
+        "nodes": 2,
+        "help": "Elements must only use permitted ARIA attributes"
+      },
+      {
+        "id": "button-name",
+        "impact": "critical",
+        "nodes": 2,
+        "help": "Buttons must have discernible text"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
