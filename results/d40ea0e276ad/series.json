@@ -1,0 +1,3 @@
+{"version":1,"url":"https://aws.amazon.com/amplify","updated":"2026-08-20T16:38:29.643Z","points":[
+{"t":1787243826780,"performance":27,"accessibility":91,"best-practices":92,"seo":92,"lcp":36047,"cls":0,"tbt":2094,"fcp":15347,"si":15753,"ttfb":632,"total":11329615,"requests":153,"bytes":10063420,"mainThreadMs":755.1,"unusedJsBytes":2222035,"unusedCssBytes":315666,"mainThreadTotal":10935.9,"longTasks":20,"elements":2391,"failingCount":2,"failingNodes":2,"axeViolations":5,"axePasses":1869,"field-lcp":3963,"field-inp":314,"field-cls":0,"field-fcp":3635,"field-ttfb":1284,"bench":2435,"runs":3,"reqRuns":3,"ms":82862,"spread":1}
+]}
