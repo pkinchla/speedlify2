@@ -1,4 +1,4 @@
-# speedlify
+# speedlify2
 
 Measure web performance across a list of sites and compare the results over time. Lighthouse for lab data, the Chrome UX Report for real-user field data, append-only JSON logs for history, and a static Eleventy site for output.
 
