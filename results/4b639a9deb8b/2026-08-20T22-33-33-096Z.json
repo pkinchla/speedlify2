@@ -1,0 +1,234 @@
+{
+  "url": "https://firekeepers.info/",
+  "name": "firekeepers.info",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787265213096,
+  "date": "2026-08-20T22:33:33.096Z",
+  "runId": "2026-08-20T22-26-39-504Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 25618,
+  "error": null,
+  "variance": {
+    "min": 98,
+    "max": 99,
+    "spread": 1,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://firekeepers.info/",
+    "finalUrl": "https://firekeepers.info/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 98,
+      "accessibility": 98,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1853,
+      "lcp": 1928,
+      "si": 1853,
+      "tbt": 0,
+      "tti": 1935,
+      "cls": 0.022,
+      "ttfb": 481,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 29,
+      "networkRtt": 0.1,
+      "networkServerLatency": 48.2
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 30.7,
+      "elementRenderDelay": 62
+    },
+    "weight": {
+      "total": 666275,
+      "requests": 19,
+      "mainDocument": 45395,
+      "byType": {
+        "total": {
+          "bytes": 666275,
+          "requests": 18
+        },
+        "image": {
+          "bytes": 324166,
+          "requests": 7
+        },
+        "font": {
+          "bytes": 243257,
+          "requests": 4
+        },
+        "document": {
+          "bytes": 45395,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 35725,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 17285,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 447,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 271993,
+          "requests": 6
+        }
+      },
+      "scripts": 3,
+      "stylesheets": 1,
+      "fonts": 4
+    },
+    "thirdParty": {
+      "count": 3,
+      "bytes": 271993,
+      "mainThreadMs": 2.9,
+      "top": [
+        {
+          "entity": "Cloudflare CDN",
+          "bytes": 252631,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Cloudflare",
+          "bytes": 11451,
+          "mainThreadMs": 2.9
+        },
+        {
+          "entity": "Google Fonts",
+          "bytes": 7911,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 403.8,
+      "byGroup": {
+        "styleLayout": 148.6,
+        "other": 131.4,
+        "parseHTML": 47.9,
+        "scriptEvaluation": 41.3,
+        "paintCompositeRender": 28.1,
+        "scriptParseCompile": 6.5
+      },
+      "bootupMs": 7.4,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 495,
+      "depth": 13,
+      "maxChildren": 14
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 51820,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 4894.804851851853,
+      "poorlyCachedCount": 2
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 27,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 25
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 3397,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T22:33:50.739Z",
+      "runtimeMs": 6743.1
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "3.1.6",
+      "source": "meta",
+      "raw": "Eleventy v3.1.6"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "cf-ray": "a2e4dcd3ca8d12ad-LAX",
+      "server": "cloudflare",
+      "x-nf-request-id": "01M0GMYG313A49QZJSC8XXYDRZ"
+    },
+    "violations": 11,
+    "passes": 808,
+    "incomplete": 34,
+    "violationRules": 3,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 9,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should have one main landmark"
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

@@ -1,0 +1,239 @@
+{
+  "url": "https://elewind-template.netlify.app/",
+  "name": "elewind-template.netlify.app",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787264833892,
+  "date": "2026-08-20T22:27:13.892Z",
+  "runId": "2026-08-20T22-26-39-504Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 23330,
+  "error": null,
+  "variance": {
+    "min": 74,
+    "max": 76,
+    "spread": 2,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://elewind-template.netlify.app/",
+    "finalUrl": "https://elewind-template.netlify.app/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 75,
+      "accessibility": 88,
+      "best-practices": 96,
+      "seo": 91,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 1774,
+      "lcp": 7289,
+      "si": 1774,
+      "tbt": 7,
+      "tti": 7289,
+      "cls": 0.003,
+      "ttfb": 689,
+      "maxPotentialFid": 55,
+      "serverResponseTime": 80,
+      "networkRtt": 0,
+      "networkServerLatency": 89
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 81.5,
+      "resourceLoadDelay": 8,
+      "resourceLoadDuration": 143.5,
+      "elementRenderDelay": 70.6
+    },
+    "weight": {
+      "total": 1607457,
+      "requests": 12,
+      "mainDocument": 2928,
+      "byType": {
+        "total": {
+          "bytes": 1607457,
+          "requests": 12
+        },
+        "image": {
+          "bytes": 1508778,
+          "requests": 4
+        },
+        "script": {
+          "bytes": 55657,
+          "requests": 2
+        },
+        "font": {
+          "bytes": 35468,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 4626,
+          "requests": 3
+        },
+        "document": {
+          "bytes": 2928,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "other": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 91694,
+          "requests": 5
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 3,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 91694,
+      "mainThreadMs": 23.9,
+      "top": [
+        {
+          "entity": "Netlify",
+          "bytes": 55037,
+          "mainThreadMs": 23.9
+        },
+        {
+          "entity": "Google Fonts",
+          "bytes": 36657,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 279.3,
+      "byGroup": {
+        "other": 100.6,
+        "scriptEvaluation": 79.5,
+        "styleLayout": 43.9,
+        "scriptParseCompile": 25.8,
+        "parseHTML": 14.9,
+        "paintCompositeRender": 14.6
+      },
+      "bootupMs": 102.7,
+      "longTasks": 2,
+      "longestTaskMs": 55
+    },
+    "dom": {
+      "elements": 195,
+      "depth": 9,
+      "maxChildren": 10
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 21305,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 13107,
+      "renderBlockingMs": 935,
+      "renderBlockingCount": 3,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 3,
+      "applicableCount": 16,
+      "failingNodes": 3,
+      "failing": [
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": null,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 5
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 3396.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T22:27:23.125Z",
+      "runtimeMs": 6528.4
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0GMJVMSJ1YRYBQRRDGBVBMH"
+    },
+    "violations": 8,
+    "passes": 377,
+    "incomplete": 2,
+    "violationRules": 4,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 5,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Heading levels should only increase by one"
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should have one main landmark"
+      },
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Links must have discernible text"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

@@ -1,0 +1,3 @@
+{"version":1,"url":"https://emergency-site.dev/","updated":"2026-08-20T22:28:17.493Z","points":[
+{"t":1787264884406,"error":"ERRORED_DOCUMENT_REQUEST: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 521)","fails":1,"runs":0,"reqRuns":3,"ms":13086}
+]}

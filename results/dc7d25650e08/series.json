@@ -1,0 +1,3 @@
+{"version":1,"url":"https://elewind-template.netlify.app/","updated":"2026-08-20T22:27:37.223Z","points":[
+{"t":1787264833892,"performance":75,"accessibility":88,"best-practices":96,"seo":91,"lcp":7289,"cls":0.003,"tbt":7,"fcp":1774,"si":1774,"ttfb":689,"total":1607457,"requests":12,"bytes":91694,"mainThreadMs":23.9,"unusedJsBytes":0,"unusedCssBytes":21305,"mainThreadTotal":279.3,"longTasks":2,"elements":195,"failingCount":3,"failingNodes":3,"axeViolations":8,"axePasses":377,"bench":3396.5,"runs":3,"reqRuns":3,"ms":23330,"spread":2}
+]}

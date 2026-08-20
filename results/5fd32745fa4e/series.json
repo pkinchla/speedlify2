@@ -1,0 +1,3 @@
+{"version":1,"url":"https://example.chobble.com/","updated":"2026-08-20T22:31:42.812Z","points":[
+{"t":1787264946396,"performance":93,"accessibility":80,"best-practices":96,"seo":100,"lcp":2622,"cls":0,"tbt":41,"fcp":2472,"si":2472,"ttfb":619,"total":9185720,"requests":112,"bytes":0,"mainThreadMs":0,"unusedJsBytes":22892,"unusedCssBytes":16890,"mainThreadTotal":1209.1,"longTasks":2,"elements":1173,"failingCount":6,"failingNodes":20,"bench":3268,"runs":3,"reqRuns":3,"ms":156415,"spread":37}
+]}
