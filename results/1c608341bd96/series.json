@@ -1,0 +1,3 @@
+{"version":1,"url":"https://andrewhudson.dev/","updated":"2026-08-20T16:29:25.242Z","points":[
+{"t":1787243335667,"performance":100,"accessibility":93,"best-practices":100,"seo":100,"lcp":1382,"cls":0,"tbt":0,"fcp":832,"si":832,"ttfb":632,"total":458969,"requests":37,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":182.6,"longTasks":0,"elements":225,"failingCount":1,"failingNodes":12,"axeViolations":13,"axePasses":386,"bench":2480.5,"runs":3,"reqRuns":3,"ms":29574,"spread":0}
+]}

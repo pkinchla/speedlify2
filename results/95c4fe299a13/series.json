@@ -1,0 +1,3 @@
+{"version":1,"url":"https://approx.blue/","updated":"2026-08-20T16:29:49.098Z","points":[
+{"t":1787243368242,"performance":100,"accessibility":100,"best-practices":100,"seo":100,"lcp":1539,"cls":0,"tbt":42,"fcp":792,"si":792,"ttfb":629,"total":161095,"requests":6,"bytes":156867,"mainThreadMs":46.8,"unusedJsBytes":70191,"unusedCssBytes":0,"mainThreadTotal":297.7,"longTasks":2,"elements":24,"failingCount":0,"failingNodes":0,"axeViolations":1,"axePasses":61,"bench":2462.5,"runs":3,"reqRuns":3,"ms":20855,"spread":5}
+]}

@@ -1,0 +1,3 @@
+{"version":1,"url":"https://11tybundle.dev/","updated":"2026-08-20T16:24:20.569Z","points":[
+{"t":1787243031053,"performance":99,"accessibility":100,"best-practices":100,"seo":100,"lcp":2119,"cls":0,"tbt":0,"fcp":1036,"si":1036,"ttfb":619,"total":310070,"requests":32,"bytes":3163,"mainThreadMs":1.8,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":466.5,"longTasks":1,"elements":582,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":1124,"bench":2499,"runs":3,"reqRuns":3,"ms":29514,"spread":4}
+]}
