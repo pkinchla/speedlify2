@@ -1,0 +1,195 @@
+{
+  "url": "https://borsch.dev/",
+  "name": "borsch.dev",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787253100933,
+  "date": "2026-08-20T19:11:40.933Z",
+  "runId": "2026-08-20T19-03-02-110Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 20552,
+  "error": null,
+  "variance": {
+    "min": 100,
+    "max": 100,
+    "spread": 0,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://borsch.dev/",
+    "finalUrl": "https://borsch.dev/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1523,
+      "lcp": 1523,
+      "si": 1523,
+      "tbt": 0,
+      "tti": 1523,
+      "cls": 0,
+      "ttfb": 610,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 29,
+      "networkRtt": 0,
+      "networkServerLatency": 12.9
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 30.5,
+      "elementRenderDelay": 28.8
+    },
+    "weight": {
+      "total": 35743,
+      "requests": 6,
+      "mainDocument": 6339,
+      "byType": {
+        "total": {
+          "bytes": 35743,
+          "requests": 6
+        },
+        "script": {
+          "bytes": 18388,
+          "requests": 3
+        },
+        "image": {
+          "bytes": 10579,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 6339,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 437,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 11451,
+          "requests": 1
+        }
+      },
+      "scripts": 3,
+      "stylesheets": 0,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 11451,
+      "mainThreadMs": 3.5,
+      "top": [
+        {
+          "entity": "Cloudflare",
+          "bytes": 11451,
+          "mainThreadMs": 3.5
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 154.4,
+      "byGroup": {
+        "other": 76.3,
+        "scriptEvaluation": 49.3,
+        "styleLayout": 15.7,
+        "parseHTML": 5.2,
+        "scriptParseCompile": 3.9,
+        "paintCompositeRender": 3.9
+      },
+      "bootupMs": 32.4,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 41,
+      "depth": 7,
+      "maxChildren": 6
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 17842.96,
+      "poorlyCachedCount": 4
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 19,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 16
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2473,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T19:11:48.959Z",
+      "runtimeMs": 5670.2
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "github",
+      "name": "GitHub Pages",
+      "icon": "Github",
+      "source": "x-github-request-id"
+    },
+    "headers": {
+      "cf-ray": "a2e3b4e049b62574-SJC",
+      "server": "cloudflare",
+      "via": "1.1 varnish",
+      "x-fastly-request-id": "88b580c33615dde2b53492f2d325e27ad142fe11",
+      "x-github-request-id": "E852:2D630D:121CFC:12E45A:6A87516E",
+      "x-served-by": "cache-sjc1000107-SJC"
+    },
+    "violations": 0,
+    "passes": 105,
+    "incomplete": 0,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

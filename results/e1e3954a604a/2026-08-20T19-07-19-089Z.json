@@ -1,0 +1,340 @@
+{
+  "url": "https://birkscinema.co.uk/",
+  "name": "birkscinema.co.uk",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787252839089,
+  "date": "2026-08-20T19:07:19.089Z",
+  "runId": "2026-08-20T19-03-02-110Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 94431,
+  "error": null,
+  "variance": {
+    "min": 8,
+    "max": 14,
+    "spread": 6,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://birkscinema.co.uk/",
+    "finalUrl": "https://birkscinema.co.uk/home",
+    "redirect": {
+      "from": "https://birkscinema.co.uk/",
+      "to": "https://birkscinema.co.uk/home",
+      "chain": [
+        {
+          "url": "https://birkscinema.co.uk/",
+          "status": 200
+        },
+        {
+          "url": "https://birkscinema.co.uk/home",
+          "status": null
+        }
+      ],
+      "statuses": [
+        200
+      ],
+      "change": "path",
+      "permanent": false,
+      "schemeUpgrade": false,
+      "hops": 1
+    },
+    "statusCode": "ok",
+    "scores": {
+      "performance": 8,
+      "accessibility": 92,
+      "best-practices": 96,
+      "seo": 92,
+      "agentic-browsing": 44
+    },
+    "timings": {
+      "fcp": 8258,
+      "lcp": 38296,
+      "si": 21723,
+      "tbt": 7558,
+      "tti": 45801,
+      "cls": 0.349,
+      "ttfb": 604,
+      "maxPotentialFid": 8260,
+      "serverResponseTime": 4,
+      "networkRtt": 132.3,
+      "networkServerLatency": 184.6
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 5.8,
+      "resourceLoadDelay": 5481.2,
+      "resourceLoadDuration": 6.7,
+      "elementRenderDelay": 133.3
+    },
+    "weight": {
+      "total": 10689932,
+      "requests": 125,
+      "mainDocument": 2498,
+      "byType": {
+        "total": {
+          "bytes": 10688300,
+          "requests": 124
+        },
+        "image": {
+          "bytes": 6104425,
+          "requests": 24
+        },
+        "script": {
+          "bytes": 3426661,
+          "requests": 47
+        },
+        "font": {
+          "bytes": 758296,
+          "requests": 5
+        },
+        "other": {
+          "bytes": 259309,
+          "requests": 28
+        },
+        "stylesheet": {
+          "bytes": 137111,
+          "requests": 19
+        },
+        "document": {
+          "bytes": 2498,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 6428439,
+          "requests": 42
+        }
+      },
+      "scripts": 47,
+      "stylesheets": 19,
+      "fonts": 6
+    },
+    "thirdParty": {
+      "count": 8,
+      "bytes": 6428439,
+      "mainThreadMs": 169.3,
+      "top": [
+        {
+          "entity": "imgix",
+          "bytes": 6108162,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Accessibe Accessibility Overlay",
+          "bytes": 234874,
+          "mainThreadMs": 88.5
+        },
+        {
+          "entity": "Google Fonts",
+          "bytes": 27217,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Cookie-Script.com",
+          "bytes": 26275,
+          "mainThreadMs": 71.8
+        },
+        {
+          "entity": "Rollbar",
+          "bytes": 25407,
+          "mainThreadMs": 7.4
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 23183.8,
+      "byGroup": {
+        "scriptEvaluation": 17663.5,
+        "other": 2074.5,
+        "scriptParseCompile": 1244.7,
+        "styleLayout": 825.1,
+        "garbageCollection": 796.8,
+        "paintCompositeRender": 507.1,
+        "parseHTML": 72.1
+      },
+      "bootupMs": 18549,
+      "longTasks": 20,
+      "longestTaskMs": 8260
+    },
+    "dom": {
+      "elements": 1486,
+      "depth": 25,
+      "maxChildren": 98
+    },
+    "waste": {
+      "unusedJsBytes": 2495730,
+      "unusedCssBytes": 190738,
+      "legacyJsBytes": 61128,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 4603,
+      "renderBlockingCount": 8,
+      "poorlyCachedBytes": 26292.2,
+      "poorlyCachedCount": 2
+    },
+    "accessibility": {
+      "failingCount": 4,
+      "applicableCount": 36,
+      "failingNodes": 12,
+      "failing": [
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "nodes": 7
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 3
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 1
+        },
+        {
+          "id": "meta-viewport",
+          "title": "`[user-scalable=\"no\"]` is used in the `<meta name=\"viewport\">` element or the `[maximum-scale]` attribute is less than 5.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 1,
+      "baselineLimitedFeatures": 48
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2486.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T19:08:18.410Z",
+      "runtimeMs": 26938.4
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-22",
+      "last": "2026-08-18"
+    },
+    "metrics": {
+      "rtt": {
+        "p75": 128,
+        "rating": null,
+        "distribution": {
+          "good": 44.8,
+          "needsImprovement": 46.1,
+          "poor": 9.1
+        }
+      },
+      "cls": {
+        "p75": 0.43,
+        "rating": "poor",
+        "distribution": {
+          "good": 39.6,
+          "needsImprovement": 11,
+          "poor": 49.4
+        }
+      },
+      "ttfb": {
+        "p75": 597,
+        "rating": "good",
+        "distribution": {
+          "good": 82,
+          "needsImprovement": 10.9,
+          "poor": 7.2
+        }
+      },
+      "fcp": {
+        "p75": 1585,
+        "rating": "good",
+        "distribution": {
+          "good": 78.7,
+          "needsImprovement": 11.3,
+          "poor": 10
+        }
+      },
+      "inp": {
+        "p75": 946,
+        "rating": "poor",
+        "distribution": {
+          "good": 33.6,
+          "needsImprovement": 24.9,
+          "poor": 41.5
+        }
+      },
+      "lcp": {
+        "p75": 5696,
+        "rating": "poor",
+        "distribution": {
+          "good": 56.7,
+          "needsImprovement": 9.6,
+          "poor": 33.8
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0G96R4A0RHVEQ0FF7R7YQNQ"
+    },
+    "violations": 4,
+    "passes": 3559,
+    "incomplete": 40,
+    "violationRules": 3,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 2,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Heading levels should only increase by one"
+      },
+      {
+        "id": "meta-viewport",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Zooming and scaling must not be disabled"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
