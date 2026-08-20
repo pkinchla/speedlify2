@@ -1,0 +1,3 @@
+{"version":1,"url":"https://boehs.org/","updated":"2026-08-20T16:11:10.638Z","points":[
+{"t":1787242248614,"performance":100,"accessibility":100,"best-practices":100,"seo":100,"lcp":1698,"cls":0,"tbt":0,"fcp":948,"si":948,"ttfb":474,"total":84982,"requests":10,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":145.7,"longTasks":0,"elements":57,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":142,"bench":2310,"runs":3,"reqRuns":3,"ms":22023,"spread":19}
+]}

@@ -1,0 +1,3 @@
+{"version":1,"url":"https://activites.nicolas-hoizey.com/","updated":"2026-08-20T16:10:43.106Z","points":[
+{"t":1787242216074,"performance":99,"accessibility":100,"best-practices":100,"seo":100,"lcp":2206,"cls":0,"tbt":0,"fcp":1020,"si":1020,"ttfb":818,"total":312386,"requests":19,"bytes":279456,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":291.5,"longTasks":0,"elements":468,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":629,"bench":2496,"runs":3,"reqRuns":3,"ms":27031,"spread":24}
+]}
