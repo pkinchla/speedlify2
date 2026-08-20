@@ -1,0 +1,3 @@
+{"version":1,"url":"https://deletescape.ch/","updated":"2026-08-20T20:36:58.618Z","points":[
+{"t":1787258195305,"performance":99,"accessibility":100,"best-practices":100,"seo":100,"lcp":1566,"cls":0,"tbt":0,"fcp":1566,"si":1566,"ttfb":654,"total":21587,"requests":7,"bytes":6472,"mainThreadMs":5.3,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":172,"longTasks":0,"elements":59,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":139,"bench":2362,"runs":3,"reqRuns":3,"ms":23312,"spread":1}
+]}

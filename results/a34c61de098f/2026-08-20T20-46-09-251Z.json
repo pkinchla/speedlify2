@@ -1,0 +1,235 @@
+{
+  "url": "https://distantcam.github.io/co11ection",
+  "name": "distantcam.github.io",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787258769251,
+  "date": "2026-08-20T20:46:09.251Z",
+  "runId": "2026-08-20T20-27-01-496Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 24022,
+  "error": null,
+  "variance": {
+    "min": 90,
+    "max": 90,
+    "spread": 0,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://distantcam.github.io/co11ection",
+    "finalUrl": "https://distantcam.github.io/co11ection/support-for-table-of-contents/",
+    "redirect": {
+      "from": "https://distantcam.github.io/co11ection",
+      "to": "https://distantcam.github.io/co11ection/support-for-table-of-contents",
+      "chain": [
+        {
+          "url": "https://distantcam.github.io/co11ection",
+          "status": 301
+        },
+        {
+          "url": "https://distantcam.github.io/co11ection/",
+          "status": 200
+        },
+        {
+          "url": "https://distantcam.github.io/co11ection/support-for-table-of-contents/",
+          "status": 200
+        }
+      ],
+      "statuses": [
+        301,
+        200
+      ],
+      "change": "path",
+      "permanent": false,
+      "schemeUpgrade": false,
+      "hops": 2
+    },
+    "statusCode": "ok",
+    "scores": {
+      "performance": 90,
+      "accessibility": 91,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 80
+    },
+    "timings": {
+      "fcp": 1539,
+      "lcp": 1539,
+      "si": 1539,
+      "tbt": 0,
+      "tti": 1539,
+      "cls": 0.206,
+      "ttfb": 610,
+      "maxPotentialFid": 24,
+      "serverResponseTime": 11,
+      "networkRtt": 0.1,
+      "networkServerLatency": 40.3
+    },
+    "lcpBreakdown": null,
+    "weight": {
+      "total": 69578,
+      "requests": 12,
+      "mainDocument": 3305,
+      "byType": {
+        "total": {
+          "bytes": 69578,
+          "requests": 12
+        },
+        "font": {
+          "bytes": 36748,
+          "requests": 2
+        },
+        "script": {
+          "bytes": 19823,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 7368,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 3869,
+          "requests": 2
+        },
+        "other": {
+          "bytes": 1770,
+          "requests": 5
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 69578,
+          "requests": 12
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 2,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 0,
+      "bytes": 0,
+      "mainThreadMs": 0,
+      "top": []
+    },
+    "mainThread": {
+      "total": 323,
+      "byGroup": {
+        "other": 135.5,
+        "styleLayout": 106.6,
+        "scriptEvaluation": 47.4,
+        "paintCompositeRender": 15.4,
+        "parseHTML": 9.3,
+        "scriptParseCompile": 8.7
+      },
+      "bootupMs": 11.4,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 2,
+      "depth": 1,
+      "maxChildren": 1
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 16,
+      "failingNodes": 7,
+      "failing": [
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "nodes": 6
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 759.8,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 12
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2328,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T20:46:26.126Z",
+      "runtimeMs": 6101.3
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": null,
+      "source": "meta",
+      "raw": "Eleventy"
+    },
+    "host": {
+      "id": "github",
+      "name": "GitHub Pages",
+      "icon": "Github",
+      "source": "x-github-request-id"
+    },
+    "headers": {
+      "server": "GitHub.com",
+      "via": "1.1 varnish",
+      "x-fastly-request-id": "7fc995e34dad304369bf1cc91394ddb61800aa52",
+      "x-github-request-id": "CE5E:23EA3C:8791ED:8E9D89:6A876791",
+      "x-served-by": "cache-chi-kmdw8640021-CHI"
+    },
+    "violations": 1,
+    "passes": 201,
+    "incomplete": 0,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Heading levels should only increase by one"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

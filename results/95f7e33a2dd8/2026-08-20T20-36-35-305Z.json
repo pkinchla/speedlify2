@@ -1,0 +1,201 @@
+{
+  "url": "https://deletescape.ch/",
+  "name": "deletescape.ch",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787258195305,
+  "date": "2026-08-20T20:36:35.305Z",
+  "runId": "2026-08-20T20-27-01-496Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 23312,
+  "error": null,
+  "variance": {
+    "min": 99,
+    "max": 100,
+    "spread": 1,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://deletescape.ch/",
+    "finalUrl": "https://deletescape.ch/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1566,
+      "lcp": 1566,
+      "si": 1566,
+      "tbt": 0,
+      "tti": 1566,
+      "cls": 0,
+      "ttfb": 654,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 52,
+      "networkRtt": 0,
+      "networkServerLatency": 158.7
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 53.4,
+      "elementRenderDelay": 34.3
+    },
+    "weight": {
+      "total": 21587,
+      "requests": 7,
+      "mainDocument": 6160,
+      "byType": {
+        "total": {
+          "bytes": 18744,
+          "requests": 6
+        },
+        "script": {
+          "bytes": 6377,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 6160,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 6112,
+          "requests": 2
+        },
+        "image": {
+          "bytes": 95,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 6472,
+          "requests": 3
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 0,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 3,
+      "bytes": 6472,
+      "mainThreadMs": 5.3,
+      "top": [
+        {
+          "entity": "simpleanalytics.io",
+          "bytes": 4918,
+          "mainThreadMs": 5.3
+        },
+        {
+          "entity": "cloudfront.net",
+          "bytes": 1459,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "simpleanalyticscdn.com",
+          "bytes": 95,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 172,
+      "byGroup": {
+        "other": 97.2,
+        "scriptEvaluation": 36.3,
+        "styleLayout": 24.1,
+        "parseHTML": 8.5,
+        "paintCompositeRender": 3.4,
+        "scriptParseCompile": 2.4
+      },
+      "bootupMs": 7.7,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 59,
+      "depth": 8,
+      "maxChildren": 6
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 491.7999999999999,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 20,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 10
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2362,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T20:36:51.105Z",
+      "runtimeMs": 6274.3
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0GE88PDG8RMBJK887XC7BJM"
+    },
+    "violations": 0,
+    "passes": 139,
+    "incomplete": 0,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

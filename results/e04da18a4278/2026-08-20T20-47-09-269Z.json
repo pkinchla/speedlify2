@@ -1,0 +1,208 @@
+{
+  "url": "https://distantcam.github.io/elevento",
+  "name": "distantcam.github.io",
+  "group": "11ty-starters",
+  "groupName": "Build Awesome Starters",
+  "timestamp": 1787258829269,
+  "date": "2026-08-20T20:47:09.269Z",
+  "runId": "2026-08-20T20-27-01-496Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 20519,
+  "error": null,
+  "variance": {
+    "min": 99,
+    "max": 100,
+    "spread": 1,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://distantcam.github.io/elevento",
+    "finalUrl": "https://distantcam.github.io/elevento/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1540,
+      "lcp": 1540,
+      "si": 1540,
+      "tbt": 0,
+      "tti": 1540,
+      "cls": 0,
+      "ttfb": 610,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 9,
+      "networkRtt": 0,
+      "networkServerLatency": 30.8
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 22.6,
+      "resourceLoadDelay": 9.2,
+      "resourceLoadDuration": 18.6,
+      "elementRenderDelay": 40.5
+    },
+    "weight": {
+      "total": 24275,
+      "requests": 6,
+      "mainDocument": 933,
+      "byType": {
+        "total": {
+          "bytes": 24275,
+          "requests": 6
+        },
+        "font": {
+          "bytes": 14895,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 4491,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 3767,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 933,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 189,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "script": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 24275,
+          "requests": 6
+        }
+      },
+      "scripts": 0,
+      "stylesheets": 2,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 20602,
+      "mainThreadMs": 0,
+      "top": [
+        {
+          "entity": "Google Fonts",
+          "bytes": 16111,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Gravatar",
+          "bytes": 4491,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 106,
+      "byGroup": {
+        "other": 70.2,
+        "styleLayout": 18.7,
+        "scriptEvaluation": 9,
+        "parseHTML": 4.8,
+        "paintCompositeRender": 2.8,
+        "scriptParseCompile": 0.5
+      },
+      "bootupMs": 4.2,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 11,
+      "depth": 4,
+      "maxChildren": 3
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 781,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 6642.291666666666,
+      "poorlyCachedCount": 2
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 11,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 759.6,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 1
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2340.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T20:47:22.972Z",
+      "runtimeMs": 5707.6
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "1.0.2",
+      "source": "meta",
+      "raw": "Eleventy v1.0.2"
+    },
+    "host": {
+      "id": "github",
+      "name": "GitHub Pages",
+      "icon": "Github",
+      "source": "x-github-request-id"
+    },
+    "headers": {
+      "server": "GitHub.com",
+      "via": "1.1 varnish",
+      "x-fastly-request-id": "5c3a5aa4b442bfaa5a3b74ba2a89f88b8c91f89e",
+      "x-github-request-id": "AE30:13A770:804A38:87618E:6A8767CE",
+      "x-served-by": "cache-chi-kmdw8640021-CHI"
+    },
+    "violations": 0,
+    "passes": 28,
+    "incomplete": 2,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
