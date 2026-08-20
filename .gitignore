@@ -4,9 +4,17 @@ report.json
 .DS_Store
 .env
 .claude
-logs/
 
-# results/ are deliberately NOT ignored — they are the dataset.
-# The whole point is that history accumulates in version control, diffs
-# cleanly, and can be rebuilt into the site from a fresh checkout.
+# results/ is deliberately NOT ignored — it is the dataset. The whole point is
+# that history accumulates in version control, diffs cleanly, and can be rebuilt
+# into the site from a fresh checkout.
+
+# Of the logs, only the run index is kept. It is one line per run and it is the
+# only thing anything reads: the /runs/ page and `speedlify runs` both go
+# through readRunHistory, which opens runs.ndjson and nothing else.
+#
+# The per-run files are every Lighthouse attempt in full — useful to `cat` when
+# a number looks wrong, far too large to accumulate in git.
+logs/*.ndjson
+!logs/runs.ndjson
 

@@ -84,7 +84,7 @@ jobs:
             git checkout -- results/aliases.json 2>/dev/null || true
           fi
 
-          git add results
+          git add results logs/runs.ndjson
           git diff --staged --quiet && exit 0
 
           git commit -m "Measurements: shard ${{ matrix.shard }}/4"
@@ -122,7 +122,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add results
+          git add results logs/runs.ndjson
           git diff --staged --quiet && exit 0
           git commit -m "CrUX field history"
           for attempt in 1 2 3 4 5; do
