@@ -1,0 +1,3 @@
+{"version":1,"url":"https://code-blocks.surge.sh/","updated":"2026-08-20T20:31:23.242Z","points":[
+{"t":1787257862507,"performance":100,"accessibility":86,"best-practices":96,"seo":63,"lcp":818,"cls":0,"tbt":0,"fcp":818,"si":855,"ttfb":606,"total":14291,"requests":2,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":142,"longTasks":0,"elements":249,"failingCount":3,"failingNodes":16,"axeViolations":9,"axePasses":420,"bench":2511,"runs":3,"reqRuns":3,"ms":20734,"spread":0}
+]}

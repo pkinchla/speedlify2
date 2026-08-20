@@ -1,0 +1,194 @@
+{
+  "url": "https://curtisjurgensen.com/",
+  "name": "curtisjurgensen.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787258128218,
+  "date": "2026-08-20T20:35:28.218Z",
+  "runId": "2026-08-20T20-27-00-782Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 22316,
+  "error": null,
+  "variance": {
+    "min": 100,
+    "max": 100,
+    "spread": 0,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://curtisjurgensen.com/",
+    "finalUrl": "https://curtisjurgensen.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 994,
+      "lcp": 1329,
+      "si": 994,
+      "tbt": 0,
+      "tti": 1337,
+      "cls": 0,
+      "ttfb": 654,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 7,
+      "networkRtt": 0,
+      "networkServerLatency": 54
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 8.2,
+      "resourceLoadDelay": 9.9,
+      "resourceLoadDuration": 91.6,
+      "elementRenderDelay": 41.1
+    },
+    "weight": {
+      "total": 245202,
+      "requests": 19,
+      "mainDocument": 16866,
+      "byType": {
+        "total": {
+          "bytes": 245202,
+          "requests": 16
+        },
+        "image": {
+          "bytes": 207194,
+          "requests": 13
+        },
+        "font": {
+          "bytes": 20796,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 16866,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 346,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "script": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 0,
+          "requests": 0
+        }
+      },
+      "scripts": 0,
+      "stylesheets": 0,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 0,
+      "bytes": 0,
+      "mainThreadMs": 0,
+      "top": []
+    },
+    "mainThread": {
+      "total": 251.8,
+      "byGroup": {
+        "other": 128.3,
+        "styleLayout": 65.5,
+        "paintCompositeRender": 32.6,
+        "scriptEvaluation": 13,
+        "parseHTML": 12,
+        "scriptParseCompile": 0.4
+      },
+      "bootupMs": 12.3,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 252,
+      "depth": 10,
+      "maxChildren": 8
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 14,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 5
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2496,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T20:35:43.194Z",
+      "runtimeMs": 6140.2
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "3.0.0",
+      "source": "meta",
+      "raw": "Eleventy v3.0.0"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0GE6653FMFQTRB35EK5CJQP"
+    },
+    "violations": 0,
+    "passes": 367,
+    "incomplete": 11,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

@@ -1,0 +1,3 @@
+{"version":1,"url":"https://codeberg.page/","updated":"2026-08-20T20:32:10.172Z","points":[
+{"t":1787257904335,"performance":59,"accessibility":76,"best-practices":100,"seo":91,"lcp":7940,"cls":0,"tbt":0,"fcp":6953,"si":6953,"ttfb":699,"total":1180624,"requests":14,"bytes":1174207,"mainThreadMs":6.1,"unusedJsBytes":110284,"unusedCssBytes":393179,"mainThreadTotal":294.9,"longTasks":0,"elements":222,"failingCount":3,"failingNodes":5,"axeViolations":8,"axePasses":263,"field-lcp":2758,"field-inp":74,"field-cls":0.02,"field-fcp":2769,"field-ttfb":875,"bench":2458.5,"runs":3,"reqRuns":3,"ms":25836,"spread":0}
+]}

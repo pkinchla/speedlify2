@@ -1,0 +1,3 @@
+{"version":1,"url":"https://compagnonnage-repas.org/","updated":"2026-08-20T20:32:43.431Z","points":[
+{"t":1787257933172,"performance":69,"accessibility":95,"best-practices":100,"seo":92,"lcp":21256,"cls":0,"tbt":67,"fcp":2512,"si":4288,"ttfb":690,"total":4247492,"requests":16,"bytes":45005,"mainThreadMs":0,"unusedJsBytes":571204,"unusedCssBytes":80072,"mainThreadTotal":400.9,"longTasks":1,"elements":139,"failingCount":1,"failingNodes":8,"axeViolations":9,"axePasses":326,"bench":2484.5,"runs":3,"reqRuns":3,"ms":30259,"spread":19}
+]}
