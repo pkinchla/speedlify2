@@ -1,0 +1,209 @@
+{
+  "url": "https://aaronmorey.com/",
+  "name": "aaronmorey.com",
+  "group": "11ty-emeritus",
+  "groupName": "11ty Emeritus",
+  "timestamp": 1787243095229,
+  "date": "2026-08-20T16:24:55.229Z",
+  "runId": "2026-08-20T16-23-42-660Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 25129,
+  "error": null,
+  "variance": {
+    "min": 64,
+    "max": 77,
+    "spread": 13,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://aaronmorey.com/",
+    "finalUrl": "https://aaronmorey.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 77,
+      "accessibility": 94,
+      "best-practices": 100,
+      "seo": 92,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1993,
+      "lcp": 5968,
+      "si": 1993,
+      "tbt": 0,
+      "tti": 5975,
+      "cls": 0,
+      "ttfb": 471,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 17,
+      "networkRtt": 0.2,
+      "networkServerLatency": 21.4
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 18.1,
+      "elementRenderDelay": 119.9
+    },
+    "weight": {
+      "total": 1286649,
+      "requests": 25,
+      "mainDocument": 4411,
+      "byType": {
+        "total": {
+          "bytes": 1284661,
+          "requests": 23
+        },
+        "font": {
+          "bytes": 1122188,
+          "requests": 8
+        },
+        "image": {
+          "bytes": 64254,
+          "requests": 5
+        },
+        "script": {
+          "bytes": 53530,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 39116,
+          "requests": 5
+        },
+        "document": {
+          "bytes": 4411,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 1162,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 11450,
+          "requests": 1
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 5,
+      "fonts": 8
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 11450,
+      "mainThreadMs": 3.9,
+      "top": [
+        {
+          "entity": "Cloudflare",
+          "bytes": 11450,
+          "mainThreadMs": 3.9
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 446,
+      "byGroup": {
+        "other": 211.2,
+        "styleLayout": 108.9,
+        "scriptEvaluation": 73.6,
+        "parseHTML": 34.8,
+        "paintCompositeRender": 15.7,
+        "scriptParseCompile": 1.8
+      },
+      "bootupMs": 26.4,
+      "longTasks": 1,
+      "longestTaskMs": 53
+    },
+    "dom": {
+      "elements": 157,
+      "depth": 12,
+      "maxChildren": 9
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 18352,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 3105,
+      "renderBlockingCount": 5,
+      "poorlyCachedBytes": 4580,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 22,
+      "failingNodes": 8,
+      "failing": [
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "nodes": 7
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 32
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2472,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T16:25:10.555Z",
+      "runtimeMs": 6368.5
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e2c0c41d0471e7-SJC",
+      "server": "cloudflare"
+    },
+    "violations": 1,
+    "passes": 69,
+    "incomplete": 0,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "meta-refresh",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Delayed refresh under 20 hours must not be used"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

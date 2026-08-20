@@ -1,0 +1,207 @@
+{
+  "url": "https://andy.bond/",
+  "name": "andy.bond",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787243250262,
+  "date": "2026-08-20T16:27:30.262Z",
+  "runId": "2026-08-20T16-23-42-660Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 23024,
+  "error": null,
+  "variance": {
+    "min": 97,
+    "max": 100,
+    "spread": 3,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://andy.bond/",
+    "finalUrl": "https://andy.bond/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 905,
+      "lcp": 2287,
+      "si": 905,
+      "tbt": 0,
+      "tti": 2287,
+      "cls": 0.024,
+      "ttfb": 605,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 6,
+      "networkRtt": 0,
+      "networkServerLatency": 31.6
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 7.5,
+      "resourceLoadDelay": 9.7,
+      "resourceLoadDuration": 9.7,
+      "elementRenderDelay": 78.7
+    },
+    "weight": {
+      "total": 2029046,
+      "requests": 18,
+      "mainDocument": 8224,
+      "byType": {
+        "total": {
+          "bytes": 2029046,
+          "requests": 18
+        },
+        "image": {
+          "bytes": 1989867,
+          "requests": 9
+        },
+        "font": {
+          "bytes": 24341,
+          "requests": 3
+        },
+        "document": {
+          "bytes": 8224,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 2268,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 2200,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 2146,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 793,
+          "requests": 1
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 1,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 793,
+      "mainThreadMs": 0,
+      "top": [
+        {
+          "entity": "11ty.dev",
+          "bytes": 793,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 443.5,
+      "byGroup": {
+        "other": 197,
+        "styleLayout": 161.9,
+        "scriptEvaluation": 43.4,
+        "paintCompositeRender": 19.3,
+        "parseHTML": 16.7,
+        "scriptParseCompile": 3.6,
+        "garbageCollection": 1.6
+      },
+      "bootupMs": 17.4,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 240,
+      "depth": 13,
+      "maxChildren": 9
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 26,
+      "failingNodes": 4,
+      "failing": [
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "nodes": 4
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 16
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2485,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T16:27:46.323Z",
+      "runtimeMs": 6024.7
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "3.1.2",
+      "source": "meta",
+      "raw": "Eleventy v3.1.2"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0G005H3B8VA8AQ7FJDQQVAY"
+    },
+    "violations": 0,
+    "passes": 388,
+    "incomplete": 9,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
