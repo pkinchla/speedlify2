@@ -33,13 +33,58 @@ function heapPressure() {
 const LOGS_DIR = process.env.SPEEDLIFY_LOGS_DIR || "logs";
 const REPORT_FILE = process.env.SPEEDLIFY_REPORT_FILE || "report.json";
 
+/**
+ * How long a stored field history stays fresh.
+ *
+ * The CrUX History API returns weekly points and updates once a week, so
+ * refetching a site whose file is hours old spends rate-limited quota to
+ * rewrite the same 25 numbers. Six days rather than seven: on a fixed week a
+ * run that starts a minute late finds everything still fresh, does nothing, and
+ * the site drifts a week behind.
+ */
+const FIELD_FRESH_DAYS = 6;
+
+/**
+ * How long a run may spend before stopping cleanly.
+ *
+ * CrUX allows 150 queries a minute per project and lib/crux.js paces itself to
+ * stay under that, which puts a hard floor on how many sites an hour's run can
+ * cover — the whole list has not fitted in one pass since. A run that overruns
+ * its CI timeout is killed, and a killed run commits nothing, so the work it
+ * did do is lost as well. Stopping short and committing is strictly better: the
+ * sites it did not reach are the stalest ones next time, by construction.
+ */
+const BACKFILL_BUDGET_MINUTES = 15;
+
+/**
+ * When a site's field history was last fetched, or null if never.
+ *
+ * Read out of the file rather than taken from its mtime: CI checks the repo out
+ * fresh every run, which stamps every file with the checkout time and would
+ * make the whole corpus look equally fresh. Matched rather than parsed — these
+ * files carry 25 weeks of metrics each, and the whole list is scanned to decide
+ * what to do.
+ */
+function fieldFetchedAt(resultsDir, hash) {
+	let text;
+	try {
+		text = fs.readFileSync(path.join(resultsDir, hash, "field-history.json"), "utf8");
+	} catch {
+		return null;
+	}
+
+	const match = /"fetchedAt":\s*"([^"]+)"/.exec(text);
+	const at = match ? Date.parse(match[1]) : Number.NaN;
+	return Number.isNaN(at) ? null : at;
+}
+
 const HELP = `
 speedlify — measure web performance across sites and compare over time
 
 Usage:
   speedlify measure [options]     Measure a batch of the stalest sites
   speedlify report [--out=F]      Generate the static JSON report the site builds from
-  speedlify backfill [options]    Seed ~25 weeks of CrUX field history in one pass
+  speedlify backfill [options]    Refresh ~25 weeks of CrUX field history, stalest first
   speedlify check                 Verify the CrUX API key works
   speedlify list                  Show configured sites and their latest result
   speedlify runs [--limit=N]      Show recent measurement runs from the log
@@ -56,6 +101,7 @@ Options:
   --runs=<n>        Lighthouse runs per site (default: config value)
   --desktop         Measure desktop instead of mobile
   --force           Ignore the freshness window and re-measure everything
+  --max-minutes=<n> backfill: stop after this long and exit cleanly (0 = no limit)
   --no-field        Skip CrUX field data
   --out=<file>      report: output path (default report.json)
   --pretty          report: indent the JSON for reading
@@ -82,6 +128,7 @@ const { values: flags, positionals } = parseArgs({
 		days: { type: "string" },
 		keep: { type: "string" },
 		shard: { type: "string" },
+		"max-minutes": { type: "string" },
 		stale: { type: "boolean" },
 		out: { type: "string" },
 		pretty: { type: "boolean" },
@@ -307,9 +354,13 @@ function summaryOf(batch) {
 }
 
 /**
- * Seed field history. The CrUX History API hands back ~25 weekly data points
+ * Refresh field history. The CrUX History API hands back ~25 weekly data points
  * per call, so a fresh install gets six months of real-user trend immediately
  * instead of waiting six months to grow one.
+ *
+ * Rolling rather than exhaustive, for the same reason `measure` is: it takes
+ * the stalest sites it can get through in the time it has and leaves the rest
+ * for the next run.
  */
 async function backfill() {
 	const apiKey = process.env.CRUX_API_KEY;
@@ -321,30 +372,84 @@ async function backfill() {
 	const logger = new RunLogger({ dir: LOGS_DIR, runId, quiet: flags.quiet });
 
 	const formFactor = flags.desktop ? "DESKTOP" : "PHONE";
-	const summary = { sites: sites.length, written: 0, missing: 0, failed: 0 };
 
-	for (let [i, site] of sites.entries()) {
-		const prefix = `[${i + 1}/${sites.length}]`;
+	// Everything still inside the freshness window is already current; --force
+	// takes the whole list regardless. What is left is ordered oldest first, so
+	// consecutive runs walk the corpus instead of restarting at the top of it and
+	// re-covering the same prefix forever.
+	const freshBefore = Date.now() - FIELD_FRESH_DAYS * 24 * 60 * 60 * 1000;
+	const queue = sites
+		.map((site) => ({ site, fetchedAt: fieldFetchedAt(RESULTS_DIR, site.hash) }))
+		.filter(({ fetchedAt }) => flags.force || fetchedAt === null || fetchedAt < freshBefore)
+		.sort((a, b) => (a.fetchedAt ?? 0) - (b.fetchedAt ?? 0));
+
+	const limit = numFlag(flags.limit, null);
+	const work = limit ? queue.slice(0, limit) : queue;
+
+	const budgetMs = numFlag(flags["max-minutes"], BACKFILL_BUDGET_MINUTES) * 60 * 1000;
+	const deadline = budgetMs > 0 ? Date.now() + budgetMs : Infinity;
+
+	const summary = {
+		sites: sites.length,
+		due: queue.length,
+		fresh: sites.length - queue.length,
+		written: 0,
+		missing: 0,
+		failed: 0,
+		// Set when the budget ran out: how many of the due sites went untouched.
+		// Loud on purpose — a run that silently covers a third of the list looks
+		// exactly like one that covered all of it.
+		remaining: 0,
+	};
+
+	if (!work.length) {
+		await logger.close(summary);
+		if (!flags.quiet) {
+			process.stdout.write(`\n  Nothing due: all ${sites.length} field histories are under ${FIELD_FRESH_DAYS} days old.\n\n`);
+		}
+		return;
+	}
+
+	for (let [i, { site }] of work.entries()) {
+		if (Date.now() >= deadline) {
+			summary.remaining = work.length - i;
+			logger.warn(`stopping after ${budgetMs / 60000} minutes with ${summary.remaining} still due`, {
+				covered: i,
+				due: work.length,
+			});
+			break;
+		}
+
+		const prefix = `[${i + 1}/${work.length}]`;
 		try {
 			const history = await fetchFieldHistory(site.url, { apiKey, formFactor });
+
+			const dir = path.join(RESULTS_DIR, site.hash);
+			fs.mkdirSync(dir, { recursive: true });
+
+			// A miss is recorded, not just logged. Most of this corpus is too
+			// small for CrUX to sample, and a site with no file reads as never
+			// fetched — so without this the same ~1,500 sites would be due every
+			// run, sort to the front as the stalest, and spend the whole budget
+			// re-learning that they are still not in CrUX.
+			//
+			// Same shape either way, with an empty series: readFieldHistory in
+			// lib/report.js already treats "no weeks" as no field data, so this
+			// reads exactly like the absent file it replaces.
+			const payload = {
+				url: site.url,
+				name: site.name,
+				group: site.group,
+				fetchedAt: new Date().toISOString(),
+				...(history ?? { series: [], scope: null }),
+			};
+			fs.writeFileSync(path.join(dir, "field-history.json"), JSON.stringify(payload, null, 2) + "\n");
 
 			if (!history) {
 				logger.warn(`${prefix} no field data ${site.name}`, { url: site.url });
 				summary.missing++;
 				continue;
 			}
-
-			const dir = path.join(RESULTS_DIR, site.hash);
-			fs.mkdirSync(dir, { recursive: true });
-
-			const payload = {
-				url: site.url,
-				name: site.name,
-				group: site.group,
-				fetchedAt: new Date().toISOString(),
-				...history,
-			};
-			fs.writeFileSync(path.join(dir, "field-history.json"), JSON.stringify(payload, null, 2) + "\n");
 
 			logger.info(`${prefix} ${site.name} — ${history.series.length} weeks (${history.scope})`);
 			summary.written++;
@@ -357,7 +462,10 @@ async function backfill() {
 	await logger.close(summary);
 	if (!flags.quiet) {
 		process.stdout.write(
-			`\n  ${summary.written} backfilled · ${summary.missing} without field data · ${summary.failed} failed\n\n`
+			`\n  ${summary.written} backfilled · ${summary.missing} without field data · ${summary.failed} failed` +
+				`\n  ${summary.fresh} already fresh` +
+				(summary.remaining ? ` · ${summary.remaining} left for the next run (out of time)` : "") +
+				`\n\n`
 		);
 	}
 }

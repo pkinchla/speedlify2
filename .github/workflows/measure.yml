@@ -113,9 +113,16 @@ jobs:
 
   # Field data is cheap (one request per site) and independent of Lighthouse,
   # so it runs on its own schedule rather than blocking the measurement job.
+  #
+  # Rolling, like the measurement job: CrUX allows 150 queries a minute per
+  # project, so the whole list has not fitted in one pass for a while — this
+  # takes the stalest histories it can cover in the time it has. The step's
+  # --max-minutes is deliberately well under timeout-minutes: a job killed by
+  # the runner never reaches the commit below, so an overrun loses everything it
+  # fetched, while stopping early keeps it.
   field:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     if: github.event_name == 'schedule'
 
     steps:
@@ -130,7 +137,7 @@ jobs:
         env:
           CRUX_API_KEY: ${{ secrets.CRUX_API_KEY }}
         if: env.CRUX_API_KEY != ''
-        run: node bin/speedlify.js backfill
+        run: node bin/speedlify.js backfill --max-minutes=20
 
       - name: Commit field history
         run: |
