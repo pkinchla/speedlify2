@@ -2,6 +2,8 @@
 
 Measure web performance across a list of sites and compare the results over time. Lighthouse for lab data, the Chrome UX Report for real-user field data, append-only JSON logs for history, and a static Eleventy site for output.
 
+The successor to [`zachleat/speedlify`](https://github.com/zachleat/speedlify2).
+
 ```bash
 npm install
 npm run measure     # measure a batch of the stalest sites
