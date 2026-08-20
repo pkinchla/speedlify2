@@ -708,6 +708,9 @@ th.col-rings { text-align: left !important; }
 
 /* ------------------------------------------------------------ embed demo */
 
+/* The working component, sat above the markup that produces it. */
+.embed-live { margin: 0 0 0.9rem; }
+
 .embed-demo { display: flex; flex-direction: column; gap: 0.9rem; }
 .embed-row {
 	display: flex;

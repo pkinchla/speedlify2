@@ -45,10 +45,20 @@ jobs:
           cache: npm
       - run: npm ci
 
+      # Reports where this site will be served from, which the build needs for
+      # absolute URLs. Only sets outputs; the deploy job does the publishing.
+      - id: pages
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+
       - name: Generate report
         run: node bin/speedlify.js report
 
       - name: Build
+        # The embed snippets need an absolute URL for this instance — someone
+        # pastes them onto a different site, where a root-relative path means
+        # their own domain. Empty locally, which falls back to a placeholder.
+        env:
+          SPEEDLIFY_SITE_URL: ${{ steps.pages.outputs.base_url }}
         run: npx eleventy
 
       - name: Report coverage

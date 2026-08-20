@@ -548,4 +548,31 @@ eleventyComputed:
 </section>
 
 {% endif %}
+
+<section class="panel">
+	<h2>Embed this score</h2>
+	<p class="muted small">
+		Live below, then the markup that produces it. Drop that on any page to show
+		{{ entry.displayUrl }}'s scores, updated whenever this instance
+		re-measures — <a href="/embed/">more about the component</a>. <em>Don’t forget to bundle the <code>speedlify-score.js</code> component code into your site!</em>
+	</p>
+	{#
+		The live one and the snippet resolve their instance URL differently, and
+		the difference is the point.
+
+		This example runs on this site, so htmlBaseUrl — the same base every other
+		link here uses, correct whether served from a subdirectory or a root.
+
+		The snippet below gets pasted onto a *different* site, where a path like
+		/speedlify2/ would resolve against that site's domain. It needs the
+		absolute URL, which is meta.url.
+	#}
+	<script type="module" src="/js/speedlify-score.js"></script>
+	<p class="embed-live">
+		<speedlify-score speedlify-url="{{ '/' | htmlBaseUrl }}" url="{{ entry.url }}"></speedlify-score>
+	</p>
+
+	<pre><code>&lt;speedlify-score speedlify-url="{{ meta.url }}/" url="{{ entry.url }}"&gt;&lt;/speedlify-score&gt;</code></pre>
+</section>
+
 </article>
