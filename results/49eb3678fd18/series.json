@@ -1,0 +1,3 @@
+{"version":1,"url":"https://berry-blast-starter.freshjuice.dev/","updated":"2026-08-20T19:05:20.859Z","points":[
+{"t":1787252697427,"performance":83,"accessibility":95,"best-practices":100,"seo":100,"lcp":1663,"cls":0.329,"tbt":11,"fcp":1663,"si":1663,"ttfb":690,"total":112813,"requests":10,"bytes":1298,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":504.2,"longTasks":3,"elements":334,"failingCount":1,"failingNodes":1,"axeViolations":2,"axePasses":554,"bench":2477,"runs":3,"reqRuns":3,"ms":23431,"spread":16}
+]}

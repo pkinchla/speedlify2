@@ -1,0 +1,237 @@
+{
+  "url": "https://blog.felipestanzani.com/",
+  "name": "blog.felipestanzani.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787252950966,
+  "date": "2026-08-20T19:09:10.966Z",
+  "runId": "2026-08-20T19-03-02-721Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 32888,
+  "error": null,
+  "variance": {
+    "min": 68,
+    "max": 74,
+    "spread": 6,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://blog.felipestanzani.com/",
+    "finalUrl": "https://blog.felipestanzani.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 74,
+      "accessibility": 91,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 3732,
+      "lcp": 4419,
+      "si": 4978,
+      "tbt": 74,
+      "tti": 4428,
+      "cls": 0,
+      "ttfb": 776,
+      "maxPotentialFid": 111,
+      "serverResponseTime": 191,
+      "networkRtt": 0.1,
+      "networkServerLatency": 176.5
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 192.6,
+      "resourceLoadDelay": 1160.6,
+      "resourceLoadDuration": 180.2,
+      "elementRenderDelay": 847.9
+    },
+    "weight": {
+      "total": 602545,
+      "requests": 10,
+      "mainDocument": 16284,
+      "byType": {
+        "total": {
+          "bytes": 602545,
+          "requests": 10
+        },
+        "image": {
+          "bytes": 191942,
+          "requests": 2
+        },
+        "other": {
+          "bytes": 172357,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 170946,
+          "requests": 1
+        },
+        "font": {
+          "bytes": 40607,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 16284,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 10409,
+          "requests": 3
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 213875,
+          "requests": 5
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 3,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 213875,
+      "mainThreadMs": 55.3,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 170946,
+          "mainThreadMs": 55.3
+        },
+        {
+          "entity": "Google Fonts",
+          "bytes": 42929,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 663.2,
+      "byGroup": {
+        "scriptEvaluation": 197.4,
+        "other": 195.2,
+        "styleLayout": 181.6,
+        "scriptParseCompile": 46,
+        "paintCompositeRender": 18.4,
+        "parseHTML": 16.4,
+        "garbageCollection": 8.3
+      },
+      "bootupMs": 241.7,
+      "longTasks": 4,
+      "longestTaskMs": 111
+    },
+    "dom": {
+      "elements": 461,
+      "depth": 12,
+      "maxChildren": 52
+    },
+    "waste": {
+      "unusedJsBytes": 72654,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 940,
+      "renderBlockingCount": 3,
+      "poorlyCachedBytes": 200029,
+      "poorlyCachedCount": 3
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 22,
+      "failingNodes": 13,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 12
+        },
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 27
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2480.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T19:09:32.420Z",
+      "runtimeMs": 9994.6
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": null,
+      "source": "meta",
+      "raw": "Eleventy"
+    },
+    "host": {
+      "id": "self-hosted",
+      "name": "Self-hosted",
+      "icon": null,
+      "detail": "nginx",
+      "detailIcon": "Nginx",
+      "source": "server"
+    },
+    "headers": {
+      "server": "nginx/1.29.8"
+    },
+    "violations": 17,
+    "passes": 856,
+    "incomplete": 2,
+    "violationRules": 3,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 12,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "image-redundant-alt",
+        "impact": "minor",
+        "nodes": 4,
+        "help": "Alternative text of images should not be repeated as text"
+      },
+      {
+        "id": "link-in-text-block",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Links must be distinguishable without relying on color"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

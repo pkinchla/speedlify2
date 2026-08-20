@@ -1,0 +1,205 @@
+{
+  "url": "https://brianjdevries.com/",
+  "name": "brianjdevries.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787253091154,
+  "date": "2026-08-20T19:11:31.154Z",
+  "runId": "2026-08-20T19-03-02-721Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 23693,
+  "error": null,
+  "variance": {
+    "min": 86,
+    "max": 96,
+    "spread": 10,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://brianjdevries.com/",
+    "finalUrl": "https://brianjdevries.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 90,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 790,
+      "lcp": 3603,
+      "si": 790,
+      "tbt": 49,
+      "tti": 3693,
+      "cls": 0,
+      "ttfb": 603,
+      "maxPotentialFid": 78,
+      "serverResponseTime": 3,
+      "networkRtt": 0.1,
+      "networkServerLatency": 11.5
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 4.5,
+      "elementRenderDelay": 105.4
+    },
+    "weight": {
+      "total": 656109,
+      "requests": 19,
+      "mainDocument": 5021,
+      "byType": {
+        "total": {
+          "bytes": 656109,
+          "requests": 18
+        },
+        "image": {
+          "bytes": 623883,
+          "requests": 6
+        },
+        "other": {
+          "bytes": 14061,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 8233,
+          "requests": 5
+        },
+        "document": {
+          "bytes": 5021,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 4911,
+          "requests": 3
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 238455,
+          "requests": 2
+        }
+      },
+      "scripts": 3,
+      "stylesheets": 5,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 238455,
+      "mainThreadMs": 0,
+      "top": [
+        {
+          "entity": "vries.land",
+          "bytes": 238455,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 516.1,
+      "byGroup": {
+        "other": 398.1,
+        "styleLayout": 59,
+        "scriptEvaluation": 23.3,
+        "paintCompositeRender": 17.2,
+        "parseHTML": 13.7,
+        "scriptParseCompile": 4.7
+      },
+      "bootupMs": 15.4,
+      "longTasks": 2,
+      "longestTaskMs": 78
+    },
+    "dom": {
+      "elements": 150,
+      "depth": 9,
+      "maxChildren": 18
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 5,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 26,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 15
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2440.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T19:11:48.054Z",
+      "runtimeMs": 6105.7
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "2.0.1",
+      "source": "meta",
+      "raw": "Eleventy v2.0.1"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0G9CGWK0BD1RAPQVTAFPKXM"
+    },
+    "violations": 1,
+    "passes": 303,
+    "incomplete": 0,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

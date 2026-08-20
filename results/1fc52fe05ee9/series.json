@@ -1,0 +1,3 @@
+{"version":1,"url":"https://blog.dermah.com/","updated":"2026-08-20T19:09:07.967Z","points":[
+{"t":1787252919360,"performance":99,"accessibility":100,"best-practices":77,"seo":100,"lcp":1708,"cls":0.013,"tbt":83,"fcp":1507,"si":1507,"ttfb":605,"total":430226,"requests":12,"bytes":358302,"mainThreadMs":91.8,"unusedJsBytes":138091,"unusedCssBytes":0,"mainThreadTotal":786.2,"longTasks":2,"elements":82,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":244,"bench":2474.5,"runs":3,"reqRuns":3,"ms":28606,"spread":24}
+]}
