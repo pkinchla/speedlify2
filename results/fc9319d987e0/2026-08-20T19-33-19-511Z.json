@@ -1,0 +1,250 @@
+{
+  "url": "https://bullrich.dev/",
+  "name": "bullrich.dev",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787254399511,
+  "date": "2026-08-20T19:33:19.511Z",
+  "runId": "2026-08-20T19-30-11-787Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 30002,
+  "error": null,
+  "variance": {
+    "min": 86,
+    "max": 94,
+    "spread": 8,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://bullrich.dev/",
+    "finalUrl": "https://bullrich.dev/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 94,
+      "accessibility": 80,
+      "best-practices": 100,
+      "seo": 92,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 903,
+      "lcp": 3055,
+      "si": 903,
+      "tbt": 50,
+      "tti": 3130,
+      "cls": 0,
+      "ttfb": 603,
+      "maxPotentialFid": 103,
+      "serverResponseTime": 3,
+      "networkRtt": 0.1,
+      "networkServerLatency": 126
+    },
+    "lcpBreakdown": null,
+    "weight": {
+      "total": 327502,
+      "requests": 13,
+      "mainDocument": 9981,
+      "byType": {
+        "total": {
+          "bytes": 327114,
+          "requests": 12
+        },
+        "script": {
+          "bytes": 165206,
+          "requests": 2
+        },
+        "image": {
+          "bytes": 139678,
+          "requests": 6
+        },
+        "stylesheet": {
+          "bytes": 11725,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 9981,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 524,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 162835,
+          "requests": 1
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 1,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 162835,
+      "mainThreadMs": 51.5,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 162835,
+          "mainThreadMs": 51.5
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 733.2,
+      "byGroup": {
+        "other": 250.2,
+        "scriptEvaluation": 182.1,
+        "styleLayout": 179.2,
+        "paintCompositeRender": 60.7,
+        "scriptParseCompile": 44.3,
+        "parseHTML": 16.7
+      },
+      "bootupMs": 217,
+      "longTasks": 2,
+      "longestTaskMs": 103
+    },
+    "dom": {
+      "elements": 475,
+      "depth": 10,
+      "maxChildren": 20
+    },
+    "waste": {
+      "unusedJsBytes": 71323,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 138786.0833333333,
+      "poorlyCachedCount": 7
+    },
+    "accessibility": {
+      "failingCount": 4,
+      "applicableCount": 14,
+      "failingNodes": 13,
+      "failing": [
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "nodes": 7
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 4
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 22
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2355.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T19:33:30.607Z",
+      "runtimeMs": 8491.3
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": null,
+      "source": "meta",
+      "raw": "Eleventy"
+    },
+    "host": {
+      "id": "github",
+      "name": "GitHub Pages",
+      "icon": "Github",
+      "source": "x-github-request-id"
+    },
+    "headers": {
+      "server": "GitHub.com",
+      "via": "1.1 varnish",
+      "x-fastly-request-id": "6724d37141c5da04f78abcd4874c80d4095ae695",
+      "x-github-request-id": "B674:E09D0:56CC31:5AB695:6A87567E",
+      "x-served-by": "cache-chi-kmdw8640072-CHI"
+    },
+    "violations": 19,
+    "passes": 812,
+    "incomplete": 1,
+    "violationRules": 5,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "nodes": 7,
+        "help": "Links must have discernible text"
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 6,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 4,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Heading levels should only increase by one"
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should have one main landmark"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

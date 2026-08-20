@@ -1,0 +1,202 @@
+{
+  "url": "https://brd.mn/",
+  "name": "brd.mn",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787254265711,
+  "date": "2026-08-20T19:31:05.711Z",
+  "runId": "2026-08-20T19-30-11-787Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 28345,
+  "error": null,
+  "variance": {
+    "min": 98,
+    "max": 99,
+    "spread": 1,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://brd.mn/",
+    "finalUrl": "https://brd.mn/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1063,
+      "lcp": 2330,
+      "si": 2521,
+      "tbt": 20,
+      "tti": 2330,
+      "cls": 0,
+      "ttfb": 1076,
+      "maxPotentialFid": 70,
+      "serverResponseTime": 979,
+      "networkRtt": 21.6,
+      "networkServerLatency": 259
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 1076.3,
+      "resourceLoadDelay": 19.6,
+      "resourceLoadDuration": 570.9,
+      "elementRenderDelay": 21.9
+    },
+    "weight": {
+      "total": 106892,
+      "requests": 6,
+      "mainDocument": 3894,
+      "byType": {
+        "total": {
+          "bytes": 106892,
+          "requests": 6
+        },
+        "image": {
+          "bytes": 91000,
+          "requests": 2
+        },
+        "script": {
+          "bytes": 11546,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 3894,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 452,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 11546,
+          "requests": 1
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 0,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 11546,
+      "mainThreadMs": 3.5,
+      "top": [
+        {
+          "entity": "Cloudflare",
+          "bytes": 11546,
+          "mainThreadMs": 3.5
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 4462.6,
+      "byGroup": {
+        "scriptEvaluation": 3877.9,
+        "other": 333.5,
+        "garbageCollection": 205.6,
+        "styleLayout": 27.7,
+        "parseHTML": 8.2,
+        "paintCompositeRender": 7.8,
+        "scriptParseCompile": 1.9
+      },
+      "bootupMs": 3862.6,
+      "longTasks": 1,
+      "longestTaskMs": 70
+    },
+    "dom": {
+      "elements": 46,
+      "depth": 6,
+      "maxChildren": 9
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 4618.400000000001,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 13,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 11
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2389,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T19:31:07.009Z",
+      "runtimeMs": 13345.2
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "cf-ray": "a2e3d1a0de87bf5d-YYZ",
+      "server": "cloudflare",
+      "x-nf-request-id": "01M0GAGG4SHJE8BTGMKRF4YKM8"
+    },
+    "violations": 1,
+    "passes": 97,
+    "incomplete": 0,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

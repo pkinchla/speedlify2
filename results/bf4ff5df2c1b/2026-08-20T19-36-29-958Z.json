@@ -1,0 +1,231 @@
+{
+  "url": "https://davidrhoden.com/",
+  "name": "davidrhoden.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787254589958,
+  "date": "2026-08-20T19:36:29.958Z",
+  "runId": "2026-08-20T19-30-13-948Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 32125,
+  "error": null,
+  "variance": {
+    "min": 42,
+    "max": 60,
+    "spread": 18,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://davidrhoden.com/",
+    "finalUrl": "https://davidrhoden.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 57,
+      "accessibility": 94,
+      "best-practices": 77,
+      "seo": 100,
+      "agentic-browsing": 87
+    },
+    "timings": {
+      "fcp": 3855,
+      "lcp": 7461,
+      "si": 3855,
+      "tbt": 185,
+      "tti": 8133,
+      "cls": 0.161,
+      "ttfb": 650,
+      "maxPotentialFid": 138,
+      "serverResponseTime": 29,
+      "networkRtt": 14.8,
+      "networkServerLatency": 290.5
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 30.9,
+      "resourceLoadDelay": 14.7,
+      "resourceLoadDuration": 338.5,
+      "elementRenderDelay": 30.3
+    },
+    "weight": {
+      "total": 1091038,
+      "requests": 43,
+      "mainDocument": 89066,
+      "byType": {
+        "total": {
+          "bytes": 1082518,
+          "requests": 42
+        },
+        "image": {
+          "bytes": 538205,
+          "requests": 16
+        },
+        "script": {
+          "bytes": 352016,
+          "requests": 8
+        },
+        "font": {
+          "bytes": 91768,
+          "requests": 4
+        },
+        "document": {
+          "bytes": 89066,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 8604,
+          "requests": 6
+        },
+        "other": {
+          "bytes": 2859,
+          "requests": 7
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 586630,
+          "requests": 32
+        }
+      },
+      "scripts": 8,
+      "stylesheets": 6,
+      "fonts": 4
+    },
+    "thirdParty": {
+      "count": 9,
+      "bytes": 586630,
+      "mainThreadMs": 128.9,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 183250,
+          "mainThreadMs": 62.3
+        },
+        {
+          "entity": "YouTube",
+          "bytes": 156174,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "PayPal",
+          "bytes": 102808,
+          "mainThreadMs": 28.5
+        },
+        {
+          "entity": "Google Fonts",
+          "bytes": 93502,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Clarity",
+          "bytes": 27327,
+          "mainThreadMs": 30.4
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1258.6,
+      "byGroup": {
+        "scriptEvaluation": 596.6,
+        "other": 304.2,
+        "scriptParseCompile": 144.3,
+        "styleLayout": 131.2,
+        "parseHTML": 51,
+        "paintCompositeRender": 31.4
+      },
+      "bootupMs": 693.6,
+      "longTasks": 6,
+      "longestTaskMs": 138
+    },
+    "dom": {
+      "elements": 508,
+      "depth": 13,
+      "maxChildren": 31
+    },
+    "waste": {
+      "unusedJsBytes": 184999,
+      "unusedCssBytes": 15242,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 24127,
+      "unminifiedCssBytes": 4813,
+      "renderBlockingMs": 7934,
+      "renderBlockingCount": 9,
+      "poorlyCachedBytes": 213356.49999999997,
+      "poorlyCachedCount": 12
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 26,
+      "failingNodes": 28,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 27
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 36
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2485,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T19:36:50.194Z",
+      "runtimeMs": 8504.1
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e3d994fe835813-IAD",
+      "server": "cloudflare"
+    },
+    "violations": 1,
+    "passes": 73,
+    "incomplete": 0,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "meta-refresh",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Delayed refresh under 20 hours must not be used"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

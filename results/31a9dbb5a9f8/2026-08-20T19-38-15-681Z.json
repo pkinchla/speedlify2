@@ -1,0 +1,242 @@
+{
+  "url": "https://cedricv.com/",
+  "name": "cedricv.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787254695681,
+  "date": "2026-08-20T19:38:15.681Z",
+  "runId": "2026-08-20T19-30-11-787Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 25562,
+  "error": null,
+  "variance": {
+    "min": 67,
+    "max": 72,
+    "spread": 5,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://cedricv.com/",
+    "finalUrl": "https://cedricv.com/fr/",
+    "redirect": {
+      "from": "https://cedricv.com/",
+      "to": "https://cedricv.com/fr",
+      "chain": [
+        {
+          "url": "https://cedricv.com/",
+          "status": 301
+        },
+        {
+          "url": "https://cedricv.com/fr/",
+          "status": 200
+        }
+      ],
+      "statuses": [
+        301
+      ],
+      "change": "path",
+      "permanent": true,
+      "schemeUpgrade": false,
+      "hops": 1
+    },
+    "statusCode": "ok",
+    "scores": {
+      "performance": 71,
+      "accessibility": 95,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 67
+    },
+    "timings": {
+      "fcp": 2807,
+      "lcp": 7229,
+      "si": 2807,
+      "tbt": 0,
+      "tti": 7236,
+      "cls": 0.017,
+      "ttfb": 484,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 22,
+      "networkRtt": 0.1,
+      "networkServerLatency": 61.1
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 67.2,
+      "elementRenderDelay": 222.4
+    },
+    "weight": {
+      "total": 1083020,
+      "requests": 22,
+      "mainDocument": 13356,
+      "byType": {
+        "total": {
+          "bytes": 1079987,
+          "requests": 20
+        },
+        "image": {
+          "bytes": 980267,
+          "requests": 9
+        },
+        "font": {
+          "bytes": 48464,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 27025,
+          "requests": 5
+        },
+        "document": {
+          "bytes": 13356,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 9469,
+          "requests": 2
+        },
+        "other": {
+          "bytes": 1406,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 60800,
+          "requests": 3
+        }
+      },
+      "scripts": 5,
+      "stylesheets": 2,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 60800,
+      "mainThreadMs": 3.8,
+      "top": [
+        {
+          "entity": "Google Fonts",
+          "bytes": 49349,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Cloudflare",
+          "bytes": 11451,
+          "mainThreadMs": 3.8
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 628.2,
+      "byGroup": {
+        "other": 349.1,
+        "styleLayout": 144.9,
+        "scriptEvaluation": 62.1,
+        "paintCompositeRender": 43,
+        "parseHTML": 18.6,
+        "scriptParseCompile": 10.4
+      },
+      "bootupMs": 25.8,
+      "longTasks": 2,
+      "longestTaskMs": 173
+    },
+    "dom": {
+      "elements": 564,
+      "depth": 12,
+      "maxChildren": 11
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 2112,
+      "renderBlockingMs": 970,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 10300.400000000001,
+      "poorlyCachedCount": 2
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 20,
+      "failingNodes": 52,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 52
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 784.5,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 12
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2427.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T19:38:33.406Z",
+      "runtimeMs": 6742.4
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": null,
+      "source": "meta",
+      "raw": "Eleventy"
+    },
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e3dc0e382992c6-YYZ",
+      "server": "cloudflare"
+    },
+    "violations": 56,
+    "passes": 778,
+    "incomplete": 12,
+    "violationRules": 2,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 55,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "All page content should be contained by landmarks"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

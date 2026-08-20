@@ -1,0 +1,207 @@
+{
+  "url": "https://cloudcannon.axcora.com/",
+  "name": "cloudcannon.axcora.com",
+  "group": "11ty-starters",
+  "groupName": "Build Awesome Starters",
+  "timestamp": 1787254384716,
+  "date": "2026-08-20T19:33:04.716Z",
+  "runId": "2026-08-20T19-30-15-782Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 23004,
+  "error": null,
+  "variance": {
+    "min": 80,
+    "max": 82,
+    "spread": 2,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://cloudcannon.axcora.com/",
+    "finalUrl": "https://cloudcannon.axcora.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 80,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 64
+    },
+    "timings": {
+      "fcp": 1842,
+      "lcp": 1842,
+      "si": 1842,
+      "tbt": 0,
+      "tti": 1842,
+      "cls": 0.379,
+      "ttfb": 636,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 40,
+      "networkRtt": 0,
+      "networkServerLatency": 36
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 41.5,
+      "resourceLoadDelay": 10.4,
+      "resourceLoadDuration": 47.3,
+      "elementRenderDelay": 39.1
+    },
+    "weight": {
+      "total": 162858,
+      "requests": 17,
+      "mainDocument": 2030,
+      "byType": {
+        "total": {
+          "bytes": 162858,
+          "requests": 17
+        },
+        "image": {
+          "bytes": 113401,
+          "requests": 12
+        },
+        "stylesheet": {
+          "bytes": 34692,
+          "requests": 2
+        },
+        "font": {
+          "bytes": 12735,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 2030,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "script": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "other": {
+          "bytes": 0,
+          "requests": 1
+        },
+        "third-party": {
+          "bytes": 12735,
+          "requests": 1
+        }
+      },
+      "scripts": 0,
+      "stylesheets": 2,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 12735,
+      "mainThreadMs": 0,
+      "top": [
+        {
+          "entity": "Google Fonts",
+          "bytes": 12735,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 223.7,
+      "byGroup": {
+        "other": 149,
+        "styleLayout": 32.7,
+        "parseHTML": 15.3,
+        "scriptEvaluation": 13.3,
+        "paintCompositeRender": 12.9,
+        "scriptParseCompile": 0.5
+      },
+      "bootupMs": 11.9,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 90,
+      "depth": 8,
+      "maxChildren": 9
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 31649,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 300,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 18,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 8
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2332.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T19:33:13.978Z",
+      "runtimeMs": 6195.5
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": null,
+      "source": "meta",
+      "raw": "Eleventy"
+    },
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e3d466dffee7e3-YYZ",
+      "server": "cloudflare"
+    },
+    "violations": 1,
+    "passes": 244,
+    "incomplete": 0,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Page should contain a level-one heading"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

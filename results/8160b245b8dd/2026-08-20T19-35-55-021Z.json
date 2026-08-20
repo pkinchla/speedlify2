@@ -1,0 +1,213 @@
+{
+  "url": "https://cantautor.es/",
+  "name": "cantautor.es",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787254555021,
+  "date": "2026-08-20T19:35:55.021Z",
+  "runId": "2026-08-20T19-30-11-787Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 26762,
+  "error": null,
+  "variance": {
+    "min": 98,
+    "max": 100,
+    "spread": 2,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://cantautor.es/",
+    "finalUrl": "https://cantautor.es/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 100,
+      "accessibility": 96,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1005,
+      "lcp": 1836,
+      "si": 1005,
+      "tbt": 23,
+      "tti": 1840,
+      "cls": 0.014,
+      "ttfb": 626,
+      "maxPotentialFid": 73,
+      "serverResponseTime": 25,
+      "networkRtt": 0.1,
+      "networkServerLatency": 72.9
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 26.5,
+      "resourceLoadDelay": 29.5,
+      "resourceLoadDuration": 29.1,
+      "elementRenderDelay": 67.9
+    },
+    "weight": {
+      "total": 325167,
+      "requests": 44,
+      "mainDocument": 18582,
+      "byType": {
+        "total": {
+          "bytes": 324127,
+          "requests": 42
+        },
+        "image": {
+          "bytes": 250440,
+          "requests": 28
+        },
+        "font": {
+          "bytes": 37194,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 18582,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 11471,
+          "requests": 5
+        },
+        "script": {
+          "bytes": 6440,
+          "requests": 6
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 2434,
+          "requests": 2
+        }
+      },
+      "scripts": 6,
+      "stylesheets": 0,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 2434,
+      "mainThreadMs": 2.5,
+      "top": [
+        {
+          "entity": "Plausible",
+          "bytes": 2434,
+          "mainThreadMs": 2.5
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 783,
+      "byGroup": {
+        "other": 272.7,
+        "styleLayout": 264,
+        "scriptEvaluation": 96.2,
+        "parseHTML": 78.9,
+        "paintCompositeRender": 51.5,
+        "scriptParseCompile": 19.7
+      },
+      "bootupMs": 80.8,
+      "longTasks": 2,
+      "longestTaskMs": 73
+    },
+    "dom": {
+      "elements": 1354,
+      "depth": 12,
+      "maxChildren": 36
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 26,
+      "failingNodes": 6,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 6
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 34
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2385.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T19:36:05.433Z",
+      "runtimeMs": 7418.7
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "3.1.6",
+      "source": "meta",
+      "raw": "Eleventy v3.1.6"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0GAS8VV13GMJMV8X7F4QSR3"
+    },
+    "violations": 5,
+    "passes": 1048,
+    "incomplete": 2,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 5,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

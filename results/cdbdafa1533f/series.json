@@ -1,0 +1,3 @@
+{"version":1,"url":"https://candc.ch/fr","updated":"2026-08-20T19:35:52.021Z","points":[
+{"t":1787254529095,"performance":92,"accessibility":95,"best-practices":92,"seo":100,"lcp":2821,"cls":0,"tbt":0,"fcp":2611,"si":2611,"ttfb":481,"total":328600,"requests":12,"bytes":49349,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":353.7,"longTasks":0,"elements":179,"failingCount":1,"failingNodes":18,"axeViolations":25,"axePasses":244,"bench":2413,"runs":3,"reqRuns":3,"ms":22926,"spread":12}
+]}

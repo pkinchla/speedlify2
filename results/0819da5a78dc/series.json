@@ -1,0 +1,3 @@
+{"version":1,"url":"https://bunny.net/","updated":"2026-08-20T19:32:47.966Z","points":[
+{"t":1787254271322,"performance":65,"accessibility":92,"best-practices":96,"seo":100,"lcp":6008,"cls":0.006,"tbt":168,"fcp":4508,"si":4508,"ttfb":608,"total":4731511,"requests":140,"bytes":3106758,"mainThreadMs":36.1,"unusedJsBytes":359607,"unusedCssBytes":157490,"mainThreadTotal":2945.9,"longTasks":8,"elements":1963,"failingCount":3,"failingNodes":17,"axeViolations":17,"axePasses":1462,"field-lcp":2768,"field-inp":207,"field-cls":0.05,"field-fcp":1609,"field-ttfb":845,"bench":4246,"runs":3,"reqRuns":3,"ms":96640,"spread":14}
+]}

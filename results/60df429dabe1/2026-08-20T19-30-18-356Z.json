@@ -1,0 +1,195 @@
+{
+  "url": "https://bluerose.melkat.dev/",
+  "name": "bluerose.melkat.dev",
+  "group": "11ty-starters",
+  "groupName": "Build Awesome Starters",
+  "timestamp": 1787254218356,
+  "date": "2026-08-20T19:30:18.356Z",
+  "runId": "2026-08-20T19-30-11-787Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 24787,
+  "error": null,
+  "variance": {
+    "min": 91,
+    "max": 92,
+    "spread": 1,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://bluerose.melkat.dev/",
+    "finalUrl": "https://bluerose.melkat.dev/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 92,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 826,
+      "lcp": 3350,
+      "si": 826,
+      "tbt": 0,
+      "tti": 3350,
+      "cls": 0.027,
+      "ttfb": 650,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 51,
+      "networkRtt": 0,
+      "networkServerLatency": 50.4
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 52.6,
+      "resourceLoadDelay": 8.7,
+      "resourceLoadDuration": 127.4,
+      "elementRenderDelay": 101.7
+    },
+    "weight": {
+      "total": 523477,
+      "requests": 6,
+      "mainDocument": 1998,
+      "byType": {
+        "total": {
+          "bytes": 523477,
+          "requests": 6
+        },
+        "image": {
+          "bytes": 513998,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 5411,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 1998,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 1443,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 627,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 0,
+          "requests": 0
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 1,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 0,
+      "bytes": 0,
+      "mainThreadMs": 0,
+      "top": []
+    },
+    "mainThread": {
+      "total": 178.6,
+      "byGroup": {
+        "other": 114.5,
+        "styleLayout": 38.3,
+        "scriptEvaluation": 11.3,
+        "parseHTML": 7.4,
+        "paintCompositeRender": 6.1,
+        "scriptParseCompile": 1.2
+      },
+      "bootupMs": 7.7,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 38,
+      "depth": 10,
+      "maxChildren": 4
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 520852,
+      "poorlyCachedCount": 4
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 15,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 24
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2415.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T19:30:29.471Z",
+      "runtimeMs": 6010.2
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "3.1.2",
+      "source": "meta",
+      "raw": "Eleventy v3.1.2"
+    },
+    "host": {
+      "id": "self-hosted",
+      "name": "Self-hosted",
+      "icon": null,
+      "detail": "nginx",
+      "detailIcon": "Nginx",
+      "source": "server"
+    },
+    "headers": {
+      "server": "nginx/1.29.8"
+    },
+    "violations": 0,
+    "passes": 83,
+    "incomplete": 11,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

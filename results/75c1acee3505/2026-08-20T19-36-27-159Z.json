@@ -1,0 +1,204 @@
+{
+  "url": "https://chickenwing-gingerbreadman.xyz/",
+  "name": "chickenwing-gingerbreadman.xyz",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787254587159,
+  "date": "2026-08-20T19:36:27.159Z",
+  "runId": "2026-08-20T19-30-11-987Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 20406,
+  "error": null,
+  "variance": {
+    "min": 98,
+    "max": 99,
+    "spread": 1,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://chickenwing-gingerbreadman.xyz/",
+    "finalUrl": "https://chickenwing-gingerbreadman.xyz/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 99,
+      "accessibility": 91,
+      "best-practices": 100,
+      "seo": 90,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1542,
+      "lcp": 1542,
+      "si": 1542,
+      "tbt": 0,
+      "tti": 1542,
+      "cls": 0.05,
+      "ttfb": 628,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 29,
+      "networkRtt": 0,
+      "networkServerLatency": 28.3
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 30.5,
+      "elementRenderDelay": 51.7
+    },
+    "weight": {
+      "total": 52026,
+      "requests": 7,
+      "mainDocument": 3641,
+      "byType": {
+        "total": {
+          "bytes": 52026,
+          "requests": 7
+        },
+        "font": {
+          "bytes": 43853,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 4123,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 3641,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 409,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "other": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 44866,
+          "requests": 4
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 2,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 44866,
+      "mainThreadMs": 0,
+      "top": [
+        {
+          "entity": "Google Fonts",
+          "bytes": 44866,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 111.9,
+      "byGroup": {
+        "other": 54,
+        "styleLayout": 36.7,
+        "scriptEvaluation": 8.7,
+        "paintCompositeRender": 6.9,
+        "parseHTML": 4.7,
+        "scriptParseCompile": 0.8
+      },
+      "bootupMs": 2.6,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 220,
+      "depth": 8,
+      "maxChildren": 9
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 763,
+      "renderBlockingCount": 3,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 11,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "html-has-lang",
+          "title": "`<html>` element does not have a `[lang]` attribute",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 6
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 4432,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T19:36:35.274Z",
+      "runtimeMs": 5597.8
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0GAT2B0B2NYT2V3QDHJPHF3"
+    },
+    "violations": 1,
+    "passes": 429,
+    "incomplete": 1,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "html-has-lang",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "<html> element must have a lang attribute"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
