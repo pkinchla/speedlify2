@@ -1,3 +1,5 @@
+import { HtmlBasePlugin } from "@11ty/eleventy";
+
 // Must stay first: loads .env before the data files read process.env.
 import "./lib/env.js";
 
@@ -49,14 +51,18 @@ function loadLocalIcons(dir = ICONS_DIR) {
 
 const localIcons = loadLocalIcons();
 
-export default async function (eleventyConfig) {
-	eleventyConfig.addPassthroughCopy({ "src/css": "css" });
-	eleventyConfig.addPassthroughCopy({ "src/js": "js" });
+export default async function ($config) {
+	$config.addPlugin(HtmlBasePlugin, {
+		baseHref: process.env.GITHUB_ACTIONS ? "speedlify2" : "/",
+	});
+
+	$config.addPassthroughCopy({ "src/css": "css" });
+	$config.addPassthroughCopy({ "src/js": "js" });
 
 	// Brand marks are inlined into the pages that use them, so the directory
 	// itself is a source of build inputs rather than output — and its README
 	// would otherwise render as a page.
-	eleventyConfig.ignores.add(`${ICONS_DIR}/**`);
+	$config.ignores.add(`${ICONS_DIR}/**`);
 
 	// The report is deliberately NOT published. It is the build's input, not an
 	// artifact for the site — and at full coverage it is tens of megabytes, which
@@ -64,35 +70,35 @@ export default async function (eleventyConfig) {
 	// /api/site/<slug>.json are the ones consumers actually use.
 	//
 	// The report is the only input; rebuild when it changes.
-	eleventyConfig.addWatchTarget(process.env.SPEEDLIFY_REPORT_FILE || "report.json");
+	$config.addWatchTarget(process.env.SPEEDLIFY_REPORT_FILE || "report.json");
 
 	// 8080 is a busy port on most machines, and this project is often running
 	// alongside whatever else is being measured.
-	eleventyConfig.setServerOptions({ port: 2830 });
-	eleventyConfig.setQuietMode(true);
+	$config.setServerOptions({ port: 2830 });
+	$config.setQuietMode(true);
 
 	/* ---------------------------------------------------------------- format */
 
-	eleventyConfig.addFilter("bytes", (v) => {
+	$config.addFilter("bytes", (v) => {
 		if (typeof v !== "number") return "—";
 		if (v < 1024) return `${v} B`;
 		if (v < 1024 * 1024) return `${(v / 1024).toFixed(1)} kB`;
 		return `${(v / 1024 / 1024).toFixed(2)} MB`;
 	});
 
-	eleventyConfig.addFilter("ms", (v) => {
+	$config.addFilter("ms", (v) => {
 		if (typeof v !== "number") return "—";
 		if (v < 1000) return `${Math.round(v)} ms`;
 		return `${(v / 1000).toFixed(2)} s`;
 	});
 
-	eleventyConfig.addFilter("num", (v, places = 0) => {
+	$config.addFilter("num", (v, places = 0) => {
 		if (typeof v !== "number") return "—";
 		return v.toLocaleString("en-US", { minimumFractionDigits: places, maximumFractionDigits: places });
 	});
 
 	/** Format by declared unit so one template row handles ms, bytes and counts. */
-	eleventyConfig.addFilter("unit", function (v, unit) {
+	$config.addFilter("unit", function (v, unit) {
 		if (typeof v !== "number") return "—";
 		if (unit === "ms") return v < 1000 ? `${Math.round(v)} ms` : `${(v / 1000).toFixed(2)} s`;
 		if (unit === "bytes") {
@@ -104,7 +110,7 @@ export default async function (eleventyConfig) {
 		return Number.isInteger(v) ? v.toLocaleString("en-US") : v.toFixed(3);
 	});
 
-	eleventyConfig.addFilter("date", (v, style = "short") => {
+	$config.addFilter("date", (v, style = "short") => {
 		if (!v) return "never";
 		const d = new Date(v);
 		if (style === "long") {
@@ -121,7 +127,7 @@ export default async function (eleventyConfig) {
 	 * "5h ago") make a column of values hard to scan. Anywhere the surrounding
 	 * sentence needs a word, the template supplies it.
 	 */
-	eleventyConfig.addFilter("since", (v) => {
+	$config.addFilter("since", (v) => {
 		if (!v) return "never";
 
 		const diff = Date.now() - new Date(v).getTime();
@@ -137,32 +143,32 @@ export default async function (eleventyConfig) {
 	/* ----------------------------------------------------------------- class */
 
 	/** Lighthouse's own banding: <50 poor, 50–89 average, 90+ good. */
-	eleventyConfig.addFilter("scoreClass", (v) => {
+	$config.addFilter("scoreClass", (v) => {
 		if (typeof v !== "number") return "none";
 		if (v >= 90) return "good";
 		if (v >= 50) return "average";
 		return "poor";
 	});
 
-	eleventyConfig.addFilter("ratingClass", (r) => {
+	$config.addFilter("ratingClass", (r) => {
 		if (r === "good") return "good";
 		if (r === "needs-improvement") return "average";
 		if (r === "poor") return "poor";
 		return "none";
 	});
 
-	eleventyConfig.addFilter("deltaClass", (d) => {
+	$config.addFilter("deltaClass", (d) => {
 		if (!d || d.unchanged || d.better === null) return "flat";
 		return d.better ? "better" : "worse";
 	});
 
-	eleventyConfig.addFilter("deltaArrow", (d) => {
+	$config.addFilter("deltaArrow", (d) => {
 		if (!d || d.unchanged) return "→";
 		return d.change > 0 ? "↑" : "↓";
 	});
 
 	/** Signed, readable change text. */
-	eleventyConfig.addFilter("deltaText", function (d, unit = "") {
+	$config.addFilter("deltaText", function (d, unit = "") {
 		if (!d) return "";
 		if (d.unchanged) return "no change";
 
@@ -185,7 +191,7 @@ export default async function (eleventyConfig) {
 		return `${value} (${d.pct > 0 ? "+" : ""}${d.pct}%)`;
 	});
 
-	eleventyConfig.addFilter("lowerIsBetter", lowerIsBetter);
+	$config.addFilter("lowerIsBetter", lowerIsBetter);
 
 	/**
 	 * Pluralize a noun to match a count.
@@ -193,7 +199,7 @@ export default async function (eleventyConfig) {
 	 * `{{ 1 | plural("score") }}` -> "score", `{{ 2 | plural("score") }}` -> "scores".
 	 * Pass an explicit plural for irregular nouns: `plural("entry", "entries")`.
 	 */
-	eleventyConfig.addFilter("plural", (count, singular, plural) => {
+	$config.addFilter("plural", (count, singular, plural) => {
 		return count === 1 ? singular : plural || `${singular}s`;
 	});
 
@@ -204,7 +210,7 @@ export default async function (eleventyConfig) {
 	 * list — and "not-enough-measurements" repeated a hundred times says nothing
 	 * at all about what is actually happening.
 	 */
-	eleventyConfig.addFilter("redirectReason", (reason) => {
+	$config.addFilter("redirectReason", (reason) => {
 		return (
 			{
 				"not-enough-measurements": "Waiting for more measurements",
@@ -218,7 +224,7 @@ export default async function (eleventyConfig) {
 	/**
 	 * Why a reason means what it means, for the paragraph under each heading.
 	 */
-	eleventyConfig.addFilter("redirectExplanation", (reason) => {
+	$config.addFilter("redirectExplanation", (reason) => {
 		return (
 			{
 				"not-enough-measurements":
@@ -233,7 +239,7 @@ export default async function (eleventyConfig) {
 	});
 
 	/** Count and correctly-pluralized noun together: "1 site", "3 sites". */
-	eleventyConfig.addFilter("countOf", (count, singular, plural) => {
+	$config.addFilter("countOf", (count, singular, plural) => {
 		const word = count === 1 ? singular : plural || `${singular}s`;
 		return `${(count ?? 0).toLocaleString("en-US")} ${word}`;
 	});
@@ -255,7 +261,7 @@ export default async function (eleventyConfig) {
 	 * ordinary words — a copy-paste gives "time to first byte", not the
 	 * half-capitalised "time To First Byte" the split leaves behind.
 	 */
-	eleventyConfig.addFilter("humanize", (value) => {
+	$config.addFilter("humanize", (value) => {
 		return String(value ?? "")
 			.replace(/([a-z\d])([A-Z])/g, "$1 $2")
 			.replace(/([A-Z]+)([A-Z][a-z])/g, "$1 $2")
@@ -267,7 +273,7 @@ export default async function (eleventyConfig) {
 	});
 
 	/** Subject-verb agreement for a count: "1 site **has**", "3 sites **have**". */
-	eleventyConfig.addFilter("verb", (count, singular, plural) => (count === 1 ? singular : plural));
+	$config.addFilter("verb", (count, singular, plural) => (count === 1 ? singular : plural));
 
 	/* ------------------------------------------------------------- sparkline */
 
@@ -278,7 +284,7 @@ export default async function (eleventyConfig) {
 	 * static output, and a 40-point trend line does not justify shipping
 	 * JavaScript to draw it.
 	 */
-	eleventyConfig.addShortcode("sparkline", function (trend, opts = {}) {
+	$config.addShortcode("sparkline", function (trend, opts = {}) {
 		const width = opts.width || 120;
 		const height = opts.height || 28;
 		const padding = 2;
@@ -328,7 +334,7 @@ export default async function (eleventyConfig) {
 	 * as JSON per row. The same picture is a circle with a dash offset, so it
 	 * costs one SVG and no JavaScript.
 	 */
-	eleventyConfig.addShortcode("scoreRing", function (value, label = "", size = 34) {
+	$config.addShortcode("scoreRing", function (value, label = "", size = 34) {
 		const band = typeof value !== "number" ? "none" : value >= 90 ? "good" : value >= 50 ? "average" : "poor";
 
 		const stroke = 3;
@@ -356,7 +362,7 @@ export default async function (eleventyConfig) {
 	});
 
 	/** 🥇🥈🥉 for the top three, nothing for everyone else. */
-	eleventyConfig.addFilter("trophy", (rank) => {
+	$config.addFilter("trophy", (rank) => {
 		if (rank === 1) return "🥇";
 		if (rank === 2) return "🥈";
 		if (rank === 3) return "🥉";
@@ -370,7 +376,7 @@ export default async function (eleventyConfig) {
 	 * `meta.avatarService` to "" to drop it and keep the output fully
 	 * self-contained — worth considering for a tool that measures page weight.
 	 */
-	eleventyConfig.addFilter("avatar", function (url, service) {
+	$config.addFilter("avatar", function (url, service) {
 		if (!service) return "";
 		return service.replace("{url}", encodeURIComponent(url));
 	});
@@ -387,7 +393,7 @@ export default async function (eleventyConfig) {
 	 * carry — Amazon and CloudFront are the notable gaps, their marks having
 	 * been removed from the project at Amazon's request.
 	 */
-	eleventyConfig.addShortcode("stackIcon", function (detected, size = 16) {
+	$config.addShortcode("stackIcon", function (detected, size = 16) {
 		if (!detected) return "";
 
 		// `detail` is the finer-grained thing behind a bucketed name — the actual
@@ -447,7 +453,7 @@ export default async function (eleventyConfig) {
 	});
 
 	/** Horizontal proportion bar, used for resource-type and third-party splits. */
-	eleventyConfig.addShortcode("bar", function (value, max, tone = "neutral") {
+	$config.addShortcode("bar", function (value, max, tone = "neutral") {
 		if (typeof value !== "number" || !max) return "";
 		const pct = Math.max(0, Math.min(100, (value / max) * 100));
 		return `<span class="bar bar-${tone}"><span class="bar-fill" style="width:${pct.toFixed(1)}%"></span></span>`;
@@ -455,7 +461,7 @@ export default async function (eleventyConfig) {
 
 	/* --------------------------------------------------------------- helpers */
 
-	eleventyConfig.addFilter("sortByValue", (obj) => {
+	$config.addFilter("sortByValue", (obj) => {
 		if (!obj) return [];
 		return Object.entries(obj)
 			.filter(([, v]) => typeof v === "number" && v > 0)
@@ -463,16 +469,16 @@ export default async function (eleventyConfig) {
 			.map(([key, value]) => ({ key, value }));
 	});
 
-	eleventyConfig.addFilter("maxValue", (list, key) => {
+	$config.addFilter("maxValue", (list, key) => {
 		const nums = (list || []).map((i) => (key ? i[key] : i)).filter((n) => typeof n === "number");
 		return nums.length ? Math.max(...nums) : 0;
 	});
 
-	eleventyConfig.addFilter("keep", (list, key) => (list || []).filter((i) => i && i[key]));
+	$config.addFilter("keep", (list, key) => (list || []).filter((i) => i && i[key]));
 
-	eleventyConfig.addFilter("limit", (list, n) => (list || []).slice(0, n));
+	$config.addFilter("limit", (list, n) => (list || []).slice(0, n));
 
-	eleventyConfig.addFilter("json", (v) => JSON.stringify(v, null, 2));
+	$config.addFilter("json", (v) => JSON.stringify(v, null, 2));
 
 	return {
 		dir: { input: "src", output: "_site", includes: "_includes", data: "_data" },
