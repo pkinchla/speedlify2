@@ -1,0 +1,306 @@
+{
+  "url": "https://css-tip.com/",
+  "name": "css-tip.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787257683527,
+  "date": "2026-08-20T20:28:03.527Z",
+  "runId": "2026-08-20T20-27-01-496Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 25475,
+  "error": null,
+  "variance": {
+    "min": 98,
+    "max": 100,
+    "spread": 2,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://css-tip.com/",
+    "finalUrl": "https://css-tip.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 98,
+      "accessibility": 95,
+      "best-practices": 77,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 791,
+      "lcp": 2411,
+      "si": 791,
+      "tbt": 48,
+      "tti": 3600,
+      "cls": 0,
+      "ttfb": 611,
+      "maxPotentialFid": 99,
+      "serverResponseTime": 16,
+      "networkRtt": 0.9,
+      "networkServerLatency": 54.1
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 18,
+      "elementRenderDelay": 58.2
+    },
+    "weight": {
+      "total": 461413,
+      "requests": 18,
+      "mainDocument": 7340,
+      "byType": {
+        "total": {
+          "bytes": 461413,
+          "requests": 18
+        },
+        "image": {
+          "bytes": 248943,
+          "requests": 9
+        },
+        "script": {
+          "bytes": 189590,
+          "requests": 3
+        },
+        "other": {
+          "bytes": 15540,
+          "requests": 5
+        },
+        "document": {
+          "bytes": 7340,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 270043,
+          "requests": 10
+        }
+      },
+      "scripts": 3,
+      "stylesheets": 0,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 5,
+      "bytes": 270043,
+      "mainThreadMs": 60.3,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 161410,
+          "mainThreadMs": 50.9
+        },
+        {
+          "entity": "Carbon Ads",
+          "bytes": 90583,
+          "mainThreadMs": 6.1
+        },
+        {
+          "entity": "servedby-buysellads.com",
+          "bytes": 17336,
+          "mainThreadMs": 3.3
+        },
+        {
+          "entity": "BuySellAds",
+          "bytes": 603,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Google/Doubleclick Ads",
+          "bytes": 111,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 734.9,
+      "byGroup": {
+        "other": 231.5,
+        "scriptEvaluation": 207.1,
+        "styleLayout": 126.4,
+        "paintCompositeRender": 93,
+        "scriptParseCompile": 64.7,
+        "parseHTML": 12.2
+      },
+      "bootupMs": 223.4,
+      "longTasks": 2,
+      "longestTaskMs": 99
+    },
+    "dom": {
+      "elements": 163,
+      "depth": 10,
+      "maxChildren": 15
+    },
+    "waste": {
+      "unusedJsBytes": 71030,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 191978.19999999998,
+      "poorlyCachedCount": 10
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 21,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 25
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2348,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T20:28:20.359Z",
+      "runtimeMs": 7605
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "origin",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-22",
+      "last": "2026-08-18"
+    },
+    "metrics": {
+      "lcp": {
+        "p75": 1000,
+        "rating": "good",
+        "distribution": {
+          "good": 94.3,
+          "needsImprovement": 3.3,
+          "poor": 2.3
+        }
+      },
+      "rtt": {
+        "p75": 140,
+        "rating": null,
+        "distribution": {
+          "good": 41.6,
+          "needsImprovement": 49.7,
+          "poor": 8.7
+        }
+      },
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 95.2,
+          "needsImprovement": 2.7,
+          "poor": 2.1
+        }
+      },
+      "ttfb": {
+        "p75": 686,
+        "rating": "good",
+        "distribution": {
+          "good": 81.2,
+          "needsImprovement": 14.7,
+          "poor": 4.2
+        }
+      },
+      "fcp": {
+        "p75": 1001,
+        "rating": "good",
+        "distribution": {
+          "good": 89.9,
+          "needsImprovement": 5.6,
+          "poor": 4.5
+        }
+      },
+      "inp": {
+        "p75": 93,
+        "rating": "good",
+        "distribution": {
+          "good": 98.4,
+          "needsImprovement": 1.6,
+          "poor": 0
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "3.0.0",
+      "source": "meta",
+      "raw": "Eleventy v3.0.0"
+    },
+    "host": {
+      "id": "github",
+      "name": "GitHub Pages",
+      "icon": "Github",
+      "source": "x-github-request-id"
+    },
+    "headers": {
+      "server": "GitHub.com",
+      "via": "1.1 varnish",
+      "x-fastly-request-id": "f8572afa2e5a9eea8a621bb3c8fdbb2b797ced41",
+      "x-github-request-id": "F876:2633:611513:661704:6A85FE02",
+      "x-served-by": "cache-chi-kmdw8640021-CHI"
+    },
+    "violations": 2,
+    "passes": 301,
+    "incomplete": 73,
+    "violationRules": 2,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Heading levels should only increase by one"
+      },
+      {
+        "id": "image-alt",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Images must have alternative text"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
