@@ -1,0 +1,201 @@
+{
+  "url": "https://florian.ec/",
+  "name": "florian.ec",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787264853564,
+  "date": "2026-08-20T22:27:33.564Z",
+  "runId": "2026-08-20T22-26-38-665Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 23163,
+  "error": null,
+  "variance": {
+    "min": 94,
+    "max": 99,
+    "spread": 5,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://florian.ec/",
+    "finalUrl": "https://florian.ec/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1523,
+      "lcp": 1673,
+      "si": 1523,
+      "tbt": 0,
+      "tti": 1673,
+      "cls": 0.034,
+      "ttfb": 458,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 202,
+      "networkRtt": 0,
+      "networkServerLatency": 114.3
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 203.6,
+      "elementRenderDelay": 54.3
+    },
+    "weight": {
+      "total": 155965,
+      "requests": 12,
+      "mainDocument": 4239,
+      "byType": {
+        "total": {
+          "bytes": 155965,
+          "requests": 12
+        },
+        "font": {
+          "bytes": 125323,
+          "requests": 4
+        },
+        "script": {
+          "bytes": 15881,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 6793,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 4239,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 3729,
+          "requests": 3
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 16262,
+          "requests": 3
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 2,
+      "fonts": 4
+    },
+    "thirdParty": {
+      "count": 3,
+      "bytes": 16262,
+      "mainThreadMs": 4.9,
+      "top": [
+        {
+          "entity": "Cloudflare",
+          "bytes": 11451,
+          "mainThreadMs": 3
+        },
+        {
+          "entity": "zgo.at",
+          "bytes": 4430,
+          "mainThreadMs": 1.9
+        },
+        {
+          "entity": "goatcounter.com",
+          "bytes": 381,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 278.6,
+      "byGroup": {
+        "other": 110.4,
+        "styleLayout": 92.8,
+        "scriptEvaluation": 49.2,
+        "paintCompositeRender": 14.1,
+        "parseHTML": 8,
+        "scriptParseCompile": 4
+      },
+      "bootupMs": 30.3,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 174,
+      "depth": 9,
+      "maxChildren": 20
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 158,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 4580.400000000001,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 21,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": null,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 13
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2351.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T22:27:42.974Z",
+      "runtimeMs": 6234.9
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e4d3da18f9d641-IAD",
+      "server": "cloudflare"
+    },
+    "violations": 0,
+    "passes": 406,
+    "incomplete": 1,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

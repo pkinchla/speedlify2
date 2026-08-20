@@ -1,0 +1,353 @@
+{
+  "url": "https://geolytix.com/",
+  "name": "geolytix.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787265064962,
+  "date": "2026-08-20T22:31:04.962Z",
+  "runId": "2026-08-20T22-26-38-665Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 54891,
+  "error": null,
+  "variance": {
+    "min": 67,
+    "max": 87,
+    "spread": 20,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://geolytix.com/",
+    "finalUrl": "https://geolytix.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 73,
+      "accessibility": 79,
+      "best-practices": 73,
+      "seo": 85,
+      "agentic-browsing": 19
+    },
+    "timings": {
+      "fcp": 1254,
+      "lcp": 2954,
+      "si": 1260,
+      "tbt": 285,
+      "tti": 8556,
+      "cls": 0.31,
+      "ttfb": 611,
+      "maxPotentialFid": 181,
+      "serverResponseTime": 3,
+      "networkRtt": 1.4,
+      "networkServerLatency": 43.8
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 4.8,
+      "resourceLoadDelay": 20.2,
+      "resourceLoadDuration": 41.3,
+      "elementRenderDelay": 202.8
+    },
+    "weight": {
+      "total": 22807636,
+      "requests": 138,
+      "mainDocument": 47115,
+      "byType": {
+        "total": {
+          "bytes": 22802521,
+          "requests": 137
+        },
+        "media": {
+          "bytes": 18912263,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 2978557,
+          "requests": 117
+        },
+        "script": {
+          "bytes": 759688,
+          "requests": 12
+        },
+        "font": {
+          "bytes": 97242,
+          "requests": 3
+        },
+        "document": {
+          "bytes": 47115,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 6598,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 1058,
+          "requests": 2
+        },
+        "third-party": {
+          "bytes": 22604459,
+          "requests": 109
+        }
+      },
+      "scripts": 12,
+      "stylesheets": 1,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 6,
+      "bytes": 19814476,
+      "mainThreadMs": 175.1,
+      "top": [
+        {
+          "entity": "Cloudinary",
+          "bytes": 19068811,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Google CDN",
+          "bytes": 320172,
+          "mainThreadMs": 45.4
+        },
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 308178,
+          "mainThreadMs": 80.3
+        },
+        {
+          "entity": "Hubspot",
+          "bytes": 95427,
+          "mainThreadMs": 36.1
+        },
+        {
+          "entity": "Google Analytics",
+          "bytes": 20875,
+          "mainThreadMs": 12.6
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 2696.1,
+      "byGroup": {
+        "other": 981.2,
+        "scriptEvaluation": 909.5,
+        "styleLayout": 400.2,
+        "scriptParseCompile": 230.6,
+        "paintCompositeRender": 120.8,
+        "parseHTML": 53.8
+      },
+      "bootupMs": 1111.3,
+      "longTasks": 12,
+      "longestTaskMs": 181
+    },
+    "dom": {
+      "elements": 1094,
+      "depth": 15,
+      "maxChildren": 32
+    },
+    "waste": {
+      "unusedJsBytes": 380035,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 24327,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 105851.3125,
+      "poorlyCachedCount": 5
+    },
+    "accessibility": {
+      "failingCount": 6,
+      "applicableCount": 27,
+      "failingNodes": 45,
+      "failing": [
+        {
+          "id": "aria-hidden-focus",
+          "title": "`[aria-hidden=\"true\"]` elements contain focusable descendents",
+          "nodes": 37
+        },
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "nodes": 4
+        },
+        {
+          "id": "aria-valid-attr-value",
+          "title": "`[aria-*]` attributes do not have valid values",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 1
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 1
+        },
+        {
+          "id": "html-has-lang",
+          "title": "`<html>` element does not have a `[lang]` attribute",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 43
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2326.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T22:31:18.942Z",
+      "runtimeMs": 12054
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "origin",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-22",
+      "last": "2026-08-18"
+    },
+    "metrics": {
+      "fcp": {
+        "p75": 1177,
+        "rating": "good",
+        "distribution": {
+          "good": 87.4,
+          "needsImprovement": 9.6,
+          "poor": 3
+        }
+      },
+      "inp": {
+        "p75": 72,
+        "rating": "good",
+        "distribution": {
+          "good": 95.4,
+          "needsImprovement": 4.6,
+          "poor": 0
+        }
+      },
+      "lcp": {
+        "p75": 1324,
+        "rating": "good",
+        "distribution": {
+          "good": 93.9,
+          "needsImprovement": 4.4,
+          "poor": 1.8
+        }
+      },
+      "rtt": {
+        "p75": 138,
+        "rating": null,
+        "distribution": {
+          "good": 48,
+          "needsImprovement": 42.4,
+          "poor": 9.6
+        }
+      },
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 98.9,
+          "needsImprovement": 0.8,
+          "poor": 0.3
+        }
+      },
+      "ttfb": {
+        "p75": 634,
+        "rating": "good",
+        "distribution": {
+          "good": 83,
+          "needsImprovement": 13.8,
+          "poor": 3.3
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "vercel",
+      "name": "Vercel",
+      "icon": "Vercel",
+      "source": "x-vercel-id"
+    },
+    "headers": {
+      "server": "Vercel",
+      "x-vercel-id": "iad1::54ldq-1787265102785-80ae2a4e873b"
+    },
+    "violations": 54,
+    "passes": 1411,
+    "incomplete": 40,
+    "violationRules": 7,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "aria-hidden-focus",
+        "impact": "serious",
+        "nodes": 45,
+        "help": "ARIA hidden element must not be focusable or contain focusable elements"
+      },
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "nodes": 4,
+        "help": "Links must have discernible text"
+      },
+      {
+        "id": "aria-valid-attr-value",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "ARIA attributes must conform to valid values"
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Heading levels should only increase by one"
+      },
+      {
+        "id": "html-has-lang",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "<html> element must have a lang attribute"
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
