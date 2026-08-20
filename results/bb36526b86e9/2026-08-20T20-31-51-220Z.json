@@ -1,0 +1,227 @@
+{
+  "url": "https://doddle.agency/",
+  "name": "doddle.agency",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787257911220,
+  "date": "2026-08-20T20:31:51.220Z",
+  "runId": "2026-08-20T20-26-57-934Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 29413,
+  "error": null,
+  "variance": {
+    "min": 75,
+    "max": 91,
+    "spread": 16,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://doddle.agency/",
+    "finalUrl": "https://doddle.agency/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 91,
+      "accessibility": 95,
+      "best-practices": 96,
+      "seo": 100,
+      "agentic-browsing": 40
+    },
+    "timings": {
+      "fcp": 2112,
+      "lcp": 2112,
+      "si": 2112,
+      "tbt": 132,
+      "tti": 6309,
+      "cls": 0.135,
+      "ttfb": 718,
+      "maxPotentialFid": 193,
+      "serverResponseTime": 117,
+      "networkRtt": 0.2,
+      "networkServerLatency": 118.4
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 119.3,
+      "elementRenderDelay": 225.2
+    },
+    "weight": {
+      "total": 1175355,
+      "requests": 28,
+      "mainDocument": 12230,
+      "byType": {
+        "total": {
+          "bytes": 1167874,
+          "requests": 27
+        },
+        "image": {
+          "bytes": 613823,
+          "requests": 2
+        },
+        "script": {
+          "bytes": 480732,
+          "requests": 15
+        },
+        "font": {
+          "bytes": 45763,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 15326,
+          "requests": 5
+        },
+        "document": {
+          "bytes": 12230,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "other": {
+          "bytes": 0,
+          "requests": 2
+        },
+        "third-party": {
+          "bytes": 1030947,
+          "requests": 12
+        }
+      },
+      "scripts": 15,
+      "stylesheets": 5,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 4,
+      "bytes": 1030947,
+      "mainThreadMs": 103.6,
+      "top": [
+        {
+          "entity": "Cloudinary",
+          "bytes": 612925,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 311787,
+          "mainThreadMs": 83.1
+        },
+        {
+          "entity": "termsfeed.com",
+          "bytes": 59389,
+          "mainThreadMs": 20.5
+        },
+        {
+          "entity": "Google Fonts",
+          "bytes": 46846,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1000.4,
+      "byGroup": {
+        "scriptEvaluation": 424.3,
+        "other": 212.1,
+        "styleLayout": 172.5,
+        "scriptParseCompile": 136.3,
+        "paintCompositeRender": 32.9,
+        "parseHTML": 22.2
+      },
+      "bootupMs": 502.4,
+      "longTasks": 5,
+      "longestTaskMs": 193
+    },
+    "dom": {
+      "elements": 448,
+      "depth": 11,
+      "maxChildren": 24
+    },
+    "waste": {
+      "unusedJsBytes": 213548,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 2046,
+      "renderBlockingCount": 6,
+      "poorlyCachedBytes": 58931,
+      "poorlyCachedCount": 2
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 26,
+      "failingNodes": 15,
+      "failing": [
+        {
+          "id": "aria-allowed-attr",
+          "title": "`[aria-*]` attributes do not match their roles",
+          "nodes": 15
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 2,
+      "baselineLimitedFeatures": 20
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2486.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T20:32:01.615Z",
+      "runtimeMs": 8018.5
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "astro",
+      "name": "Astro",
+      "icon": "Astro",
+      "version": null,
+      "source": "dom",
+      "raw": null
+    },
+    "host": {
+      "id": "self-hosted",
+      "name": "Self-hosted",
+      "icon": null,
+      "detail": "LiteSpeed",
+      "detailIcon": null,
+      "source": "server"
+    },
+    "headers": {
+      "server": "LiteSpeed"
+    },
+    "violations": 15,
+    "passes": 809,
+    "incomplete": 20,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "aria-allowed-attr",
+        "impact": "critical",
+        "nodes": 15,
+        "help": "Elements must only use supported ARIA attributes"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

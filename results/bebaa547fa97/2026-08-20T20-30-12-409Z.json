@@ -1,0 +1,291 @@
+{
+  "url": "https://docs.gitlab.com/user/project/pages",
+  "name": "GitLab Pages",
+  "group": "hosts",
+  "groupName": "Web Hosts",
+  "timestamp": 1787257812409,
+  "date": "2026-08-20T20:30:12.409Z",
+  "runId": "2026-08-20T20-26-57-934Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 42826,
+  "error": null,
+  "variance": {
+    "min": 30,
+    "max": 47,
+    "spread": 17,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://docs.gitlab.com/user/project/pages",
+    "finalUrl": "https://docs.gitlab.com/user/project/pages/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 46,
+      "accessibility": 100,
+      "best-practices": 54,
+      "seo": 100,
+      "agentic-browsing": 95
+    },
+    "timings": {
+      "fcp": 1874,
+      "lcp": 6224,
+      "si": 3990,
+      "tbt": 1379,
+      "tti": 18113,
+      "cls": 0.113,
+      "ttfb": 674,
+      "maxPotentialFid": 367,
+      "serverResponseTime": 30,
+      "networkRtt": 52.8,
+      "networkServerLatency": 104.1
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 61.6,
+      "elementRenderDelay": 201.6
+    },
+    "weight": {
+      "total": 2533793,
+      "requests": 170,
+      "mainDocument": 11818,
+      "byType": {
+        "total": {
+          "bytes": 2532713,
+          "requests": 169
+        },
+        "script": {
+          "bytes": 1363533,
+          "requests": 78
+        },
+        "other": {
+          "bytes": 586415,
+          "requests": 62
+        },
+        "font": {
+          "bytes": 412920,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 104505,
+          "requests": 6
+        },
+        "document": {
+          "bytes": 42007,
+          "requests": 3
+        },
+        "image": {
+          "bytes": 23333,
+          "requests": 17
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 1115430,
+          "requests": 59
+        }
+      },
+      "scripts": 78,
+      "stylesheets": 6,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 12,
+      "bytes": 1032286,
+      "mainThreadMs": 404.7,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 375601,
+          "mainThreadMs": 219.5
+        },
+        {
+          "entity": "Google CDN",
+          "bytes": 344026,
+          "mainThreadMs": 83.1
+        },
+        {
+          "entity": "Optanon",
+          "bytes": 226155,
+          "mainThreadMs": 60.3
+        },
+        {
+          "entity": "LinkedIn Ads",
+          "bytes": 42972,
+          "mainThreadMs": 13.8
+        },
+        {
+          "entity": "Bizible",
+          "bytes": 26158,
+          "mainThreadMs": 15.8
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 5397.5,
+      "byGroup": {
+        "scriptEvaluation": 3372.3,
+        "other": 995.5,
+        "styleLayout": 348.5,
+        "scriptParseCompile": 304.5,
+        "garbageCollection": 155.9,
+        "paintCompositeRender": 136.7,
+        "parseHTML": 84
+      },
+      "bootupMs": 3439.5,
+      "longTasks": 20,
+      "longestTaskMs": 367
+    },
+    "dom": {
+      "elements": 1498,
+      "depth": 20,
+      "maxChildren": 79
+    },
+    "waste": {
+      "unusedJsBytes": 502858,
+      "unusedCssBytes": 63455,
+      "legacyJsBytes": 15906,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 1690,
+      "renderBlockingCount": 7,
+      "poorlyCachedBytes": 895106.8333333326,
+      "poorlyCachedCount": 76
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 29,
+      "failingNodes": 4,
+      "failing": [
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "nodes": 4
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 823.7,
+      "consoleErrors": 35,
+      "baselineLimitedFeatures": 48
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2490,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T20:30:39.984Z",
+      "runtimeMs": 12095.7
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "origin",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-22",
+      "last": "2026-08-18"
+    },
+    "metrics": {
+      "inp": {
+        "p75": 560,
+        "rating": "poor",
+        "distribution": {
+          "good": 54.3,
+          "needsImprovement": 12.2,
+          "poor": 33.5
+        }
+      },
+      "lcp": {
+        "p75": 1332,
+        "rating": "good",
+        "distribution": {
+          "good": 91.4,
+          "needsImprovement": 5.1,
+          "poor": 3.5
+        }
+      },
+      "rtt": {
+        "p75": 192,
+        "rating": null,
+        "distribution": {
+          "good": 30.9,
+          "needsImprovement": 55.8,
+          "poor": 13.3
+        }
+      },
+      "cls": {
+        "p75": 0.11,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 72.5,
+          "needsImprovement": 23.5,
+          "poor": 4
+        }
+      },
+      "ttfb": {
+        "p75": 594,
+        "rating": "good",
+        "distribution": {
+          "good": 83.2,
+          "needsImprovement": 12.3,
+          "poor": 4.6
+        }
+      },
+      "fcp": {
+        "p75": 1262,
+        "rating": "good",
+        "distribution": {
+          "good": 86,
+          "needsImprovement": 8.4,
+          "poor": 5.6
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e4283c8cbb3875-DFW",
+      "server": "cloudflare"
+    },
+    "violations": 3,
+    "passes": 1442,
+    "incomplete": 4,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 3,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
