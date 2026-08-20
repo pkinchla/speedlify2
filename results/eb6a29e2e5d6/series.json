@@ -1,0 +1,3 @@
+{"version":1,"url":"https://gabriellew.ee/","updated":"2026-08-20T22:36:14.426Z","points":[
+{"t":1787265339958,"performance":36,"accessibility":100,"best-practices":100,"seo":100,"lcp":29525,"cls":1.187,"tbt":47,"fcp":3028,"si":11412,"ttfb":628,"total":7128382,"requests":82,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":95951,"mainThreadTotal":5190.9,"longTasks":5,"elements":1038,"failingCount":0,"failingNodes":0,"axeViolations":11,"axePasses":934,"bench":2306.5,"runs":3,"reqRuns":3,"ms":34467,"spread":5}
+]}

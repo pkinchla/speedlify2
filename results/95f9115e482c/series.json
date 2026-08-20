@@ -1,0 +1,3 @@
+{"version":1,"url":"https://fettblog.eu/","updated":"2026-08-20T22:31:40.090Z","points":[
+{"t":1787265079343,"performance":88,"accessibility":90,"best-practices":100,"seo":100,"lcp":3785,"cls":0.005,"tbt":0,"fcp":1535,"si":1535,"ttfb":467,"total":538927,"requests":10,"bytes":11451,"mainThreadMs":3.2,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":199.5,"longTasks":0,"elements":114,"failingCount":2,"failingNodes":4,"axeViolations":7,"axePasses":286,"bench":2334.5,"runs":3,"reqRuns":3,"ms":20746,"spread":0}
+]}
