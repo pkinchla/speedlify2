@@ -1,0 +1,3 @@
+{"version":1,"url":"https://frankfuchs.net/","updated":"2026-08-20T22:52:29.240Z","points":[
+{"t":1787265988491,"error":"lighthouse timed out after 120000ms","fails":1,"runs":0,"reqRuns":3,"ms":360748}
+]}

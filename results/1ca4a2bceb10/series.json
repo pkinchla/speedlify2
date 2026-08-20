@@ -1,0 +1,3 @@
+{"version":1,"url":"https://evilpedia.online/","updated":"2026-08-20T22:29:33.808Z","points":[
+{"t":1787264937597,"performance":92,"accessibility":92,"best-practices":100,"seo":100,"lcp":1707,"cls":0.006,"tbt":332,"fcp":1286,"si":1286,"ttfb":479,"total":57366,"requests":10,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":1755.8,"longTasks":8,"elements":2924,"failingCount":2,"failingNodes":12,"axeViolations":24,"axePasses":4702,"bench":2701.5,"runs":3,"reqRuns":3,"ms":36210,"spread":6}
+]}
