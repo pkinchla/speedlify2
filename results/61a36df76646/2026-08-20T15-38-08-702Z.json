@@ -1,0 +1,188 @@
+{
+  "url": "https://a-cuca.github.io/",
+  "name": "a-cuca.github.io",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787240288702,
+  "date": "2026-08-20T15:38:08.702Z",
+  "runId": "2026-08-20T15-33-56-650Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 21647,
+  "error": null,
+  "variance": {
+    "min": 98,
+    "max": 98,
+    "spread": 0,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://a-cuca.github.io/",
+    "finalUrl": "https://a-cuca.github.io/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 91,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 818,
+      "lcp": 2334,
+      "si": 818,
+      "tbt": 0,
+      "tti": 2341,
+      "cls": 0.009,
+      "ttfb": 609,
+      "maxPotentialFid": 26,
+      "serverResponseTime": 9,
+      "networkRtt": 0,
+      "networkServerLatency": 8.9
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 10.5,
+      "elementRenderDelay": 114.7
+    },
+    "weight": {
+      "total": 302745,
+      "requests": 22,
+      "mainDocument": 4785,
+      "byType": {
+        "total": {
+          "bytes": 302745,
+          "requests": 20
+        },
+        "font": {
+          "bytes": 245871,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 38618,
+          "requests": 11
+        },
+        "other": {
+          "bytes": 7766,
+          "requests": 4
+        },
+        "stylesheet": {
+          "bytes": 5705,
+          "requests": 3
+        },
+        "document": {
+          "bytes": 4785,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "script": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 302745,
+          "requests": 20
+        }
+      },
+      "scripts": 0,
+      "stylesheets": 3,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 0,
+      "bytes": 0,
+      "mainThreadMs": 0,
+      "top": []
+    },
+    "mainThread": {
+      "total": 415.6,
+      "byGroup": {
+        "other": 223.9,
+        "styleLayout": 122.1,
+        "paintCompositeRender": 38,
+        "scriptEvaluation": 15.5,
+        "parseHTML": 14.2,
+        "scriptParseCompile": 1.9
+      },
+      "bootupMs": 15.5,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 170,
+      "depth": 9,
+      "maxChildren": 9
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 3,
+      "poorlyCachedBytes": 266011.1666666667,
+      "poorlyCachedCount": 15
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 19,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 6
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2313,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T15:38:16.923Z",
+      "runtimeMs": 6349.8
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "github",
+      "name": "GitHub Pages",
+      "icon": "Github",
+      "source": "x-github-request-id"
+    },
+    "headers": {
+      "server": "GitHub.com",
+      "via": "1.1 varnish",
+      "x-fastly-request-id": "e843c03da0ef6b9fa4f149c6ee770b50bed84548",
+      "x-github-request-id": "FAF0:16CBD7:BE2EB:C8BF7:6A871F61",
+      "x-served-by": "cache-iad-kiad7000031-IAD"
+    },
+    "violations": 0,
+    "passes": 380,
+    "incomplete": 5,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

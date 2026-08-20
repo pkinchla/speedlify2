@@ -1,0 +1,198 @@
+{
+  "url": "https://blythcss.dev/",
+  "name": "blythcss.dev",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787241179370,
+  "date": "2026-08-20T15:52:59.370Z",
+  "runId": "2026-08-20T15-33-56-650Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 22046,
+  "error": null,
+  "variance": {
+    "min": 93,
+    "max": 99,
+    "spread": 6,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://blythcss.dev/",
+    "finalUrl": "https://blythcss.dev/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 94,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 2447,
+      "lcp": 2447,
+      "si": 2447,
+      "tbt": 0,
+      "tti": 2447,
+      "cls": 0.01,
+      "ttfb": 609,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 19,
+      "networkRtt": 0,
+      "networkServerLatency": 26.5
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 21.3,
+      "elementRenderDelay": 82.9
+    },
+    "weight": {
+      "total": 74706,
+      "requests": 7,
+      "mainDocument": 9618,
+      "byType": {
+        "total": {
+          "bytes": 70549,
+          "requests": 6
+        },
+        "font": {
+          "bytes": 55953,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 9618,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 3934,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 1044,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "other": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 56997,
+          "requests": 3
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 1,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 56997,
+      "mainThreadMs": 0,
+      "top": [
+        {
+          "entity": "Google Fonts",
+          "bytes": 56997,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1162.8,
+      "byGroup": {
+        "styleLayout": 351.4,
+        "other": 302.6,
+        "scriptEvaluation": 230.1,
+        "paintCompositeRender": 198.3,
+        "parseHTML": 77.9,
+        "scriptParseCompile": 2.6
+      },
+      "bootupMs": 226.7,
+      "longTasks": 1,
+      "longestTaskMs": 54
+    },
+    "dom": {
+      "elements": 1706,
+      "depth": 15,
+      "maxChildren": 671
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 776,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 17,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 7
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2343,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T15:53:07.916Z",
+      "runtimeMs": 6411.6
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0FY0YEPNS11Y9NEGWPNREXW"
+    },
+    "violations": 3,
+    "passes": 847,
+    "incomplete": 35,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "scrollable-region-focusable",
+        "impact": "serious",
+        "nodes": 3,
+        "help": "Scrollable region must have keyboard access"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

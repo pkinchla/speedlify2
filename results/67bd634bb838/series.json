@@ -1,0 +1,3 @@
+{"version":1,"url":"https://alexpage.com.au/","updated":"2026-08-20T15:40:10.342Z","points":[
+{"t":1787240393979,"error":"INSECURE_DOCUMENT_REQUEST: The URL you have provided does not have a valid security certificate. net::ERR_CERT_COMMON_NAME_INVALID","fails":1,"runs":0,"reqRuns":3,"ms":16362}
+]}

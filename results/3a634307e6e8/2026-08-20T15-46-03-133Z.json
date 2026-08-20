@@ -1,0 +1,220 @@
+{
+  "url": "https://austinjavascript.com/",
+  "name": "austinjavascript.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787240763133,
+  "date": "2026-08-20T15:46:03.133Z",
+  "runId": "2026-08-20T15-33-56-650Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 30943,
+  "error": null,
+  "variance": {
+    "min": 86,
+    "max": 96,
+    "spread": 10,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://austinjavascript.com/",
+    "finalUrl": "https://austinjavascript.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 95,
+      "accessibility": 96,
+      "best-practices": 77,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1605,
+      "lcp": 2119,
+      "si": 1605,
+      "tbt": 210,
+      "tti": 7261,
+      "cls": 0,
+      "ttfb": 535,
+      "maxPotentialFid": 250,
+      "serverResponseTime": 24,
+      "networkRtt": 1.2,
+      "networkServerLatency": 84.6
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 25.8,
+      "resourceLoadDelay": 11.6,
+      "resourceLoadDuration": 24.8,
+      "elementRenderDelay": 54.1
+    },
+    "weight": {
+      "total": 998842,
+      "requests": 141,
+      "mainDocument": 12219,
+      "byType": {
+        "total": {
+          "bytes": 998842,
+          "requests": 141
+        },
+        "script": {
+          "bytes": 455360,
+          "requests": 25
+        },
+        "image": {
+          "bytes": 414270,
+          "requests": 102
+        },
+        "other": {
+          "bytes": 55449,
+          "requests": 6
+        },
+        "font": {
+          "bytes": 32351,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 22274,
+          "requests": 5
+        },
+        "document": {
+          "bytes": 19138,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 572911,
+          "requests": 37
+        }
+      },
+      "scripts": 25,
+      "stylesheets": 5,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 3,
+      "bytes": 190277,
+      "mainThreadMs": 112.6,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 157913,
+          "mainThreadMs": 66.2
+        },
+        {
+          "entity": "Google Analytics",
+          "bytes": 20913,
+          "mainThreadMs": 42.2
+        },
+        {
+          "entity": "Cloudflare",
+          "bytes": 11451,
+          "mainThreadMs": 4.2
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1481.9,
+      "byGroup": {
+        "other": 545.7,
+        "scriptEvaluation": 516.9,
+        "styleLayout": 162.7,
+        "paintCompositeRender": 158.2,
+        "scriptParseCompile": 77.2,
+        "parseHTML": 21.2
+      },
+      "bootupMs": 571.8,
+      "longTasks": 4,
+      "longestTaskMs": 250
+    },
+    "dom": {
+      "elements": 483,
+      "depth": 10,
+      "maxChildren": 128
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 235,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 309076.0899999999,
+      "poorlyCachedCount": 105
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 24,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "frame-title",
+          "title": "`<frame>` or `<iframe>` elements do not have a title",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 22
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2334,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T15:46:14.256Z",
+      "runtimeMs": 8825.6
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "github",
+      "name": "GitHub Pages",
+      "icon": "Github",
+      "source": "x-github-request-id"
+    },
+    "headers": {
+      "cf-ray": "a2e287d069fa51c4-IAD",
+      "server": "cloudflare",
+      "via": "1.1 varnish",
+      "x-fastly-request-id": "b04aee00360a63cd51dbc1d52b5c4cbc9346adcc",
+      "x-github-request-id": "6C94:134419:117947:124821:6A87213C",
+      "x-served-by": "cache-iad-kiad7000072-IAD"
+    },
+    "violations": 1,
+    "passes": 2325,
+    "incomplete": 0,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "frame-title",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Frames must have an accessible name"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

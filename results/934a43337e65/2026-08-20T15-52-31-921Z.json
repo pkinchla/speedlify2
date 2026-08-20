@@ -1,0 +1,290 @@
+{
+  "url": "https://blog.mozilla.org/addons",
+  "name": "blog.mozilla.org",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787241151921,
+  "date": "2026-08-20T15:52:31.921Z",
+  "runId": "2026-08-20T15-33-56-650Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 24448,
+  "error": null,
+  "variance": {
+    "min": 81,
+    "max": 98,
+    "spread": 17,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://blog.mozilla.org/addons",
+    "finalUrl": "https://blog.mozilla.org/addons/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 98,
+      "accessibility": 95,
+      "best-practices": 100,
+      "seo": 83,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1601,
+      "lcp": 1665,
+      "si": 1601,
+      "tbt": 136,
+      "tti": 3105,
+      "cls": 0.025,
+      "ttfb": 465,
+      "maxPotentialFid": 100,
+      "serverResponseTime": 25,
+      "networkRtt": 0,
+      "networkServerLatency": 39.7
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 43.5,
+      "resourceLoadDelay": 60.7,
+      "resourceLoadDuration": 17.7,
+      "elementRenderDelay": 60.4
+    },
+    "weight": {
+      "total": 344813,
+      "requests": 22,
+      "mainDocument": 11400,
+      "byType": {
+        "total": {
+          "bytes": 344813,
+          "requests": 22
+        },
+        "script": {
+          "bytes": 205792,
+          "requests": 6
+        },
+        "font": {
+          "bytes": 70245,
+          "requests": 3
+        },
+        "image": {
+          "bytes": 28701,
+          "requests": 7
+        },
+        "stylesheet": {
+          "bytes": 27784,
+          "requests": 3
+        },
+        "document": {
+          "bytes": 11400,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 891,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 344813,
+          "requests": 22
+        }
+      },
+      "scripts": 6,
+      "stylesheets": 3,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 163535,
+      "mainThreadMs": 51.5,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 163535,
+          "mainThreadMs": 51.5
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 715.2,
+      "byGroup": {
+        "scriptEvaluation": 258.3,
+        "other": 174.3,
+        "styleLayout": 166.9,
+        "scriptParseCompile": 58.5,
+        "parseHTML": 35.8,
+        "paintCompositeRender": 21.5
+      },
+      "bootupMs": 300.6,
+      "longTasks": 3,
+      "longestTaskMs": 100
+    },
+    "dom": {
+      "elements": 575,
+      "depth": 11,
+      "maxChildren": 273
+    },
+    "waste": {
+      "unusedJsBytes": 71001,
+      "unusedCssBytes": 14211,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 4495,
+      "renderBlockingCount": 8,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 26,
+      "failingNodes": 3,
+      "failing": [
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "nodes": 2
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 765.5,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 16
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2328,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T15:52:42.173Z",
+      "runtimeMs": 6635.2
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "origin",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-22",
+      "last": "2026-08-18"
+    },
+    "metrics": {
+      "inp": {
+        "p75": 117,
+        "rating": "good",
+        "distribution": {
+          "good": 88.5,
+          "needsImprovement": 8.8,
+          "poor": 2.8
+        }
+      },
+      "lcp": {
+        "p75": 1528,
+        "rating": "good",
+        "distribution": {
+          "good": 89.9,
+          "needsImprovement": 5.8,
+          "poor": 4.4
+        }
+      },
+      "rtt": {
+        "p75": 159,
+        "rating": null,
+        "distribution": {
+          "good": 36.9,
+          "needsImprovement": 52.1,
+          "poor": 11.1
+        }
+      },
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 96,
+          "needsImprovement": 2.9,
+          "poor": 1.1
+        }
+      },
+      "ttfb": {
+        "p75": 1039,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 66.3,
+          "needsImprovement": 23.8,
+          "poor": 9.9
+        }
+      },
+      "fcp": {
+        "p75": 1468,
+        "rating": "good",
+        "distribution": {
+          "good": 82.3,
+          "needsImprovement": 11,
+          "poor": 6.7
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e2915edb36e62d-IAD",
+      "server": "cloudflare",
+      "x-powered-by": "WP Engine"
+    },
+    "violations": 5,
+    "passes": 545,
+    "incomplete": 12,
+    "violationRules": 3,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 2,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      },
+      {
+        "id": "link-in-text-block",
+        "impact": "serious",
+        "nodes": 2,
+        "help": "Links must be distinguishable without relying on color"
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Heading levels should only increase by one"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

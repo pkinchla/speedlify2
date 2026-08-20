@@ -1,0 +1,245 @@
+{
+  "url": "https://bejamas.io/",
+  "name": "bejamas.io",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787240923022,
+  "date": "2026-08-20T15:48:43.022Z",
+  "runId": "2026-08-20T15-33-56-650Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 43547,
+  "error": null,
+  "variance": {
+    "min": 82,
+    "max": 85,
+    "spread": 3,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://bejamas.io/",
+    "finalUrl": "https://bejamas.com/",
+    "redirect": {
+      "from": "https://bejamas.io/",
+      "to": "https://bejamas.com/",
+      "chain": [
+        {
+          "url": "https://bejamas.io/",
+          "status": 301
+        },
+        {
+          "url": "https://bejamas.com/",
+          "status": 200
+        }
+      ],
+      "statuses": [
+        301
+      ],
+      "change": "host",
+      "permanent": true,
+      "schemeUpgrade": false,
+      "hops": 1
+    },
+    "statusCode": "ok",
+    "scores": {
+      "performance": 85,
+      "accessibility": 100,
+      "best-practices": 73,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 2764,
+      "lcp": 3674,
+      "si": 2764,
+      "tbt": 54,
+      "tti": 4944,
+      "cls": 0,
+      "ttfb": 483,
+      "maxPotentialFid": 157,
+      "serverResponseTime": 32,
+      "networkRtt": 1.6,
+      "networkServerLatency": 153.4
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 43.1,
+      "elementRenderDelay": 148
+    },
+    "weight": {
+      "total": 1470297,
+      "requests": 45,
+      "mainDocument": 20160,
+      "byType": {
+        "total": {
+          "bytes": 1470297,
+          "requests": 45
+        },
+        "media": {
+          "bytes": 1003545,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 174454,
+          "requests": 14
+        },
+        "script": {
+          "bytes": 166558,
+          "requests": 18
+        },
+        "font": {
+          "bytes": 59686,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 30513,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 20160,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 15381,
+          "requests": 9
+        },
+        "third-party": {
+          "bytes": 18290,
+          "requests": 7
+        }
+      },
+      "scripts": 18,
+      "stylesheets": 1,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 5,
+      "bytes": 1469877,
+      "mainThreadMs": 126.4,
+      "top": [
+        {
+          "entity": "bejamas.com",
+          "bytes": 1452007,
+          "mainThreadMs": 115.8
+        },
+        {
+          "entity": "Cloudflare",
+          "bytes": 11406,
+          "mainThreadMs": 4.4
+        },
+        {
+          "entity": "ahrefs.com",
+          "bytes": 3277,
+          "mainThreadMs": 3.7
+        },
+        {
+          "entity": "Plausible",
+          "bytes": 3064,
+          "mainThreadMs": 2.5
+        },
+        {
+          "entity": "Clarity",
+          "bytes": 123,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 2261.1,
+      "byGroup": {
+        "other": 1148.4,
+        "scriptEvaluation": 558.3,
+        "styleLayout": 304.9,
+        "paintCompositeRender": 121.9,
+        "parseHTML": 75.3,
+        "scriptParseCompile": 52.3
+      },
+      "bootupMs": 544,
+      "longTasks": 3,
+      "longestTaskMs": 157
+    },
+    "dom": {
+      "elements": 503,
+      "depth": 13,
+      "maxChildren": 10
+    },
+    "waste": {
+      "unusedJsBytes": 47710,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 8660,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 333,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 64883.159999999996,
+      "poorlyCachedCount": 4
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 23,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 757.7,
+      "consoleErrors": 1,
+      "baselineLimitedFeatures": 56
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2351.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T15:48:58.305Z",
+      "runtimeMs": 12971.7
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "astro",
+      "name": "Astro",
+      "icon": "Astro",
+      "version": "7.2.2",
+      "source": "meta",
+      "raw": "Astro v7.2.2"
+    },
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e28c3c6edff278-IAD",
+      "server": "cloudflare"
+    },
+    "violations": 1,
+    "passes": 585,
+    "incomplete": 5,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "list",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

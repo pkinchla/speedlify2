@@ -1,0 +1,3 @@
+{"version":1,"url":"https://acnorris.uk/","updated":"2026-08-20T15:38:57.446Z","points":[
+{"t":1787240313350,"performance":89,"accessibility":94,"best-practices":100,"seo":100,"lcp":3053,"cls":0.006,"tbt":0,"fcp":2753,"si":2753,"ttfb":465,"total":277086,"requests":17,"bytes":83232,"mainThreadMs":4.9,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":351.8,"longTasks":0,"elements":207,"failingCount":1,"failingNodes":41,"axeViolations":44,"axePasses":413,"bench":2236,"runs":3,"reqRuns":3,"ms":24095,"spread":11}
+]}

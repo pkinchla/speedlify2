@@ -1,0 +1,3 @@
+{"version":1,"url":"https://12daysofweb.dev/","updated":"2026-08-20T15:36:41.270Z","points":[
+{"t":1787240178468,"performance":100,"accessibility":100,"best-practices":100,"seo":100,"lcp":1583,"cls":0,"tbt":5,"fcp":812,"si":812,"ttfb":610,"total":54285,"requests":13,"bytes":2672,"mainThreadMs":2.2,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":350.4,"longTasks":1,"elements":158,"failingCount":0,"failingNodes":0,"axeViolations":1,"axePasses":231,"bench":2293.5,"runs":3,"reqRuns":3,"ms":22801,"spread":3}
+]}

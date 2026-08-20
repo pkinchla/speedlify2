@@ -1,0 +1,205 @@
+{
+  "url": "https://12daysofweb.dev/",
+  "name": "12daysofweb.dev",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787240178468,
+  "date": "2026-08-20T15:36:18.468Z",
+  "runId": "2026-08-20T15-33-56-650Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 22801,
+  "error": null,
+  "variance": {
+    "min": 97,
+    "max": 100,
+    "spread": 3,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://12daysofweb.dev/",
+    "finalUrl": "https://12daysofweb.dev/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 812,
+      "lcp": 1583,
+      "si": 812,
+      "tbt": 5,
+      "tti": 1616,
+      "cls": 0,
+      "ttfb": 610,
+      "maxPotentialFid": 60,
+      "serverResponseTime": 19,
+      "networkRtt": 0,
+      "networkServerLatency": 73.3
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 20.5,
+      "elementRenderDelay": 82.4
+    },
+    "weight": {
+      "total": 54285,
+      "requests": 13,
+      "mainDocument": 2181,
+      "byType": {
+        "total": {
+          "bytes": 54285,
+          "requests": 12
+        },
+        "font": {
+          "bytes": 20664,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 18494,
+          "requests": 2
+        },
+        "script": {
+          "bytes": 6785,
+          "requests": 7
+        },
+        "stylesheet": {
+          "bytes": 6161,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 2181,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 2672,
+          "requests": 2
+        }
+      },
+      "scripts": 7,
+      "stylesheets": 1,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 2672,
+      "mainThreadMs": 2.2,
+      "top": [
+        {
+          "entity": "Plausible",
+          "bytes": 2672,
+          "mainThreadMs": 2.2
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 350.4,
+      "byGroup": {
+        "other": 148.6,
+        "styleLayout": 85.1,
+        "scriptEvaluation": 70.9,
+        "paintCompositeRender": 28.8,
+        "parseHTML": 11.9,
+        "scriptParseCompile": 5
+      },
+      "bootupMs": 10.4,
+      "longTasks": 1,
+      "longestTaskMs": 60
+    },
+    "dom": {
+      "elements": 158,
+      "depth": 7,
+      "maxChildren": 12
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 25,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 13
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2293.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T15:36:34.576Z",
+      "runtimeMs": 6018.3
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "2.0.1",
+      "source": "meta",
+      "raw": "Eleventy v2.0.1"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0FX2DHGTQS8PYW47CYQ30FF"
+    },
+    "violations": 1,
+    "passes": 231,
+    "incomplete": 35,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

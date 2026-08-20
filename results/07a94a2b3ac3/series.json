@@ -1,0 +1,3 @@
+{"version":1,"url":"https://11tytips.netlify.app/","updated":"2026-08-20T15:36:15.468Z","points":[
+{"t":1787240153849,"performance":87,"accessibility":98,"best-practices":100,"seo":100,"lcp":1669,"cls":0.245,"tbt":0,"fcp":1561,"si":1561,"ttfb":608,"total":70149,"requests":17,"bytes":2794,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":459.1,"longTasks":0,"elements":218,"failingCount":1,"failingNodes":1,"axeViolations":61,"axePasses":242,"bench":2274.5,"runs":3,"reqRuns":3,"ms":21618,"spread":5}
+]}

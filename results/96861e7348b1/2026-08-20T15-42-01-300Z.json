@@ -1,0 +1,213 @@
+{
+  "url": "https://andreiaramos.pt/",
+  "name": "andreiaramos.pt",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787240521300,
+  "date": "2026-08-20T15:42:01.300Z",
+  "runId": "2026-08-20T15-33-56-650Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 25360,
+  "error": null,
+  "variance": {
+    "min": 98,
+    "max": 99,
+    "spread": 1,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://andreiaramos.pt/",
+    "finalUrl": "https://andreiaramos.pt/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 98,
+      "accessibility": 96,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 33
+    },
+    "timings": {
+      "fcp": 991,
+      "lcp": 2436,
+      "si": 991,
+      "tbt": 0,
+      "tti": 2436,
+      "cls": 0,
+      "ttfb": 608,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 8,
+      "networkRtt": 7,
+      "networkServerLatency": 175.2
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 9.9,
+      "resourceLoadDelay": 11.6,
+      "resourceLoadDuration": 17.2,
+      "elementRenderDelay": 60.9
+    },
+    "weight": {
+      "total": 232952,
+      "requests": 8,
+      "mainDocument": 25407,
+      "byType": {
+        "total": {
+          "bytes": 230817,
+          "requests": 7
+        },
+        "other": {
+          "bytes": 149583,
+          "requests": 4
+        },
+        "image": {
+          "bytes": 53128,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 25407,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 2699,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 3321,
+          "requests": 3
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 0,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 3321,
+      "mainThreadMs": 3.1,
+      "top": [
+        {
+          "entity": "umami.is",
+          "bytes": 3321,
+          "mainThreadMs": 3.1
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 331.1,
+      "byGroup": {
+        "other": 166.7,
+        "styleLayout": 94.2,
+        "scriptEvaluation": 28.6,
+        "parseHTML": 26,
+        "paintCompositeRender": 11,
+        "scriptParseCompile": 4.5
+      },
+      "bootupMs": 17.5,
+      "longTasks": 1,
+      "longestTaskMs": 52
+    },
+    "dom": {
+      "elements": 292,
+      "depth": 11,
+      "maxChildren": 12
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 24,
+      "failingNodes": 3,
+      "failing": [
+        {
+          "id": "aria-prohibited-attr",
+          "title": "Elements use prohibited ARIA attributes",
+          "nodes": 3
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 31
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2305.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T15:42:11.245Z",
+      "runtimeMs": 7054.9
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "3.1.6",
+      "source": "meta",
+      "raw": "Eleventy v3.1.6"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0FXCYR03ABXG80EFPPT190Y"
+    },
+    "violations": 3,
+    "passes": 482,
+    "incomplete": 3,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "aria-prohibited-attr",
+        "impact": "serious",
+        "nodes": 3,
+        "help": "Elements must only use permitted ARIA attributes"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

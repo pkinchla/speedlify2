@@ -1,0 +1,242 @@
+{
+  "url": "https://alesandroortiz.com/",
+  "name": "alesandroortiz.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787240368523,
+  "date": "2026-08-20T15:39:28.523Z",
+  "runId": "2026-08-20T15-33-56-650Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 22456,
+  "error": null,
+  "variance": {
+    "min": 91,
+    "max": 93,
+    "spread": 2,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://alesandroortiz.com/",
+    "finalUrl": "https://alesandroortiz.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 92,
+      "accessibility": 81,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 2448,
+      "lcp": 2448,
+      "si": 2448,
+      "tbt": 169,
+      "tti": 4717,
+      "cls": 0.006,
+      "ttfb": 616,
+      "maxPotentialFid": 170,
+      "serverResponseTime": 22,
+      "networkRtt": 0.1,
+      "networkServerLatency": 31.2
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 24.7,
+      "elementRenderDelay": 65
+    },
+    "weight": {
+      "total": 370527,
+      "requests": 7,
+      "mainDocument": 5499,
+      "byType": {
+        "total": {
+          "bytes": 364495,
+          "requests": 6
+        },
+        "script": {
+          "bytes": 322218,
+          "requests": 3
+        },
+        "font": {
+          "bytes": 35888,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 5499,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 890,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "other": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 358996,
+          "requests": 5
+        }
+      },
+      "scripts": 3,
+      "stylesheets": 1,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 3,
+      "bytes": 358996,
+      "mainThreadMs": 92.9,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 301344,
+          "mainThreadMs": 82.3
+        },
+        {
+          "entity": "Google Fonts",
+          "bytes": 36778,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Google Analytics",
+          "bytes": 20874,
+          "mainThreadMs": 10.6
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 639.3,
+      "byGroup": {
+        "scriptEvaluation": 347.1,
+        "other": 123.9,
+        "scriptParseCompile": 94.8,
+        "styleLayout": 49.4,
+        "paintCompositeRender": 16.1,
+        "parseHTML": 8.1
+      },
+      "bootupMs": 397,
+      "longTasks": 3,
+      "longestTaskMs": 170
+    },
+    "dom": {
+      "elements": 80,
+      "depth": 11,
+      "maxChildren": 7
+    },
+    "waste": {
+      "unusedJsBytes": 142564,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 775,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 15655.5,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 3,
+      "applicableCount": 13,
+      "failingNodes": 3,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 6
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2330.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T15:39:37.212Z",
+      "runtimeMs": 6614.7
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0FX871ENWHWNXTNN35R7N5T"
+    },
+    "violations": 8,
+    "passes": 153,
+    "incomplete": 3,
+    "violationRules": 4,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 5,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should have one main landmark"
+      },
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Links must have discernible text"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

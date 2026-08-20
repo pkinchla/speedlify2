@@ -1,0 +1,3 @@
+{"version":1,"url":"http://www.grupapir.pl/","updated":"2026-08-20T15:35:04.060Z","points":[
+{"t":1787240078572,"to":"https://www.grupapir.pl/","perm":1,"performance":95,"accessibility":96,"best-practices":81,"seo":100,"lcp":2785,"cls":0.013,"tbt":0,"fcp":1519,"si":1519,"ttfb":805,"total":264092,"requests":10,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":1223.6,"longTasks":1,"elements":327,"failingCount":1,"failingNodes":2,"axeViolations":5,"axePasses":359,"bench":2264.5,"runs":3,"reqRuns":3,"ms":25487,"spread":1}
+]}

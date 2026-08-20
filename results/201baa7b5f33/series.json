@@ -1,0 +1,3 @@
+{"version":1,"url":"https://any.digital/","updated":"2026-08-20T15:44:14.512Z","points":[
+{"t":1787240621587,"performance":60,"accessibility":94,"best-practices":96,"seo":82,"lcp":3006,"cls":0.316,"tbt":563,"fcp":2598,"si":2762,"ttfb":610,"total":995037,"requests":81,"bytes":871226,"mainThreadMs":208.4,"unusedJsBytes":294080,"unusedCssBytes":67805,"mainThreadTotal":4398.3,"longTasks":16,"elements":508,"failingCount":1,"failingNodes":15,"axeViolations":15,"axePasses":445,"bench":2287,"runs":3,"reqRuns":3,"ms":32924,"spread":15}
+]}
