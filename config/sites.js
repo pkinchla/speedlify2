@@ -247,6 +247,11 @@ export default {
 				hostCooldownMs: 60000,
 			},
 
+			// These were filtered out of the community list, not missing from it.
+			// Without this they would be flagged "unlisted" — told to submit
+			// something that is already submitted.
+			listedIn: "11ty-community",
+
 			sites: STARTERS.map((url) => ({ url })),
 		},
 

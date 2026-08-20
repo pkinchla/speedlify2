@@ -559,3 +559,69 @@ describe("fleet weight history", () => {
 		assert.deepEqual(dates, [...dates].sort());
 	});
 });
+
+describe("unlisted flag", () => {
+	/**
+	 * `requireGenerator` doubles as the statement "this category is the register
+	 * of sites built with these things", so anything built with one and absent
+	 * from the category is missing from the register. A category pulled *out* of
+	 * that register is the exception: it is listed, just presented elsewhere.
+	 */
+	function registerFixture(extraGroups = "", groupsForSite = "") {
+		const dir = fs.mkdtempSync(path.join(os.tmpdir(), "speedlify-unlisted-"));
+		tmp.push(dir);
+		const store = new ResultStore(path.join(dir, "results"));
+		store.write({
+			url: "https://site.example/",
+			name: "Site",
+			group: "other",
+			timestamp: Date.UTC(2026, 0, 1),
+			date: new Date(Date.UTC(2026, 0, 1)).toISOString(),
+			completedRuns: 3,
+			requestedRuns: 3,
+			durationMs: 1000,
+			error: null,
+			lab: {
+				requestedUrl: "https://site.example/",
+				finalUrl: "https://site.example/",
+				scores: { performance: 100, accessibility: 100, "best-practices": 100, seo: 100 },
+				timings: { lcp: 1000, cls: 0, tbt: 0, fcp: 500, si: 600, ttfb: 100 },
+				weight: { total: 1000, requests: 1, byType: {} },
+				environment: { benchmarkIndex: 3800, lighthouseVersion: "13.4.1" },
+			},
+			axe: { generator: { raw: "Eleventy v3.1.6" }, headers: {} },
+			field: null,
+		});
+
+		const configFile = path.join(dir, "sites.js");
+		fs.writeFileSync(
+			configFile,
+			`export default { groups: {
+				register: { name: "Register", requireGenerator: ["eleventy"], sites: [] },
+				other: { name: "Other"${groupsForSite}, sites: [{ url: "https://site.example/" }] },
+				${extraGroups}
+			} };`,
+		);
+		return { resultsDir: path.join(dir, "results"), configFile };
+	}
+
+	test("flags a site built with the register's generator but absent from it", async () => {
+		const r = await buildReport(registerFixture());
+		assert.equal(r.entries[0].unlisted.group, "register");
+		assert.equal(r.entries[0].unlisted.generator, "Eleventy");
+	});
+
+	test("does not flag a category that declares it is listed there", async () => {
+		// Filtered out of the register, not missing from it — telling someone to
+		// submit an already-submitted site is worse than saying nothing.
+		const r = await buildReport(registerFixture("", `, listedIn: "register"`));
+		assert.equal(r.entries[0].unlisted, undefined);
+	});
+
+	test("a stale listedIn pointing nowhere flags as normal", async () => {
+		// Naming a category that does not exist must not silently suppress the
+		// flag — the site really is absent from every register.
+		const r = await buildReport(registerFixture("", `, listedIn: "nonexistent"`));
+		assert.equal(r.entries[0].unlisted.group, "register");
+	});
+});
