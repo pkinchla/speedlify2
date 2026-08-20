@@ -4,10 +4,9 @@ report.json
 .DS_Store
 .env
 .claude
+logs/
 
-# results/ and logs/ are deliberately NOT ignored — they are the dataset.
+# results/ are deliberately NOT ignored — they are the dataset.
 # The whole point is that history accumulates in version control, diffs
 # cleanly, and can be rebuilt into the site from a fresh checkout.
 
-results/
-logs/
