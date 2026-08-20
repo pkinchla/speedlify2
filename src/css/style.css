@@ -848,7 +848,19 @@ th.col-rings { text-align: left !important; }
  * metric-name cells in the trend tables can wrap.
  */
 .col-site:has(.site-link) { white-space: nowrap !important; }
+/*
+ * One line, and a bounded one. A handful of sites carry URLs long enough to
+ * widen the whole column on their own, pushing the scores off the right edge
+ * for every other row — so the URL gets a ceiling and an ellipsis, and the
+ * `title` on the span carries the rest. Not applied to `.site-link` generally:
+ * the site page's own heading is a URL that should be readable in full.
+ */
 .site-link > span { white-space: nowrap; }
+.col-site .site-link > span {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 18rem;
+}
 
 .updated-tag {
 	display: inline-block;

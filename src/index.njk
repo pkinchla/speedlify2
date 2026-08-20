@@ -167,7 +167,7 @@ permalink: /index.html
 				<th class="col-rank">#</th>
 				<th class="col-site">Site</th>
 				<th class="col-stack" title="What built the site and who serves it, both detected on the same page load">Stack</th>
-				<th class="col-rings" title="The four Lighthouse categories, then their sum — the primary ranking">Lighthouse</th>
+				<th class="col-rings" title="The four Lighthouse categories — full marks in every one of them, for every site here">Lighthouse</th>
 				<th class="col-cwv" title="Failing Core Web Vitals from real users — the first ranking tiebreaker">CWV</th>
 				<th class="col-axe" title="Violating nodes from a full axe run — the second ranking tiebreaker">Axe</th>
 				<th class="col-trend">Trend</th>
@@ -196,7 +196,7 @@ permalink: /index.html
 					<a class="site-link" href="/site/{{ entry.slug }}/">
 						{% set avatar = entry.url | avatar(meta.avatarService) %}
 						{% if avatar %}<img class="favicon" src="{{ avatar }}" width="32" height="32" alt="" loading="lazy" decoding="async">{% endif %}
-						<span>{{ entry.displayUrl }}</span>
+						<span title="{{ entry.displayUrl }}">{{ entry.displayUrl }}</span>
 					</a>
 					{% if entry.latest %}<span class="updated-tag {{ 'stale-age' if entry.dataStale }}" title="Measured {{ entry.latest.date | date('long') }}">{{ entry.latest.date | since }}</span>{% else %}<span class="updated-tag never">never</span>{% endif %}
 					{% if entry.currentlyFailing %}<span class="badge badge-error" title="{{ entry.lastError }}">failing</span>{% endif %}
@@ -214,12 +214,16 @@ permalink: /index.html
 						{% if not entry.generator and not entry.presumedGenerator and not entry.host %}<span class="stack-none" title="Nothing detected">·</span>{% endif %}
 						</span>
 					</td>
+					{#
+						No total here, unlike the category tables: every row in this one
+						is on {{ perfectTotal }} by definition, so the column would be the
+						same number all the way down.
+					#}
 					<td class="col-rings">
 						<span class="rings">
 						{% for score in metrics.SCORES %}
 							{% scoreRing entry.latest.lab.scores[score.key], score.label %}
 						{% endfor %}
-						<span class="rings-total" title="Sum of all four Lighthouse categories — the primary ranking">{{ entry.lighthouseTotal }}</span>
 						</span>
 					</td>
 

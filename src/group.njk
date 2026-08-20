@@ -51,7 +51,7 @@ eleventyComputed:
 			<a class="site-link" href="/site/{{ entry.slug }}/">
 				{% set avatar = entry.url | avatar(meta.avatarService) %}
 				{% if avatar %}<img class="favicon" src="{{ avatar }}" width="32" height="32" alt="" loading="lazy" decoding="async">{% endif %}
-				<span>{{ entry.displayUrl }}</span>
+				<span title="{{ entry.displayUrl }}">{{ entry.displayUrl }}</span>
 			</a>
 			<span class="mover-delta">{{ t.vsPrevious | deltaArrow }} {{ t.vsPrevious | deltaText }}</span>
 			<span class="mover-scores">{{ t.previous }} &rarr; {{ t.current }}</span>
@@ -95,7 +95,7 @@ eleventyComputed:
 					<a class="site-link" href="/site/{{ entry.slug }}/">
 						{% set avatar = entry.url | avatar(meta.avatarService) %}
 						{% if avatar %}<img class="favicon" src="{{ avatar }}" width="32" height="32" alt="" loading="lazy" decoding="async">{% endif %}
-						<span>{{ entry.displayUrl }}</span>
+						<span title="{{ entry.displayUrl }}">{{ entry.displayUrl }}</span>
 					</a>
 					{% if entry.latest %}<span class="updated-tag {{ 'stale-age' if entry.dataStale }}" title="Measured {{ entry.latest.date | date('long') }}">{{ entry.latest.date | since }}</span>{% else %}<span class="updated-tag never">never</span>{% endif %}
 					{% if entry.currentlyFailing %}<span class="badge badge-error" title="{{ entry.lastError }}">failing</span>{% endif %}
