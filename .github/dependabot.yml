@@ -1,0 +1,26 @@
+version: 2
+
+updates:
+  # The workflows pin every action to a commit SHA rather than a tag, because a
+  # tag can be repointed by its owner and these workflows run with write access
+  # to this repository. A pin is only safe if something keeps it current —
+  # otherwise it quietly rots and stops receiving security fixes.
+  #
+  # Dependabot understands the `# v7.0.1` comment beside each SHA: it bumps the
+  # SHA and rewrites the comment together, so the pin stays readable.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    commit-message:
+      prefix: "ci"
+    labels:
+      - dependencies
+    groups:
+      # One PR for all of them rather than four. These move together and are
+      # reviewed the same way — checking four near-identical PRs a week is how
+      # people start rubber-stamping them.
+      actions:
+        patterns:
+          - "*"
