@@ -8,7 +8,7 @@ permalink: /index.html
 		<span class="stat-value">{{ sites.stats.avgTotal if sites.stats.avgTotal else "—" }}<span class="stat-suffix">/400</span></span>
 		<span class="stat-label">Avg Lighthouse total</span>
 	</div>
-	<div class="stat" title="Sites scoring 100 in all four Lighthouse categories">
+	<div class="stat" title="Sites scoring 100 in all four Lighthouse categories, with no axe violations and no Core Web Vital failing for real users">
 		<span class="stat-value">{{ sites.stats.perfect }}<span class="stat-suffix">/{{ sites.stats.measured }}</span></span>
 		<span class="stat-label">Perfect {{ sites.stats.perfect | plural("score") }}</span>
 		{% if sites.stats.perfectEleventy %}
@@ -136,8 +136,12 @@ permalink: /index.html
 {% set perfectTotal = metrics.SCORES.length * 100 %}
 {#
 	Both counts are computed before the section so the heading can state them.
-	`shown` is every site on a perfect total — not a truncation, and the ceiling
-	comes from the score list rather than a hardcoded 400.
+	`shown` is every perfect site — not a truncation.
+
+	`entry.perfect` rather than the rule spelled out here: it means full marks in
+	every Lighthouse category and nothing amber or red beside them, and it is
+	decided in lib/report.js so this table and the count in the stat tile above
+	cannot drift apart.
 
 	The Eleventy share of these is counted in the report instead — the stat tile
 	that shows it renders above this, and `{% set %}` inside a loop does not
@@ -145,18 +149,23 @@ permalink: /index.html
 #}
 {% set shown = [] %}
 {% for entry in sites.entries %}
-	{% if entry.lighthouseTotal == perfectTotal %}{% set shown = (shown.push(entry), shown) %}{% endif %}
+	{% if entry.perfect %}{% set shown = (shown.push(entry), shown) %}{% endif %}
 {% endfor %}
 <section class="group" id="leaderboard">
 	<div class="group-head">
 		<h2>Perfect scores</h2>
 		<p class="muted">
 			Every site scoring {{ perfectTotal }} — full marks in all
-			{{ metrics.SCORES.length }} Lighthouse categories — across every category,
-			newest data. With the totals tied, the order is decided entirely by the
-			tiebreakers: fewest failing Core Web Vitals from real users, then fewest
-			axe violations, then Speed Index per KB, so a fast heavy site outranks a
-			fast empty one.
+			{{ metrics.SCORES.length }} Lighthouse categories — with no axe violations and
+			no Core Web Vital failing real users, across every category, newest data.
+			Lighthouse's own accessibility score samples the rules axe runs in full, and
+			its timings are one simulated load where CrUX is 28 days of real visits, so
+			the extra two rings have to hold too. A site CrUX has no sample for still
+			qualifies — most sites here are too small to appear in it, which says
+			nothing about how fast they are — but a failing one does not. With the totals
+			tied, the order is decided entirely by the tiebreakers: fewest failing Core Web Vitals,
+			then fewest axe violations, then Speed Index per KB, so a fast heavy site
+			outranks a fast empty one.
 		</p>
 	</div>
 
@@ -167,9 +176,7 @@ permalink: /index.html
 				<th class="col-rank">#</th>
 				<th class="col-site">Site</th>
 				<th class="col-stack" title="What built the site and who serves it, both detected on the same page load">Stack</th>
-				<th class="col-rings" title="The four Lighthouse categories — full marks in every one of them, for every site here">Lighthouse</th>
-				<th class="col-cwv" title="Failing Core Web Vitals from real users — the first ranking tiebreaker">CWV</th>
-				<th class="col-axe" title="Violating nodes from a full axe run — the second ranking tiebreaker">Axe</th>
+				<th class="col-rings" title="The four Lighthouse categories, then the Core Web Vitals verdict from real users and violating nodes from a full axe run — the primary ranking and its two tiebreakers, in order">Scores</th>
 				<th class="col-trend">Trend</th>
 				<th>LCP</th>
 				<th>CLS</th>
@@ -180,9 +187,9 @@ permalink: /index.html
 		</thead>
 		<tbody>
 		{#
-			Not a truncation any more: this is every site on a perfect total. The
-			ceiling is derived from the score list rather than hardcoded to 400, so
-			adding or removing a Lighthouse category cannot silently empty the table.
+			Not a truncation any more: this is every perfect site. The ceiling is
+			derived from the score list rather than hardcoded to 400, so adding or
+			removing a Lighthouse category cannot silently empty the table.
 			`sites.entries` arrives already ranked, so filtering preserves that order.
 		#}
 		{% for entry in shown %}
@@ -215,25 +222,25 @@ permalink: /index.html
 						</span>
 					</td>
 					{#
-						No total here, unlike the category tables: every row in this one
-						is on {{ perfectTotal }} by definition, so the column would be the
-						same number all the way down.
+						Six rings, in the order <speedlify-score> draws them: the four
+						Lighthouse categories, then Core Web Vitals and axe — the ranking's
+						two tiebreakers in the order it applies them, and the two things
+						Lighthouse's own categories do not cover. One column rather than
+						three, so a row reads as one picture and matches the embeddable
+						badge exactly.
+
+						No total on the end, unlike the category tables: every row in this
+						one is on {{ perfectTotal }} by definition, so it would be the same
+						number all the way down.
 					#}
 					<td class="col-rings">
 						<span class="rings">
 						{% for score in metrics.SCORES %}
 							{% scoreRing entry.latest.lab.scores[score.key], score.label %}
 						{% endfor %}
+						{% cwvRing entry.cwvFailures, entry.cwv.assessed %}
+						{% axeRing entry.axe %}
 						</span>
-					</td>
-
-					<td class="col-cwv num {{ 'cwv-pass' if entry.cwvFailures == 0 }}{{ ' cwv-fail' if entry.cwvFailures > 0 }}"
-						title="{% if entry.cwvFailures != null %}{{ entry.cwvFailures }} of {{ entry.cwv.assessed }} Core Web Vitals failing at p75{% else %}no real-user data — not counted in the ranking{% endif %}">
-						{{ entry.cwvFailures if entry.cwvFailures != null else "—" }}
-					</td>
-					<td class="col-axe num {{ 'axe-clean' if entry.axeViolations == 0 }}{{ ' axe-bad' if entry.axeViolations > 0 }}"
-						title="{% if entry.axe and not entry.axe.error %}{{ entry.axe.violations }} violating node(s) across {{ entry.axe.violationRules }} rule(s){% else %}axe did not run{% endif %}">
-						{{ entry.axeViolations if entry.axeViolations != null else "—" }}
 					</td>
 					<td class="col-trend">{% sparkline entry.trends.performance %}</td>
 					<td class="num">{{ entry.latest.lab.timings.lcp | ms }}</td>
@@ -242,7 +249,7 @@ permalink: /index.html
 					<td class="num">{{ entry.latest.lab.weight.total | bytes }}</td>
 					<td class="num">{{ entry.latest.lab.weight.requests | num }}</td>
 				{% else %}
-					<td class="num muted" colspan="10">
+					<td class="num muted" colspan="8">
 						{% if entry.currentlyFailing %}every attempt failed{% else %}awaiting first measurement{% endif %}
 					</td>
 				{% endif %}
@@ -255,11 +262,11 @@ permalink: /index.html
 	<p class="see-all">
 		{% if shown.length %}
 		{{ shown.length | countOf("site") }} of {{ sites.stats.measured | num }} measured
-		{{ shown.length | verb("is", "are") }} on a perfect {{ perfectTotal }}.
-		The full lists are on the category pages.
+		{{ shown.length | verb("is", "are") }} on a perfect {{ perfectTotal }} with nothing
+		failing beside it. The full lists are on the category pages.
 		{% else %}
-		No site is on a perfect {{ perfectTotal }} yet. The full lists are on the
-		category pages.
+		No site is on a perfect {{ perfectTotal }} with nothing failing beside it yet.
+		The full lists are on the category pages.
 		{% endif %}
 	</p>
 </section>

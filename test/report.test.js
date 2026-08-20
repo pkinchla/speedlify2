@@ -18,7 +18,7 @@ afterEach(() => {
 	while (tmp.length) fs.rmSync(tmp.pop(), { recursive: true, force: true });
 });
 
-function fixture({ sites = 1, points = 4, url = (i) => `https://site${i}.example/` } = {}) {
+function fixture({ sites = 1, points = 4, url = (i) => `https://site${i}.example/`, performance = (p) => 80 + p, axe = null, field = null } = {}) {
 	const dir = fs.mkdtempSync(path.join(os.tmpdir(), "speedlify-report-"));
 	tmp.push(dir);
 
@@ -41,7 +41,7 @@ function fixture({ sites = 1, points = 4, url = (i) => `https://site${i}.example
 					requestedUrl: url(s),
 					finalUrl: url(s),
 					redirect: null,
-					scores: { performance: 80 + p, accessibility: 100, "best-practices": 100, seo: 100 },
+					scores: { performance: performance(p), accessibility: 100, "best-practices": 100, seo: 100 },
 					timings: { lcp: 2000 - p * 50, cls: 0.01, tbt: 30, fcp: 1000, si: 1200, ttfb: 200 },
 					weight: { total: 500000, requests: 40, byType: { script: { bytes: 1000, requests: 2 } } },
 					thirdParty: { count: 0, bytes: 0, mainThreadMs: 0, top: [] },
@@ -53,7 +53,8 @@ function fixture({ sites = 1, points = 4, url = (i) => `https://site${i}.example
 					environment: { benchmarkIndex: 3800, lighthouseVersion: "13.4.1" },
 					lcpBreakdown: { timeToFirstByte: 100 },
 				},
-				field: null,
+				field,
+				axe,
 			});
 		}
 	}
@@ -623,5 +624,109 @@ describe("unlisted flag", () => {
 		// flag — the site really is absent from every register.
 		const r = await buildReport(registerFixture("", `, listedIn: "nonexistent"`));
 		assert.equal(r.entries[0].unlisted.group, "register");
+	});
+});
+
+describe("perfect scores", () => {
+	/**
+	 * "Perfect" is the home page's headline claim, and it is three conditions,
+	 * not one: full marks in every Lighthouse category, a clean axe run, and no
+	 * Core Web Vital failing real users. Lighthouse's accessibility category
+	 * samples a subset of the rules axe runs in full, and its timings are one
+	 * simulated load, so 100 with violations or with failing field data is
+	 * ordinary — which is exactly why the other two conditions exist.
+	 *
+	 * The two treat absence differently, and these tests are where that is
+	 * pinned: axe runs every time, so a missing result is a failed check and
+	 * disqualifies; CrUX only samples sites with enough traffic, so a missing
+	 * result is not evidence and does not.
+	 */
+	const clean = { violations: 0, violationRules: 0, error: null };
+	const dirty = { violations: 3, violationRules: 2, error: null };
+
+	/** A real CrUX response, rated the way the API rates it. */
+	const crux = (rating) => ({
+		metrics: {
+			lcp: { p75: 1800, rating },
+			inp: { p75: 120, rating },
+			cls: { p75: 0.02, rating },
+		},
+		collectionPeriod: { first: "2025-12-01", last: "2025-12-28" },
+		scope: "origin",
+	});
+
+	test("counts a site with full marks and a clean axe run", async () => {
+		const f = fixture({ performance: () => 100, axe: clean });
+		const r = await buildReport({ resultsDir: f.resultsDir, configFile: f.configFile });
+
+		assert.equal(r.entries[0].lighthouseTotal, 400);
+		assert.equal(r.entries[0].perfect, true);
+		assert.equal(r.stats.perfect, 1);
+	});
+
+	test("does not count full marks with axe violations", async () => {
+		const f = fixture({ performance: () => 100, axe: dirty });
+		const r = await buildReport({ resultsDir: f.resultsDir, configFile: f.configFile });
+
+		assert.equal(r.entries[0].lighthouseTotal, 400, "still a perfect Lighthouse total");
+		assert.equal(r.entries[0].perfect, false);
+		assert.equal(r.stats.perfect, 0);
+	});
+
+	test("does not count a site axe never ran against", async () => {
+		const f = fixture({ performance: () => 100, axe: null });
+		const r = await buildReport({ resultsDir: f.resultsDir, configFile: f.configFile });
+
+		// Unchecked is not clean: null means the run failed, and assuming zero
+		// would quietly promote every site the axe step skipped.
+		assert.equal(r.entries[0].axeViolations, null);
+		assert.equal(r.entries[0].perfect, false);
+		assert.equal(r.stats.perfect, 0);
+	});
+
+	test("counts a site CrUX has no sample for", async () => {
+		const f = fixture({ performance: () => 100, axe: clean });
+		const r = await buildReport({ resultsDir: f.resultsDir, configFile: f.configFile });
+
+		// No field data at all — the ring is grey, not red. Most of the corpus is
+		// too small to appear in CrUX, and that measures traffic, not quality.
+		assert.equal(r.entries[0].cwvFailures, null);
+		assert.equal(r.entries[0].perfect, true);
+		assert.equal(r.stats.perfect, 1);
+	});
+
+	test("counts a site whose field data is all good", async () => {
+		const f = fixture({ performance: () => 100, axe: clean, field: crux("good") });
+		const r = await buildReport({ resultsDir: f.resultsDir, configFile: f.configFile });
+
+		assert.equal(r.entries[0].cwvFailures, 0);
+		assert.equal(r.entries[0].perfect, true);
+		assert.equal(r.stats.perfect, 1);
+	});
+
+	test("does not count a site failing Core Web Vitals for real users", async () => {
+		const f = fixture({ performance: () => 100, axe: clean, field: crux("poor") });
+		const r = await buildReport({ resultsDir: f.resultsDir, configFile: f.configFile });
+
+		assert.equal(r.entries[0].lighthouseTotal, 400, "the lab still says perfect");
+		assert.equal(r.entries[0].cwvFailures, 3);
+		assert.equal(r.entries[0].perfect, false);
+		assert.equal(r.stats.perfect, 0);
+	});
+
+	test("does not count amber Core Web Vitals either", async () => {
+		const f = fixture({ performance: () => 100, axe: clean, field: crux("needs-improvement") });
+		const r = await buildReport({ resultsDir: f.resultsDir, configFile: f.configFile });
+
+		assert.equal(r.entries[0].cwvFailures, 3);
+		assert.equal(r.entries[0].perfect, false);
+	});
+
+	test("does not count an imperfect Lighthouse total, however clean", async () => {
+		const f = fixture({ performance: () => 99, axe: clean });
+		const r = await buildReport({ resultsDir: f.resultsDir, configFile: f.configFile });
+
+		assert.equal(r.entries[0].perfect, false);
+		assert.equal(r.stats.perfect, 0);
 	});
 });

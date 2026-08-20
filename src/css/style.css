@@ -497,18 +497,6 @@ th.col-trend { text-align: center !important; }
 
 /* --------------------------------------------------- leaderboard columns */
 
-/* The sum rides at the end of the rings it is the sum of. Tabular and fixed
-   width so the totals form a column of their own inside the cell. */
-.rings-total {
-	font-variant-numeric: tabular-nums;
-	min-width: 2.4ch;
-	text-align: right;
-	padding-left: 0.15rem;
-}
-.col-axe { text-align: right !important; font-variant-numeric: tabular-nums; }
-.col-axe.axe-clean { color: var(--good); }
-.col-axe.axe-bad { color: var(--average); }
-
 /* ==================================================== leaderboard look ==== */
 
 .masthead { position: static; border-bottom: 1px solid var(--border); background: transparent; }
@@ -599,9 +587,6 @@ th.col-rings { text-align: left !important; }
 :root[data-theme="light"] .theme-icon-sun { display: none; }
 :root[data-theme="light"] .theme-icon-moon { display: inline; }
 
-.col-cwv { text-align: right !important; font-variant-numeric: tabular-nums; }
-.col-cwv.cwv-pass { color: var(--good); }
-.col-cwv.cwv-fail { color: var(--poor); }
 
 /*
  * Prose does not want the full table width. The wrap is sized for the

@@ -75,9 +75,7 @@ eleventyComputed:
 				<th class="col-rank">#</th>
 				<th class="col-site">Site</th>
 				<th class="col-stack" title="What built the site and who serves it, both detected on the same page load">Stack</th>
-				<th class="col-rings" title="The four Lighthouse categories, then their sum — the primary ranking">Lighthouse</th>
-				<th class="col-cwv" title="Failing Core Web Vitals from real users — the first ranking tiebreaker">CWV</th>
-				<th class="col-axe" title="Violating nodes from a full axe run — the second ranking tiebreaker">Axe</th>
+				<th class="col-rings" title="The four Lighthouse categories, then the Core Web Vitals verdict from real users and violating nodes from a full axe run — the primary ranking and its two tiebreakers, in order">Scores</th>
 				<th class="col-trend">Perf trend</th>
 				<th>LCP</th><th>CLS</th><th>TBT</th>
 				<th>Weight</th><th>Req</th>
@@ -112,21 +110,22 @@ eleventyComputed:
 						{% if not entry.generator and not entry.presumedGenerator and not entry.host %}<span class="stack-none" title="Nothing detected">·</span>{% endif %}
 						</span>
 					</td>
+					{#
+						Six rings, in the order <speedlify-score> draws them: the four
+						Lighthouse categories, then Core Web Vitals and axe — the ranking's
+						two tiebreakers in the order it applies them, and the two things
+						Lighthouse's own categories do not cover. One column rather than
+						three, so a row reads as one picture and matches the embeddable
+						badge exactly.
+					#}
 					<td class="col-rings">
 						<span class="rings">
 						{% for score in metrics.SCORES %}
 							{% scoreRing entry.latest.lab.scores[score.key], score.label %}
 						{% endfor %}
-						<span class="rings-total" title="Sum of all four Lighthouse categories — the primary ranking">{{ entry.lighthouseTotal }}</span>
+						{% cwvRing entry.cwvFailures, entry.cwv.assessed %}
+						{% axeRing entry.axe %}
 						</span>
-					</td>
-					<td class="col-cwv num {{ 'cwv-pass' if entry.cwvFailures == 0 }}{{ ' cwv-fail' if entry.cwvFailures > 0 }}"
-						title="{% if entry.cwvFailures != null %}{{ entry.cwvFailures }} of {{ entry.cwv.assessed }} Core Web Vitals failing at p75{% else %}no real-user data — not counted in the ranking{% endif %}">
-						{{ entry.cwvFailures if entry.cwvFailures != null else "—" }}
-					</td>
-					<td class="col-axe num {{ 'axe-clean' if entry.axeViolations == 0 }}{{ ' axe-bad' if entry.axeViolations > 0 }}"
-						title="{% if entry.axe and not entry.axe.error %}{{ entry.axe.violations }} violating node(s) across {{ entry.axe.violationRules }} rule(s){% else %}axe did not run{% endif %}">
-						{{ entry.axeViolations if entry.axeViolations != null else "—" }}
 					</td>
 					<td class="col-trend">{% sparkline entry.trends.performance %}</td>
 					<td class="num">{{ entry.latest.lab.timings.lcp | ms }}</td>
@@ -135,7 +134,7 @@ eleventyComputed:
 					<td class="num">{{ entry.latest.lab.weight.total | bytes }}</td>
 					<td class="num">{{ entry.latest.lab.weight.requests | num }}</td>
 				{% else %}
-					<td colspan="10" class="muted">not measured yet</td>
+					<td colspan="8" class="muted">not measured yet</td>
 				{% endif %}
 			</tr>
 		{% endfor %}

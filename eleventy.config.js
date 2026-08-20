@@ -352,7 +352,7 @@ export default async function ($config) {
 	});
 
 	/**
-	 * A Lighthouse score as a ring, rendered at build time.
+	 * A score as a ring, rendered at build time.
 	 *
 	 * Speedlify draws these with a web component that inlines the whole result
 	 * as JSON per row. The same picture is a circle with a dash offset, so it
@@ -363,32 +363,95 @@ export default async function ($config) {
 	 * hole for 12-unit text, which is the padding the component has always had;
 	 * the two draw the same ring, so a badge embedded elsewhere and the ring it
 	 * links back to here do not read as two different components.
+	 *
+	 * `pct` is what fills the arc, and it is not always the value: an axe count
+	 * and a Core Web Vitals verdict have no percentage, so they pass 1 and read
+	 * as a closed ring whose colour carries the answer. `null` leaves the track
+	 * bare, which is how "no data" looks in both renderers.
 	 */
-	$config.addShortcode("scoreRing", function (value, label = "", size = 37) {
-		const band = typeof value !== "number" ? "none" : value >= 90 ? "good" : value >= 50 ? "average" : "poor";
-
+	function ring({ band, text, label, pct, size = 37 }) {
 		const stroke = 3;
 		const r = (size - stroke) / 2;
-		const circumference = 2 * Math.PI * r;
-		const pct = typeof value === "number" ? Math.max(0, Math.min(100, value)) / 100 : 0;
-		// Dash the arc to the score, and rotate so it starts at 12 o'clock.
-		const dash = `${(circumference * pct).toFixed(2)} ${circumference.toFixed(2)}`;
 		const c = size / 2;
-
-		const title = label ? `${label}: ${value ?? "no data"}` : String(value ?? "no data");
+		const circumference = 2 * Math.PI * r;
+		// Dash the arc to the value, and rotate so it starts at 12 o'clock.
+		const dash = `${(circumference * Math.max(0, Math.min(1, pct ?? 0))).toFixed(2)} ${circumference.toFixed(2)}`;
 
 		return [
 			`<svg class="ring ring-${band}" width="${size}" height="${size}" viewBox="0 0 ${size} ${size}"`,
-			` role="img" aria-label="${escapeAttr(title)}">`,
+			` role="img" aria-label="${escapeAttr(label)}">`,
 			`<circle class="ring-track" cx="${c}" cy="${c}" r="${r}" fill="none" stroke-width="${stroke}"/>`,
-			typeof value === "number"
+			typeof pct === "number"
 				? `<circle class="ring-arc" cx="${c}" cy="${c}" r="${r}" fill="none" stroke-width="${stroke}"` +
 					` stroke-dasharray="${dash}" stroke-linecap="round" transform="rotate(-90 ${c} ${c})"/>`
 				: "",
 			`<text class="ring-text" x="${c}" y="${c}" text-anchor="middle" dominant-baseline="central">`,
-			`${value ?? "–"}</text>`,
+			`${escapeAttr(text)}</text>`,
 			`</svg>`,
 		].join("");
+	}
+
+	/** One of the four Lighthouse categories: the arc is the score itself. */
+	$config.addShortcode("scoreRing", function (value, label = "", size = 37) {
+		return ring({
+			band: typeof value !== "number" ? "none" : value >= 90 ? "good" : value >= 50 ? "average" : "poor",
+			text: value ?? "–",
+			label: label ? `${label}: ${value ?? "no data"}` : String(value ?? "no data"),
+			pct: typeof value === "number" ? value / 100 : null,
+			size,
+		});
+	});
+
+	/**
+	 * Axe violations, where the scale runs the other way.
+	 *
+	 * A Lighthouse score is better when higher; a violation count is better when
+	 * zero. Banding it by the same thresholds would paint "2 violations" green
+	 * for being a small number, so it gets its own: clean, or not clean.
+	 */
+	$config.addShortcode("axeRing", function (axe, size = 37) {
+		const value = axe && !axe.error ? axe.violations : null;
+		if (typeof value !== "number") {
+			return ring({ band: "none", text: "–", label: "Axe: did not run", pct: null, size });
+		}
+
+		const rules = axe.violationRules;
+		return ring({
+			band: value === 0 ? "good" : value <= 5 ? "average" : "poor",
+			text: value,
+			label:
+				`Axe: ${value} violating node${value === 1 ? "" : "s"}` +
+				(typeof rules === "number" ? ` across ${rules} rule${rules === 1 ? "" : "s"}` : ""),
+			pct: 1,
+			size,
+		});
+	});
+
+	/**
+	 * Core Web Vitals, which is a verdict rather than a number.
+	 *
+	 * A glyph instead of a count, matching the component: the underlying figure
+	 * is three separate metrics, and one of them failing is the whole answer as
+	 * far as the ranking is concerned. How many, and which, is in the label.
+	 */
+	$config.addShortcode("cwvRing", function (failures, assessed, size = 37) {
+		if (typeof failures !== "number") {
+			return ring({
+				band: "none",
+				text: "–",
+				label: "Core Web Vitals: no real-user data — not counted in the ranking",
+				pct: null,
+				size,
+			});
+		}
+
+		return ring({
+			band: failures === 0 ? "good" : "poor",
+			text: failures === 0 ? "✓" : "✗",
+			label: `Core Web Vitals: ${failures} of ${assessed ?? "?"} failing at p75`,
+			pct: 1,
+			size,
+		});
 	});
 
 	/** 🥇🥈🥉 for the top three, nothing for everyone else. */
