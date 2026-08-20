@@ -1,0 +1,277 @@
+{
+  "url": "https://cloudcannon.com/",
+  "name": "cloudcannon.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787254410721,
+  "date": "2026-08-20T19:33:30.721Z",
+  "runId": "2026-08-20T19-30-15-782Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 30464,
+  "error": null,
+  "variance": {
+    "min": 94,
+    "max": 96,
+    "spread": 2,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://cloudcannon.com/",
+    "finalUrl": "https://cloudcannon.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 95,
+      "accessibility": 100,
+      "best-practices": 58,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1236,
+      "lcp": 2447,
+      "si": 1236,
+      "tbt": 197,
+      "tti": 5975,
+      "cls": 0,
+      "ttfb": 636,
+      "maxPotentialFid": 242,
+      "serverResponseTime": 24,
+      "networkRtt": 0.9,
+      "networkServerLatency": 82
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 26,
+      "elementRenderDelay": 136.7
+    },
+    "weight": {
+      "total": 659340,
+      "requests": 52,
+      "mainDocument": 37559,
+      "byType": {
+        "total": {
+          "bytes": 659340,
+          "requests": 52
+        },
+        "script": {
+          "bytes": 429868,
+          "requests": 6
+        },
+        "image": {
+          "bytes": 128577,
+          "requests": 33
+        },
+        "document": {
+          "bytes": 37559,
+          "requests": 1
+        },
+        "font": {
+          "bytes": 28251,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 23312,
+          "requests": 2
+        },
+        "other": {
+          "bytes": 11773,
+          "requests": 8
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 497876,
+          "requests": 30
+        }
+      },
+      "scripts": 6,
+      "stylesheets": 2,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 4,
+      "bytes": 497876,
+      "mainThreadMs": 125.2,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 323760,
+          "mainThreadMs": 101.2
+        },
+        {
+          "entity": "imgix",
+          "bytes": 111680,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "LinkedIn Ads",
+          "bytes": 41535,
+          "mainThreadMs": 12.7
+        },
+        {
+          "entity": "Google Analytics",
+          "bytes": 20901,
+          "mainThreadMs": 11.3
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1273.3,
+      "byGroup": {
+        "scriptEvaluation": 591.1,
+        "other": 348.7,
+        "styleLayout": 133.9,
+        "scriptParseCompile": 115.5,
+        "parseHTML": 45.7,
+        "garbageCollection": 19.2,
+        "paintCompositeRender": 19.1
+      },
+      "bootupMs": 650.6,
+      "longTasks": 5,
+      "longestTaskMs": 242
+    },
+    "dom": {
+      "elements": 1113,
+      "depth": 17,
+      "maxChildren": 44
+    },
+    "waste": {
+      "unusedJsBytes": 170721,
+      "unusedCssBytes": 17827,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 300,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 31975.45,
+      "poorlyCachedCount": 4
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 22,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 31
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2272.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T19:33:51.050Z",
+      "runtimeMs": 9005.7
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-22",
+      "last": "2026-08-18"
+    },
+    "metrics": {
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 100,
+          "needsImprovement": 0,
+          "poor": 0
+        }
+      },
+      "ttfb": {
+        "p75": 647,
+        "rating": "good",
+        "distribution": {
+          "good": 80.4,
+          "needsImprovement": 18.3,
+          "poor": 1.3
+        }
+      },
+      "fcp": {
+        "p75": 1163,
+        "rating": "good",
+        "distribution": {
+          "good": 94.8,
+          "needsImprovement": 3.5,
+          "poor": 1.6
+        }
+      },
+      "lcp": {
+        "p75": 1309,
+        "rating": "good",
+        "distribution": {
+          "good": 98.5,
+          "needsImprovement": 0.8,
+          "poor": 0.7
+        }
+      },
+      "rtt": {
+        "p75": 167,
+        "rating": null,
+        "distribution": {
+          "good": 42,
+          "needsImprovement": 42.4,
+          "poor": 15.6
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 2
+  },
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e3d535ef4f57fd-ORD",
+      "server": "cloudflare"
+    },
+    "violations": 2,
+    "passes": 1040,
+    "incomplete": 37,
+    "violationRules": 2,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "empty-heading",
+        "impact": "minor",
+        "nodes": 1,
+        "help": "Headings should not be empty"
+      },
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Page should contain a level-one heading"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

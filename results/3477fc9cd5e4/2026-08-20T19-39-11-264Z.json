@@ -1,0 +1,192 @@
+{
+  "url": "https://damianwalsh.co.uk/",
+  "name": "damianwalsh.co.uk",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787254751264,
+  "date": "2026-08-20T19:39:11.264Z",
+  "runId": "2026-08-20T19-30-15-782Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 24037,
+  "error": null,
+  "variance": {
+    "min": 97,
+    "max": 100,
+    "spread": 3,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://damianwalsh.co.uk/",
+    "finalUrl": "https://damianwalsh.co.uk/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 921,
+      "lcp": 1821,
+      "si": 921,
+      "tbt": 0,
+      "tti": 1821,
+      "cls": 0,
+      "ttfb": 621,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 20,
+      "networkRtt": 0,
+      "networkServerLatency": 21
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 21.4,
+      "elementRenderDelay": 127.7
+    },
+    "weight": {
+      "total": 299176,
+      "requests": 14,
+      "mainDocument": 6070,
+      "byType": {
+        "total": {
+          "bytes": 292979,
+          "requests": 13
+        },
+        "font": {
+          "bytes": 202661,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 75271,
+          "requests": 9
+        },
+        "stylesheet": {
+          "bytes": 8034,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 6070,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 943,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "other": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 0,
+          "requests": 0
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 1,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 0,
+      "bytes": 0,
+      "mainThreadMs": 0,
+      "top": []
+    },
+    "mainThread": {
+      "total": 264.6,
+      "byGroup": {
+        "other": 133.8,
+        "styleLayout": 73.5,
+        "paintCompositeRender": 19.6,
+        "parseHTML": 18.6,
+        "scriptEvaluation": 18.1,
+        "scriptParseCompile": 1
+      },
+      "bootupMs": 12,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 318,
+      "depth": 9,
+      "maxChildren": 26
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 23,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 37
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2323.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-20T19:39:21.401Z",
+      "runtimeMs": 6182.3
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "3.1.6",
+      "source": "meta",
+      "raw": "Eleventy v3.1.6"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0GAZ5Z1ZB45Q7F0RDQ3RSHE"
+    },
+    "violations": 0,
+    "passes": 433,
+    "incomplete": 8,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

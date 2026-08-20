@@ -1,0 +1,3 @@
+{"version":1,"url":"https://chromeos.dev/en","updated":"2026-08-20T19:32:37.357Z","points":[
+{"t":1787254329107,"performance":88,"accessibility":95,"best-practices":100,"seo":82,"lcp":2632,"cls":0.001,"tbt":360,"fcp":1533,"si":1533,"ttfb":603,"total":981915,"requests":58,"bytes":652646,"mainThreadMs":118.3,"unusedJsBytes":181169,"unusedCssBytes":0,"mainThreadTotal":1946.6,"longTasks":8,"elements":955,"failingCount":3,"failingNodes":7,"axeViolations":6,"axePasses":763,"field-lcp":3349,"field-inp":232,"field-cls":0.01,"field-fcp":1517,"field-ttfb":550,"bench":2377,"runs":3,"reqRuns":3,"ms":28249,"spread":6}
+]}

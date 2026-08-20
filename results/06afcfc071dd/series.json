@@ -1,0 +1,3 @@
+{"version":1,"url":"https://complite.jcubic.pl/","updated":"2026-08-20T19:35:50.699Z","points":[
+{"t":1787254524412,"performance":86,"accessibility":96,"best-practices":100,"seo":100,"lcp":3290,"cls":0,"tbt":0,"fcp":3290,"si":3290,"ttfb":720,"total":123949,"requests":8,"bytes":80977,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":248.2,"longTasks":0,"elements":141,"failingCount":1,"failingNodes":1,"axeViolations":1,"axePasses":321,"bench":2345.5,"runs":3,"reqRuns":3,"ms":26287,"spread":27}
+]}
