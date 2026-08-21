@@ -119,7 +119,22 @@ title: Embed
 
 <section class="panel">
 	<h2>Usage</h2>
-	<pre><code>&lt;script type="module" src="{{ meta.url }}/js/speedlify-score.js"&gt;&lt;/script&gt;
+
+	<p>The current version of <code>&lt;speedlify-score&gt;</code> on npm is compatible with speedlify2. The version shown here is not yet published to npm.</p>
+
+	<p>Download the zero dependency JavaScript file manually: <a href="{{ meta.url }}/js/speedlify-score.js"><code>{{ meta.url }}/js/speedlify-score.js</code></a></p>
+
+	<div class="notice notice-warn">
+		<strong>It would be unwise to hotlink the speedlify-score component script.</strong>
+		<p>
+			Third party JavaScript is a big no-no! It also carries no versioning, no deprecation
+			policy and no uptime commitment: the file can change shape, move or stop
+			being served at any time, and a page embedding it directly would <strong>break with it and with no notice.</strong>
+		</p>
+	</div>
+
+	<pre><code>&lt;!-- You need to fix this URL to point to your speedlify-score.js --&gt;
+&lt;script type="module" src="speedlify-score.js"&gt;&lt;/script&gt;
 
 &lt;!-- Scores for the page it sits on --&gt;
 &lt;speedlify-score speedlify-url="{{ meta.url }}/"&gt;&lt;/speedlify-score&gt;
@@ -148,7 +163,7 @@ title: Embed
 	</div>
 </section>
 
-<section class="panel">
+<section class="panel" id="finding-data">
 	<h2>How it finds the data</h2>
 	<p class="muted small">
 		There is no index to download. The component slugifies the URL in the
