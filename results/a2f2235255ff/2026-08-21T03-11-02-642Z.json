@@ -1,0 +1,261 @@
+{
+  "url": "https://lyonspsychologicalservices.com/",
+  "name": "lyonspsychologicalservices.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787281862642,
+  "date": "2026-08-21T03:11:02.642Z",
+  "runId": "2026-08-21T03-02-06-663Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 28489,
+  "error": null,
+  "variance": {
+    "min": 60,
+    "max": 67,
+    "spread": 7,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://lyonspsychologicalservices.com/",
+    "finalUrl": "https://www.lyonspsychologicalservices.com/",
+    "redirect": {
+      "from": "https://lyonspsychologicalservices.com/",
+      "to": "https://www.lyonspsychologicalservices.com/",
+      "chain": [
+        {
+          "url": "https://lyonspsychologicalservices.com/",
+          "status": 301
+        },
+        {
+          "url": "https://www.lyonspsychologicalservices.com/",
+          "status": 200
+        }
+      ],
+      "statuses": [
+        301
+      ],
+      "change": "host",
+      "permanent": true,
+      "schemeUpgrade": false,
+      "hops": 1
+    },
+    "statusCode": "ok",
+    "scores": {
+      "performance": 66,
+      "accessibility": 90,
+      "best-practices": 96,
+      "seo": 100,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 3836,
+      "lcp": 23166,
+      "si": 3836,
+      "tbt": 0,
+      "tti": 24036,
+      "cls": 0.006,
+      "ttfb": 478,
+      "maxPotentialFid": 26,
+      "serverResponseTime": 13,
+      "networkRtt": 1,
+      "networkServerLatency": 42.9
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 27.5,
+      "resourceLoadDelay": 69.2,
+      "resourceLoadDuration": 107,
+      "elementRenderDelay": 214.2
+    },
+    "weight": {
+      "total": 5423461,
+      "requests": 52,
+      "mainDocument": 49565,
+      "byType": {
+        "total": {
+          "bytes": 5421467,
+          "requests": 50
+        },
+        "image": {
+          "bytes": 4997512,
+          "requests": 29
+        },
+        "font": {
+          "bytes": 309676,
+          "requests": 6
+        },
+        "document": {
+          "bytes": 49565,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 42058,
+          "requests": 6
+        },
+        "stylesheet": {
+          "bytes": 20305,
+          "requests": 4
+        },
+        "other": {
+          "bytes": 2351,
+          "requests": 4
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 368655,
+          "requests": 14
+        }
+      },
+      "scripts": 6,
+      "stylesheets": 4,
+      "fonts": 6
+    },
+    "thirdParty": {
+      "count": 5,
+      "bytes": 368389,
+      "mainThreadMs": 7.3,
+      "top": [
+        {
+          "entity": "Cloudflare CDN",
+          "bytes": 233008,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Google Fonts",
+          "bytes": 96973,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "JSDelivr CDN",
+          "bytes": 24130,
+          "mainThreadMs": 3.3
+        },
+        {
+          "entity": "Cloudflare",
+          "bytes": 11451,
+          "mainThreadMs": 3.5
+        },
+        {
+          "entity": "startbootstrap.com",
+          "bytes": 2827,
+          "mainThreadMs": 0.5
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1151.3,
+      "byGroup": {
+        "other": 649.4,
+        "styleLayout": 329.2,
+        "parseHTML": 73,
+        "scriptEvaluation": 61.6,
+        "paintCompositeRender": 28.8,
+        "scriptParseCompile": 9.3
+      },
+      "bootupMs": 34.4,
+      "longTasks": 3,
+      "longestTaskMs": 309
+    },
+    "dom": {
+      "elements": 496,
+      "depth": 14,
+      "maxChildren": 14
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 51657,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 7059,
+      "renderBlockingMs": 943,
+      "renderBlockingCount": 3,
+      "poorlyCachedBytes": 4901.404953703704,
+      "poorlyCachedCount": 2
+    },
+    "accessibility": {
+      "failingCount": 4,
+      "applicableCount": 23,
+      "failingNodes": 16,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 7
+        },
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "nodes": 7
+        },
+        {
+          "id": "skip-link",
+          "title": "Skip links are not focusable.",
+          "nodes": 1
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 760.9,
+      "consoleErrors": 2,
+      "baselineLimitedFeatures": 25
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2503,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T03:11:13.329Z",
+      "runtimeMs": 7366.2
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e67357fe09a0f2-SJC",
+      "server": "cloudflare"
+    },
+    "violations": 1,
+    "passes": 73,
+    "incomplete": 0,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "meta-refresh",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Delayed refresh under 20 hours must not be used"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

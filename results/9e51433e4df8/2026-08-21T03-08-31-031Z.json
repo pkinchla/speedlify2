@@ -1,0 +1,233 @@
+{
+  "url": "https://kushagra.dev/",
+  "name": "kushagra.dev",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787281711031,
+  "date": "2026-08-21T03:08:31.031Z",
+  "runId": "2026-08-21T03-02-06-663Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 23919,
+  "error": null,
+  "variance": {
+    "min": 80,
+    "max": 82,
+    "spread": 2,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://kushagra.dev/",
+    "finalUrl": "https://kushagra.dev/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 80,
+      "accessibility": 98,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 99
+    },
+    "timings": {
+      "fcp": 2306,
+      "lcp": 4514,
+      "si": 2306,
+      "tbt": 111,
+      "tti": 4514,
+      "cls": 0.058,
+      "ttfb": 464,
+      "maxPotentialFid": 112,
+      "serverResponseTime": 11,
+      "networkRtt": 0.3,
+      "networkServerLatency": 48.3
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 12.8,
+      "resourceLoadDelay": 10.4,
+      "resourceLoadDuration": 22.7,
+      "elementRenderDelay": 2063.5
+    },
+    "weight": {
+      "total": 423487,
+      "requests": 12,
+      "mainDocument": 4373,
+      "byType": {
+        "total": {
+          "bytes": 422208,
+          "requests": 11
+        },
+        "image": {
+          "bytes": 228627,
+          "requests": 2
+        },
+        "script": {
+          "bytes": 172066,
+          "requests": 3
+        },
+        "font": {
+          "bytes": 15702,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 4373,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 721,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 719,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 188760,
+          "requests": 7
+        }
+      },
+      "scripts": 3,
+      "stylesheets": 1,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 4,
+      "bytes": 188760,
+      "mainThreadMs": 60.8,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 157610,
+          "mainThreadMs": 54.3
+        },
+        {
+          "entity": "Google Fonts",
+          "bytes": 16423,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Cloudflare",
+          "bytes": 11451,
+          "mainThreadMs": 3.3
+        },
+        {
+          "entity": "ahrefs.com",
+          "bytes": 3276,
+          "mainThreadMs": 3.2
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 646,
+      "byGroup": {
+        "scriptEvaluation": 240.5,
+        "other": 208.8,
+        "styleLayout": 94.6,
+        "scriptParseCompile": 55.2,
+        "paintCompositeRender": 39.1,
+        "parseHTML": 7.9
+      },
+      "bootupMs": 279.1,
+      "longTasks": 2,
+      "longestTaskMs": 112
+    },
+    "dom": {
+      "elements": 36,
+      "depth": 7,
+      "maxChildren": 6
+    },
+    "waste": {
+      "unusedJsBytes": 70173,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 787,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 6623.8,
+      "poorlyCachedCount": 2
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 18,
+      "failingNodes": 2,
+      "failing": [
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "nodes": 1
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 13
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2473,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T03:08:47.424Z",
+      "runtimeMs": 6744.7
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "cf-ray": "a2e66f9438d87543-SJC",
+      "server": "cloudflare",
+      "x-nf-request-id": "01M0H4NY5APEJGAM108SM7NEPH"
+    },
+    "violations": 2,
+    "passes": 111,
+    "incomplete": 5,
+    "violationRules": 2,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should have one main landmark"
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "All page content should be contained by landmarks"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

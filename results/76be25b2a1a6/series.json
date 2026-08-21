@@ -1,0 +1,3 @@
+{"version":1,"url":"https://massaintremy.com/","updated":"2026-08-21T03:15:20.876Z","points":[
+{"t":1787282092751,"performance":77,"accessibility":84,"best-practices":100,"seo":100,"lcp":1462,"cls":0.65,"tbt":0,"fcp":1462,"si":1573,"ttfb":744,"total":1573446,"requests":23,"bytes":22571,"mainThreadMs":8.9,"unusedJsBytes":35049,"unusedCssBytes":18004,"mainThreadTotal":808.3,"longTasks":2,"elements":362,"failingCount":3,"failingNodes":22,"axeViolations":20,"axePasses":476,"bench":2492,"runs":3,"reqRuns":3,"ms":28124,"spread":1}
+]}
