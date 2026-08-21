@@ -1,0 +1,22 @@
+{
+  "url": "https://www.nicolas-birckel.fr/",
+  "name": "www.nicolas-birckel.fr",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787311947904,
+  "date": "2026-08-21T11:32:27.904Z",
+  "runId": "2026-08-21T11-24-39-475Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 0,
+  "durationMs": 19521,
+  "error": "TRACING_ALREADY_STARTED: An internal Chrome error occurred. Please restart Chrome and try re-running Lighthouse.",
+  "errors": [
+    "TRACING_ALREADY_STARTED: An internal Chrome error occurred. Please restart Chrome and try re-running Lighthouse.",
+    "TRACING_ALREADY_STARTED: An internal Chrome error occurred. Please restart Chrome and try re-running Lighthouse.",
+    "TRACING_ALREADY_STARTED: An internal Chrome error occurred. Please restart Chrome and try re-running Lighthouse."
+  ],
+  "field": null,
+  "axe": null,
+  "consecutiveFailures": 1
+}

@@ -1,0 +1,207 @@
+{
+  "url": "https://www.loganayliffe.com/",
+  "name": "www.loganayliffe.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787311670851,
+  "date": "2026-08-21T11:27:50.851Z",
+  "runId": "2026-08-21T11-24-39-475Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 21471,
+  "error": null,
+  "variance": {
+    "min": 100,
+    "max": 100,
+    "spread": 0,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.loganayliffe.com/",
+    "finalUrl": "https://www.loganayliffe.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 100,
+      "accessibility": 96,
+      "best-practices": 96,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 774,
+      "lcp": 1060,
+      "si": 774,
+      "tbt": 0,
+      "tti": 1060,
+      "cls": 0,
+      "ttfb": 610,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 13,
+      "networkRtt": 0,
+      "networkServerLatency": 10.5
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 14.5,
+      "resourceLoadDelay": 8.8,
+      "resourceLoadDuration": 22.5,
+      "elementRenderDelay": 29.7
+    },
+    "weight": {
+      "total": 41932,
+      "requests": 5,
+      "mainDocument": 1489,
+      "byType": {
+        "total": {
+          "bytes": 41932,
+          "requests": 5
+        },
+        "image": {
+          "bytes": 37464,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 1595,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 1489,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 1384,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "other": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 0,
+          "requests": 0
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 2,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 0,
+      "bytes": 0,
+      "mainThreadMs": 0,
+      "top": []
+    },
+    "mainThread": {
+      "total": 114.9,
+      "byGroup": {
+        "other": 71.1,
+        "styleLayout": 23.7,
+        "scriptEvaluation": 11.2,
+        "parseHTML": 4.9,
+        "paintCompositeRender": 3.5,
+        "scriptParseCompile": 0.6
+      },
+      "bootupMs": 6.3,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 35,
+      "depth": 6,
+      "maxChildren": 7
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 21,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "html-has-lang",
+          "title": "`<html>` element does not have a `[lang]` attribute",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 5
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2293.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T11:27:59.673Z",
+      "runtimeMs": 5774.2
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": null,
+      "source": "meta",
+      "raw": "eleventy"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0J1852QA09NA1TQQ7Q8W6N7"
+    },
+    "violations": 1,
+    "passes": 123,
+    "incomplete": 0,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "html-has-lang",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "<html> element must have a lang attribute"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
