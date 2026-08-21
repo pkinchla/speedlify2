@@ -1,0 +1,212 @@
+{
+  "url": "https://realdx.online/",
+  "name": "realdx.online",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787295162165,
+  "date": "2026-08-21T06:52:42.165Z",
+  "runId": "2026-08-21T06-43-54-941Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 32340,
+  "error": null,
+  "variance": {
+    "min": 78,
+    "max": 85,
+    "spread": 7,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://realdx.online/",
+    "finalUrl": "https://realdx.online/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 85,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 40
+    },
+    "timings": {
+      "fcp": 2671,
+      "lcp": 2671,
+      "si": 4377,
+      "tbt": 0,
+      "tti": 2671,
+      "cls": 0.137,
+      "ttfb": 604,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 4,
+      "networkRtt": 0.1,
+      "networkServerLatency": 266.3
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 5.5,
+      "resourceLoadDelay": 10.3,
+      "resourceLoadDuration": 6.7,
+      "elementRenderDelay": 2335.5
+    },
+    "weight": {
+      "total": 211090,
+      "requests": 10,
+      "mainDocument": 6170,
+      "byType": {
+        "total": {
+          "bytes": 211090,
+          "requests": 9
+        },
+        "font": {
+          "bytes": 132289,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 48213,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 22405,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 6170,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 2013,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "other": {
+          "bytes": 0,
+          "requests": 1
+        },
+        "third-party": {
+          "bytes": 155308,
+          "requests": 4
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 1,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 155333,
+      "mainThreadMs": 0.8,
+      "top": [
+        {
+          "entity": "chrisburnell.com",
+          "bytes": 154694,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "neatstats.net",
+          "bytes": 639,
+          "mainThreadMs": 0.8
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 519.6,
+      "byGroup": {
+        "styleLayout": 313.5,
+        "other": 124.6,
+        "paintCompositeRender": 32.4,
+        "parseHTML": 24.6,
+        "scriptEvaluation": 22.7,
+        "scriptParseCompile": 1.7
+      },
+      "bootupMs": 18.8,
+      "longTasks": 1,
+      "longestTaskMs": 140
+    },
+    "dom": {
+      "elements": 543,
+      "depth": 12,
+      "maxChildren": 20
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 1166,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 14953.2,
+      "poorlyCachedCount": 2
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 26,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 59
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2446.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T06:53:03.458Z",
+      "runtimeMs": 9522.4
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "3.1.0",
+      "source": "meta",
+      "raw": "Eleventy v3.1.0"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0HHGNE6TB7HC9K6YG9N6D9G"
+    },
+    "violations": 1,
+    "passes": 874,
+    "incomplete": 9,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "aria-allowed-role",
+        "impact": "minor",
+        "nodes": 1,
+        "help": "ARIA role should be appropriate for the element"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
