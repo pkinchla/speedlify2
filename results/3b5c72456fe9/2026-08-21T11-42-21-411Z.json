@@ -1,0 +1,205 @@
+{
+  "url": "https://www.dofd.info/",
+  "name": "www.dofd.info",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787312541411,
+  "date": "2026-08-21T11:42:21.411Z",
+  "runId": "2026-08-21T11-24-42-014Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 25733,
+  "error": null,
+  "variance": {
+    "min": 77,
+    "max": 98,
+    "spread": 21,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.dofd.info/",
+    "finalUrl": "https://www.dofd.info/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1713,
+      "lcp": 2126,
+      "si": 1713,
+      "tbt": 0,
+      "tti": 2126,
+      "cls": 0,
+      "ttfb": 463,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 12,
+      "networkRtt": 0.2,
+      "networkServerLatency": 32.9
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 14.1,
+      "resourceLoadDelay": 11.4,
+      "resourceLoadDuration": 20,
+      "elementRenderDelay": 47.1
+    },
+    "weight": {
+      "total": 414324,
+      "requests": 12,
+      "mainDocument": 5597,
+      "byType": {
+        "total": {
+          "bytes": 411404,
+          "requests": 11
+        },
+        "font": {
+          "bytes": 278214,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 52396,
+          "requests": 3
+        },
+        "image": {
+          "bytes": 38684,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 36064,
+          "requests": 3
+        },
+        "document": {
+          "bytes": 5597,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 449,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 312691,
+          "requests": 4
+        }
+      },
+      "scripts": 3,
+      "stylesheets": 3,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 312691,
+      "mainThreadMs": 3.1,
+      "top": [
+        {
+          "entity": "Cloudflare CDN",
+          "bytes": 301240,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Cloudflare",
+          "bytes": 11451,
+          "mainThreadMs": 3.1
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 328.6,
+      "byGroup": {
+        "other": 137.7,
+        "styleLayout": 80.9,
+        "scriptEvaluation": 49.1,
+        "parseHTML": 34.1,
+        "paintCompositeRender": 15.2,
+        "scriptParseCompile": 11.6
+      },
+      "bootupMs": 20.6,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 139,
+      "depth": 8,
+      "maxChildren": 46
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 48698,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 926,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 4893.003618055556,
+      "poorlyCachedCount": 2
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 16,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 16
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2130,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T11:42:38.033Z",
+      "runtimeMs": 6331.3
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e960444e299ddb-SJC",
+      "server": "cloudflare"
+    },
+    "violations": 1,
+    "passes": 69,
+    "incomplete": 0,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "meta-refresh",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Delayed refresh under 20 hours must not be used"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

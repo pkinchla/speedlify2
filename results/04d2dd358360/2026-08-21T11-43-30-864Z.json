@@ -1,0 +1,218 @@
+{
+  "url": "https://www.faustotasca.com/",
+  "name": "www.faustotasca.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787312610864,
+  "date": "2026-08-21T11:43:30.864Z",
+  "runId": "2026-08-21T11-24-42-014Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 22095,
+  "error": null,
+  "variance": {
+    "min": 62,
+    "max": 86,
+    "spread": 24,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.faustotasca.com/",
+    "finalUrl": "https://www.faustotasca.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 86,
+      "accessibility": 91,
+      "best-practices": 96,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 2427,
+      "lcp": 3753,
+      "si": 2427,
+      "tbt": 0,
+      "tti": 3753,
+      "cls": 0.013,
+      "ttfb": 603,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 5,
+      "networkRtt": 0.1,
+      "networkServerLatency": 58.2
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 6.2,
+      "resourceLoadDelay": 9.9,
+      "resourceLoadDuration": 14.4,
+      "elementRenderDelay": 39.8
+    },
+    "weight": {
+      "total": 398440,
+      "requests": 9,
+      "mainDocument": 2043,
+      "byType": {
+        "total": {
+          "bytes": 398440,
+          "requests": 9
+        },
+        "image": {
+          "bytes": 371339,
+          "requests": 2
+        },
+        "font": {
+          "bytes": 15503,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 3957,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 2867,
+          "requests": 2
+        },
+        "script": {
+          "bytes": 2731,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 2043,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 19627,
+          "requests": 4
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 2,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 19627,
+      "mainThreadMs": 2.3,
+      "top": [
+        {
+          "entity": "Google Fonts",
+          "bytes": 16462,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Fathom Analytics",
+          "bytes": 3165,
+          "mainThreadMs": 2.3
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 166.9,
+      "byGroup": {
+        "other": 107.1,
+        "styleLayout": 29.9,
+        "scriptEvaluation": 16.9,
+        "paintCompositeRender": 6.2,
+        "parseHTML": 5.2,
+        "scriptParseCompile": 1.7
+      },
+      "bootupMs": 7,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 55,
+      "depth": 7,
+      "maxChildren": 12
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 772,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 11,
+      "failingNodes": 9,
+      "failing": [
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "nodes": 9
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 3
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2497,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T11:43:39.938Z",
+      "runtimeMs": 5842
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "2.0.1",
+      "source": "meta",
+      "raw": "Eleventy v2.0.1"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0J24VP8GXR1ZQCC8DX4STR0"
+    },
+    "violations": 9,
+    "passes": 83,
+    "incomplete": 0,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "link-in-text-block",
+        "impact": "serious",
+        "nodes": 9,
+        "help": "Links must be distinguishable without relying on color"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

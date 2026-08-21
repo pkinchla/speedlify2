@@ -1,0 +1,3 @@
+{"version":1,"url":"https://www.gregorsmith.org/","updated":"2026-08-21T11:47:20.187Z","points":[
+{"t":1787312817917,"performance":88,"accessibility":94,"best-practices":100,"seo":100,"lcp":1849,"cls":0.238,"tbt":0,"fcp":949,"si":949,"ttfb":649,"total":848857,"requests":7,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":13432,"mainThreadTotal":187.4,"longTasks":0,"elements":181,"failingCount":2,"failingNodes":13,"axeViolations":13,"axePasses":362,"bench":2345.5,"runs":3,"reqRuns":3,"ms":22269,"spread":0}
+]}

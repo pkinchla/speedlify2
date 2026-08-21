@@ -1,0 +1,283 @@
+{
+  "url": "https://www.digitalocean.com/",
+  "name": "DigitalOcean",
+  "group": "hosts",
+  "groupName": "Web Hosts",
+  "timestamp": 1787312229031,
+  "date": "2026-08-21T11:37:09.031Z",
+  "runId": "2026-08-21T11-24-42-014Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 309377,
+  "error": null,
+  "variance": {
+    "min": 47,
+    "max": 58,
+    "spread": 11,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.digitalocean.com/",
+    "finalUrl": "https://www.digitalocean.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 57,
+      "accessibility": 95,
+      "best-practices": 92,
+      "seo": 92,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1063,
+      "lcp": 3913,
+      "si": 5436,
+      "tbt": 1697,
+      "tti": 17354,
+      "cls": 0,
+      "ttfb": 613,
+      "maxPotentialFid": 313,
+      "serverResponseTime": 18,
+      "networkRtt": 3.4,
+      "networkServerLatency": 248.8
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 20,
+      "resourceLoadDelay": 19.4,
+      "resourceLoadDuration": 43.4,
+      "elementRenderDelay": 76.4
+    },
+    "weight": {
+      "total": 2676648,
+      "requests": 168,
+      "mainDocument": 40374,
+      "byType": {
+        "total": {
+          "bytes": 2676649,
+          "requests": 167
+        },
+        "script": {
+          "bytes": 1619058,
+          "requests": 67
+        },
+        "image": {
+          "bytes": 580394,
+          "requests": 19
+        },
+        "font": {
+          "bytes": 371755,
+          "requests": 5
+        },
+        "other": {
+          "bytes": 49026,
+          "requests": 70
+        },
+        "document": {
+          "bytes": 41195,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 15221,
+          "requests": 4
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 993542,
+          "requests": 44
+        }
+      },
+      "scripts": 68,
+      "stylesheets": 4,
+      "fonts": 5
+    },
+    "thirdParty": {
+      "count": 8,
+      "bytes": 991776,
+      "mainThreadMs": 371.4,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 384433,
+          "mainThreadMs": 187.9
+        },
+        {
+          "entity": "TrustArc",
+          "bytes": 301503,
+          "mainThreadMs": 21.4
+        },
+        {
+          "entity": "Amplitude Mobile Analytics",
+          "bytes": 175113,
+          "mainThreadMs": 68.4
+        },
+        {
+          "entity": "vector.co",
+          "bytes": 68849,
+          "mainThreadMs": 29.7
+        },
+        {
+          "entity": "adn.cloud",
+          "bytes": 45702,
+          "mainThreadMs": 48.7
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 26726.1,
+      "byGroup": {
+        "scriptEvaluation": 23024.1,
+        "other": 1892.2,
+        "scriptParseCompile": 741.2,
+        "styleLayout": 490.1,
+        "garbageCollection": 330,
+        "paintCompositeRender": 158.4,
+        "parseHTML": 90.2
+      },
+      "bootupMs": 23190.1,
+      "longTasks": 20,
+      "longestTaskMs": 313
+    },
+    "dom": {
+      "elements": 1487,
+      "depth": 22,
+      "maxChildren": 30
+    },
+    "waste": {
+      "unusedJsBytes": 636839,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 76631,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 150,
+      "renderBlockingCount": 3,
+      "poorlyCachedBytes": 560540.6566666667,
+      "poorlyCachedCount": 24
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 32,
+      "failingNodes": 2,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 3,
+      "baselineLimitedFeatures": 51
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2498.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T11:38:11.981Z",
+      "runtimeMs": 61035.7
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-23",
+      "last": "2026-08-19"
+    },
+    "metrics": {
+      "rtt": {
+        "p75": 198,
+        "rating": null,
+        "distribution": {
+          "good": 24.2,
+          "needsImprovement": 61.9,
+          "poor": 13.9
+        }
+      },
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 95.9,
+          "needsImprovement": 3,
+          "poor": 1.1
+        }
+      },
+      "ttfb": {
+        "p75": 1024,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 64.7,
+          "needsImprovement": 25,
+          "poor": 10.2
+        }
+      },
+      "fcp": {
+        "p75": 1925,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 72.2,
+          "needsImprovement": 17.1,
+          "poor": 10.7
+        }
+      },
+      "inp": {
+        "p75": 199,
+        "rating": "good",
+        "distribution": {
+          "good": 75.5,
+          "needsImprovement": 18.9,
+          "poor": 5.5
+        }
+      },
+      "lcp": {
+        "p75": 2050,
+        "rating": "good",
+        "distribution": {
+          "good": 82.9,
+          "needsImprovement": 10.3,
+          "poor": 6.8
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": null,
+    "host": null,
+    "headers": {},
+    "violations": null,
+    "passes": null,
+    "incomplete": null,
+    "violationRules": null,
+    "version": null,
+    "top": [],
+    "error": "Navigation timeout of 120000 ms exceeded"
+  },
+  "consecutiveFailures": 0
+}

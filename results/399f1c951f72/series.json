@@ -1,0 +1,3 @@
+{"version":1,"url":"https://www.digitalocean.com/","updated":"2026-08-21T11:42:18.409Z","points":[
+{"t":1787312229031,"performance":57,"accessibility":95,"best-practices":92,"seo":92,"lcp":3913,"cls":0,"tbt":1697,"fcp":1063,"si":5436,"ttfb":613,"total":2676648,"requests":168,"bytes":991776,"mainThreadMs":371.4,"unusedJsBytes":636839,"unusedCssBytes":0,"mainThreadTotal":26726.1,"longTasks":20,"elements":1487,"failingCount":2,"failingNodes":2,"field-lcp":2050,"field-inp":199,"field-cls":0,"field-fcp":1925,"field-ttfb":1024,"bench":2498.5,"runs":3,"reqRuns":3,"ms":309377,"spread":11}
+]}

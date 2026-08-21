@@ -1,0 +1,3 @@
+{"version":1,"url":"https://www.cloudflare.com/","updated":"2026-08-21T11:36:25.180Z","points":[
+{"t":1787311875579,"performance":68,"accessibility":96,"best-practices":77,"seo":92,"lcp":3063,"cls":0,"tbt":975,"fcp":2688,"si":2688,"ttfb":481,"total":2552739,"requests":174,"bytes":248632,"mainThreadMs":65.1,"unusedJsBytes":893561,"unusedCssBytes":0,"mainThreadTotal":38241.1,"longTasks":20,"elements":3003,"failingCount":1,"failingNodes":8,"field-lcp":2484,"field-inp":277,"field-cls":0,"field-fcp":1884,"field-ttfb":524,"bench":2467,"runs":3,"reqRuns":3,"ms":309599,"spread":4}
+]}

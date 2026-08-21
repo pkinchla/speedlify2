@@ -1,0 +1,3 @@
+{"version":1,"url":"https://www.ciccarello.me/","updated":"2026-08-21T11:31:15.578Z","points":[
+{"t":1787311852353,"performance":84,"accessibility":100,"best-practices":100,"seo":100,"lcp":4544,"cls":0,"tbt":0,"fcp":904,"si":904,"ttfb":604,"total":728014,"requests":11,"bytes":458383,"mainThreadMs":7.5,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":257.5,"longTasks":0,"elements":291,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":730,"bench":2479,"runs":3,"reqRuns":3,"ms":23224,"spread":5}
+]}
