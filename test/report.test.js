@@ -5,6 +5,7 @@ import os from "node:os";
 import path from "node:path";
 
 import { buildReport, REPORT_VERSION } from "../lib/report.js";
+import { shortHash } from "../lib/hash.js";
 import { ResultStore } from "../lib/store.js";
 
 /**
@@ -735,25 +736,32 @@ describe("legacy API filenames", () => {
 	/**
 	 * The compatibility route is a contract with pages we do not control: a
 	 * deployed <speedlify-score> hardcodes this hash in its markup. The original
-	 * project hashed the URL exactly as its config wrote it, with no
-	 * normalizing, so our normalized form is the wrong filename for any URL
-	 * whose path we changed — which is every deeper path with a trailing slash.
+	 * hashed the URL exactly as its config wrote it, with no normalizing, so our
+	 * normalized form is the wrong filename for any deeper path.
 	 *
 	 * Checked against the live original: https://www.zachleat.com/about/ is
 	 * served as 803cb8c3.json there, and 6bd2054c.json — our normalized hash —
 	 * is a 404 there.
 	 */
-	test("emits both forms for a path we normalize", async () => {
+	test("keys a normalized path the way the original spelled it", async () => {
 		const f = fixture({ url: () => "https://www.zachleat.com/about/" });
 		const r = await buildReport({ resultsDir: f.resultsDir, configFile: f.configFile });
 		const entry = r.entries[0];
 
 		assert.equal(entry.url, "https://www.zachleat.com/about", "stored normalized");
-		assert.deepEqual(entry.compatHashes, ["6bd2054c", "803cb8c3"]);
-		assert.ok(
-			entry.compatHashes.includes("803cb8c3"),
-			"the filename the original serves must be one of ours",
-		);
+		assert.deepEqual(entry.compatUrls, [
+			{ url: "https://www.zachleat.com/about/", hash: "803cb8c3" },
+		]);
+	});
+
+	test("publishes nothing for a URL the original never had", async () => {
+		// The routes exist for embeds deployed against that instance. A URL it
+		// never served has no such embed, so a file for it is one nothing asks for.
+		const f = fixture({ url: () => "https://not-in-the-snapshot.example/" });
+		const r = await buildReport({ resultsDir: f.resultsDir, configFile: f.configFile });
+
+		assert.deepEqual(r.entries[0].compatUrls, []);
+		assert.deepEqual(r.compatRoutes, []);
 	});
 
 	test("emits one form for a root URL, which we do not normalize", async () => {
@@ -761,20 +769,35 @@ describe("legacy API filenames", () => {
 		const r = await buildReport({ resultsDir: f.resultsDir, configFile: f.configFile });
 
 		// The value published in the component's own README.
-		assert.deepEqual(r.entries[0].compatHashes, ["bbfa43c1"]);
+		assert.deepEqual(r.entries[0].compatUrls, [
+			{ url: "https://www.zachleat.com/", hash: "bbfa43c1" },
+		]);
 	});
 
 	test("every route gets a distinct filename", async () => {
-		const f = fixture({ sites: 3, url: (i) => `https://site${i}.example/deep/path/` });
+		const urls = ["https://astro.build/", "https://docusaurus.io/", "https://eslint.org/"];
+		const f = fixture({ sites: 3, url: (i) => urls[i] });
 		const r = await buildReport({ resultsDir: f.resultsDir, configFile: f.configFile });
 
 		const names = r.compatRoutes.map((route) => route.hash);
-		assert.equal(names.length, 6, "two forms for each of three sites");
+		assert.equal(names.length, 3);
 		assert.equal(new Set(names).size, names.length, "a collision would overwrite a file");
 	});
 
+	test("the index and the files are the same list", async () => {
+		// Both are generated from compatRoutes, and this is the property that
+		// makes that worth doing: a key naming a file we never wrote is a 404.
+		const f = fixture({ url: () => "https://astro.build/" });
+		const r = await buildReport({ resultsDir: f.resultsDir, configFile: f.configFile });
+
+		for (let route of r.compatRoutes) {
+			assert.ok(route.url, "every route carries the spelling it is keyed by");
+			assert.equal(route.hash, shortHash(route.url));
+		}
+	});
+
 	test("carries the four scores the component renders", async () => {
-		const f = fixture({ url: () => "https://example.com/" });
+		const f = fixture({ url: () => "https://astro.build/" });
 		const r = await buildReport({ resultsDir: f.resultsDir, configFile: f.configFile });
 
 		assert.deepEqual(Object.keys(r.compatRoutes[0].lighthouse).sort(), [
@@ -788,7 +811,7 @@ describe("legacy API filenames", () => {
 	 * `parseInt(value * 100, 10)`. Our 0–100 number displayed as 10000.
 	 */
 	test("emits scores on the 0-1 scale the old component expects", async () => {
-		const f = fixture({ performance: () => 100, url: () => "https://example.com/" });
+		const f = fixture({ performance: () => 100, url: () => "https://astro.build/" });
 		const r = await buildReport({ resultsDir: f.resultsDir, configFile: f.configFile });
 		const { lighthouse } = r.compatRoutes[0];
 

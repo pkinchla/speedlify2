@@ -13,12 +13,20 @@ eleventyExcludeFromCollections: true
   else is emitted. The original also carries requestedUrl, url, categories and
   vertical here — absent, because no consumer fails without them.
 
+  Only the URLs the original instance published, from the frozen snapshot in
+  config/legacy-api-urls.json — not our own site list. An embed can only exist
+  for a URL that instance served, so those are the only keys worth having;
+  adding our 1,600 would be 1,600 entries nothing looks up.
+
   Keyed by the URL as a bare string. The lookup is `json[url]` with no
-  normalization at all, so a key only matches an embed that spells the URL
-  exactly this way.
+  normalization at all, so the key has to be spelled the way the original spelled
+  it — `https://example.com/about/`, where we store the slash stripped.
+
+  Built from the same `compatRoutes` list as the per-hash files, so the index
+  cannot name a hash that was never written.
 -#}
 {
-{%- for entry in sites.entries %}
-  {{ entry.url | dump | safe }}: { "hash": {{ entry.shortHash | dump | safe }} }{{ "," if not loop.last }}
+{%- for route in sites.compatRoutes %}
+  {{ route.url | dump | safe }}: { "hash": {{ route.hash | dump | safe }} }{{ "," if not loop.last }}
 {%- endfor %}
 }

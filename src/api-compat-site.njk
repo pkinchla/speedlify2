@@ -22,9 +22,10 @@ eleventyExcludeFromCollections: true
   Sites with no successful measurement emit an empty object: the component
   reads through optional chaining, so it draws nothing instead of erroring.
 
-  Paginated over `compatRoutes` rather than over entries, because one site can
-  answer to more than one of these filenames: the hash is computed over the URL
-  as a config wrote it, and a trailing slash we normalize away changes it.
+  Paginated over `compatRoutes` rather than over entries, because this is not
+  one file per site: only the URLs the original instance published get one, from
+  the frozen snapshot in config/legacy-api-urls.json. The hash is computed over
+  the URL as that config wrote it, trailing slash and all.
 -#}
 {% if route.lighthouse -%}
 {
