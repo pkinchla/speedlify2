@@ -38,6 +38,23 @@ eleventyComputed:
 	<div class="detail-head-text">
 	<h2 class="page-hed">{{ entry.displayUrl }}</h2>
 	<p class="detail-url"><a href="{{ entry.url }}">{{ entry.url }}</a></p>
+	{#
+		The same six rings the leaderboard shows for this row, so arriving from a
+		table lands on the figures you clicked. Only the header summary — the
+		Scores section below carries the trends and deltas, which is what you came
+		to a detail page for.
+	#}
+	{% if entry.latest %}
+	<div class="detail-rings">
+		<span class="rings">
+			{% for score in metrics.SCORES %}
+			{% scoreRing entry.latest.lab.scores[score.key], score.label %}
+			{% endfor %}
+			{% cwvRing entry.cwvFailures, entry.cwv.assessed %}
+			{% axeRing entry.axe %}
+		</span>
+	</div>
+	{% endif %}
 	<p class="data-age {{ 'stale-age' if entry.dataStale }}">
 		{% if entry.latest %}
 			Data from {{ entry.latest.date | date("long") }} — <strong>{{ entry.latest.date | since }} old</strong>

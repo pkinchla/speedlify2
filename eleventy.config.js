@@ -52,6 +52,7 @@ const FONT_AWESOME_ICONS = {
 	Eleventy: "eleventy",
 	Forgejo: "forgejo",
 	Github: "github",
+	Obsidian: "obsidian",
 	Squarespace: "squarespace",
 	Svelte: "svelte",
 	Vuedotjs: "vuejs",

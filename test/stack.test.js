@@ -72,6 +72,9 @@ describe("generator detection", () => {
 		// script[src^='/_next/'] and script[src^='/_nuxt/'] — so do we.
 		assert.equal(detectGenerator({ meta: null, marks: ["next"] })?.name, "Next.js");
 		assert.equal(detectGenerator({ meta: null, marks: ["nuxt"] })?.name, "Nuxt");
+		// Obsidian Publish serves a two-kilobyte loader shell with no generator
+		// tag at all, so the DOM mark is the only route to detecting it.
+		assert.equal(detectGenerator({ meta: null, marks: ["obsidian-publish"] })?.name, "Obsidian Publish");
 	});
 
 	test("pageProbe collects the build-output marks", () => {
@@ -295,5 +298,40 @@ describe("local brand marks", () => {
 		}
 
 		assert.ok(available.has("BuildAwesome"), "Build Awesome has no mark in simple-icons");
+	});
+});
+
+describe("Obsidian Publish", () => {
+	/**
+	 * The probe's own selectors, checked against the markup the product actually
+	 * serves — captured from https://jonwebb.dev/Home, which is a custom domain
+	 * in front of publish.obsidian.md.
+	 *
+	 * There is no generator tag and no framework marker; the page is a loader
+	 * shell. The `<base>` is the durable tell, because every relative URL on the
+	 * page resolves against it and the product breaks without it.
+	 */
+	const BASE = `<base href="https://publish.obsidian.md">`;
+
+	test("matches the base element the product cannot drop", () => {
+		assert.match(BASE, /base[^>]*href=["'][^"']*publish\.obsidian\.md/);
+	});
+
+	test("matches a publish host in siteInfo", () => {
+		const host = "publish-01.obsidian.md";
+		assert.equal(/(^|\.)obsidian\.md$/.test(host), true);
+	});
+
+	test("does not match a site that merely links to obsidian.md", () => {
+		// The word appears on plenty of pages that write about the app.
+		assert.equal(/(^|\.)obsidian\.md$/.test("notobsidian.md.example.com"), false);
+		assert.equal(/(^|\.)obsidian\.md$/.test("example.com"), false);
+	});
+
+	test("a generator tag still wins over the mark", () => {
+		// The mark is a fallback for pages that say nothing. Anything that names
+		// itself outranks a fingerprint.
+		const found = detectGenerator({ meta: "Eleventy v3.0.0", marks: ["obsidian-publish"] });
+		assert.equal(found.id, "eleventy");
 	});
 });
