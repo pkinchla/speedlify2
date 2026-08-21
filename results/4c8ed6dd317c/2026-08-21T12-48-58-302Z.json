@@ -1,0 +1,223 @@
+{
+  "url": "https://www.kajrietberg.nl/",
+  "name": "www.kajrietberg.nl",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787316538302,
+  "date": "2026-08-21T12:48:58.302Z",
+  "runId": "2026-08-21T12-43-45-226Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 22410,
+  "error": null,
+  "variance": {
+    "min": 78,
+    "max": 92,
+    "spread": 14,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.kajrietberg.nl/",
+    "finalUrl": "https://www.kajrietberg.nl/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 85,
+      "accessibility": 86,
+      "best-practices": 100,
+      "seo": 82,
+      "agentic-browsing": 36
+    },
+    "timings": {
+      "fcp": 2637,
+      "lcp": 2637,
+      "si": 2637,
+      "tbt": 0,
+      "tti": 2637,
+      "cls": 0.167,
+      "ttfb": 621,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 21,
+      "networkRtt": 0.4,
+      "networkServerLatency": 44.5
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 22.4,
+      "resourceLoadDelay": 9.1,
+      "resourceLoadDuration": 46.9,
+      "elementRenderDelay": 35.9
+    },
+    "weight": {
+      "total": 84774,
+      "requests": 10,
+      "mainDocument": 4215,
+      "byType": {
+        "total": {
+          "bytes": 84774,
+          "requests": 10
+        },
+        "font": {
+          "bytes": 52495,
+          "requests": 3
+        },
+        "image": {
+          "bytes": 24786,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 4215,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 3205,
+          "requests": 3
+        },
+        "script": {
+          "bytes": 73,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "other": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 53578,
+          "requests": 5
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 3,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 53578,
+      "mainThreadMs": 0,
+      "top": [
+        {
+          "entity": "Google Fonts",
+          "bytes": 53578,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 195.8,
+      "byGroup": {
+        "other": 89.4,
+        "styleLayout": 66.9,
+        "paintCompositeRender": 15.8,
+        "parseHTML": 13.1,
+        "scriptEvaluation": 9.6,
+        "scriptParseCompile": 1
+      },
+      "bootupMs": 7.9,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 126,
+      "depth": 8,
+      "maxChildren": 12
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 946,
+      "renderBlockingCount": 3,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 17,
+      "failingNodes": 2,
+      "failing": [
+        {
+          "id": "image-alt",
+          "title": "Image elements do not have `[alt]` attributes",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 2
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2461,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T12:49:13.722Z",
+      "runtimeMs": 6056.9
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0J5WQK7EDXV3DF69RG0QEX1"
+    },
+    "violations": 3,
+    "passes": 294,
+    "incomplete": 12,
+    "violationRules": 3,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "image-alt",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Images must have alternative text"
+      },
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Links must have discernible text"
+      },
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Page should contain a level-one heading"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

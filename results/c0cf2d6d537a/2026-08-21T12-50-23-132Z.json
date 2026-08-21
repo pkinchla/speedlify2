@@ -1,0 +1,297 @@
+{
+  "url": "https://www.lhemingway.com/",
+  "name": "www.lhemingway.com",
+  "group": "11ty-emeritus",
+  "groupName": "11ty Emeritus",
+  "timestamp": 1787316623132,
+  "date": "2026-08-21T12:50:23.132Z",
+  "runId": "2026-08-21T12-43-45-226Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 54591,
+  "error": null,
+  "variance": {
+    "min": 72,
+    "max": 76,
+    "spread": 4,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.lhemingway.com/",
+    "finalUrl": "https://www.lhemingway.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 76,
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 100,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 1788,
+      "lcp": 5960,
+      "si": 3336,
+      "tbt": 3,
+      "tti": 7090,
+      "cls": 0,
+      "ttfb": 880,
+      "maxPotentialFid": 55,
+      "serverResponseTime": 878,
+      "networkRtt": 0.8,
+      "networkServerLatency": 618.6
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 879.8,
+      "resourceLoadDelay": 134.8,
+      "resourceLoadDuration": 188.5,
+      "elementRenderDelay": 41
+    },
+    "weight": {
+      "total": 6229504,
+      "requests": 64,
+      "mainDocument": 33870,
+      "byType": {
+        "total": {
+          "bytes": 6229505,
+          "requests": 56
+        },
+        "media": {
+          "bytes": 4739279,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 844861,
+          "requests": 15
+        },
+        "script": {
+          "bytes": 519091,
+          "requests": 23
+        },
+        "font": {
+          "bytes": 67484,
+          "requests": 3
+        },
+        "document": {
+          "bytes": 34908,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 22706,
+          "requests": 9
+        },
+        "other": {
+          "bytes": 1176,
+          "requests": 3
+        },
+        "third-party": {
+          "bytes": 1112043,
+          "requests": 39
+        }
+      },
+      "scripts": 24,
+      "stylesheets": 9,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 4,
+      "bytes": 676277,
+      "mainThreadMs": 22.5,
+      "top": [
+        {
+          "entity": "WordPress",
+          "bytes": 583346,
+          "mainThreadMs": 14.7
+        },
+        {
+          "entity": "Google Fonts",
+          "bytes": 68487,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "trustindex.io",
+          "bytes": 22510,
+          "mainThreadMs": 6.5
+        },
+        {
+          "entity": "WordPress Site Stats",
+          "bytes": 1934,
+          "mainThreadMs": 1.3
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1061.1,
+      "byGroup": {
+        "other": 435.1,
+        "styleLayout": 247.9,
+        "scriptEvaluation": 189.3,
+        "parseHTML": 65,
+        "paintCompositeRender": 54.9,
+        "scriptParseCompile": 43,
+        "garbageCollection": 25.9
+      },
+      "bootupMs": 111.3,
+      "longTasks": 1,
+      "longestTaskMs": 55
+    },
+    "dom": {
+      "elements": 305,
+      "depth": 17,
+      "maxChildren": 30
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 10708,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 942,
+      "renderBlockingCount": 9,
+      "poorlyCachedBytes": 332657.8812499999,
+      "poorlyCachedCount": 19
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 27,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 34
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2487.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T12:50:49.413Z",
+      "runtimeMs": 11179.6
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-23",
+      "last": "2026-08-19"
+    },
+    "metrics": {
+      "rtt": {
+        "p75": 120,
+        "rating": null,
+        "distribution": {
+          "good": 52.3,
+          "needsImprovement": 35.4,
+          "poor": 12.3
+        }
+      },
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 86.4,
+          "needsImprovement": 11.6,
+          "poor": 2
+        }
+      },
+      "ttfb": {
+        "p75": 1570,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 16,
+          "needsImprovement": 68,
+          "poor": 16
+        }
+      },
+      "fcp": {
+        "p75": 1780,
+        "rating": "good",
+        "distribution": {
+          "good": 76.1,
+          "needsImprovement": 17.9,
+          "poor": 6
+        }
+      },
+      "inp": {
+        "p75": 89,
+        "rating": "good",
+        "distribution": {
+          "good": 98,
+          "needsImprovement": 1.5,
+          "poor": 0.5
+        }
+      },
+      "lcp": {
+        "p75": 2067,
+        "rating": "good",
+        "distribution": {
+          "good": 83.9,
+          "needsImprovement": 9.5,
+          "poor": 6.6
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": {
+      "id": "wordpress",
+      "name": "WordPress",
+      "icon": "Wordpress",
+      "version": "7.1",
+      "source": "meta",
+      "raw": "WordPress 7.1"
+    },
+    "host": {
+      "id": "self-hosted",
+      "name": "Self-hosted",
+      "icon": null,
+      "detail": "Apache",
+      "detailIcon": "Apache",
+      "source": "server"
+    },
+    "headers": {
+      "server": "Apache",
+      "x-powered-by": "PHP/8.2"
+    },
+    "violations": 3,
+    "passes": 650,
+    "incomplete": 2,
+    "violationRules": 2,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "aria-allowed-role",
+        "impact": "minor",
+        "nodes": 2,
+        "help": "ARIA role should be appropriate for the element"
+      },
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Page should contain a level-one heading"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
