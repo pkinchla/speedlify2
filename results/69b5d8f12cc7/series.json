@@ -1,0 +1,3 @@
+{"version":1,"url":"https://www.sobolewski.cz/en","updated":"2026-08-21T13:55:50.033Z","points":[
+{"t":1787320520293,"to":"https://www.sobolewski.cz/en/index.html","perm":1,"performance":75,"accessibility":100,"best-practices":100,"seo":100,"lcp":4617,"cls":0,"tbt":22,"fcp":3642,"si":3642,"ttfb":640,"total":2429499,"requests":28,"bytes":342141,"mainThreadMs":13.7,"unusedJsBytes":0,"unusedCssBytes":13864,"mainThreadTotal":755.1,"longTasks":2,"elements":378,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":382,"bench":2490,"runs":3,"reqRuns":3,"ms":29739,"spread":8}
+]}

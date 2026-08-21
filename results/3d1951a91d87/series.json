@@ -1,0 +1,3 @@
+{"version":1,"url":"https://www.netlify.com/","updated":"2026-08-21T13:47:05.062Z","points":[
+{"t":1787319974941,"performance":53,"accessibility":97,"best-practices":77,"seo":92,"lcp":4113,"cls":0.002,"tbt":2396,"fcp":2574,"si":3444,"ttfb":609,"total":2545707,"requests":134,"bytes":1578854,"mainThreadMs":816.5,"unusedJsBytes":899988,"unusedCssBytes":16727,"mainThreadTotal":9699.8,"longTasks":20,"elements":2440,"failingCount":2,"failingNodes":3,"axeViolations":1,"axePasses":1882,"field-lcp":2106,"field-inp":295,"field-cls":0,"field-fcp":1880,"field-ttfb":800,"bench":2498,"runs":3,"reqRuns":3,"ms":50120,"spread":9}
+]}

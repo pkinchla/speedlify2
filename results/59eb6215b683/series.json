@@ -1,0 +1,3 @@
+{"version":1,"url":"https://www.speedlify.dev/","updated":"2026-08-21T13:56:14.809Z","points":[
+{"t":1787320553033,"performance":100,"accessibility":100,"best-practices":100,"seo":100,"lcp":793,"cls":0,"tbt":0,"fcp":793,"si":793,"ttfb":633,"total":50406,"requests":4,"bytes":0,"mainThreadMs":0,"unusedJsBytes":21256,"unusedCssBytes":0,"mainThreadTotal":120.8,"longTasks":0,"elements":64,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":121,"bench":2501.5,"runs":3,"reqRuns":3,"ms":21775,"spread":0}
+]}

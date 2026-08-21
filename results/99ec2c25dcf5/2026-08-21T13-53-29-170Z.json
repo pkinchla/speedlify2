@@ -1,0 +1,204 @@
+{
+  "url": "https://www.ryzokuken.dev/",
+  "name": "www.ryzokuken.dev",
+  "group": "11ty-emeritus",
+  "groupName": "11ty Emeritus",
+  "timestamp": 1787320409170,
+  "date": "2026-08-21T13:53:29.170Z",
+  "runId": "2026-08-21T13-43-59-698Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 27692,
+  "error": null,
+  "variance": {
+    "min": 94,
+    "max": 100,
+    "spread": 6,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.ryzokuken.dev/",
+    "finalUrl": "https://www.ryzokuken.dev/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1053,
+      "lcp": 1803,
+      "si": 1053,
+      "tbt": 0,
+      "tti": 1803,
+      "cls": 0,
+      "ttfb": 603,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 2,
+      "networkRtt": 0.1,
+      "networkServerLatency": 2743.1
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 3.7,
+      "elementRenderDelay": 52.4
+    },
+    "weight": {
+      "total": 117849,
+      "requests": 11,
+      "mainDocument": 3994,
+      "byType": {
+        "total": {
+          "bytes": 117849,
+          "requests": 11
+        },
+        "font": {
+          "bytes": 64841,
+          "requests": 3
+        },
+        "image": {
+          "bytes": 36672,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 7756,
+          "requests": 3
+        },
+        "document": {
+          "bytes": 3994,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 3779,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 807,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 5175,
+          "requests": 3
+        }
+      },
+      "scripts": 3,
+      "stylesheets": 1,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 3,
+      "bytes": 5175,
+      "mainThreadMs": 2.1,
+      "top": [
+        {
+          "entity": "zgo.at",
+          "bytes": 4368,
+          "mainThreadMs": 2.1
+        },
+        {
+          "entity": "listenbrainz.org",
+          "bytes": 428,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "goatcounter.com",
+          "bytes": 379,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 229.2,
+      "byGroup": {
+        "other": 97.5,
+        "styleLayout": 66.4,
+        "scriptEvaluation": 44.1,
+        "paintCompositeRender": 9.1,
+        "parseHTML": 8.6,
+        "scriptParseCompile": 3.5
+      },
+      "bootupMs": 37.8,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 77,
+      "depth": 8,
+      "maxChildren": 6
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 99623.33333333331,
+      "poorlyCachedCount": 7
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 25,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 1,
+      "baselineLimitedFeatures": 16
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2505.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T13:53:46.001Z",
+      "runtimeMs": 8467.1
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "github",
+      "name": "GitHub Pages",
+      "icon": "Github",
+      "source": "x-github-request-id"
+    },
+    "headers": {
+      "server": "GitHub.com",
+      "via": "1.1 varnish",
+      "x-fastly-request-id": "781ebb89508482786b306a97dc63cb6f18aa284f",
+      "x-github-request-id": "8D02:15FBAD:8A80C9:9FC39C:6A88585A",
+      "x-served-by": "cache-chi-kmdw8640038-CHI"
+    },
+    "violations": 0,
+    "passes": 255,
+    "incomplete": 0,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

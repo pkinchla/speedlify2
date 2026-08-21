@@ -1,0 +1,3 @@
+{"version":1,"url":"https://www.psxi.cat/","updated":"2026-08-21T13:50:58.285Z","points":[
+{"t":1787320227060,"performance":99,"accessibility":100,"best-practices":100,"seo":100,"lcp":1759,"cls":0,"tbt":0,"fcp":1538,"si":1538,"ttfb":630,"total":282286,"requests":11,"bytes":33789,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":198.9,"longTasks":0,"elements":420,"failingCount":1,"failingNodes":2,"axeViolations":1,"axePasses":968,"bench":2502,"runs":3,"reqRuns":3,"ms":31225,"spread":5}
+]}

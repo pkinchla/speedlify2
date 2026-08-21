@@ -1,0 +1,222 @@
+{
+  "url": "https://www.petrzalka.info/",
+  "name": "www.petrzalka.info",
+  "group": "11ty-emeritus",
+  "groupName": "11ty Emeritus",
+  "timestamp": 1787320085751,
+  "date": "2026-08-21T13:48:05.751Z",
+  "runId": "2026-08-21T13-43-59-698Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 47637,
+  "error": null,
+  "variance": {
+    "min": 74,
+    "max": 92,
+    "spread": 18,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.petrzalka.info/",
+    "finalUrl": "https://www.petrzalka.info/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 77,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 92,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 3677,
+      "lcp": 3677,
+      "si": 6201,
+      "tbt": 0,
+      "tti": 3677,
+      "cls": 0.001,
+      "ttfb": 1122,
+      "maxPotentialFid": 33,
+      "serverResponseTime": 726,
+      "networkRtt": 6.9,
+      "networkServerLatency": 211.9
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 1122.5,
+      "elementRenderDelay": 487.5
+    },
+    "weight": {
+      "total": 5275886,
+      "requests": 53,
+      "mainDocument": 8777,
+      "byType": {
+        "total": {
+          "bytes": 5167719,
+          "requests": 46
+        },
+        "other": {
+          "bytes": 2409784,
+          "requests": 2
+        },
+        "image": {
+          "bytes": 2205043,
+          "requests": 14
+        },
+        "document": {
+          "bytes": 338085,
+          "requests": 2
+        },
+        "script": {
+          "bytes": 127954,
+          "requests": 13
+        },
+        "font": {
+          "bytes": 62025,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 24828,
+          "requests": 13
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 350014,
+          "requests": 18
+        }
+      },
+      "scripts": 14,
+      "stylesheets": 13,
+      "fonts": 7
+    },
+    "thirdParty": {
+      "count": 3,
+      "bytes": 350014,
+      "mainThreadMs": 12.1,
+      "top": [
+        {
+          "entity": "Esri ArcGIS",
+          "bytes": 236716,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Google Fonts",
+          "bytes": 66427,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Unpkg",
+          "bytes": 46871,
+          "mainThreadMs": 12.1
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1184.4,
+      "byGroup": {
+        "other": 650.7,
+        "scriptEvaluation": 234.2,
+        "styleLayout": 123.4,
+        "parseHTML": 94.6,
+        "scriptParseCompile": 48,
+        "paintCompositeRender": 33.4
+      },
+      "bootupMs": 185.4,
+      "longTasks": 1,
+      "longestTaskMs": 57
+    },
+    "dom": {
+      "elements": 45,
+      "depth": 9,
+      "maxChildren": 22
+    },
+    "waste": {
+      "unusedJsBytes": 27507,
+      "unusedCssBytes": 302007,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 6663,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 1993,
+      "renderBlockingCount": 22,
+      "poorlyCachedBytes": 2164522.4000000004,
+      "poorlyCachedCount": 36
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 22,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 12,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 25
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2465,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T13:48:07.023Z",
+      "runtimeMs": 13530.5
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "wordpress",
+      "name": "WordPress",
+      "icon": "Wordpress",
+      "version": "7.1",
+      "source": "meta",
+      "raw": "WordPress 7.1"
+    },
+    "host": {
+      "id": "self-hosted",
+      "name": "Self-hosted",
+      "icon": null,
+      "detail": "OpenResty",
+      "detailIcon": null,
+      "source": "server"
+    },
+    "headers": {
+      "server": "openresty"
+    },
+    "violations": 2,
+    "passes": 292,
+    "incomplete": 2,
+    "violationRules": 2,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "label",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Form elements must have labels"
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

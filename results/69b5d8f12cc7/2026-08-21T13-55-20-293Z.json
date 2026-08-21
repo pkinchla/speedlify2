@@ -1,0 +1,233 @@
+{
+  "url": "https://www.sobolewski.cz/en",
+  "name": "www.sobolewski.cz",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787320520293,
+  "date": "2026-08-21T13:55:20.293Z",
+  "runId": "2026-08-21T13-43-59-698Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 29739,
+  "error": null,
+  "variance": {
+    "min": 67,
+    "max": 75,
+    "spread": 8,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.sobolewski.cz/en",
+    "finalUrl": "https://www.sobolewski.cz/en/index.html",
+    "redirect": {
+      "from": "https://www.sobolewski.cz/en",
+      "to": "https://www.sobolewski.cz/en/index.html",
+      "chain": [
+        {
+          "url": "https://www.sobolewski.cz/en",
+          "status": 301
+        },
+        {
+          "url": "https://www.sobolewski.cz/en/",
+          "status": 200
+        }
+      ],
+      "statuses": [
+        301
+      ],
+      "change": "path",
+      "permanent": true,
+      "schemeUpgrade": false,
+      "hops": 1
+    },
+    "statusCode": "ok",
+    "scores": {
+      "performance": 75,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 3642,
+      "lcp": 4617,
+      "si": 3642,
+      "tbt": 22,
+      "tti": 4625,
+      "cls": 0,
+      "ttfb": 640,
+      "maxPotentialFid": 64,
+      "serverResponseTime": 38,
+      "networkRtt": 0.1,
+      "networkServerLatency": 46.9
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 497.7,
+      "elementRenderDelay": 347.8
+    },
+    "weight": {
+      "total": 2429499,
+      "requests": 28,
+      "mainDocument": 6711,
+      "byType": {
+        "total": {
+          "bytes": 2428554,
+          "requests": 25
+        },
+        "other": {
+          "bytes": 1498640,
+          "requests": 2
+        },
+        "image": {
+          "bytes": 573048,
+          "requests": 10
+        },
+        "font": {
+          "bytes": 244402,
+          "requests": 4
+        },
+        "script": {
+          "bytes": 81396,
+          "requests": 4
+        },
+        "stylesheet": {
+          "bytes": 24357,
+          "requests": 4
+        },
+        "document": {
+          "bytes": 6711,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 342141,
+          "requests": 10
+        }
+      },
+      "scripts": 4,
+      "stylesheets": 4,
+      "fonts": 4
+    },
+    "thirdParty": {
+      "count": 4,
+      "bytes": 342141,
+      "mainThreadMs": 13.7,
+      "top": [
+        {
+          "entity": "JSDelivr CDN",
+          "bytes": 139579,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Google Fonts",
+          "bytes": 121300,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "freeprivacypolicy.com",
+          "bytes": 57609,
+          "mainThreadMs": 7.8
+        },
+        {
+          "entity": "Cloudflare CDN",
+          "bytes": 23653,
+          "mainThreadMs": 5.9
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 755.1,
+      "byGroup": {
+        "other": 316.9,
+        "styleLayout": 249.5,
+        "scriptEvaluation": 92.7,
+        "parseHTML": 38.7,
+        "paintCompositeRender": 29.3,
+        "scriptParseCompile": 27.8
+      },
+      "bootupMs": 75.4,
+      "longTasks": 2,
+      "longestTaskMs": 64
+    },
+    "dom": {
+      "elements": 378,
+      "depth": 12,
+      "maxChildren": 12
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 13864,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 2466,
+      "renderBlockingCount": 4,
+      "poorlyCachedBytes": 46087.200000000004,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 27,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 789.7,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 5
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2490,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T13:55:40.565Z",
+      "runtimeMs": 8004.9
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": null,
+      "source": "meta",
+      "raw": "Eleventy"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0J9PF12CH4SYJWEVQ2Q7ABQ"
+    },
+    "violations": 0,
+    "passes": 382,
+    "incomplete": 63,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

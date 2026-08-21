@@ -1,0 +1,239 @@
+{
+  "url": "https://www.mikeaparicio.com/",
+  "name": "www.mikeaparicio.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787319845795,
+  "date": "2026-08-21T13:44:05.795Z",
+  "runId": "2026-08-21T13-43-59-698Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 62353,
+  "error": null,
+  "variance": {
+    "min": 70,
+    "max": 92,
+    "spread": 22,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.mikeaparicio.com/",
+    "finalUrl": "https://mikeaparicio.com/",
+    "redirect": {
+      "from": "https://www.mikeaparicio.com/",
+      "to": "https://mikeaparicio.com/",
+      "chain": [
+        {
+          "url": "https://www.mikeaparicio.com/",
+          "status": 301
+        },
+        {
+          "url": "https://mikeaparicio.com/",
+          "status": 200
+        }
+      ],
+      "statuses": [
+        301
+      ],
+      "change": "host",
+      "permanent": true,
+      "schemeUpgrade": false,
+      "hops": 1
+    },
+    "statusCode": "ok",
+    "scores": {
+      "performance": 87,
+      "accessibility": 89,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1585,
+      "lcp": 3959,
+      "si": 1585,
+      "tbt": 0,
+      "tti": 3959,
+      "cls": 0,
+      "ttfb": 638,
+      "maxPotentialFid": 20,
+      "serverResponseTime": 31,
+      "networkRtt": 0.1,
+      "networkServerLatency": 62.9
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 55,
+      "resourceLoadDelay": 9.3,
+      "resourceLoadDuration": 41.8,
+      "elementRenderDelay": 73.7
+    },
+    "weight": {
+      "total": 2092718,
+      "requests": 29,
+      "mainDocument": 5791,
+      "byType": {
+        "total": {
+          "bytes": 2092718,
+          "requests": 28
+        },
+        "image": {
+          "bytes": 1952389,
+          "requests": 10
+        },
+        "font": {
+          "bytes": 116396,
+          "requests": 4
+        },
+        "other": {
+          "bytes": 6291,
+          "requests": 10
+        },
+        "stylesheet": {
+          "bytes": 6029,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 5822,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 5791,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 1771526,
+          "requests": 9
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 1,
+      "fonts": 4
+    },
+    "thirdParty": {
+      "count": 4,
+      "bytes": 1771526,
+      "mainThreadMs": 2.5,
+      "top": [
+        {
+          "entity": "klipy.com",
+          "bytes": 1553899,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Cloudinary",
+          "bytes": 114986,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "bsky.app",
+          "bytes": 100488,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Cabin",
+          "bytes": 2153,
+          "mainThreadMs": 2.5
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 384.3,
+      "byGroup": {
+        "other": 182.5,
+        "styleLayout": 87.9,
+        "scriptEvaluation": 51.2,
+        "paintCompositeRender": 36,
+        "parseHTML": 19.6,
+        "scriptParseCompile": 7.1
+      },
+      "bootupMs": 43.5,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 293,
+      "depth": 13,
+      "maxChildren": 8
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 2252,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 634019.9999999999,
+      "poorlyCachedCount": 5
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 19,
+      "failingNodes": 3,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 2
+        },
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 771.2,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 24
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2511.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T13:44:23.497Z",
+      "runtimeMs": 6889.5
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0J91Z5D1CANCWDQ0DE3W4CT"
+    },
+    "violations": 0,
+    "passes": 569,
+    "incomplete": 2,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
