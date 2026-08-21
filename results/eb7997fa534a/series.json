@@ -1,0 +1,3 @@
+{"version":1,"url":"https://nextjs.org/","updated":"2026-08-21T04:44:03.412Z","points":[
+{"t":1787287401517,"performance":98,"accessibility":96,"best-practices":96,"seo":100,"lcp":1974,"cls":0,"tbt":106,"fcp":1524,"si":1524,"ttfb":624,"total":853576,"requests":71,"bytes":7555,"mainThreadMs":2.9,"unusedJsBytes":90607,"unusedCssBytes":12997,"mainThreadTotal":2291.2,"longTasks":5,"elements":2213,"failingCount":2,"failingNodes":8,"axeViolations":3,"axePasses":1120,"field-lcp":1466,"field-inp":123,"field-cls":0,"field-fcp":1390,"field-ttfb":617,"bench":4092,"runs":3,"reqRuns":3,"ms":41894,"spread":11}
+]}

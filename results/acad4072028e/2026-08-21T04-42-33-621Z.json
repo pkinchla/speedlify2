@@ -1,0 +1,232 @@
+{
+  "url": "https://nathanupchurch.com/",
+  "name": "nathanupchurch.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787287353621,
+  "date": "2026-08-21T04:42:33.621Z",
+  "runId": "2026-08-21T04-37-16-881Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 22520,
+  "error": null,
+  "variance": {
+    "min": 59,
+    "max": 93,
+    "spread": 34,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://nathanupchurch.com/",
+    "finalUrl": "https://nathanupchurch.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 90,
+      "accessibility": 85,
+      "best-practices": 100,
+      "seo": 91,
+      "agentic-browsing": 32
+    },
+    "timings": {
+      "fcp": 1272,
+      "lcp": 1737,
+      "si": 1272,
+      "tbt": 0,
+      "tti": 1737,
+      "cls": 0.196,
+      "ttfb": 672,
+      "maxPotentialFid": 44,
+      "serverResponseTime": 138,
+      "networkRtt": 0,
+      "networkServerLatency": 175.5
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 139.1,
+      "elementRenderDelay": 103.7
+    },
+    "weight": {
+      "total": 1167126,
+      "requests": 18,
+      "mainDocument": 30516,
+      "byType": {
+        "total": {
+          "bytes": 1167126,
+          "requests": 18
+        },
+        "script": {
+          "bytes": 615420,
+          "requests": 5
+        },
+        "font": {
+          "bytes": 482625,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 32577,
+          "requests": 5
+        },
+        "document": {
+          "bytes": 30516,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 5988,
+          "requests": 4
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 9632,
+          "requests": 6
+        }
+      },
+      "scripts": 5,
+      "stylesheets": 5,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 4,
+      "bytes": 9632,
+      "mainThreadMs": 6.2,
+      "top": [
+        {
+          "entity": "zgo.at",
+          "bytes": 4367,
+          "mainThreadMs": 4.6
+        },
+        {
+          "entity": "upchur.ch",
+          "bytes": 3794,
+          "mainThreadMs": 1.2
+        },
+        {
+          "entity": "meadow.cafe",
+          "bytes": 1090,
+          "mainThreadMs": 0.4
+        },
+        {
+          "entity": "goatcounter.com",
+          "bytes": 381,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 246.8,
+      "byGroup": {
+        "other": 100,
+        "scriptEvaluation": 46.3,
+        "styleLayout": 44.6,
+        "scriptParseCompile": 36.4,
+        "parseHTML": 11.3,
+        "paintCompositeRender": 8.3
+      },
+      "bootupMs": 10.7,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 181,
+      "depth": 11,
+      "maxChildren": 15
+    },
+    "waste": {
+      "unusedJsBytes": 439413,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 5447,
+      "renderBlockingMs": 300,
+      "renderBlockingCount": 6,
+      "poorlyCachedBytes": 1123095.2,
+      "poorlyCachedCount": 11
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 14,
+      "failingNodes": 7,
+      "failing": [
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "nodes": 6
+        },
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": null,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 22
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 4344.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T04:42:49.059Z",
+      "runtimeMs": 6299.6
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "3.1.5",
+      "source": "meta",
+      "raw": "Eleventy v3.1.5"
+    },
+    "host": {
+      "id": "self-hosted",
+      "name": "Self-hosted",
+      "icon": null,
+      "detail": "nginx",
+      "detailIcon": "Nginx",
+      "source": "server"
+    },
+    "headers": {
+      "server": "nginx"
+    },
+    "violations": 1,
+    "passes": 271,
+    "incomplete": 6,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Links must have discernible text"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

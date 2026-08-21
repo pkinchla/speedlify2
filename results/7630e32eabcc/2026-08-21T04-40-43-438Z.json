@@ -1,0 +1,211 @@
+{
+  "url": "https://mikesthoughts.blog/",
+  "name": "mikesthoughts.blog",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787287243438,
+  "date": "2026-08-21T04:40:43.438Z",
+  "runId": "2026-08-21T04-37-16-881Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 68681,
+  "error": null,
+  "variance": {
+    "min": 100,
+    "max": 100,
+    "spread": 0,
+    "runs": 2
+  },
+  "lab": {
+    "requestedUrl": "https://mikesthoughts.blog/",
+    "finalUrl": "https://mikesthoughts.blog/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 100,
+      "accessibility": 96,
+      "best-practices": 88,
+      "seo": 45,
+      "agentic-browsing": 67
+    },
+    "timings": {
+      "fcp": 814,
+      "lcp": 1719,
+      "si": 986,
+      "tbt": 0,
+      "tti": 1719,
+      "cls": 0,
+      "ttfb": 651,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 51,
+      "networkRtt": 0,
+      "networkServerLatency": 168
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 52.5,
+      "elementRenderDelay": 418.3
+    },
+    "weight": {
+      "total": 16233,
+      "requests": 5,
+      "mainDocument": 3083,
+      "byType": {
+        "total": {
+          "bytes": 16233,
+          "requests": 4
+        },
+        "other": {
+          "bytes": 11722,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 3083,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 1428,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 13150,
+          "requests": 3
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 0,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 13150,
+      "mainThreadMs": 1.1,
+      "top": [
+        {
+          "entity": "parklogic.com",
+          "bytes": 13150,
+          "mainThreadMs": 1.1
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 129.6,
+      "byGroup": {
+        "other": 57.8,
+        "scriptEvaluation": 52.5,
+        "styleLayout": 11.6,
+        "scriptParseCompile": 3.1,
+        "paintCompositeRender": 2.4,
+        "parseHTML": 2.2
+      },
+      "bootupMs": 46.6,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 52,
+      "depth": 8,
+      "maxChildren": 12
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 1428,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 10,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 1,
+      "baselineLimitedFeatures": 4
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 4341.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T04:41:44.029Z",
+      "runtimeMs": 6305.6
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "self-hosted",
+      "name": "Self-hosted",
+      "icon": null,
+      "detail": "OpenResty",
+      "detailIcon": null,
+      "source": "server"
+    },
+    "headers": {
+      "server": "openresty"
+    },
+    "violations": 3,
+    "passes": 83,
+    "incomplete": 0,
+    "violationRules": 2,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 2,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should have one main landmark"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
