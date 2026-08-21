@@ -1,0 +1,190 @@
+{
+  "url": "https://www.virtualcomedycafe.com/",
+  "name": "www.virtualcomedycafe.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787323441243,
+  "date": "2026-08-21T14:44:01.243Z",
+  "runId": "2026-08-21T14-34-13-816Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 155053,
+  "error": null,
+  "variance": {
+    "min": 92,
+    "max": 95,
+    "spread": 3,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.virtualcomedycafe.com/",
+    "finalUrl": "https://www.virtualcomedycafe.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 93,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 92,
+      "agentic-browsing": 67
+    },
+    "timings": {
+      "fcp": 908,
+      "lcp": 1743,
+      "si": 908,
+      "tbt": 300,
+      "tti": 2341,
+      "cls": 0,
+      "ttfb": 693,
+      "maxPotentialFid": 231,
+      "serverResponseTime": 36,
+      "networkRtt": 67.9,
+      "networkServerLatency": 93
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 37.6,
+      "resourceLoadDelay": 15.9,
+      "resourceLoadDuration": 96.5,
+      "elementRenderDelay": 29.2
+    },
+    "weight": {
+      "total": 2846314,
+      "requests": 14,
+      "mainDocument": 7985,
+      "byType": {
+        "total": {
+          "bytes": 2846314,
+          "requests": 13
+        },
+        "image": {
+          "bytes": 2779474,
+          "requests": 10
+        },
+        "script": {
+          "bytes": 58855,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 7985,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "other": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 58855,
+          "requests": 2
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 0,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 58855,
+      "mainThreadMs": 31.3,
+      "top": [
+        {
+          "entity": "Netlify",
+          "bytes": 55206,
+          "mainThreadMs": 25.2
+        },
+        {
+          "entity": "JSDelivr CDN",
+          "bytes": 3649,
+          "mainThreadMs": 6.1
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 870.1,
+      "byGroup": {
+        "other": 596.4,
+        "scriptEvaluation": 121.3,
+        "styleLayout": 93.9,
+        "scriptParseCompile": 27.1,
+        "paintCompositeRender": 16.4,
+        "parseHTML": 15
+      },
+      "bootupMs": 145.9,
+      "longTasks": 3,
+      "longestTaskMs": 231
+    },
+    "dom": {
+      "elements": 138,
+      "depth": 11,
+      "maxChildren": 7
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 21305,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 13107,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 364.8999999999999,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 14,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 7
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2311,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T14:44:19.646Z",
+      "runtimeMs": 17122.4
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": null,
+    "headers": {},
+    "violations": null,
+    "passes": null,
+    "incomplete": null,
+    "violationRules": null,
+    "version": null,
+    "top": [],
+    "error": "Navigation timeout of 120000 ms exceeded"
+  },
+  "consecutiveFailures": 0
+}

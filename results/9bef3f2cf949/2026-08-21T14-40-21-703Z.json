@@ -1,0 +1,219 @@
+{
+  "url": "https://www.tomroseveare.com/",
+  "name": "www.tomroseveare.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787323221703,
+  "date": "2026-08-21T14:40:21.703Z",
+  "runId": "2026-08-21T14-34-13-816Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 29836,
+  "error": null,
+  "variance": {
+    "min": 89,
+    "max": 94,
+    "spread": 5,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.tomroseveare.com/",
+    "finalUrl": "https://www.tomroseveare.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 89,
+      "accessibility": 100,
+      "best-practices": 92,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1997,
+      "lcp": 3578,
+      "si": 1997,
+      "tbt": 17,
+      "tti": 3578,
+      "cls": 0.002,
+      "ttfb": 673,
+      "maxPotentialFid": 67,
+      "serverResponseTime": 53,
+      "networkRtt": 0.2,
+      "networkServerLatency": 72.5
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 54.4,
+      "resourceLoadDelay": 10,
+      "resourceLoadDuration": 80,
+      "elementRenderDelay": 93.4
+    },
+    "weight": {
+      "total": 452881,
+      "requests": 49,
+      "mainDocument": 6830,
+      "byType": {
+        "total": {
+          "bytes": 452881,
+          "requests": 49
+        },
+        "image": {
+          "bytes": 242890,
+          "requests": 20
+        },
+        "font": {
+          "bytes": 147147,
+          "requests": 16
+        },
+        "script": {
+          "bytes": 34993,
+          "requests": 8
+        },
+        "stylesheet": {
+          "bytes": 16062,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 6830,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 4959,
+          "requests": 3
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 24604,
+          "requests": 4
+        }
+      },
+      "scripts": 8,
+      "stylesheets": 1,
+      "fonts": 16
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 24604,
+      "mainThreadMs": 7.3,
+      "top": [
+        {
+          "entity": "Cloudflare CDN",
+          "bytes": 23916,
+          "mainThreadMs": 7.3
+        },
+        {
+          "entity": "netlify.app",
+          "bytes": 688,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1070.2,
+      "byGroup": {
+        "other": 539.3,
+        "styleLayout": 232.5,
+        "scriptEvaluation": 157.5,
+        "paintCompositeRender": 102.7,
+        "parseHTML": 27.9,
+        "scriptParseCompile": 10.3
+      },
+      "bootupMs": 110.7,
+      "longTasks": 3,
+      "longestTaskMs": 67
+    },
+    "dom": {
+      "elements": 257,
+      "depth": 12,
+      "maxChildren": 9
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 300,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 21,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": null,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 2,
+      "baselineLimitedFeatures": 30
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2265.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T14:40:41.512Z",
+      "runtimeMs": 7177.1
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": null,
+      "source": "meta",
+      "raw": "Eleventy"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "cf-ray": "a2ea64f3f85aa4a0-EWR",
+      "server": "cloudflare",
+      "x-nf-request-id": "01M0JC836FZA9THNS28KA3CACH"
+    },
+    "violations": 1,
+    "passes": 263,
+    "incomplete": 25,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

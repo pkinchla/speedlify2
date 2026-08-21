@@ -1,0 +1,218 @@
+{
+  "url": "https://www.rs-rss.com/",
+  "name": "www.rs-rss.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787322955292,
+  "date": "2026-08-21T14:35:55.292Z",
+  "runId": "2026-08-21T14-34-13-816Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 30200,
+  "error": null,
+  "variance": {
+    "min": 90,
+    "max": 93,
+    "spread": 3,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.rs-rss.com/",
+    "finalUrl": "https://rs-rss.com/",
+    "redirect": {
+      "from": "https://www.rs-rss.com/",
+      "to": "https://rs-rss.com/",
+      "chain": [
+        {
+          "url": "https://www.rs-rss.com/",
+          "status": 301
+        },
+        {
+          "url": "https://rs-rss.com/",
+          "status": 200
+        }
+      ],
+      "statuses": [
+        301
+      ],
+      "change": "host",
+      "permanent": true,
+      "schemeUpgrade": false,
+      "hops": 1
+    },
+    "statusCode": "ok",
+    "scores": {
+      "performance": 93,
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 2548,
+      "lcp": 2548,
+      "si": 2548,
+      "tbt": 0,
+      "tti": 2548,
+      "cls": 0,
+      "ttfb": 510,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 105,
+      "networkRtt": 0,
+      "networkServerLatency": 59.8
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 155.3,
+      "elementRenderDelay": 103.6
+    },
+    "weight": {
+      "total": 329194,
+      "requests": 25,
+      "mainDocument": 10961,
+      "byType": {
+        "total": {
+          "bytes": 323660,
+          "requests": 24
+        },
+        "image": {
+          "bytes": 277890,
+          "requests": 15
+        },
+        "other": {
+          "bytes": 15148,
+          "requests": 5
+        },
+        "script": {
+          "bytes": 12655,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 10961,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 7006,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 11451,
+          "requests": 1
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 1,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 11451,
+      "mainThreadMs": 3.4,
+      "top": [
+        {
+          "entity": "Cloudflare",
+          "bytes": 11451,
+          "mainThreadMs": 3.4
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 357.3,
+      "byGroup": {
+        "other": 205.9,
+        "styleLayout": 56.2,
+        "scriptEvaluation": 44.8,
+        "paintCompositeRender": 30.2,
+        "parseHTML": 18.9,
+        "scriptParseCompile": 1.3
+      },
+      "bootupMs": 7.7,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 656,
+      "depth": 10,
+      "maxChildren": 52
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 720,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 4580.400000000001,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 17,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 796.6,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 11
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2313,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T14:36:06.670Z",
+      "runtimeMs": 7688
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2ea5e9e888e09a2-EWR",
+      "server": "cloudflare"
+    },
+    "violations": 1,
+    "passes": 73,
+    "incomplete": 0,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "meta-refresh",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Delayed refresh under 20 hours must not be used"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

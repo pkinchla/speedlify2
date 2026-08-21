@@ -1,0 +1,215 @@
+{
+  "url": "https://www.rohanbansal.com/",
+  "name": "www.rohanbansal.com",
+  "group": "11ty-emeritus",
+  "groupName": "11ty Emeritus",
+  "timestamp": 1787322929632,
+  "date": "2026-08-21T14:35:29.632Z",
+  "runId": "2026-08-21T14-34-13-816Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 22658,
+  "error": null,
+  "variance": {
+    "min": 90,
+    "max": 92,
+    "spread": 2,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.rohanbansal.com/",
+    "finalUrl": "https://www.rohanbansal.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 90,
+      "accessibility": 90,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 82
+    },
+    "timings": {
+      "fcp": 1563,
+      "lcp": 1563,
+      "si": 1563,
+      "tbt": 0,
+      "tti": 1563,
+      "cls": 0.19,
+      "ttfb": 630,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 22,
+      "networkRtt": 0.1,
+      "networkServerLatency": 32.3
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 23.8,
+      "elementRenderDelay": 68.8
+    },
+    "weight": {
+      "total": 37402,
+      "requests": 7,
+      "mainDocument": 2415,
+      "byType": {
+        "total": {
+          "bytes": 37402,
+          "requests": 7
+        },
+        "font": {
+          "bytes": 29049,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 2417,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 2415,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 2177,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 1344,
+          "requests": 2
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 29767,
+          "requests": 2
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 2,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 29767,
+      "mainThreadMs": 0,
+      "top": [
+        {
+          "entity": "Google Fonts",
+          "bytes": 29767,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 158.1,
+      "byGroup": {
+        "other": 76,
+        "styleLayout": 51.5,
+        "scriptEvaluation": 15.5,
+        "paintCompositeRender": 8.1,
+        "parseHTML": 6.4,
+        "scriptParseCompile": 0.6
+      },
+      "bootupMs": 7.1,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 85,
+      "depth": 11,
+      "maxChildren": 5
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 782,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 21,
+      "failingNodes": 11,
+      "failing": [
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "nodes": 6
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 5
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 5
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2374.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T14:35:38.235Z",
+      "runtimeMs": 5896.3
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "vercel",
+      "name": "Vercel",
+      "icon": "Vercel",
+      "source": "x-vercel-id"
+    },
+    "headers": {
+      "server": "Vercel",
+      "x-vercel-id": "cle1::k76bt-1787322949950-6651a0ca5b5e"
+    },
+    "violations": 11,
+    "passes": 190,
+    "incomplete": 13,
+    "violationRules": 2,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "link-in-text-block",
+        "impact": "serious",
+        "nodes": 6,
+        "help": "Links must be distinguishable without relying on color"
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 5,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

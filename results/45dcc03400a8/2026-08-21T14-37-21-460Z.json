@@ -1,0 +1,222 @@
+{
+  "url": "https://www.splitinfinities.com/",
+  "name": "www.splitinfinities.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787323041460,
+  "date": "2026-08-21T14:37:21.460Z",
+  "runId": "2026-08-21T14-34-13-816Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 37065,
+  "error": null,
+  "variance": {
+    "min": 56,
+    "max": 58,
+    "spread": 2,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.splitinfinities.com/",
+    "finalUrl": "https://www.splitinfinities.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 56,
+      "accessibility": 95,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 11097,
+      "lcp": 11922,
+      "si": 11097,
+      "tbt": 0,
+      "tti": 11930,
+      "cls": 0,
+      "ttfb": 636,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 29,
+      "networkRtt": 0,
+      "networkServerLatency": 38.8
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 30.2,
+      "elementRenderDelay": 1526.5
+    },
+    "weight": {
+      "total": 1577567,
+      "requests": 101,
+      "mainDocument": 3413,
+      "byType": {
+        "total": {
+          "bytes": 1577567,
+          "requests": 100
+        },
+        "font": {
+          "bytes": 854158,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 442519,
+          "requests": 2
+        },
+        "script": {
+          "bytes": 201679,
+          "requests": 63
+        },
+        "image": {
+          "bytes": 56819,
+          "requests": 4
+        },
+        "other": {
+          "bytes": 18979,
+          "requests": 27
+        },
+        "document": {
+          "bytes": 3413,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 1500605,
+          "requests": 76
+        }
+      },
+      "scripts": 63,
+      "stylesheets": 2,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 1498356,
+      "mainThreadMs": 77.7,
+      "top": [
+        {
+          "entity": "rsms.me",
+          "bytes": 855751,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Unpkg",
+          "bytes": 642605,
+          "mainThreadMs": 77.7
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 2092.5,
+      "byGroup": {
+        "other": 738.7,
+        "scriptEvaluation": 546.3,
+        "styleLayout": 478.2,
+        "parseHTML": 242.3,
+        "paintCompositeRender": 75.4,
+        "garbageCollection": 6.8,
+        "scriptParseCompile": 4.9
+      },
+      "bootupMs": 468.5,
+      "longTasks": 5,
+      "longestTaskMs": 250
+    },
+    "dom": {
+      "elements": 444,
+      "depth": 14,
+      "maxChildren": 32
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 439496,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 56156,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 1574,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 1083.24,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 19,
+      "failingNodes": 3,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 3
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 23
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2326,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T14:37:34.959Z",
+      "runtimeMs": 9903
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "vercel",
+      "name": "Vercel",
+      "icon": "Vercel",
+      "source": "x-vercel-id"
+    },
+    "headers": {
+      "server": "Vercel",
+      "x-vercel-id": "cle1::cfvzw-1787323074882-2f4281d568c2"
+    },
+    "violations": 3,
+    "passes": 336,
+    "incomplete": 13,
+    "violationRules": 3,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "All page content should be contained by landmarks"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

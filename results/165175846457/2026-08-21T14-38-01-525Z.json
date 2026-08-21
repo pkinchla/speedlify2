@@ -1,0 +1,244 @@
+{
+  "url": "https://www.springflod.se/",
+  "name": "www.springflod.se",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787323081525,
+  "date": "2026-08-21T14:38:01.525Z",
+  "runId": "2026-08-21T14-34-13-816Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 22888,
+  "error": null,
+  "variance": {
+    "min": 85,
+    "max": 98,
+    "spread": 13,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.springflod.se/",
+    "finalUrl": "https://www.springflod.se/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 98,
+      "accessibility": 78,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 1900,
+      "lcp": 1913,
+      "si": 1900,
+      "tbt": 0,
+      "tti": 1914,
+      "cls": 0.001,
+      "ttfb": 631,
+      "maxPotentialFid": 27,
+      "serverResponseTime": 40,
+      "networkRtt": 0.1,
+      "networkServerLatency": 57.3
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 41.4,
+      "resourceLoadDelay": 9.5,
+      "resourceLoadDuration": 61,
+      "elementRenderDelay": 45.1
+    },
+    "weight": {
+      "total": 202851,
+      "requests": 15,
+      "mainDocument": 4269,
+      "byType": {
+        "total": {
+          "bytes": 193287,
+          "requests": 14
+        },
+        "font": {
+          "bytes": 145238,
+          "requests": 2
+        },
+        "script": {
+          "bytes": 30270,
+          "requests": 4
+        },
+        "stylesheet": {
+          "bytes": 7018,
+          "requests": 2
+        },
+        "image": {
+          "bytes": 6492,
+          "requests": 5
+        },
+        "document": {
+          "bytes": 4269,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "other": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 175733,
+          "requests": 6
+        }
+      },
+      "scripts": 4,
+      "stylesheets": 2,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 175733,
+      "mainThreadMs": 27.3,
+      "top": [
+        {
+          "entity": "Google Fonts",
+          "bytes": 146689,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Cloudflare CDN",
+          "bytes": 29044,
+          "mainThreadMs": 27.3
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 515.3,
+      "byGroup": {
+        "other": 205.6,
+        "scriptEvaluation": 175.8,
+        "styleLayout": 87.5,
+        "paintCompositeRender": 24.1,
+        "scriptParseCompile": 11.2,
+        "parseHTML": 11.1
+      },
+      "bootupMs": 174.4,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 137,
+      "depth": 12,
+      "maxChildren": 14
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 3652,
+      "renderBlockingCount": 5,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 4,
+      "applicableCount": 16,
+      "failingNodes": 4,
+      "failing": [
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 1
+        },
+        {
+          "id": "label",
+          "title": "Form elements do not have associated labels",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 4
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2349,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T14:38:10.525Z",
+      "runtimeMs": 6258.6
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0JC4DYMHDRAP8R423EVHMJQ"
+    },
+    "violations": 6,
+    "passes": 176,
+    "incomplete": 2,
+    "violationRules": 4,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 3,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Heading levels should only increase by one"
+      },
+      {
+        "id": "label",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Form elements must have labels"
+      },
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Links must have discernible text"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
