@@ -1,3 +1,4 @@
-{"version":1,"url":"https://byggorebro.se/","updated":"2026-08-20T16:27:29.942Z","points":[
-{"t":1787243119020,"error":"ERRORED_DOCUMENT_REQUEST: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 522)","fails":1,"runs":0,"reqRuns":3,"ms":130922}
+{"version":1,"url":"https://byggorebro.se/","updated":"2026-08-21T14:36:36.720Z","points":[
+{"t":1787243119020,"error":"ERRORED_DOCUMENT_REQUEST: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 522)","fails":1,"runs":0,"reqRuns":3,"ms":130922},
+{"t":1787322863093,"error":"ERRORED_DOCUMENT_REQUEST: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 522)","fails":2,"runs":0,"reqRuns":3,"ms":133625}
 ]}

@@ -1,3 +1,4 @@
-{"version":1,"url":"https://chetanmittaldev.com/","updated":"2026-08-20T16:36:31.742Z","points":[
-{"t":1787243775359,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":1,"runs":0,"reqRuns":3,"ms":16383}
+{"version":1,"url":"https://chetanmittaldev.com/","updated":"2026-08-21T14:37:15.019Z","points":[
+{"t":1787243775359,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":1,"runs":0,"reqRuns":3,"ms":16383},
+{"t":1787323018766,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":2,"runs":0,"reqRuns":3,"ms":16252}
 ]}
