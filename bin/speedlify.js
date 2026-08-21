@@ -238,6 +238,33 @@ async function measure() {
 		formFactor,
 	};
 
+	/*
+	 * Lighthouse can reject a promise nobody is awaiting.
+	 *
+	 * When a page dies or navigates mid-audit, an in-flight `Runtime.evaluate`
+	 * comes back as "Protocol error ... Promise was collected" — from inside
+	 * Lighthouse's own wait loop, after the call we awaited has already settled.
+	 * Node's default for an unhandled rejection is to kill the process, so one
+	 * uncooperative page ends the whole batch: the sites already measured are
+	 * lost with it, and on CI the job never reaches the step that commits them.
+	 *
+	 * Narrow on purpose. Only protocol-level noise from the browser is absorbed;
+	 * anything else is re-thrown, because a stray rejection in our own code is a
+	 * bug and should still be loud. The count goes in the run summary so this
+	 * cannot quietly become normal.
+	 */
+	let strayProtocolErrors = 0;
+	const isProtocolNoise = (err) =>
+		Boolean(err?.protocolMethod) || /Protocol error|Target closed|Session closed|WebSocket/i.test(err?.message ?? "");
+
+	const onStrayRejection = (err) => {
+		if (!isProtocolNoise(err)) throw err;
+		strayProtocolErrors++;
+		logger.warn("stray browser protocol error, continuing", { error: err?.message ?? String(err) });
+	};
+	process.on("unhandledRejection", onStrayRejection);
+	process.on("uncaughtException", onStrayRejection);
+
 	try {
 		await runner.launch();
 
@@ -304,6 +331,11 @@ async function measure() {
 		}
 	} finally {
 		await runner.close();
+		// Removed before anything else runs: the handlers exist to keep one bad
+		// page from ending the batch, not to make the whole process unkillable.
+		process.off("unhandledRejection", onStrayRejection);
+		process.off("uncaughtException", onStrayRejection);
+		if (strayProtocolErrors) summary.strayProtocolErrors = strayProtocolErrors;
 	}
 
 	// Promote any redirect that has now held steady long enough to count as a

@@ -70,6 +70,12 @@ jobs:
             ${{ inputs.force && '--force' || '' }}
 
       - name: Commit results
+        # Runs even when the measure step failed. Results are written to disk as
+        # each site finishes, so a run that died at site 14 of 20 still produced
+        # thirteen good measurements — and skipping the commit throws all of them
+        # away, then re-measures the same sites next cycle because they are still
+        # the stalest. The job still reports failure; it just keeps the work.
+        if: always()
         # Shards write to disjoint per-site directories, so a rebase never hits
         # a content conflict — only a "branch moved" rejection, which is what the
         # retry loop below handles.
@@ -140,6 +146,9 @@ jobs:
         run: node bin/speedlify.js backfill --max-minutes=20
 
       - name: Commit field history
+        # Same reasoning as the measurement job: whatever was fetched before a
+        # failure is still worth keeping.
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
