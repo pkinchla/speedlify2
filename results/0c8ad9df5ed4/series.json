@@ -1,3 +1,4 @@
-{"version":1,"url":"https://www.lingfest.uk/","updated":"2026-08-21T11:27:47.853Z","points":[
-{"t":1787311567534,"error":"NO_FCP: The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)","fails":1,"runs":0,"reqRuns":3,"ms":100318}
+{"version":1,"url":"https://www.lingfest.uk/","updated":"2026-08-21T17:29:29.576Z","points":[
+{"t":1787311567534,"error":"NO_FCP: The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)","fails":1,"runs":0,"reqRuns":3,"ms":100318},
+{"t":1787333267240,"error":"NO_FCP: The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)","fails":2,"runs":0,"reqRuns":3,"ms":102335}
 ]}
