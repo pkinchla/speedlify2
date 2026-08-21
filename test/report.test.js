@@ -781,4 +781,18 @@ describe("legacy API filenames", () => {
 			"accessibility", "bestPractices", "performance", "seo",
 		]);
 	});
+
+	/**
+	 * The legacy API is 0–1, not 0–100: Lighthouse reports fractions and the
+	 * original passed them through, so the component renders
+	 * `parseInt(value * 100, 10)`. Our 0–100 number displayed as 10000.
+	 */
+	test("emits scores on the 0-1 scale the old component expects", async () => {
+		const f = fixture({ performance: () => 100, url: () => "https://example.com/" });
+		const r = await buildReport({ resultsDir: f.resultsDir, configFile: f.configFile });
+		const { lighthouse } = r.compatRoutes[0];
+
+		assert.equal(lighthouse.performance, 1);
+		assert.equal(lighthouse.seo, 1);
+	});
 });
