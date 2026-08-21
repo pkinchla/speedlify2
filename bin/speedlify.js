@@ -215,6 +215,33 @@ async function measure() {
 		rateLimited: [...new Set(sites.map((s) => s.rateLimit?.delayMs).filter(Boolean))],
 	});
 
+	/*
+	 * The batch itself, one line per site, before any of it runs.
+	 *
+	 * The summary line above says how many and why; this says which. That is the
+	 * difference between a run that can be reproduced and one that can only be
+	 * described: when a batch dies halfway, or a shard keeps picking the same
+	 * sites, the question is always which URLs it had chosen — and by then the
+	 * process is gone.
+	 *
+	 * Debug level, so it lands in the run's own log file and stays out of the
+	 * console: twenty lines before anything happens is noise on a terminal and
+	 * exactly what you want in a file you are reading because something broke.
+	 */
+	for (let [i, site] of sites.entries()) {
+		const age = batch.detail[i]?.ageHours;
+		logger.debug(`queued [${i + 1}/${sites.length}] ${site.url}`, {
+			url: site.url,
+			group: site.group,
+			// Why this site is in the batch: how stale it was, and whether it is
+			// here because it failed rather than because it aged.
+			ageHours: age === Infinity ? null : age === undefined ? null : Number(age.toFixed(1)),
+			neverMeasured: age === Infinity,
+			failing: batch.detail[i]?.failing ?? false,
+			consecutiveFailures: batch.detail[i]?.consecutiveFailures ?? 0,
+		});
+	}
+
 	if (!sites.length) {
 		const why = batch.skipped.fresh
 			? `all ${batch.skipped.fresh} site(s) measured within the last ${config.freshnessHours}h`
