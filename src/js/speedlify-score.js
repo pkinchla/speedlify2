@@ -446,11 +446,20 @@ class SpeedlifyScore extends HTMLElement {
 		});
 	}
 
+	/**
+	 * Bytes, in the units the label names: kB is a thousand, MB a million.
+	 *
+	 * Decimal rather than binary, matching the site and Chrome DevTools. Dividing
+	 * by 1024 under an SI label reports "1015.8 kB" for a page over a million
+	 * bytes — a figure that is, by its own label, more than a megabyte.
+	 */
 	bytes(n) {
 		if (typeof n !== "number") return "–";
-		if (n < 1024) return `${n} B`;
-		if (n < 1024 * 1024) return `${(n / 1024).toFixed(1)} kB`;
-		return `${(n / 1024 / 1024).toFixed(2)} MB`;
+		if (n < 1000) return `${n} B`;
+		// 999,950 rather than a million: the figure is rounded to one decimal, and
+		// anything above this prints as "1000.0 kB" — a megabyte in smaller type.
+		if (n < 999950) return `${(n / 1000).toFixed(1)} kB`;
+		return `${(n / 1000 / 1000).toFixed(2)} MB`;
 	}
 
 	ms(n) {

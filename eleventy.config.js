@@ -87,6 +87,21 @@ function loadLocalIcons(dir = ICONS_DIR) {
 
 const localIcons = loadLocalIcons();
 
+/**
+ * Decimal bytes: 1 kB is 1,000 bytes, 1 MB is 1,000,000. See the filter below.
+ *
+ * The kB ceiling is 999,950 rather than a round million because the figure is
+ * rounded to one decimal before anyone reads it: 999,999 B is under a megabyte
+ * but prints as "1000.0 kB", which is the same failure to roll over in smaller
+ * type. Anything that would round to 1000.0 is already a megabyte on the page.
+ */
+function formatBytes(v) {
+	if (typeof v !== "number") return "—";
+	if (v < 1000) return `${v} B`;
+	if (v < 999950) return `${(v / 1000).toFixed(1)} kB`;
+	return `${(v / 1000 / 1000).toFixed(2)} MB`;
+}
+
 export default async function ($config) {
 	$config.addPlugin(HtmlBasePlugin, {
 		baseHref: process.env.GITHUB_ACTIONS ? "speedlify2" : "/",
@@ -133,12 +148,19 @@ export default async function ($config) {
 
 	/* ---------------------------------------------------------------- format */
 
-	$config.addFilter("bytes", (v) => {
-		if (typeof v !== "number") return "—";
-		if (v < 1024) return `${v} B`;
-		if (v < 1024 * 1024) return `${(v / 1024).toFixed(1)} kB`;
-		return `${(v / 1024 / 1024).toFixed(2)} MB`;
-	});
+	/**
+	 * Bytes, in the units the label actually names.
+	 *
+	 * Decimal, not binary. `kB` means a thousand bytes and `MB` a million — the
+	 * convention Chrome DevTools reports transfer sizes in, and the one anybody
+	 * reading "MB" assumes. Dividing by 1024 while writing `kB` produced figures
+	 * like "1015.8 kB", which is over a million bytes and so, by its own label,
+	 * over a megabyte: a number that has visibly failed to roll over.
+	 *
+	 * The binary units exist and are correct for memory. They are called KiB and
+	 * MiB, and page weight is not measured in them.
+	 */
+	$config.addFilter("bytes", formatBytes);
 
 	$config.addFilter("ms", (v) => {
 		if (typeof v !== "number") return "—";
@@ -155,11 +177,7 @@ export default async function ($config) {
 	$config.addFilter("unit", function (v, unit) {
 		if (typeof v !== "number") return "—";
 		if (unit === "ms") return v < 1000 ? `${Math.round(v)} ms` : `${(v / 1000).toFixed(2)} s`;
-		if (unit === "bytes") {
-			if (v < 1024) return `${v} B`;
-			if (v < 1024 * 1024) return `${(v / 1024).toFixed(1)} kB`;
-			return `${(v / 1024 / 1024).toFixed(2)} MB`;
-		}
+		if (unit === "bytes") return formatBytes(v);
 		// Unitless: CLS needs decimals, counts do not.
 		return Number.isInteger(v) ? v.toLocaleString("en-US") : v.toFixed(3);
 	});
