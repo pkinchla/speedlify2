@@ -32,16 +32,23 @@ const ICONS_DIR = "src/icons";
  * available.
  */
 /**
- * Brand colours for marks simple-icons does not carry.
+ * Brand colours, overriding or supplying what simple-icons ships.
  *
  * The colour normally comes from simple-icons, which ships a hex with every
- * icon. Font Awesome's brand marks are monochrome by design, so a brand that
- * only exists there has no colour to inherit and would otherwise follow the
- * theme's text colour.
+ * icon. Two cases need this table instead: a brand that only exists in Font
+ * Awesome, whose marks are monochrome by design and so have no colour to
+ * inherit, and a brand whose official colour does not survive this page's dark
+ * background.
  */
 const BRAND_COLORS = {
 	// Build Awesome's balloon, from its own mark.
 	BuildAwesome: "00A776",
+
+	// Gatsby's own purple is rebeccapurple, #663399, which lands at luminance
+	// 0.075 — over the floor below, so it is used, but only just, and it reads
+	// as a smudge on a #2e2e2e page. This is Astro's purple: the same hue with
+	// enough lightness to be legible.
+	Gatsby: "BC52EE",
 };
 
 const FONT_AWESOME_ICONS = {
@@ -737,9 +744,12 @@ export default async function ($config) {
 		// to either end of the range is dropped in favour of `currentColor`, so
 		// the icon follows the theme's text colour instead. Those marks are
 		// recognisable by shape, and a visible glyph beats an accurate one.
-		const luminance = relativeLuminance(icon.hex);
+		// BRAND_COLORS wins over the icon's own hex, same as in the Font Awesome
+		// branch above — an override there has to mean the same thing here.
+		const hex = BRAND_COLORS[detected.icon] ?? icon.hex;
+		const luminance = relativeLuminance(hex);
 		const usesBrandColor = luminance > 0.06 && luminance < 0.85;
-		const fill = usesBrandColor ? `#${icon.hex}` : "currentColor";
+		const fill = usesBrandColor ? `#${hex}` : "currentColor";
 
 		return [
 			`<svg class="stack-icon${usesBrandColor ? "" : " stack-icon-mono"}${presumed}"`,
