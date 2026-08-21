@@ -1,0 +1,3 @@
+{"version":1,"url":"https://once-eleventy.netlify.app/","updated":"2026-08-21T04:40:34.714Z","points":[
+{"t":1787287212565,"performance":100,"accessibility":98,"best-practices":100,"seo":100,"lcp":1656,"cls":0,"tbt":0,"fcp":786,"si":786,"ttfb":606,"total":514898,"requests":10,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":170.2,"longTasks":0,"elements":155,"failingCount":1,"failingNodes":1,"axeViolations":3,"axePasses":296,"bench":2489.5,"runs":3,"reqRuns":3,"ms":22148,"spread":1}
+]}

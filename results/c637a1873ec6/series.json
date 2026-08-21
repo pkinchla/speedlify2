@@ -1,0 +1,3 @@
+{"version":1,"url":"https://przemekmiros.pl/","updated":"2026-08-21T04:45:22.225Z","points":[
+{"t":1787287488054,"performance":95,"accessibility":97,"best-practices":77,"seo":100,"lcp":2136,"cls":0,"tbt":231,"fcp":1020,"si":1020,"ttfb":608,"total":1040551,"requests":46,"bytes":159670,"mainThreadMs":84.8,"unusedJsBytes":61259,"unusedCssBytes":0,"mainThreadTotal":995.1,"longTasks":3,"elements":617,"failingCount":2,"failingNodes":11,"axeViolations":10,"axePasses":913,"bench":2502,"runs":3,"reqRuns":3,"ms":34170,"spread":30}
+]}

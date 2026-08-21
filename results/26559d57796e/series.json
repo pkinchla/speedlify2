@@ -1,0 +1,3 @@
+{"version":1,"url":"https://oilsludge.com/","updated":"2026-08-21T04:40:09.569Z","points":[
+{"t":1787287179959,"to":"https://www.oilsludge.com/","perm":0,"performance":72,"accessibility":100,"best-practices":46,"seo":100,"lcp":6687,"cls":0,"tbt":182,"fcp":2099,"si":2357,"ttfb":643,"total":686773,"requests":28,"bytes":642587,"mainThreadMs":119.2,"unusedJsBytes":203633,"unusedCssBytes":0,"mainThreadTotal":1226.9,"longTasks":4,"elements":154,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":326,"bench":2477.5,"runs":3,"reqRuns":3,"ms":29606,"spread":14}
+]}

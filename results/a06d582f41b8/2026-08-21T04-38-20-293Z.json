@@ -1,0 +1,232 @@
+{
+  "url": "https://neat-starter.netlify.app/",
+  "name": "neat-starter.netlify.app",
+  "group": "11ty-starters",
+  "groupName": "Build Awesome Starters",
+  "timestamp": 1787287100293,
+  "date": "2026-08-21T04:38:20.293Z",
+  "runId": "2026-08-21T04-37-19-278Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 21195,
+  "error": null,
+  "variance": {
+    "min": 89,
+    "max": 98,
+    "spread": 9,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://neat-starter.netlify.app/",
+    "finalUrl": "https://neat-starter.netlify.app/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 98,
+      "accessibility": 90,
+      "best-practices": 100,
+      "seo": 90,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1867,
+      "lcp": 1867,
+      "si": 1867,
+      "tbt": 1,
+      "tti": 1896,
+      "cls": 0,
+      "ttfb": 606,
+      "maxPotentialFid": 52,
+      "serverResponseTime": 7,
+      "networkRtt": 0,
+      "networkServerLatency": 5.8
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 8.3,
+      "elementRenderDelay": 51.6
+    },
+    "weight": {
+      "total": 77694,
+      "requests": 5,
+      "mainDocument": 1554,
+      "byType": {
+        "total": {
+          "bytes": 76613,
+          "requests": 4
+        },
+        "script": {
+          "bytes": 69098,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 5961,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 1554,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "other": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 55138,
+          "requests": 1
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 1,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 55138,
+      "mainThreadMs": 24.6,
+      "top": [
+        {
+          "entity": "Netlify",
+          "bytes": 55138,
+          "mainThreadMs": 24.6
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 249.5,
+      "byGroup": {
+        "scriptEvaluation": 109.1,
+        "other": 72.7,
+        "styleLayout": 27.5,
+        "scriptParseCompile": 27.2,
+        "parseHTML": 10.1,
+        "paintCompositeRender": 2.9
+      },
+      "bootupMs": 102.9,
+      "longTasks": 2,
+      "longestTaskMs": 56
+    },
+    "dom": {
+      "elements": 46,
+      "depth": 7,
+      "maxChildren": 6
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 21305,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 13107,
+      "renderBlockingMs": 1355,
+      "renderBlockingCount": 3,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 3,
+      "applicableCount": 17,
+      "failingNodes": 3,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 1
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": null,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 10
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2483,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T04:38:34.542Z",
+      "runtimeMs": 5855.5
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0H9TA69R2P1YZVKFP73VM7Y"
+    },
+    "violations": 4,
+    "passes": 81,
+    "incomplete": 1,
+    "violationRules": 4,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Heading levels should only increase by one"
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should have one main landmark"
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "All page content should be contained by landmarks"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
