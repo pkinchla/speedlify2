@@ -1,0 +1,3 @@
+{"version":1,"url":"https://workingdraft.de/","updated":"2026-08-21T10:36:26.783Z","points":[
+{"t":1787308556451,"performance":99,"accessibility":93,"best-practices":100,"seo":100,"lcp":1811,"cls":0,"tbt":78,"fcp":1093,"si":1701,"ttfb":715,"total":448810,"requests":47,"bytes":48837,"mainThreadMs":0,"unusedJsBytes":25937,"unusedCssBytes":0,"mainThreadTotal":1366.5,"longTasks":4,"elements":2132,"failingCount":3,"failingNodes":3,"axeViolations":3,"axePasses":1288,"bench":2475.5,"runs":3,"reqRuns":3,"ms":30331,"spread":0}
+]}

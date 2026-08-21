@@ -1,0 +1,226 @@
+{
+  "url": "https://www.attractmore.uk/",
+  "name": "www.attractmore.uk",
+  "group": "11ty-emeritus",
+  "groupName": "11ty Emeritus",
+  "timestamp": 1787308694824,
+  "date": "2026-08-21T10:38:14.824Z",
+  "runId": "2026-08-21T10-28-58-876Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 24214,
+  "error": null,
+  "variance": {
+    "min": 97,
+    "max": 98,
+    "spread": 1,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.attractmore.uk/",
+    "finalUrl": "https://www.attractmore.uk/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 97,
+      "accessibility": 97,
+      "best-practices": 81,
+      "seo": 85,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1754,
+      "lcp": 2365,
+      "si": 1754,
+      "tbt": 102,
+      "tti": 2365,
+      "cls": 0.004,
+      "ttfb": 477,
+      "maxPotentialFid": 152,
+      "serverResponseTime": 64,
+      "networkRtt": 7.7,
+      "networkServerLatency": 152.6
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 270.5,
+      "resourceLoadDelay": 12.4,
+      "resourceLoadDuration": 52.4,
+      "elementRenderDelay": 37.1
+    },
+    "weight": {
+      "total": 197794,
+      "requests": 28,
+      "mainDocument": 14791,
+      "byType": {
+        "total": {
+          "bytes": 197794,
+          "requests": 28
+        },
+        "image": {
+          "bytes": 86656,
+          "requests": 4
+        },
+        "script": {
+          "bytes": 42518,
+          "requests": 8
+        },
+        "font": {
+          "bytes": 37885,
+          "requests": 2
+        },
+        "other": {
+          "bytes": 15944,
+          "requests": 13
+        },
+        "document": {
+          "bytes": 14791,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 28550,
+          "requests": 8
+        }
+      },
+      "scripts": 8,
+      "stylesheets": 0,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 5,
+      "bytes": 28550,
+      "mainThreadMs": 14.5,
+      "top": [
+        {
+          "entity": "Cloudflare",
+          "bytes": 23154,
+          "mainThreadMs": 9
+        },
+        {
+          "entity": "ahrefs.com",
+          "bytes": 3348,
+          "mainThreadMs": 3
+        },
+        {
+          "entity": "Unpkg",
+          "bytes": 1450,
+          "mainThreadMs": 2.5
+        },
+        {
+          "entity": "websitecarbon.com",
+          "bytes": 562,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "cloudflareinsights.com",
+          "bytes": 36,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 953.7,
+      "byGroup": {
+        "scriptEvaluation": 416.3,
+        "other": 232,
+        "styleLayout": 221.3,
+        "parseHTML": 35.5,
+        "paintCompositeRender": 31,
+        "scriptParseCompile": 17.7
+      },
+      "bootupMs": 363.9,
+      "longTasks": 2,
+      "longestTaskMs": 152
+    },
+    "dom": {
+      "elements": 289,
+      "depth": 12,
+      "maxChildren": 14
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 18145.12,
+      "poorlyCachedCount": 4
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 28,
+      "failingNodes": 5,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 5
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": null,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 32
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2425.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T10:38:16.131Z",
+      "runtimeMs": 6871.4
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e90250fc59c88f-ORD",
+      "server": "cloudflare"
+    },
+    "violations": 1,
+    "passes": 73,
+    "incomplete": 0,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "meta-refresh",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Delayed refresh under 20 hours must not be used"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

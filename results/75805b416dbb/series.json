@@ -1,0 +1,3 @@
+{"version":1,"url":"https://www.attractmore.uk/","updated":"2026-08-21T10:38:39.038Z","points":[
+{"t":1787308694824,"performance":97,"accessibility":97,"best-practices":81,"seo":85,"lcp":2365,"cls":0.004,"tbt":102,"fcp":1754,"si":1754,"ttfb":477,"total":197794,"requests":28,"bytes":28550,"mainThreadMs":14.5,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":953.7,"longTasks":2,"elements":289,"failingCount":1,"failingNodes":5,"axeViolations":1,"axePasses":73,"bench":2425.5,"runs":3,"reqRuns":3,"ms":24214,"spread":1}
+]}

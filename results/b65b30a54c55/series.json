@@ -1,0 +1,3 @@
+{"version":1,"url":"https://v8.dev/","updated":"2026-08-21T10:30:05.615Z","points":[
+{"t":1787308185486,"performance":100,"accessibility":100,"best-practices":100,"seo":100,"lcp":769,"cls":0,"tbt":0,"fcp":769,"si":769,"ttfb":602,"total":17325,"requests":9,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":175.4,"longTasks":0,"elements":103,"failingCount":0,"failingNodes":0,"axeViolations":1,"axePasses":215,"field-lcp":962,"field-inp":80,"field-cls":0,"field-fcp":973,"field-ttfb":645,"bench":2470.5,"runs":3,"reqRuns":3,"ms":20128,"spread":0}
+]}

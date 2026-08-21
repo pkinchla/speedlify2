@@ -1,0 +1,249 @@
+{
+  "url": "https://usac.ucla.edu/",
+  "name": "usac.ucla.edu",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787308139964,
+  "date": "2026-08-21T10:28:59.964Z",
+  "runId": "2026-08-21T10-28-58-876Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 42521,
+  "error": null,
+  "variance": {
+    "min": 38,
+    "max": 48,
+    "spread": 10,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://usac.ucla.edu/",
+    "finalUrl": "https://www.usac.ucla.edu/",
+    "redirect": {
+      "from": "https://usac.ucla.edu/",
+      "to": "https://www.usac.ucla.edu/",
+      "chain": [
+        {
+          "url": "https://usac.ucla.edu/",
+          "status": 301
+        },
+        {
+          "url": "https://www.usac.ucla.edu/",
+          "status": 200
+        }
+      ],
+      "statuses": [
+        301
+      ],
+      "change": "host",
+      "permanent": true,
+      "schemeUpgrade": false,
+      "hops": 1
+    },
+    "statusCode": "ok",
+    "scores": {
+      "performance": 47,
+      "accessibility": 95,
+      "best-practices": 100,
+      "seo": 85,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 4162,
+      "lcp": 16014,
+      "si": 4737,
+      "tbt": 657,
+      "tti": 16164,
+      "cls": 0,
+      "ttfb": 678,
+      "maxPotentialFid": 280,
+      "serverResponseTime": 31,
+      "networkRtt": 0.3,
+      "networkServerLatency": 77.5
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 65.5,
+      "elementRenderDelay": 849.4
+    },
+    "weight": {
+      "total": 3543424,
+      "requests": 80,
+      "mainDocument": 47506,
+      "byType": {
+        "total": {
+          "bytes": 3543424,
+          "requests": 80
+        },
+        "image": {
+          "bytes": 1712625,
+          "requests": 8
+        },
+        "script": {
+          "bytes": 1508016,
+          "requests": 52
+        },
+        "stylesheet": {
+          "bytes": 168302,
+          "requests": 11
+        },
+        "font": {
+          "bytes": 83457,
+          "requests": 5
+        },
+        "document": {
+          "bytes": 47506,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 23518,
+          "requests": 3
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 3495795,
+          "requests": 77
+        }
+      },
+      "scripts": 52,
+      "stylesheets": 11,
+      "fonts": 5
+    },
+    "thirdParty": {
+      "count": 5,
+      "bytes": 3495795,
+      "mainThreadMs": 319.6,
+      "top": [
+        {
+          "entity": "squarespace-cdn.com",
+          "bytes": 1810230,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Squarespace",
+          "bytes": 1177352,
+          "mainThreadMs": 255.5
+        },
+        {
+          "entity": "Cloudflare CDN",
+          "bytes": 347352,
+          "mainThreadMs": 39.3
+        },
+        {
+          "entity": "sqspcdn.com",
+          "bytes": 127341,
+          "mainThreadMs": 11.9
+        },
+        {
+          "entity": "Google CDN",
+          "bytes": 33520,
+          "mainThreadMs": 12.9
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 4064.2,
+      "byGroup": {
+        "other": 1205.1,
+        "scriptEvaluation": 1033.3,
+        "styleLayout": 926.3,
+        "scriptParseCompile": 594.5,
+        "parseHTML": 180.3,
+        "paintCompositeRender": 99.8,
+        "garbageCollection": 24.8
+      },
+      "bootupMs": 1460.3,
+      "longTasks": 19,
+      "longestTaskMs": 280
+    },
+    "dom": {
+      "elements": 1402,
+      "depth": 23,
+      "maxChildren": 25
+    },
+    "waste": {
+      "unusedJsBytes": 495423,
+      "unusedCssBytes": 131411,
+      "legacyJsBytes": 114803,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 3948,
+      "renderBlockingCount": 9,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 28,
+      "failingNodes": 4,
+      "failing": [
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 3
+        },
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 781.5,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 46
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2494,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T10:29:28.263Z",
+      "runtimeMs": 11942.5
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": null,
+      "name": "Squarespace",
+      "icon": null,
+      "source": "server"
+    },
+    "headers": {
+      "server": "Squarespace"
+    },
+    "violations": 3,
+    "passes": 1019,
+    "incomplete": 55,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 3,
+        "help": "Heading levels should only increase by one"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
