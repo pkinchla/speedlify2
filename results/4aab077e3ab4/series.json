@@ -1,0 +1,3 @@
+{"version":1,"url":"https://www.lookback.com/","updated":"2026-08-21T18:45:41.720Z","points":[
+{"t":1787337848748,"performance":70,"accessibility":92,"best-practices":77,"seo":100,"lcp":5590,"cls":0.051,"tbt":291,"fcp":2493,"si":2493,"ttfb":631,"total":54502956,"requests":93,"bytes":476466,"mainThreadMs":145,"unusedJsBytes":77429,"unusedCssBytes":0,"mainThreadTotal":3774.4,"longTasks":11,"elements":578,"failingCount":3,"failingNodes":12,"axeViolations":21,"axePasses":1021,"field-lcp":2225,"field-cls":0.05,"field-fcp":1910,"field-ttfb":773,"bench":2348,"runs":3,"reqRuns":3,"ms":92971,"spread":14}
+]}

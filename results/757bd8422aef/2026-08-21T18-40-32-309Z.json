@@ -1,0 +1,213 @@
+{
+  "url": "https://www.innesi.fr/",
+  "name": "www.innesi.fr",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787337632309,
+  "date": "2026-08-21T18:40:32.309Z",
+  "runId": "2026-08-21T18-34-49-827Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 22679,
+  "error": null,
+  "variance": {
+    "min": 97,
+    "max": 99,
+    "spread": 2,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.innesi.fr/",
+    "finalUrl": "https://www.innesi.fr/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1530,
+      "lcp": 1964,
+      "si": 1530,
+      "tbt": 0,
+      "tti": 1964,
+      "cls": 0,
+      "ttfb": 614,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 120,
+      "networkRtt": 0,
+      "networkServerLatency": 16
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 121.7,
+      "resourceLoadDelay": 9.4,
+      "resourceLoadDuration": 39.1,
+      "elementRenderDelay": 25
+    },
+    "weight": {
+      "total": 150701,
+      "requests": 8,
+      "mainDocument": 2804,
+      "byType": {
+        "total": {
+          "bytes": 150701,
+          "requests": 8
+        },
+        "image": {
+          "bytes": 91597,
+          "requests": 2
+        },
+        "font": {
+          "bytes": 32691,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 11451,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 10999,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 2804,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 1159,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 11451,
+          "requests": 1
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 1,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 11451,
+      "mainThreadMs": 4.2,
+      "top": [
+        {
+          "entity": "Cloudflare",
+          "bytes": 11451,
+          "mainThreadMs": 4.2
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 210.9,
+      "byGroup": {
+        "other": 101.4,
+        "styleLayout": 46.8,
+        "scriptEvaluation": 45,
+        "paintCompositeRender": 8.8,
+        "parseHTML": 8.2,
+        "scriptParseCompile": 0.8
+      },
+      "bootupMs": 24.4,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 72,
+      "depth": 9,
+      "maxChildren": 4
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 3182,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 4580.400000000001,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 23,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 23
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2332.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T18:40:41.788Z",
+      "runtimeMs": 6064.2
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": null,
+      "source": "meta",
+      "raw": "Eleventy"
+    },
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2ebc4acb8347081-IAD",
+      "server": "cloudflare"
+    },
+    "violations": 1,
+    "passes": 151,
+    "incomplete": 4,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
