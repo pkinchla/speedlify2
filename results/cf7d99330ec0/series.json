@@ -1,0 +1,3 @@
+{"version":1,"url":"https://mrmowji.com/","updated":"2026-08-21T03:11:56.150Z","points":[
+{"t":1787281894362,"performance":97,"accessibility":92,"best-practices":100,"seo":91,"lcp":2292,"cls":0.085,"tbt":0,"fcp":845,"si":845,"ttfb":642,"total":187760,"requests":11,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":275.3,"longTasks":0,"elements":297,"failingCount":1,"failingNodes":67,"axeViolations":68,"axePasses":518,"field-lcp":2201,"field-cls":0.15,"field-fcp":2088,"field-ttfb":1672,"bench":2338.5,"runs":3,"reqRuns":3,"ms":21788,"spread":1}
+]}

@@ -1,0 +1,3 @@
+{"version":1,"url":"https://moiety.me/","updated":"2026-08-21T03:10:59.796Z","points":[
+{"t":1787281835433,"performance":100,"accessibility":100,"best-practices":100,"seo":92,"lcp":1664,"cls":0,"tbt":0,"fcp":927,"si":2275,"ttfb":764,"total":148926,"requests":10,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":187.8,"longTasks":0,"elements":77,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":196,"bench":2337.5,"runs":3,"reqRuns":3,"ms":24362,"spread":9}
+]}

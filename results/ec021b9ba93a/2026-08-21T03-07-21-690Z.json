@@ -1,0 +1,197 @@
+{
+  "url": "https://melaniekat.com/",
+  "name": "melaniekat.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787281641690,
+  "date": "2026-08-21T03:07:21.690Z",
+  "runId": "2026-08-21T03-02-01-520Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 25759,
+  "error": null,
+  "variance": {
+    "min": 95,
+    "max": 99,
+    "spread": 4,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://melaniekat.com/",
+    "finalUrl": "https://melaniekat.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 69,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1657,
+      "lcp": 1738,
+      "si": 1657,
+      "tbt": 0,
+      "tti": 1738,
+      "cls": 0.012,
+      "ttfb": 697,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 59,
+      "networkRtt": 0.1,
+      "networkServerLatency": 141.2
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 61.4,
+      "elementRenderDelay": 221.2
+    },
+    "weight": {
+      "total": 99057,
+      "requests": 16,
+      "mainDocument": 5268,
+      "byType": {
+        "total": {
+          "bytes": 85040,
+          "requests": 13
+        },
+        "font": {
+          "bytes": 63650,
+          "requests": 5
+        },
+        "image": {
+          "bytes": 8588,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 5268,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 3736,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 2983,
+          "requests": 2
+        },
+        "other": {
+          "bytes": 815,
+          "requests": 3
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 614,
+          "requests": 2
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 1,
+      "fonts": 5
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 639,
+      "mainThreadMs": 1.3,
+      "top": [
+        {
+          "entity": "neatstats.net",
+          "bytes": 639,
+          "mainThreadMs": 1.3
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 974.5,
+      "byGroup": {
+        "other": 629.3,
+        "paintCompositeRender": 190.4,
+        "styleLayout": 118,
+        "scriptEvaluation": 24.5,
+        "parseHTML": 9.1,
+        "scriptParseCompile": 3.2
+      },
+      "bootupMs": 10.9,
+      "longTasks": 3,
+      "longestTaskMs": 121
+    },
+    "dom": {
+      "elements": 30,
+      "depth": 8,
+      "maxChildren": 6
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 614,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 14,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 26
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2328.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T03:07:39.481Z",
+      "runtimeMs": 6906.6
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "4.0.0",
+      "source": "meta",
+      "raw": "Eleventy v4.0.0"
+    },
+    "host": {
+      "id": "bunny",
+      "name": "Bunny CDN",
+      "icon": null,
+      "source": "server"
+    },
+    "headers": {
+      "server": "BunnyCDN-MSP1-1084"
+    },
+    "violations": 0,
+    "passes": 61,
+    "incomplete": 13,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

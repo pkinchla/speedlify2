@@ -1,0 +1,3 @@
+{"version":1,"url":"https://mohitkarekar.com/","updated":"2026-08-21T03:10:32.433Z","points":[
+{"t":1787281804988,"performance":80,"accessibility":82,"best-practices":73,"seo":85,"lcp":3088,"cls":0.004,"tbt":342,"fcp":3088,"si":3088,"ttfb":631,"total":953248,"requests":31,"bytes":891457,"mainThreadMs":109.7,"unusedJsBytes":681567,"unusedCssBytes":0,"mainThreadTotal":1233.8,"longTasks":2,"elements":492,"failingCount":4,"failingNodes":5,"axeViolations":9,"axePasses":1103,"bench":2391,"runs":3,"reqRuns":3,"ms":27444,"spread":21}
+]}
