@@ -1,0 +1,3 @@
+{"version":1,"url":"https://infrequently.org/","updated":"2026-08-21T01:15:17.327Z","points":[
+{"t":1787274890897,"performance":99,"accessibility":100,"best-practices":100,"seo":100,"lcp":1979,"cls":0,"tbt":0,"fcp":1008,"si":1008,"ttfb":629,"total":253969,"requests":9,"bytes":1308,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":316.3,"longTasks":1,"elements":492,"failingCount":0,"failingNodes":0,"axeViolations":1,"axePasses":989,"field-lcp":1120,"field-inp":26,"field-cls":0,"field-fcp":1041,"field-ttfb":905,"bench":2469.5,"runs":3,"reqRuns":3,"ms":26429,"spread":26}
+]}

@@ -1,0 +1,271 @@
+{
+  "url": "https://infrequently.org/",
+  "name": "infrequently.org",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787274890897,
+  "date": "2026-08-21T01:14:50.897Z",
+  "runId": "2026-08-21T01-14-01-682Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 26429,
+  "error": null,
+  "variance": {
+    "min": 73,
+    "max": 99,
+    "spread": 26,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://infrequently.org/",
+    "finalUrl": "https://infrequently.org/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1008,
+      "lcp": 1979,
+      "si": 1008,
+      "tbt": 0,
+      "tti": 1979,
+      "cls": 0,
+      "ttfb": 629,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 29,
+      "networkRtt": 0,
+      "networkServerLatency": 35.1
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 30.8,
+      "elementRenderDelay": 132.4
+    },
+    "weight": {
+      "total": 253969,
+      "requests": 9,
+      "mainDocument": 28725,
+      "byType": {
+        "total": {
+          "bytes": 251525,
+          "requests": 8
+        },
+        "media": {
+          "bytes": 129805,
+          "requests": 1
+        },
+        "font": {
+          "bytes": 87418,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 28725,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 4269,
+          "requests": 3
+        },
+        "script": {
+          "bytes": 1308,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 1308,
+          "requests": 1
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 0,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 1308,
+      "mainThreadMs": 0,
+      "top": [
+        {
+          "entity": "calibre.app",
+          "bytes": 1308,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 316.3,
+      "byGroup": {
+        "styleLayout": 126.1,
+        "other": 123.1,
+        "scriptEvaluation": 30.9,
+        "parseHTML": 22.1,
+        "paintCompositeRender": 10.3,
+        "scriptParseCompile": 3.7
+      },
+      "bootupMs": 32.9,
+      "longTasks": 1,
+      "longestTaskMs": 64
+    },
+    "dom": {
+      "elements": 492,
+      "depth": 10,
+      "maxChildren": 42
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 1046.4,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 24,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 37
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2469.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T01:15:08.853Z",
+      "runtimeMs": 6800.1
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "origin",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-22",
+      "last": "2026-08-18"
+    },
+    "metrics": {
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 99.4,
+          "needsImprovement": 0,
+          "poor": 0.6
+        }
+      },
+      "ttfb": {
+        "p75": 905,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 71.3,
+          "needsImprovement": 20.9,
+          "poor": 7.9
+        }
+      },
+      "fcp": {
+        "p75": 1041,
+        "rating": "good",
+        "distribution": {
+          "good": 90.9,
+          "needsImprovement": 5,
+          "poor": 4.1
+        }
+      },
+      "inp": {
+        "p75": 26,
+        "rating": "good",
+        "distribution": {
+          "good": 99.4,
+          "needsImprovement": 0.6,
+          "poor": 0
+        }
+      },
+      "lcp": {
+        "p75": 1120,
+        "rating": "good",
+        "distribution": {
+          "good": 94,
+          "needsImprovement": 3.7,
+          "poor": 2.3
+        }
+      },
+      "rtt": {
+        "p75": 123,
+        "rating": null,
+        "distribution": {
+          "good": 51.7,
+          "needsImprovement": 40.3,
+          "poor": 8
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "3.1.6",
+      "source": "meta",
+      "raw": "Eleventy v3.1.6"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0GY5VGRZFDGXGDWZSXRCD52"
+    },
+    "violations": 1,
+    "passes": 989,
+    "incomplete": 32,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

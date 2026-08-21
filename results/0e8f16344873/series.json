@@ -1,0 +1,3 @@
+{"version":1,"url":"https://jerseycitybitcoin.com/","updated":"2026-08-21T01:21:43.856Z","points":[
+{"t":1787275278230,"performance":87,"accessibility":74,"best-practices":77,"seo":82,"lcp":1885,"cls":0.185,"tbt":181,"fcp":1885,"si":1885,"ttfb":501,"total":623873,"requests":25,"bytes":602430,"mainThreadMs":126,"unusedJsBytes":258276,"unusedCssBytes":0,"mainThreadTotal":871,"longTasks":5,"elements":111,"failingCount":5,"failingNodes":5,"axeViolations":4,"axePasses":198,"bench":2482,"runs":3,"reqRuns":3,"ms":25625,"spread":38}
+]}

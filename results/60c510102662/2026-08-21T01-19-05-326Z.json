@@ -1,0 +1,218 @@
+{
+  "url": "https://jdsteinbach.com/",
+  "name": "jdsteinbach.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787275145326,
+  "date": "2026-08-21T01:19:05.326Z",
+  "runId": "2026-08-21T01-14-01-682Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 23933,
+  "error": null,
+  "variance": {
+    "min": 88,
+    "max": 97,
+    "spread": 9,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://jdsteinbach.com/",
+    "finalUrl": "https://jdsteinbach.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 96,
+      "accessibility": 96,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 2019,
+      "lcp": 2446,
+      "si": 2019,
+      "tbt": 0,
+      "tti": 2446,
+      "cls": 0,
+      "ttfb": 473,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 27,
+      "networkRtt": 0.1,
+      "networkServerLatency": 140.8
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 29.1,
+      "elementRenderDelay": 108.5
+    },
+    "weight": {
+      "total": 217293,
+      "requests": 17,
+      "mainDocument": 9106,
+      "byType": {
+        "total": {
+          "bytes": 209858,
+          "requests": 16
+        },
+        "font": {
+          "bytes": 167610,
+          "requests": 5
+        },
+        "script": {
+          "bytes": 19764,
+          "requests": 4
+        },
+        "document": {
+          "bytes": 9106,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 7755,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 5623,
+          "requests": 5
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 16200,
+          "requests": 3
+        }
+      },
+      "scripts": 4,
+      "stylesheets": 1,
+      "fonts": 5
+    },
+    "thirdParty": {
+      "count": 3,
+      "bytes": 16200,
+      "mainThreadMs": 5.9,
+      "top": [
+        {
+          "entity": "Cloudflare",
+          "bytes": 11451,
+          "mainThreadMs": 3.7
+        },
+        {
+          "entity": "zgo.at",
+          "bytes": 4368,
+          "mainThreadMs": 2.2
+        },
+        {
+          "entity": "goatcounter.com",
+          "bytes": 381,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 451.8,
+      "byGroup": {
+        "other": 228.5,
+        "styleLayout": 108.4,
+        "scriptEvaluation": 65,
+        "paintCompositeRender": 24.1,
+        "parseHTML": 21.4,
+        "scriptParseCompile": 4.4
+      },
+      "bootupMs": 28.2,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 355,
+      "depth": 10,
+      "maxChildren": 30
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 646,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 21874.09860401149,
+      "poorlyCachedCount": 9
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 25,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "aria-hidden-focus",
+          "title": "`[aria-hidden=\"true\"]` elements contain focusable descendents",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 24
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2487,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T01:19:21.954Z",
+      "runtimeMs": 6112.9
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "3.1.6",
+      "source": "meta",
+      "raw": "Eleventy v3.1.6"
+    },
+    "host": {
+      "id": "github",
+      "name": "GitHub Pages",
+      "icon": "Github",
+      "source": "x-github-request-id"
+    },
+    "headers": {
+      "cf-ray": "a2e5cf229d28e74c-ORD",
+      "server": "cloudflare",
+      "via": "1.1 varnish",
+      "x-fastly-request-id": "2dbbaa31ddadc35ea757e5e6772c3d992276f27e",
+      "x-github-request-id": "6260:3B581:3945DD:4220EA:6A87A78A",
+      "x-served-by": "cache-chi-klot8100042-CHI"
+    },
+    "violations": 0,
+    "passes": 338,
+    "incomplete": 34,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
