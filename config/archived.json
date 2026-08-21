@@ -1,15 +1,25 @@
 {
   "note": "Sites kept in the record but taken out of circulation: not measured, not ranked, not linked. Their stored history stays on disk — this is the option between leaving a dead site in the leaderboard and deleting it outright. For sites that have lapsed or whose domain is now parked, NOT for sites that have migrated off Eleventy or Build Awesome: those keep being measured and are moved to 11ty Emeritus automatically by requireGenerator. Listed here rather than removed from the generated category files, which a re-import would only put back.",
   "urls": [
+    "http://ido.g.gitlab.io/idog-blog-daisyui",
+    "https://11ty-sass.netlify.app/",
     "https://arie.ls/",
     "https://chrisdwheatley.com/",
     "https://craftersagainstcovid19.org/",
+    "https://docs.miayam.io/",
+    "https://eleventy-webpack.netlify.app/",
+    "https://eleventy.ghost.org/",
+    "https://jace-ty.netlify.app/",
     "https://jawgrind.com/",
     "https://jeremyswinnen.com/",
+    "https://link-in-bio-11ty.glitch.me/",
     "https://myclientwants.com/",
     "https://officeglow.online/",
+    "https://roxo-eleventy.staticmania.com/",
     "https://song.co.jp/fx",
+    "https://the-universal-theme.netlify.app/",
     "https://til-blog.glitch.me/",
+    "https://webpixels-bootstrap-starter-kit.netlify.app/",
     "https://www.frede.io/"
   ]
 }
