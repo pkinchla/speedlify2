@@ -1,0 +1,228 @@
+{
+  "url": "https://tinyrumble.com/",
+  "name": "tinyrumble.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787330638943,
+  "date": "2026-08-21T16:43:58.943Z",
+  "runId": "2026-08-21T16-32-38-033Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 23997,
+  "error": null,
+  "variance": {
+    "min": 82,
+    "max": 95,
+    "spread": 13,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://tinyrumble.com/",
+    "finalUrl": "https://tinyrumble.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 90,
+      "accessibility": 89,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 2621,
+      "lcp": 3052,
+      "si": 2621,
+      "tbt": 0,
+      "tti": 3052,
+      "cls": 0.003,
+      "ttfb": 476,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 55,
+      "networkRtt": 0.2,
+      "networkServerLatency": 41.3
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 56.5,
+      "resourceLoadDelay": 11,
+      "resourceLoadDuration": 35.8,
+      "elementRenderDelay": 45.2
+    },
+    "weight": {
+      "total": 388037,
+      "requests": 21,
+      "mainDocument": 3483,
+      "byType": {
+        "total": {
+          "bytes": 388037,
+          "requests": 20
+        },
+        "image": {
+          "bytes": 269526,
+          "requests": 10
+        },
+        "font": {
+          "bytes": 37552,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 36905,
+          "requests": 3
+        },
+        "script": {
+          "bytes": 35944,
+          "requests": 2
+        },
+        "other": {
+          "bytes": 4627,
+          "requests": 3
+        },
+        "document": {
+          "bytes": 3483,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 108601,
+          "requests": 5
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 3,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 3,
+      "bytes": 108601,
+      "mainThreadMs": 8.6,
+      "top": [
+        {
+          "entity": "JSDelivr CDN",
+          "bytes": 57824,
+          "mainThreadMs": 3.5
+        },
+        {
+          "entity": "Google Fonts",
+          "bytes": 39358,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Cloudflare",
+          "bytes": 11419,
+          "mainThreadMs": 5.1
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 343.8,
+      "byGroup": {
+        "other": 178.5,
+        "scriptEvaluation": 61.5,
+        "styleLayout": 57.8,
+        "parseHTML": 19,
+        "paintCompositeRender": 15.1,
+        "scriptParseCompile": 7.7,
+        "garbageCollection": 4.1
+      },
+      "bootupMs": 11.9,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 143,
+      "depth": 10,
+      "maxChildren": 5
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 31201,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 2170,
+      "renderBlockingCount": 3,
+      "poorlyCachedBytes": 4567.6,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 15,
+      "failingNodes": 2,
+      "failing": [
+        {
+          "id": "html-has-lang",
+          "title": "`<html>` element does not have a `[lang]` attribute",
+          "nodes": 1
+        },
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 18
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2477.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T16:44:08.568Z",
+      "runtimeMs": 6438.7
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2eb1a193baacfa8-SJC",
+      "server": "cloudflare"
+    },
+    "violations": 2,
+    "passes": 228,
+    "incomplete": 2,
+    "violationRules": 2,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "html-has-lang",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "<html> element must have a lang attribute"
+      },
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Page should contain a level-one heading"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

@@ -1,0 +1,3 @@
+{"version":1,"url":"https://thomasmariahelzle.de/","updated":"2026-08-21T16:43:55.945Z","points":[
+{"t":1787330605201,"performance":73,"accessibility":98,"best-practices":100,"seo":100,"lcp":7972,"cls":0,"tbt":0,"fcp":1738,"si":3697,"ttfb":1222,"total":2237871,"requests":25,"bytes":0,"mainThreadMs":0,"unusedJsBytes":23958,"unusedCssBytes":0,"mainThreadTotal":716,"longTasks":1,"elements":182,"failingCount":1,"failingNodes":1,"bench":2442,"runs":3,"reqRuns":3,"ms":30742,"spread":10}
+]}

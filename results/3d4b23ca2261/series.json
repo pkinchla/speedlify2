@@ -1,0 +1,3 @@
+{"version":1,"url":"https://tfedder.de/","updated":"2026-08-21T16:40:01.688Z","points":[
+{"t":1787330378261,"performance":100,"accessibility":100,"best-practices":100,"seo":100,"lcp":913,"cls":0,"tbt":0,"fcp":913,"si":913,"ttfb":753,"total":49371,"requests":3,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":132,"longTasks":0,"elements":21,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":62,"bench":2498,"runs":3,"reqRuns":3,"ms":23426,"spread":0}
+]}
