@@ -1,0 +1,267 @@
+{
+  "url": "https://deno.com/deploy",
+  "name": "Deno Deploy",
+  "group": "hosts",
+  "groupName": "Web Hosts",
+  "timestamp": 1787347420002,
+  "date": "2026-08-21T21:23:40.002Z",
+  "runId": "2026-08-21T21-23-32-889Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 53493,
+  "error": null,
+  "variance": {
+    "min": 45,
+    "max": 65,
+    "spread": 20,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://deno.com/deploy",
+    "finalUrl": "https://deno.com/deploy",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 61,
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 100,
+      "agentic-browsing": 67
+    },
+    "timings": {
+      "fcp": 3296,
+      "lcp": 11646,
+      "si": 5055,
+      "tbt": 237,
+      "tti": 11839,
+      "cls": 0,
+      "ttfb": 671,
+      "maxPotentialFid": 304,
+      "serverResponseTime": 61,
+      "networkRtt": 49.9,
+      "networkServerLatency": 70.6
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 285.5,
+      "resourceLoadDelay": 122.3,
+      "resourceLoadDuration": 403.3,
+      "elementRenderDelay": 359
+    },
+    "weight": {
+      "total": 4365888,
+      "requests": 65,
+      "mainDocument": 180235,
+      "byType": {
+        "total": {
+          "bytes": 4365888,
+          "requests": 59
+        },
+        "media": {
+          "bytes": 1967619,
+          "requests": 2
+        },
+        "image": {
+          "bytes": 1292439,
+          "requests": 20
+        },
+        "font": {
+          "bytes": 407098,
+          "requests": 5
+        },
+        "script": {
+          "bytes": 307583,
+          "requests": 25
+        },
+        "stylesheet": {
+          "bytes": 205354,
+          "requests": 4
+        },
+        "document": {
+          "bytes": 180235,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 5560,
+          "requests": 2
+        },
+        "third-party": {
+          "bytes": 0,
+          "requests": 1
+        }
+      },
+      "scripts": 25,
+      "stylesheets": 4,
+      "fonts": 5
+    },
+    "thirdParty": {
+      "count": 0,
+      "bytes": 0,
+      "mainThreadMs": 0,
+      "top": []
+    },
+    "mainThread": {
+      "total": 4280.3,
+      "byGroup": {
+        "other": 2241.8,
+        "styleLayout": 848.5,
+        "scriptEvaluation": 615.3,
+        "parseHTML": 312.9,
+        "paintCompositeRender": 169.9,
+        "garbageCollection": 76.7,
+        "scriptParseCompile": 15.3
+      },
+      "bootupMs": 620.8,
+      "longTasks": 14,
+      "longestTaskMs": 396
+    },
+    "dom": {
+      "elements": 916,
+      "depth": 22,
+      "maxChildren": 15
+    },
+    "waste": {
+      "unusedJsBytes": 157486,
+      "unusedCssBytes": 47770,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 1050,
+      "renderBlockingCount": 4,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 29,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": null,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": null,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 2,
+      "baselineLimitedFeatures": 46
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2027.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T21:23:43.695Z",
+      "runtimeMs": 18978.8
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-23",
+      "last": "2026-08-19"
+    },
+    "metrics": {
+      "ttfb": {
+        "p75": 1305,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 46.8,
+          "needsImprovement": 40.2,
+          "poor": 13
+        }
+      },
+      "fcp": {
+        "p75": 2537,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 53,
+          "needsImprovement": 29.9,
+          "poor": 17.1
+        }
+      },
+      "inp": {
+        "p75": 233,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 69.5,
+          "needsImprovement": 27.4,
+          "poor": 3.1
+        }
+      },
+      "lcp": {
+        "p75": 3097,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 64.6,
+          "needsImprovement": 18.2,
+          "poor": 17.2
+        }
+      },
+      "rtt": {
+        "p75": 267,
+        "rating": null,
+        "distribution": {
+          "good": 24,
+          "needsImprovement": 51.5,
+          "poor": 24.5
+        }
+      },
+      "cls": {
+        "p75": 0.64,
+        "rating": "poor",
+        "distribution": {
+          "good": 60.2,
+          "needsImprovement": 4.9,
+          "poor": 34.9
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": null,
+      "name": "deployd",
+      "icon": null,
+      "source": "server"
+    },
+    "headers": {
+      "server": "deployd",
+      "via": "HTTP/2 ord.vultr.prod.deno-cluster.net"
+    },
+    "violations": 2,
+    "passes": 1145,
+    "incomplete": 20,
+    "violationRules": 2,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "nested-interactive",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Interactive controls must not be nested"
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "All page content should be contained by landmarks"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
