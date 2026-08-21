@@ -161,7 +161,7 @@ pre code { font-size: inherit; }
 .stat-rings { grid-column: span 2; }
 /* Two labelled rows in one tile, so the median and the mean read as the same
    six measurements taken two ways rather than as separate statistics. */
-.ring-row + .ring-row { margin-top: 0.55rem; }
+.ring-row + .ring-row { margin-top: 0.2rem; }
 .ring-row .rings { margin-bottom: 0.2rem; }
 .stat-sub-note { margin: 0.4rem 0 0; }
 
@@ -170,7 +170,17 @@ pre code { font-size: inherit; }
 @media (max-width: 32rem) {
 	.stat-rings .rings { flex-wrap: wrap; row-gap: 0.3rem; }
 }
-.stat-label { display: block; font-size: 0.78rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; }
+/* The margin gives whatever follows — a sub-figure, a sparkline, the mean row —
+   room to sit apart from the label rather than crowding under it. Harmless on
+   the tiles where the label is last: nothing follows it to push down. */
+.stat-label {
+	display: block;
+	margin-bottom: 0.35rem;
+	font-size: 0.78rem;
+	color: var(--text-muted);
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
 /* A second figure under a stat: the share of that number attributable to one
    thing, with the marks standing in for naming it twice. */
 .stat-sub {
