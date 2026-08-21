@@ -1,0 +1,244 @@
+{
+  "url": "https://isaure.maurel.gd/",
+  "name": "isaure.maurel.gd",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787275047295,
+  "date": "2026-08-21T01:17:27.295Z",
+  "runId": "2026-08-21T01-13-53-217Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 23074,
+  "error": null,
+  "variance": {
+    "min": 80,
+    "max": 98,
+    "spread": 18,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://isaure.maurel.gd/",
+    "finalUrl": "https://isaure.maurel.gd/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 98,
+      "accessibility": 66,
+      "best-practices": 100,
+      "seo": 92,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 1736,
+      "lcp": 1961,
+      "si": 1736,
+      "tbt": 0,
+      "tti": 1968,
+      "cls": 0.046,
+      "ttfb": 478,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 131,
+      "networkRtt": 0,
+      "networkServerLatency": 31.4
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 133,
+      "elementRenderDelay": 101
+    },
+    "weight": {
+      "total": 2193458,
+      "requests": 25,
+      "mainDocument": 2607,
+      "byType": {
+        "total": {
+          "bytes": 2193458,
+          "requests": 25
+        },
+        "image": {
+          "bytes": 2129459,
+          "requests": 17
+        },
+        "font": {
+          "bytes": 44475,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 15869,
+          "requests": 3
+        },
+        "document": {
+          "bytes": 2607,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 1048,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "other": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 57548,
+          "requests": 4
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 3,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 57548,
+      "mainThreadMs": 0,
+      "top": [
+        {
+          "entity": "Google Fonts",
+          "bytes": 57548,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 256.9,
+      "byGroup": {
+        "other": 144.7,
+        "styleLayout": 79.5,
+        "paintCompositeRender": 14.3,
+        "scriptEvaluation": 8.9,
+        "parseHTML": 8.7,
+        "scriptParseCompile": 0.7
+      },
+      "bootupMs": 6,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 126,
+      "depth": 8,
+      "maxChildren": 6
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 12975,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 1437,
+      "renderBlockingCount": 3,
+      "poorlyCachedBytes": 1450247.8036388885,
+      "poorlyCachedCount": 20
+    },
+    "accessibility": {
+      "failingCount": 4,
+      "applicableCount": 13,
+      "failingNodes": 16,
+      "failing": [
+        {
+          "id": "image-alt",
+          "title": "Image elements do not have `[alt]` attributes",
+          "nodes": 8
+        },
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "nodes": 4
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 3
+        },
+        {
+          "id": "html-has-lang",
+          "title": "`<html>` element does not have a `[lang]` attribute",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 4
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 3372.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T01:17:36.847Z",
+      "runtimeMs": 6201.3
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "2.0.1",
+      "source": "meta",
+      "raw": "Eleventy v2.0.1"
+    },
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e5ccb99d9d10d0-ORD",
+      "server": "cloudflare"
+    },
+    "violations": 16,
+    "passes": 257,
+    "incomplete": 1,
+    "violationRules": 4,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "image-alt",
+        "impact": "critical",
+        "nodes": 8,
+        "help": "Images must have alternative text"
+      },
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "nodes": 4,
+        "help": "Links must have discernible text"
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 3,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "html-has-lang",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "<html> element must have a lang attribute"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
