@@ -1,0 +1,242 @@
+{
+  "url": "https://www.ribomation.se/",
+  "name": "www.ribomation.se",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787337509892,
+  "date": "2026-08-21T18:38:29.892Z",
+  "runId": "2026-08-21T18-34-52-814Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 30795,
+  "error": null,
+  "variance": {
+    "min": 76,
+    "max": 76,
+    "spread": 0,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.ribomation.se/",
+    "finalUrl": "https://www.ribomation.se/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 76,
+      "accessibility": 89,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 3187,
+      "lcp": 4821,
+      "si": 3187,
+      "tbt": 0,
+      "tti": 4821,
+      "cls": 0.039,
+      "ttfb": 621,
+      "maxPotentialFid": 42,
+      "serverResponseTime": 2,
+      "networkRtt": 2,
+      "networkServerLatency": 87.9
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 4.1,
+      "elementRenderDelay": 167.3
+    },
+    "weight": {
+      "total": 2009296,
+      "requests": 54,
+      "mainDocument": 8344,
+      "byType": {
+        "total": {
+          "bytes": 2008642,
+          "requests": 53
+        },
+        "image": {
+          "bytes": 1538560,
+          "requests": 30
+        },
+        "font": {
+          "bytes": 226945,
+          "requests": 4
+        },
+        "other": {
+          "bytes": 100457,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 84382,
+          "requests": 7
+        },
+        "script": {
+          "bytes": 49954,
+          "requests": 8
+        },
+        "document": {
+          "bytes": 8344,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 74814,
+          "requests": 7
+        }
+      },
+      "scripts": 8,
+      "stylesheets": 7,
+      "fonts": 4
+    },
+    "thirdParty": {
+      "count": 5,
+      "bytes": 74814,
+      "mainThreadMs": 15.2,
+      "top": [
+        {
+          "entity": "Google Fonts",
+          "bytes": 49543,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Cloudflare CDN",
+          "bytes": 12031,
+          "mainThreadMs": 1.1
+        },
+        {
+          "entity": "JSDelivr CDN",
+          "bytes": 6715,
+          "mainThreadMs": 1
+        },
+        {
+          "entity": "Unpkg",
+          "bytes": 3530,
+          "mainThreadMs": 2.9
+        },
+        {
+          "entity": "Plausible",
+          "bytes": 2995,
+          "mainThreadMs": 10.2
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1050.3,
+      "byGroup": {
+        "other": 410.9,
+        "styleLayout": 256,
+        "scriptEvaluation": 204.3,
+        "parseHTML": 86,
+        "paintCompositeRender": 62.6,
+        "scriptParseCompile": 22.6,
+        "garbageCollection": 7.8
+      },
+      "bootupMs": 174,
+      "longTasks": 4,
+      "longestTaskMs": 106
+    },
+    "dom": {
+      "elements": 670,
+      "depth": 22,
+      "maxChildren": 13
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 74988,
+      "legacyJsBytes": 10103,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 1362,
+      "renderBlockingCount": 7,
+      "poorlyCachedBytes": 1460437.6,
+      "poorlyCachedCount": 43
+    },
+    "accessibility": {
+      "failingCount": 3,
+      "applicableCount": 21,
+      "failingNodes": 16,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 8
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 5
+        },
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "nodes": 3
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 13
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2428,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T18:38:50.317Z",
+      "runtimeMs": 9284
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "3.1.6",
+      "source": "meta",
+      "raw": "Eleventy v3.1.6"
+    },
+    "host": null,
+    "headers": {
+      "x-served-by": "cache-iad-kcgs7200138-IAD"
+    },
+    "violations": 13,
+    "passes": 649,
+    "incomplete": 1,
+    "violationRules": 2,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 8,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 5,
+        "help": "Heading levels should only increase by one"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

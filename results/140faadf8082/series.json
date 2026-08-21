@@ -1,3 +1,4 @@
-{"version":1,"url":"https://www.roboleary.net/","updated":"2026-08-21T11:34:42.280Z","points":[
-{"t":1787312062194,"error":"TRACING_ALREADY_STARTED: An internal Chrome error occurred. Please restart Chrome and try re-running Lighthouse.","fails":1,"runs":0,"reqRuns":3,"ms":20086}
+{"version":1,"url":"https://www.roboleary.net/","updated":"2026-08-21T18:39:27.021Z","points":[
+{"t":1787312062194,"error":"TRACING_ALREADY_STARTED: An internal Chrome error occurred. Please restart Chrome and try re-running Lighthouse.","fails":1,"runs":0,"reqRuns":3,"ms":20086},
+{"t":1787337543688,"performance":95,"accessibility":100,"best-practices":96,"seo":69,"lcp":2568,"cls":0,"tbt":0,"fcp":2132,"si":2132,"ttfb":618,"total":254356,"requests":15,"bytes":47979,"mainThreadMs":20.1,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":792.4,"longTasks":0,"elements":260,"failingCount":0,"failingNodes":0,"axeViolations":1,"axePasses":365,"bench":2414.5,"runs":3,"reqRuns":3,"ms":23332,"spread":1}
 ]}
