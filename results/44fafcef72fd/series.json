@@ -1,0 +1,3 @@
+{"version":1,"url":"https://shannonethomas.com/","updated":"2026-08-21T06:45:36.598Z","points":[
+{"t":1787294699711,"performance":65,"accessibility":97,"best-practices":100,"seo":91,"lcp":18885,"cls":0,"tbt":131,"fcp":3837,"si":3837,"ttfb":1409,"total":10058455,"requests":26,"bytes":457367,"mainThreadMs":82,"unusedJsBytes":137237,"unusedCssBytes":0,"mainThreadTotal":779.6,"longTasks":3,"elements":280,"failingCount":1,"failingNodes":1,"axeViolations":4,"axePasses":547,"bench":2492,"runs":3,"reqRuns":3,"ms":36886,"spread":1}
+]}

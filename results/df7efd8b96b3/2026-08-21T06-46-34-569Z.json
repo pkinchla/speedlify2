@@ -1,0 +1,191 @@
+{
+  "url": "https://siestly.com/",
+  "name": "siestly.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787294794569,
+  "date": "2026-08-21T06:46:34.569Z",
+  "runId": "2026-08-21T06-43-58-654Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 21649,
+  "error": null,
+  "variance": {
+    "min": 98,
+    "max": 100,
+    "spread": 2,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://siestly.com/",
+    "finalUrl": "https://siestly.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 976,
+      "lcp": 2352,
+      "si": 976,
+      "tbt": 0,
+      "tti": 2359,
+      "cls": 0,
+      "ttfb": 463,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 14,
+      "networkRtt": 0,
+      "networkServerLatency": 13.3
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 16.1,
+      "elementRenderDelay": 71.6
+    },
+    "weight": {
+      "total": 200222,
+      "requests": 6,
+      "mainDocument": 19118,
+      "byType": {
+        "total": {
+          "bytes": 200222,
+          "requests": 6
+        },
+        "font": {
+          "bytes": 147742,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 31720,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 19118,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 1642,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "script": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 0,
+          "requests": 0
+        }
+      },
+      "scripts": 0,
+      "stylesheets": 0,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 0,
+      "bytes": 0,
+      "mainThreadMs": 0,
+      "top": []
+    },
+    "mainThread": {
+      "total": 196.4,
+      "byGroup": {
+        "other": 91.4,
+        "styleLayout": 66.4,
+        "parseHTML": 18.2,
+        "paintCompositeRender": 9.8,
+        "scriptEvaluation": 9.7,
+        "scriptParseCompile": 0.9
+      },
+      "bootupMs": 8.9,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 288,
+      "depth": 15,
+      "maxChildren": 7
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 21,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 20
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2480.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T06:46:48.959Z",
+      "runtimeMs": 6023.8
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e7aeef3cc5eb29-SJC",
+      "server": "cloudflare"
+    },
+    "violations": 0,
+    "passes": 436,
+    "incomplete": 24,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

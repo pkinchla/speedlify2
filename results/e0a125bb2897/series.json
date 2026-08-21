@@ -1,0 +1,3 @@
+{"version":1,"url":"https://sia.codes/","updated":"2026-08-21T06:46:31.570Z","points":[
+{"t":1787294768051,"performance":98,"accessibility":100,"best-practices":100,"seo":100,"lcp":2064,"cls":0.012,"tbt":70,"fcp":1677,"si":1677,"ttfb":467,"total":468491,"requests":26,"bytes":278836,"mainThreadMs":73.1,"unusedJsBytes":69454,"unusedCssBytes":0,"mainThreadTotal":785.2,"longTasks":4,"elements":320,"failingCount":1,"failingNodes":1,"axeViolations":0,"axePasses":521,"bench":2415.5,"runs":3,"reqRuns":3,"ms":23517,"spread":0}
+]}

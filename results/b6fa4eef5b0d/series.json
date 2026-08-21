@@ -1,0 +1,3 @@
+{"version":1,"url":"https://singleservingsites.cool/","updated":"2026-08-21T06:49:01.305Z","points":[
+{"t":1787294915361,"performance":95,"accessibility":100,"best-practices":100,"seo":100,"lcp":2881,"cls":0.001,"tbt":12,"fcp":1321,"si":1321,"ttfb":466,"total":417450,"requests":22,"bytes":11487,"mainThreadMs":8.5,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":816.7,"longTasks":3,"elements":6315,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":1110,"field-lcp":1192,"field-cls":0,"field-fcp":1016,"field-ttfb":765,"bench":2433.5,"runs":3,"reqRuns":3,"ms":25943,"spread":4}
+]}
