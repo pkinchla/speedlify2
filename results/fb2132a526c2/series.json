@@ -1,3 +1,0 @@
-{"version":1,"url":"https://khanacademyannualreport.org/","updated":"2026-08-21T03:04:15.715Z","points":[
-{"t":1787281423066,"to":"https://annualreport.khanacademy.org/","perm":0,"performance":68,"accessibility":95,"best-practices":100,"seo":100,"lcp":6640,"cls":0,"tbt":144,"fcp":3471,"si":3471,"ttfb":538,"total":1403367,"requests":42,"bytes":0,"mainThreadMs":0,"unusedJsBytes":79284,"unusedCssBytes":0,"elements":42,"failingCount":2,"failingNodes":2,"axeViolations":64,"axePasses":2878,"bench":2429.5,"runs":3,"reqRuns":3,"ms":32647,"spread":15}
-]}

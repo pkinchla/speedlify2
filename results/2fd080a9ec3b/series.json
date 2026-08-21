@@ -1,3 +1,0 @@
-{"version":1,"url":"https://www.aaronpeters.nl/","updated":"2026-08-21T10:37:11.261Z","points":[
-{"t":1787308614804,"error":"INSECURE_DOCUMENT_REQUEST: The URL you have provided does not have a valid security certificate. net::ERR_CERT_COMMON_NAME_INVALID","fails":1,"runs":0,"reqRuns":3,"ms":16456}
-]}

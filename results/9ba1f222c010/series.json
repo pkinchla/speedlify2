@@ -1,3 +1,0 @@
-{"version":1,"url":"https://docs.shutter.sh/","updated":"2026-08-20T21:27:55.322Z","points":[
-{"t":1787261256474,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":1,"runs":0,"reqRuns":3,"ms":18848}
-]}

@@ -1,3 +1,0 @@
-{"version":1,"url":"https://team-oberberg.blog/","updated":"2026-08-21T08:45:36.438Z","points":[
-{"t":1787301908230,"performance":100,"accessibility":100,"best-practices":100,"seo":100,"lcp":1378,"cls":0.006,"tbt":0,"fcp":832,"si":832,"ttfb":628,"total":346158,"requests":10,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":209.7,"longTasks":0,"elements":380,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":554,"bench":3103.5,"runs":3,"reqRuns":3,"ms":28207,"spread":28}
-]}

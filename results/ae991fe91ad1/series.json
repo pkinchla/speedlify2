@@ -1,3 +1,0 @@
-{"version":1,"url":"https://2024.xoxofest.com/","updated":"2026-08-20T16:25:43.688Z","points":[
-{"t":1787243111396,"to":"https://xoxofest.com/2024","perm":1,"performance":74,"accessibility":80,"best-practices":96,"seo":83,"lcp":6119,"cls":0.002,"tbt":116,"fcp":2498,"si":2498,"ttfb":473,"total":3120556,"requests":54,"bytes":566085,"mainThreadMs":64.5,"unusedJsBytes":71557,"unusedCssBytes":13537,"mainThreadTotal":2195.3,"longTasks":5,"elements":562,"failingCount":5,"failingNodes":67,"axeViolations":87,"axePasses":1137,"bench":2445.5,"runs":3,"reqRuns":3,"ms":32291,"spread":17}
-]}

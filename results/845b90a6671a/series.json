@@ -1,3 +1,0 @@
-{"version":1,"url":"https://covid19.ca.gov/","updated":"2026-08-20T20:28:00.527Z","points":[
-{"t":1787257628643,"to":"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/nCoV2019.aspx","perm":0,"performance":34,"accessibility":92,"best-practices":54,"seo":85,"lcp":20348,"cls":0,"tbt":1085,"fcp":8718,"si":8814,"ttfb":705,"total":2792445,"requests":93,"bytes":888534,"mainThreadMs":305.8,"unusedJsBytes":711088,"unusedCssBytes":50888,"mainThreadTotal":3909.5,"longTasks":13,"elements":1535,"failingCount":3,"failingNodes":5,"axeViolations":18,"axePasses":1308,"bench":2357.5,"runs":3,"reqRuns":3,"ms":51881,"spread":4}
-]}

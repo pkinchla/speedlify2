@@ -1,3 +1,0 @@
-{"version":1,"url":"https://glenn.thedixons.net/","updated":"2026-08-20T23:34:41.452Z","points":[
-{"t":1787268858962,"performance":98,"accessibility":98,"best-practices":100,"seo":100,"lcp":2264,"cls":0,"tbt":0,"fcp":1665,"si":1665,"ttfb":609,"total":355065,"requests":10,"bytes":30453,"mainThreadMs":9.8,"unusedJsBytes":21417,"unusedCssBytes":55479,"mainThreadTotal":253.1,"longTasks":0,"elements":276,"failingCount":1,"failingNodes":1,"axeViolations":2,"axePasses":312,"bench":2310.5,"runs":3,"reqRuns":3,"ms":22490,"spread":9}
-]}

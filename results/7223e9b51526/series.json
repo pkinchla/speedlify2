@@ -1,3 +1,0 @@
-{"version":1,"url":"https://spruce.com.ng/","updated":"2026-08-21T08:43:19.204Z","points":[
-{"t":1787301782995,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":1,"runs":0,"reqRuns":3,"ms":16208}
-]}
