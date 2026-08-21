@@ -31,6 +31,19 @@ const ICONS_DIR = "src/icons";
  * local file — so for those this is not an optimisation but the only mark
  * available.
  */
+/**
+ * Brand colours for marks simple-icons does not carry.
+ *
+ * The colour normally comes from simple-icons, which ships a hex with every
+ * icon. Font Awesome's brand marks are monochrome by design, so a brand that
+ * only exists there has no colour to inherit and would otherwise follow the
+ * theme's text colour.
+ */
+const BRAND_COLORS = {
+	// Build Awesome's balloon, from its own mark.
+	BuildAwesome: "00A776",
+};
+
 const FONT_AWESOME_ICONS = {
 	Amazon: "amazon",
 	BuildAwesome: "build-awesome",
@@ -624,14 +637,16 @@ export default async function ($config) {
 		// has an entry, since Font Awesome's marks are monochrome by design.
 		const faName = detected.icon ? FONT_AWESOME_ICONS[detected.icon] : null;
 		if (faName) {
-			const brand = simpleIcons[`si${detected.icon}`];
-			const luminance = brand ? relativeLuminance(brand.hex) : null;
+			// BRAND_COLORS first, for brands simple-icons has no entry for and so
+			// no hex to lend.
+			const hex = BRAND_COLORS[detected.icon] ?? simpleIcons[`si${detected.icon}`]?.hex ?? null;
+			const luminance = hex ? relativeLuminance(hex) : null;
 			const usesBrandColor = luminance !== null && luminance > 0.06 && luminance < 0.85;
 
 			return [
 				`<i class="fa-brands fa-${faName} stack-icon${usesBrandColor ? "" : " stack-icon-mono"}${presumed}"`,
 				` width="${size}" height="${size}"`,
-				usesBrandColor ? ` style="color:#${brand.hex}"` : "",
+				usesBrandColor ? ` style="color:#${hex}"` : "",
 				`>${escapeAttr(label)}</i>`,
 			].join("");
 		}

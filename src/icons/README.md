@@ -5,6 +5,10 @@ Three sources, in order: Font Awesome first for the brands it carries (see
 per page rather than inlining the same path on every row), then this directory,
 then simple-icons.
 
+Colour comes from simple-icons, which ships a hex with every icon. Font
+Awesome's marks are monochrome, so a brand that exists only there needs an entry
+in `BRAND_COLORS` beside that map or it follows the theme's text colour.
+
 That leaves this directory for brands neither project carries. It is currently
 close to empty: Amazon's marks were removed from simple-icons at Amazon's
 request, and Font Awesome carries `amazon`, so the case this directory was
