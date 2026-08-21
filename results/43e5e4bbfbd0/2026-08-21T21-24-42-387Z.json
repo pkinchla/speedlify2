@@ -1,0 +1,22 @@
+{
+  "url": "https://byggorebro.se/",
+  "name": "byggorebro.se",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787347482387,
+  "date": "2026-08-21T21:24:42.387Z",
+  "runId": "2026-08-21T21-23-29-111Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 0,
+  "durationMs": 130935,
+  "error": "ERRORED_DOCUMENT_REQUEST: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 522)",
+  "errors": [
+    "ERRORED_DOCUMENT_REQUEST: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 522)",
+    "ERRORED_DOCUMENT_REQUEST: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 522)",
+    "ERRORED_DOCUMENT_REQUEST: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 522)"
+  ],
+  "field": null,
+  "axe": null,
+  "consecutiveFailures": 3
+}
