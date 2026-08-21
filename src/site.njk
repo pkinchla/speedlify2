@@ -64,7 +64,22 @@ eleventyComputed:
 		{% endif %}
 	</p>
 	<p class="muted">
-		{% for g in entry.groups %}<a href="/group/{{ g }}/">{{ entry.groupNames[loop.index0] }}</a>{{ ", " if not loop.last }}{% endfor %} ·
+		{#
+			Where this site currently places inside each category it belongs to —
+			which is not its global rank, and is usually a much better position:
+			a site can be 61st of 1,134 in one list and 1st of 19 in another.
+
+			Only for categories that present as rankings. 11ty Emeritus sets
+			`ranked: false` precisely so nobody reads a placing into it, and
+			printing one here would say the thing that page refuses to.
+		#}
+		{% for g in entry.groups %}
+		{% set grp = sites.groups | groupById(g) %}
+		<a href="/group/{{ g }}/">{{ entry.groupNames[loop.index0] }}</a>
+		{%- if grp.ranked and entry.groupRanks[g].overall %}
+		<span class="cat-rank" title="Ranked {{ entry.groupRanks[g].overall | num }} of {{ grp.measured | num }} measured sites in {{ entry.groupNames[loop.index0] }}">#{{ entry.groupRanks[g].overall | num }}</span>
+		{%- endif %}{{ ", " if not loop.last }}
+		{% endfor %} ·
 		{{ entry.totalCount }} measurement{{ "s" if entry.totalCount != 1 }}
 		{% if entry.windowed %}<span title="The report charts the most recent {{ entry.historyCount }}; the rest stay on disk">(charting last {{ entry.historyCount }})</span>{% endif %}
 		{% if entry.firstMeasured %}· since {{ entry.firstMeasured | date }}{% endif %}

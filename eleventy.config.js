@@ -587,6 +587,9 @@ export default async function ($config) {
 		});
 	});
 
+	/** One group from the report's list, by id. */
+	$config.addFilter("groupById", (groups, id) => (groups || []).find((g) => g.id === id) ?? null);
+
 	/**
 	 * A copy of an array sorted by one property, case-insensitively.
 	 *
