@@ -1,0 +1,211 @@
+{
+  "url": "https://thudfactor.com/",
+  "name": "thudfactor.com",
+  "group": "11ty-emeritus",
+  "groupName": "11ty Emeritus",
+  "timestamp": 1787305292157,
+  "date": "2026-08-21T09:41:32.157Z",
+  "runId": "2026-08-21T09-35-30-590Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 23886,
+  "error": null,
+  "variance": {
+    "min": 81,
+    "max": 99,
+    "spread": 18,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://thudfactor.com/",
+    "finalUrl": "https://thudfactor.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 99,
+      "accessibility": 93,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 33
+    },
+    "timings": {
+      "fcp": 1550,
+      "lcp": 2015,
+      "si": 1550,
+      "tbt": 0,
+      "tti": 2015,
+      "cls": 0.002,
+      "ttfb": 483,
+      "maxPotentialFid": 19,
+      "serverResponseTime": 36,
+      "networkRtt": 0.1,
+      "networkServerLatency": 32.5
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 37.5,
+      "resourceLoadDelay": 9.6,
+      "resourceLoadDuration": 31.5,
+      "elementRenderDelay": 34.8
+    },
+    "weight": {
+      "total": 704753,
+      "requests": 15,
+      "mainDocument": 8594,
+      "byType": {
+        "total": {
+          "bytes": 704753,
+          "requests": 15
+        },
+        "font": {
+          "bytes": 566104,
+          "requests": 2
+        },
+        "image": {
+          "bytes": 111084,
+          "requests": 7
+        },
+        "script": {
+          "bytes": 11451,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 8594,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 5169,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 2351,
+          "requests": 3
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 11451,
+          "requests": 1
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 1,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 11451,
+      "mainThreadMs": 5.7,
+      "top": [
+        {
+          "entity": "Cloudflare",
+          "bytes": 11451,
+          "mainThreadMs": 5.7
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 421.1,
+      "byGroup": {
+        "other": 192.7,
+        "styleLayout": 124.5,
+        "scriptEvaluation": 59.5,
+        "paintCompositeRender": 33,
+        "parseHTML": 10.3,
+        "scriptParseCompile": 1.1
+      },
+      "bootupMs": 57.9,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 204,
+      "depth": 9,
+      "maxChildren": 10
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 183,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 4580.400000000001,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 25,
+      "failingNodes": 2,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 33
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2365.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T09:41:40.333Z",
+      "runtimeMs": 6249.4
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e8af3bfc99511a-MSP",
+      "server": "cloudflare"
+    },
+    "violations": 1,
+    "passes": 69,
+    "incomplete": 0,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "meta-refresh",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Delayed refresh under 20 hours must not be used"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

@@ -1,0 +1,211 @@
+{
+  "url": "https://uncenter.dev/",
+  "name": "uncenter.dev",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787305623576,
+  "date": "2026-08-21T09:47:03.576Z",
+  "runId": "2026-08-21T09-35-30-590Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 22032,
+  "error": null,
+  "variance": {
+    "min": 95,
+    "max": 99,
+    "spread": 4,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://uncenter.dev/",
+    "finalUrl": "https://uncenter.dev/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 99,
+      "accessibility": 96,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1551,
+      "lcp": 1701,
+      "si": 1551,
+      "tbt": 0,
+      "tti": 1701,
+      "cls": 0,
+      "ttfb": 474,
+      "maxPotentialFid": 27,
+      "serverResponseTime": 32,
+      "networkRtt": 0,
+      "networkServerLatency": 50.8
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 33.3,
+      "elementRenderDelay": 65.3
+    },
+    "weight": {
+      "total": 131703,
+      "requests": 13,
+      "mainDocument": 5580,
+      "byType": {
+        "total": {
+          "bytes": 131703,
+          "requests": 12
+        },
+        "other": {
+          "bytes": 74883,
+          "requests": 6
+        },
+        "font": {
+          "bytes": 28262,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 14556,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 5580,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 4773,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 3649,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 11451,
+          "requests": 1
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 1,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 11451,
+      "mainThreadMs": 2.9,
+      "top": [
+        {
+          "entity": "Cloudflare",
+          "bytes": 11451,
+          "mainThreadMs": 2.9
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 211.6,
+      "byGroup": {
+        "other": 113.3,
+        "scriptEvaluation": 50.8,
+        "styleLayout": 28.6,
+        "paintCompositeRender": 8,
+        "parseHTML": 7.6,
+        "scriptParseCompile": 3.3
+      },
+      "bootupMs": 16.7,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 67,
+      "depth": 7,
+      "maxChildren": 13
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 174,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 4580.400000000001,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 25,
+      "failingNodes": 15,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 15
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 19
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2291,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T09:47:12.279Z",
+      "runtimeMs": 5848.4
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "3.0.1",
+      "source": "meta",
+      "raw": "Eleventy v3.0.1"
+    },
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e8b753be73ff48-MSP",
+      "server": "cloudflare"
+    },
+    "violations": 15,
+    "passes": 205,
+    "incomplete": 2,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 15,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

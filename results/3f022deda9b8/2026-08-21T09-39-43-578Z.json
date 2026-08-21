@@ -1,0 +1,212 @@
+{
+  "url": "https://thedixons.net/",
+  "name": "thedixons.net",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787305183578,
+  "date": "2026-08-21T09:39:43.578Z",
+  "runId": "2026-08-21T09-35-30-590Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 24346,
+  "error": null,
+  "variance": {
+    "min": 98,
+    "max": 98,
+    "spread": 0,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://thedixons.net/",
+    "finalUrl": "https://thedixons.net/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 98,
+      "accessibility": 98,
+      "best-practices": 96,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1694,
+      "lcp": 2134,
+      "si": 1694,
+      "tbt": 0,
+      "tti": 2134,
+      "cls": 0,
+      "ttfb": 634,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 34,
+      "networkRtt": 0.1,
+      "networkServerLatency": 34.2
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 35.9,
+      "resourceLoadDelay": 9.9,
+      "resourceLoadDuration": 77.8,
+      "elementRenderDelay": 43.4
+    },
+    "weight": {
+      "total": 313960,
+      "requests": 11,
+      "mainDocument": 7530,
+      "byType": {
+        "total": {
+          "bytes": 313539,
+          "requests": 10
+        },
+        "font": {
+          "bytes": 158372,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 57817,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 57409,
+          "requests": 4
+        },
+        "image": {
+          "bytes": 31552,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 7530,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 859,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 30454,
+          "requests": 1
+        }
+      },
+      "scripts": 4,
+      "stylesheets": 1,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 30454,
+      "mainThreadMs": 9.4,
+      "top": [
+        {
+          "entity": "jQuery CDN",
+          "bytes": 30454,
+          "mainThreadMs": 9.4
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 272.7,
+      "byGroup": {
+        "other": 108.4,
+        "scriptEvaluation": 65.3,
+        "styleLayout": 43.1,
+        "parseHTML": 30.7,
+        "scriptParseCompile": 16.9,
+        "paintCompositeRender": 8.1
+      },
+      "bootupMs": 7.3,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 384,
+      "depth": 20,
+      "maxChildren": 15
+    },
+    "waste": {
+      "unusedJsBytes": 21417,
+      "unusedCssBytes": 55610,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 1509,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 24,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 14
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2382,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T09:39:52.895Z",
+      "runtimeMs": 6467.9
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0HV28J88Q6FZ7DK6RM5RMKH"
+    },
+    "violations": 2,
+    "passes": 414,
+    "incomplete": 0,
+    "violationRules": 2,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Heading levels should only increase by one"
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

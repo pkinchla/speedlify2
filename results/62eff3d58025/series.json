@@ -1,0 +1,3 @@
+{"version":1,"url":"https://tanstack.com/","updated":"2026-08-21T09:36:36.030Z","points":[
+{"t":1787304931163,"performance":48,"accessibility":84,"best-practices":100,"seo":92,"lcp":7914,"cls":0,"tbt":607,"fcp":4182,"si":5355,"ttfb":494,"total":3069657,"requests":57,"bytes":119907,"mainThreadMs":1.9,"unusedJsBytes":354157,"unusedCssBytes":0,"mainThreadTotal":4953.5,"longTasks":13,"elements":1037,"failingCount":4,"failingNodes":9,"axeViolations":23,"axePasses":674,"field-lcp":3612,"field-inp":388,"field-cls":0.01,"field-fcp":3317,"field-ttfb":2614,"bench":2112,"runs":3,"reqRuns":3,"ms":64862,"spread":7}
+]}
