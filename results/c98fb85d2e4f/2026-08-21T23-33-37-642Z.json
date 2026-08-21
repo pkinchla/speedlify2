@@ -1,0 +1,22 @@
+{
+  "url": "https://meinamsterdam.nl/",
+  "name": "meinamsterdam.nl",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787355217642,
+  "date": "2026-08-21T23:33:37.642Z",
+  "runId": "2026-08-21T23-23-00-551Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 0,
+  "durationMs": 27376,
+  "error": "TRACING_ALREADY_STARTED: An internal Chrome error occurred. Please restart Chrome and try re-running Lighthouse.",
+  "errors": [
+    "TRACING_ALREADY_STARTED: An internal Chrome error occurred. Please restart Chrome and try re-running Lighthouse.",
+    "TRACING_ALREADY_STARTED: An internal Chrome error occurred. Please restart Chrome and try re-running Lighthouse.",
+    "TRACING_ALREADY_STARTED: An internal Chrome error occurred. Please restart Chrome and try re-running Lighthouse."
+  ],
+  "field": null,
+  "axe": null,
+  "consecutiveFailures": 3
+}
