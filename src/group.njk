@@ -80,9 +80,17 @@ eleventyComputed:
 {% set MAX_FULL_ROWS = 500 %}
 {% set filtered = group.entries.length > MAX_FULL_ROWS %}
 
+{#
+	An unranked category is listed alphabetically. Leaving it in score order would
+	still read as a ranking — the order is the claim, whether or not it is
+	numbered — and alphabetical says outright that the order carries no meaning
+	while staying somewhere you can look a site up.
+#}
+{% set source = group.entries if group.ranked else group.entries | sortBy("displayUrl") %}
+
 {% set rows = [] %}
 {% set rest = [] %}
-{% for entry in group.entries %}
+{% for entry in source %}
 	{% if not filtered or entry.allGreen %}
 		{% set rows = (rows.push(entry), rows) %}
 	{% else %}
@@ -91,7 +99,7 @@ eleventyComputed:
 {% endfor %}
 
 <section class="panel">
-	<h2>Leaderboard</h2>
+	<h2>{{ "Leaderboard" if group.ranked else "Sites" }}</h2>
 	{% if filtered %}
 	<p class="muted small">
 		{{ group.entries.length | num }} sites is more table than anyone reads, so
@@ -101,6 +109,11 @@ eleventyComputed:
 		figures above, cover the whole category either way.
 	</p>
 	{% endif %}
+	{% if not group.ranked %}
+	<p class="muted small">
+		Not ranked, listed alphabetically. Still measured in case they return!
+	</p>
+	{% else %}
 	<p class="muted small">
 		Ranked by the circles first — the four Lighthouse categories and axe: all green
 		beats any row carrying an amber, and an amber beats a red, whatever the points
@@ -110,11 +123,12 @@ eleventyComputed:
 		axe violations, then Speed Index per KB — so a fast heavy site outranks a fast
 		empty one.
 	</p>
+	{% endif %}
 	<div class="table-scroll">
 	<table class="grid">
 		<thead>
 			<tr>
-				<th class="col-rank">#</th>
+				{% if group.ranked %}<th class="col-rank">#</th>{% endif %}
 				<th class="col-site">Site</th>
 				<th class="col-stack" title="What built the site, detected from its generator tag or presumed from the list it is on">Tool</th>
 				<th class="col-stack" title="Who serves the site, detected from its response headers on the same page load">Host</th>
@@ -127,11 +141,13 @@ eleventyComputed:
 		<tbody>
 		{% for entry in rows %}
 			<tr{% if entry.currentlyFailing %} class="row-failing"{% endif %}>
+				{% if group.ranked %}
 				<td class="col-rank">
 					{% if entry.groupRanks[group.id].overall %}
 					<span class="trophy">{{ entry.groupRanks[group.id].overall | trophy }}</span><span class="hash">#</span>{{ entry.groupRanks[group.id].overall }}
 					{% else %}—{% endif %}
 				</td>
+				{% endif %}
 				<td class="col-site">
 					<a class="site-link" href="/site/{{ entry.slug }}/">
 						{% set avatar = entry.url | avatar(meta.avatarService) %}
@@ -182,7 +198,9 @@ eleventyComputed:
 					<td class="num">{{ entry.latest.lab.weight.total | bytes }}</td>
 					<td class="num">{{ entry.latest.lab.weight.requests | num }}</td>
 				{% else %}
-					<td colspan="9" class="muted">not measured yet</td>
+					{# 9 either way: dropping the rank column removes a cell from this row too, so
+   the span covers the same remainder. #}
+				<td colspan="9" class="muted">not measured yet</td>
 				{% endif %}
 			</tr>
 		{% endfor %}

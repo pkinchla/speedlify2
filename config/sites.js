@@ -334,6 +334,13 @@ export default {
 
 		"11ty-emeritus": {
 			name: "11ty Emeritus",
+
+			// Not a competition. These sites left, and ranking what they scored on
+			// the way out invites a reading nobody intended — that the list is a
+			// wall of shame, or that the site at the top is the best of a bad lot.
+			// The page still measures them; it just does not place them.
+			ranked: false,
+
 			enabled: true,
 			description:
 				"Sites that were previously built with Eleventy or Build Awesome but have moved away (since April 2018).",

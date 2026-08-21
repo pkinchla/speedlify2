@@ -588,6 +588,27 @@ export default async function ($config) {
 	});
 
 	/**
+	 * A copy of an array sorted by one property, case-insensitively.
+	 *
+	 * On a copy, for the same reason `shuffle` is: these arrays belong to the
+	 * report and are shared with every other template on the page.
+	 *
+	 * `localeCompare` rather than `<`, so accented and non-Latin names sort where
+	 * a reader would look for them instead of by code point. `numeric` keeps
+	 * `2.example` before `10.example`.
+	 */
+	$config.addFilter("sortBy", (list, key) => {
+		if (!Array.isArray(list)) return list;
+
+		return [...list].sort((a, b) =>
+			String(a?.[key] ?? "").localeCompare(String(b?.[key] ?? ""), "en", {
+				sensitivity: "base",
+				numeric: true,
+			}),
+		);
+	});
+
+	/**
 	 * A copy of an array in random order.
 	 *
 	 * Fisher–Yates, and on a copy: the arrays these come from are the report's

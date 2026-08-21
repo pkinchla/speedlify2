@@ -489,16 +489,11 @@ permalink: /index.html
 		row is archived automatically. Those are still measured, about once a day,
 		and return to the board on their own if they start answering again.
 	</p>
-	<ul>
-		{% for site in sites.archived %}
-		<li>
-			<code>{{ site.displayUrl }}</code>
-			{%- if site.reason == "failing" %}
-			<span class="badge badge-error" title="{{ site.lastError }}">failing {{ site.consecutiveFailures }}x</span>
-			{%- endif %}
-			{% if site.lastMeasured %}— last measured {{ site.lastMeasured | date("long") }}{% endif %}
-		</li>
-		{% endfor %}
-	</ul>
+	{#
+		Counted, not named. Archiving is for sites that should stop being pointed
+		at — a lapsed domain, a parked one — and listing them here would keep doing
+		exactly that, in plain text instead of a link. The count says the record
+		exists; config/archived.json says which.
+	#}
 </section>
 {% endif %}
