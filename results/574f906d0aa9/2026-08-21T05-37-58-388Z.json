@@ -1,0 +1,248 @@
+{
+  "url": "https://neehad.com/",
+  "name": "neehad.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787290678388,
+  "date": "2026-08-21T05:37:58.388Z",
+  "runId": "2026-08-21T05-31-08-925Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 32348,
+  "error": null,
+  "variance": {
+    "min": 59,
+    "max": 74,
+    "spread": 15,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://neehad.com/",
+    "finalUrl": "https://prostarcleaningllc.net/",
+    "redirect": {
+      "from": "https://neehad.com/",
+      "to": "https://prostarcleaningllc.net/",
+      "chain": [
+        {
+          "url": "https://neehad.com/",
+          "status": 301
+        },
+        {
+          "url": "https://prostarcleaningllc.net/",
+          "status": 200
+        }
+      ],
+      "statuses": [
+        301
+      ],
+      "change": "host",
+      "permanent": true,
+      "schemeUpgrade": false,
+      "hops": 1
+    },
+    "statusCode": "ok",
+    "scores": {
+      "performance": 70,
+      "accessibility": 90,
+      "best-practices": 96,
+      "seo": 100,
+      "agentic-browsing": 67
+    },
+    "timings": {
+      "fcp": 2552,
+      "lcp": 18482,
+      "si": 4049,
+      "tbt": 0,
+      "tti": 18482,
+      "cls": 0,
+      "ttfb": 1417,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 975,
+      "networkRtt": 7.9,
+      "networkServerLatency": 967
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 1128.3,
+      "resourceLoadDelay": 9.8,
+      "resourceLoadDuration": 2606.9,
+      "elementRenderDelay": 56.5
+    },
+    "weight": {
+      "total": 2960537,
+      "requests": 7,
+      "mainDocument": 5555,
+      "byType": {
+        "total": {
+          "bytes": 2960537,
+          "requests": 7
+        },
+        "image": {
+          "bytes": 2939255,
+          "requests": 2
+        },
+        "script": {
+          "bytes": 11577,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 5555,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 4150,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 11986,
+          "requests": 2
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 0,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 2960128,
+      "mainThreadMs": 12,
+      "top": [
+        {
+          "entity": "prostarcleaningllc.net",
+          "bytes": 2948551,
+          "mainThreadMs": 2.8
+        },
+        {
+          "entity": "Cloudflare",
+          "bytes": 11577,
+          "mainThreadMs": 9.2
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1279.1,
+      "byGroup": {
+        "other": 782.3,
+        "styleLayout": 329.9,
+        "paintCompositeRender": 94.6,
+        "scriptEvaluation": 50.3,
+        "scriptParseCompile": 16,
+        "parseHTML": 6
+      },
+      "bootupMs": 64.8,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 261,
+      "depth": 7,
+      "maxChildren": 200
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 4630.8,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 18,
+      "failingNodes": 10,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 9
+        },
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 768.6,
+      "consoleErrors": 1,
+      "baselineLimitedFeatures": 9
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2421,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T05:37:59.669Z",
+      "runtimeMs": 13786.7
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e74a9ddfacd7aa-IAD",
+      "server": "cloudflare"
+    },
+    "violations": 12,
+    "passes": 118,
+    "incomplete": 2,
+    "violationRules": 3,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 9,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 2,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Page should contain a level-one heading"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

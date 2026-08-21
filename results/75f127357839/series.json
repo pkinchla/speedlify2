@@ -1,0 +1,3 @@
+{"version":1,"url":"https://pages.github.com/","updated":"2026-08-21T05:46:50.525Z","points":[
+{"t":1787291089849,"to":"https://docs.github.com/en/pages","perm":0,"performance":61,"accessibility":100,"best-practices":96,"seo":100,"lcp":10665,"cls":0.016,"tbt":439,"fcp":2405,"si":2405,"ttfb":602,"total":3603901,"requests":57,"bytes":0,"mainThreadMs":0,"unusedJsBytes":173432,"unusedCssBytes":118563,"elements":235,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":614,"field-lcp":1872,"field-inp":360,"field-cls":0,"field-fcp":1621,"field-ttfb":782,"bench":2493.5,"runs":3,"reqRuns":3,"ms":120676,"spread":18}
+]}

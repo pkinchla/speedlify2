@@ -1,0 +1,3 @@
+{"version":1,"url":"https://nonsponsored.com/","updated":"2026-08-21T05:40:42.276Z","points":[
+{"t":1787290820607,"performance":93,"accessibility":100,"best-practices":100,"seo":100,"lcp":1972,"cls":0.125,"tbt":0,"fcp":1967,"si":1967,"ttfb":456,"total":88732,"requests":7,"bytes":41769,"mainThreadMs":3.7,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":230.3,"longTasks":0,"elements":248,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":471,"bench":2449,"runs":3,"reqRuns":3,"ms":21668,"spread":7}
+]}

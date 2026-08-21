@@ -1,0 +1,3 @@
+{"version":1,"url":"https://olivernorred.com/blog","updated":"2026-08-21T05:42:12.363Z","points":[
+{"t":1787290909157,"performance":85,"accessibility":81,"best-practices":100,"seo":100,"lcp":3653,"cls":0.027,"tbt":78,"fcp":2608,"si":2608,"ttfb":454,"total":522746,"requests":20,"bytes":261865,"mainThreadMs":55.8,"unusedJsBytes":115745,"unusedCssBytes":0,"mainThreadTotal":480.3,"longTasks":2,"elements":150,"failingCount":2,"failingNodes":5,"axeViolations":1,"axePasses":354,"bench":2409,"runs":3,"reqRuns":3,"ms":23206,"spread":16}
+]}

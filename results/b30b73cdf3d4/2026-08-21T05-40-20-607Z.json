@@ -1,0 +1,196 @@
+{
+  "url": "https://nonsponsored.com/",
+  "name": "nonsponsored.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787290820607,
+  "date": "2026-08-21T05:40:20.607Z",
+  "runId": "2026-08-21T05-31-08-925Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 21668,
+  "error": null,
+  "variance": {
+    "min": 93,
+    "max": 100,
+    "spread": 7,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://nonsponsored.com/",
+    "finalUrl": "https://nonsponsored.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 93,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 92
+    },
+    "timings": {
+      "fcp": 1967,
+      "lcp": 1972,
+      "si": 1967,
+      "tbt": 0,
+      "tti": 1972,
+      "cls": 0.125,
+      "ttfb": 456,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 77,
+      "networkRtt": 0.1,
+      "networkServerLatency": 10.4
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 79,
+      "elementRenderDelay": 41.8
+    },
+    "weight": {
+      "total": 88732,
+      "requests": 7,
+      "mainDocument": 44802,
+      "byType": {
+        "total": {
+          "bytes": 88732,
+          "requests": 7
+        },
+        "document": {
+          "bytes": 44802,
+          "requests": 1
+        },
+        "font": {
+          "bytes": 30318,
+          "requests": 2
+        },
+        "script": {
+          "bytes": 12498,
+          "requests": 2
+        },
+        "other": {
+          "bytes": 1114,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 41769,
+          "requests": 3
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 0,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 41769,
+      "mainThreadMs": 3.7,
+      "top": [
+        {
+          "entity": "Google Fonts",
+          "bytes": 30318,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Cloudflare",
+          "bytes": 11451,
+          "mainThreadMs": 3.7
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 230.3,
+      "byGroup": {
+        "other": 96.8,
+        "styleLayout": 58.7,
+        "scriptEvaluation": 47.2,
+        "parseHTML": 16.4,
+        "paintCompositeRender": 10,
+        "scriptParseCompile": 1.2
+      },
+      "bootupMs": 25.2,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 248,
+      "depth": 7,
+      "maxChildren": 28
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 156,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 4894.503635416667,
+      "poorlyCachedCount": 2
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 18,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 13
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2449,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T05:40:35.188Z",
+      "runtimeMs": 6118.3
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e74dc84dccf90b-IAD",
+      "server": "cloudflare"
+    },
+    "violations": 0,
+    "passes": 471,
+    "incomplete": 22,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

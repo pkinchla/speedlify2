@@ -1,0 +1,3 @@
+{"version":1,"url":"https://noktorum.com/","updated":"2026-08-21T05:40:17.607Z","points":[
+{"t":1787290794571,"to":"https://www.noktorum.com/","perm":1,"performance":92,"accessibility":100,"best-practices":100,"seo":92,"lcp":2730,"cls":0,"tbt":0,"fcp":2730,"si":2730,"ttfb":693,"total":94569,"requests":12,"bytes":31934,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":167.1,"longTasks":0,"elements":26,"failingCount":0,"failingNodes":0,"axeViolations":1,"axePasses":57,"bench":2444.5,"runs":3,"reqRuns":3,"ms":23035,"spread":4}
+]}

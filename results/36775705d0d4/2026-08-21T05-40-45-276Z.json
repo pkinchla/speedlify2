@@ -1,0 +1,241 @@
+{
+  "url": "https://normadesign.it/",
+  "name": "normadesign.it",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787290845276,
+  "date": "2026-08-21T05:40:45.276Z",
+  "runId": "2026-08-21T05-31-08-925Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 22979,
+  "error": null,
+  "variance": {
+    "min": 78,
+    "max": 93,
+    "spread": 15,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://normadesign.it/",
+    "finalUrl": "https://normadesign.it/en/",
+    "redirect": {
+      "from": "https://normadesign.it/",
+      "to": "https://normadesign.it/en",
+      "chain": [
+        {
+          "url": "https://normadesign.it/",
+          "status": 302
+        },
+        {
+          "url": "https://normadesign.it/en",
+          "status": 308
+        },
+        {
+          "url": "https://normadesign.it/en/",
+          "status": 200
+        }
+      ],
+      "statuses": [
+        302,
+        308
+      ],
+      "change": "path",
+      "permanent": false,
+      "schemeUpgrade": false,
+      "hops": 2
+    },
+    "statusCode": "ok",
+    "scores": {
+      "performance": 78,
+      "accessibility": 96,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 67
+    },
+    "timings": {
+      "fcp": 1850,
+      "lcp": 5605,
+      "si": 1850,
+      "tbt": 0,
+      "tti": 5710,
+      "cls": 0,
+      "ttfb": 464,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 5,
+      "networkRtt": 0.1,
+      "networkServerLatency": 14.3
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 36.3,
+      "elementRenderDelay": 119.1
+    },
+    "weight": {
+      "total": 1325690,
+      "requests": 30,
+      "mainDocument": 7633,
+      "byType": {
+        "total": {
+          "bytes": 1325690,
+          "requests": 28
+        },
+        "image": {
+          "bytes": 746485,
+          "requests": 18
+        },
+        "font": {
+          "bytes": 556182,
+          "requests": 2
+        },
+        "script": {
+          "bytes": 12443,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 7633,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 2947,
+          "requests": 5
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 757936,
+          "requests": 19
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 0,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 757936,
+      "mainThreadMs": 3.7,
+      "top": [
+        {
+          "entity": "prismic.io",
+          "bytes": 746485,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Cloudflare",
+          "bytes": 11451,
+          "mainThreadMs": 3.7
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 359.6,
+      "byGroup": {
+        "other": 179,
+        "styleLayout": 74.2,
+        "scriptEvaluation": 61.6,
+        "paintCompositeRender": 31.6,
+        "parseHTML": 12.1,
+        "scriptParseCompile": 1.1
+      },
+      "bootupMs": 38.5,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 258,
+      "depth": 10,
+      "maxChildren": 13
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 168,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 4878.004592592593,
+      "poorlyCachedCount": 2
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 26,
+      "failingNodes": 5,
+      "failing": [
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "nodes": 5
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 927.4,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 9
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2490.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T05:40:53.873Z",
+      "runtimeMs": 6416.2
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "2.0.1",
+      "source": "meta",
+      "raw": "Eleventy v2.0.1"
+    },
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e74e670da3290e-IAD",
+      "server": "cloudflare"
+    },
+    "violations": 1,
+    "passes": 582,
+    "incomplete": 0,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "landmark-contentinfo-is-top-level",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Contentinfo landmark should not be contained in another landmark"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
