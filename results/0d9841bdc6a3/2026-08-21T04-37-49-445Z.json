@@ -1,0 +1,213 @@
+{
+  "url": "https://lukeb.co.uk/",
+  "name": "lukeb.co.uk",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787287069445,
+  "date": "2026-08-21T04:37:49.445Z",
+  "runId": "2026-08-21T04-37-18-922Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 22104,
+  "error": null,
+  "variance": {
+    "min": 96,
+    "max": 99,
+    "spread": 3,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://lukeb.co.uk/",
+    "finalUrl": "https://codefoodpixels.com/",
+    "redirect": {
+      "from": "https://lukeb.co.uk/",
+      "to": "https://codefoodpixels.com/",
+      "chain": [
+        {
+          "url": "https://lukeb.co.uk/",
+          "status": 301
+        },
+        {
+          "url": "https://codefoodpixels.com/",
+          "status": 200
+        }
+      ],
+      "statuses": [
+        301
+      ],
+      "change": "host",
+      "permanent": true,
+      "schemeUpgrade": false,
+      "hops": 1
+    },
+    "statusCode": "ok",
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1592,
+      "lcp": 1592,
+      "si": 1592,
+      "tbt": 0,
+      "tti": 1592,
+      "cls": 0,
+      "ttfb": null,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 22,
+      "networkRtt": 0,
+      "networkServerLatency": 0
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 44.5,
+      "resourceLoadDelay": 12.3,
+      "resourceLoadDuration": 1.2,
+      "elementRenderDelay": 33.1
+    },
+    "weight": {
+      "total": 97,
+      "requests": 14,
+      "mainDocument": 0,
+      "byType": {
+        "other": {
+          "bytes": 97,
+          "requests": 4
+        },
+        "total": {
+          "bytes": 97,
+          "requests": 13
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 7
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "document": {
+          "bytes": 0,
+          "requests": 1
+        },
+        "third-party": {
+          "bytes": 97,
+          "requests": 1
+        }
+      },
+      "scripts": 0,
+      "stylesheets": 0,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 47142,
+      "mainThreadMs": 2.6,
+      "top": [
+        {
+          "entity": "codefoodpixels.com",
+          "bytes": 47142,
+          "mainThreadMs": 2.6
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 509.8,
+      "byGroup": {
+        "other": 257.4,
+        "styleLayout": 186.4,
+        "paintCompositeRender": 44.5,
+        "scriptEvaluation": 11.6,
+        "parseHTML": 8.6,
+        "scriptParseCompile": 1.2
+      },
+      "bootupMs": 11.4,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 117,
+      "depth": 7,
+      "maxChildren": 55
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 23,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 780,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 8
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2982,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T04:38:05.048Z",
+      "runtimeMs": 5931.4
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0H9SDDS1RYQTMV91DDAY737"
+    },
+    "violations": 0,
+    "passes": 194,
+    "incomplete": 6,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

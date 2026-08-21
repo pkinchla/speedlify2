@@ -1,0 +1,22 @@
+{
+  "url": "https://martyn.thecooks.net.nz/",
+  "name": "martyn.thecooks.net.nz",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787287314781,
+  "date": "2026-08-21T04:41:54.781Z",
+  "runId": "2026-08-21T04-37-18-922Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 0,
+  "durationMs": 145617,
+  "error": "The \"start lh:driver:navigate\" performance mark has not been set",
+  "errors": [
+    "INSECURE_DOCUMENT_REQUEST: The URL you have provided does not have a valid security certificate. net::ERR_CERT_COMMON_NAME_INVALID",
+    "lighthouse timed out after 120000ms",
+    "The \"start lh:driver:navigate\" performance mark has not been set"
+  ],
+  "field": null,
+  "axe": null,
+  "consecutiveFailures": 1
+}

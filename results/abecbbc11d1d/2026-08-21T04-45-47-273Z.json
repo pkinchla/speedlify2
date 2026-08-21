@@ -1,0 +1,22 @@
+{
+  "url": "https://mdemegl.io/",
+  "name": "mdemegl.io",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787287547273,
+  "date": "2026-08-21T04:45:47.273Z",
+  "runId": "2026-08-21T04-37-18-922Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 0,
+  "durationMs": 18084,
+  "error": "TRACING_ALREADY_STARTED: An internal Chrome error occurred. Please restart Chrome and try re-running Lighthouse.",
+  "errors": [
+    "TRACING_ALREADY_STARTED: An internal Chrome error occurred. Please restart Chrome and try re-running Lighthouse.",
+    "TRACING_ALREADY_STARTED: An internal Chrome error occurred. Please restart Chrome and try re-running Lighthouse.",
+    "TRACING_ALREADY_STARTED: An internal Chrome error occurred. Please restart Chrome and try re-running Lighthouse."
+  ],
+  "field": null,
+  "axe": null,
+  "consecutiveFailures": 1
+}
