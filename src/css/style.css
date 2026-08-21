@@ -260,6 +260,48 @@ th.col-trend { text-align: center !important; }
 .detail-head h1 { margin: 0 0 0.25rem; font-size: clamp(1.5rem, 4vw, 2rem); letter-spacing: -0.02em; }
 .detail-url { margin: 0 0 0.35rem; font-family: var(--mono); font-size: 0.85rem; word-break: break-all; }
 
+/*
+ * With a screenshot the header becomes two columns: the text keeping its own
+ * measure, the image at a fixed width on the right. Grid rather than float so
+ * the image cannot end up taller than the text beside it and drag the rule
+ * underneath down with it.
+ *
+ * The text is wrapped in its own element because a grid places every child in a
+ * cell — four loose paragraphs would flow into the columns one by one instead
+ * of stacking beside the image.
+ */
+.detail-head.has-shot {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) 200px;
+	gap: 1.25rem;
+	align-items: start;
+}
+/* The link is only a wrapper — it must not add a box of its own, or the grid
+   column becomes a link-coloured rectangle around the image. */
+.detail-shot-link { display: block; line-height: 0; }
+.detail-shot-link:hover .detail-shot { border-color: var(--border-strong); }
+
+.detail-shot {
+	width: 200px;
+	/* Square, matching the service's default 1:1 — stated so the space is
+	   reserved before the image arrives rather than after. */
+	height: auto;
+	aspect-ratio: 1;
+	object-fit: cover;
+	object-position: top center;
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+	background: var(--surface);
+}
+
+/* One column on a narrow screen: 200px of image beside a 100px column of
+   wrapped URL is worse than either on its own. Source order puts the text
+   first, so it stacks heading-then-image without any reordering. */
+@media (max-width: 34rem) {
+	.detail-head.has-shot { grid-template-columns: minmax(0, 1fr); }
+	.detail-shot { width: 100%; max-width: 260px; }
+}
+
 /* ------------------------------------------------------------------- cards */
 
 .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
@@ -726,6 +768,66 @@ th.col-rings { text-align: left !important; }
 	gap: 0.75rem;
 	margin-bottom: 1rem;
 }
+/* ------------------------------------------------------- version histogram */
+
+/* One flex item holding both marks and the word, so space-between separates
+   the title from the count rather than separating the icons from the label. */
+.version-title { display: inline-flex; align-items: center; gap: 0.3rem; }
+
+.version-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.35rem; }
+
+/*
+ * Three columns: the label, the bar taking whatever is left, and the count.
+ * Fixed side columns so the bars all start and end at the same x — a bar chart
+ * whose baseline moves per row is a set of unrelated lines.
+ */
+.version-row {
+	display: grid;
+	/* Four fixed-ish columns: label, bar, count, share. The side columns are
+	   sized for their widest content so the bars keep one baseline and one
+	   length across every row. */
+	grid-template-columns: 2.2rem minmax(0, 1fr) 2.6rem 2.9rem;
+	align-items: center;
+	gap: 0.5rem;
+	font-size: 0.82rem;
+}
+.version-label { color: var(--text-muted); font-variant-numeric: tabular-nums; }
+.version-bar {
+	height: 0.7rem;
+	border-radius: var(--pill);
+	background: color-mix(in srgb, var(--text-muted) 15%, transparent);
+	overflow: hidden;
+}
+/* A minimum width so a version with a handful of sites is still a visible mark
+   rather than a rounding error indistinguishable from zero. */
+.version-fill {
+	display: block;
+	height: 100%;
+	min-width: 3px;
+	border-radius: inherit;
+	background: var(--accent);
+}
+.version-count { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+/* A pill, matching the counts elsewhere on the page: it reads as a label on the
+   number beside it rather than as a second number competing with it. */
+.version-share {
+	/* Filling the column rather than hugging its text: pills of three different
+	   widths ("1%", "9%", "65%") right-aligned leave a ragged left edge, and the
+	   column exists precisely so they line up. */
+	justify-self: stretch;
+	text-align: center;
+	padding: 0.05rem 0.35rem;
+	border-radius: var(--pill);
+	background: color-mix(in srgb, var(--text-muted) 15%, transparent);
+	color: var(--text-muted);
+	font-size: 0.72rem;
+	font-weight: 600;
+}
+
+/* No bar, because there is nothing to draw: these sites named the generator and
+   not the version. */
+.version-rest { color: var(--text-muted); }
+
 .tally {
 	background: var(--surface);
 	border: 1px solid var(--border);

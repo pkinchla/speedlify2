@@ -11,7 +11,31 @@ eleventyComputed:
 
 <article class="detail">
 
-<header class="detail-head">
+{#
+	One screenshot per site page, from 11ty's service. Deliberately not on the
+	leaderboards: those run to a thousand rows, and a thousand screenshot
+	requests is not a page, it is a load test pointed at someone else's server.
+
+	Only above a performance score of 75, and only once there is a measurement.
+	The service renders the page on a timer, so the slower the site the more
+	likely the capture is of a half-drawn or empty page — a picture of our own
+	screenshot timeout rather than of the site. Below the threshold there is
+	nothing worth showing and a request not worth making.
+
+	Lazy, and sized in the markup so the text beside it does not jump when the
+	image lands. Decorative rather than described: what the site looks like is
+	not information this page is making a claim about, and "screenshot of
+	example.com" read aloud tells you nothing you did not just hear from the
+	heading above it.
+#}
+{% set SCREENSHOT_MIN_PERFORMANCE = 75 %}
+{% set screenshot = "" %}
+{% if entry.latest.lab.scores.performance >= SCREENSHOT_MIN_PERFORMANCE %}
+	{% set screenshot = entry.url | screenshot(meta.screenshotService) %}
+{% endif %}
+
+<header class="detail-head{{ ' has-shot' if screenshot }}">
+	<div class="detail-head-text">
 	<h2 class="page-hed">{{ entry.displayUrl }}</h2>
 	<p class="detail-url"><a href="{{ entry.url }}">{{ entry.url }}</a></p>
 	<p class="data-age {{ 'stale-age' if entry.dataStale }}">
@@ -29,6 +53,25 @@ eleventyComputed:
 		{% if entry.firstMeasured %}· since {{ entry.firstMeasured | date }}{% endif %}
 		{% if entry.lastMeasured %}· last attempt {{ entry.lastMeasured | since }}{% endif %}
 	</p>
+	</div>
+	{#
+		After the text, not before it: the heading is what the page is about and
+		should come first to a screen reader, and this way the source order and
+		the stacked mobile order are the same thing.
+	#}
+	{% if screenshot %}
+	{#
+		Hidden from assistive technology and out of the tab order: this is the
+		same destination as the URL linked in text directly beside it, and a
+		second link to it would be a duplicate to read past and a duplicate to
+		tab through. Removing it costs a screen reader nothing — the link is
+		still there, in words.
+	#}
+	<a class="detail-shot-link" href="{{ entry.url }}" tabindex="-1" aria-hidden="true">
+		<img class="detail-shot" src="{{ screenshot }}" width="650" height="650"
+			alt="" loading="lazy" decoding="async">
+	</a>
+	{% endif %}
 </header>
 
 {% if entry.stale and entry.latest %}

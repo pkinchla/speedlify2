@@ -537,16 +537,23 @@ export default async function ($config) {
 	});
 
 	/**
-	 * Favicon for a site, via the same avatar service Speedlify uses.
+	 * A site's URL substituted into an image service's URL template.
 	 *
-	 * This is the one external request the built site makes. Set
-	 * `meta.avatarService` to "" to drop it and keep the output fully
-	 * self-contained — worth considering for a tool that measures page weight.
+	 * These are the only external requests the built site makes: a favicon per
+	 * leaderboard row, and a screenshot per site page. Set the matching
+	 * `meta.*Service` to "" to drop either and keep the output self-contained —
+	 * worth considering for a tool that measures page weight.
+	 *
+	 * The URL is encoded because both services take it as a path segment, where
+	 * an unescaped `https://` would read as three segments.
 	 */
-	$config.addFilter("avatar", function (url, service) {
+	function imageService(url, service) {
 		if (!service) return "";
 		return service.replace("{url}", encodeURIComponent(url));
-	});
+	}
+
+	$config.addFilter("avatar", imageService);
+	$config.addFilter("screenshot", imageService);
 
 	/**
 	 * Brand icon for a detected generator or host, as inline SVG.

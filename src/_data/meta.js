@@ -19,4 +19,15 @@ export default {
 	// at all — which is arguably the right default for a tool that measures
 	// third-party weight for a living.
 	avatarService: "https://v1.indieweb-avatar.11ty.dev/{url}/",
+
+	// Screenshot service for the individual site pages. Same substitution, same
+	// switch: "" turns it off. `medium` is 650px wide at the service's default
+	// 1:1 ratio; the sizes it offers are small (375), medium (650), large (1024)
+	// and opengraph (1200x630).
+	//
+	// One request per site page rather than per row, which is why this is on the
+	// detail pages and not the leaderboard — a category page carries a thousand
+	// rows, and a thousand screenshots is not a page, it is a denial of service
+	// aimed at someone else's server.
+	screenshotService: "https://v1.screenshot.11ty.dev/{url}/medium/",
 };
