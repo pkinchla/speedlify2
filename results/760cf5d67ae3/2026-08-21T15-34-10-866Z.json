@@ -1,0 +1,192 @@
+{
+  "url": "https://ryanccn.dev/",
+  "name": "ryanccn.dev",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787326450866,
+  "date": "2026-08-21T15:34:10.866Z",
+  "runId": "2026-08-21T15-32-26-757Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 23175,
+  "error": null,
+  "variance": {
+    "min": 97,
+    "max": 100,
+    "spread": 3,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://ryanccn.dev/",
+    "finalUrl": "https://ryanccn.dev/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1087,
+      "lcp": 1237,
+      "si": 1087,
+      "tbt": 0,
+      "tti": 1237,
+      "cls": 0,
+      "ttfb": 637,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 28,
+      "networkRtt": 0,
+      "networkServerLatency": 37.4
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 29.3,
+      "elementRenderDelay": 197.2
+    },
+    "weight": {
+      "total": 45139,
+      "requests": 7,
+      "mainDocument": 5872,
+      "byType": {
+        "total": {
+          "bytes": 45139,
+          "requests": 7
+        },
+        "stylesheet": {
+          "bytes": 36668,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 5872,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 2599,
+          "requests": 3
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 0,
+          "requests": 0
+        }
+      },
+      "scripts": 0,
+      "stylesheets": 2,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 0,
+      "bytes": 0,
+      "mainThreadMs": 0,
+      "top": []
+    },
+    "mainThread": {
+      "total": 397,
+      "byGroup": {
+        "styleLayout": 160.9,
+        "other": 156.9,
+        "scriptEvaluation": 35,
+        "parseHTML": 32,
+        "paintCompositeRender": 9.6,
+        "scriptParseCompile": 2.5
+      },
+      "bootupMs": 35.5,
+      "longTasks": 2,
+      "longestTaskMs": 74
+    },
+    "dom": {
+      "elements": 245,
+      "depth": 9,
+      "maxChildren": 14
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 35952,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 300,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 13,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": null,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": null,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 26
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2354,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T15:34:19.429Z",
+      "runtimeMs": 6374.6
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2eab3d1cee93ea2-DFW",
+      "server": "cloudflare"
+    },
+    "violations": 1,
+    "passes": 495,
+    "incomplete": 0,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Page should contain a level-one heading"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
