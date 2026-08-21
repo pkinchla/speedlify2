@@ -5,21 +5,87 @@ permalink: /index.html
 
 {% from "statbar.njk" import statbar %}
 
-{{ statbar(sites.stats, metrics) }}
+{#
+	The page's own sections, built from the same conditions the sections use so
+	an entry never points at something that was not rendered. Categories are a
+	separate list further down: those go to other pages, and a table of contents
+	that leaves the page is not one.
 
-{% if sites.coverage.measured %}
-<p class="coverage">
-	Measured continuously — each site refreshed on its own schedule, newest data shown.
-	<strong>{{ sites.coverage.measured }}/{{ sites.coverage.total }}</strong>
-	{{ sites.coverage.measured | plural("site") }} {{ sites.coverage.measured | verb("has", "have") }} data
-	{%- if sites.coverage.medianAgeHours %}, median age
-	{% if sites.coverage.medianAgeHours < 48 %}{{ sites.coverage.medianAgeHours }}h{% else %}{{ (sites.coverage.medianAgeHours / 24) | round(1) }}d{% endif %}
-	{%- endif %}.
-	{% if sites.coverage.stale %}<span class="worse">{{ sites.coverage.stale }} stale</span> (over {{ sites.coverage.staleAfterHours }}h).{% endif %}
-	{% if sites.coverage.never %}<span class="muted">{{ sites.coverage.never }} not yet measured.</span>{% endif %}
-	{% if sites.stats.failing %}<span class="failing-note">{{ sites.stats.failing | num }} currently failing.</span>{% endif %}
-</p>
+	Sticky, like the site page's — this page is long, and the sections below the
+	leaderboard are a thousand rows out of sight.
+#}
+{% set toc = [] %}
+{% if sites.groups.length > 1 or sites.moving.length or sites.orphans.length %}
+	{% set toc = (toc.push({ id: "categories", label: "Categories" }), toc) %}
 {% endif %}
+{% set toc = (toc.push({ id: "summary", label: "Summary" }), toc) %}
+{% if sites.stats.measured %}{% set toc = (toc.push({ id: "leaderboard", label: "Perfect scores" }), toc) %}{% endif %}
+{% if sites.stacks.generators.items.length or sites.stacks.hosts.items.length %}
+	{% set toc = (toc.push({ id: "stacks", label: "Technology" }), toc) %}
+{% endif %}
+{% if sites.moving.length %}{% set toc = (toc.push({ id: "moving", label: "Redirects" }), toc) %}{% endif %}
+{% if sites.orphans.length %}{% set toc = (toc.push({ id: "orphans", label: "Orphaned" }), toc) %}{% endif %}
+{% if sites.archived.length %}{% set toc = (toc.push({ id: "archived", label: "Archived" }), toc) %}{% endif %}
+
+{% if toc.length > 1 %}
+<nav class="contents contents-sticky" aria-label="On this page">
+	<span class="contents-label">On this page</span>
+	<ul>
+		{% for item in toc %}
+		<li><a href="#{{ item.id }}">{{ item.label }}</a></li>
+		{% endfor %}
+	</ul>
+</nav>
+{% endif %}
+
+{% if sites.groups.length > 1 or sites.moving.length or sites.orphans.length %}
+<section class="group" id="categories">
+	<div class="group-head">
+		<h2 id="categories-heading">Categories</h2>
+	</div>
+	{# Labelled by the section's heading rather than an aria-label, so the name a
+	   screen reader announces is the one on the page. #}
+	<nav class="contents contents-categories" aria-labelledby="categories-heading">
+	<ul>
+		{#
+			Measured over listed, not just listed. Measurement is rolling — a
+			category is added in one commit and fills in over the following days —
+			so a bare total says how many URLs someone typed, while this says how
+			much of the category the site can actually show you.
+		#}
+		{% for group in sites.groups %}
+		{% if group.entries.length %}
+		<li>
+			<a href="/group/{{ group.id }}/">{{ group.name }}</a>
+			<span class="contents-count" title="{{ group.measured | num }} of {{ group.entries.length | num }} measured at least once">
+				{{ group.measured | num }}<span class="contents-of">/{{ group.entries.length | num }}</span>
+			</span>
+		</li>
+		{% endif %}
+		{% endfor %}
+		{% if sites.moving.length %}
+		<li>
+			<a href="#moving">{{ sites.moving.length | plural("Site") }} that {{ sites.moving.length | verb("redirects", "redirect") }}</a>
+			<span class="contents-count">{{ sites.moving.length }}</span>
+		</li>
+		{% endif %}
+		{% if sites.orphans.length %}
+		<li>
+			<a href="#orphans">Orphaned {{ sites.orphans.length | plural("history", "histories") }}</a>
+			<span class="contents-count">{{ sites.orphans.length }}</span>
+		</li>
+		{% endif %}
+	</ul>
+</nav>
+</section>
+{% endif %}
+
+<section class="group statbar-section" id="summary">
+	<div class="group-head">
+		<h2>Summary</h2>
+	</div>
+	{{ statbar(sites.stats, metrics) }}
+</section>
 
 {% if not sites.stats.measured %}
 <div class="empty">
@@ -116,42 +182,6 @@ permalink: /index.html
 {% endif %}
 {% endmacro %}
 
-
-{% if sites.groups.length > 1 or sites.moving.length or sites.orphans.length %}
-<nav class="contents" aria-label="Categories">
-	<span class="contents-label">Categories</span>
-	<ul>
-		{#
-			Measured over listed, not just listed. Measurement is rolling — a
-			category is added in one commit and fills in over the following days —
-			so a bare total says how many URLs someone typed, while this says how
-			much of the category the site can actually show you.
-		#}
-		{% for group in sites.groups %}
-		{% if group.entries.length %}
-		<li>
-			<a href="/group/{{ group.id }}/">{{ group.name }}</a>
-			<span class="contents-count" title="{{ group.measured | num }} of {{ group.entries.length | num }} measured at least once">
-				{{ group.measured | num }}<span class="contents-of">/{{ group.entries.length | num }}</span>
-			</span>
-		</li>
-		{% endif %}
-		{% endfor %}
-		{% if sites.moving.length %}
-		<li>
-			<a href="#moving">{{ sites.moving.length | plural("Site") }} that {{ sites.moving.length | verb("redirects", "redirect") }}</a>
-			<span class="contents-count">{{ sites.moving.length }}</span>
-		</li>
-		{% endif %}
-		{% if sites.orphans.length %}
-		<li>
-			<a href="#orphans">Orphaned {{ sites.orphans.length | plural("history", "histories") }}</a>
-			<span class="contents-count">{{ sites.orphans.length }}</span>
-		</li>
-		{% endif %}
-	</ul>
-</nav>
-{% endif %}
 
 {#
 	One ranked list across every category. The category pages carry the same
@@ -316,14 +346,24 @@ permalink: /index.html
 	</p>
 </section>
 
+
 {% if sites.stacks.generators.items.length or sites.stacks.hosts.items.length %}
-<section class="stacks">
-	{{ stacktally(sites.stacks.generators, "Built with", "built with") }}
-	{{ versionbars(sites.stacks.eleventyVersions) }}
-	{{ stacktally(sites.stacks.hosts, "Hosted by", "hosted by") }}
+<section class="group" id="stacks">
+	<div class="group-head">
+		<h2>Technology</h2>
+		<p class="muted">
+			What the measured sites are built with and served from, detected on the
+			same page load as everything else — a generator tag where one is emitted,
+			response headers for the host.
+		</p>
+	</div>
+	<div class="stacks">
+		{{ stacktally(sites.stacks.generators, "Built with", "built with") }}
+		{{ versionbars(sites.stacks.eleventyVersions) }}
+		{{ stacktally(sites.stacks.hosts, "Hosted by", "hosted by") }}
+	</div>
 </section>
 {% endif %}
-
 
 {% if sites.moving.length %}
 <section class="redirects" id="moving">

@@ -144,6 +144,10 @@ pre code { font-size: inherit; }
 	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 	gap: 0.75rem;
 	margin-bottom: 2.5rem;
+	/* Matching .table-scroll and the sticky nav, so the tiles' outer edges line
+	   up with the tables and cards further down rather than sitting inside them
+	   by the width of a cell's padding. */
+	margin-inline: -0.7rem;
 }
 .stat {
 	background: var(--surface);
@@ -201,20 +205,17 @@ pre code { font-size: inherit; }
 
 /* ------------------------------------------------------------------ groups */
 
-.coverage {
-	font-size: 0.86rem;
-	color: var(--text-muted);
-	background: var(--surface);
-	border: 1px solid var(--border);
-	border-radius: var(--radius);
-	padding: 0.6rem 0.9rem;
-	margin: 0 0 2.5rem;
-}
-
 
 .group { margin-bottom: 3rem; }
 .group-head { margin-bottom: 0.9rem; }
-.group-head h2 { margin: 0 0 0.15rem; font-size: 1.2rem; letter-spacing: -0.01em; }
+/*
+ * One size for every top-level section heading on the home page. The three on
+ * the right had no rule at all and were taking the browser's default 1.5em,
+ * which read a size larger than the ones that had been designed.
+ */
+.group-head h2,
+.redirects > h2,
+.orphans > h2 { margin: 0 0 0.15rem; font-size: 1.2rem; letter-spacing: -0.01em; }
 .group-head h2 a { color: var(--text); text-decoration: none; }
 .group-head h2 a:hover { color: var(--accent); }
 
@@ -623,7 +624,9 @@ th.col-trend { text-align: center !important; }
 .masthead .wrap { display: block; text-align: center; padding-top: 2.5rem; padding-bottom: 1.75rem; min-height: 0; }
 .masthead-hed { margin: 0 0 0.5rem; font-size: clamp(2rem, 6vw, 3rem); font-weight: 700; letter-spacing: -0.02em; }
 .masthead-hed a { color: var(--text); text-decoration: none; }
-.masthead-subhed { margin: 0; font-size: 0.95rem; color: var(--text-muted); }
+/* Block margin so the three lines read as separate statements — the tagline,
+   the links, the coverage — rather than one paragraph that happens to wrap. */
+.masthead-subhed { margin: 0.4rem 0; font-size: 0.95rem; color: var(--text-muted); }
 
 /* ------------------------------------------------------------ score rings */
 
@@ -738,7 +741,7 @@ th.col-rings { text-align: left !important; }
  * leaderboard; running text and the centred intro stay at a readable measure.
  */
 .masthead-subhed { max-width: 68ch; margin-inline: auto; }
-.coverage, .panel > p, .group-head p, .detail-head p { max-width: 90ch; }
+.panel > p, .group-head p, .detail-head p { max-width: 90ch; }
 
 /* ------------------------------------------------------- built with / host */
 
@@ -796,9 +799,6 @@ th.col-rings { text-align: left !important; }
 	border-radius: var(--radius);
 	padding: 0.7rem 0.9rem;
 	margin: 0 0 2.5rem;
-	/* Matching .table-scroll, so a card lines up with the tables below it rather
-	   than sitting a few pixels inside their edges. */
-	margin-inline: -0.7rem;
 	display: flex;
 	align-items: baseline;
 	gap: 0.75rem;
@@ -813,6 +813,13 @@ th.col-rings { text-align: left !important; }
  * `.contents` is already opaque — surface fill, full border — so content
  * scrolling beneath it is covered without anything extra here.
  */
+/* Matching .table-scroll, so the card lines up with the panels it scrolls over
+   rather than sitting a few pixels inside their edges. On the sticky one only:
+   the home page's category nav sits in the flow with the text around it, and
+   pulling that out would leave it hanging past its neighbours. */
+.contents-sticky { margin-inline: -0.7rem; }
+
+
 /*
  * Only where it fits, in both directions.
  *
@@ -852,6 +859,27 @@ th.col-rings { text-align: left !important; }
 	gap: 0.4rem 1.1rem;
 }
 .contents li { display: inline-flex; align-items: baseline; gap: 0.35rem; font-size: 0.9rem; }
+/* The home page's category list is the way into the site rather than a table of
+   contents for the page you are already on, so it reads a size larger. Scoped
+   with its own class rather than by negating the sticky one — the site page's
+   nav should stay quiet. */
+/*
+ * Not a card. The sticky table of contents needs a surface to scroll content
+ * under; this list sits in the flow as the way into the site, so it drops the
+ * fill, the border and the padding and reads as content rather than chrome.
+ */
+.contents-categories {
+	background: none;
+	border: 0;
+	border-radius: 0;
+	padding: 0;
+	/* The heading lives in the section's own `.group-head` now, so the nav is
+	   just the list and needs none of the flex row's label slot. */
+	display: block;
+	margin: 0;
+}
+.contents-categories li { font-size: 1.15rem; }
+.contents-categories .contents-count { font-size: 0.8rem; }
 /* The denominator is context, not the number being reported — dimmed so the
    measured count is what the eye lands on. */
 .contents-of { opacity: 0.6; }
@@ -886,7 +914,9 @@ th.col-rings { text-align: left !important; }
  * Outside the query the nav scrolls away and the ordinary offset applies.
  */
 @media (min-width: 40rem) and (min-height: 34rem) {
-	.detail :target { scroll-margin-top: 8rem; }
+	.detail :target,
+	main.wrap > :target,
+	main.wrap section:target { scroll-margin-top: 8rem; }
 }
 
 .see-all {
@@ -921,6 +951,9 @@ th.col-rings { text-align: left !important; }
 	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 	gap: 0.75rem;
 	margin-bottom: 1rem;
+	/* Same pull as .statbar and .table-scroll: every card on the page lines up
+	   on one pair of edges. */
+	margin-inline: -0.7rem;
 }
 /* ------------------------------------------------------- version histogram */
 

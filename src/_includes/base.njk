@@ -18,10 +18,30 @@ try { if (localStorage.getItem("speedlify-theme") === "light") document.document
 <header class="masthead">
 	<div class="wrap">
 		<h1 class="masthead-hed"><a href="/">{{ meta.title }}</a></h1>
-		<p class="masthead-subhed">{{ meta.description }}</p>
+		{#
+			Tagline and coverage in one line: what this is, then how much of it has
+			data. The coverage half describes the instance rather than any one
+			page, which is why it sits in the shared masthead at all.
+		#}
+		<p class="masthead-subhed">
+			{#
+				Trailing full stop trimmed: the sentence continues into the coverage
+				clause here, where `<meta name="description">` above wants it whole.
+			#}
+			{{ meta.description | replace(r/\.$/, "") }}
+			{%- if sites.coverage.measured %} — measured continuously.
+			<strong>{{ sites.coverage.measured }}/{{ sites.coverage.total }}</strong>
+			{{ sites.coverage.measured | plural("site") }} {{ sites.coverage.measured | verb("has", "have") }} data
+			{%- if sites.coverage.medianAgeHours %}, median age
+			{% if sites.coverage.medianAgeHours < 48 %}{{ sites.coverage.medianAgeHours }}h{% else %}{{ (sites.coverage.medianAgeHours / 24) | round(1) }}d{% endif %}
+			{%- endif %}.
+			{% if sites.coverage.stale %}<span class="worse">{{ sites.coverage.stale }} stale</span> (over {{ sites.coverage.staleAfterHours }}h).{% endif %}
+			{% if sites.coverage.never %}<span class="muted">{{ sites.coverage.never }} not yet measured.</span>{% endif %}
+			{% if sites.stats.failing %}<span class="failing-note"><em>{{ sites.stats.failing | num }} currently failing.</em></span>{% endif %}
+			{%- endif %}
+		</p>
 		<p class="masthead-subhed">
 			<a href="/runs/">Measurement runs</a> · <a href="/embed/">Embed a score</a>
-			{%- if sites.hasFieldData %} · Field data from the Chrome UX Report{% endif %}
 			<!-- Hidden until scripted: without JS the choice cannot be stored,
 			     and a button that silently does nothing is worse than none. -->
 			· <button class="theme-toggle" type="button" id="theme-toggle" hidden>
