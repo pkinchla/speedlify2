@@ -1,0 +1,3 @@
+{"version":1,"url":"https://www.cookingtimers.org/","updated":"2026-08-21T11:31:52.969Z","points":[
+{"t":1787311890198,"performance":83,"accessibility":96,"best-practices":100,"seo":100,"lcp":4382,"cls":0.01,"tbt":127,"fcp":1675,"si":1675,"ttfb":466,"total":577044,"requests":12,"bytes":274551,"mainThreadMs":42.4,"unusedJsBytes":143228,"unusedCssBytes":0,"mainThreadTotal":498.6,"longTasks":2,"elements":133,"failingCount":1,"failingNodes":4,"axeViolations":4,"axePasses":328,"bench":2513,"runs":3,"reqRuns":3,"ms":22770,"spread":3}
+]}

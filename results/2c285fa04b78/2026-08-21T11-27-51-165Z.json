@@ -1,0 +1,218 @@
+{
+  "url": "https://www.briangershon.com/",
+  "name": "www.briangershon.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787311671165,
+  "date": "2026-08-21T11:27:51.165Z",
+  "runId": "2026-08-21T11-24-38-644Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 22837,
+  "error": null,
+  "variance": {
+    "min": 100,
+    "max": 100,
+    "spread": 0,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.briangershon.com/",
+    "finalUrl": "https://www.briangershon.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 100,
+      "accessibility": 91,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 911,
+      "lcp": 1822,
+      "si": 911,
+      "tbt": 0,
+      "tti": 1822,
+      "cls": 0,
+      "ttfb": 611,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 3,
+      "networkRtt": 0.2,
+      "networkServerLatency": 29.9
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 4.3,
+      "resourceLoadDelay": 18.5,
+      "resourceLoadDuration": 18.9,
+      "elementRenderDelay": 31.3
+    },
+    "weight": {
+      "total": 227254,
+      "requests": 15,
+      "mainDocument": 4596,
+      "byType": {
+        "total": {
+          "bytes": 227254,
+          "requests": 15
+        },
+        "image": {
+          "bytes": 141988,
+          "requests": 9
+        },
+        "other": {
+          "bytes": 57963,
+          "requests": 2
+        },
+        "script": {
+          "bytes": 14364,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 8343,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 4596,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 133531,
+          "requests": 5
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 1,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 133531,
+      "mainThreadMs": 2.5,
+      "top": [
+        {
+          "entity": "stashfive.com",
+          "bytes": 130366,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Fathom Analytics",
+          "bytes": 3165,
+          "mainThreadMs": 2.5
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1929.9,
+      "byGroup": {
+        "other": 1309.8,
+        "scriptEvaluation": 494.2,
+        "styleLayout": 47.7,
+        "paintCompositeRender": 41.1,
+        "garbageCollection": 18.3,
+        "parseHTML": 13,
+        "scriptParseCompile": 5.6
+      },
+      "bootupMs": 487,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 99,
+      "depth": 9,
+      "maxChildren": 5
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 88648.87999999999,
+      "poorlyCachedCount": 3
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 12,
+      "failingNodes": 3,
+      "failing": [
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "nodes": 3
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 30
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2497,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T11:27:59.737Z",
+      "runtimeMs": 6752.3
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "vercel",
+      "name": "Vercel",
+      "icon": "Vercel",
+      "source": "x-vercel-id"
+    },
+    "headers": {
+      "server": "Vercel",
+      "x-vercel-id": "iad1::bn9lv-1787311692826-6364b446c054"
+    },
+    "violations": 4,
+    "passes": 192,
+    "incomplete": 0,
+    "violationRules": 2,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "nodes": 3,
+        "help": "Links must have discernible text"
+      },
+      {
+        "id": "image-redundant-alt",
+        "impact": "minor",
+        "nodes": 1,
+        "help": "Alternative text of images should not be repeated as text"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

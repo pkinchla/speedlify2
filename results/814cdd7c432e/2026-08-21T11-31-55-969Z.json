@@ -1,0 +1,177 @@
+{
+  "url": "https://www.coryd.dev/",
+  "name": "www.coryd.dev",
+  "group": "11ty-emeritus",
+  "groupName": "11ty Emeritus",
+  "timestamp": 1787311915969,
+  "date": "2026-08-21T11:31:55.969Z",
+  "runId": "2026-08-21T11-24-38-644Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 143118,
+  "error": null,
+  "variance": {
+    "min": 97,
+    "max": 100,
+    "spread": 3,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.coryd.dev/",
+    "finalUrl": "https://www.coryd.dev/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 67
+    },
+    "timings": {
+      "fcp": 969,
+      "lcp": 2437,
+      "si": 1285,
+      "tbt": 7,
+      "tti": 2538,
+      "cls": 0,
+      "ttfb": 606,
+      "maxPotentialFid": 63,
+      "serverResponseTime": 32,
+      "networkRtt": 0.2,
+      "networkServerLatency": 7.6
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 33.5,
+      "elementRenderDelay": 83.5
+    },
+    "weight": {
+      "total": 309382,
+      "requests": 25,
+      "mainDocument": 7710,
+      "byType": {
+        "total": {
+          "bytes": 309382,
+          "requests": 25
+        },
+        "font": {
+          "bytes": 144216,
+          "requests": 2
+        },
+        "image": {
+          "bytes": 122241,
+          "requests": 11
+        },
+        "stylesheet": {
+          "bytes": 20489,
+          "requests": 3
+        },
+        "document": {
+          "bytes": 7710,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 7363,
+          "requests": 5
+        },
+        "other": {
+          "bytes": 7363,
+          "requests": 3
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 0,
+          "requests": 0
+        }
+      },
+      "scripts": 5,
+      "stylesheets": 3,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 0,
+      "bytes": 0,
+      "mainThreadMs": 0,
+      "top": []
+    },
+    "mainThread": {
+      "total": 385.8,
+      "byGroup": {
+        "other": 169,
+        "styleLayout": 103.6,
+        "scriptEvaluation": 43.9,
+        "parseHTML": 42.8,
+        "paintCompositeRender": 25.2,
+        "scriptParseCompile": 1.2
+      },
+      "bootupMs": 34.1,
+      "longTasks": 1,
+      "longestTaskMs": 63
+    },
+    "dom": {
+      "elements": 456,
+      "depth": 12,
+      "maxChildren": 20
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 150,
+      "renderBlockingCount": 4,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 20,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": null,
+      "csp": null,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 54
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2483,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T11:32:05.215Z",
+      "runtimeMs": 6955.9
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": null,
+    "headers": {},
+    "violations": null,
+    "passes": null,
+    "incomplete": null,
+    "violationRules": null,
+    "version": null,
+    "top": [],
+    "error": "Navigation timeout of 120000 ms exceeded"
+  },
+  "consecutiveFailures": 0
+}
