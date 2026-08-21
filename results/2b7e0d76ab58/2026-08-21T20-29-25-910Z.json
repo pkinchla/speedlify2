@@ -1,0 +1,270 @@
+{
+  "url": "https://www.zachleat.com/web/eleventy",
+  "name": "www.zachleat.com",
+  "group": "zachleat",
+  "groupName": "zachleat.com",
+  "timestamp": 1787344165910,
+  "date": "2026-08-21T20:29:25.910Z",
+  "runId": "2026-08-21T20-24-38-486Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 30094,
+  "error": null,
+  "variance": {
+    "min": 97,
+    "max": 100,
+    "spread": 3,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.zachleat.com/web/eleventy",
+    "finalUrl": "https://www.zachleat.com/web/eleventy",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 97,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1266,
+      "lcp": 2633,
+      "si": 1266,
+      "tbt": 12,
+      "tti": 2655,
+      "cls": 0.035,
+      "ttfb": 604,
+      "maxPotentialFid": 62,
+      "serverResponseTime": 5,
+      "networkRtt": 0.4,
+      "networkServerLatency": 183.4
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 7.1,
+      "elementRenderDelay": 104.9
+    },
+    "weight": {
+      "total": 163512,
+      "requests": 38,
+      "mainDocument": 34806,
+      "byType": {
+        "total": {
+          "bytes": 160090,
+          "requests": 35
+        },
+        "font": {
+          "bytes": 58343,
+          "requests": 5
+        },
+        "image": {
+          "bytes": 40891,
+          "requests": 18
+        },
+        "document": {
+          "bytes": 34806,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 17393,
+          "requests": 5
+        },
+        "other": {
+          "bytes": 4616,
+          "requests": 5
+        },
+        "stylesheet": {
+          "bytes": 4041,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 42378,
+          "requests": 22
+        }
+      },
+      "scripts": 5,
+      "stylesheets": 1,
+      "fonts": 5
+    },
+    "thirdParty": {
+      "count": 4,
+      "bytes": 42000,
+      "mainThreadMs": 2.3,
+      "top": [
+        {
+          "entity": "11ty.dev",
+          "bytes": 37122,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "zgo.at",
+          "bytes": 4361,
+          "mainThreadMs": 2.3
+        },
+        {
+          "entity": "goatcounter.com",
+          "bytes": 380,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "GitHub",
+          "bytes": 137,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 586.7,
+      "byGroup": {
+        "other": 215.4,
+        "styleLayout": 177.8,
+        "paintCompositeRender": 69.4,
+        "scriptEvaluation": 65.1,
+        "parseHTML": 56.9,
+        "scriptParseCompile": 2.1
+      },
+      "bootupMs": 27.9,
+      "longTasks": 1,
+      "longestTaskMs": 62
+    },
+    "dom": {
+      "elements": 1738,
+      "depth": 13,
+      "maxChildren": 134
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 2531,
+      "unminifiedCssBytes": 2238,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 29796.000000000004,
+      "poorlyCachedCount": 17
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 26,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 28
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2491,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T20:29:37.932Z",
+      "runtimeMs": 7783.4
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "origin",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-23",
+      "last": "2026-08-19"
+    },
+    "metrics": {
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 98.5,
+          "needsImprovement": 1,
+          "poor": 0.6
+        }
+      },
+      "ttfb": {
+        "p75": 693,
+        "rating": "good",
+        "distribution": {
+          "good": 81.3,
+          "needsImprovement": 13.7,
+          "poor": 5
+        }
+      },
+      "fcp": {
+        "p75": 1025,
+        "rating": "good",
+        "distribution": {
+          "good": 92.7,
+          "needsImprovement": 4.8,
+          "poor": 2.6
+        }
+      },
+      "lcp": {
+        "p75": 1085,
+        "rating": "good",
+        "distribution": {
+          "good": 92.5,
+          "needsImprovement": 5.9,
+          "poor": 1.6
+        }
+      },
+      "rtt": {
+        "p75": 166,
+        "rating": null,
+        "distribution": {
+          "good": 45.1,
+          "needsImprovement": 42.7,
+          "poor": 12.2
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 2
+  },
+  "axe": {
+    "generator": {
+      "id": "build-awesome",
+      "name": "Build Awesome",
+      "icon": "BuildAwesome",
+      "version": "4.0.0",
+      "source": "meta",
+      "raw": "Eleventy (Build Awesome) v4.0.0"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0K081SC64F3BWF7Z7QK9WZJ"
+    },
+    "violations": 0,
+    "passes": 2643,
+    "incomplete": 0,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

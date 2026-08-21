@@ -1,0 +1,204 @@
+{
+  "url": "https://www.vktr.dev/",
+  "name": "www.vktr.dev",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787344020422,
+  "date": "2026-08-21T20:27:00.422Z",
+  "runId": "2026-08-21T20-24-38-486Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 22469,
+  "error": null,
+  "variance": {
+    "min": 86,
+    "max": 88,
+    "spread": 2,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.vktr.dev/",
+    "finalUrl": "https://www.vktr.dev/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 88,
+      "accessibility": 98,
+      "best-practices": 100,
+      "seo": 90,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 3052,
+      "lcp": 3052,
+      "si": 3052,
+      "tbt": 0,
+      "tti": 3052,
+      "cls": 0,
+      "ttfb": 604,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 4,
+      "networkRtt": 0,
+      "networkServerLatency": 44.2
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 6.1,
+      "elementRenderDelay": 150.9
+    },
+    "weight": {
+      "total": 252810,
+      "requests": 7,
+      "mainDocument": 517,
+      "byType": {
+        "total": {
+          "bytes": 252810,
+          "requests": 7
+        },
+        "script": {
+          "bytes": 126704,
+          "requests": 1
+        },
+        "font": {
+          "bytes": 118753,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 6836,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 517,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "other": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 119920,
+          "requests": 4
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 2,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 119920,
+      "mainThreadMs": 0,
+      "top": [
+        {
+          "entity": "Google Fonts",
+          "bytes": 119920,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 582.5,
+      "byGroup": {
+        "scriptEvaluation": 204.7,
+        "other": 189,
+        "styleLayout": 137.7,
+        "paintCompositeRender": 40.6,
+        "parseHTML": 7.2,
+        "scriptParseCompile": 3.4
+      },
+      "bootupMs": 205.8,
+      "longTasks": 1,
+      "longestTaskMs": 82
+    },
+    "dom": {
+      "elements": 165,
+      "depth": 14,
+      "maxChildren": 7
+    },
+    "waste": {
+      "unusedJsBytes": 66036,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 794,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 19,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 22
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2495,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T20:27:15.909Z",
+      "runtimeMs": 6134.2
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0K03DN469Z0PG7807EEY258"
+    },
+    "violations": 1,
+    "passes": 269,
+    "incomplete": 12,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Heading levels should only increase by one"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
