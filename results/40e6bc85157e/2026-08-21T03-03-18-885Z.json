@@ -1,0 +1,199 @@
+{
+  "url": "https://kaicataldo.com/",
+  "name": "kaicataldo.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787281398885,
+  "date": "2026-08-21T03:03:18.885Z",
+  "runId": "2026-08-21T03-01-59-633Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 21181,
+  "error": null,
+  "variance": {
+    "min": 100,
+    "max": 100,
+    "spread": 0,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://kaicataldo.com/",
+    "finalUrl": "https://kaicataldo.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 67
+    },
+    "timings": {
+      "fcp": 966,
+      "lcp": 1730,
+      "si": 1576,
+      "tbt": 0,
+      "tti": 1730,
+      "cls": 0,
+      "ttfb": 774,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 46,
+      "networkRtt": 1.6,
+      "networkServerLatency": 173.6
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 356.6,
+      "resourceLoadDelay": 12.8,
+      "resourceLoadDuration": 172.5,
+      "elementRenderDelay": 34.8
+    },
+    "weight": {
+      "total": 275552,
+      "requests": 11,
+      "mainDocument": 5611,
+      "byType": {
+        "total": {
+          "bytes": 275552,
+          "requests": 11
+        },
+        "font": {
+          "bytes": 134760,
+          "requests": 3
+        },
+        "other": {
+          "bytes": 85840,
+          "requests": 3
+        },
+        "image": {
+          "bytes": 36763,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 12072,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 5611,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 506,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 11612,
+          "requests": 3
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 1,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 11612,
+      "mainThreadMs": 14.2,
+      "top": [
+        {
+          "entity": "Cloudflare",
+          "bytes": 11577,
+          "mainThreadMs": 14.1
+        },
+        {
+          "entity": "cloudflareinsights.com",
+          "bytes": 35,
+          "mainThreadMs": 0.1
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 4475.3,
+      "byGroup": {
+        "scriptEvaluation": 3899.5,
+        "other": 287.3,
+        "garbageCollection": 201.1,
+        "styleLayout": 48.9,
+        "scriptParseCompile": 16.1,
+        "parseHTML": 12.1,
+        "paintCompositeRender": 10.2
+      },
+      "bootupMs": 3912.4,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 81,
+      "depth": 11,
+      "maxChildren": 10
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 4630.8,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 20,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 8
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2423.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T03:03:20.168Z",
+      "runtimeMs": 6966.3
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e667e3cb7b0dac-SJC",
+      "server": "cloudflare"
+    },
+    "violations": 0,
+    "passes": 128,
+    "incomplete": 3,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

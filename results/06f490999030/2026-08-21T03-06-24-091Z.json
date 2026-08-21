@@ -1,0 +1,285 @@
+{
+  "url": "https://legendofmana.info/",
+  "name": "legendofmana.info",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787281584091,
+  "date": "2026-08-21T03:06:24.091Z",
+  "runId": "2026-08-21T03-01-59-633Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 25105,
+  "error": null,
+  "variance": {
+    "min": 67,
+    "max": 75,
+    "spread": 8,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://legendofmana.info/",
+    "finalUrl": "https://legendofmana.info/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 74,
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1543,
+      "lcp": 5767,
+      "si": 1827,
+      "tbt": 243,
+      "tti": 5774,
+      "cls": 0.001,
+      "ttfb": 604,
+      "maxPotentialFid": 277,
+      "serverResponseTime": 3,
+      "networkRtt": 0.5,
+      "networkServerLatency": 38.9
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 5,
+      "resourceLoadDelay": 116,
+      "resourceLoadDuration": 8,
+      "elementRenderDelay": 69.4
+    },
+    "weight": {
+      "total": 843289,
+      "requests": 34,
+      "mainDocument": 7264,
+      "byType": {
+        "total": {
+          "bytes": 842651,
+          "requests": 33
+        },
+        "image": {
+          "bytes": 587710,
+          "requests": 23
+        },
+        "font": {
+          "bytes": 189637,
+          "requests": 2
+        },
+        "script": {
+          "bytes": 50524,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 7264,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 6518,
+          "requests": 5
+        },
+        "stylesheet": {
+          "bytes": 998,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 196159,
+          "requests": 6
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 1,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 196159,
+      "mainThreadMs": 0,
+      "top": [
+        {
+          "entity": "Google Fonts",
+          "bytes": 190635,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "iconify.design",
+          "bytes": 5524,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1273.4,
+      "byGroup": {
+        "scriptEvaluation": 399.3,
+        "other": 372.4,
+        "styleLayout": 248.1,
+        "paintCompositeRender": 198.1,
+        "parseHTML": 27,
+        "scriptParseCompile": 16.2,
+        "garbageCollection": 12.4
+      },
+      "bootupMs": 413.3,
+      "longTasks": 2,
+      "longestTaskMs": 277
+    },
+    "dom": {
+      "elements": 492,
+      "depth": 15,
+      "maxChildren": 9
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 16,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 23
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2389.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T03:06:33.604Z",
+      "runtimeMs": 7242.4
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "origin",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-22",
+      "last": "2026-08-18"
+    },
+    "metrics": {
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 99.2,
+          "needsImprovement": 0.7,
+          "poor": 0.2
+        }
+      },
+      "ttfb": {
+        "p75": 450,
+        "rating": "good",
+        "distribution": {
+          "good": 90.4,
+          "needsImprovement": 8.5,
+          "poor": 1
+        }
+      },
+      "fcp": {
+        "p75": 988,
+        "rating": "good",
+        "distribution": {
+          "good": 94.2,
+          "needsImprovement": 4.1,
+          "poor": 1.7
+        }
+      },
+      "inp": {
+        "p75": 82,
+        "rating": "good",
+        "distribution": {
+          "good": 98.9,
+          "needsImprovement": 0.8,
+          "poor": 0.2
+        }
+      },
+      "lcp": {
+        "p75": 1009,
+        "rating": "good",
+        "distribution": {
+          "good": 97.6,
+          "needsImprovement": 1.8,
+          "poor": 0.6
+        }
+      },
+      "rtt": {
+        "p75": 141,
+        "rating": null,
+        "distribution": {
+          "good": 42,
+          "needsImprovement": 51.8,
+          "poor": 6.2
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "3.1.6",
+      "source": "meta",
+      "raw": "Eleventy v3.1.6"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0H4J31Q65MRW3K6DAR348M0"
+    },
+    "violations": 8,
+    "passes": 679,
+    "incomplete": 43,
+    "violationRules": 2,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "image-redundant-alt",
+        "impact": "minor",
+        "nodes": 7,
+        "help": "Alternative text of images should not be repeated as text"
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

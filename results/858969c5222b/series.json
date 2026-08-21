@@ -1,0 +1,3 @@
+{"version":1,"url":"https://localghost.dev/","updated":"2026-08-21T03:11:17.098Z","points":[
+{"t":1787281855754,"performance":82,"accessibility":91,"best-practices":100,"seo":92,"lcp":2185,"cls":0.33,"tbt":0,"fcp":1510,"si":1510,"ttfb":610,"total":313047,"requests":28,"bytes":4727,"mainThreadMs":2,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":421.9,"longTasks":1,"elements":598,"failingCount":2,"failingNodes":5,"axeViolations":1,"axePasses":639,"field-lcp":1009,"field-cls":0,"field-fcp":940,"field-ttfb":728,"bench":2480.5,"runs":3,"reqRuns":3,"ms":21343,"spread":1}
+]}

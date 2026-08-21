@@ -1,0 +1,210 @@
+{
+  "url": "https://kiri-vadivelu.ca/",
+  "name": "kiri-vadivelu.ca",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787281458714,
+  "date": "2026-08-21T03:04:18.714Z",
+  "runId": "2026-08-21T03-01-59-633Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 23268,
+  "error": null,
+  "variance": {
+    "min": 100,
+    "max": 100,
+    "spread": 0,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://kiri-vadivelu.ca/",
+    "finalUrl": "https://kiri-vadivelu.ca/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 100,
+      "accessibility": 94,
+      "best-practices": 100,
+      "seo": 92,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 769,
+      "lcp": 769,
+      "si": 954,
+      "tbt": 0,
+      "tti": 769,
+      "cls": 0,
+      "ttfb": 612,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 441,
+      "networkRtt": 0,
+      "networkServerLatency": 30.2
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 443,
+      "elementRenderDelay": 20.2
+    },
+    "weight": {
+      "total": 16363,
+      "requests": 4,
+      "mainDocument": 1729,
+      "byType": {
+        "total": {
+          "bytes": 13617,
+          "requests": 3
+        },
+        "script": {
+          "bytes": 11435,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 1729,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 453,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 11435,
+          "requests": 1
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 0,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 11435,
+      "mainThreadMs": 3.3,
+      "top": [
+        {
+          "entity": "Cloudflare",
+          "bytes": 11435,
+          "mainThreadMs": 3.3
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 110,
+      "byGroup": {
+        "other": 65.5,
+        "scriptEvaluation": 34.5,
+        "styleLayout": 5.7,
+        "parseHTML": 2.8,
+        "paintCompositeRender": 1,
+        "scriptParseCompile": 0.5
+      },
+      "bootupMs": 4.1,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 6,
+      "depth": 3,
+      "maxChildren": 2
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 4574,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 8,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 6
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2442.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T03:04:27.623Z",
+      "runtimeMs": 6593.2
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e669643d8cc090-SJC",
+      "server": "cloudflare"
+    },
+    "violations": 2,
+    "passes": 13,
+    "incomplete": 0,
+    "violationRules": 2,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should have one main landmark"
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "All page content should be contained by landmarks"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
