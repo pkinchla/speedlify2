@@ -1,0 +1,3 @@
+{"version":1,"url":"https://www.gatsbyjs.com/","updated":"2026-08-21T12:50:28.505Z","points":[
+{"t":1787316601211,"performance":85,"accessibility":100,"best-practices":96,"seo":92,"lcp":4013,"cls":0,"tbt":154,"fcp":964,"si":964,"ttfb":632,"total":469018,"requests":43,"bytes":9490,"mainThreadMs":0,"unusedJsBytes":62535,"unusedCssBytes":12014,"mainThreadTotal":1090.1,"longTasks":3,"elements":331,"failingCount":0,"failingNodes":0,"axeViolations":3,"axePasses":405,"field-lcp":1996,"field-inp":98,"field-cls":0,"field-fcp":1284,"field-ttfb":980,"bench":2476.5,"runs":3,"reqRuns":3,"ms":27293,"spread":25}
+]}

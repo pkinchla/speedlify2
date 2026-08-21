@@ -1,0 +1,248 @@
+{
+  "url": "https://www.itsmeara.com/",
+  "name": "www.itsmeara.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787317182110,
+  "date": "2026-08-21T12:59:42.110Z",
+  "runId": "2026-08-21T12-43-48-412Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 26845,
+  "error": null,
+  "variance": {
+    "min": 93,
+    "max": 97,
+    "spread": 4,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.itsmeara.com/",
+    "finalUrl": "https://www.itsmeara.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 93,
+      "accessibility": 90,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1697,
+      "lcp": 3045,
+      "si": 1697,
+      "tbt": 14,
+      "tti": 3068,
+      "cls": 0,
+      "ttfb": 633,
+      "maxPotentialFid": 64,
+      "serverResponseTime": 31,
+      "networkRtt": 10.3,
+      "networkServerLatency": 238.4
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 33,
+      "elementRenderDelay": 125.6
+    },
+    "weight": {
+      "total": 222625,
+      "requests": 27,
+      "mainDocument": 7123,
+      "byType": {
+        "total": {
+          "bytes": 222625,
+          "requests": 27
+        },
+        "image": {
+          "bytes": 92455,
+          "requests": 13
+        },
+        "font": {
+          "bytes": 80353,
+          "requests": 4
+        },
+        "script": {
+          "bytes": 39459,
+          "requests": 3
+        },
+        "document": {
+          "bytes": 7123,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 1804,
+          "requests": 3
+        },
+        "other": {
+          "bytes": 1431,
+          "requests": 3
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 138048,
+          "requests": 18
+        }
+      },
+      "scripts": 3,
+      "stylesheets": 3,
+      "fonts": 4
+    },
+    "thirdParty": {
+      "count": 5,
+      "bytes": 138048,
+      "mainThreadMs": 23.6,
+      "top": [
+        {
+          "entity": "Google Fonts",
+          "bytes": 82157,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "senja.io",
+          "bytes": 48600,
+          "mainThreadMs": 19.4
+        },
+        {
+          "entity": "Google CDN",
+          "bytes": 5504,
+          "mainThreadMs": 2.4
+        },
+        {
+          "entity": "b-cdn.net",
+          "bytes": 1353,
+          "mainThreadMs": 1.8
+        },
+        {
+          "entity": "beamanalytics.io",
+          "bytes": 434,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 589.7,
+      "byGroup": {
+        "styleLayout": 211.2,
+        "other": 197.3,
+        "scriptEvaluation": 100.4,
+        "paintCompositeRender": 43.2,
+        "scriptParseCompile": 23.3,
+        "parseHTML": 14.3
+      },
+      "bootupMs": 96.3,
+      "longTasks": 1,
+      "longestTaskMs": 64
+    },
+    "dom": {
+      "elements": 292,
+      "depth": 17,
+      "maxChildren": 13
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 14,
+      "failingNodes": 7,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 6
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 16
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2467,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T13:00:00.558Z",
+      "runtimeMs": 7327.1
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": null,
+      "source": "meta",
+      "raw": "Eleventy"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0J6GG9R9N4WP797KHA7ERKF"
+    },
+    "violations": 17,
+    "passes": 533,
+    "incomplete": 3,
+    "violationRules": 3,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 10,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 6,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should have one main landmark"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

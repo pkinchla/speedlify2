@@ -1,0 +1,3 @@
+{"version":1,"url":"https://www.garylake.co.uk/","updated":"2026-08-21T12:50:01.211Z","points":[
+{"t":1787316579463,"performance":100,"accessibility":90,"best-practices":100,"seo":100,"lcp":1356,"cls":0.008,"tbt":0,"fcp":1206,"si":1314,"ttfb":606,"total":105657,"requests":7,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":629,"longTasks":0,"elements":136,"failingCount":2,"failingNodes":2,"axeViolations":8,"axePasses":155,"bench":2489.5,"runs":3,"reqRuns":3,"ms":21747,"spread":0}
+]}
