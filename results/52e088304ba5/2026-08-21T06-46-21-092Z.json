@@ -1,0 +1,246 @@
+{
+  "url": "https://reduxflakes.nekoweb.org/",
+  "name": "reduxflakes.nekoweb.org",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787294781092,
+  "date": "2026-08-21T06:46:21.092Z",
+  "runId": "2026-08-21T06-43-53-116Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 50339,
+  "error": null,
+  "variance": {
+    "min": 63,
+    "max": 70,
+    "spread": 7,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://reduxflakes.nekoweb.org/",
+    "finalUrl": "https://reduxflakes.nekoweb.org/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 63,
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 4098,
+      "lcp": 10853,
+      "si": 5074,
+      "tbt": 13,
+      "tti": 10951,
+      "cls": 0,
+      "ttfb": 659,
+      "maxPotentialFid": 63,
+      "serverResponseTime": 30,
+      "networkRtt": 18.5,
+      "networkServerLatency": 218.6
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 31.7,
+      "resourceLoadDelay": 651.5,
+      "resourceLoadDuration": 219.9,
+      "elementRenderDelay": 1453
+    },
+    "weight": {
+      "total": 1439957,
+      "requests": 55,
+      "mainDocument": 16630,
+      "byType": {
+        "total": {
+          "bytes": 1439957,
+          "requests": 54
+        },
+        "image": {
+          "bytes": 1095899,
+          "requests": 30
+        },
+        "font": {
+          "bytes": 278458,
+          "requests": 5
+        },
+        "document": {
+          "bytes": 30250,
+          "requests": 5
+        },
+        "script": {
+          "bytes": 24002,
+          "requests": 6
+        },
+        "stylesheet": {
+          "bytes": 7198,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 4150,
+          "requests": 7
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 84337,
+          "requests": 22
+        }
+      },
+      "scripts": 6,
+      "stylesheets": 1,
+      "fonts": 5
+    },
+    "thirdParty": {
+      "count": 13,
+      "bytes": 58645,
+      "mainThreadMs": 6.9,
+      "top": [
+        {
+          "entity": "gwenbnuuy.moe",
+          "bytes": 28644,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Fastly",
+          "bytes": 5136,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "keepandroidopen.org",
+          "bytes": 4801,
+          "mainThreadMs": 4.3
+        },
+        {
+          "entity": "zgo.at",
+          "bytes": 4534,
+          "mainThreadMs": 2.1
+        },
+        {
+          "entity": "ioxtv.co",
+          "bytes": 4214,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1200.7,
+      "byGroup": {
+        "other": 608.4,
+        "styleLayout": 253.1,
+        "paintCompositeRender": 221.8,
+        "scriptEvaluation": 64,
+        "parseHTML": 45.7,
+        "scriptParseCompile": 7.8
+      },
+      "bootupMs": 39,
+      "longTasks": 1,
+      "longestTaskMs": 63
+    },
+    "dom": {
+      "elements": 1060,
+      "depth": 10,
+      "maxChildren": 112
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 659,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 253769.5455772811,
+      "poorlyCachedCount": 37
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 30,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 23
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2601.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T06:46:51.704Z",
+      "runtimeMs": 17238.7
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "4.0.0",
+      "source": "meta",
+      "raw": "Eleventy v4.0.0"
+    },
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e7aedda8bdfa49-SJC",
+      "server": "cloudflare",
+      "x-powered-by": "Nekoweb"
+    },
+    "violations": 7,
+    "passes": 1052,
+    "incomplete": 128,
+    "violationRules": 4,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 3,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 2,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      },
+      {
+        "id": "landmark-no-duplicate-banner",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should not have more than one banner landmark"
+      },
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Links must have discernible text"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

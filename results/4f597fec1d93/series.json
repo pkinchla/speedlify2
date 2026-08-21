@@ -1,0 +1,3 @@
+{"version":1,"url":"https://rowdy.codes/","updated":"2026-08-21T06:51:45.775Z","points":[
+{"t":1787295083543,"performance":86,"accessibility":100,"best-practices":100,"seo":100,"lcp":1626,"cls":0.262,"tbt":0,"fcp":1626,"si":1626,"ttfb":620,"total":179285,"requests":7,"bytes":2436,"mainThreadMs":2.5,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":166.9,"longTasks":0,"elements":98,"failingCount":1,"failingNodes":1,"axeViolations":0,"axePasses":235,"bench":2653,"runs":3,"reqRuns":3,"ms":22232,"spread":13}
+]}

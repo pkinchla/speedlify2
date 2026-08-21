@@ -1,0 +1,3 @@
+{"version":1,"url":"https://royale.apache.org/","updated":"2026-08-21T06:52:28.695Z","points":[
+{"t":1787295124326,"performance":76,"accessibility":63,"best-practices":100,"seo":67,"lcp":7660,"cls":0.019,"tbt":0,"fcp":1060,"si":1060,"ttfb":610,"total":3146200,"requests":23,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":21162,"mainThreadTotal":469.4,"longTasks":1,"elements":252,"failingCount":6,"failingNodes":62,"axeViolations":63,"axePasses":456,"bench":2639.5,"runs":3,"reqRuns":3,"ms":24368,"spread":14}
+]}
