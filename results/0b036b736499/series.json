@@ -1,3 +1,4 @@
-{"version":1,"url":"https://www.superawesomeshit.com/","updated":"2026-08-21T12:46:21.107Z","points":[
-{"t":1787316364236,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":1,"runs":0,"reqRuns":3,"ms":16870}
+{"version":1,"url":"https://www.superawesomeshit.com/","updated":"2026-08-21T19:25:58.350Z","points":[
+{"t":1787316364236,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":1,"runs":0,"reqRuns":3,"ms":16870},
+{"t":1787340341668,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":2,"runs":0,"reqRuns":3,"ms":16681}
 ]}
