@@ -1,0 +1,208 @@
+{
+  "url": "https://oldpersiangames.org/",
+  "name": "oldpersiangames.org",
+  "group": "11ty-emeritus",
+  "groupName": "11ty Emeritus",
+  "timestamp": 1787290395378,
+  "date": "2026-08-21T05:33:15.378Z",
+  "runId": "2026-08-21T05-31-09-929Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 25578,
+  "error": null,
+  "variance": {
+    "min": 95,
+    "max": 100,
+    "spread": 5,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://oldpersiangames.org/",
+    "finalUrl": "https://oldpersiangames.org/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 97,
+      "accessibility": 95,
+      "best-practices": 96,
+      "seo": 92,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1811,
+      "lcp": 2261,
+      "si": 1811,
+      "tbt": 47,
+      "tti": 2920,
+      "cls": 0.006,
+      "ttfb": 611,
+      "maxPotentialFid": 139,
+      "serverResponseTime": 10,
+      "networkRtt": 0,
+      "networkServerLatency": 11.5
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 11.3,
+      "elementRenderDelay": 57.1
+    },
+    "weight": {
+      "total": 690027,
+      "requests": 43,
+      "mainDocument": 30377,
+      "byType": {
+        "total": {
+          "bytes": 688576,
+          "requests": 36
+        },
+        "other": {
+          "bytes": 247056,
+          "requests": 10
+        },
+        "script": {
+          "bytes": 233045,
+          "requests": 21
+        },
+        "font": {
+          "bytes": 177368,
+          "requests": 3
+        },
+        "document": {
+          "bytes": 30377,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 730,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 0,
+          "requests": 0
+        }
+      },
+      "scripts": 21,
+      "stylesheets": 1,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 0,
+      "bytes": 0,
+      "mainThreadMs": 0,
+      "top": []
+    },
+    "mainThread": {
+      "total": 707.7,
+      "byGroup": {
+        "scriptEvaluation": 337.3,
+        "other": 211.8,
+        "styleLayout": 117.9,
+        "parseHTML": 26.6,
+        "paintCompositeRender": 8.7,
+        "scriptParseCompile": 5.5
+      },
+      "bootupMs": 305.3,
+      "longTasks": 3,
+      "longestTaskMs": 139
+    },
+    "dom": {
+      "elements": 98,
+      "depth": 12,
+      "maxChildren": 8
+    },
+    "waste": {
+      "unusedJsBytes": 45985,
+      "unusedCssBytes": 21224,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 376881.0833333334,
+      "poorlyCachedCount": 25
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 20,
+      "failingNodes": 6,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 6
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 1,
+      "baselineLimitedFeatures": 31
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 3641,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T05:33:28.503Z",
+      "runtimeMs": 5995.5
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "nuxt",
+      "name": "Nuxt",
+      "icon": "Nuxt",
+      "version": null,
+      "source": "dom",
+      "raw": null
+    },
+    "host": {
+      "id": "github",
+      "name": "GitHub Pages",
+      "icon": "Github",
+      "source": "x-github-request-id"
+    },
+    "headers": {
+      "server": "GitHub.com",
+      "via": "1.1 varnish",
+      "x-fastly-request-id": "fc84161f087f793544b29a8430f96833cb4af479",
+      "x-github-request-id": "E918:12D7F6:35B10B:39FB68:6A87E31C",
+      "x-served-by": "cache-chi-kmdw8640043-CHI"
+    },
+    "violations": 6,
+    "passes": 154,
+    "incomplete": 0,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 6,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

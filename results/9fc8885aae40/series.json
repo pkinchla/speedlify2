@@ -1,0 +1,3 @@
+{"version":1,"url":"https://pepelsbey.dev/","updated":"2026-08-21T05:45:43.847Z","points":[
+{"t":1787291122334,"performance":100,"accessibility":100,"best-practices":100,"seo":100,"lcp":1682,"cls":0,"tbt":0,"fcp":798,"si":798,"ttfb":632,"total":187718,"requests":13,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":172.7,"longTasks":0,"elements":199,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":405,"bench":3508,"runs":3,"reqRuns":3,"ms":21512,"spread":0}
+]}

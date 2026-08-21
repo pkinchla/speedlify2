@@ -1,0 +1,228 @@
+{
+  "url": "https://olivier3lanc.github.io/",
+  "name": "olivier3lanc.github.io",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787290423956,
+  "date": "2026-08-21T05:33:43.956Z",
+  "runId": "2026-08-21T05-31-09-929Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 21518,
+  "error": null,
+  "variance": {
+    "min": 83,
+    "max": 98,
+    "spread": 15,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://olivier3lanc.github.io/",
+    "finalUrl": "https://olivier3lanc.me/",
+    "redirect": {
+      "from": "https://olivier3lanc.github.io/",
+      "to": "https://olivier3lanc.me/",
+      "chain": [
+        {
+          "url": "https://olivier3lanc.github.io/",
+          "status": 301
+        },
+        {
+          "url": "https://olivier3lanc.me/",
+          "status": 200
+        }
+      ],
+      "statuses": [
+        301
+      ],
+      "change": "host",
+      "permanent": true,
+      "schemeUpgrade": false,
+      "hops": 1
+    },
+    "statusCode": "ok",
+    "scores": {
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 2001,
+      "lcp": 2001,
+      "si": 2001,
+      "tbt": 0,
+      "tti": 2001,
+      "cls": 0.018,
+      "ttfb": 618,
+      "maxPotentialFid": 21,
+      "serverResponseTime": 14,
+      "networkRtt": 0,
+      "networkServerLatency": 17.9
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 29.6,
+      "elementRenderDelay": 72.3
+    },
+    "weight": {
+      "total": 403621,
+      "requests": 40,
+      "mainDocument": 6028,
+      "byType": {
+        "total": {
+          "bytes": 403621,
+          "requests": 40
+        },
+        "font": {
+          "bytes": 305874,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 50979,
+          "requests": 14
+        },
+        "stylesheet": {
+          "bytes": 26914,
+          "requests": 8
+        },
+        "image": {
+          "bytes": 12336,
+          "requests": 14
+        },
+        "document": {
+          "bytes": 6028,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 1490,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 125,
+          "requests": 1
+        }
+      },
+      "scripts": 14,
+      "stylesheets": 8,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 403496,
+      "mainThreadMs": 16.9,
+      "top": [
+        {
+          "entity": "olivier3lanc.me",
+          "bytes": 403496,
+          "mainThreadMs": 16.9
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 334.6,
+      "byGroup": {
+        "other": 163.6,
+        "styleLayout": 65.6,
+        "scriptEvaluation": 43.9,
+        "parseHTML": 29.9,
+        "scriptParseCompile": 17.8,
+        "paintCompositeRender": 13.8
+      },
+      "bootupMs": 7.9,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 173,
+      "depth": 13,
+      "maxChildren": 17
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 11726,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 3066,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 450,
+      "renderBlockingCount": 21,
+      "poorlyCachedBytes": 363094.4166666666,
+      "poorlyCachedCount": 37
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 14,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 762.4,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 13
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 3500.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T05:33:52.677Z",
+      "runtimeMs": 5846.1
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "3.1.5",
+      "source": "meta",
+      "raw": "Eleventy v3.1.5"
+    },
+    "host": {
+      "id": "github",
+      "name": "GitHub Pages",
+      "icon": "Github",
+      "source": "x-github-request-id"
+    },
+    "headers": {
+      "server": "GitHub.com",
+      "via": "1.1 varnish",
+      "x-fastly-request-id": "05478a4e166133a56296ecc880eb6ea81c333fac",
+      "x-github-request-id": "95A0:38EE24:72291C:7BA60E:6A7D5BBE",
+      "x-served-by": "cache-dfw-kdfw8210157-DFW"
+    },
+    "violations": 2,
+    "passes": 157,
+    "incomplete": 7,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 2,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

@@ -1,0 +1,3 @@
+{"version":1,"url":"https://pages.cloudflare.com/","updated":"2026-08-21T05:43:49.039Z","points":[
+{"t":1787290801766,"to":"https://www.cloudflare.com/products/pages","perm":1,"performance":68,"accessibility":94,"best-practices":77,"seo":100,"lcp":4855,"cls":0,"tbt":288,"fcp":3505,"si":3505,"ttfb":643,"total":4102528,"requests":159,"bytes":248959,"mainThreadMs":34.9,"unusedJsBytes":1033099,"unusedCssBytes":0,"mainThreadTotal":18129.3,"longTasks":10,"elements":2013,"failingCount":3,"failingNodes":17,"field-lcp":2211,"field-inp":109,"field-cls":0,"field-fcp":2156,"field-ttfb":629,"bench":3607.5,"runs":3,"reqRuns":3,"ms":227273,"spread":30}
+]}

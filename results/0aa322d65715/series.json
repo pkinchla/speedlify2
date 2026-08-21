@@ -1,0 +1,3 @@
+{"version":1,"url":"https://openbulkurl.com/","updated":"2026-08-21T05:35:51.170Z","points":[
+{"t":1787290499180,"performance":60,"accessibility":86,"best-practices":77,"seo":100,"lcp":3776,"cls":0.39,"tbt":390,"fcp":1020,"si":3290,"ttfb":654,"total":2240014,"requests":107,"bytes":1929522,"mainThreadMs":241.6,"unusedJsBytes":283861,"unusedCssBytes":0,"mainThreadTotal":3062.2,"longTasks":9,"elements":810,"failingCount":5,"failingNodes":15,"axeViolations":27,"axePasses":1493,"field-lcp":1716,"field-inp":243,"field-cls":0.07,"field-fcp":1279,"field-ttfb":497,"bench":3375.5,"runs":3,"reqRuns":3,"ms":51989,"spread":7}
+]}

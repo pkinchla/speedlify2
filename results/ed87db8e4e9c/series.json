@@ -1,0 +1,3 @@
+{"version":1,"url":"https://orenlyonsarchive.org/","updated":"2026-08-21T05:38:49.672Z","points":[
+{"t":1787290573787,"performance":98,"accessibility":100,"best-practices":100,"seo":100,"lcp":1834,"cls":0,"tbt":0,"fcp":1834,"si":1834,"ttfb":751,"total":25562267,"requests":73,"bytes":1122,"mainThreadMs":0.7,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":4361.8,"longTasks":0,"elements":307,"failingCount":0,"failingNodes":0,"bench":3386,"runs":3,"reqRuns":3,"ms":155884,"spread":29}
+]}
