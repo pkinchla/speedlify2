@@ -399,7 +399,28 @@ async function measure() {
 		);
 	}
 
-	if (summary.failed && summary.measured === 0) process.exit(1);
+	/*
+	 * A failed site is a result, not a failed run.
+	 *
+	 * This used to exit non-zero when every site in a batch failed, on the theory
+	 * that nothing working means something is wrong here. It does not: a batch is
+	 * as few as a couple of sites, and two sites being down at once is an
+	 * ordinary Tuesday. The failures were recorded, the backoff was updated, and
+	 * the run did exactly its job — reporting that as a broken build teaches
+	 * people to ignore a red build.
+	 *
+	 * The genuinely broken cases already exit non-zero on their own, because they
+	 * throw rather than being recorded: a browser that will not launch, a config
+	 * that will not parse, a results directory that cannot be written. Those never
+	 * reach this line.
+	 */
+	if (summary.failed && summary.measured === 0) {
+		// Worth saying, since it is the shape a broken environment would also
+		// take — but said in the log, where someone reading it can weigh it
+		// against the errors above, rather than as an exit code that stops the
+		// job before it commits anything.
+		logger.warn("every site in this batch failed", { attempted: summary.failed });
+	}
 }
 
 function summaryOf(batch) {
