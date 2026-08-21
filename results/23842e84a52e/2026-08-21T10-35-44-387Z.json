@@ -1,0 +1,192 @@
+{
+  "url": "https://will.cx/",
+  "name": "will.cx",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787308544387,
+  "date": "2026-08-21T10:35:44.387Z",
+  "runId": "2026-08-21T10-28-59-106Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 21120,
+  "error": null,
+  "variance": {
+    "min": 100,
+    "max": 100,
+    "spread": 0,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://will.cx/",
+    "finalUrl": "https://will.cx/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 815,
+      "lcp": 815,
+      "si": 815,
+      "tbt": 0,
+      "tti": 815,
+      "cls": 0,
+      "ttfb": 626,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 23,
+      "networkRtt": 0,
+      "networkServerLatency": 26.4
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 24.9,
+      "elementRenderDelay": 77.9
+    },
+    "weight": {
+      "total": 10783,
+      "requests": 3,
+      "mainDocument": 4089,
+      "byType": {
+        "total": {
+          "bytes": 10783,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 6694,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 4089,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "script": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "other": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 0,
+          "requests": 0
+        }
+      },
+      "scripts": 0,
+      "stylesheets": 2,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 0,
+      "bytes": 0,
+      "mainThreadMs": 0,
+      "top": []
+    },
+    "mainThread": {
+      "total": 183.9,
+      "byGroup": {
+        "styleLayout": 80.8,
+        "other": 74.3,
+        "scriptEvaluation": 13.3,
+        "parseHTML": 8.5,
+        "paintCompositeRender": 5.3,
+        "scriptParseCompile": 1.7
+      },
+      "bootupMs": 13.2,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 109,
+      "depth": 10,
+      "maxChildren": 7
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 20,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 7
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2310.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T10:35:58.271Z",
+      "runtimeMs": 5916.9
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "1.0.1",
+      "source": "meta",
+      "raw": "Eleventy v1.0.1"
+    },
+    "host": {
+      "id": "vercel",
+      "name": "Vercel",
+      "icon": "Vercel",
+      "source": "x-vercel-id"
+    },
+    "headers": {
+      "server": "Vercel",
+      "x-vercel-id": "cle1::mcxln-1787308563975-5f71170bef3a"
+    },
+    "violations": 0,
+    "passes": 245,
+    "incomplete": 0,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

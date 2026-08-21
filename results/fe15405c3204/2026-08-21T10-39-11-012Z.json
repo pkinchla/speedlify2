@@ -1,0 +1,241 @@
+{
+  "url": "https://womenofjamstack.com/",
+  "name": "womenofjamstack.com",
+  "group": "11ty-emeritus",
+  "groupName": "11ty Emeritus",
+  "timestamp": 1787308751012,
+  "date": "2026-08-21T10:39:11.012Z",
+  "runId": "2026-08-21T10-28-59-106Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 59593,
+  "error": null,
+  "variance": {
+    "min": 53,
+    "max": 75,
+    "spread": 22,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://womenofjamstack.com/",
+    "finalUrl": "https://womenofjamstack.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 58,
+      "accessibility": 90,
+      "best-practices": 96,
+      "seo": 100,
+      "agentic-browsing": 67
+    },
+    "timings": {
+      "fcp": 1749,
+      "lcp": 4600,
+      "si": 2060,
+      "tbt": 19,
+      "tti": 4686,
+      "cls": 1.596,
+      "ttfb": 670,
+      "maxPotentialFid": 73,
+      "serverResponseTime": 43,
+      "networkRtt": 0.3,
+      "networkServerLatency": 1249.2
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 45.2,
+      "resourceLoadDelay": 218.7,
+      "resourceLoadDuration": 83.6,
+      "elementRenderDelay": 56.6
+    },
+    "weight": {
+      "total": 845092,
+      "requests": 50,
+      "mainDocument": 34413,
+      "byType": {
+        "total": {
+          "bytes": 845092,
+          "requests": 50
+        },
+        "image": {
+          "bytes": 622267,
+          "requests": 7
+        },
+        "script": {
+          "bytes": 85042,
+          "requests": 16
+        },
+        "font": {
+          "bytes": 60063,
+          "requests": 4
+        },
+        "document": {
+          "bytes": 34413,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 32550,
+          "requests": 20
+        },
+        "other": {
+          "bytes": 10757,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 34140,
+          "requests": 4
+        }
+      },
+      "scripts": 16,
+      "stylesheets": 20,
+      "fonts": 4
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 33488,
+      "mainThreadMs": 0,
+      "top": [
+        {
+          "entity": "archive.org",
+          "bytes": 17047,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Google Fonts",
+          "bytes": 16441,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1147.8,
+      "byGroup": {
+        "styleLayout": 411.1,
+        "other": 325.3,
+        "scriptEvaluation": 265.6,
+        "parseHTML": 70.7,
+        "paintCompositeRender": 40.5,
+        "scriptParseCompile": 34.6
+      },
+      "bootupMs": 238.3,
+      "longTasks": 5,
+      "longestTaskMs": 99
+    },
+    "dom": {
+      "elements": 677,
+      "depth": 22,
+      "maxChildren": 68
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 15144,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 1228,
+      "renderBlockingCount": 21,
+      "poorlyCachedBytes": 766434,
+      "poorlyCachedCount": 44
+    },
+    "accessibility": {
+      "failingCount": 3,
+      "applicableCount": 24,
+      "failingNodes": 14,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 9
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 3
+        },
+        {
+          "id": "frame-title",
+          "title": "`<frame>` or `<iframe>` elements do not have a title",
+          "nodes": 2
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 28
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2319.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T10:39:52.276Z",
+      "runtimeMs": 14780.1
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "wordpress",
+      "name": "WordPress",
+      "icon": "Wordpress",
+      "version": "7.1",
+      "source": "meta",
+      "raw": "WordPress 7.1"
+    },
+    "host": {
+      "id": "self-hosted",
+      "name": "Self-hosted",
+      "icon": null,
+      "detail": "Apache",
+      "detailIcon": "Apache",
+      "source": "server"
+    },
+    "headers": {
+      "server": "Apache"
+    },
+    "violations": 14,
+    "passes": 1163,
+    "incomplete": 5,
+    "violationRules": 3,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 9,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 3,
+        "help": "Heading levels should only increase by one"
+      },
+      {
+        "id": "frame-title",
+        "impact": "serious",
+        "nodes": 2,
+        "help": "Frames must have an accessible name"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

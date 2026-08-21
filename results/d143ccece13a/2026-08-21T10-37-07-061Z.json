@@ -1,0 +1,211 @@
+{
+  "url": "https://womeninthe1940s.com/",
+  "name": "womeninthe1940s.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787308627061,
+  "date": "2026-08-21T10:37:07.061Z",
+  "runId": "2026-08-21T10-28-59-106Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 120950,
+  "error": null,
+  "variance": {
+    "min": 100,
+    "max": 100,
+    "spread": 0,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://womeninthe1940s.com/",
+    "finalUrl": "https://womeninthe1940s.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 867,
+      "lcp": 1753,
+      "si": 1090,
+      "tbt": 57,
+      "tti": 3367,
+      "cls": 0,
+      "ttfb": 529,
+      "maxPotentialFid": 111,
+      "serverResponseTime": 44,
+      "networkRtt": 0.1,
+      "networkServerLatency": 79.4
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 45.5,
+      "resourceLoadDelay": 10.9,
+      "resourceLoadDuration": 31.5,
+      "elementRenderDelay": 25.4
+    },
+    "weight": {
+      "total": 316164,
+      "requests": 17,
+      "mainDocument": 10514,
+      "byType": {
+        "total": {
+          "bytes": 316164,
+          "requests": 17
+        },
+        "script": {
+          "bytes": 200858,
+          "requests": 4
+        },
+        "other": {
+          "bytes": 73728,
+          "requests": 10
+        },
+        "image": {
+          "bytes": 31064,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 10514,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 181087,
+          "requests": 4
+        }
+      },
+      "scripts": 4,
+      "stylesheets": 0,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 3,
+      "bytes": 181087,
+      "mainThreadMs": 59,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 169625,
+          "mainThreadMs": 56.3
+        },
+        {
+          "entity": "Cloudflare",
+          "bytes": 11414,
+          "mainThreadMs": 2.7
+        },
+        {
+          "entity": "Google Analytics",
+          "bytes": 48,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 602.7,
+      "byGroup": {
+        "scriptEvaluation": 259.9,
+        "other": 187.7,
+        "scriptParseCompile": 50.3,
+        "garbageCollection": 47,
+        "styleLayout": 31.3,
+        "parseHTML": 17.1,
+        "paintCompositeRender": 9.3
+      },
+      "bootupMs": 296,
+      "longTasks": 2,
+      "longestTaskMs": 111
+    },
+    "dom": {
+      "elements": 63,
+      "depth": 7,
+      "maxChildren": 13
+    },
+    "waste": {
+      "unusedJsBytes": 71378,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 4565.6,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 12,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 25
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2312,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T10:38:02.465Z",
+      "runtimeMs": 44585.6
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "3.0.0",
+      "source": "meta",
+      "raw": "Eleventy v3.0.0"
+    },
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e902972d4aacd6-MSP",
+      "server": "cloudflare"
+    },
+    "violations": 0,
+    "passes": 146,
+    "incomplete": 0,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

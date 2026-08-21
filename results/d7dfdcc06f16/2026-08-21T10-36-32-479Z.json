@@ -1,0 +1,239 @@
+{
+  "url": "https://withleaf.io/",
+  "name": "withleaf.io",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787308592479,
+  "date": "2026-08-21T10:36:32.479Z",
+  "runId": "2026-08-21T10-28-59-106Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 31581,
+  "error": null,
+  "variance": {
+    "min": 56,
+    "max": 63,
+    "spread": 7,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://withleaf.io/",
+    "finalUrl": "https://withleaf.io/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 59,
+      "accessibility": 96,
+      "best-practices": 77,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1577,
+      "lcp": 10171,
+      "si": 7333,
+      "tbt": 346,
+      "tti": 14451,
+      "cls": 0,
+      "ttfb": 639,
+      "maxPotentialFid": 205,
+      "serverResponseTime": 145,
+      "networkRtt": 0.1,
+      "networkServerLatency": 98.5
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 147,
+      "resourceLoadDelay": 9.7,
+      "resourceLoadDuration": 182.3,
+      "elementRenderDelay": 54.3
+    },
+    "weight": {
+      "total": 4323574,
+      "requests": 41,
+      "mainDocument": 8291,
+      "byType": {
+        "total": {
+          "bytes": 4316542,
+          "requests": 40
+        },
+        "image": {
+          "bytes": 3910716,
+          "requests": 22
+        },
+        "script": {
+          "bytes": 361804,
+          "requests": 10
+        },
+        "stylesheet": {
+          "bytes": 26285,
+          "requests": 2
+        },
+        "other": {
+          "bytes": 9446,
+          "requests": 5
+        },
+        "document": {
+          "bytes": 8291,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 345452,
+          "requests": 11
+        }
+      },
+      "scripts": 10,
+      "stylesheets": 2,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 7,
+      "bytes": 345452,
+      "mainThreadMs": 123.2,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 190459,
+          "mainThreadMs": 87.7
+        },
+        {
+          "entity": "Mixpanel",
+          "bytes": 138150,
+          "mainThreadMs": 30.3
+        },
+        {
+          "entity": "cloudfront.net",
+          "bytes": 10418,
+          "mainThreadMs": 1.6
+        },
+        {
+          "entity": "Google/Doubleclick Ads",
+          "bytes": 2700,
+          "mainThreadMs": 0.8
+        },
+        {
+          "entity": "Plausible",
+          "bytes": 2437,
+          "mainThreadMs": 2.8
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1826.1,
+      "byGroup": {
+        "scriptEvaluation": 774.9,
+        "other": 634.1,
+        "styleLayout": 190.2,
+        "scriptParseCompile": 107.6,
+        "paintCompositeRender": 83.5,
+        "parseHTML": 35.7
+      },
+      "bootupMs": 829.5,
+      "longTasks": 7,
+      "longestTaskMs": 205
+    },
+    "dom": {
+      "elements": 500,
+      "depth": 11,
+      "maxChildren": 13
+    },
+    "waste": {
+      "unusedJsBytes": 136447,
+      "unusedCssBytes": 19597,
+      "legacyJsBytes": 10438,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 2822,
+      "unminifiedCssBytes": 7211,
+      "renderBlockingMs": 1087,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 128129.2195530726,
+      "poorlyCachedCount": 4
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 26,
+      "failingNodes": 5,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 5
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 32
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2285.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T10:36:53.825Z",
+      "runtimeMs": 8948.5
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudfront",
+      "name": "CloudFront",
+      "icon": null,
+      "source": "server"
+    },
+    "headers": {
+      "server": "CloudFront",
+      "via": "1.1 d9804bd4189c9a1de7c5ec6fce622620.cloudfront.net (CloudFront)",
+      "x-amz-cf-id": "QIQFpuAI8kTJCZhYzgpkUXOKkS1MykNpw0ljq5uKPZQXzHyf-DzhBQ=="
+    },
+    "violations": 5,
+    "passes": 18,
+    "incomplete": 0,
+    "violationRules": 3,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 3,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "html-has-lang",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "<html> element must have a lang attribute"
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should have one main landmark"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
