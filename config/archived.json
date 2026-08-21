@@ -1,5 +1,5 @@
 {
-  "note": "Sites kept in the record but taken out of circulation: not measured, not ranked, not linked. Their stored history stays on disk — this is the option between leaving a dead site in the leaderboard and deleting it outright. Listed here rather than removed from the generated category files, which a re-import would only put back.",
+  "note": "Sites kept in the record but taken out of circulation: not measured, not ranked, not linked. Their stored history stays on disk — this is the option between leaving a dead site in the leaderboard and deleting it outright. For sites that have lapsed or whose domain is now parked, NOT for sites that have migrated off Eleventy or Build Awesome: those keep being measured and are moved to 11ty Emeritus automatically by requireGenerator. Listed here rather than removed from the generated category files, which a re-import would only put back.",
   "urls": [
     "https://craftersagainstcovid19.org/",
     "https://officeglow.online/"

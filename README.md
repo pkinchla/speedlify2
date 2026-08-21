@@ -212,6 +212,8 @@ Grey — no data — ranks with red on both banded rings. A Lighthouse category 
 
 It is the middle option. Deleting a URL from a category loses its history and leaves an orphaned directory behind; leaving it in place keeps a dead site in the rankings and keeps sending traffic to it.
 
+**Not for sites that moved off Eleventy.** Those keep being measured and are reclassified into 11ty Emeritus on their own, by `requireGenerator` — archiving one would throw away the measurements that show the move. Archive a site whose domain has lapsed or is now parked.
+
 Listed here rather than removed from a category file because the community and starter lists are generated — a deletion there lasts until the next import. One entry covers every category the URL appears in.
 
 ### Accessibility comes from a real axe run

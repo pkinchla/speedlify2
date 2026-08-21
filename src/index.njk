@@ -54,7 +54,7 @@ permalink: /index.html
 	{%- endif %}.
 	{% if sites.coverage.stale %}<span class="worse">{{ sites.coverage.stale }} stale</span> (over {{ sites.coverage.staleAfterHours }}h).{% endif %}
 	{% if sites.coverage.never %}<span class="muted">{{ sites.coverage.never }} not yet measured.</span>{% endif %}
-	{% if sites.stats.failing %}<span class="worse">{{ sites.stats.failing | num }} currently failing.</span>{% endif %}
+	{% if sites.stats.failing %}<span class="failing-note">{{ sites.stats.failing | num }} currently failing.</span>{% endif %}
 </p>
 {% endif %}
 
@@ -468,6 +468,13 @@ permalink: /index.html
 		{{ sites.archived.length | countOf("site") }} kept in the record but taken
 		out of circulation: no longer measured, ranked or linked. Their stored
 		measurements are still on disk.
+	</p>
+	<p class="muted small">
+		This is for sites that have lapsed or whose domain is now parked — not for
+		sites that have moved off Eleventy or Build Awesome. Those keep being
+		measured and move to
+		<a href="/group/11ty-emeritus/">11ty Emeritus</a>, which happens on its own
+		the next time the generator comes back as something else.
 	</p>
 	<ul>
 		{% for site in sites.archived %}

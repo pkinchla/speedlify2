@@ -22,6 +22,10 @@
 	--average-bg: #3d2f14;
 	--poor: #ff4e42;
 	--poor-bg: #3d1f1d;
+	/* Softer than --poor, for a count that is context rather than a verdict on
+	   any one row. Pink rather than red: still clearly the bad news, without
+	   competing with the failing rows themselves. */
+	--poor-soft: #ff9fb0;
 
 	--accent: #7cc0ff;
 	--button: #444444;
@@ -48,6 +52,10 @@
 	--average-bg: #fdf3e0;
 	--poor: #c02026;
 	--poor-bg: #fdeaea;
+	/* Deeper on white than its dark-mode counterpart: a pale pink on this
+	   background is unreadable, so the hue carries the softness and the value
+	   carries the contrast. */
+	--poor-soft: #c2185b;
 
 	--accent: #1a5fd0;
 	--button: #eceef2;
@@ -318,6 +326,9 @@ th.col-trend { text-align: center !important; }
 
 .better { color: var(--good); }
 .worse { color: var(--poor); }
+/* Only the coverage line's failing count — `.worse` is shared with the stale
+   count beside it and with the mover cards, which stay red. */
+.failing-note { color: var(--poor-soft); }
 .flat { color: var(--text-muted); }
 
 /* --------------------------------------------------------------- sparkline */
