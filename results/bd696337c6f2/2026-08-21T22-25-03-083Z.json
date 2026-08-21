@@ -1,0 +1,22 @@
+{
+  "url": "https://saulcorona.com/",
+  "name": "saulcorona.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787351103083,
+  "date": "2026-08-21T22:25:03.083Z",
+  "runId": "2026-08-21T22-23-19-822Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 0,
+  "durationMs": 12732,
+  "error": "ERRORED_DOCUMENT_REQUEST: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 403)",
+  "errors": [
+    "ERRORED_DOCUMENT_REQUEST: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 403)",
+    "ERRORED_DOCUMENT_REQUEST: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 403)",
+    "ERRORED_DOCUMENT_REQUEST: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 403)"
+  ],
+  "field": null,
+  "axe": null,
+  "consecutiveFailures": 3
+}
