@@ -1,0 +1,3 @@
+{"version":1,"url":"https://tanks.jandewil.de/","updated":"2026-08-21T16:36:28.831Z","points":[
+{"t":1787330144036,"performance":66,"accessibility":100,"best-practices":92,"seo":100,"lcp":4411,"cls":0.002,"tbt":504,"fcp":3197,"si":3197,"ttfb":604,"total":1288293,"requests":54,"bytes":743833,"mainThreadMs":216,"unusedJsBytes":30044,"unusedCssBytes":0,"mainThreadTotal":5234.9,"longTasks":5,"elements":5226,"failingCount":0,"failingNodes":0,"axeViolations":3,"axePasses":4577,"bench":2487,"runs":3,"reqRuns":3,"ms":44794,"spread":29}
+]}

@@ -1,0 +1,3 @@
+{"version":1,"url":"https://thepugautomatic.com/","updated":"2026-08-21T16:41:03.696Z","points":[
+{"t":1787330423803,"performance":100,"accessibility":88,"best-practices":100,"seo":100,"lcp":1353,"cls":0,"tbt":0,"fcp":972,"si":972,"ttfb":603,"total":84067,"requests":4,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":222.4,"longTasks":1,"elements":2123,"failingCount":2,"failingNodes":1072,"axeViolations":1073,"axePasses":4133,"bench":2491,"runs":3,"reqRuns":3,"ms":39892,"spread":0}
+]}

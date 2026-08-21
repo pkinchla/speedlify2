@@ -1,0 +1,308 @@
+{
+  "url": "https://song.co.jp/fx",
+  "name": "song.co.jp",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787329964632,
+  "date": "2026-08-21T16:32:44.632Z",
+  "runId": "2026-08-21T16-32-38-033Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 56676,
+  "error": null,
+  "variance": {
+    "min": 57,
+    "max": 82,
+    "spread": 25,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://song.co.jp/fx",
+    "finalUrl": "https://song.co.jp/fx/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 78,
+      "accessibility": 86,
+      "best-practices": 73,
+      "seo": 100,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 2363,
+      "lcp": 3764,
+      "si": 2958,
+      "tbt": 336,
+      "tti": 8652,
+      "cls": 0,
+      "ttfb": 713,
+      "maxPotentialFid": 177,
+      "serverResponseTime": 454,
+      "networkRtt": 111.3,
+      "networkServerLatency": 139.7
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 569.9,
+      "elementRenderDelay": 837
+    },
+    "weight": {
+      "total": 3215087,
+      "requests": 80,
+      "mainDocument": 36089,
+      "byType": {
+        "total": {
+          "bytes": 3212947,
+          "requests": 64
+        },
+        "image": {
+          "bytes": 2387075,
+          "requests": 26
+        },
+        "script": {
+          "bytes": 702803,
+          "requests": 19
+        },
+        "stylesheet": {
+          "bytes": 85969,
+          "requests": 13
+        },
+        "document": {
+          "bytes": 36089,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 1011,
+          "requests": 5
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 543598,
+          "requests": 9
+        }
+      },
+      "scripts": 19,
+      "stylesheets": 13,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 3,
+      "bytes": 543598,
+      "mainThreadMs": 189.5,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 513143,
+          "mainThreadMs": 135.8
+        },
+        {
+          "entity": "Clarity",
+          "bytes": 27179,
+          "mainThreadMs": 51.5
+        },
+        {
+          "entity": "ahrefs.com",
+          "bytes": 3276,
+          "mainThreadMs": 2.2
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 3583.8,
+      "byGroup": {
+        "styleLayout": 1817.7,
+        "scriptEvaluation": 986.4,
+        "other": 382.9,
+        "scriptParseCompile": 208.2,
+        "parseHTML": 81.3,
+        "paintCompositeRender": 68.1,
+        "garbageCollection": 39.2
+      },
+      "bootupMs": 980.2,
+      "longTasks": 11,
+      "longestTaskMs": 840
+    },
+    "dom": {
+      "elements": 1923,
+      "depth": 16,
+      "maxChildren": 17
+    },
+    "waste": {
+      "unusedJsBytes": 350451,
+      "unusedCssBytes": 53969,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 1148,
+      "renderBlockingCount": 21,
+      "poorlyCachedBytes": 255821.17999999993,
+      "poorlyCachedCount": 53
+    },
+    "accessibility": {
+      "failingCount": 3,
+      "applicableCount": 24,
+      "failingNodes": 338,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 317
+        },
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "nodes": 15
+        },
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "nodes": 6
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 863.1,
+      "consoleErrors": 1,
+      "baselineLimitedFeatures": 28
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2496,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T16:33:21.836Z",
+      "runtimeMs": 15550.6
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "origin",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-23",
+      "last": "2026-08-19"
+    },
+    "metrics": {
+      "fcp": {
+        "p75": 1624,
+        "rating": "good",
+        "distribution": {
+          "good": 80.8,
+          "needsImprovement": 11.9,
+          "poor": 7.4
+        }
+      },
+      "lcp": {
+        "p75": 1637,
+        "rating": "good",
+        "distribution": {
+          "good": 88,
+          "needsImprovement": 10.5,
+          "poor": 1.5
+        }
+      },
+      "rtt": {
+        "p75": 126,
+        "rating": null,
+        "distribution": {
+          "good": 52.6,
+          "needsImprovement": 44.7,
+          "poor": 2.7
+        }
+      },
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 98.5,
+          "needsImprovement": 0,
+          "poor": 1.5
+        }
+      },
+      "ttfb": {
+        "p75": 735,
+        "rating": "good",
+        "distribution": {
+          "good": 77.4,
+          "needsImprovement": 18.7,
+          "poor": 3.9
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 2
+  },
+  "axe": {
+    "generator": {
+      "id": "wordpress",
+      "name": "WordPress",
+      "icon": "Wordpress",
+      "version": "7.1",
+      "source": "meta",
+      "raw": "WordPress 7.1"
+    },
+    "host": {
+      "id": "self-hosted",
+      "name": "Self-hosted",
+      "icon": null,
+      "detail": "nginx",
+      "detailIcon": "Nginx",
+      "source": "server"
+    },
+    "headers": {
+      "server": "nginx"
+    },
+    "violations": 366,
+    "passes": 3085,
+    "incomplete": 29,
+    "violationRules": 4,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 357,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "nodes": 6,
+        "help": "Links must have discernible text"
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 2,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
