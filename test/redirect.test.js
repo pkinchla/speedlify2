@@ -1,6 +1,6 @@
 import { test, describe } from "node:test";
 import assert from "node:assert/strict";
-import { extractRedirect, confirmRedirect, classifyChange } from "../lib/redirect.js";
+import { extractRedirect, confirmRedirect, classifyChange, isRetiredDestination } from "../lib/redirect.js";
 import { resolveHistoryUrls, danglingAliases, resolveCurrentUrl, applyAliases } from "../lib/aliases.js";
 
 /** Minimal LHR with a redirect chain and per-hop status codes. */
@@ -275,5 +275,37 @@ describe("applyAliases", () => {
 		assert.equal(out.length, 1);
 		assert.equal(out[0].url, "https://c.com/");
 		assert.equal(out[0].previousUrls.length, 2);
+	});
+});
+
+describe("isRetiredDestination", () => {
+	/**
+	 * A domain landing on a registrar's for-sale page has lapsed, not moved.
+	 * Retiring on sight is only safe if the match is tight: a false positive
+	 * drops a live site out of the leaderboard entirely.
+	 */
+	test("matches the parking host and its subdomains", () => {
+		assert.equal(isRetiredDestination("https://forsale.godaddy.com/"), true);
+		assert.equal(isRetiredDestination("https://forsale.godaddy.com/domain/example.com"), true);
+		assert.equal(isRetiredDestination("https://www.forsale.godaddy.com/x"), true);
+		assert.equal(isRetiredDestination("HTTPS://ForSale.GoDaddy.com/"), true, "host match is case-insensitive");
+	});
+
+	test("does not match the registrar's other hosts", () => {
+		assert.equal(isRetiredDestination("https://godaddy.com/"), false);
+		assert.equal(isRetiredDestination("https://www.godaddy.com/en-uk/"), false);
+	});
+
+	test("cannot be spoofed by a lookalike host", () => {
+		// Suffix matching without the dot would accept this.
+		assert.equal(isRetiredDestination("https://notforsale.godaddy.com.example/"), false);
+		assert.equal(isRetiredDestination("https://forsale.godaddy.com.example/"), false);
+	});
+
+	test("is false for anything unparseable or absent", () => {
+		assert.equal(isRetiredDestination("not a url"), false);
+		assert.equal(isRetiredDestination(""), false);
+		assert.equal(isRetiredDestination(null), false);
+		assert.equal(isRetiredDestination(undefined), false);
 	});
 });

@@ -1,10 +1,15 @@
 # Local brand marks
 
-simple-icons supplies every icon the site renders, except the brands it does
-not carry. Amazon's marks were removed from that project at Amazon's request,
-so `Amazon` (used by Amazon S3) and `CloudFront` have to be supplied here or
-go without — a missing file is not an error, the cell just falls back to a
-two-letter chip.
+Three sources, in order: Font Awesome first for the brands it carries (see
+`FONT_AWESOME_ICONS` in `eleventy.config.js` — it emits one spritesheet symbol
+per page rather than inlining the same path on every row), then this directory,
+then simple-icons.
+
+That leaves this directory for brands neither project carries. It is currently
+close to empty: Amazon's marks were removed from simple-icons at Amazon's
+request, and Font Awesome carries `amazon`, so the case this directory was
+created for no longer needs it. A missing file is not an error — the cell falls
+back to a two-letter chip.
 
 To add one, drop a single-path SVG in this directory named after the `icon`
 value in `lib/stack.js`:

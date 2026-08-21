@@ -149,7 +149,9 @@ permalink: /index.html
 	`entry.perfect` rather than the rule spelled out here: it means full marks in
 	every Lighthouse category and nothing amber or red beside them, and it is
 	decided in lib/report.js so this table and the count in the stat tile above
-	cannot drift apart.
+	cannot drift apart. The exclusion beside it is the one thing the tile also
+	applies — categories that opt out with `excludeFromPerfectScores`, currently
+	the starters, whose near-empty demo pages would crowd out real sites.
 
 	The Eleventy share of these is counted in the report instead — the stat tile
 	that shows it renders above this, and `{% set %}` inside a loop does not
@@ -157,7 +159,7 @@ permalink: /index.html
 #}
 {% set shown = [] %}
 {% for entry in sites.entries %}
-	{% if entry.perfect %}{% set shown = (shown.push(entry), shown) %}{% endif %}
+	{% if entry.perfect and not entry.excludedFromPerfectScores %}{% set shown = (shown.push(entry), shown) %}{% endif %}
 {% endfor %}
 <section class="group" id="leaderboard">
 	<div class="group-head">
@@ -177,7 +179,8 @@ permalink: /index.html
 			<tr>
 				<th class="col-rank">#</th>
 				<th class="col-site">Site</th>
-				<th class="col-stack" title="What built the site and who serves it, both detected on the same page load">Stack</th>
+				<th class="col-stack" title="What built the site, detected from its generator tag or presumed from the list it is on">Tool</th>
+				<th class="col-stack" title="Who serves the site, detected from its response headers on the same page load">Host</th>
 				<th class="col-rings" title="The four Lighthouse categories, then the Core Web Vitals verdict from real users and violating nodes from a full axe run — the primary ranking and its two tiebreakers, in order">Scores</th>
 				<th class="col-trend">Trend</th>
 				<th>LCP</th>
@@ -216,12 +219,12 @@ permalink: /index.html
 
 				{% if entry.latest %}
 					<td class="col-stack">
-						<span class="stack-pair">
 						{% if entry.generator %}{% stackIcon entry.generator %}
-						{% elif entry.presumedGenerator %}{% stackIcon entry.presumedGenerator %}{% endif %}
-						{% if entry.host %}{% stackIcon entry.host %}{% endif %}
-						{% if not entry.generator and not entry.presumedGenerator and not entry.host %}<span class="stack-none" title="Nothing detected">·</span>{% endif %}
-						</span>
+						{% elif entry.presumedGenerator %}{% stackIcon entry.presumedGenerator %}
+						{% else %}<span class="stack-none" title="No generator detected">·</span>{% endif %}
+					</td>
+					<td class="col-stack">
+						{% if entry.host %}{% stackIcon entry.host %}{% else %}<span class="stack-none" title="No host detected">·</span>{% endif %}
 					</td>
 					{#
 						Six rings, in the order <speedlify-score> draws them: the four
@@ -251,7 +254,7 @@ permalink: /index.html
 					<td class="num">{{ entry.latest.lab.weight.total | bytes }}</td>
 					<td class="num">{{ entry.latest.lab.weight.requests | num }}</td>
 				{% else %}
-					<td class="num muted" colspan="8">
+					<td class="num muted" colspan="9">
 						{% if entry.currentlyFailing %}every attempt failed{% else %}awaiting first measurement{% endif %}
 					</td>
 				{% endif %}
@@ -330,16 +333,24 @@ permalink: /index.html
 	<table class="grid compact">
 		<thead>
 			<tr>
-				<th class="col-url">From</th>
-				<th class="col-url">To</th>
+				<th class="col-url">Redirect</th>
 				<th class="col-url">Categories</th>
 			</tr>
 		</thead>
 		<tbody>
 			{% for move in group %}
 			<tr>
-				<td class="col-url"><a href="/site/{{ move.slug }}/">{{ move.from }}</a></td>
-				<td class="col-url"><span class="redirects-arrow">&rarr;</span> <code>{{ move.to }}</code></td>
+				{#
+					Both URLs in one cell. Split across two columns the arrow sat at the
+					start of the second one, and the gap between columns grew to the
+					width of the longest source URL on the page — so the pair read as
+					two unrelated lists rather than as one redirect.
+				#}
+				<td class="col-url">
+					<a href="/site/{{ move.slug }}/">{{ move.from }}</a>
+					<span class="redirects-arrow">&rarr;</span>
+					<code>{{ move.to }}</code>
+				</td>
 				{# `cat`, not `group` — the outer loop is already using that name. #}
 				<td class="col-url">{% for cat in move.groups %}<span class="redirects-group">{{ cat }}</span>{% endfor %}</td>
 			</tr>

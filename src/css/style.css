@@ -582,7 +582,10 @@ th.col-rings { text-align: left !important; }
  * while dark, a moon while light. Swapped in CSS rather than by the script,
  * which keeps the toggle's only job the one it already had.
  */
-.theme-icon { flex: none; }
+/* Sized here rather than by the width/height attributes alone: the Font
+   Awesome symbols carry their own viewBox, so the box has to be stated for the
+   <use> to scale into. */
+.theme-icon { flex: none; width: 14px; height: 14px; }
 .theme-icon-moon { display: none; }
 :root[data-theme="light"] .theme-icon-sun { display: none; }
 :root[data-theme="light"] .theme-icon-moon { display: inline; }
@@ -597,16 +600,8 @@ th.col-rings { text-align: left !important; }
 
 /* ------------------------------------------------------- built with / host */
 
-.col-stack { text-align: center !important; white-space: nowrap; width: 3.5rem; }
-
-/* Generator and host share one cell. Centred as a pair so a row with only one
-   of the two does not sit off to one side of the column. */
-.stack-pair {
-	display: inline-flex;
-	gap: 0.3rem;
-	align-items: center;
-	justify-content: center;
-}
+/* One mark per cell now, so the column only has to hold one. */
+.col-stack { text-align: center !important; white-space: nowrap; width: 2.2rem; }
 .stack-icon { display: inline-block; vertical-align: middle; }
 .stack-chip {
 	display: inline-block;
@@ -809,7 +804,7 @@ th.col-rings { text-align: left !important; }
  */
 .col-url { text-align: left !important; white-space: nowrap; }
 .col-url + .col-url { padding-left: 0.9rem; }
-.redirects-arrow { color: var(--text-muted); padding-right: 0.15rem; }
+.redirects-arrow { color: var(--text-muted); padding: 0 0.15rem; }
 /* Which lists this URL belongs to. Quiet by design — it is context for the
    row, not a second thing to read. */
 .redirects-group {

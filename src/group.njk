@@ -78,7 +78,8 @@ eleventyComputed:
 			<tr>
 				<th class="col-rank">#</th>
 				<th class="col-site">Site</th>
-				<th class="col-stack" title="What built the site and who serves it, both detected on the same page load">Stack</th>
+				<th class="col-stack" title="What built the site, detected from its generator tag or presumed from the list it is on">Tool</th>
+				<th class="col-stack" title="Who serves the site, detected from its response headers on the same page load">Host</th>
 				<th class="col-rings" title="The four Lighthouse categories, then the Core Web Vitals verdict from real users and violating nodes from a full axe run — the primary ranking and its two tiebreakers, in order">Scores</th>
 				<th class="col-trend">Perf trend</th>
 				<th>LCP</th><th>CLS</th><th>TBT</th>
@@ -107,12 +108,12 @@ eleventyComputed:
 				</td>
 				{% if entry.latest %}
 					<td class="col-stack">
-						<span class="stack-pair">
 						{% if entry.generator %}{% stackIcon entry.generator %}
-						{% elif entry.presumedGenerator %}{% stackIcon entry.presumedGenerator %}{% endif %}
-						{% if entry.host %}{% stackIcon entry.host %}{% endif %}
-						{% if not entry.generator and not entry.presumedGenerator and not entry.host %}<span class="stack-none" title="Nothing detected">·</span>{% endif %}
-						</span>
+						{% elif entry.presumedGenerator %}{% stackIcon entry.presumedGenerator %}
+						{% else %}<span class="stack-none" title="No generator detected">·</span>{% endif %}
+					</td>
+					<td class="col-stack">
+						{% if entry.host %}{% stackIcon entry.host %}{% else %}<span class="stack-none" title="No host detected">·</span>{% endif %}
 					</td>
 					{#
 						Six rings, in the order <speedlify-score> draws them: the four
@@ -138,7 +139,7 @@ eleventyComputed:
 					<td class="num">{{ entry.latest.lab.weight.total | bytes }}</td>
 					<td class="num">{{ entry.latest.lab.weight.requests | num }}</td>
 				{% else %}
-					<td colspan="8" class="muted">not measured yet</td>
+					<td colspan="9" class="muted">not measured yet</td>
 				{% endif %}
 			</tr>
 		{% endfor %}

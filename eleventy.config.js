@@ -1,4 +1,5 @@
 import { HtmlBasePlugin } from "@awesome.me/buildawesome";
+import fontAwesomePlugin from "@11ty/font-awesome";
 
 // Must stay first: loads .env before the data files read process.env.
 import "./lib/env.js";
@@ -11,6 +12,40 @@ import { lowerIsBetter } from "./lib/compare.js";
 import { scoreBand, axeBand, cwvBand } from "./lib/rank.js";
 
 const ICONS_DIR = "src/icons";
+
+/**
+ * Marks Font Awesome carries, mapped from the simple-icons name we detect under.
+ *
+ * Font Awesome first where it has the brand, because the plugin emits one
+ * `<symbol>` per page and a `<use>` per occurrence. A leaderboard row inlines
+ * its marks, and the big categories run to hundreds of rows: inlining the
+ * WordPress path 300 times is 300 copies of the same 700 bytes, where the
+ * sprite is one copy and 300 short references.
+ *
+ * Only exact brand matches belong here. Font Awesome has `markdown`, which is
+ * not MkDocs, and a plausible-looking wrong logo is worse than the initials
+ * chip it would replace.
+ *
+ * Two of these have no simple-icons entry at all — Amazon's marks were removed
+ * from that project at Amazon's request, and Build Awesome was shipped as a
+ * local file — so for those this is not an optimisation but the only mark
+ * available.
+ */
+const FONT_AWESOME_ICONS = {
+	Amazon: "amazon",
+	BuildAwesome: "build-awesome",
+	Cloudflare: "cloudflare",
+	Drupal: "drupal",
+	Eleventy: "eleventy",
+	Forgejo: "forgejo",
+	Github: "github",
+	Squarespace: "squarespace",
+	Svelte: "svelte",
+	Vuedotjs: "vuejs",
+	Webflow: "webflow",
+	Wix: "wix",
+	Wordpress: "wordpress",
+};
 
 /**
  * Brand marks kept in the repo rather than pulled from simple-icons.
@@ -55,6 +90,24 @@ const localIcons = loadLocalIcons();
 export default async function ($config) {
 	$config.addPlugin(HtmlBasePlugin, {
 		baseHref: process.env.GITHUB_ACTIONS ? "speedlify2" : "/",
+	});
+
+	/*
+	 * Font Awesome, in transform mode: it rewrites `<i class="fa-brands fa-x">`
+	 * in the built HTML into a `<use>` against a per-page spritesheet, which is
+	 * emitted by the `getBundle` call in the layout.
+	 *
+	 * The transform rather than the shortcode because `stackIcon` is itself a
+	 * shortcode, and nesting one inside another would mean reaching into the
+	 * bundle manager by hand. Rewriting the finished HTML needs none of that.
+	 *
+	 * failOnError stays on: a class this config emits that Font Awesome cannot
+	 * resolve is a mistake in FONT_AWESOME_ICONS, and the default behaviour —
+	 * leaving the `<i>` in place — would ship an invisible empty element instead
+	 * of a logo, on every row of a leaderboard, silently.
+	 */
+	$config.addPlugin(fontAwesomePlugin, {
+		failOnError: true,
 	});
 
 	$config.addPassthroughCopy({ "src/css": "css" });
@@ -518,6 +571,24 @@ export default async function ($config) {
 		// it is recognisable, faded so it never reads as a detection.
 		if (detected.presumed) label = `Listed as ${detected.name} — no generator tag found on the page`;
 		const presumed = detected.presumed ? " stack-presumed" : "";
+		// Font Awesome first where it has the brand: one symbol per page and a
+		// short reference per row, rather than the same path inlined once per
+		// site. Brand colour is carried over from simple-icons when that project
+		// has an entry, since Font Awesome's marks are monochrome by design.
+		const faName = detected.icon ? FONT_AWESOME_ICONS[detected.icon] : null;
+		if (faName) {
+			const brand = simpleIcons[`si${detected.icon}`];
+			const luminance = brand ? relativeLuminance(brand.hex) : null;
+			const usesBrandColor = luminance !== null && luminance > 0.06 && luminance < 0.85;
+
+			return [
+				`<i class="fa-brands fa-${faName} stack-icon${usesBrandColor ? "" : " stack-icon-mono"}${presumed}"`,
+				` width="${size}" height="${size}"`,
+				usesBrandColor ? ` style="color:#${brand.hex}"` : "",
+				`>${escapeAttr(label)}</i>`,
+			].join("");
+		}
+
 		const icon = detected.icon ? (localIcons[detected.icon] ?? simpleIcons[`si${detected.icon}`]) : null;
 
 		if (!icon) {

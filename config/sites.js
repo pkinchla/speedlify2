@@ -287,6 +287,13 @@ export default {
 			// — told to submit something that is already submitted.
 			listedIn: "11ty-community",
 
+			// Kept out of the home page's Perfect Scores board. A starter is a
+			// near-empty demonstration page, so a perfect score there is the
+			// expected result rather than an achievement, and enough of them would
+			// crowd out the real sites the board exists to show. They still rank
+			// normally on their own category page and in the global leaderboard.
+			excludeFromPerfectScores: true,
+
 			// Same reasoning as the community list above: a starter emits no
 			// generator tag any more often than a finished site does, and being on
 			// this list is itself a claim about what built it. Shown faded, because
