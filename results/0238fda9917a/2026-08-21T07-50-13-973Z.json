@@ -1,0 +1,195 @@
+{
+  "url": "https://ryanmartin.me/",
+  "name": "ryanmartin.me",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787298613973,
+  "date": "2026-08-21T07:50:13.973Z",
+  "runId": "2026-08-21T07-41-22-153Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 21282,
+  "error": null,
+  "variance": {
+    "min": 100,
+    "max": 100,
+    "spread": 0,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://ryanmartin.me/",
+    "finalUrl": "https://ryanmartin.me/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 791,
+      "lcp": 791,
+      "si": 791,
+      "tbt": 0,
+      "tti": 791,
+      "cls": 0,
+      "ttfb": 609,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 9,
+      "networkRtt": 0,
+      "networkServerLatency": 9
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 10.7,
+      "elementRenderDelay": 42
+    },
+    "weight": {
+      "total": 11829,
+      "requests": 6,
+      "mainDocument": 2232,
+      "byType": {
+        "total": {
+          "bytes": 11829,
+          "requests": 6
+        },
+        "stylesheet": {
+          "bytes": 4752,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 2575,
+          "requests": 3
+        },
+        "script": {
+          "bytes": 2270,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 2232,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 0,
+          "requests": 0
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 1,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 0,
+      "bytes": 0,
+      "mainThreadMs": 0,
+      "top": []
+    },
+    "mainThread": {
+      "total": 131.3,
+      "byGroup": {
+        "other": 74.3,
+        "styleLayout": 26.1,
+        "scriptEvaluation": 16.7,
+        "parseHTML": 6.6,
+        "paintCompositeRender": 5.6,
+        "scriptParseCompile": 2
+      },
+      "bootupMs": 4.1,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 65,
+      "depth": 6,
+      "maxChildren": 8
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 6436.833333333333,
+      "poorlyCachedCount": 2
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 15,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 18
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2821,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T07:50:22.795Z",
+      "runtimeMs": 5648.5
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "3.1.1",
+      "source": "meta",
+      "raw": "Eleventy v3.1.1"
+    },
+    "host": {
+      "id": "github",
+      "name": "GitHub Pages",
+      "icon": "Github",
+      "source": "x-github-request-id"
+    },
+    "headers": {
+      "server": "GitHub.com",
+      "via": "1.1 varnish",
+      "x-fastly-request-id": "b0657ad46a23d012ac18d180123cd405a1c96c75",
+      "x-github-request-id": "345A:2877FE:38A3E:442C6:6A880337",
+      "x-served-by": "cache-bur-kbur8200136-BUR"
+    },
+    "violations": 0,
+    "passes": 170,
+    "incomplete": 0,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

@@ -1,0 +1,3 @@
+{"version":1,"url":"https://schnittstellengestalter.de/","updated":"2026-08-21T07:53:32.999Z","points":[
+{"t":1787298781597,"performance":68,"accessibility":97,"best-practices":100,"seo":100,"lcp":5988,"cls":0.17,"tbt":0,"fcp":2198,"si":2601,"ttfb":2013,"total":3179566,"requests":25,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":429.9,"longTasks":0,"elements":203,"failingCount":1,"failingNodes":1,"axeViolations":16,"axePasses":308,"bench":2820,"runs":3,"reqRuns":3,"ms":31401,"spread":0}
+]}

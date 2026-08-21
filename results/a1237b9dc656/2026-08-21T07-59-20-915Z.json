@@ -1,0 +1,316 @@
+{
+  "url": "https://shimma.info/",
+  "name": "shimma.info",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787299160915,
+  "date": "2026-08-21T07:59:20.915Z",
+  "runId": "2026-08-21T07-41-22-153Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 31214,
+  "error": null,
+  "variance": {
+    "min": 57,
+    "max": 70,
+    "spread": 13,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://shimma.info/",
+    "finalUrl": "https://shimma.info/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 59,
+      "accessibility": 84,
+      "best-practices": 96,
+      "seo": 92,
+      "agentic-browsing": 33
+    },
+    "timings": {
+      "fcp": 2262,
+      "lcp": 10419,
+      "si": 5063,
+      "tbt": 403,
+      "tti": 10419,
+      "cls": 0,
+      "ttfb": 819,
+      "maxPotentialFid": 164,
+      "serverResponseTime": 110,
+      "networkRtt": 0.1,
+      "networkServerLatency": 218.5
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 111.8,
+      "resourceLoadDelay": 241,
+      "resourceLoadDuration": 330,
+      "elementRenderDelay": 1667.8
+    },
+    "weight": {
+      "total": 2814808,
+      "requests": 20,
+      "mainDocument": 8181,
+      "byType": {
+        "total": {
+          "bytes": 2430695,
+          "requests": 18
+        },
+        "image": {
+          "bytes": 1791063,
+          "requests": 7
+        },
+        "script": {
+          "bytes": 496975,
+          "requests": 5
+        },
+        "font": {
+          "bytes": 69599,
+          "requests": 2
+        },
+        "other": {
+          "bytes": 43055,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 21822,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 8181,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 480696,
+          "requests": 6
+        }
+      },
+      "scripts": 5,
+      "stylesheets": 2,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 3,
+      "bytes": 480696,
+      "mainThreadMs": 134.4,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 455480,
+          "mainThreadMs": 125.4
+        },
+        {
+          "entity": "Google Analytics",
+          "bytes": 20875,
+          "mainThreadMs": 9
+        },
+        {
+          "entity": "JSDelivr CDN",
+          "bytes": 4341,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1373.3,
+      "byGroup": {
+        "styleLayout": 497.9,
+        "scriptEvaluation": 466.1,
+        "other": 264.7,
+        "scriptParseCompile": 117,
+        "parseHTML": 15.7,
+        "paintCompositeRender": 12
+      },
+      "bootupMs": 545,
+      "longTasks": 6,
+      "longestTaskMs": 164
+    },
+    "dom": {
+      "elements": 617,
+      "depth": 13,
+      "maxChildren": 64
+    },
+    "waste": {
+      "unusedJsBytes": 208950,
+      "unusedCssBytes": 18363,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 5751,
+      "unminifiedCssBytes": 3486,
+      "renderBlockingMs": 1209,
+      "renderBlockingCount": 3,
+      "poorlyCachedBytes": 1914419.25,
+      "poorlyCachedCount": 11
+    },
+    "accessibility": {
+      "failingCount": 4,
+      "applicableCount": 23,
+      "failingNodes": 51,
+      "failing": [
+        {
+          "id": "valid-lang",
+          "title": "`[lang]` attributes do not have a valid value",
+          "nodes": 48
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "nodes": 1
+        },
+        {
+          "id": "meta-viewport",
+          "title": "`[user-scalable=\"no\"]` is used in the `<meta name=\"viewport\">` element or the `[maximum-scale]` attribute is less than 5.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 15
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2800.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T07:59:41.114Z",
+      "runtimeMs": 9326
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "origin",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-23",
+      "last": "2026-08-19"
+    },
+    "metrics": {
+      "inp": {
+        "p75": 88,
+        "rating": "good",
+        "distribution": {
+          "good": 92.8,
+          "needsImprovement": 4.3,
+          "poor": 2.9
+        }
+      },
+      "lcp": {
+        "p75": 659,
+        "rating": "good",
+        "distribution": {
+          "good": 96.4,
+          "needsImprovement": 2,
+          "poor": 1.6
+        }
+      },
+      "rtt": {
+        "p75": 103,
+        "rating": null,
+        "distribution": {
+          "good": 58.2,
+          "needsImprovement": 38.3,
+          "poor": 3.5
+        }
+      },
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 96.7,
+          "needsImprovement": 1.7,
+          "poor": 1.6
+        }
+      },
+      "ttfb": {
+        "p75": 198,
+        "rating": "good",
+        "distribution": {
+          "good": 95.8,
+          "needsImprovement": 2.9,
+          "poor": 1.4
+        }
+      },
+      "fcp": {
+        "p75": 526,
+        "rating": "good",
+        "distribution": {
+          "good": 96.7,
+          "needsImprovement": 1.8,
+          "poor": 1.5
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "self-hosted",
+      "name": "Self-hosted",
+      "icon": null,
+      "detail": "nginx",
+      "detailIcon": "Nginx",
+      "source": "server"
+    },
+    "headers": {
+      "server": "nginx"
+    },
+    "violations": 48,
+    "passes": 821,
+    "incomplete": 24,
+    "violationRules": 4,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "valid-lang",
+        "impact": "serious",
+        "nodes": 45,
+        "help": "lang attribute must have a valid value"
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Heading levels should only increase by one"
+      },
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Links must have discernible text"
+      },
+      {
+        "id": "meta-viewport",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Zooming and scaling must not be disabled"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

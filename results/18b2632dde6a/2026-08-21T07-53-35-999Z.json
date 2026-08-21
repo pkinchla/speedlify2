@@ -1,0 +1,200 @@
+{
+  "url": "https://scott.ee/",
+  "name": "scott.ee",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787298815999,
+  "date": "2026-08-21T07:53:35.999Z",
+  "runId": "2026-08-21T07-41-22-153Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 26043,
+  "error": null,
+  "variance": {
+    "min": 98,
+    "max": 99,
+    "spread": 1,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://scott.ee/",
+    "finalUrl": "https://scott.ee/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 817,
+      "lcp": 1821,
+      "si": 2152,
+      "tbt": 23,
+      "tti": 1821,
+      "cls": 0,
+      "ttfb": 612,
+      "maxPotentialFid": 130,
+      "serverResponseTime": 531,
+      "networkRtt": 13.8,
+      "networkServerLatency": 10.4
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 612.2,
+      "resourceLoadDelay": 34,
+      "resourceLoadDuration": 23.7,
+      "elementRenderDelay": 514.2
+    },
+    "weight": {
+      "total": 130953,
+      "requests": 15,
+      "mainDocument": 14121,
+      "byType": {
+        "total": {
+          "bytes": 124711,
+          "requests": 14
+        },
+        "font": {
+          "bytes": 78921,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 17329,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 14121,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 6668,
+          "requests": 6
+        },
+        "other": {
+          "bytes": 4708,
+          "requests": 4
+        },
+        "stylesheet": {
+          "bytes": 2964,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 0,
+          "requests": 0
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 1,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 0,
+      "bytes": 0,
+      "mainThreadMs": 0,
+      "top": []
+    },
+    "mainThread": {
+      "total": 562.9,
+      "byGroup": {
+        "other": 345.8,
+        "styleLayout": 100,
+        "scriptEvaluation": 65.4,
+        "paintCompositeRender": 28.8,
+        "parseHTML": 16.9,
+        "scriptParseCompile": 6
+      },
+      "bootupMs": 69.4,
+      "longTasks": 1,
+      "longestTaskMs": 130
+    },
+    "dom": {
+      "elements": 279,
+      "depth": 9,
+      "maxChildren": 18
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 25,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 33
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2793.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T07:53:37.274Z",
+      "runtimeMs": 8650.1
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "3.1.6",
+      "source": "meta",
+      "raw": "Eleventy v3.1.6"
+    },
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e811109d212ae1-LAX",
+      "server": "cloudflare"
+    },
+    "violations": 0,
+    "passes": 482,
+    "incomplete": 55,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

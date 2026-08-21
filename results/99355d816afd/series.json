@@ -1,0 +1,3 @@
+{"version":1,"url":"https://saneef.com/","updated":"2026-08-21T07:52:58.597Z","points":[
+{"t":1787298755693,"performance":100,"accessibility":100,"best-practices":100,"seo":100,"lcp":1685,"cls":0,"tbt":0,"fcp":1235,"si":1235,"ttfb":468,"total":85471,"requests":11,"bytes":639,"mainThreadMs":1.1,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":189.5,"longTasks":0,"elements":180,"failingCount":0,"failingNodes":0,"axeViolations":1,"axePasses":387,"bench":2844,"runs":3,"reqRuns":3,"ms":22904,"spread":1}
+]}
