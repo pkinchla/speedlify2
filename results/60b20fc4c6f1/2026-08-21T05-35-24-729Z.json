@@ -1,0 +1,22 @@
+{
+  "url": "https://offbeatbits.com/",
+  "name": "offbeatbits.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787290524729,
+  "date": "2026-08-21T05:35:24.729Z",
+  "runId": "2026-08-21T05-31-11-889Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 0,
+  "durationMs": 12524,
+  "error": "ERRORED_DOCUMENT_REQUEST: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 404)",
+  "errors": [
+    "ERRORED_DOCUMENT_REQUEST: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 404)",
+    "ERRORED_DOCUMENT_REQUEST: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 404)",
+    "ERRORED_DOCUMENT_REQUEST: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 404)"
+  ],
+  "field": null,
+  "axe": null,
+  "consecutiveFailures": 1
+}

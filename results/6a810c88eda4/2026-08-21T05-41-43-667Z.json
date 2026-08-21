@@ -1,0 +1,229 @@
+{
+  "url": "https://plana.digital/",
+  "name": "plana.digital",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787290903667,
+  "date": "2026-08-21T05:41:43.667Z",
+  "runId": "2026-08-21T05-31-11-889Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 26777,
+  "error": null,
+  "variance": {
+    "min": 82,
+    "max": 87,
+    "spread": 5,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://plana.digital/",
+    "finalUrl": "https://plana.digital/pt/",
+    "redirect": {
+      "from": "https://plana.digital/",
+      "to": "https://plana.digital/pt",
+      "chain": [
+        {
+          "url": "https://plana.digital/",
+          "status": 302
+        },
+        {
+          "url": "https://plana.digital/pt/",
+          "status": 200
+        }
+      ],
+      "statuses": [
+        302
+      ],
+      "change": "path",
+      "permanent": false,
+      "schemeUpgrade": false,
+      "hops": 1
+    },
+    "statusCode": "ok",
+    "scores": {
+      "performance": 87,
+      "accessibility": 95,
+      "best-practices": 100,
+      "seo": 92,
+      "agentic-browsing": 67
+    },
+    "timings": {
+      "fcp": 1888,
+      "lcp": 3871,
+      "si": 1888,
+      "tbt": 0,
+      "tti": 3931,
+      "cls": 0,
+      "ttfb": 474,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 23,
+      "networkRtt": 0.9,
+      "networkServerLatency": 39.2
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 43.4,
+      "elementRenderDelay": 228.8
+    },
+    "weight": {
+      "total": 566374,
+      "requests": 25,
+      "mainDocument": 6888,
+      "byType": {
+        "total": {
+          "bytes": 566374,
+          "requests": 25
+        },
+        "image": {
+          "bytes": 436135,
+          "requests": 5
+        },
+        "font": {
+          "bytes": 61325,
+          "requests": 3
+        },
+        "script": {
+          "bytes": 35647,
+          "requests": 3
+        },
+        "other": {
+          "bytes": 15735,
+          "requests": 11
+        },
+        "stylesheet": {
+          "bytes": 9510,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 8022,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 22936,
+          "requests": 4
+        }
+      },
+      "scripts": 3,
+      "stylesheets": 1,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 22936,
+      "mainThreadMs": 8.3,
+      "top": [
+        {
+          "entity": "Cloudflare",
+          "bytes": 22900,
+          "mainThreadMs": 8.2
+        },
+        {
+          "entity": "cloudflareinsights.com",
+          "bytes": 36,
+          "mainThreadMs": 0.1
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1932.1,
+      "byGroup": {
+        "parseHTML": 724.5,
+        "scriptEvaluation": 573.9,
+        "other": 285.2,
+        "styleLayout": 234.1,
+        "paintCompositeRender": 109.3,
+        "scriptParseCompile": 5.1
+      },
+      "bootupMs": 542,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 166,
+      "depth": 13,
+      "maxChildren": 8
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 326,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 269018.5,
+      "poorlyCachedCount": 12
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 27,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "image-alt",
+          "title": "Image elements do not have `[alt]` attributes",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 774.3,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 32
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2489.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T05:41:52.992Z",
+      "runtimeMs": 7199.5
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e75006f93cec4c-SEA",
+      "server": "cloudflare"
+    },
+    "violations": 1,
+    "passes": 69,
+    "incomplete": 0,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "meta-refresh",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Delayed refresh under 20 hours must not be used"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

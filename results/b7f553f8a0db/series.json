@@ -1,0 +1,3 @@
+{"version":1,"url":"https://paulrobertlloyd.com/","updated":"2026-08-21T05:39:24.422Z","points":[
+{"t":1787290741188,"performance":100,"accessibility":100,"best-practices":100,"seo":100,"lcp":810,"cls":0.02,"tbt":0,"fcp":810,"si":810,"ttfb":628,"total":78331,"requests":8,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":189.2,"longTasks":0,"elements":78,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":202,"bench":2471,"runs":3,"reqRuns":3,"ms":23233,"spread":0}
+]}

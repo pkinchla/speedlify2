@@ -1,0 +1,210 @@
+{
+  "url": "https://optifolio.vercel.app/",
+  "name": "optifolio.vercel.app",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787290681920,
+  "date": "2026-08-21T05:38:01.920Z",
+  "runId": "2026-08-21T05-31-11-889Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 22976,
+  "error": null,
+  "variance": {
+    "min": 98,
+    "max": 100,
+    "spread": 2,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://optifolio.vercel.app/",
+    "finalUrl": "https://optifolio.vercel.app/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 814,
+      "lcp": 1540,
+      "si": 814,
+      "tbt": 0,
+      "tti": 1540,
+      "cls": 0,
+      "ttfb": 618,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 13,
+      "networkRtt": 0.2,
+      "networkServerLatency": 21.2
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 15.1,
+      "elementRenderDelay": 68.8
+    },
+    "weight": {
+      "total": 17015,
+      "requests": 6,
+      "mainDocument": 5423,
+      "byType": {
+        "total": {
+          "bytes": 17015,
+          "requests": 6
+        },
+        "document": {
+          "bytes": 5423,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 5324,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 3493,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 1808,
+          "requests": 1
+        },
+        "font": {
+          "bytes": 967,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "other": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 2775,
+          "requests": 2
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 1,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 2775,
+      "mainThreadMs": 0.6,
+      "top": [
+        {
+          "entity": "Unpkg",
+          "bytes": 1808,
+          "mainThreadMs": 0.6
+        },
+        {
+          "entity": "Google Fonts",
+          "bytes": 967,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 264.2,
+      "byGroup": {
+        "other": 133.9,
+        "styleLayout": 84.7,
+        "paintCompositeRender": 20.2,
+        "scriptEvaluation": 14.9,
+        "parseHTML": 8.4,
+        "scriptParseCompile": 2.1
+      },
+      "bootupMs": 12.4,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 200,
+      "depth": 9,
+      "maxChildren": 6
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 21,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": null,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 4
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2422.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T05:38:17.974Z",
+      "runtimeMs": 6301.7
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": null,
+      "source": "meta",
+      "raw": "Eleventy"
+    },
+    "host": {
+      "id": "vercel",
+      "name": "Vercel",
+      "icon": "Vercel",
+      "source": "x-vercel-id"
+    },
+    "headers": {
+      "server": "Vercel",
+      "x-vercel-id": "pdx1::bhgm8-1787290703736-2ec27111c9ba"
+    },
+    "violations": 2,
+    "passes": 422,
+    "incomplete": 3,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 2,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

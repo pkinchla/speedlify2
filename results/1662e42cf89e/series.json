@@ -1,0 +1,3 @@
+{"version":1,"url":"https://pedromelorocha.pt/","updated":"2026-08-21T05:40:16.315Z","points":[
+{"t":1787290792780,"performance":100,"accessibility":100,"best-practices":100,"seo":100,"lcp":1678,"cls":0,"tbt":27,"fcp":1078,"si":1078,"ttfb":628,"total":96362,"requests":14,"bytes":3321,"mainThreadMs":1.5,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":298.2,"longTasks":1,"elements":96,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":228,"bench":2505.5,"runs":3,"reqRuns":3,"ms":23534,"spread":0}
+]}
