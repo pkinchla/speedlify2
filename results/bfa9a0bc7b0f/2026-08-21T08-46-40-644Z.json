@@ -1,0 +1,296 @@
+{
+  "url": "https://theintern.io/",
+  "name": "Intern",
+  "group": "test-runners",
+  "groupName": "Test Runners",
+  "timestamp": 1787302000644,
+  "date": "2026-08-21T08:46:40.644Z",
+  "runId": "2026-08-21T08-39-07-781Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 22544,
+  "error": null,
+  "variance": {
+    "min": 82,
+    "max": 95,
+    "spread": 13,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://theintern.io/",
+    "finalUrl": "https://theintern.io/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 95,
+      "accessibility": 40,
+      "best-practices": 100,
+      "seo": 83,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 1838,
+      "lcp": 2766,
+      "si": 1838,
+      "tbt": 0,
+      "tti": 2766,
+      "cls": 0,
+      "ttfb": 468,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 29,
+      "networkRtt": 0.1,
+      "networkServerLatency": 49.3
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 31,
+      "elementRenderDelay": 122.6
+    },
+    "weight": {
+      "total": 238695,
+      "requests": 14,
+      "mainDocument": 19044,
+      "byType": {
+        "total": {
+          "bytes": 219483,
+          "requests": 13
+        },
+        "font": {
+          "bytes": 138791,
+          "requests": 5
+        },
+        "stylesheet": {
+          "bytes": 39868,
+          "requests": 3
+        },
+        "document": {
+          "bytes": 19044,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 11451,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 9879,
+          "requests": 2
+        },
+        "other": {
+          "bytes": 450,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 158097,
+          "requests": 8
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 3,
+      "fonts": 5
+    },
+    "thirdParty": {
+      "count": 3,
+      "bytes": 158097,
+      "mainThreadMs": 4.4,
+      "top": [
+        {
+          "entity": "Cloudflare CDN",
+          "bytes": 84298,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Google Fonts",
+          "bytes": 62348,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Cloudflare",
+          "bytes": 11451,
+          "mainThreadMs": 4.4
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 385.3,
+      "byGroup": {
+        "styleLayout": 163.1,
+        "other": 131,
+        "scriptEvaluation": 41.5,
+        "parseHTML": 24.3,
+        "paintCompositeRender": 23.5,
+        "scriptParseCompile": 1.8
+      },
+      "bootupMs": 21.8,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 518,
+      "depth": 11,
+      "maxChildren": 27
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 29452,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 2356,
+      "renderBlockingCount": 3,
+      "poorlyCachedBytes": 33066.96,
+      "poorlyCachedCount": 4
+    },
+    "accessibility": {
+      "failingCount": 7,
+      "applicableCount": 14,
+      "failingNodes": 30,
+      "failing": [
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "nodes": 13
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 12
+        },
+        {
+          "id": "html-has-lang",
+          "title": "`<html>` element does not have a `[lang]` attribute",
+          "nodes": 1
+        },
+        {
+          "id": "image-alt",
+          "title": "Image elements do not have `[alt]` attributes",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "nodes": 1
+        },
+        {
+          "id": "meta-viewport",
+          "title": "`[user-scalable=\"no\"]` is used in the `<meta name=\"viewport\">` element or the `[maximum-scale]` attribute is less than 5.",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 11
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 3154,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T08:46:49.734Z",
+      "runtimeMs": 6198.1
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "github",
+      "name": "GitHub Pages",
+      "icon": "Github",
+      "source": "x-github-request-id"
+    },
+    "headers": {
+      "cf-ray": "a2e85ec10df62ebf-LAX",
+      "server": "cloudflare",
+      "via": "1.1 varnish",
+      "x-fastly-request-id": "a1c6ec2316fb3aa78d053945da43925a853b3893",
+      "x-github-request-id": "7FDE:711FF:EEA6C:FCB52:6A881071",
+      "x-served-by": "cache-bur-kbur8200104-BUR"
+    },
+    "violations": 39,
+    "passes": 643,
+    "incomplete": 0,
+    "violationRules": 9,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "link-in-text-block",
+        "impact": "serious",
+        "nodes": 13,
+        "help": "Links must be distinguishable without relying on color"
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 12,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 8,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "empty-table-header",
+        "impact": "minor",
+        "nodes": 1,
+        "help": "Table header text should not be empty"
+      },
+      {
+        "id": "html-has-lang",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "<html> element must have a lang attribute"
+      },
+      {
+        "id": "image-alt",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Images must have alternative text"
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should have one main landmark"
+      },
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Links must have discernible text"
+      },
+      {
+        "id": "meta-viewport",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Zooming and scaling must not be disabled"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

@@ -1,0 +1,3 @@
+{"version":1,"url":"https://surge.sh/","updated":"2026-08-21T08:43:05.473Z","points":[
+{"t":1787301637666,"performance":87,"accessibility":75,"best-practices":96,"seo":91,"lcp":4009,"cls":0.005,"tbt":0,"fcp":1533,"si":1533,"ttfb":620,"total":1783122,"requests":50,"bytes":214998,"mainThreadMs":15.1,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":789.5,"longTasks":1,"elements":527,"failingCount":6,"failingNodes":82,"field-lcp":2527,"field-inp":109,"field-cls":0.01,"field-fcp":2465,"field-ttfb":1395,"bench":3262.5,"runs":3,"reqRuns":3,"ms":147806,"spread":34}
+]}

@@ -1,0 +1,201 @@
+{
+  "url": "https://timothymiller.dev/",
+  "name": "timothymiller.dev",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787302126591,
+  "date": "2026-08-21T08:48:46.591Z",
+  "runId": "2026-08-21T08-39-07-781Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 20674,
+  "error": null,
+  "variance": {
+    "min": 96,
+    "max": 97,
+    "spread": 1,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://timothymiller.dev/",
+    "finalUrl": "https://timothymiller.dev/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 97,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 93
+    },
+    "timings": {
+      "fcp": 909,
+      "lcp": 909,
+      "si": 909,
+      "tbt": 0,
+      "tti": 909,
+      "cls": 0.115,
+      "ttfb": 659,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 81,
+      "networkRtt": 22.6,
+      "networkServerLatency": 140.7
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 257.5,
+      "elementRenderDelay": 33.5
+    },
+    "weight": {
+      "total": 65313,
+      "requests": 8,
+      "mainDocument": 4357,
+      "byType": {
+        "total": {
+          "bytes": 61510,
+          "requests": 7
+        },
+        "font": {
+          "bytes": 46489,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 5748,
+          "requests": 2
+        },
+        "script": {
+          "bytes": 4535,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 4357,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 381,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 52692,
+          "requests": 5
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 2,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 3,
+      "bytes": 52692,
+      "mainThreadMs": 1.7,
+      "top": [
+        {
+          "entity": "bunny.net",
+          "bytes": 47776,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "zgo.at",
+          "bytes": 4535,
+          "mainThreadMs": 1.7
+        },
+        {
+          "entity": "goatcounter.com",
+          "bytes": 381,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 613.7,
+      "byGroup": {
+        "other": 277.4,
+        "styleLayout": 180.9,
+        "paintCompositeRender": 125.2,
+        "scriptEvaluation": 18.5,
+        "parseHTML": 8.5,
+        "scriptParseCompile": 3.1
+      },
+      "bootupMs": 13.5,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 106,
+      "depth": 9,
+      "maxChildren": 13
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 21,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 8
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 3259,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T08:48:47.821Z",
+      "runtimeMs": 6728.4
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0HR4W2Q1APP4Q9MP0P4FB15"
+    },
+    "violations": 0,
+    "passes": 236,
+    "incomplete": 1,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
