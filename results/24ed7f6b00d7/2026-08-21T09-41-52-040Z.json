@@ -1,0 +1,347 @@
+{
+  "url": "https://www.belocalpub.com/",
+  "name": "www.belocalpub.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787305312040,
+  "date": "2026-08-21T09:41:52.040Z",
+  "runId": "2026-08-21T09-35-32-332Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 2,
+  "durationMs": 160940,
+  "error": null,
+  "partialErrors": [
+    "NO_FCP: The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+  ],
+  "variance": {
+    "min": 45,
+    "max": 46,
+    "spread": 1,
+    "runs": 2
+  },
+  "lab": {
+    "requestedUrl": "https://www.belocalpub.com/",
+    "finalUrl": "https://www.belocalpub.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 45,
+      "accessibility": 81,
+      "best-practices": 73,
+      "seo": 100,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 2256,
+      "lcp": 8687,
+      "si": 27877,
+      "tbt": 727,
+      "tti": 11814,
+      "cls": 0.022,
+      "ttfb": 9027,
+      "maxPotentialFid": 273,
+      "serverResponseTime": 1823,
+      "networkRtt": 30.5,
+      "networkServerLatency": 91.2
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 9026.7,
+      "resourceLoadDelay": 8959.3,
+      "resourceLoadDuration": 218.2,
+      "elementRenderDelay": 105.2
+    },
+    "weight": {
+      "total": 2234991,
+      "requests": 61,
+      "mainDocument": 7029,
+      "byType": {
+        "total": {
+          "bytes": 2231823,
+          "requests": 59
+        },
+        "script": {
+          "bytes": 1071820,
+          "requests": 22
+        },
+        "image": {
+          "bytes": 873043,
+          "requests": 7
+        },
+        "font": {
+          "bytes": 131024,
+          "requests": 4
+        },
+        "other": {
+          "bytes": 106813,
+          "requests": 17
+        },
+        "stylesheet": {
+          "bytes": 41667,
+          "requests": 7
+        },
+        "document": {
+          "bytes": 7456,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 1474336,
+          "requests": 49
+        }
+      },
+      "scripts": 22,
+      "stylesheets": 7,
+      "fonts": 4
+    },
+    "thirdParty": {
+      "count": 13,
+      "bytes": 1473909,
+      "mainThreadMs": 447.8,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 490692,
+          "mainThreadMs": 195.1
+        },
+        {
+          "entity": "Amazon Web Services",
+          "bytes": 445890,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Facebook",
+          "bytes": 227966,
+          "mainThreadMs": 110.9
+        },
+        {
+          "entity": "LiveHelpNow",
+          "bytes": 128900,
+          "mainThreadMs": 42.7
+        },
+        {
+          "entity": "Netlify",
+          "bytes": 55293,
+          "mainThreadMs": 27.9
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 2966.4,
+      "byGroup": {
+        "scriptEvaluation": 1682.8,
+        "other": 520.1,
+        "scriptParseCompile": 365.3,
+        "styleLayout": 211.8,
+        "parseHTML": 88.3,
+        "garbageCollection": 53.2,
+        "paintCompositeRender": 44.9
+      },
+      "bootupMs": 1930.5,
+      "longTasks": 11,
+      "longestTaskMs": 273
+    },
+    "dom": {
+      "elements": 393,
+      "depth": 12,
+      "maxChildren": 142
+    },
+    "waste": {
+      "unusedJsBytes": 411084,
+      "unusedCssBytes": 48623,
+      "legacyJsBytes": 23254,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 13107,
+      "renderBlockingMs": 1542,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 794392.4728398513,
+      "poorlyCachedCount": 22
+    },
+    "accessibility": {
+      "failingCount": 4,
+      "applicableCount": 25,
+      "failingNodes": 19,
+      "failing": [
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "nodes": 8
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 6
+        },
+        {
+          "id": "button-name",
+          "title": "Buttons do not have an accessible name",
+          "nodes": 4
+        },
+        {
+          "id": "aria-allowed-attr",
+          "title": "`[aria-*]` attributes do not match their roles",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 2,
+      "baselineLimitedFeatures": 18
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2457,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T09:43:50.359Z",
+      "runtimeMs": 28775.6
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "origin",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-23",
+      "last": "2026-08-19"
+    },
+    "metrics": {
+      "rtt": {
+        "p75": 117,
+        "rating": null,
+        "distribution": {
+          "good": 48.4,
+          "needsImprovement": 43.9,
+          "poor": 7.7
+        }
+      },
+      "cls": {
+        "p75": 0.02,
+        "rating": "good",
+        "distribution": {
+          "good": 95.8,
+          "needsImprovement": 2.1,
+          "poor": 2.1
+        }
+      },
+      "ttfb": {
+        "p75": 735,
+        "rating": "good",
+        "distribution": {
+          "good": 80,
+          "needsImprovement": 16.8,
+          "poor": 3.2
+        }
+      },
+      "fcp": {
+        "p75": 1145,
+        "rating": "good",
+        "distribution": {
+          "good": 88.6,
+          "needsImprovement": 6.4,
+          "poor": 4.9
+        }
+      },
+      "inp": {
+        "p75": 76,
+        "rating": "good",
+        "distribution": {
+          "good": 95.6,
+          "needsImprovement": 4.4,
+          "poor": 0
+        }
+      },
+      "lcp": {
+        "p75": 1794,
+        "rating": "good",
+        "distribution": {
+          "good": 87,
+          "needsImprovement": 8.7,
+          "poor": 4.4
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0HV9Z8WS1A2SN332HHW9J4F"
+    },
+    "violations": 21,
+    "passes": 490,
+    "incomplete": 3,
+    "violationRules": 7,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "nodes": 8,
+        "help": "Links must have discernible text"
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 6,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "button-name",
+        "impact": "critical",
+        "nodes": 3,
+        "help": "Buttons must have discernible text"
+      },
+      {
+        "id": "aria-allowed-attr",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Elements must only use supported ARIA attributes"
+      },
+      {
+        "id": "aria-allowed-role",
+        "impact": "minor",
+        "nodes": 1,
+        "help": "ARIA role should be appropriate for the element"
+      },
+      {
+        "id": "frame-title",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Frames must have an accessible name"
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

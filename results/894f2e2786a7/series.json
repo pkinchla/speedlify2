@@ -1,0 +1,3 @@
+{"version":1,"url":"https://worldwideweb.cern.ch/","updated":"2026-08-21T09:36:01.923Z","points":[
+{"t":1787304933422,"performance":99,"accessibility":80,"best-practices":100,"seo":100,"lcp":982,"cls":0,"tbt":102,"fcp":907,"si":1722,"ttfb":674,"total":493122,"requests":14,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":884.8,"longTasks":5,"elements":86,"failingCount":3,"failingNodes":5,"axeViolations":4,"axePasses":233,"field-lcp":1583,"field-inp":102,"field-cls":0.06,"field-fcp":1587,"field-ttfb":854,"bench":2395.5,"runs":3,"reqRuns":3,"ms":28499,"spread":2}
+]}

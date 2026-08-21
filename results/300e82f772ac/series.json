@@ -1,0 +1,3 @@
+{"version":1,"url":"https://www.adamjolicoeur.com/","updated":"2026-08-21T09:39:29.622Z","points":[
+{"t":1787305143677,"performance":94,"accessibility":94,"best-practices":100,"seo":92,"lcp":2743,"cls":0.044,"tbt":0,"fcp":2143,"si":2143,"ttfb":471,"total":466843,"requests":27,"bytes":42844,"mainThreadMs":6.7,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":620.8,"longTasks":1,"elements":192,"failingCount":2,"failingNodes":3,"axeViolations":1,"axePasses":69,"bench":2476,"runs":3,"reqRuns":3,"ms":25944,"spread":24}
+]}

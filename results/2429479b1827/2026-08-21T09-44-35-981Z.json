@@ -1,0 +1,224 @@
+{
+  "url": "https://www.bobmonsour.com/",
+  "name": "www.bobmonsour.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787305475981,
+  "date": "2026-08-21T09:44:35.981Z",
+  "runId": "2026-08-21T09-35-32-332Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 23500,
+  "error": null,
+  "variance": {
+    "min": 86,
+    "max": 95,
+    "spread": 9,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.bobmonsour.com/",
+    "finalUrl": "https://bobmonsour.com/",
+    "redirect": {
+      "from": "https://www.bobmonsour.com/",
+      "to": "https://bobmonsour.com/",
+      "chain": [
+        {
+          "url": "https://www.bobmonsour.com/",
+          "status": 301
+        },
+        {
+          "url": "https://bobmonsour.com/",
+          "status": 200
+        }
+      ],
+      "statuses": [
+        301
+      ],
+      "change": "host",
+      "permanent": true,
+      "schemeUpgrade": false,
+      "hops": 1
+    },
+    "statusCode": "ok",
+    "scores": {
+      "performance": 95,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 2043,
+      "lcp": 2607,
+      "si": 2043,
+      "tbt": 0,
+      "tti": 2607,
+      "cls": 0.001,
+      "ttfb": 474,
+      "maxPotentialFid": 36,
+      "serverResponseTime": 17,
+      "networkRtt": 0,
+      "networkServerLatency": 28.2
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 28.3,
+      "elementRenderDelay": 91.4
+    },
+    "weight": {
+      "total": 247254,
+      "requests": 20,
+      "mainDocument": 8334,
+      "byType": {
+        "total": {
+          "bytes": 247254,
+          "requests": 18
+        },
+        "font": {
+          "bytes": 120466,
+          "requests": 4
+        },
+        "image": {
+          "bytes": 77744,
+          "requests": 5
+        },
+        "other": {
+          "bytes": 22997,
+          "requests": 3
+        },
+        "script": {
+          "bytes": 8897,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 8816,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 8334,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 35662,
+          "requests": 2
+        }
+      },
+      "scripts": 3,
+      "stylesheets": 2,
+      "fonts": 4
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 35662,
+      "mainThreadMs": 0,
+      "top": [
+        {
+          "entity": "YouTube",
+          "bytes": 35662,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 253.9,
+      "byGroup": {
+        "other": 115.1,
+        "styleLayout": 71.4,
+        "paintCompositeRender": 27.3,
+        "scriptEvaluation": 22.1,
+        "parseHTML": 15,
+        "scriptParseCompile": 3
+      },
+      "bootupMs": 16.1,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 258,
+      "depth": 8,
+      "maxChildren": 23
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 2227,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 174,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 26746.5,
+      "poorlyCachedCount": 2
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 29,
+      "failingNodes": 3,
+      "failing": [
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "nodes": 3
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 758.3,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 23
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2482,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T09:44:50.708Z",
+      "runtimeMs": 6141
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e8b3b85bf3d133-MSP",
+      "server": "cloudflare"
+    },
+    "violations": 1,
+    "passes": 73,
+    "incomplete": 0,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "meta-refresh",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Delayed refresh under 20 hours must not be used"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

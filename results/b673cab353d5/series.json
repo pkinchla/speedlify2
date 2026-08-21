@@ -1,0 +1,3 @@
+{"version":1,"url":"https://www.andreacorinti.com/","updated":"2026-08-21T09:40:55.341Z","points":[
+{"t":1787305228869,"performance":93,"accessibility":100,"best-practices":100,"seo":100,"lcp":3042,"cls":0,"tbt":0,"fcp":1751,"si":1751,"ttfb":642,"total":331084,"requests":14,"bytes":21311,"mainThreadMs":5.3,"unusedJsBytes":0,"unusedCssBytes":15248,"mainThreadTotal":238.5,"longTasks":0,"elements":77,"failingCount":0,"failingNodes":0,"axeViolations":2,"axePasses":160,"bench":2439.5,"runs":3,"reqRuns":3,"ms":26472,"spread":6}
+]}

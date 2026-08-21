@@ -1,0 +1,211 @@
+{
+  "url": "https://www.averagenerdpost.com/",
+  "name": "www.averagenerdpost.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787305258342,
+  "date": "2026-08-21T09:40:58.342Z",
+  "runId": "2026-08-21T09-35-32-332Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 22521,
+  "error": null,
+  "variance": {
+    "min": 97,
+    "max": 99,
+    "spread": 2,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.averagenerdpost.com/",
+    "finalUrl": "https://www.averagenerdpost.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 99,
+      "accessibility": 95,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 1703,
+      "lcp": 1868,
+      "si": 1703,
+      "tbt": 0,
+      "tti": 1868,
+      "cls": 0,
+      "ttfb": 484,
+      "maxPotentialFid": 21,
+      "serverResponseTime": 18,
+      "networkRtt": 0.1,
+      "networkServerLatency": 33.8
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 19.8,
+      "resourceLoadDelay": 9.8,
+      "resourceLoadDuration": 26.2,
+      "elementRenderDelay": 81.9
+    },
+    "weight": {
+      "total": 326421,
+      "requests": 32,
+      "mainDocument": 3063,
+      "byType": {
+        "total": {
+          "bytes": 326421,
+          "requests": 31
+        },
+        "image": {
+          "bytes": 292143,
+          "requests": 10
+        },
+        "stylesheet": {
+          "bytes": 15288,
+          "requests": 15
+        },
+        "script": {
+          "bytes": 12400,
+          "requests": 2
+        },
+        "other": {
+          "bytes": 3527,
+          "requests": 3
+        },
+        "document": {
+          "bytes": 3063,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 11450,
+          "requests": 1
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 15,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 11450,
+      "mainThreadMs": 3.9,
+      "top": [
+        {
+          "entity": "Cloudflare",
+          "bytes": 11450,
+          "mainThreadMs": 3.9
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 268.7,
+      "byGroup": {
+        "other": 158.1,
+        "scriptEvaluation": 51.4,
+        "styleLayout": 32,
+        "parseHTML": 16,
+        "paintCompositeRender": 9.7,
+        "scriptParseCompile": 1.5
+      },
+      "bootupMs": 15.7,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 102,
+      "depth": 11,
+      "maxChildren": 7
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 4444,
+      "renderBlockingCount": 16,
+      "poorlyCachedBytes": 4580,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 21,
+      "failingNodes": 5,
+      "failing": [
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "nodes": 4
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "title": "Elements use prohibited ARIA attributes",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 17
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2481,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T09:41:07.308Z",
+      "runtimeMs": 6003
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "3.1.2",
+      "source": "meta",
+      "raw": "Eleventy v3.1.2"
+    },
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e8ae6bedd3acd5-MSP",
+      "server": "cloudflare"
+    },
+    "violations": 0,
+    "passes": 222,
+    "incomplete": 0,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
