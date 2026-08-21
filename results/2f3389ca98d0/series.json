@@ -1,3 +1,4 @@
-{"version":1,"url":"https://mrmidzi.netlify.app/","updated":"2026-08-21T04:42:30.621Z","points":[
-{"t":1787287338724,"error":"ERRORED_DOCUMENT_REQUEST: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 404)","fails":1,"runs":0,"reqRuns":3,"ms":11896}
+{"version":1,"url":"https://mrmidzi.netlify.app/","updated":"2026-08-21T21:26:16.755Z","points":[
+{"t":1787287338724,"error":"ERRORED_DOCUMENT_REQUEST: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 404)","fails":1,"runs":0,"reqRuns":3,"ms":11896},
+{"t":1787347564394,"error":"ERRORED_DOCUMENT_REQUEST: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 404)","fails":2,"runs":0,"reqRuns":3,"ms":12361}
 ]}
