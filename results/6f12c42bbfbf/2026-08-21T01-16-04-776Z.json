@@ -1,0 +1,231 @@
+{
+  "url": "https://kack.dev/",
+  "name": "kack.dev",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787274964776,
+  "date": "2026-08-21T01:16:04.776Z",
+  "runId": "2026-08-21T01-14-04-130Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 28085,
+  "error": null,
+  "variance": {
+    "min": 77,
+    "max": 84,
+    "spread": 7,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://kack.dev/",
+    "finalUrl": "https://kack.dev/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 77,
+      "accessibility": 67,
+      "best-practices": 96,
+      "seo": 82,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 2325,
+      "lcp": 4900,
+      "si": 4225,
+      "tbt": 0,
+      "tti": 4930,
+      "cls": 0,
+      "ttfb": 775,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 176,
+      "networkRtt": 0,
+      "networkServerLatency": 174.9
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 177.3,
+      "resourceLoadDelay": 9.9,
+      "resourceLoadDuration": 693.1,
+      "elementRenderDelay": 1469.7
+    },
+    "weight": {
+      "total": 614523,
+      "requests": 13,
+      "mainDocument": 8065,
+      "byType": {
+        "total": {
+          "bytes": 613177,
+          "requests": 12
+        },
+        "image": {
+          "bytes": 518694,
+          "requests": 6
+        },
+        "font": {
+          "bytes": 77990,
+          "requests": 3
+        },
+        "document": {
+          "bytes": 8065,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 6274,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 2154,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "script": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 0,
+          "requests": 0
+        }
+      },
+      "scripts": 0,
+      "stylesheets": 1,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 0,
+      "bytes": 0,
+      "mainThreadMs": 0,
+      "top": []
+    },
+    "mainThread": {
+      "total": 156.8,
+      "byGroup": {
+        "other": 116.5,
+        "styleLayout": 21,
+        "scriptEvaluation": 9.6,
+        "parseHTML": 4.7,
+        "paintCompositeRender": 3.9,
+        "scriptParseCompile": 1.1
+      },
+      "bootupMs": 4.1,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 55,
+      "depth": 7,
+      "maxChildren": 8
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 325,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 602958,
+      "poorlyCachedCount": 10
+    },
+    "accessibility": {
+      "failingCount": 4,
+      "applicableCount": 12,
+      "failingNodes": 10,
+      "failing": [
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "nodes": 4
+        },
+        {
+          "id": "image-alt",
+          "title": "Image elements do not have `[alt]` attributes",
+          "nodes": 3
+        },
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "nodes": 2
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "http/1.1",
+      "legacyHttpRequests": 13,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 1
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2495.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T01:16:14.747Z",
+      "runtimeMs": 8386.9
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": null,
+    "headers": {},
+    "violations": 12,
+    "passes": 72,
+    "incomplete": 12,
+    "violationRules": 5,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "nodes": 4,
+        "help": "Links must have discernible text"
+      },
+      {
+        "id": "image-alt",
+        "impact": "critical",
+        "nodes": 3,
+        "help": "Images must have alternative text"
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 3,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should have one main landmark"
+      },
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Page should contain a level-one heading"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

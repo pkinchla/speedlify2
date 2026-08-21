@@ -1,0 +1,204 @@
+{
+  "url": "https://kristofflalicki.dev/",
+  "name": "kristofflalicki.dev",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787275410498,
+  "date": "2026-08-21T01:23:30.498Z",
+  "runId": "2026-08-21T01-14-04-130Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 23861,
+  "error": null,
+  "variance": {
+    "min": 94,
+    "max": 99,
+    "spread": 5,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://kristofflalicki.dev/",
+    "finalUrl": "https://kristofflalicki.dev/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 94,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1054,
+      "lcp": 3078,
+      "si": 1829,
+      "tbt": 52,
+      "tti": 3551,
+      "cls": 0.006,
+      "ttfb": 604,
+      "maxPotentialFid": 104,
+      "serverResponseTime": 253,
+      "networkRtt": 0.1,
+      "networkServerLatency": 22.4
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 254.1,
+      "elementRenderDelay": 80
+    },
+    "weight": {
+      "total": 507252,
+      "requests": 11,
+      "mainDocument": 15288,
+      "byType": {
+        "total": {
+          "bytes": 507252,
+          "requests": 10
+        },
+        "script": {
+          "bytes": 232195,
+          "requests": 3
+        },
+        "image": {
+          "bytes": 214884,
+          "requests": 3
+        },
+        "font": {
+          "bytes": 41174,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 15288,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 3711,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "other": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 184006,
+          "requests": 2
+        }
+      },
+      "scripts": 3,
+      "stylesheets": 1,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 184006,
+      "mainThreadMs": 62.4,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 158206,
+          "mainThreadMs": 51.6
+        },
+        {
+          "entity": "Cloudflare CDN",
+          "bytes": 25800,
+          "mainThreadMs": 10.8
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1515.2,
+      "byGroup": {
+        "other": 722.9,
+        "scriptEvaluation": 534.2,
+        "styleLayout": 106.2,
+        "scriptParseCompile": 76.9,
+        "paintCompositeRender": 52.3,
+        "parseHTML": 12.4,
+        "garbageCollection": 10.1
+      },
+      "bootupMs": 609.8,
+      "longTasks": 3,
+      "longestTaskMs": 104
+    },
+    "dom": {
+      "elements": 333,
+      "depth": 9,
+      "maxChildren": 64
+    },
+    "waste": {
+      "unusedJsBytes": 103477,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 24,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 12
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2482.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T01:23:46.550Z",
+      "runtimeMs": 6902.7
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": null,
+      "source": "meta",
+      "raw": "Eleventy"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0GYNN40FXM0FYGPH3N6WYMC"
+    },
+    "violations": 0,
+    "passes": 428,
+    "incomplete": 59,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
