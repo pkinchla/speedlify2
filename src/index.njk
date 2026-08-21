@@ -434,19 +434,30 @@ permalink: /index.html
 	<h2>Archived</h2>
 	<p class="muted">
 		{{ sites.archived.length | countOf("site") }} kept in the record but taken
-		out of circulation: no longer measured, ranked or linked. Their stored
-		measurements are still on disk.
+		out of circulation: no longer ranked or linked. Their stored measurements
+		are still on disk.
 	</p>
 	<p class="muted small">
-		This is for sites that have lapsed or whose domain is now parked — not for
-		sites that have moved off Eleventy or Build Awesome. Those keep being
-		measured and move to
+		Archived by hand for sites that have lapsed or whose domain is now parked —
+		not for sites that have moved off Eleventy or Build Awesome. Those keep
+		being measured and move to
 		<a href="/group/11ty-emeritus/">11ty Emeritus</a>, which happens on its own
 		the next time the generator comes back as something else.
 	</p>
+	<p class="muted small">
+		A site that fails {{ sites.config.archiveAfterFailures }} measurements in a
+		row is archived automatically. Those are still measured, about once a day,
+		and return to the board on their own if they start answering again.
+	</p>
 	<ul>
 		{% for site in sites.archived %}
-		<li><code>{{ site.displayUrl }}</code>{% if site.lastMeasured %} — last measured {{ site.lastMeasured | date("long") }}{% endif %}</li>
+		<li>
+			<code>{{ site.displayUrl }}</code>
+			{%- if site.reason == "failing" %}
+			<span class="badge badge-error" title="{{ site.lastError }}">failing {{ site.consecutiveFailures }}x</span>
+			{%- endif %}
+			{% if site.lastMeasured %}— last measured {{ site.lastMeasured | date("long") }}{% endif %}
+		</li>
 		{% endfor %}
 	</ul>
 </section>

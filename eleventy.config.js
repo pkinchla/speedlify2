@@ -647,7 +647,11 @@ export default async function ($config) {
 			// no hex to lend.
 			const hex = BRAND_COLORS[detected.icon] ?? simpleIcons[`si${detected.icon}`]?.hex ?? null;
 			const luminance = hex ? relativeLuminance(hex) : null;
-			const usesBrandColor = luminance !== null && luminance > 0.06 && luminance < 0.85;
+			// A presumed mark takes no brand colour, so it inherits the surrounding
+			// text colour instead — see `.stack-presumed`. The inline style below
+			// would win over any stylesheet, so the choice has to be made here.
+			const usesBrandColor =
+				!detected.presumed && luminance !== null && luminance > 0.06 && luminance < 0.85;
 
 			return [
 				`<i class="fa-brands fa-${faName} stack-icon${usesBrandColor ? "" : " stack-icon-mono"}${presumed}"`,
@@ -692,7 +696,9 @@ export default async function ($config) {
 		// the icon follows the theme's text colour instead. Those marks are
 		// recognisable by shape, and a visible glyph beats an accurate one.
 		const luminance = relativeLuminance(icon.hex);
-		const usesBrandColor = luminance > 0.06 && luminance < 0.85;
+		// Same as the Font Awesome path above: presumed marks inherit rather than
+		// carrying the brand's colour.
+		const usesBrandColor = !detected.presumed && luminance > 0.06 && luminance < 0.85;
 		const fill = usesBrandColor ? `#${icon.hex}` : "currentColor";
 
 		return [

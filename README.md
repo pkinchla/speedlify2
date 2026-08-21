@@ -213,6 +213,8 @@ Grey — no data — ranks with red on both banded rings. A Lighthouse category 
 
 It is the middle option. Deleting a URL from a category loses its history and leaves an orphaned directory behind; leaving it in place keeps a dead site in the rankings and keeps sending traffic to it.
 
+**Sites archive themselves after `archiveAfterFailures` consecutive failures** (14 by default; `0` turns it off). That half is derived from the stored failure count rather than written into `archived.json`, which is what makes it reversible — one successful measurement resets the count and the site is back on the board with no edit. Automatically archived sites *keep being measured*, on the backoff's daily cadence, because a site that stops being measured can never stop failing. Hand-archived sites do not.
+
 **Not for sites that moved off Eleventy.** Those keep being measured and are reclassified into 11ty Emeritus on their own, by `requireGenerator` — archiving one would throw away the measurements that show the move. Archive a site whose domain has lapsed or is now parked.
 
 Listed here rather than removed from a category file because the community and starter lists are generated — a deletion there lasts until the next import. One entry covers every category the URL appears in.

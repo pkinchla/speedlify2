@@ -19,7 +19,7 @@ afterEach(() => {
 	while (tmp.length) fs.rmSync(tmp.pop(), { recursive: true, force: true });
 });
 
-function fixture({ sites = 1, points = 4, url = (i) => `https://site${i}.example/`, performance = (p) => 80 + p, axe = null, field = null, generator = () => null } = {}) {
+function fixture({ sites = 1, points = 4, url = (i) => `https://site${i}.example/`, performance = (p) => 80 + p, axe = null, field = null, generator = () => null, error = () => null, consecutiveFailures = 0 } = {}) {
 	const dir = fs.mkdtempSync(path.join(os.tmpdir(), "speedlify-report-"));
 	tmp.push(dir);
 
@@ -36,7 +36,8 @@ function fixture({ sites = 1, points = 4, url = (i) => `https://site${i}.example
 				completedRuns: 3,
 				requestedRuns: 3,
 				durationMs: 30000,
-				error: null,
+				error: error(p),
+				consecutiveFailures: error(p) ? consecutiveFailures : 0,
 				variance: { spread: 1 },
 				lab: {
 					requestedUrl: url(s),
@@ -896,5 +897,59 @@ describe("generator history", () => {
 		const r = await buildReport({ resultsDir: f.resultsDir, configFile: f.configFile });
 
 		assert.deepEqual(r.entries[0].generatorHistory, []);
+	});
+});
+
+describe("automatic archiving", () => {
+	/**
+	 * A site that has failed for long enough stops being ranked, without anyone
+	 * editing a list.
+	 *
+	 * Derived from the stored failure count rather than written back into
+	 * config/archived.json, which is what makes it reversible: a successful
+	 * measurement resets the count and the site is simply back. Writing to the
+	 * config would be a decision the data could no longer take back.
+	 */
+	const failing = (n) => ({ points: 1, error: () => "ECONNREFUSED", consecutiveFailures: n });
+
+	test("archives a site past the threshold", async () => {
+		const f = fixture(failing(14));
+		const r = await buildReport({ resultsDir: f.resultsDir, configFile: f.configFile });
+
+		assert.equal(r.archived.length, 1);
+		assert.equal(r.archived[0].reason, "failing");
+		assert.equal(r.archived[0].consecutiveFailures, 14);
+		assert.equal(r.entries.length, 0, "and out of the ranked set");
+	});
+
+	test("leaves a site one short of it alone", async () => {
+		const f = fixture(failing(13));
+		const r = await buildReport({ resultsDir: f.resultsDir, configFile: f.configFile });
+
+		assert.deepEqual(r.archived, []);
+		assert.equal(r.entries.length, 1);
+		assert.equal(r.entries[0].currentlyFailing, true, "still visibly failing, just not archived");
+	});
+
+	test("a site that recovers is not archived", async () => {
+		// The newest measurement succeeded, so the streak is zero however bad the
+		// run of failures before it was.
+		const f = fixture({ points: 2, error: (p) => (p === 0 ? "ECONNREFUSED" : null), consecutiveFailures: 99 });
+		const r = await buildReport({ resultsDir: f.resultsDir, configFile: f.configFile });
+
+		assert.deepEqual(r.archived, []);
+		assert.equal(r.entries.length, 1);
+	});
+
+	test("can be turned off with a zero threshold", async () => {
+		const f = fixture(failing(99));
+		fs.writeFileSync(
+			f.configFile,
+			fs.readFileSync(f.configFile, "utf8").replace("export default {", "export default { archiveAfterFailures: 0,"),
+		);
+		const r = await buildReport({ resultsDir: f.resultsDir, configFile: f.configFile });
+
+		assert.deepEqual(r.archived, []);
+		assert.equal(r.entries.length, 1);
 	});
 });
