@@ -226,7 +226,17 @@ eleventyComputed:
 	#}
 	<ul class="rest-list">
 		{% for entry in rest | shuffle %}
-		<li><a href="/site/{{ entry.slug }}/">{{ entry.displayUrl }}</a></li>
+		<li>
+			<a href="/site/{{ entry.slug }}/">{{ entry.displayUrl }}</a>
+			{#
+				The one thing worth saying here beyond the name: this row is not in
+				the table because the site is down, rather than because its scores
+				are middling. The title carries the error itself.
+			#}
+			{%- if entry.currentlyFailing %}
+			<i class="fa-solid fa-triangle-exclamation rest-error" title="{{ entry.lastError }}" width="12" height="12">Currently failing</i>
+			{%- endif %}
+		</li>
 		{% endfor %}
 	</ul>
 	{% endif %}

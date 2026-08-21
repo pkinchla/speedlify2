@@ -973,6 +973,16 @@ th.col-rings { text-align: left !important; }
 	column-gap: 1.5rem;
 	font-size: 0.86rem;
 }
+/* Small and red, sitting after the name rather than before it — the name is
+   what is being scanned, and the mark is a note on it. */
+.rest-error {
+	width: 12px;
+	height: 12px;
+	color: var(--poor);
+	vertical-align: baseline;
+	margin-left: 0.15rem;
+}
+
 .rest-list li {
 	break-inside: avoid;
 	padding: 0.1rem 0;
