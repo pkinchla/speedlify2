@@ -1,0 +1,221 @@
+{
+  "url": "https://podcast.doctrineofdiscovery.org/",
+  "name": "podcast.doctrineofdiscovery.org",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787323055344,
+  "date": "2026-08-21T14:37:35.344Z",
+  "runId": "2026-08-21T14-34-19-448Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 26463,
+  "error": null,
+  "variance": {
+    "min": 88,
+    "max": 96,
+    "spread": 8,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://podcast.doctrineofdiscovery.org/",
+    "finalUrl": "https://podcast.doctrineofdiscovery.org/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 95,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 97
+    },
+    "timings": {
+      "fcp": 1834,
+      "lcp": 2441,
+      "si": 1834,
+      "tbt": 55,
+      "tti": 4122,
+      "cls": 0.083,
+      "ttfb": 473,
+      "maxPotentialFid": 159,
+      "serverResponseTime": 13,
+      "networkRtt": 0.4,
+      "networkServerLatency": 48.1
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 15,
+      "resourceLoadDelay": 10.3,
+      "resourceLoadDuration": 18.4,
+      "elementRenderDelay": 65.8
+    },
+    "weight": {
+      "total": 373008,
+      "requests": 25,
+      "mainDocument": 8680,
+      "byType": {
+        "total": {
+          "bytes": 363209,
+          "requests": 24
+        },
+        "script": {
+          "bytes": 198453,
+          "requests": 3
+        },
+        "image": {
+          "bytes": 122992,
+          "requests": 13
+        },
+        "stylesheet": {
+          "bytes": 31270,
+          "requests": 4
+        },
+        "document": {
+          "bytes": 8680,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 1814,
+          "requests": 3
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 227588,
+          "requests": 5
+        }
+      },
+      "scripts": 3,
+      "stylesheets": 4,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 4,
+      "bytes": 227588,
+      "mainThreadMs": 35.2,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 162837,
+          "mainThreadMs": 26.3
+        },
+        {
+          "entity": "JSDelivr CDN",
+          "bytes": 48473,
+          "mainThreadMs": 4.8
+        },
+        {
+          "entity": "Cloudflare",
+          "bytes": 11451,
+          "mainThreadMs": 4.1
+        },
+        {
+          "entity": "Cloudflare CDN",
+          "bytes": 4827,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 640.8,
+      "byGroup": {
+        "scriptEvaluation": 230.5,
+        "other": 195.1,
+        "styleLayout": 102,
+        "scriptParseCompile": 51.3,
+        "parseHTML": 45,
+        "paintCompositeRender": 17
+      },
+      "bootupMs": 239.2,
+      "longTasks": 1,
+      "longestTaskMs": 159
+    },
+    "dom": {
+      "elements": 201,
+      "depth": 10,
+      "maxChildren": 10
+    },
+    "waste": {
+      "unusedJsBytes": 71869,
+      "unusedCssBytes": 22806,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 1707,
+      "renderBlockingCount": 3,
+      "poorlyCachedBytes": 4580.400000000001,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 20,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 20
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2472.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T14:37:44.463Z",
+      "runtimeMs": 6773.1
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2ea60f488455655-SJC",
+      "server": "cloudflare"
+    },
+    "violations": 1,
+    "passes": 73,
+    "incomplete": 0,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "meta-refresh",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Delayed refresh under 20 hours must not be used"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

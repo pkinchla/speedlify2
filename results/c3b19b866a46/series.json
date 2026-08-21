@@ -1,0 +1,3 @@
+{"version":1,"url":"https://research.cloudflare.com/","updated":"2026-08-21T14:45:51.018Z","points":[
+{"t":1787323329775,"error":"The \"start lh:runner:gather\" performance mark has not been set","fails":1,"runs":0,"reqRuns":3,"ms":221242}
+]}

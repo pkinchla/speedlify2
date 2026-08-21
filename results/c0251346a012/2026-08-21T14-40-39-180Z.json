@@ -1,0 +1,223 @@
+{
+  "url": "https://reeseschultz.github.io/11r",
+  "name": "reeseschultz.github.io",
+  "group": "11ty-starters",
+  "groupName": "Build Awesome Starters",
+  "timestamp": 1787323239180,
+  "date": "2026-08-21T14:40:39.180Z",
+  "runId": "2026-08-21T14-34-19-448Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 21602,
+  "error": null,
+  "variance": {
+    "min": 90,
+    "max": 92,
+    "spread": 2,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://reeseschultz.github.io/11r",
+    "finalUrl": "https://reeseschultz.github.io/11r/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 90,
+      "accessibility": 95,
+      "best-practices": 100,
+      "seo": 90,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 2923,
+      "lcp": 2923,
+      "si": 3066,
+      "tbt": 0,
+      "tti": 2923,
+      "cls": 0,
+      "ttfb": 687,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 88,
+      "networkRtt": 15,
+      "networkServerLatency": 87.2
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 190.4,
+      "elementRenderDelay": 1152.5
+    },
+    "weight": {
+      "total": 97469,
+      "requests": 12,
+      "mainDocument": 2485,
+      "byType": {
+        "total": {
+          "bytes": 95664,
+          "requests": 11
+        },
+        "font": {
+          "bytes": 79868,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 8335,
+          "requests": 3
+        },
+        "script": {
+          "bytes": 4359,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 2485,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 617,
+          "requests": 2
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 95664,
+          "requests": 11
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 3,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 3,
+      "bytes": 87369,
+      "mainThreadMs": 0.9,
+      "top": [
+        {
+          "entity": "Google Fonts",
+          "bytes": 82213,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Unpkg",
+          "bytes": 3641,
+          "mainThreadMs": 0.9
+        },
+        {
+          "entity": "JSDelivr CDN",
+          "bytes": 1515,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 171.2,
+      "byGroup": {
+        "other": 82.3,
+        "styleLayout": 57.8,
+        "scriptEvaluation": 15,
+        "parseHTML": 8.7,
+        "paintCompositeRender": 5.4,
+        "scriptParseCompile": 2
+      },
+      "bootupMs": 7.4,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 76,
+      "depth": 7,
+      "maxChildren": 7
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 2308,
+      "renderBlockingCount": 5,
+      "poorlyCachedBytes": 4760.25,
+      "poorlyCachedCount": 2
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 19,
+      "failingNodes": 10,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 10
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 837.2,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 5
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2476,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T14:40:40.460Z",
+      "runtimeMs": 7242.4
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "github",
+      "name": "GitHub Pages",
+      "icon": "Github",
+      "source": "x-github-request-id"
+    },
+    "headers": {
+      "server": "GitHub.com",
+      "via": "1.1 varnish",
+      "x-fastly-request-id": "82119691163998ef584f3e89fd724566ad281d28",
+      "x-github-request-id": "448C:BC28B:138E5:14E05:6A886368",
+      "x-served-by": "cache-sjc10050-SJC"
+    },
+    "violations": 12,
+    "passes": 170,
+    "incomplete": 0,
+    "violationRules": 2,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 10,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 2,
+        "help": "All page content should be contained by landmarks"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

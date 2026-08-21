@@ -1,0 +1,231 @@
+{
+  "url": "https://rootedregalia.com/",
+  "name": "rootedregalia.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787323681349,
+  "date": "2026-08-21T14:48:01.349Z",
+  "runId": "2026-08-21T14-34-19-448Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 28468,
+  "error": null,
+  "variance": {
+    "min": 54,
+    "max": 71,
+    "spread": 17,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://rootedregalia.com/",
+    "finalUrl": "https://rootedregalia.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 69,
+      "accessibility": 79,
+      "best-practices": 96,
+      "seo": 92,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 1763,
+      "lcp": 24157,
+      "si": 1763,
+      "tbt": 264,
+      "tti": 24157,
+      "cls": 0,
+      "ttfb": 502,
+      "maxPotentialFid": 251,
+      "serverResponseTime": 28,
+      "networkRtt": 0.2,
+      "networkServerLatency": 52.3
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 30,
+      "resourceLoadDelay": 13.1,
+      "resourceLoadDuration": 168.5,
+      "elementRenderDelay": 106.9
+    },
+    "weight": {
+      "total": 4104674,
+      "requests": 17,
+      "mainDocument": 38916,
+      "byType": {
+        "total": {
+          "bytes": 4104674,
+          "requests": 16
+        },
+        "image": {
+          "bytes": 3428973,
+          "requests": 6
+        },
+        "script": {
+          "bytes": 633119,
+          "requests": 5
+        },
+        "document": {
+          "bytes": 38916,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 2630,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 1036,
+          "requests": 3
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 608308,
+          "requests": 3
+        }
+      },
+      "scripts": 5,
+      "stylesheets": 1,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 3,
+      "bytes": 608308,
+      "mainThreadMs": 111.5,
+      "top": [
+        {
+          "entity": "Cloudflare CDN",
+          "bytes": 447809,
+          "mainThreadMs": 66.5
+        },
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 149087,
+          "mainThreadMs": 41.5
+        },
+        {
+          "entity": "Cloudflare",
+          "bytes": 11412,
+          "mainThreadMs": 3.5
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1015.6,
+      "byGroup": {
+        "other": 344,
+        "scriptEvaluation": 258.9,
+        "scriptParseCompile": 256.5,
+        "styleLayout": 89.8,
+        "parseHTML": 45.6,
+        "paintCompositeRender": 20.8
+      },
+      "bootupMs": 458.6,
+      "longTasks": 3,
+      "longestTaskMs": 251
+    },
+    "dom": {
+      "elements": 132,
+      "depth": 10,
+      "maxChildren": 12
+    },
+    "waste": {
+      "unusedJsBytes": 89738,
+      "unusedCssBytes": 34461,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 202,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 4891.203777777778,
+      "poorlyCachedCount": 2
+    },
+    "accessibility": {
+      "failingCount": 4,
+      "applicableCount": 17,
+      "failingNodes": 7,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 4
+        },
+        {
+          "id": "button-name",
+          "title": "Buttons do not have an accessible name",
+          "nodes": 1
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 24
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2474.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T14:48:12.963Z",
+      "runtimeMs": 6875.9
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2ea704dccbb0793-SJC",
+      "server": "cloudflare"
+    },
+    "violations": 1,
+    "passes": 69,
+    "incomplete": 0,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "meta-refresh",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Delayed refresh under 20 hours must not be used"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
