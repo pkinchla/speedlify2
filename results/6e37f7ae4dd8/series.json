@@ -1,0 +1,3 @@
+{"version":1,"url":"https://istanbul.js.org/","updated":"2026-08-21T01:15:34.771Z","points":[
+{"t":1787274908491,"performance":79,"accessibility":84,"best-practices":96,"seo":100,"lcp":4953,"cls":0.052,"tbt":94,"fcp":1691,"si":3408,"ttfb":759,"total":575593,"requests":12,"bytes":0,"mainThreadMs":0,"unusedJsBytes":66361,"unusedCssBytes":0,"mainThreadTotal":518.8,"longTasks":1,"elements":68,"failingCount":3,"failingNodes":10,"axeViolations":12,"axePasses":166,"bench":2489.5,"runs":3,"reqRuns":3,"ms":26280,"spread":19}
+]}

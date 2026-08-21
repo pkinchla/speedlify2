@@ -1,0 +1,230 @@
+{
+  "url": "https://jessicakeoshian.com/",
+  "name": "jessicakeoshian.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787275100631,
+  "date": "2026-08-21T01:18:20.631Z",
+  "runId": "2026-08-21T01-13-58-937Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 25422,
+  "error": null,
+  "variance": {
+    "min": 69,
+    "max": 72,
+    "spread": 3,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://jessicakeoshian.com/",
+    "finalUrl": "https://jesskeoshian.com/",
+    "redirect": {
+      "from": "https://jessicakeoshian.com/",
+      "to": "https://jesskeoshian.com/",
+      "chain": [
+        {
+          "url": "https://jessicakeoshian.com/",
+          "status": 301
+        },
+        {
+          "url": "https://jesskeoshian.com/",
+          "status": 200
+        }
+      ],
+      "statuses": [
+        301
+      ],
+      "change": "host",
+      "permanent": true,
+      "schemeUpgrade": false,
+      "hops": 1
+    },
+    "statusCode": "ok",
+    "scores": {
+      "performance": 72,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 92,
+      "agentic-browsing": 67
+    },
+    "timings": {
+      "fcp": 2441,
+      "lcp": 7702,
+      "si": 3042,
+      "tbt": 0,
+      "tti": 7702,
+      "cls": 0,
+      "ttfb": 474,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 101,
+      "networkRtt": 0.2,
+      "networkServerLatency": 23.8
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 108.1,
+      "elementRenderDelay": 1997.5
+    },
+    "weight": {
+      "total": 1145276,
+      "requests": 18,
+      "mainDocument": 7035,
+      "byType": {
+        "total": {
+          "bytes": 1145276,
+          "requests": 18
+        },
+        "image": {
+          "bytes": 935875,
+          "requests": 8
+        },
+        "font": {
+          "bytes": 185467,
+          "requests": 3
+        },
+        "script": {
+          "bytes": 13251,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 7035,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 2814,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 834,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 11882,
+          "requests": 2
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 1,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 1144844,
+      "mainThreadMs": 8.5,
+      "top": [
+        {
+          "entity": "jesskeoshian.com",
+          "bytes": 1133394,
+          "mainThreadMs": 3.9
+        },
+        {
+          "entity": "Cloudflare",
+          "bytes": 11450,
+          "mainThreadMs": 4.6
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1258.1,
+      "byGroup": {
+        "other": 1086.1,
+        "styleLayout": 83.5,
+        "scriptEvaluation": 55.6,
+        "paintCompositeRender": 18.4,
+        "parseHTML": 12.9,
+        "scriptParseCompile": 1.7
+      },
+      "bootupMs": 34.3,
+      "longTasks": 1,
+      "longestTaskMs": 866
+    },
+    "dom": {
+      "elements": 119,
+      "depth": 10,
+      "maxChildren": 7
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 174,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 4580,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 19,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 754.2,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 22
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2498,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T01:18:37.689Z",
+      "runtimeMs": 7490.4
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "3.0.0",
+      "source": "meta",
+      "raw": "Eleventy v3.0.0"
+    },
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e5ce39d88867af-SJC",
+      "server": "cloudflare"
+    },
+    "violations": 1,
+    "passes": 197,
+    "incomplete": 1,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Page should contain a level-one heading"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

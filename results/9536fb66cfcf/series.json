@@ -1,0 +1,3 @@
+{"version":1,"url":"https://jmsalazar.dev/","updated":"2026-08-21T01:20:27.052Z","points":[
+{"t":1787275203720,"performance":97,"accessibility":100,"best-practices":96,"seo":100,"lcp":2287,"cls":0.001,"tbt":0,"fcp":1675,"si":1675,"ttfb":460,"total":78476,"requests":9,"bytes":29089,"mainThreadMs":3.5,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":332.2,"longTasks":1,"elements":100,"failingCount":0,"failingNodes":0,"axeViolations":1,"axePasses":141,"bench":2493,"runs":3,"reqRuns":3,"ms":23332,"spread":0}
+]}
