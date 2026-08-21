@@ -1,0 +1,300 @@
+{
+  "url": "https://codeberg.page/",
+  "name": "Codeberg Pages",
+  "group": "hosts",
+  "groupName": "Web Hosts",
+  "timestamp": 1787347415624,
+  "date": "2026-08-21T21:23:35.624Z",
+  "runId": "2026-08-21T21-23-29-010Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 28617,
+  "error": null,
+  "variance": {
+    "min": 59,
+    "max": 68,
+    "spread": 9,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://codeberg.page/",
+    "finalUrl": "https://codeberg.page/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 59,
+      "accessibility": 76,
+      "best-practices": 100,
+      "seo": 91,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 7103,
+      "lcp": 8132,
+      "si": 7103,
+      "tbt": 0,
+      "tti": 8132,
+      "cls": 0,
+      "ttfb": 700,
+      "maxPotentialFid": 43,
+      "serverResponseTime": 99,
+      "networkRtt": 0.1,
+      "networkServerLatency": 334.9
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 101.1,
+      "elementRenderDelay": 1235.5
+    },
+    "weight": {
+      "total": 1180617,
+      "requests": 14,
+      "mainDocument": 6417,
+      "byType": {
+        "total": {
+          "bytes": 1174997,
+          "requests": 13
+        },
+        "stylesheet": {
+          "bytes": 505452,
+          "requests": 3
+        },
+        "font": {
+          "bytes": 495982,
+          "requests": 5
+        },
+        "script": {
+          "bytes": 159869,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 6417,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 5950,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 1327,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 1168580,
+          "requests": 12
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 3,
+      "fonts": 5
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 1174200,
+      "mainThreadMs": 6.2,
+      "top": [
+        {
+          "entity": "codeberg.org",
+          "bytes": 1174200,
+          "mainThreadMs": 6.2
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 319.8,
+      "byGroup": {
+        "other": 159.1,
+        "styleLayout": 79.8,
+        "parseHTML": 39.6,
+        "scriptEvaluation": 18.3,
+        "scriptParseCompile": 15.4,
+        "paintCompositeRender": 7.6
+      },
+      "bootupMs": 6.8,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 222,
+      "depth": 11,
+      "maxChildren": 24
+    },
+    "waste": {
+      "unusedJsBytes": 110284,
+      "unusedCssBytes": 393179,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 7189,
+      "renderBlockingCount": 3,
+      "poorlyCachedBytes": 1167253,
+      "poorlyCachedCount": 11
+    },
+    "accessibility": {
+      "failingCount": 3,
+      "applicableCount": 14,
+      "failingNodes": 5,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 3
+        },
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "nodes": 1
+        },
+        {
+          "id": "meta-viewport",
+          "title": "`[user-scalable=\"no\"]` is used in the `<meta name=\"viewport\">` element or the `[maximum-scale]` attribute is less than 5.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 5
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2485.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T21:23:56.119Z",
+      "runtimeMs": 7473.3
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-23",
+      "last": "2026-08-19"
+    },
+    "metrics": {
+      "inp": {
+        "p75": 74,
+        "rating": "good",
+        "distribution": {
+          "good": 97.1,
+          "needsImprovement": 2,
+          "poor": 0.9
+        }
+      },
+      "lcp": {
+        "p75": 2729,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 70.4,
+          "needsImprovement": 18.6,
+          "poor": 11.1
+        }
+      },
+      "rtt": {
+        "p75": 189,
+        "rating": null,
+        "distribution": {
+          "good": 38.2,
+          "needsImprovement": 47.9,
+          "poor": 13.9
+        }
+      },
+      "cls": {
+        "p75": 0.02,
+        "rating": "good",
+        "distribution": {
+          "good": 94.1,
+          "needsImprovement": 2.9,
+          "poor": 3
+        }
+      },
+      "ttfb": {
+        "p75": 875,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 68.3,
+          "needsImprovement": 26.6,
+          "poor": 5
+        }
+      },
+      "fcp": {
+        "p75": 2755,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 59.3,
+          "needsImprovement": 20.5,
+          "poor": 20.3
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "self-hosted",
+      "name": "Self-hosted",
+      "icon": null,
+      "detail": "git-pages",
+      "detailIcon": "Forgejo",
+      "source": "server"
+    },
+    "headers": {
+      "server": "git-pages (git-pages)",
+      "via": "1.1 Caddy"
+    },
+    "violations": 8,
+    "passes": 263,
+    "incomplete": 0,
+    "violationRules": 4,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 4,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 2,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "link-in-text-block",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Links must be distinguishable without relying on color"
+      },
+      {
+        "id": "meta-viewport",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Zooming and scaling must not be disabled"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
