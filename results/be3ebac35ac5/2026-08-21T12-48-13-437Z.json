@@ -1,0 +1,215 @@
+{
+  "url": "https://www.wearedeepspace.com/",
+  "name": "www.wearedeepspace.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787316493437,
+  "date": "2026-08-21T12:48:13.437Z",
+  "runId": "2026-08-21T12-43-43-122Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 368437,
+  "error": null,
+  "variance": {
+    "min": 40,
+    "max": 62,
+    "spread": 22,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.wearedeepspace.com/",
+    "finalUrl": "https://www.wearedeepspace.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 62,
+      "accessibility": 91,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 49
+    },
+    "timings": {
+      "fcp": 1859,
+      "lcp": 2287,
+      "si": 18864,
+      "tbt": 1238,
+      "tti": 57193,
+      "cls": 0.056,
+      "ttfb": 637,
+      "maxPotentialFid": 386,
+      "serverResponseTime": 36,
+      "networkRtt": 16.3,
+      "networkServerLatency": 42.3
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 38.1,
+      "elementRenderDelay": 163.3
+    },
+    "weight": {
+      "total": 5057078,
+      "requests": 58,
+      "mainDocument": 16684,
+      "byType": {
+        "total": {
+          "bytes": 5057078,
+          "requests": 58
+        },
+        "image": {
+          "bytes": 4067562,
+          "requests": 26
+        },
+        "script": {
+          "bytes": 578237,
+          "requests": 14
+        },
+        "font": {
+          "bytes": 272177,
+          "requests": 4
+        },
+        "stylesheet": {
+          "bytes": 91287,
+          "requests": 7
+        },
+        "document": {
+          "bytes": 47485,
+          "requests": 3
+        },
+        "other": {
+          "bytes": 330,
+          "requests": 4
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 777489,
+          "requests": 26
+        }
+      },
+      "scripts": 14,
+      "stylesheets": 7,
+      "fonts": 4
+    },
+    "thirdParty": {
+      "count": 8,
+      "bytes": 703954,
+      "mainThreadMs": 2060.2,
+      "top": [
+        {
+          "entity": "Google CDN",
+          "bytes": 320174,
+          "mainThreadMs": 171.1
+        },
+        {
+          "entity": "saassurf.com",
+          "bytes": 184520,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Cloudflare CDN",
+          "bytes": 128294,
+          "mainThreadMs": 23.5
+        },
+        {
+          "entity": "Google Fonts",
+          "bytes": 36320,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Unpkg",
+          "bytes": 17537,
+          "mainThreadMs": 2.4
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 178852.6,
+      "byGroup": {
+        "other": 149046.2,
+        "scriptEvaluation": 15107.4,
+        "styleLayout": 8305.9,
+        "paintCompositeRender": 5856.6,
+        "garbageCollection": 290.6,
+        "scriptParseCompile": 187.7,
+        "parseHTML": 58.3
+      },
+      "bootupMs": 10242.7,
+      "longTasks": 20,
+      "longestTaskMs": 386
+    },
+    "dom": {
+      "elements": 1062,
+      "depth": 13,
+      "maxChildren": 121
+    },
+    "waste": {
+      "unusedJsBytes": 320910,
+      "unusedCssBytes": 40040,
+      "legacyJsBytes": 5624,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 5738,
+      "renderBlockingMs": 2146,
+      "renderBlockingCount": 5,
+      "poorlyCachedBytes": 4486,
+      "poorlyCachedCount": 5
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 16,
+      "failingNodes": 4,
+      "failing": [
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 2
+        },
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "nodes": 2
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 0,
+      "bfCacheFailures": 1,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 23
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2413,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T12:49:30.372Z",
+      "runtimeMs": 83850.2
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": null,
+    "headers": {},
+    "violations": null,
+    "passes": null,
+    "incomplete": null,
+    "violationRules": null,
+    "version": null,
+    "top": [],
+    "error": "Navigation timeout of 120000 ms exceeded"
+  },
+  "consecutiveFailures": 0
+}

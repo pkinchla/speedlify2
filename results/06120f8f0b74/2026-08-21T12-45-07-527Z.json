@@ -1,0 +1,287 @@
+{
+  "url": "https://www.stjaerboldklub.dk/",
+  "name": "www.stjaerboldklub.dk",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787316307527,
+  "date": "2026-08-21T12:45:07.527Z",
+  "runId": "2026-08-21T12-43-43-122Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 53709,
+  "error": null,
+  "variance": {
+    "min": 46,
+    "max": 53,
+    "spread": 7,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.stjaerboldklub.dk/",
+    "finalUrl": "https://www.stjaerboldklub.dk/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 51,
+      "accessibility": 65,
+      "best-practices": 100,
+      "seo": 83,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 12416,
+      "lcp": 20877,
+      "si": 12416,
+      "tbt": 230,
+      "tti": 21209,
+      "cls": 0,
+      "ttfb": 724,
+      "maxPotentialFid": 242,
+      "serverResponseTime": 276,
+      "networkRtt": 0.6,
+      "networkServerLatency": 180.9
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 277.8,
+      "resourceLoadDelay": 13,
+      "resourceLoadDuration": 627,
+      "elementRenderDelay": 1616.3
+    },
+    "weight": {
+      "total": 3929465,
+      "requests": 104,
+      "mainDocument": 11146,
+      "byType": {
+        "total": {
+          "bytes": 3929465,
+          "requests": 98
+        },
+        "image": {
+          "bytes": 2078197,
+          "requests": 19
+        },
+        "script": {
+          "bytes": 785190,
+          "requests": 34
+        },
+        "font": {
+          "bytes": 773359,
+          "requests": 7
+        },
+        "stylesheet": {
+          "bytes": 146271,
+          "requests": 17
+        },
+        "other": {
+          "bytes": 102684,
+          "requests": 14
+        },
+        "document": {
+          "bytes": 43764,
+          "requests": 7
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 2771555,
+          "requests": 91
+        }
+      },
+      "scripts": 34,
+      "stylesheets": 17,
+      "fonts": 7
+    },
+    "thirdParty": {
+      "count": 6,
+      "bytes": 2465213,
+      "mainThreadMs": 89.4,
+      "top": [
+        {
+          "entity": "holdsport.dk",
+          "bytes": 1857696,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "JSDelivr CDN",
+          "bytes": 288794,
+          "mainThreadMs": 40.8
+        },
+        {
+          "entity": "FontAwesome CDN",
+          "bytes": 188607,
+          "mainThreadMs": 11
+        },
+        {
+          "entity": "Cloudflare CDN",
+          "bytes": 119590,
+          "mainThreadMs": 35.6
+        },
+        {
+          "entity": "Unpkg",
+          "bytes": 8699,
+          "mainThreadMs": 2
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1931.1,
+      "byGroup": {
+        "scriptEvaluation": 815.5,
+        "other": 403.2,
+        "styleLayout": 325.8,
+        "scriptParseCompile": 259.5,
+        "parseHTML": 107.2,
+        "paintCompositeRender": 19.9
+      },
+      "bootupMs": 948.6,
+      "longTasks": 4,
+      "longestTaskMs": 264
+    },
+    "dom": {
+      "elements": 480,
+      "depth": 19,
+      "maxChildren": 49
+    },
+    "waste": {
+      "unusedJsBytes": 270406,
+      "unusedCssBytes": 226439,
+      "legacyJsBytes": 16247,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 24614,
+      "renderBlockingCount": 25,
+      "poorlyCachedBytes": 222460.64297020488,
+      "poorlyCachedCount": 8
+    },
+    "accessibility": {
+      "failingCount": 7,
+      "applicableCount": 21,
+      "failingNodes": 15,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 7
+        },
+        {
+          "id": "image-alt",
+          "title": "Image elements do not have `[alt]` attributes",
+          "nodes": 2
+        },
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "nodes": 2
+        },
+        {
+          "id": "button-name",
+          "title": "Buttons do not have an accessible name",
+          "nodes": 1
+        },
+        {
+          "id": "frame-title",
+          "title": "`<frame>` or `<iframe>` elements do not have a title",
+          "nodes": 1
+        },
+        {
+          "id": "meta-viewport",
+          "title": "`[user-scalable=\"no\"]` is used in the `<meta name=\"viewport\">` element or the `[maximum-scale]` attribute is less than 5.",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 31
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2435.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T12:45:39.737Z",
+      "runtimeMs": 17523
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "self-hosted",
+      "name": "Self-hosted",
+      "icon": null,
+      "detail": "nginx",
+      "detailIcon": "Nginx",
+      "source": "server"
+    },
+    "headers": {
+      "server": "nginx"
+    },
+    "violations": 152,
+    "passes": 1981,
+    "incomplete": 9,
+    "violationRules": 6,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 127,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 19,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "image-alt",
+        "impact": "critical",
+        "nodes": 2,
+        "help": "Images must have alternative text"
+      },
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "nodes": 2,
+        "help": "Links must have discernible text"
+      },
+      {
+        "id": "frame-title",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Frames must have an accessible name"
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Heading levels should only increase by one"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

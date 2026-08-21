@@ -1,0 +1,231 @@
+{
+  "url": "https://zerozoo-a.github.io/",
+  "name": "zerozoo-a.github.io",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787316995526,
+  "date": "2026-08-21T12:56:35.526Z",
+  "runId": "2026-08-21T12-43-43-122Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 23539,
+  "error": null,
+  "variance": {
+    "min": 98,
+    "max": 98,
+    "spread": 0,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://zerozoo-a.github.io/",
+    "finalUrl": "https://zerozoo-a.github.io/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 98,
+      "accessibility": 92,
+      "best-practices": 100,
+      "seo": 92,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1214,
+      "lcp": 1214,
+      "si": 1214,
+      "tbt": 148,
+      "tti": 3823,
+      "cls": 0.042,
+      "ttfb": 614,
+      "maxPotentialFid": 119,
+      "serverResponseTime": 14,
+      "networkRtt": 0.1,
+      "networkServerLatency": 29.6
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 15.8,
+      "elementRenderDelay": 56.6
+    },
+    "weight": {
+      "total": 522771,
+      "requests": 9,
+      "mainDocument": 33573,
+      "byType": {
+        "total": {
+          "bytes": 522771,
+          "requests": 7
+        },
+        "script": {
+          "bytes": 486807,
+          "requests": 4
+        },
+        "document": {
+          "bytes": 33573,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 2391,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 522771,
+          "requests": 7
+        }
+      },
+      "scripts": 4,
+      "stylesheets": 0,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 465446,
+      "mainThreadMs": 99.7,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 465446,
+          "mainThreadMs": 99.7
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 659.1,
+      "byGroup": {
+        "scriptEvaluation": 322.7,
+        "scriptParseCompile": 127.1,
+        "other": 118,
+        "styleLayout": 61.6,
+        "parseHTML": 20.8,
+        "paintCompositeRender": 8.9
+      },
+      "bootupMs": 433.8,
+      "longTasks": 4,
+      "longestTaskMs": 119
+    },
+    "dom": {
+      "elements": 673,
+      "depth": 20,
+      "maxChildren": 36
+    },
+    "waste": {
+      "unusedJsBytes": 256923,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 300,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 19580.916666666664,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 24,
+      "failingNodes": 5,
+      "failing": [
+        {
+          "id": "list",
+          "title": "Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
+          "nodes": 3
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 2
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 16
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2441.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T12:56:50.948Z",
+      "runtimeMs": 6649.4
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "2.0.1",
+      "source": "meta",
+      "raw": "Eleventy v2.0.1"
+    },
+    "host": {
+      "id": "github",
+      "name": "GitHub Pages",
+      "icon": "Github",
+      "source": "x-github-request-id"
+    },
+    "headers": {
+      "server": "GitHub.com",
+      "via": "1.1 varnish",
+      "x-fastly-request-id": "3aa83094d3d328a5f0eeac2b0aa9dc9ee3faf656",
+      "x-github-request-id": "D10C:2965CF:E1195E:F05F66:6A884B04",
+      "x-served-by": "cache-dfw-kdfw8210054-DFW"
+    },
+    "violations": 6,
+    "passes": 285,
+    "incomplete": 0,
+    "violationRules": 3,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "list",
+        "impact": "serious",
+        "nodes": 3,
+        "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements"
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 2,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Page should contain a level-one heading"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

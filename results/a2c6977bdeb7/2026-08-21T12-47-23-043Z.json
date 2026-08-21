@@ -1,0 +1,224 @@
+{
+  "url": "https://www.tkackielodzkie.pl/",
+  "name": "www.tkackielodzkie.pl",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787316443043,
+  "date": "2026-08-21T12:47:23.043Z",
+  "runId": "2026-08-21T12-43-43-122Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 22105,
+  "error": null,
+  "variance": {
+    "min": 82,
+    "max": 100,
+    "spread": 18,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.tkackielodzkie.pl/",
+    "finalUrl": "https://www.tkackielodzkie.pl/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 83,
+      "accessibility": 89,
+      "best-practices": 96,
+      "seo": 82,
+      "agentic-browsing": 68
+    },
+    "timings": {
+      "fcp": 812,
+      "lcp": 1874,
+      "si": 1012,
+      "tbt": 0,
+      "tti": 1874,
+      "cls": 0.327,
+      "ttfb": 632,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 32,
+      "networkRtt": 0.1,
+      "networkServerLatency": 41.8
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 33.6,
+      "resourceLoadDelay": 9.3,
+      "resourceLoadDuration": 46.8,
+      "elementRenderDelay": 25.8
+    },
+    "weight": {
+      "total": 433033,
+      "requests": 11,
+      "mainDocument": 1494,
+      "byType": {
+        "total": {
+          "bytes": 433033,
+          "requests": 9
+        },
+        "font": {
+          "bytes": 356323,
+          "requests": 3
+        },
+        "image": {
+          "bytes": 67028,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 6316,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 1872,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 1494,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "other": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 55263,
+          "requests": 1
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 1,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 55263,
+      "mainThreadMs": 0,
+      "top": [
+        {
+          "entity": "Cloudinary",
+          "bytes": 55263,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 189.6,
+      "byGroup": {
+        "other": 106.6,
+        "styleLayout": 52.8,
+        "scriptEvaluation": 12.5,
+        "paintCompositeRender": 11.1,
+        "parseHTML": 5.1,
+        "scriptParseCompile": 1.5
+      },
+      "bootupMs": 8.1,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 75,
+      "depth": 7,
+      "maxChildren": 6
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 20,
+      "failingNodes": 5,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 4
+        },
+        {
+          "id": "image-alt",
+          "title": "Image elements do not have `[alt]` attributes",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 4
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2349,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T12:47:38.087Z",
+      "runtimeMs": 5955.3
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": null,
+      "source": "meta",
+      "raw": "Eleventy"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0J5ST3F5T993YAX83EYQBWQ"
+    },
+    "violations": 5,
+    "passes": 76,
+    "incomplete": 1,
+    "violationRules": 2,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 4,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "image-alt",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Images must have alternative text"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
