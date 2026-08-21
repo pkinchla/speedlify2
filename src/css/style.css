@@ -955,6 +955,34 @@ th.col-rings { text-align: left !important; }
 	   on one pair of edges. */
 	margin-inline: -0.7rem;
 }
+/* --------------------------------------------- the rows a big table leaves out */
+
+.rest-head { margin: 2rem 0 0.6rem; font-size: 1rem; font-weight: 650; }
+
+/*
+ * Multi-column rather than a grid: these are a plain alphabetical-ish list, and
+ * columns let the eye run down one before crossing to the next — which is how a
+ * long list of names is read. `break-inside` stops a URL being split across the
+ * column boundary.
+ */
+.rest-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	columns: 4 16rem;
+	column-gap: 1.5rem;
+	font-size: 0.86rem;
+}
+.rest-list li {
+	break-inside: avoid;
+	padding: 0.1rem 0;
+	/* A URL too long for its column is trimmed rather than overlapping the next
+	   one. The full name is on the page it links to. */
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
 /* ------------------------------------------------------- version histogram */
 
 /* One flex item holding both marks and the word, so space-between separates

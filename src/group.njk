@@ -66,8 +66,41 @@ eleventyComputed:
 </section>
 {% endif %}
 
+{#
+	Past this many entries the table stops being something you read and becomes
+	something you scroll past, so a large category shows only its clean rows and
+	names the rest underneath. The threshold is on entries rather than measured
+	sites: what makes the page unreadable is its length, and an unmeasured row
+	takes up just as much of it.
+
+	A presentation choice and nothing more — every stat on this page, the ranks
+	in the table and the numbers in the bar above are all computed over the whole
+	category. Nothing here filters what is counted.
+#}
+{% set MAX_FULL_ROWS = 500 %}
+{% set filtered = group.entries.length > MAX_FULL_ROWS %}
+
+{% set rows = [] %}
+{% set rest = [] %}
+{% for entry in group.entries %}
+	{% if not filtered or entry.allGreen %}
+		{% set rows = (rows.push(entry), rows) %}
+	{% else %}
+		{% set rest = (rest.push(entry), rest) %}
+	{% endif %}
+{% endfor %}
+
 <section class="panel">
 	<h2>Leaderboard</h2>
+	{% if filtered %}
+	<p class="muted small">
+		{{ group.entries.length | num }} sites is more table than anyone reads, so
+		this shows the {{ rows.length | num }} whose circles are all green — every
+		Lighthouse category at 90 or above, no axe violations, no Core Web Vital
+		failing. The other {{ rest.length | num }} are listed below. Ranks, and the
+		figures above, cover the whole category either way.
+	</p>
+	{% endif %}
 	<p class="muted small">
 		Ranked by the circles first — the four Lighthouse categories and axe: all green
 		beats any row carrying an amber, and an amber beats a red, whatever the points
@@ -92,7 +125,7 @@ eleventyComputed:
 			</tr>
 		</thead>
 		<tbody>
-		{% for entry in group.entries %}
+		{% for entry in rows %}
 			<tr{% if entry.currentlyFailing %} class="row-failing"{% endif %}>
 				<td class="col-rank">
 					{% if entry.groupRanks[group.id].overall %}
@@ -156,5 +189,28 @@ eleventyComputed:
 		</tbody>
 	</table>
 	</div>
+
+	{% if rest.length %}
+	{#
+		Names, not numbers. These rows were left out because the table was too long
+		to read, so repeating the columns here would undo the point — the link is
+		what is useful, and every figure is on the page it goes to.
+	#}
+	<h3 class="rest-head">
+		The other {{ rest.length | num }}
+		<span class="muted small">— at least one ring amber, red or unmeasured, in no particular order</span>
+	</h3>
+	{#
+		Shuffled, and reshuffled on every build. There is no ranking left to show
+		here — that is what the table above is for — so any fixed order would be
+		read as one anyway, and alphabetical would put the same sites at the top
+		of a 900-name list for ever.
+	#}
+	<ul class="rest-list">
+		{% for entry in rest | shuffle %}
+		<li><a href="/site/{{ entry.slug }}/">{{ entry.displayUrl }}</a></li>
+		{% endfor %}
+	</ul>
+	{% endif %}
 </section>
 {% endif %}

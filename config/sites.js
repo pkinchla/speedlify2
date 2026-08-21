@@ -17,7 +17,10 @@ import starters from "./11ty-starters.json" with { type: "json" };
  * only last until the next import. Excluding it at this level keeps that file
  * exactly as upstream sends it.
  */
-const EXTRA_STARTERS = ["https://11skeleton.vercel.app/"];
+const EXTRA_STARTERS = [
+	"https://11skeleton.vercel.app/",
+	"https://eleventy-test-bed-dollplayer2501.netlify.app/",
+];
 const STARTERS = [...new Set([...starters.urls, ...EXTRA_STARTERS])];
 
 /**

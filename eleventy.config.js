@@ -587,6 +587,28 @@ export default async function ($config) {
 		});
 	});
 
+	/**
+	 * A copy of an array in random order.
+	 *
+	 * Fisher–Yates, and on a copy: the arrays these come from are the report's
+	 * own, shared with every other template on the page, and shuffling one in
+	 * place would reorder a leaderboard somewhere else.
+	 *
+	 * Reshuffles on every build, which is the point where it is used — a list too
+	 * long to read has no fair order, and a fixed one would put the same sites at
+	 * the bottom of it for ever.
+	 */
+	$config.addFilter("shuffle", (list) => {
+		if (!Array.isArray(list)) return list;
+
+		const out = [...list];
+		for (let i = out.length - 1; i > 0; i--) {
+			const j = Math.floor(Math.random() * (i + 1));
+			[out[i], out[j]] = [out[j], out[i]];
+		}
+		return out;
+	});
+
 	/** 🥇🥈🥉 for the top three, nothing for everyone else. */
 	$config.addFilter("trophy", (rank) => {
 		if (rank === 1) return "🥇";
