@@ -1115,6 +1115,17 @@ th.col-rings { text-align: left !important; }
 	font-size: 0.95rem;
 	margin: 1.5rem 0 0.25rem;
 }
+/*
+ * The collapsed group.
+ *
+ * The summary keeps its own display — changing it stops the element being the
+ * disclosure widget, and the details renders permanently open — so the flex row
+ * lives on a span inside it, and the marker is styled rather than replaced.
+ */
+.redirects-pending > summary { cursor: pointer; }
+.redirects-pending > summary::marker { color: var(--text-muted); }
+.redirects-pending > summary .redirects-head { display: inline-flex; margin: 0; }
+
 .redirects-count {
 	font-size: 0.75rem;
 	font-variant-numeric: tabular-nums;

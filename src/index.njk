@@ -395,10 +395,28 @@ permalink: /index.html
 		{% endif %}
 	{% endfor %}
 
+	{#
+		"Waiting for more measurements" is the largest group and the least
+		interesting: nothing has happened to these yet, and the confirmation
+		process needs no attention to run. Collapsed so the groups that do mean
+		something — an unstable destination, a temporary redirect — are not buried
+		under a table of pending ones.
+	#}
+	{% set collapsed = reason == "not-enough-measurements" %}
+	{% if collapsed %}
+	<details class="redirects-pending">
+		{#
+			The flex row is a span inside the summary, not the summary itself: a
+			summary whose own display is changed stops being the disclosure widget,
+			and the details renders permanently open.
+		#}
+		<summary><span class="redirects-head">{{ reason | redirectReason }}<span class="redirects-count">{{ group.length | num }}</span></span></summary>
+	{% else %}
 	<h3 class="redirects-head">
 		{% if reason == "confirmed" %}Confirmed — history follows{% else %}{{ reason | redirectReason }}{% endif %}
 		<span class="redirects-count">{{ group.length | num }}</span>
 	</h3>
+	{% endif %}
 	<p class="muted small">
 		{% if reason == "confirmed" %}
 		The destination has been consistent and permanent across several runs, so
@@ -440,6 +458,7 @@ permalink: /index.html
 		</tbody>
 	</table>
 	</div>
+	{% if collapsed %}</details>{% endif %}
 	{% endfor %}
 </section>
 {% endif %}
