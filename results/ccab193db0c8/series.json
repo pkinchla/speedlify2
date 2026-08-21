@@ -1,0 +1,3 @@
+{"version":1,"url":"https://smth.uk/","updated":"2026-08-21T08:40:41.734Z","points":[
+{"t":1787301620212,"performance":100,"accessibility":100,"best-practices":100,"seo":100,"lcp":1672,"cls":0,"tbt":0,"fcp":941,"si":941,"ttfb":619,"total":36080,"requests":8,"bytes":4915,"mainThreadMs":2.5,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":194.2,"longTasks":0,"elements":172,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":116,"bench":2497,"runs":3,"reqRuns":3,"ms":21521,"spread":0}
+]}

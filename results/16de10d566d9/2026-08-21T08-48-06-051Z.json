@@ -1,0 +1,260 @@
+{
+  "url": "https://taksh.codes/",
+  "name": "taksh.codes",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787302086051,
+  "date": "2026-08-21T08:48:06.051Z",
+  "runId": "2026-08-21T08-39-07-793Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 35251,
+  "error": null,
+  "variance": {
+    "min": 78,
+    "max": 85,
+    "spread": 7,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://taksh.codes/",
+    "finalUrl": "https://taksh.codes/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 84,
+      "accessibility": 82,
+      "best-practices": 77,
+      "seo": 100,
+      "agentic-browsing": 48
+    },
+    "timings": {
+      "fcp": 1644,
+      "lcp": 1644,
+      "si": 4336,
+      "tbt": 468,
+      "tti": 6435,
+      "cls": 0.07,
+      "ttfb": 1128,
+      "maxPotentialFid": 195,
+      "serverResponseTime": 1084,
+      "networkRtt": 44.9,
+      "networkServerLatency": 254
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 1127.5,
+      "elementRenderDelay": 51.4
+    },
+    "weight": {
+      "total": 574235,
+      "requests": 35,
+      "mainDocument": 27793,
+      "byType": {
+        "total": {
+          "bytes": 571069,
+          "requests": 33
+        },
+        "script": {
+          "bytes": 279745,
+          "requests": 6
+        },
+        "image": {
+          "bytes": 85836,
+          "requests": 6
+        },
+        "font": {
+          "bytes": 66180,
+          "requests": 5
+        },
+        "media": {
+          "bytes": 64148,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 44270,
+          "requests": 7
+        },
+        "document": {
+          "bytes": 27793,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 3097,
+          "requests": 7
+        },
+        "third-party": {
+          "bytes": 283199,
+          "requests": 19
+        }
+      },
+      "scripts": 6,
+      "stylesheets": 7,
+      "fonts": 5
+    },
+    "thirdParty": {
+      "count": 6,
+      "bytes": 281919,
+      "mainThreadMs": 137.9,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 172131,
+          "mainThreadMs": 60.4
+        },
+        {
+          "entity": "Google Fonts",
+          "bytes": 67852,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Clarity",
+          "bytes": 28461,
+          "mainThreadMs": 74
+        },
+        {
+          "entity": "Cloudflare",
+          "bytes": 11577,
+          "mainThreadMs": 3.5
+        },
+        {
+          "entity": "instant.page",
+          "bytes": 1352,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 3878.8,
+      "byGroup": {
+        "scriptEvaluation": 1506.7,
+        "styleLayout": 1017.5,
+        "other": 986.8,
+        "paintCompositeRender": 183.7,
+        "scriptParseCompile": 93.6,
+        "parseHTML": 50.2,
+        "garbageCollection": 40.2
+      },
+      "bootupMs": 1529.1,
+      "longTasks": 6,
+      "longestTaskMs": 195
+    },
+    "dom": {
+      "elements": 657,
+      "depth": 21,
+      "maxChildren": 12
+    },
+    "waste": {
+      "unusedJsBytes": 301602,
+      "unusedCssBytes": 34383,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 14946.400000000001,
+      "poorlyCachedCount": 2
+    },
+    "accessibility": {
+      "failingCount": 3,
+      "applicableCount": 15,
+      "failingNodes": 10,
+      "failing": [
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "nodes": 7
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 2
+        },
+        {
+          "id": "button-name",
+          "title": "Buttons do not have an accessible name",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 27
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2473,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T08:48:07.330Z",
+      "runtimeMs": 12183.5
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "cf-ray": "a2e86147093ac277-LAX",
+      "server": "cloudflare",
+      "x-nf-request-id": "01M0HR423GNX0CMT8A33A5TR4F"
+    },
+    "violations": 10,
+    "passes": 162,
+    "incomplete": 0,
+    "violationRules": 5,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "nodes": 6,
+        "help": "Links must have discernible text"
+      },
+      {
+        "id": "button-name",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Buttons must have discernible text"
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "empty-heading",
+        "impact": "minor",
+        "nodes": 1,
+        "help": "Headings should not be empty"
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "All page content should be contained by landmarks"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

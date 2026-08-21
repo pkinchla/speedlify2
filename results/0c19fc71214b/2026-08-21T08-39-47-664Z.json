@@ -1,0 +1,242 @@
+{
+  "url": "https://sinuous.dev/",
+  "name": "sinuous.dev",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787301587664,
+  "date": "2026-08-21T08:39:47.664Z",
+  "runId": "2026-08-21T08-39-07-793Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 29547,
+  "error": null,
+  "variance": {
+    "min": 63,
+    "max": 66,
+    "spread": 3,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://sinuous.dev/",
+    "finalUrl": "https://sinuous.dev/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 66,
+      "accessibility": 88,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 3838,
+      "lcp": 13224,
+      "si": 3838,
+      "tbt": 0,
+      "tti": 13224,
+      "cls": 0.01,
+      "ttfb": 624,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 23,
+      "networkRtt": 0.3,
+      "networkServerLatency": 57.5
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 25.3,
+      "elementRenderDelay": 1335
+    },
+    "weight": {
+      "total": 2294503,
+      "requests": 16,
+      "mainDocument": 6465,
+      "byType": {
+        "total": {
+          "bytes": 2294503,
+          "requests": 16
+        },
+        "image": {
+          "bytes": 1936254,
+          "requests": 3
+        },
+        "script": {
+          "bytes": 278552,
+          "requests": 5
+        },
+        "font": {
+          "bytes": 70813,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 6465,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 1360,
+          "requests": 4
+        },
+        "stylesheet": {
+          "bytes": 1059,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 350755,
+          "requests": 10
+        }
+      },
+      "scripts": 5,
+      "stylesheets": 1,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 5,
+      "bytes": 350424,
+      "mainThreadMs": 86.6,
+      "top": [
+        {
+          "entity": "tailwindcss.com",
+          "bytes": 126764,
+          "mainThreadMs": 35.7
+        },
+        {
+          "entity": "Unpkg",
+          "bytes": 98114,
+          "mainThreadMs": 14.3
+        },
+        {
+          "entity": "Google Fonts",
+          "bytes": 71872,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Cloudflare CDN",
+          "bytes": 42223,
+          "mainThreadMs": 32.3
+        },
+        {
+          "entity": "Cloudflare",
+          "bytes": 11451,
+          "mainThreadMs": 4.3
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 2646.7,
+      "byGroup": {
+        "other": 1255.6,
+        "scriptEvaluation": 935.8,
+        "styleLayout": 260.1,
+        "scriptParseCompile": 78.7,
+        "paintCompositeRender": 60.6,
+        "garbageCollection": 43.9,
+        "parseHTML": 12
+      },
+      "bootupMs": 991.4,
+      "longTasks": 3,
+      "longestTaskMs": 316
+    },
+    "dom": {
+      "elements": 140,
+      "depth": 10,
+      "maxChildren": 7
+    },
+    "waste": {
+      "unusedJsBytes": 38957,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 5237,
+      "renderBlockingCount": 5,
+      "poorlyCachedBytes": 1940834.4,
+      "poorlyCachedCount": 4
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 12,
+      "failingNodes": 9,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 8
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 18
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2474,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T08:39:59.189Z",
+      "runtimeMs": 8358.5
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e854f9fb0ab81f-LAX",
+      "server": "cloudflare"
+    },
+    "violations": 27,
+    "passes": 153,
+    "incomplete": 6,
+    "violationRules": 3,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 18,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 8,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should have one main landmark"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
