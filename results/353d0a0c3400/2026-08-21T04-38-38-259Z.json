@@ -1,0 +1,190 @@
+{
+  "url": "https://mier.info/",
+  "name": "mier.info",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787287118259,
+  "date": "2026-08-21T04:38:38.259Z",
+  "runId": "2026-08-21T04-37-22-537Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 151307,
+  "error": null,
+  "variance": {
+    "min": 70,
+    "max": 99,
+    "spread": 29,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://mier.info/",
+    "finalUrl": "https://mier.info/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 73,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1629,
+      "lcp": 203200,
+      "si": 3324,
+      "tbt": 0,
+      "tti": 204658,
+      "cls": 0.008,
+      "ttfb": 507,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 23,
+      "networkRtt": 1,
+      "networkServerLatency": 57.1
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 25,
+      "resourceLoadDelay": 367.6,
+      "resourceLoadDuration": 430.3,
+      "elementRenderDelay": 1040.3
+    },
+    "weight": {
+      "total": 42675810,
+      "requests": 103,
+      "mainDocument": 7162,
+      "byType": {
+        "total": {
+          "bytes": 42675810,
+          "requests": 103
+        },
+        "media": {
+          "bytes": 35981825,
+          "requests": 3
+        },
+        "image": {
+          "bytes": 6551788,
+          "requests": 72
+        },
+        "font": {
+          "bytes": 82668,
+          "requests": 4
+        },
+        "script": {
+          "bytes": 27843,
+          "requests": 15
+        },
+        "other": {
+          "bytes": 18147,
+          "requests": 6
+        },
+        "document": {
+          "bytes": 7162,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 6377,
+          "requests": 2
+        },
+        "third-party": {
+          "bytes": 11487,
+          "requests": 3
+        }
+      },
+      "scripts": 15,
+      "stylesheets": 2,
+      "fonts": 4
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 11487,
+      "mainThreadMs": 7.6,
+      "top": [
+        {
+          "entity": "Cloudflare",
+          "bytes": 11451,
+          "mainThreadMs": 7.6
+        },
+        {
+          "entity": "cloudflareinsights.com",
+          "bytes": 36,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1874.7,
+      "byGroup": {
+        "other": 1605.5,
+        "styleLayout": 134.3,
+        "scriptEvaluation": 73.6,
+        "parseHTML": 43.3,
+        "paintCompositeRender": 10.3,
+        "scriptParseCompile": 7.7
+      },
+      "bootupMs": 31.9,
+      "longTasks": 1,
+      "longestTaskMs": 61
+    },
+    "dom": {
+      "elements": 477,
+      "depth": 12,
+      "maxChildren": 12
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 207,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 4580.400000000001,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 11,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 16
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2487.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T04:39:01.812Z",
+      "runtimeMs": 8159.2
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": null,
+    "headers": {},
+    "violations": null,
+    "passes": null,
+    "incomplete": null,
+    "violationRules": null,
+    "version": null,
+    "top": [],
+    "error": "Navigation timeout of 120000 ms exceeded"
+  },
+  "consecutiveFailures": 0
+}

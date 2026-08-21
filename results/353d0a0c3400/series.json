@@ -1,0 +1,3 @@
+{"version":1,"url":"https://mier.info/","updated":"2026-08-21T04:41:09.570Z","points":[
+{"t":1787287118259,"performance":73,"accessibility":100,"best-practices":100,"seo":100,"lcp":203200,"cls":0.008,"tbt":0,"fcp":1629,"si":3324,"ttfb":507,"total":42675810,"requests":103,"bytes":11487,"mainThreadMs":7.6,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":1874.7,"longTasks":1,"elements":477,"failingCount":0,"failingNodes":0,"bench":2487.5,"runs":3,"reqRuns":3,"ms":151307,"spread":29}
+]}

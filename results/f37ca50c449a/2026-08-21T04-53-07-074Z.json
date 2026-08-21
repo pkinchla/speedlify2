@@ -1,0 +1,201 @@
+{
+  "url": "https://neckam.nl/",
+  "name": "neckam.nl",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787287987074,
+  "date": "2026-08-21T04:53:07.074Z",
+  "runId": "2026-08-21T04-37-22-537Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 29624,
+  "error": null,
+  "variance": {
+    "min": 94,
+    "max": 97,
+    "spread": 3,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://neckam.nl/",
+    "finalUrl": "https://neckam.nl/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 96,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 67
+    },
+    "timings": {
+      "fcp": 1790,
+      "lcp": 2412,
+      "si": 2629,
+      "tbt": 0,
+      "tti": 2412,
+      "cls": 0,
+      "ttfb": 762,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 160,
+      "networkRtt": 0,
+      "networkServerLatency": 162.5
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 161.8,
+      "resourceLoadDelay": 10.1,
+      "resourceLoadDuration": 184.1,
+      "elementRenderDelay": 1001.6
+    },
+    "weight": {
+      "total": 668753,
+      "requests": 20,
+      "mainDocument": 7849,
+      "byType": {
+        "total": {
+          "bytes": 664367,
+          "requests": 19
+        },
+        "image": {
+          "bytes": 607500,
+          "requests": 11
+        },
+        "script": {
+          "bytes": 26305,
+          "requests": 2
+        },
+        "font": {
+          "bytes": 12400,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 8118,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 7849,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 2195,
+          "requests": 3
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 3779,
+          "requests": 2
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 1,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 3779,
+      "mainThreadMs": 0.6,
+      "top": [
+        {
+          "entity": "Plausible",
+          "bytes": 3779,
+          "mainThreadMs": 0.6
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 342.6,
+      "byGroup": {
+        "other": 212,
+        "styleLayout": 46.7,
+        "paintCompositeRender": 31.4,
+        "scriptEvaluation": 30.3,
+        "parseHTML": 12.5,
+        "scriptParseCompile": 9.7
+      },
+      "bootupMs": 19.9,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 247,
+      "depth": 10,
+      "maxChildren": 13
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 300,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 68337.34999999999,
+      "poorlyCachedCount": 15
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 19,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 9
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2501,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T04:53:17.912Z",
+      "runtimeMs": 8942.1
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "build-awesome",
+      "name": "Build Awesome",
+      "icon": "BuildAwesome",
+      "version": "4.0.0",
+      "source": "meta",
+      "raw": "Eleventy (Build Awesome) v4.0.0"
+    },
+    "host": {
+      "id": "self-hosted",
+      "name": "Self-hosted",
+      "icon": null,
+      "detail": "LiteSpeed",
+      "detailIcon": null,
+      "source": "server"
+    },
+    "headers": {
+      "server": "LiteSpeed"
+    },
+    "violations": 0,
+    "passes": 360,
+    "incomplete": 1,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

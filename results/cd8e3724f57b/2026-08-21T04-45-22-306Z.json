@@ -1,0 +1,224 @@
+{
+  "url": "https://mobile11ty.pages.dev/",
+  "name": "mobile11ty.pages.dev",
+  "group": "11ty-starters",
+  "groupName": "Build Awesome Starters",
+  "timestamp": 1787287522306,
+  "date": "2026-08-21T04:45:22.306Z",
+  "runId": "2026-08-21T04-37-22-537Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 22519,
+  "error": null,
+  "variance": {
+    "min": 89,
+    "max": 92,
+    "spread": 3,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://mobile11ty.pages.dev/",
+    "finalUrl": "https://mobile11ty.pages.dev/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 92,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 97
+    },
+    "timings": {
+      "fcp": 1680,
+      "lcp": 3042,
+      "si": 1680,
+      "tbt": 43,
+      "tti": 3042,
+      "cls": 0.081,
+      "ttfb": 469,
+      "maxPotentialFid": 92,
+      "serverResponseTime": 29,
+      "networkRtt": 0.1,
+      "networkServerLatency": 19.4
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 30.9,
+      "resourceLoadDelay": 184.4,
+      "resourceLoadDuration": 19.3,
+      "elementRenderDelay": 30.7
+    },
+    "weight": {
+      "total": 217793,
+      "requests": 47,
+      "mainDocument": 1998,
+      "byType": {
+        "total": {
+          "bytes": 217793,
+          "requests": 47
+        },
+        "image": {
+          "bytes": 101313,
+          "requests": 2
+        },
+        "script": {
+          "bytes": 97834,
+          "requests": 32
+        },
+        "other": {
+          "bytes": 9553,
+          "requests": 10
+        },
+        "stylesheet": {
+          "bytes": 7095,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 1998,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 117749,
+          "requests": 44
+        }
+      },
+      "scripts": 32,
+      "stylesheets": 2,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 117749,
+      "mainThreadMs": 35.6,
+      "top": [
+        {
+          "entity": "JSDelivr CDN",
+          "bytes": 113887,
+          "mainThreadMs": 35.6
+        },
+        {
+          "entity": "web.app",
+          "bytes": 3862,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 738.6,
+      "byGroup": {
+        "scriptEvaluation": 325.3,
+        "other": 287.7,
+        "styleLayout": 86,
+        "parseHTML": 17.3,
+        "paintCompositeRender": 14.3,
+        "garbageCollection": 5,
+        "scriptParseCompile": 3
+      },
+      "bootupMs": 311.3,
+      "longTasks": 2,
+      "longestTaskMs": 92
+    },
+    "dom": {
+      "elements": 343,
+      "depth": 15,
+      "maxChildren": 11
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 929,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 13523.000000000004,
+      "poorlyCachedCount": 34
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 21,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 21
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2469,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T04:45:30.771Z",
+      "runtimeMs": 6258.7
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e6fd68f9d1f9ed-SJC",
+      "server": "cloudflare"
+    },
+    "violations": 20,
+    "passes": 557,
+    "incomplete": 8,
+    "violationRules": 4,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "role-img-alt",
+        "impact": "serious",
+        "nodes": 17,
+        "help": "[role=\"img\"] and [role=\"image\"] elements must have alternative text"
+      },
+      {
+        "id": "landmark-banner-is-top-level",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Banner landmark should not be contained in another landmark"
+      },
+      {
+        "id": "landmark-no-duplicate-banner",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should not have more than one banner landmark"
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

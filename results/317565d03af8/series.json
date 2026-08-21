@@ -1,0 +1,3 @@
+{"version":1,"url":"https://montevil.org/","updated":"2026-08-21T04:47:16.078Z","points":[
+{"t":1787287605633,"performance":100,"accessibility":100,"best-practices":100,"seo":100,"lcp":1755,"cls":0,"tbt":0,"fcp":1095,"si":1095,"ttfb":603,"total":459083,"requests":22,"bytes":321410,"mainThreadMs":1.7,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":1284.3,"longTasks":2,"elements":1286,"failingCount":0,"failingNodes":0,"axeViolations":1,"axePasses":3400,"bench":2445,"runs":3,"reqRuns":3,"ms":30444,"spread":0}
+]}

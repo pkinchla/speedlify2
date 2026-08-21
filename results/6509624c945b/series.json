@@ -1,0 +1,3 @@
+{"version":1,"url":"https://mxb.dev/","updated":"2026-08-21T04:48:03.303Z","points":[
+{"t":1787287661757,"performance":99,"accessibility":100,"best-practices":100,"seo":100,"lcp":1978,"cls":0,"tbt":0,"fcp":904,"si":904,"ttfb":604,"total":214801,"requests":19,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":321.1,"longTasks":0,"elements":297,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":355,"field-lcp":1225,"field-cls":0,"field-fcp":1225,"field-ttfb":848,"bench":2472,"runs":3,"reqRuns":3,"ms":21545,"spread":4}
+]}
