@@ -1,0 +1,255 @@
+{
+  "url": "https://www.industrialempathy.com/",
+  "name": "www.industrialempathy.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787309117644,
+  "date": "2026-08-21T10:45:17.644Z",
+  "runId": "2026-08-21T10-29-00-777Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 20605,
+  "error": null,
+  "variance": {
+    "min": 100,
+    "max": 100,
+    "spread": 0,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.industrialempathy.com/",
+    "finalUrl": "https://www.industrialempathy.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 100,
+      "accessibility": 93,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 798,
+      "lcp": 1361,
+      "si": 798,
+      "tbt": 0,
+      "tti": 1361,
+      "cls": 0,
+      "ttfb": 611,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 3,
+      "networkRtt": 0,
+      "networkServerLatency": 10.6
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 4.3,
+      "elementRenderDelay": 58.1
+    },
+    "weight": {
+      "total": 131284,
+      "requests": 12,
+      "mainDocument": 6730,
+      "byType": {
+        "total": {
+          "bytes": 131284,
+          "requests": 12
+        },
+        "font": {
+          "bytes": 88144,
+          "requests": 2
+        },
+        "other": {
+          "bytes": 28067,
+          "requests": 6
+        },
+        "script": {
+          "bytes": 8343,
+          "requests": 3
+        },
+        "document": {
+          "bytes": 6730,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 0,
+          "requests": 0
+        }
+      },
+      "scripts": 3,
+      "stylesheets": 0,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 0,
+      "bytes": 0,
+      "mainThreadMs": 0,
+      "top": []
+    },
+    "mainThread": {
+      "total": 295.4,
+      "byGroup": {
+        "other": 143,
+        "scriptEvaluation": 96,
+        "styleLayout": 30.1,
+        "parseHTML": 11.9,
+        "paintCompositeRender": 10.4,
+        "scriptParseCompile": 4
+      },
+      "bootupMs": 80.5,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 228,
+      "depth": 8,
+      "maxChildren": 22
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 14,
+      "failingNodes": 11,
+      "failing": [
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "nodes": 11
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 9
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2991,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T10:45:25.354Z",
+      "runtimeMs": 5973.4
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "origin",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-23",
+      "last": "2026-08-19"
+    },
+    "metrics": {
+      "ttfb": {
+        "p75": 590,
+        "rating": "good",
+        "distribution": {
+          "good": 85.8,
+          "needsImprovement": 7.4,
+          "poor": 6.8
+        }
+      },
+      "fcp": {
+        "p75": 936,
+        "rating": "good",
+        "distribution": {
+          "good": 93,
+          "needsImprovement": 5,
+          "poor": 2
+        }
+      },
+      "lcp": {
+        "p75": 958,
+        "rating": "good",
+        "distribution": {
+          "good": 95.8,
+          "needsImprovement": 3.3,
+          "poor": 1
+        }
+      },
+      "rtt": {
+        "p75": 136,
+        "rating": null,
+        "distribution": {
+          "good": 43.4,
+          "needsImprovement": 48.6,
+          "poor": 8
+        }
+      },
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 98.9,
+          "needsImprovement": 1.1,
+          "poor": 0
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 2
+  },
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "vercel",
+      "name": "Vercel",
+      "icon": "Vercel",
+      "source": "x-vercel-id"
+    },
+    "headers": {
+      "server": "Vercel",
+      "x-vercel-id": "sfo1::cqx5b-1787309137131-dd599c2efcee"
+    },
+    "violations": 11,
+    "passes": 574,
+    "incomplete": 0,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "link-in-text-block",
+        "impact": "serious",
+        "nodes": 11,
+        "help": "Links must be distinguishable without relying on color"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

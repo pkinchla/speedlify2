@@ -1,0 +1,3 @@
+{"version":1,"url":"https://www.heroku.com/","updated":"2026-08-21T10:39:39.664Z","points":[
+{"t":1787308740921,"performance":76,"accessibility":93,"best-practices":58,"seo":92,"lcp":2936,"cls":0.017,"tbt":628,"fcp":2317,"si":2873,"ttfb":611,"total":2653351,"requests":106,"bytes":1057263,"mainThreadMs":283.2,"unusedJsBytes":736723,"unusedCssBytes":97698,"mainThreadTotal":4150.6,"longTasks":19,"elements":2312,"failingCount":2,"failingNodes":12,"axeViolations":4,"axePasses":1558,"field-lcp":1518,"field-inp":146,"field-cls":0,"field-fcp":1329,"field-ttfb":623,"bench":2917.5,"runs":3,"reqRuns":3,"ms":38742,"spread":2}
+]}
