@@ -23,18 +23,36 @@
 		says how many rather than letting the row imply they are all equally
 		grounded.
 	#}
+	{#
+		Both rows, because they disagree and the disagreement is the point: the
+		median says what the middle site scores, the mean is dragged by a long
+		tail. Across the whole fleet that is 98 against 90 for performance, and 2
+		against 13 for axe violations — one row alone would be a different claim.
+	#}
 	<div class="stat stat-rings">
-		<span class="rings">
-			{% for score in metrics.SCORES %}
-			{% scoreRing stats.medians.scores[score.key], "Median " + score.label %}
-			{% endfor %}
-			{% cwvRing stats.medians.cwvFailures, null, 37, "Median Core Web Vitals: " + (stats.medians.cwvFailures | default("no data")) + " failing, across " + (stats.medians.counts.cwv | num) + " sites with real-user data" %}
-			{% axeRing stats.medians.axe, 37, "Median axe violations: " + (stats.medians.axe | default("no data")) + ", across " + (stats.medians.counts.axe | num) + " sites" %}
-		</span>
-		<span class="stat-label">Median scores</span>
+		<div class="ring-row">
+			<span class="rings">
+				{% for score in metrics.SCORES %}
+				{% scoreRing stats.medians.scores[score.key], "Median " + score.label %}
+				{% endfor %}
+				{% cwvRing stats.medians.cwvFailures, null, 37, "Median Core Web Vitals: " + (stats.medians.cwvFailures | default("no data")) + " failing, across " + (stats.medians.counts.cwv | num) + " sites with real-user data" %}
+				{% axeRing stats.medians.axe, 37, "Median axe violations: " + (stats.medians.axe | default("no data")) + ", across " + (stats.medians.counts.axe | num) + " sites" %}
+			</span>
+			<span class="stat-label">Median scores</span>
+		</div>
+		<div class="ring-row">
+			<span class="rings">
+				{% for score in metrics.SCORES %}
+				{% scoreRing stats.means.scores[score.key], "Mean " + score.label %}
+				{% endfor %}
+				{% cwvRing stats.means.cwvFailures, null, 37, "Mean Core Web Vitals: " + (stats.means.cwvFailures | default("no data")) + " failing per site, rounded, across " + (stats.means.counts.cwv | num) + " sites with real-user data" %}
+				{% axeRing stats.means.axe, 37, "Mean axe violations: " + (stats.means.axe | default("no data")) + " per site, rounded, across " + (stats.means.counts.axe | num) + " sites" %}
+			</span>
+			<span class="stat-label">Mean scores</span>
+		</div>
 		<p class="stat-sub-note muted small">
-			each across {{ stats.medians.counts.scores | num }} sites,
-			<span title="Only sites CrUX has real-user data for can have a Core Web Vitals figure at all">Core Web Vitals across {{ stats.medians.counts.cwv | num }}</span>
+			Across {{ stats.medians.counts.scores | num }} sites.
+			<span title="Only sites CrUX has real-user data for can have a Core Web Vitals figure at all">Core Web Vitals across {{ stats.medians.counts.cwv | num }} sites.</span>
 		</p>
 	</div>
 	<div class="stat" title="Sites scoring 100 in all four Lighthouse categories, with no axe violations and no Core Web Vital failing for real users">

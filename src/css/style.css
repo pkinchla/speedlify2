@@ -159,8 +159,11 @@ pre code { font-size: inherit; }
  * rings carry their own.
  */
 .stat-rings { grid-column: span 2; }
-.stat-rings .rings { margin-bottom: 0.35rem; }
-.stat-sub-note { margin: 0.15rem 0 0; }
+/* Two labelled rows in one tile, so the median and the mean read as the same
+   six measurements taken two ways rather than as separate statistics. */
+.ring-row + .ring-row { margin-top: 0.55rem; }
+.ring-row .rings { margin-bottom: 0.2rem; }
+.stat-sub-note { margin: 0.4rem 0 0; }
 
 /* Below the point where two tile columns fit, spanning two is spanning the
    whole row anyway — but the rings still have to be allowed to wrap. */
