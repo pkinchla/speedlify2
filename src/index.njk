@@ -205,10 +205,20 @@ permalink: /index.html
 		#}
 		{% for entry in shown %}
 			<tr{% if entry.currentlyFailing %} class="row-failing"{% endif %}>
-				<td class="col-rank">
-					{% if entry.ranks.overall %}
-					<span class="trophy">{{ entry.ranks.overall | trophy }}</span><span class="hash">#</span>{{ entry.ranks.overall }}
-					{% else %}—{% endif %}
+				{#
+					Position in this table, not the global rank. The board is a filtered
+					view — perfect scores only, starters excluded — so the global rank
+					skips every row that was filtered out, and a list of 130 rows ending
+					at #158 reads as a bug rather than as a leaderboard.
+
+					`shown` preserves the global ordering, so counting rows says the same
+					thing about who beat whom while staying contiguous. The real rank is
+					on hover, and the trophies follow it rather than the row number: an
+					actual site's medal should not move because a starter above it was
+					hidden.
+				#}
+				<td class="col-rank" title="{% if entry.ranks.overall %}#{{ entry.ranks.overall }} of {{ sites.stats.measured | num }} overall{% else %}unranked{% endif %}">
+					<span class="trophy">{{ entry.ranks.overall | trophy }}</span><span class="hash">#</span>{{ loop.index }}
 				</td>
 				<td class="col-site">
 					<a class="site-link" href="/site/{{ entry.slug }}/">
