@@ -1,9 +1,9 @@
 ---
 pagination:
-  data: sites.entries
+  data: sites.compatRoutes
   size: 1
-  alias: entry
-permalink: "/api/{{ entry.shortHash }}.json"
+  alias: route
+permalink: "/api/{{ route.hash }}.json"
 eleventyExcludeFromCollections: true
 ---
 {#
@@ -21,15 +21,18 @@ eleventyExcludeFromCollections: true
 
   Sites with no successful measurement emit an empty object: the component
   reads through optional chaining, so it draws nothing instead of erroring.
+
+  Paginated over `compatRoutes` rather than over entries, because one site can
+  answer to more than one of these filenames: the hash is computed over the URL
+  as a config wrote it, and a trailing slash we normalize away changes it.
 -#}
-{% set lab = entry.latest.lab if entry.latest -%}
-{% if lab -%}
+{% if route.lighthouse -%}
 {
   "lighthouse": {
-    "performance": {{ lab.scores.performance | dump | safe }},
-    "accessibility": {{ lab.scores.accessibility | dump | safe }},
-    "bestPractices": {{ lab.scores["best-practices"] | dump | safe }},
-    "seo": {{ lab.scores.seo | dump | safe }}
+    "performance": {{ route.lighthouse.performance | dump | safe }},
+    "accessibility": {{ route.lighthouse.accessibility | dump | safe }},
+    "bestPractices": {{ route.lighthouse.bestPractices | dump | safe }},
+    "seo": {{ route.lighthouse.seo | dump | safe }}
   }
 }
 {%- else -%}

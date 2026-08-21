@@ -730,3 +730,55 @@ describe("perfect scores", () => {
 		assert.equal(r.stats.perfect, 0);
 	});
 });
+
+describe("legacy API filenames", () => {
+	/**
+	 * The compatibility route is a contract with pages we do not control: a
+	 * deployed <speedlify-score> hardcodes this hash in its markup. The original
+	 * project hashed the URL exactly as its config wrote it, with no
+	 * normalizing, so our normalized form is the wrong filename for any URL
+	 * whose path we changed — which is every deeper path with a trailing slash.
+	 *
+	 * Checked against the live original: https://www.zachleat.com/about/ is
+	 * served as 803cb8c3.json there, and 6bd2054c.json — our normalized hash —
+	 * is a 404 there.
+	 */
+	test("emits both forms for a path we normalize", async () => {
+		const f = fixture({ url: () => "https://www.zachleat.com/about/" });
+		const r = await buildReport({ resultsDir: f.resultsDir, configFile: f.configFile });
+		const entry = r.entries[0];
+
+		assert.equal(entry.url, "https://www.zachleat.com/about", "stored normalized");
+		assert.deepEqual(entry.compatHashes, ["6bd2054c", "803cb8c3"]);
+		assert.ok(
+			entry.compatHashes.includes("803cb8c3"),
+			"the filename the original serves must be one of ours",
+		);
+	});
+
+	test("emits one form for a root URL, which we do not normalize", async () => {
+		const f = fixture({ url: () => "https://www.zachleat.com/" });
+		const r = await buildReport({ resultsDir: f.resultsDir, configFile: f.configFile });
+
+		// The value published in the component's own README.
+		assert.deepEqual(r.entries[0].compatHashes, ["bbfa43c1"]);
+	});
+
+	test("every route gets a distinct filename", async () => {
+		const f = fixture({ sites: 3, url: (i) => `https://site${i}.example/deep/path/` });
+		const r = await buildReport({ resultsDir: f.resultsDir, configFile: f.configFile });
+
+		const names = r.compatRoutes.map((route) => route.hash);
+		assert.equal(names.length, 6, "two forms for each of three sites");
+		assert.equal(new Set(names).size, names.length, "a collision would overwrite a file");
+	});
+
+	test("carries the four scores the component renders", async () => {
+		const f = fixture({ url: () => "https://example.com/" });
+		const r = await buildReport({ resultsDir: f.resultsDir, configFile: f.configFile });
+
+		assert.deepEqual(Object.keys(r.compatRoutes[0].lighthouse).sort(), [
+			"accessibility", "bestPractices", "performance", "seo",
+		]);
+	});
+});
