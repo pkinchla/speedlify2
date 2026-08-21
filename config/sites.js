@@ -333,7 +333,7 @@ export default {
 			name: "11ty Emeritus",
 			enabled: true,
 			description:
-				"Sites that used to be built with Eleventy or Build Awesome and are not any more. Still measured — one that returns moves back to Built Awesome on its own.",
+				"Sites that were previously built with Eleventy or Build Awesome but have moved away (since April 2018).",
 
 			// Same deliberate pace as the community list it came from.
 			rateLimit: {
