@@ -165,8 +165,44 @@ eleventyComputed:
 <div class="empty"><p>No successful measurements recorded for this site yet.</p></div>
 {% else %}
 
-{% if entry.generator or entry.host %}
-<section class="panel">
+{#
+	Built from the same conditions the sections use, held in variables so each
+	one is written once. A hardcoded list would link to Field data on the nine
+	sites in ten that CrUX has never heard of — a table of contents whose entries
+	sometimes go nowhere is worse than none.
+
+	Only rendered for a measured site: the branch above is the whole page
+	otherwise.
+#}
+{% set hasStack = entry.generator or entry.host %}
+{% set hasCwv = entry.cwv %}
+{% set hasField = entry.latest.field %}
+{% set hasFieldHistory = entry.fieldHistory and entry.fieldHistory.series.length %}
+
+{% set toc = [] %}
+{% if hasStack %}{% set toc = (toc.push({ id: "stack", label: "Stack" }), toc) %}{% endif %}
+{% if hasCwv %}{% set toc = (toc.push({ id: "cwv", label: "Core Web Vitals" }), toc) %}{% endif %}
+{% set toc = (toc.push({ id: "scores", label: "Scores" }), toc) %}
+{% set toc = (toc.push({ id: "lab", label: "Lab metrics" }), toc) %}
+{% if hasField %}{% set toc = (toc.push({ id: "field", label: "Field data" }), toc) %}{% endif %}
+{% if hasFieldHistory %}{% set toc = (toc.push({ id: "field-history", label: "Field history" }), toc) %}{% endif %}
+{% set toc = (toc.push({ id: "weight", label: "Page weight" }), toc) %}
+{% set toc = (toc.push({ id: "health", label: "Page health" }), toc) %}
+{% set toc = (toc.push({ id: "hygiene", label: "Hygiene" }), toc) %}
+{% set toc = (toc.push({ id: "log", label: "Measurement log" }), toc) %}
+{% set toc = (toc.push({ id: "embed", label: "Embed" }), toc) %}
+
+<nav class="contents contents-sticky" aria-label="On this page">
+	<span class="contents-label">On this page</span>
+	<ul>
+		{% for item in toc %}
+		<li><a href="#{{ item.id }}">{{ item.label }}</a></li>
+		{% endfor %}
+	</ul>
+</nav>
+
+{% if hasStack %}
+<section class="panel" id="stack">
 	<h2>Stack</h2>
 	<p class="muted small">
 		Detected on the same page load as the accessibility pass — the generator
@@ -196,8 +232,8 @@ eleventyComputed:
 </section>
 {% endif %}
 
-{% if entry.cwv %}
-<section class="panel">
+{% if hasCwv %}
+<section class="panel" id="cwv">
 	<h2>
 		Core Web Vitals
 		{% if entry.cwv.source == "lab" %}
@@ -235,7 +271,7 @@ eleventyComputed:
 </section>
 {% endif %}
 
-<section class="panel">
+<section class="panel" id="scores">
 	<h2>Scores</h2>
 	<div class="cards">
 		{% for score in metrics.SCORES %}
@@ -299,7 +335,7 @@ eleventyComputed:
 </div>
 {% endmacro %}
 
-<section class="panel">
+<section class="panel" id="lab">
 	<h2>Lab metrics <span class="tag">Lighthouse, {{ entry.latest.formFactor }}</span></h2>
 	{{ trendtable(metrics.LAB_METRICS, entry) }}
 
@@ -322,8 +358,8 @@ eleventyComputed:
 	{% endif %}
 </section>
 
-{% if entry.latest.field %}
-<section class="panel">
+{% if hasField %}
+<section class="panel" id="field">
 	<h2>
 		Field data <span class="tag">Chrome UX Report, {{ entry.latest.field.scope }}-level</span>
 	</h2>
@@ -387,8 +423,8 @@ eleventyComputed:
 </section>
 {% endif %}
 
-{% if entry.fieldHistory and entry.fieldHistory.series.length %}
-<section class="panel">
+{% if hasFieldHistory %}
+<section class="panel" id="field-history">
 	<h2>Field history <span class="tag">{{ entry.fieldHistory.series.length }} weeks</span></h2>
 	<p class="muted small">
 		Weekly p75 from the CrUX History API, backfilled in a single request.
@@ -417,7 +453,7 @@ eleventyComputed:
 </section>
 {% endif %}
 
-<section class="panel">
+<section class="panel" id="weight">
 	<h2>Page weight</h2>
 	{{ trendtable(metrics.WEIGHT_METRICS, entry) }}
 
@@ -458,7 +494,7 @@ eleventyComputed:
 	{% endif %}
 </section>
 
-<section class="panel">
+<section class="panel" id="health">
 	<h2>Page health</h2>
 	{{ trendtable(metrics.HEALTH_METRICS, entry) }}
 
@@ -522,7 +558,7 @@ eleventyComputed:
 	{% endif %}
 </section>
 
-<section class="panel">
+<section class="panel" id="hygiene">
 	<h2>Hygiene</h2>
 	<p class="muted small">Changes rarely — which is exactly why a change is worth noticing.</p>
 	<div class="chips">
@@ -545,7 +581,7 @@ eleventyComputed:
 	</div>
 </section>
 
-<section class="panel">
+<section class="panel" id="log">
 	<h2>Measurement log</h2>
 	<p class="muted small">
 		Every stored run for this URL, newest first. Failures are kept as records —
@@ -613,7 +649,7 @@ eleventyComputed:
 
 {% endif %}
 
-<section class="panel">
+<section class="panel" id="embed">
 	<h2>Embed this score</h2>
 	<p class="muted small">
 		Live below, then the markup that produces it. Drop that on any page to show

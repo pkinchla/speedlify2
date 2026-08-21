@@ -575,7 +575,14 @@ th.col-trend { text-align: center !important; }
 
 /* ------------------------------------------------------------ score rings */
 
-.rings { display: inline-flex; gap: 0.3rem; align-items: center; }
+/*
+ * `vertical-align: middle` is not cosmetic here. An inline-flex box sits on the
+ * text baseline, so the line box reserves descender space underneath it — about
+ * 8px of nothing under a 37px row of rings, on tables that run to a thousand
+ * rows. Aligning to the middle takes the row from 64px to 57px and moves
+ * nothing visible.
+ */
+.rings { display: inline-flex; gap: 0.3rem; align-items: center; vertical-align: middle; }
 .col-rings { text-align: right !important; white-space: nowrap; }
 /* The heading sits over the rings, which start at the cell's left edge — the
    right-aligned numbers below are the total, not the column. */
@@ -737,11 +744,46 @@ th.col-rings { text-align: left !important; }
 	border-radius: var(--radius);
 	padding: 0.7rem 0.9rem;
 	margin: 0 0 2.5rem;
+	/* Matching .table-scroll, so a card lines up with the tables below it rather
+	   than sitting a few pixels inside their edges. */
+	margin-inline: -0.7rem;
 	display: flex;
 	align-items: baseline;
 	gap: 0.75rem;
 	flex-wrap: wrap;
 }
+/*
+ * Sticky on the site page, which is long enough that the sections are worth
+ * getting back to. A modifier rather than a change to `.contents`: the home
+ * page uses the same component for its category nav, where the page is a
+ * leaderboard and pinning a nav over it would just cost rows.
+ *
+ * `.contents` is already opaque — surface fill, full border — so content
+ * scrolling beneath it is covered without anything extra here.
+ */
+/*
+ * Only where it fits, in both directions.
+ *
+ * Width, because the nav wraps with the viewport — one row at 1280px, two at
+ * 900, four at 360 — and a pinned nav 163px tall takes a third of a phone
+ * screen to save a scroll. Below the breakpoint it stays in the flow, which is
+ * also what keeps the anchor offset below honest: no fixed offset can clear a
+ * nav whose height triples.
+ *
+ * Height, because width alone lets a landscape phone through: 800 wide and 390
+ * tall passes the width test, and a two-row nav would take a quarter of what
+ * there is to read. 34rem is above a phone on its side and below any laptop.
+ */
+@media (min-width: 40rem) and (min-height: 34rem) {
+	.contents-sticky {
+		position: sticky;
+		/* A gap above rather than flush: the nav reads as a card that has come to
+		   rest near the top, not as a bar welded to the viewport edge. */
+		top: 0.5em;
+		z-index: 5;
+	}
+}
+
 .contents-label {
 	font-size: 0.72rem;
 	text-transform: uppercase;
@@ -780,6 +822,20 @@ th.col-rings { text-align: left !important; }
  * behaviour at this length.
  */
 :target { scroll-margin-top: 1.5rem; }
+
+/*
+ * Clear of the sticky table of contents, not just of the viewport edge: an
+ * anchor that lands a heading underneath the nav that linked to it looks like
+ * the link did nothing.
+ *
+ * Paired with the sticky rule above and sized for the nav at its tallest within
+ * that range — two wrapped rows, 105px, plus the half-em it rests below the top
+ * — so a wide screen gets a generous gap rather than a narrow one getting none.
+ * Outside the query the nav scrolls away and the ordinary offset applies.
+ */
+@media (min-width: 40rem) and (min-height: 34rem) {
+	.detail :target { scroll-margin-top: 8rem; }
+}
 
 .see-all {
 	margin: 0.6rem 0 0;
