@@ -1,3 +1,4 @@
-{"version":1,"url":"https://joshuakin.de/","updated":"2026-08-21T01:22:00.961Z","points":[
-{"t":1787275304684,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":1,"runs":0,"reqRuns":3,"ms":16277}
+{"version":1,"url":"https://joshuakin.de/","updated":"2026-08-21T16:45:49.798Z","points":[
+{"t":1787275304684,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":1,"runs":0,"reqRuns":3,"ms":16277},
+{"t":1787330733079,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":2,"runs":0,"reqRuns":3,"ms":16718}
 ]}

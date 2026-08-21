@@ -1,0 +1,192 @@
+{
+  "url": "https://zapparov.dev/",
+  "name": "zapparov.dev",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787329967125,
+  "date": "2026-08-21T16:32:47.125Z",
+  "runId": "2026-08-21T16-32-38-454Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 107203,
+  "error": null,
+  "variance": {
+    "min": 96,
+    "max": 100,
+    "spread": 4,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://zapparov.dev/",
+    "finalUrl": "https://zapparov.dev/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 813,
+      "lcp": 813,
+      "si": 942,
+      "tbt": 0,
+      "tti": 813,
+      "cls": 0,
+      "ttfb": 620,
+      "maxPotentialFid": 24,
+      "serverResponseTime": 39,
+      "networkRtt": 0,
+      "networkServerLatency": 19.7
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 40.2,
+      "elementRenderDelay": 62.2
+    },
+    "weight": {
+      "total": 138863,
+      "requests": 17,
+      "mainDocument": 5367,
+      "byType": {
+        "total": {
+          "bytes": 130132,
+          "requests": 16
+        },
+        "image": {
+          "bytes": 100445,
+          "requests": 11
+        },
+        "script": {
+          "bytes": 18025,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 5482,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 5367,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 813,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 0,
+          "requests": 1
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 1,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 0,
+      "bytes": 0,
+      "mainThreadMs": 0,
+      "top": []
+    },
+    "mainThread": {
+      "total": 286.7,
+      "byGroup": {
+        "other": 133.3,
+        "styleLayout": 66.1,
+        "scriptEvaluation": 58,
+        "paintCompositeRender": 14.4,
+        "parseHTML": 8.6,
+        "scriptParseCompile": 6.4
+      },
+      "bootupMs": 19.2,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 151,
+      "depth": 9,
+      "maxChildren": 10
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 19,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 21
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2489,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T16:33:18.499Z",
+      "runtimeMs": 26589.8
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "3.1.5",
+      "source": "meta",
+      "raw": "Eleventy v3.1.5"
+    },
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2eb0b38cb5c68f3-IAD",
+      "server": "cloudflare"
+    },
+    "violations": 0,
+    "passes": 261,
+    "incomplete": 0,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

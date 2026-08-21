@@ -1,3 +1,4 @@
-{"version":1,"url":"https://gericci.me/","updated":"2026-08-20T23:33:25.155Z","points":[
-{"t":1787268792227,"error":"ERRORED_DOCUMENT_REQUEST: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 403)","fails":1,"runs":0,"reqRuns":3,"ms":12928}
+{"version":1,"url":"https://gericci.me/","updated":"2026-08-21T16:44:22.866Z","points":[
+{"t":1787268792227,"error":"ERRORED_DOCUMENT_REQUEST: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 403)","fails":1,"runs":0,"reqRuns":3,"ms":12928},
+{"t":1787330647988,"error":"ERRORED_DOCUMENT_REQUEST: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 403)","fails":2,"runs":0,"reqRuns":3,"ms":14878}
 ]}

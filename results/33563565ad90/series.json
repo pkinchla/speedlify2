@@ -1,3 +1,4 @@
-{"version":1,"url":"https://emergency-site.dev/","updated":"2026-08-20T22:28:17.493Z","points":[
-{"t":1787264884406,"error":"ERRORED_DOCUMENT_REQUEST: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 521)","fails":1,"runs":0,"reqRuns":3,"ms":13086}
+{"version":1,"url":"https://emergency-site.dev/","updated":"2026-08-21T16:44:04.989Z","points":[
+{"t":1787264884406,"error":"ERRORED_DOCUMENT_REQUEST: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 521)","fails":1,"runs":0,"reqRuns":3,"ms":13086},
+{"t":1787330634495,"error":"The \"start lh:gather:getBenchmarkIndex\" performance mark has not been set","fails":2,"runs":0,"reqRuns":3,"ms":10493}
 ]}

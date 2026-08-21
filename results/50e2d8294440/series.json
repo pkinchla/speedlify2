@@ -1,0 +1,3 @@
+{"version":1,"url":"https://zellwk.com/","updated":"2026-08-21T16:35:10.123Z","points":[
+{"t":1787330077331,"performance":56,"accessibility":99,"best-practices":96,"seo":100,"lcp":5119,"cls":0.14,"tbt":399,"fcp":4143,"si":4143,"ttfb":535,"total":1119649,"requests":32,"bytes":728462,"mainThreadMs":158.7,"unusedJsBytes":267026,"unusedCssBytes":0,"mainThreadTotal":1417,"longTasks":6,"elements":262,"failingCount":1,"failingNodes":8,"axeViolations":9,"axePasses":513,"field-lcp":2910,"field-cls":0,"field-fcp":2938,"field-ttfb":1598,"bench":2473.5,"runs":3,"reqRuns":3,"ms":32791,"spread":30}
+]}
