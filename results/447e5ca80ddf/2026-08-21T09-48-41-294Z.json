@@ -1,0 +1,213 @@
+{
+  "url": "https://valinor.earth/",
+  "name": "valinor.earth",
+  "group": "11ty-emeritus",
+  "groupName": "11ty Emeritus",
+  "timestamp": 1787305721294,
+  "date": "2026-08-21T09:48:41.294Z",
+  "runId": "2026-08-21T09-35-33-569Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 26784,
+  "error": null,
+  "variance": {
+    "min": 73,
+    "max": 78,
+    "spread": 5,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://valinor.earth/",
+    "finalUrl": "https://valinor.earth/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 78,
+      "accessibility": 96,
+      "best-practices": 100,
+      "seo": 92,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1523,
+      "lcp": 5646,
+      "si": 1523,
+      "tbt": 79,
+      "tti": 5684,
+      "cls": 0,
+      "ttfb": 460,
+      "maxPotentialFid": 129,
+      "serverResponseTime": 13,
+      "networkRtt": 0.1,
+      "networkServerLatency": 93.5
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 14.3,
+      "elementRenderDelay": 92.2
+    },
+    "weight": {
+      "total": 925120,
+      "requests": 15,
+      "mainDocument": 5623,
+      "byType": {
+        "total": {
+          "bytes": 921198,
+          "requests": 14
+        },
+        "image": {
+          "bytes": 786909,
+          "requests": 6
+        },
+        "script": {
+          "bytes": 123585,
+          "requests": 4
+        },
+        "document": {
+          "bytes": 5623,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 4346,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 735,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 123873,
+          "requests": 5
+        }
+      },
+      "scripts": 4,
+      "stylesheets": 1,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 123873,
+      "mainThreadMs": 50.6,
+      "top": [
+        {
+          "entity": "posthog.com",
+          "bytes": 112422,
+          "mainThreadMs": 47.7
+        },
+        {
+          "entity": "Cloudflare",
+          "bytes": 11451,
+          "mainThreadMs": 2.9
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 537.5,
+      "byGroup": {
+        "other": 218,
+        "scriptEvaluation": 216,
+        "styleLayout": 49.1,
+        "scriptParseCompile": 32.6,
+        "paintCompositeRender": 12.7,
+        "parseHTML": 9
+      },
+      "bootupMs": 222.8,
+      "longTasks": 2,
+      "longestTaskMs": 129
+    },
+    "dom": {
+      "elements": 128,
+      "depth": 13,
+      "maxChildren": 5
+    },
+    "waste": {
+      "unusedJsBytes": 71634,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 16786,
+      "duplicatedJsBytes": 1311,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 160,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 543144.5916666666,
+      "poorlyCachedCount": 9
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 23,
+      "failingNodes": 3,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 3
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 19
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2485,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T09:48:52.569Z",
+      "runtimeMs": 7118.8
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "github",
+      "name": "GitHub Pages",
+      "icon": "Github",
+      "source": "x-github-request-id"
+    },
+    "headers": {
+      "cf-ray": "a2e8b9ab085915ed-SJC",
+      "server": "cloudflare",
+      "via": "1.1 varnish",
+      "x-fastly-request-id": "950644c7a3200fd9e868499abc1b1eca16f56f78",
+      "x-github-request-id": "A524:FB84F:A2D0D:AD1F9:6A87F96F",
+      "x-served-by": "cache-sjc10082-SJC"
+    },
+    "violations": 3,
+    "passes": 245,
+    "incomplete": 5,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 3,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

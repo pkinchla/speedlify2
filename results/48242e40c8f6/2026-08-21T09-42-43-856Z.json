@@ -1,0 +1,218 @@
+{
+  "url": "https://treylabs.com/",
+  "name": "treylabs.com",
+  "group": "11ty-emeritus",
+  "groupName": "11ty Emeritus",
+  "timestamp": 1787305363856,
+  "date": "2026-08-21T09:42:43.856Z",
+  "runId": "2026-08-21T09-35-33-569Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 172874,
+  "error": null,
+  "variance": {
+    "min": 40,
+    "max": 47,
+    "spread": 7,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://treylabs.com/",
+    "finalUrl": "https://forsale.godaddy.com/forsale/treylabs.com?utm_source=TDFS_BINNS2&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-binns2_base&traffic_type=TDFS_BINNS2&traffic_id=binns2&",
+    "redirect": {
+      "from": "https://treylabs.com/",
+      "to": "https://forsale.godaddy.com/forsale/treylabs.com?utm_source=TDFS_BINNS2&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-binns2_base&traffic_type=TDFS_BINNS2&traffic_id=binns2&",
+      "chain": [
+        {
+          "url": "https://treylabs.com/",
+          "status": 200
+        },
+        {
+          "url": "https://treylabs.com/lander",
+          "status": 307
+        },
+        {
+          "url": "https://forsale.godaddy.com/forsale/treylabs.com?utm_source=TDFS_BINNS2&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-binns2_base&traffic_type=TDFS_BINNS2&traffic_id=binns2&",
+          "status": 200
+        }
+      ],
+      "statuses": [
+        200,
+        307
+      ],
+      "change": "host+path+query",
+      "permanent": false,
+      "schemeUpgrade": false,
+      "hops": 2
+    },
+    "statusCode": "ok",
+    "scores": {
+      "performance": 45,
+      "accessibility": 98,
+      "best-practices": 77,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 3288,
+      "lcp": 7071,
+      "si": 3618,
+      "tbt": 1180,
+      "tti": 14048,
+      "cls": 0,
+      "ttfb": 624,
+      "maxPotentialFid": 238,
+      "serverResponseTime": 230,
+      "networkRtt": 43.2,
+      "networkServerLatency": 134.7
+    },
+    "lcpBreakdown": null,
+    "weight": {
+      "total": 1664421,
+      "requests": 103,
+      "mainDocument": null,
+      "byType": {
+        "total": {
+          "bytes": 1664421,
+          "requests": 103
+        },
+        "script": {
+          "bytes": 1268593,
+          "requests": 48
+        },
+        "font": {
+          "bytes": 103948,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 82854,
+          "requests": 23
+        },
+        "image": {
+          "bytes": 76316,
+          "requests": 11
+        },
+        "document": {
+          "bytes": 68424,
+          "requests": 4
+        },
+        "stylesheet": {
+          "bytes": 64286,
+          "requests": 16
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 1664421,
+          "requests": 103
+        }
+      },
+      "scripts": null,
+      "stylesheets": null,
+      "fonts": null
+    },
+    "thirdParty": {
+      "count": 0,
+      "bytes": 0,
+      "mainThreadMs": 0,
+      "top": []
+    },
+    "mainThread": null,
+    "dom": {
+      "elements": null,
+      "depth": null,
+      "maxChildren": null
+    },
+    "waste": {
+      "unusedJsBytes": 341620,
+      "unusedCssBytes": 28959,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 2068,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 25,
+      "failingNodes": 2,
+      "failing": [
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 2
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": null,
+      "trustedTypes": 1,
+      "bfCache": 0,
+      "bfCacheFailures": 3,
+      "protocol": "http/1.1",
+      "legacyHttpRequests": 0,
+      "redirectMs": 1058.9,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 35
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2437.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T09:43:41.219Z",
+      "runtimeMs": 56148.7
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": null,
+      "name": "AkamaiGHost",
+      "icon": null,
+      "source": "server"
+    },
+    "headers": {
+      "server": "AkamaiGHost"
+    },
+    "violations": 5,
+    "passes": 9,
+    "incomplete": 0,
+    "violationRules": 3,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 3,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "html-has-lang",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "<html> element must have a lang attribute"
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should have one main landmark"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

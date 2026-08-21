@@ -1,0 +1,287 @@
+{
+  "url": "https://tonfotos.com/",
+  "name": "tonfotos.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787305042991,
+  "date": "2026-08-21T09:37:22.991Z",
+  "runId": "2026-08-21T09-35-33-569Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 34094,
+  "error": null,
+  "variance": {
+    "min": 84,
+    "max": 92,
+    "spread": 8,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://tonfotos.com/",
+    "finalUrl": "https://tonfotos.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 84,
+      "accessibility": 94,
+      "best-practices": 77,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1123,
+      "lcp": 4535,
+      "si": 1292,
+      "tbt": 59,
+      "tti": 4535,
+      "cls": 0.02,
+      "ttfb": 785,
+      "maxPotentialFid": 109,
+      "serverResponseTime": 186,
+      "networkRtt": 0,
+      "networkServerLatency": 212.8
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 187.6,
+      "elementRenderDelay": 774.7
+    },
+    "weight": {
+      "total": 1001966,
+      "requests": 46,
+      "mainDocument": 16150,
+      "byType": {
+        "total": {
+          "bytes": 1001966,
+          "requests": 46
+        },
+        "image": {
+          "bytes": 668938,
+          "requests": 39
+        },
+        "font": {
+          "bytes": 222182,
+          "requests": 3
+        },
+        "script": {
+          "bytes": 90067,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 16150,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 4629,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 91258,
+          "requests": 2
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 0,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 91258,
+      "mainThreadMs": 33.6,
+      "top": [
+        {
+          "entity": "Yandex Metrica",
+          "bytes": 91258,
+          "mainThreadMs": 33.6
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1046.2,
+      "byGroup": {
+        "other": 444.2,
+        "styleLayout": 180.4,
+        "scriptEvaluation": 175.7,
+        "paintCompositeRender": 165.3,
+        "parseHTML": 44.9,
+        "scriptParseCompile": 26.3,
+        "garbageCollection": 9.4
+      },
+      "bootupMs": 200.4,
+      "longTasks": 1,
+      "longestTaskMs": 109
+    },
+    "dom": {
+      "elements": 372,
+      "depth": 10,
+      "maxChildren": 19
+    },
+    "waste": {
+      "unusedJsBytes": 54345,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 72053.6,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 26,
+      "failingNodes": 28,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 27
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 14
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2496.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T09:37:46.216Z",
+      "runtimeMs": 9985.9
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-23",
+      "last": "2026-08-19"
+    },
+    "metrics": {
+      "rtt": {
+        "p75": 135,
+        "rating": null,
+        "distribution": {
+          "good": 36.8,
+          "needsImprovement": 54.6,
+          "poor": 8.6
+        }
+      },
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 98.8,
+          "needsImprovement": 1.2,
+          "poor": 0
+        }
+      },
+      "ttfb": {
+        "p75": 777,
+        "rating": "good",
+        "distribution": {
+          "good": 76.2,
+          "needsImprovement": 20.1,
+          "poor": 3.7
+        }
+      },
+      "fcp": {
+        "p75": 1093,
+        "rating": "good",
+        "distribution": {
+          "good": 87.5,
+          "needsImprovement": 6.8,
+          "poor": 5.7
+        }
+      },
+      "lcp": {
+        "p75": 1477,
+        "rating": "good",
+        "distribution": {
+          "good": 93.9,
+          "needsImprovement": 3.6,
+          "poor": 2.5
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 2
+  },
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": null,
+      "source": "meta",
+      "raw": "Eleventy"
+    },
+    "host": {
+      "id": "self-hosted",
+      "name": "Self-hosted",
+      "icon": null,
+      "detail": "nginx",
+      "detailIcon": "Nginx",
+      "source": "server"
+    },
+    "headers": {
+      "server": "nginx"
+    },
+    "violations": 47,
+    "passes": 834,
+    "incomplete": 3,
+    "violationRules": 3,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 28,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 17,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 2,
+        "help": "Document should have one main landmark"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

@@ -1,0 +1,3 @@
+{"version":1,"url":"https://tionosulis.github.io/","updated":"2026-08-21T09:36:31.964Z","points":[
+{"t":1787304970815,"performance":100,"accessibility":100,"best-practices":100,"seo":100,"lcp":1201,"cls":0,"tbt":0,"fcp":802,"si":802,"ttfb":601,"total":73653,"requests":6,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":191.1,"longTasks":0,"elements":86,"failingCount":1,"failingNodes":2,"axeViolations":0,"axePasses":162,"bench":2495.5,"runs":3,"reqRuns":3,"ms":21149,"spread":0}
+]}

@@ -1,0 +1,3 @@
+{"version":1,"url":"https://tracker.greenweb.org/","updated":"2026-08-21T09:41:50.279Z","points":[
+{"t":1787305289178,"performance":97,"accessibility":93,"best-practices":100,"seo":92,"lcp":2448,"cls":0,"tbt":0,"fcp":1523,"si":1523,"ttfb":464,"total":25267,"requests":10,"bytes":15210,"mainThreadMs":6.3,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":184.7,"longTasks":0,"elements":133,"failingCount":1,"failingNodes":3,"axeViolations":5,"axePasses":211,"bench":2500,"runs":3,"reqRuns":3,"ms":21100,"spread":15}
+]}

@@ -1,0 +1,3 @@
+{"version":1,"url":"https://turkufrontend.fi/","updated":"2026-08-21T09:47:47.934Z","points":[
+{"t":1787305642309,"performance":74,"accessibility":93,"best-practices":100,"seo":100,"lcp":11404,"cls":0.002,"tbt":0,"fcp":1817,"si":1817,"ttfb":604,"total":2867450,"requests":58,"bytes":62538,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":588.8,"longTasks":2,"elements":242,"failingCount":1,"failingNodes":1,"axeViolations":8,"axePasses":582,"bench":2438.5,"runs":3,"reqRuns":3,"ms":25625,"spread":1}
+]}
