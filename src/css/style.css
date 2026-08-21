@@ -152,6 +152,21 @@ pre code { font-size: inherit; }
 	padding: 0.9rem 1rem;
 }
 .stat-value { display: block; font-size: 1.5rem; font-weight: 650; letter-spacing: -0.02em; }
+
+/*
+ * The rings tile is six 37px marks rather than one number, so it needs more
+ * width than the other tiles and does not want their vertical rhythm — the
+ * rings carry their own.
+ */
+.stat-rings { grid-column: span 2; }
+.stat-rings .rings { margin-bottom: 0.35rem; }
+.stat-sub-note { margin: 0.15rem 0 0; }
+
+/* Below the point where two tile columns fit, spanning two is spanning the
+   whole row anyway — but the rings still have to be allowed to wrap. */
+@media (max-width: 32rem) {
+	.stat-rings .rings { flex-wrap: wrap; row-gap: 0.3rem; }
+}
 .stat-label { display: block; font-size: 0.78rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; }
 /* A second figure under a stat: the share of that number attributable to one
    thing, with the marks standing in for naming it twice. */

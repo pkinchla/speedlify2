@@ -1,0 +1,75 @@
+{#
+	The stat bar, shared by the home page and every category page.
+
+	A macro rather than a copy in each: the two show the same figures over
+	different sets, and a second copy is how one of them ends up a release
+	behind. `stats` is whatever set is being summarised — `sites.stats` for the
+	whole fleet, `group.stats` for one category.
+
+	Everything here degrades on its own: the weight sparkline only exists for the
+	whole fleet, the Eleventy share only appears when there is one, and the Core
+	Web Vitals tile only appears where CrUX has sampled anything. So a category
+	page shows fewer tiles than the home page without the caller deciding which.
+#}
+{% macro statbar(stats, metrics) %}
+<section class="statbar">
+	{#
+		Six medians, each computed on its own column — so this is a summary of the
+		fleet rather than a portrait of any one site, and no site necessarily has
+		this exact row.
+
+		The Core Web Vitals ring rests on far fewer sites than the other five,
+		since most of this corpus is too small for CrUX to sample. Its own tooltip
+		says how many rather than letting the row imply they are all equally
+		grounded.
+	#}
+	<div class="stat stat-rings">
+		<span class="rings">
+			{% for score in metrics.SCORES %}
+			{% scoreRing stats.medians.scores[score.key], "Median " + score.label %}
+			{% endfor %}
+			{% cwvRing stats.medians.cwvFailures, null, 37, "Median Core Web Vitals: " + (stats.medians.cwvFailures | default("no data")) + " failing, across " + (stats.medians.counts.cwv | num) + " sites with real-user data" %}
+			{% axeRing stats.medians.axe, 37, "Median axe violations: " + (stats.medians.axe | default("no data")) + ", across " + (stats.medians.counts.axe | num) + " sites" %}
+		</span>
+		<span class="stat-label">Median scores</span>
+		<p class="stat-sub-note muted small">
+			each across {{ stats.medians.counts.scores | num }} sites,
+			<span title="Only sites CrUX has real-user data for can have a Core Web Vitals figure at all">Core Web Vitals across {{ stats.medians.counts.cwv | num }}</span>
+		</p>
+	</div>
+	<div class="stat" title="Sites scoring 100 in all four Lighthouse categories, with no axe violations and no Core Web Vital failing for real users">
+		<span class="stat-value">{{ stats.perfect }}<span class="stat-suffix">/{{ stats.measured }}</span></span>
+		<span class="stat-label">Perfect {{ stats.perfect | plural("score") }}</span>
+		{% if stats.perfectEleventy %}
+		<p class="stat-sub" title="{{ stats.perfectEleventy }} of the {{ stats.perfect }} perfect scores are built with Eleventy or Build Awesome, counting sites listed in the community repo that emit no generator tag">
+			{{ stats.perfectEleventy | num }}
+			{% for mark in stats.perfectEleventyMarks %}{% stackIcon mark %}{% endfor %}
+			<span class="stat-sub-pct">({{ (stats.perfectEleventy / stats.perfect * 100) | round }}%)</span>
+		</p>
+		{% endif %}
+	</div>
+	<div class="stat">
+		<span class="stat-value">{{ stats.avgWeight | bytes }}</span>
+		<span class="stat-label">Avg page weight</span>
+		{#
+			Absent until the report has enough days to be worth drawing — see
+			MIN_WEIGHT_HISTORY_DAYS in lib/report.js.
+		#}
+		{% if stats.weightHistory.length %}
+		{% set weightTrend = { values: [] } %}
+		{% for point in stats.weightHistory %}
+			{% set weightTrend = (weightTrend.values.push(point.avgWeight), weightTrend) %}
+		{% endfor %}
+		<span class="stat-spark" title="Daily average across every site measured that day, {{ stats.weightHistory[0].date }} to {{ stats.weightHistory[stats.weightHistory.length - 1].date }}">
+			{% sparkline weightTrend, { width: 150, height: 24 } %}
+		</span>
+		{% endif %}
+	</div>
+	{% if stats.cwvAssessed %}
+	<div class="stat">
+		<span class="stat-value">{{ stats.cwvPassing }}<span class="stat-suffix">/{{ stats.cwvAssessed }}</span></span>
+		<span class="stat-label">Passing Core Web Vitals</span>
+	</div>
+	{% endif %}
+</section>
+{% endmacro %}

@@ -3,46 +3,9 @@ layout: base.njk
 permalink: /index.html
 ---
 
-<section class="statbar">
-	<div class="stat" title="Mean of the four-category total, which is what the leaderboard ranks by">
-		<span class="stat-value">{{ sites.stats.avgTotal if sites.stats.avgTotal else "—" }}<span class="stat-suffix">/400</span></span>
-		<span class="stat-label">Avg Lighthouse total</span>
-	</div>
-	<div class="stat" title="Sites scoring 100 in all four Lighthouse categories, with no axe violations and no Core Web Vital failing for real users">
-		<span class="stat-value">{{ sites.stats.perfect }}<span class="stat-suffix">/{{ sites.stats.measured }}</span></span>
-		<span class="stat-label">Perfect {{ sites.stats.perfect | plural("score") }}</span>
-		{% if sites.stats.perfectEleventy %}
-		<p class="stat-sub" title="{{ sites.stats.perfectEleventy }} of the {{ sites.stats.perfect }} perfect scores are built with Eleventy or Build Awesome, counting sites listed in the community repo that emit no generator tag">
-			{{ sites.stats.perfectEleventy | num }}
-			{% for mark in sites.stats.perfectEleventyMarks %}{% stackIcon mark %}{% endfor %}
-			<span class="stat-sub-pct">({{ (sites.stats.perfectEleventy / sites.stats.perfect * 100) | round }}%)</span>
-		</p>
-		{% endif %}
-	</div>
-	<div class="stat">
-		<span class="stat-value">{{ sites.stats.avgWeight | bytes }}</span>
-		<span class="stat-label">Avg page weight</span>
-		{#
-			Absent until the report has enough days to be worth drawing — see
-			MIN_WEIGHT_HISTORY_DAYS in lib/report.js.
-		#}
-		{% if sites.stats.weightHistory.length %}
-		{% set weightTrend = { values: [] } %}
-		{% for point in sites.stats.weightHistory %}
-			{% set weightTrend = (weightTrend.values.push(point.avgWeight), weightTrend) %}
-		{% endfor %}
-		<span class="stat-spark" title="Daily average across every site measured that day, {{ sites.stats.weightHistory[0].date }} to {{ sites.stats.weightHistory[sites.stats.weightHistory.length - 1].date }}">
-			{% sparkline weightTrend, { width: 150, height: 24 } %}
-		</span>
-		{% endif %}
-	</div>
-	{% if sites.cwvAvailable %}
-	<div class="stat">
-		<span class="stat-value">{{ sites.stats.cwvPassing }}<span class="stat-suffix">/{{ sites.stats.cwvAssessed }}</span></span>
-		<span class="stat-label">Passing Core Web Vitals</span>
-	</div>
-	{% endif %}
-</section>
+{% from "statbar.njk" import statbar %}
+
+{{ statbar(sites.stats, metrics) }}
 
 {% if sites.coverage.measured %}
 <p class="coverage">

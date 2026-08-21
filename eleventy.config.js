@@ -527,13 +527,15 @@ export default async function ($config) {
 	 * ranks on points — a local copy of the thresholds here is how a row ends up
 	 * ranked above one it visibly ties with.
 	 */
-	$config.addShortcode("axeRing", function (axe, size = 37) {
-		const value = axe && !axe.error ? axe.violations : null;
+	$config.addShortcode("axeRing", function (axe, size = 37, label = null) {
+		// A number where the caller has one already — the median tile passes a
+		// figure rather than a site's axe record.
+		const value = typeof axe === "number" ? axe : axe && !axe.error ? axe.violations : null;
 		if (typeof value !== "number") {
-			return ring({ band: "none", text: "–", sublabel: "AXE", label: "Axe: did not run", pct: null, size });
+			return ring({ band: "none", text: "–", sublabel: "AXE", label: label ?? "Axe: did not run", pct: null, size });
 		}
 
-		const rules = axe.violationRules;
+		const rules = typeof axe === "number" ? null : axe.violationRules;
 		return ring({
 			band: axeBand(value),
 			text: shortCount(value),
@@ -542,8 +544,9 @@ export default async function ($config) {
 			// this scale where 0 would be the bad end of the four before it.
 			sublabel: "AXE",
 			label:
+				label ??
 				`Axe: ${value} violating node${value === 1 ? "" : "s"}` +
-				(typeof rules === "number" ? ` across ${rules} rule${rules === 1 ? "" : "s"}` : ""),
+					(typeof rules === "number" ? ` across ${rules} rule${rules === 1 ? "" : "s"}` : ""),
 			pct: 1,
 			size,
 		});
@@ -556,13 +559,13 @@ export default async function ($config) {
 	 * is three separate metrics, and one of them failing is the whole answer as
 	 * far as the ranking is concerned. How many, and which, is in the label.
 	 */
-	$config.addShortcode("cwvRing", function (failures, assessed, size = 37) {
+	$config.addShortcode("cwvRing", function (failures, assessed, size = 37, label = null) {
 		if (typeof failures !== "number") {
 			return ring({
 				band: "none",
 				text: "–",
 				sublabel: "CWV",
-				label: "Core Web Vitals: no real-user data — not counted in the ranking",
+				label: label ?? "Core Web Vitals: no real-user data — not counted in the ranking",
 				pct: null,
 				size,
 			});
@@ -575,7 +578,9 @@ export default async function ($config) {
 			// the one that does not say what it is measuring. The others are read
 			// by position; a tick is read by guesswork without this.
 			sublabel: "CWV",
-			label: `Core Web Vitals: ${failures} of ${assessed ?? "?"} failing at p75`,
+			// Overridable because the same ring serves a site's own verdict and a
+			// median across the fleet, and "0 of ? failing" is only true of one.
+			label: label ?? `Core Web Vitals: ${failures} of ${assessed ?? "?"} failing at p75`,
 			pct: 1,
 			size,
 		});

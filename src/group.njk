@@ -9,11 +9,16 @@ eleventyComputed:
   title: "{{ group.name }}"
 ---
 
+{% from "statbar.njk" import statbar %}
+
 <header class="detail-head">
 	<h2 class="page-hed">{{ group.name }}</h2>
 	{% if group.description %}<p class="lede">{{ group.description }}</p>{% endif %}
 	<p class="muted">{{ group.measured }} of {{ group.entries.length | countOf("site") }} measured</p>
 </header>
+
+{# The same tiles as the home page, over this category alone. #}
+{% if group.stats.measured %}{{ statbar(group.stats, metrics) }}{% endif %}
 
 {% if not group.entries.length %}
 <div class="empty"><p>No sites in this group.</p></div>
