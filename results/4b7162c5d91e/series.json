@@ -1,3 +1,4 @@
-{"version":1,"url":"https://mharley.dev/","updated":"2026-08-21T04:47:20.310Z","points":[
-{"t":1787287621154,"error":"TRACING_ALREADY_STARTED: An internal Chrome error occurred. Please restart Chrome and try re-running Lighthouse.","fails":1,"runs":0,"reqRuns":3,"ms":19156}
+{"version":1,"url":"https://mharley.dev/","updated":"2026-08-21T16:56:43.018Z","points":[
+{"t":1787287621154,"error":"TRACING_ALREADY_STARTED: An internal Chrome error occurred. Please restart Chrome and try re-running Lighthouse.","fails":1,"runs":0,"reqRuns":3,"ms":19156},
+{"t":1787331379442,"to":"https://michaelharley.net/","perm":1,"performance":93,"accessibility":100,"best-practices":96,"seo":100,"lcp":2816,"cls":0,"tbt":0,"fcp":2349,"si":2349,"ttfb":625,"total":255172,"requests":33,"bytes":255134,"mainThreadMs":8.9,"unusedJsBytes":0,"unusedCssBytes":14089,"mainThreadTotal":670.3,"longTasks":0,"elements":342,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":491,"bench":2423.5,"runs":3,"reqRuns":3,"ms":23575,"spread":4}
 ]}

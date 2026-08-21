@@ -1,0 +1,223 @@
+{
+  "url": "https://matthewstrom.com/",
+  "name": "matthewstrom.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787330878259,
+  "date": "2026-08-21T16:47:58.259Z",
+  "runId": "2026-08-21T16-47-57-162Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 24371,
+  "error": null,
+  "variance": {
+    "min": 84,
+    "max": 92,
+    "spread": 8,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://matthewstrom.com/",
+    "finalUrl": "https://mattstromawn.com/",
+    "redirect": {
+      "from": "https://matthewstrom.com/",
+      "to": "https://mattstromawn.com/",
+      "chain": [
+        {
+          "url": "https://matthewstrom.com/",
+          "status": 301
+        },
+        {
+          "url": "https://mattstromawn.com/",
+          "status": 200
+        }
+      ],
+      "statuses": [
+        301
+      ],
+      "change": "host",
+      "permanent": true,
+      "schemeUpgrade": false,
+      "hops": 1
+    },
+    "statusCode": "ok",
+    "scores": {
+      "performance": 92,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 2434,
+      "lcp": 2889,
+      "si": 2434,
+      "tbt": 0,
+      "tti": 2889,
+      "cls": 0,
+      "ttfb": 467,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 16,
+      "networkRtt": 0.1,
+      "networkServerLatency": 17.3
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 23.4,
+      "elementRenderDelay": 74.5
+    },
+    "weight": {
+      "total": 379438,
+      "requests": 12,
+      "mainDocument": 5644,
+      "byType": {
+        "total": {
+          "bytes": 379438,
+          "requests": 12
+        },
+        "font": {
+          "bytes": 178127,
+          "requests": 2
+        },
+        "image": {
+          "bytes": 168228,
+          "requests": 3
+        },
+        "script": {
+          "bytes": 13198,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 12723,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 5644,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 1518,
+          "requests": 3
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 11708,
+          "requests": 2
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 1,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 379181,
+      "mainThreadMs": 7.6,
+      "top": [
+        {
+          "entity": "mattstromawn.com",
+          "bytes": 367730,
+          "mainThreadMs": 4
+        },
+        {
+          "entity": "Cloudflare",
+          "bytes": 11451,
+          "mainThreadMs": 3.6
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 525.7,
+      "byGroup": {
+        "other": 245,
+        "styleLayout": 151,
+        "paintCompositeRender": 68.5,
+        "scriptEvaluation": 43.2,
+        "parseHTML": 16.1,
+        "scriptParseCompile": 1.9
+      },
+      "bootupMs": 12.5,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 193,
+      "depth": 10,
+      "maxChildren": 12
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 317,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 4580.400000000001,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 20,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 754,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 18
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2381,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T16:48:15.680Z",
+      "runtimeMs": 6334.2
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2eb1ff64b0e1329-IAD",
+      "server": "cloudflare"
+    },
+    "violations": 1,
+    "passes": 264,
+    "incomplete": 0,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Page should contain a level-one heading"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

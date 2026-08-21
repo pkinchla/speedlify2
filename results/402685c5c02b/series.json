@@ -1,3 +1,4 @@
-{"version":1,"url":"https://megnicholas.com/","updated":"2026-08-21T04:46:29.716Z","points":[
-{"t":1787287568357,"error":"TRACING_ALREADY_STARTED: An internal Chrome error occurred. Please restart Chrome and try re-running Lighthouse.","fails":1,"runs":0,"reqRuns":3,"ms":21359}
+{"version":1,"url":"https://megnicholas.com/","updated":"2026-08-21T16:50:12.936Z","points":[
+{"t":1787287568357,"error":"TRACING_ALREADY_STARTED: An internal Chrome error occurred. Please restart Chrome and try re-running Lighthouse.","fails":1,"runs":0,"reqRuns":3,"ms":21359},
+{"t":1787330980715,"performance":98,"accessibility":100,"best-practices":81,"seo":100,"lcp":2102,"cls":0,"tbt":32,"fcp":1952,"si":1952,"ttfb":602,"total":595869,"requests":126,"bytes":11450,"mainThreadMs":5.2,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":994.9,"longTasks":3,"elements":655,"failingCount":0,"failingNodes":0,"axeViolations":1,"axePasses":69,"bench":2498,"runs":3,"reqRuns":3,"ms":32220,"spread":35}
 ]}
