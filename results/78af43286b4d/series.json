@@ -1,3 +1,4 @@
-{"version":1,"url":"https://www.arrozmaria.com.ar/","updated":"2026-08-21T11:25:30.639Z","points":[
-{"t":1787311514102,"error":"INSECURE_DOCUMENT_REQUEST: The URL you have provided does not have a valid security certificate. net::ERR_CERT_COMMON_NAME_INVALID","fails":1,"runs":0,"reqRuns":3,"ms":16537}
+{"version":1,"url":"https://www.arrozmaria.com.ar/","updated":"2026-08-21T17:28:00.856Z","points":[
+{"t":1787311514102,"error":"INSECURE_DOCUMENT_REQUEST: The URL you have provided does not have a valid security certificate. net::ERR_CERT_COMMON_NAME_INVALID","fails":1,"runs":0,"reqRuns":3,"ms":16537},
+{"t":1787333264334,"error":"INSECURE_DOCUMENT_REQUEST: The URL you have provided does not have a valid security certificate. net::ERR_CERT_COMMON_NAME_INVALID","fails":2,"runs":0,"reqRuns":3,"ms":16521}
 ]}
