@@ -1,3 +1,4 @@
-{"version":1,"url":"https://where.hiddedevries.nl/","updated":"2026-08-21T10:34:47.005Z","points":[
-{"t":1787308469263,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":1,"runs":0,"reqRuns":3,"ms":17742}
+{"version":1,"url":"https://where.hiddedevries.nl/","updated":"2026-08-21T17:11:27.320Z","points":[
+{"t":1787308469263,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":1,"runs":0,"reqRuns":3,"ms":17742},
+{"t":1787332270610,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":2,"runs":0,"reqRuns":3,"ms":16709}
 ]}
