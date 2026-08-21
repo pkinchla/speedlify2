@@ -1,0 +1,3 @@
+{"version":1,"url":"https://www.alfieaward.com/","updated":"2026-08-21T17:30:48.555Z","points":[
+{"t":1787333417998,"performance":78,"accessibility":98,"best-practices":100,"seo":100,"lcp":4907,"cls":0,"tbt":0,"fcp":2616,"si":2616,"ttfb":466,"total":599053,"requests":22,"bytes":59886,"mainThreadMs":3.1,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":861,"longTasks":2,"elements":358,"failingCount":1,"failingNodes":1,"axeViolations":31,"axePasses":576,"bench":2457.5,"runs":3,"reqRuns":3,"ms":30556,"spread":6}
+]}
