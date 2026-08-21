@@ -1,4 +1,5 @@
 // import addressbook from "./addressbook.json" with { type: "json" };
+import archived from "./archived.json" with { type: "json" };
 import community from "./11ty-community.json" with { type: "json" };
 import emeritus from "./11ty-emeritus.json" with { type: "json" };
 import starters from "./11ty-starters.json" with { type: "json" };
@@ -46,7 +47,25 @@ const EMERITUS = [...new Set([...emeritus.urls, ...EXTRA_EMERITUS])];
  * site) keys off of the `url`, so renaming a site keeps its history but
  * changing a URL starts a fresh history for that URL.
  */
+/**
+ * Sites taken out of circulation.
+ *
+ * Archiving is the middle option. Deleting a URL loses its measurements and
+ * leaves an orphaned history behind; leaving it in place keeps a dead site in
+ * the rankings and keeps sending traffic to it. An archived site keeps its
+ * record, stops being measured, and appears only as plain text — no row, no
+ * link, no page.
+ *
+ * Applies across every category at once, so a URL listed in two of them does
+ * not need archiving twice.
+ */
+const ARCHIVED = archived.urls;
+
 export default {
+	// Read by lib/config.js, which marks the matching sites as it flattens the
+	// groups — one place rather than a filter on each category's list.
+	archived: ARCHIVED,
+
 	// Lighthouse runs per URL per measurement. The median run is kept.
 	// 3 is a decent tradeoff between noise and wall-clock time.
 	runs: 3,

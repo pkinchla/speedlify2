@@ -344,3 +344,64 @@ describe("disabling a category", () => {
 		assert.deepEqual(off.groups.a.requireGenerator, ["eleventy"]);
 	});
 });
+
+describe("archived sites", () => {
+	/**
+	 * Archiving is the middle option between deleting a URL and leaving it in
+	 * the leaderboard. The site stays configured — which is what keeps its
+	 * stored history from reading as an orphan — and carries a flag that the
+	 * scheduler and the report both act on.
+	 */
+	const config = (urls) => ({
+		archived: urls,
+		groups: {
+			g: {
+				name: "Group",
+				sites: [{ url: "https://kept.example/" }, { url: "https://gone.example/" }],
+			},
+		},
+	});
+
+	test("marks only the listed URLs", async () => {
+		const { sites } = await load(config(["https://gone.example/"]));
+
+		assert.equal(sites.find((s) => s.url === "https://gone.example/").archived, true);
+		assert.equal(sites.find((s) => s.url === "https://kept.example/").archived, false);
+	});
+
+	test("keeps the site in the list rather than dropping it", async () => {
+		// Dropping it would leave its stored history with nothing claiming it,
+		// which the report would then file as an orphan — the opposite of what
+		// archiving means.
+		const { sites } = await load(config(["https://gone.example/"]));
+		assert.equal(sites.length, 2);
+	});
+
+	test("normalizes the list, so it can be written the way a person types it", async () => {
+		const { sites } = await load({
+			archived: ["https://gone.example/deep/"],
+			groups: { g: { name: "Group", sites: [{ url: "https://gone.example/deep" }] } },
+		});
+
+		assert.equal(sites[0].archived, true, "trailing slash must not decide this");
+	});
+
+	test("marks a URL across every category it appears in", async () => {
+		const { sites } = await load({
+			archived: ["https://gone.example/"],
+			groups: {
+				a: { name: "A", sites: [{ url: "https://gone.example/" }] },
+				b: { name: "B", sites: [{ url: "https://gone.example/" }] },
+			},
+		});
+
+		assert.equal(sites.length, 1, "one URL, one site");
+		assert.equal(sites[0].archived, true);
+		assert.deepEqual(sites[0].groups, ["a", "b"]);
+	});
+
+	test("is absent rather than false when nothing is archived", async () => {
+		const { sites } = await load(config([]));
+		assert.equal(sites.every((s) => s.archived === false), true);
+	});
+});

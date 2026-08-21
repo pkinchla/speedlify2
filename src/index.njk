@@ -395,3 +395,29 @@ permalink: /index.html
 	</ul>
 </section>
 {% endif %}
+
+{% if sites.archived.length %}
+{#
+	Last on the page, and deliberately inert. Archiving is for a URL that should
+	stop being pointed at — a site that has gone, or one that should not be sent
+	traffic — so there is no row, no rank and no link, here or anywhere: an
+	archived site has no page of its own either, since those are generated from
+	the entries it was removed from.
+
+	Still named, because the alternative is a silent disappearance. The record
+	stays on disk; this is what says so.
+#}
+<section class="orphans" id="archived">
+	<h2>Archived</h2>
+	<p class="muted">
+		{{ sites.archived.length | countOf("site") }} kept in the record but taken
+		out of circulation: no longer measured, ranked or linked. Their stored
+		measurements are still on disk.
+	</p>
+	<ul>
+		{% for site in sites.archived %}
+		<li><code>{{ site.displayUrl }}</code>{% if site.lastMeasured %} — last measured {{ site.lastMeasured | date("long") }}{% endif %}</li>
+		{% endfor %}
+	</ul>
+</section>
+{% endif %}

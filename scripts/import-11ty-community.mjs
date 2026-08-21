@@ -12,6 +12,10 @@
  * each carrying a `url` alongside the submitter's details. Only the URL is read:
  * these are other people's sites and the rest is not ours to republish.
  *
+ * `disabled: true` is the one other field that matters. It is upstream saying a
+ * submission should not be used — the list's own maintainers, on their own
+ * data — so those are skipped rather than measured.
+ *
  * The whole tree arrives as a single tarball rather than ~1,300 contents API
  * calls, so a re-import is one request and needs no authentication.
  */
@@ -75,7 +79,7 @@ const files = fs.readdirSync(entriesDir).filter((f) => f.endsWith(".json"));
 
 const seen = new Set();
 const urls = [];
-const skipped = { invalid: 0, duplicate: 0, nonHttp: 0, unreadable: 0, noUrl: 0 };
+const skipped = { invalid: 0, duplicate: 0, nonHttp: 0, unreadable: 0, noUrl: 0, disabled: 0 };
 
 for (let file of files.sort()) {
 	let entry;
@@ -88,6 +92,15 @@ for (let file of files.sort()) {
 
 	if (!entry?.url || !String(entry.url).trim()) {
 		skipped.noUrl++;
+		continue;
+	}
+
+	// Upstream has switched this submission off. Honoured rather than
+	// second-guessed, the same way the starters importer honours
+	// `excludedFromLeaderboards`: it is the list's maintainers saying this entry
+	// should not be used, on their own data.
+	if (entry.disabled) {
+		skipped.disabled++;
 		continue;
 	}
 
@@ -177,8 +190,9 @@ const hosts = new Set(urls.map((u) => new URL(u).hostname));
 process.stdout.write(
 	`\n  wrote ${OUT}\n` +
 		`  ${urls.length.toLocaleString()} URLs across ${hosts.size.toLocaleString()} hosts, from ${files.length.toLocaleString()} submissions\n` +
-		`  skipped: ${skipped.duplicate} duplicate, ${skipped.invalid} unparseable, ` +
-		`${skipped.nonHttp} non-HTTP, ${skipped.noUrl} without a url, ${skipped.unreadable} unreadable\n` +
+		`  skipped: ${skipped.disabled} disabled upstream, ${skipped.duplicate} duplicate, ` +
+		`${skipped.invalid} unparseable, ${skipped.nonHttp} non-HTTP, ` +
+		`${skipped.noUrl} without a url, ${skipped.unreadable} unreadable\n` +
 		(previous === null
 			? `  no previous list to compare against\n`
 			: `  changes: +${added.length} added, -${removed.length} removed\n`) +

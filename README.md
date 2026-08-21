@@ -202,6 +202,18 @@ Grey — no data — ranks with red on both banded rings. A Lighthouse category 
 
 **Core Web Vitals is not banded.** Most of this corpus is too small for CrUX to sample, so that ring is grey more often than it is any colour, and a criterion unknown for most rows cannot carry the top tier of a ranking. It remains a tiebreaker at its own tier, below the total, where a missing assessment costs nothing. One consequence worth knowing: because axe *is* banded, a green axe ring beats an amber one before any vitals are read.
 
+### Archiving a URL
+
+`config/archived.json` takes a URL out of circulation without losing it. An archived site is not measured, not ranked, and not linked — it has no row and no page — but its stored measurements stay on disk and it is named as plain text at the bottom of the home page.
+
+```json
+{ "urls": ["https://example.com/"] }
+```
+
+It is the middle option. Deleting a URL from a category loses its history and leaves an orphaned directory behind; leaving it in place keeps a dead site in the rankings and keeps sending traffic to it.
+
+Listed here rather than removed from a category file because the community and starter lists are generated — a deletion there lasts until the next import. One entry covers every category the URL appears in.
+
 ### Accessibility comes from a real axe run
 
 Step 2 uses a standalone [axe-core](https://github.com/dequelabs/axe-core) pass, not Lighthouse's accessibility score. Lighthouse runs a subset of axe's rules and folds the outcome into a weighted number; a page can score 93 there and still fail 13 axe checks — which is exactly what `jekyllrb.com` does in the sample data.
