@@ -1,0 +1,243 @@
+{
+  "url": "https://www.psycareer.ru/",
+  "name": "www.psycareer.ru",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787320358783,
+  "date": "2026-08-21T13:52:38.783Z",
+  "runId": "2026-08-21T13-43-59-487Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 27950,
+  "error": null,
+  "variance": {
+    "min": 83,
+    "max": 87,
+    "spread": 4,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.psycareer.ru/",
+    "finalUrl": "https://www.psycareer.org/",
+    "redirect": {
+      "from": "https://www.psycareer.ru/",
+      "to": "https://www.psycareer.org/",
+      "chain": [
+        {
+          "url": "https://www.psycareer.ru/",
+          "status": 301
+        },
+        {
+          "url": "https://www.psycareer.org/",
+          "status": 200
+        }
+      ],
+      "statuses": [
+        301
+      ],
+      "change": "host",
+      "permanent": true,
+      "schemeUpgrade": false,
+      "hops": 1
+    },
+    "statusCode": "ok",
+    "scores": {
+      "performance": 84,
+      "accessibility": 100,
+      "best-practices": 77,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 2294,
+      "lcp": 3319,
+      "si": 2294,
+      "tbt": 278,
+      "tti": 5551,
+      "cls": 0,
+      "ttfb": 602,
+      "maxPotentialFid": 211,
+      "serverResponseTime": 44,
+      "networkRtt": 0.2,
+      "networkServerLatency": 224.4
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 69.4,
+      "resourceLoadDelay": 10.1,
+      "resourceLoadDuration": 7.4,
+      "elementRenderDelay": 103.4
+    },
+    "weight": {
+      "total": 401929,
+      "requests": 19,
+      "mainDocument": 0,
+      "byType": {
+        "total": {
+          "bytes": 401929,
+          "requests": 18
+        },
+        "script": {
+          "bytes": 400422,
+          "requests": 6
+        },
+        "other": {
+          "bytes": 1507,
+          "requests": 6
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 0,
+          "requests": 1
+        },
+        "third-party": {
+          "bytes": 401929,
+          "requests": 6
+        }
+      },
+      "scripts": 6,
+      "stylesheets": 1,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 4,
+      "bytes": 427972,
+      "mainThreadMs": 193.1,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 298226,
+          "mainThreadMs": 106.2
+        },
+        {
+          "entity": "Yandex Metrica",
+          "bytes": 92149,
+          "mainThreadMs": 75.9
+        },
+        {
+          "entity": "psycareer.org",
+          "bytes": 26146,
+          "mainThreadMs": 8.1
+        },
+        {
+          "entity": "Cloudflare",
+          "bytes": 11451,
+          "mainThreadMs": 2.9
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1371.6,
+      "byGroup": {
+        "scriptEvaluation": 751.4,
+        "other": 282.4,
+        "styleLayout": 137.7,
+        "scriptParseCompile": 132.8,
+        "paintCompositeRender": 30.6,
+        "garbageCollection": 18.9,
+        "parseHTML": 17.9
+      },
+      "bootupMs": 836.8,
+      "longTasks": 6,
+      "longestTaskMs": 211
+    },
+    "dom": {
+      "elements": 210,
+      "depth": 9,
+      "maxChildren": 10
+    },
+    "waste": {
+      "unusedJsBytes": 183420,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 77176.4,
+      "poorlyCachedCount": 3
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 20,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 772.1,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 23
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2491.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T13:52:58.038Z",
+      "runtimeMs": 7400.2
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": null,
+      "source": "meta",
+      "raw": "Eleventy"
+    },
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2ea1f36888e9091-LAX",
+      "server": "cloudflare"
+    },
+    "violations": 1,
+    "passes": 442,
+    "incomplete": 1,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

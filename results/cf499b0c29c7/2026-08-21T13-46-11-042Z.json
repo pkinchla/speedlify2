@@ -1,0 +1,231 @@
+{
+  "url": "https://www.lingfieldosteopaths.co.uk/",
+  "name": "www.lingfieldosteopaths.co.uk",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787319971042,
+  "date": "2026-08-21T13:46:11.042Z",
+  "runId": "2026-08-21T13-43-59-487Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 21646,
+  "error": null,
+  "variance": {
+    "min": 95,
+    "max": 97,
+    "spread": 2,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.lingfieldosteopaths.co.uk/",
+    "finalUrl": "https://www.lingfieldosteopaths.co.uk/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 97,
+      "accessibility": 86,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1558,
+      "lcp": 2468,
+      "si": 1558,
+      "tbt": 2,
+      "tti": 2468,
+      "cls": 0.044,
+      "ttfb": 619,
+      "maxPotentialFid": 52,
+      "serverResponseTime": 20,
+      "networkRtt": 0.1,
+      "networkServerLatency": 38.4
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 21.4,
+      "elementRenderDelay": 105.5
+    },
+    "weight": {
+      "total": 83228,
+      "requests": 7,
+      "mainDocument": 4277,
+      "byType": {
+        "total": {
+          "bytes": 83228,
+          "requests": 7
+        },
+        "font": {
+          "bytes": 37552,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 20875,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 13345,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 5372,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 4277,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 1807,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 60260,
+          "requests": 4
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 1,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 60260,
+      "mainThreadMs": 13.2,
+      "top": [
+        {
+          "entity": "Google Fonts",
+          "bytes": 39359,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Google Analytics",
+          "bytes": 20901,
+          "mainThreadMs": 13.2
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 210.6,
+      "byGroup": {
+        "other": 78.9,
+        "scriptEvaluation": 57.3,
+        "styleLayout": 54,
+        "scriptParseCompile": 7,
+        "parseHTML": 6.9,
+        "paintCompositeRender": 6.5
+      },
+      "bootupMs": 62.6,
+      "longTasks": 1,
+      "longestTaskMs": 52
+    },
+    "dom": {
+      "elements": 63,
+      "depth": 8,
+      "maxChildren": 7
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 789,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 15656.25,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 3,
+      "applicableCount": 17,
+      "failingNodes": 11,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 9
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 1
+        },
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 4
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2493,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T13:46:25.720Z",
+      "runtimeMs": 5846.1
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0J95EVXXM2HMA1RARTHP4M7"
+    },
+    "violations": 11,
+    "passes": 149,
+    "incomplete": 0,
+    "violationRules": 3,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 9,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Heading levels should only increase by one"
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

@@ -1,0 +1,239 @@
+{
+  "url": "https://www.naprogu.pl/",
+  "name": "www.naprogu.pl",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787320244530,
+  "date": "2026-08-21T13:50:44.530Z",
+  "runId": "2026-08-21T13-43-59-487Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 30384,
+  "error": null,
+  "variance": {
+    "min": 70,
+    "max": 72,
+    "spread": 2,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.naprogu.pl/",
+    "finalUrl": "https://www.naprogu.pl/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 71,
+      "accessibility": 91,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 48
+    },
+    "timings": {
+      "fcp": 2196,
+      "lcp": 6019,
+      "si": 2205,
+      "tbt": 216,
+      "tti": 6092,
+      "cls": 0.071,
+      "ttfb": 624,
+      "maxPotentialFid": 215,
+      "serverResponseTime": 19,
+      "networkRtt": 0.1,
+      "networkServerLatency": 23.6
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 21,
+      "resourceLoadDelay": 19.5,
+      "resourceLoadDuration": 284.9,
+      "elementRenderDelay": 67.1
+    },
+    "weight": {
+      "total": 1140710,
+      "requests": 22,
+      "mainDocument": 51702,
+      "byType": {
+        "total": {
+          "bytes": 1140022,
+          "requests": 21
+        },
+        "image": {
+          "bytes": 668638,
+          "requests": 8
+        },
+        "script": {
+          "bytes": 395465,
+          "requests": 5
+        },
+        "document": {
+          "bytes": 51702,
+          "requests": 1
+        },
+        "font": {
+          "bytes": 12707,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 9038,
+          "requests": 2
+        },
+        "other": {
+          "bytes": 2472,
+          "requests": 4
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 384812,
+          "requests": 5
+        }
+      },
+      "scripts": 5,
+      "stylesheets": 2,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 4,
+      "bytes": 384812,
+      "mainThreadMs": 130.3,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 329680,
+          "mainThreadMs": 104.8
+        },
+        {
+          "entity": "Netlify",
+          "bytes": 55063,
+          "mainThreadMs": 25.5
+        },
+        {
+          "entity": "Google Analytics",
+          "bytes": 48,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Google/Doubleclick Ads",
+          "bytes": 21,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1214,
+      "byGroup": {
+        "scriptEvaluation": 461.9,
+        "other": 249.4,
+        "styleLayout": 248.5,
+        "scriptParseCompile": 107.9,
+        "parseHTML": 81.2,
+        "paintCompositeRender": 65.2
+      },
+      "bootupMs": 566.9,
+      "longTasks": 7,
+      "longestTaskMs": 215
+    },
+    "dom": {
+      "elements": 3041,
+      "depth": 14,
+      "maxChildren": 667
+    },
+    "waste": {
+      "unusedJsBytes": 142562,
+      "unusedCssBytes": 21305,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 13107,
+      "renderBlockingMs": 1070,
+      "renderBlockingCount": 3,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 20,
+      "failingNodes": 2,
+      "failing": [
+        {
+          "id": "aria-prohibited-attr",
+          "title": "Elements use prohibited ARIA attributes",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 15
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2502.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T13:51:04.203Z",
+      "runtimeMs": 8017.3
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": null,
+      "source": "meta",
+      "raw": "Eleventy"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0J9E0YBXGSJ2EHP5GBSB413"
+    },
+    "violations": 2,
+    "passes": 5557,
+    "incomplete": 1,
+    "violationRules": 2,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "aria-prohibited-attr",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Elements must only use permitted ARIA attributes"
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
