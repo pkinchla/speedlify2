@@ -1,0 +1,208 @@
+{
+  "url": "https://renatasalonunique.nl/",
+  "name": "renatasalonunique.nl",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787290587970,
+  "date": "2026-08-21T05:36:27.970Z",
+  "runId": "2026-08-21T05-31-07-858Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 24871,
+  "error": null,
+  "variance": {
+    "min": 98,
+    "max": 99,
+    "spread": 1,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://renatasalonunique.nl/",
+    "finalUrl": "https://renatasalonunique.nl/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 67
+    },
+    "timings": {
+      "fcp": 1693,
+      "lcp": 1693,
+      "si": 1693,
+      "tbt": 0,
+      "tti": 1693,
+      "cls": 0,
+      "ttfb": 693,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 94,
+      "networkRtt": 0.1,
+      "networkServerLatency": 93.2
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 95.5,
+      "resourceLoadDelay": 11.2,
+      "resourceLoadDuration": 97.7,
+      "elementRenderDelay": 36.6
+    },
+    "weight": {
+      "total": 296654,
+      "requests": 15,
+      "mainDocument": 6765,
+      "byType": {
+        "total": {
+          "bytes": 293838,
+          "requests": 14
+        },
+        "image": {
+          "bytes": 251414,
+          "requests": 7
+        },
+        "script": {
+          "bytes": 26267,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 7393,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 6765,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 1999,
+          "requests": 3
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 3787,
+          "requests": 2
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 1,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 3787,
+      "mainThreadMs": 0.6,
+      "top": [
+        {
+          "entity": "Plausible",
+          "bytes": 3787,
+          "mainThreadMs": 0.6
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 229.8,
+      "byGroup": {
+        "other": 128.6,
+        "styleLayout": 34.7,
+        "scriptEvaluation": 31,
+        "paintCompositeRender": 13.3,
+        "scriptParseCompile": 11.1,
+        "parseHTML": 11
+      },
+      "bootupMs": 21.4,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 194,
+      "depth": 10,
+      "maxChildren": 14
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 31419.583333333325,
+      "poorlyCachedCount": 10
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 25,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 10
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2319.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T05:36:44.968Z",
+      "runtimeMs": 6840
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "build-awesome",
+      "name": "Build Awesome",
+      "icon": "BuildAwesome",
+      "version": "4.0.0",
+      "source": "meta",
+      "raw": "Eleventy (Build Awesome) v4.0.0"
+    },
+    "host": {
+      "id": "self-hosted",
+      "name": "Self-hosted",
+      "icon": null,
+      "detail": "LiteSpeed",
+      "detailIcon": null,
+      "source": "server"
+    },
+    "headers": {
+      "server": "LiteSpeed"
+    },
+    "violations": 3,
+    "passes": 270,
+    "incomplete": 0,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "empty-heading",
+        "impact": "minor",
+        "nodes": 3,
+        "help": "Headings should not be empty"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

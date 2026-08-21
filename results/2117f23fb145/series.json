@@ -1,0 +1,3 @@
+{"version":1,"url":"https://railway.com/","updated":"2026-08-21T05:34:13.530Z","points":[
+{"t":1787290385700,"performance":41,"accessibility":93,"best-practices":73,"seo":100,"lcp":6183,"cls":0.04,"tbt":2989,"fcp":3366,"si":3829,"ttfb":633,"total":3584266,"requests":284,"bytes":425976,"mainThreadMs":363.1,"unusedJsBytes":1007687,"unusedCssBytes":51905,"mainThreadTotal":9934.1,"longTasks":20,"elements":8384,"failingCount":2,"failingNodes":4,"axeViolations":65,"axePasses":9121,"field-lcp":2044,"field-inp":594,"field-cls":0.03,"field-fcp":1721,"field-ttfb":600,"bench":2348.5,"runs":3,"reqRuns":3,"ms":67830,"spread":3}
+]}

@@ -1,0 +1,3 @@
+{"version":1,"url":"https://rasoi.parth.ninja/","updated":"2026-08-21T05:35:30.783Z","points":[
+{"t":1787290506712,"performance":94,"accessibility":100,"best-practices":100,"seo":100,"lcp":2436,"cls":0.046,"tbt":0,"fcp":2436,"si":2436,"ttfb":609,"total":35414,"requests":7,"bytes":26472,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":172.5,"longTasks":0,"elements":135,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":211,"bench":2415.5,"runs":3,"reqRuns":3,"ms":24070,"spread":11}
+]}

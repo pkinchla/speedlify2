@@ -1,0 +1,3 @@
+{"version":1,"url":"https://razorux.com/","updated":"2026-08-21T05:35:59.167Z","points":[
+{"t":1787290533783,"performance":95,"accessibility":100,"best-practices":96,"seo":100,"lcp":2139,"cls":0.092,"tbt":4,"fcp":1849,"si":1849,"ttfb":469,"total":222877,"requests":35,"bytes":23350,"mainThreadMs":5.3,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":515.3,"longTasks":2,"elements":297,"failingCount":0,"failingNodes":0,"axeViolations":3,"axePasses":458,"bench":2258,"runs":3,"reqRuns":3,"ms":25383,"spread":14}
+]}

@@ -1,0 +1,3 @@
+{"version":1,"url":"https://render.com/","updated":"2026-08-21T05:39:40.455Z","points":[
+{"t":1787290612842,"performance":22,"accessibility":84,"best-practices":54,"seo":100,"lcp":7637,"cls":0.832,"tbt":2026,"fcp":1562,"si":3933,"ttfb":662,"total":2623502,"requests":142,"bytes":952782,"mainThreadMs":305.4,"unusedJsBytes":415546,"unusedCssBytes":34118,"mainThreadTotal":8273.1,"longTasks":20,"elements":2552,"failingCount":4,"failingNodes":95,"field-lcp":2165,"field-inp":308,"field-cls":0.01,"field-fcp":1844,"field-ttfb":1089,"bench":2386,"runs":3,"reqRuns":3,"ms":167612,"spread":23}
+]}
