@@ -775,19 +775,9 @@ th.col-rings { text-align: left !important; }
 	height: 16px;
 	padding: 0;
 }
-/* Listed as, not detected as. Half opacity is the whole signal — same glyph,
+/* Listed as, not detected as. Reduced opacity is the whole signal — same glyph,
    visibly hedged, and the tooltip says which. */
-/*
- * A presumed mark — the category's claim rather than a detection — carries no
- * brand colour and inherits the surrounding text colour instead. See the
- * `usesBrandColor` guard in eleventy.config.js, which is what stops the inline
- * brand colour being emitted in the first place.
- *
- * Not opacity: a half-transparent mark on a striped or hovered row reads as a
- * rendering fault rather than a distinction, and it dims the shape as well as
- * the colour — the shape is the part that identifies the brand.
- */
-.stack-presumed { color: inherit; fill: currentColor; }
+.stack-presumed { opacity: 0.65; }
 .stack-none { color: var(--text-muted); opacity: 0.4; }
 
 /* Detected stack on the site detail page. */
