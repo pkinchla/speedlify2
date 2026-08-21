@@ -1,0 +1,215 @@
+{
+  "url": "https://shotplot.app/",
+  "name": "shotplot.app",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787298221972,
+  "date": "2026-08-21T07:43:41.972Z",
+  "runId": "2026-08-21T07-41-15-362Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 19752,
+  "error": null,
+  "variance": {
+    "min": 92,
+    "max": 96,
+    "spread": 4,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://shotplot.app/",
+    "finalUrl": "https://shotplot.app/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 92,
+      "accessibility": 95,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 27
+    },
+    "timings": {
+      "fcp": 1692,
+      "lcp": 2441,
+      "si": 1692,
+      "tbt": 0,
+      "tti": 2441,
+      "cls": 0.132,
+      "ttfb": 470,
+      "maxPotentialFid": 21,
+      "serverResponseTime": 30,
+      "networkRtt": 0.9,
+      "networkServerLatency": 22.1
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 31.6,
+      "elementRenderDelay": 51.1
+    },
+    "weight": {
+      "total": 208835,
+      "requests": 15,
+      "mainDocument": 2574,
+      "byType": {
+        "total": {
+          "bytes": 205799,
+          "requests": 12
+        },
+        "script": {
+          "bytes": 151429,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 32331,
+          "requests": 2
+        },
+        "font": {
+          "bytes": 13501,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 4913,
+          "requests": 4
+        },
+        "document": {
+          "bytes": 2574,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 1051,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 22906,
+          "requests": 4
+        }
+      },
+      "scripts": 3,
+      "stylesheets": 2,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 22906,
+      "mainThreadMs": 4,
+      "top": [
+        {
+          "entity": "Cloudflare",
+          "bytes": 22870,
+          "mainThreadMs": 4
+        },
+        {
+          "entity": "cloudflareinsights.com",
+          "bytes": 36,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 260.8,
+      "byGroup": {
+        "other": 79.7,
+        "scriptEvaluation": 71.8,
+        "styleLayout": 49,
+        "scriptParseCompile": 28.4,
+        "parseHTML": 25.4,
+        "paintCompositeRender": 6.5
+      },
+      "bootupMs": 82.7,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 197,
+      "depth": 17,
+      "maxChildren": 23
+    },
+    "waste": {
+      "unusedJsBytes": 92236,
+      "unusedCssBytes": 22837,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 940,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 9148,
+      "poorlyCachedCount": 2
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 24,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "aria-required-children",
+          "title": "Elements with an ARIA `[role]` that require children to contain a specific `[role]` are missing some or all of those required children.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 20
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 4238,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T07:43:49.704Z",
+      "runtimeMs": 5590.7
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e802928b8fc568-SEA",
+      "server": "cloudflare"
+    },
+    "violations": 2,
+    "passes": 455,
+    "incomplete": 3,
+    "violationRules": 2,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "aria-required-children",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Certain ARIA roles must contain particular children"
+      },
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Page should contain a level-one heading"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

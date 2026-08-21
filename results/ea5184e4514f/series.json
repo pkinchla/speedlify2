@@ -1,0 +1,3 @@
+{"version":1,"url":"https://snipshop.lea-tortay.com/","updated":"2026-08-21T07:46:44.275Z","points":[
+{"t":1787298382070,"performance":86,"accessibility":86,"best-practices":100,"seo":92,"lcp":4116,"cls":0,"tbt":63,"fcp":1696,"si":1696,"ttfb":629,"total":491940,"requests":13,"bytes":487651,"mainThreadMs":44.5,"unusedJsBytes":262405,"unusedCssBytes":0,"mainThreadTotal":348.3,"longTasks":1,"elements":47,"failingCount":3,"failingNodes":5,"axeViolations":5,"axePasses":109,"bench":4517,"runs":3,"reqRuns":3,"ms":22205,"spread":13}
+]}

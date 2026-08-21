@@ -1,0 +1,227 @@
+{
+  "url": "https://spacebook.app/",
+  "name": "spacebook.app",
+  "group": "11ty-starters",
+  "groupName": "Build Awesome Starters",
+  "timestamp": 1787298505018,
+  "date": "2026-08-21T07:48:25.018Z",
+  "runId": "2026-08-21T07-41-15-362Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 20823,
+  "error": null,
+  "variance": {
+    "min": 99,
+    "max": 100,
+    "spread": 1,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://spacebook.app/",
+    "finalUrl": "https://spacebook.app/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 100,
+      "accessibility": 96,
+      "best-practices": 100,
+      "seo": 92,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 806,
+      "lcp": 806,
+      "si": 806,
+      "tbt": 0,
+      "tti": 806,
+      "cls": 0,
+      "ttfb": 628,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 28,
+      "networkRtt": 0,
+      "networkServerLatency": 58.5
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 29.6,
+      "elementRenderDelay": 58.6
+    },
+    "weight": {
+      "total": 62593,
+      "requests": 5,
+      "mainDocument": 6998,
+      "byType": {
+        "total": {
+          "bytes": 62593,
+          "requests": 5
+        },
+        "other": {
+          "bytes": 40844,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 7070,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 6998,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 5628,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 2053,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 7681,
+          "requests": 2
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 1,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 7681,
+      "mainThreadMs": 0.7,
+      "top": [
+        {
+          "entity": "Cloudflare CDN",
+          "bytes": 5628,
+          "mainThreadMs": 0.7
+        },
+        {
+          "entity": "Netlify",
+          "bytes": 2053,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 199.7,
+      "byGroup": {
+        "other": 112.4,
+        "styleLayout": 51.1,
+        "scriptEvaluation": 15.7,
+        "paintCompositeRender": 11,
+        "parseHTML": 7,
+        "scriptParseCompile": 2.6
+      },
+      "bootupMs": 14.2,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 208,
+      "depth": 13,
+      "maxChildren": 47
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 22,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "aria-prohibited-attr",
+          "title": "Elements use prohibited ARIA attributes",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 5
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 4293,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T07:48:33.527Z",
+      "runtimeMs": 5681.7
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0HMPB8YNTKRFZJ7D6GSD6DB"
+    },
+    "violations": 4,
+    "passes": 470,
+    "incomplete": 2,
+    "violationRules": 4,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "aria-prohibited-attr",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Elements must only use permitted ARIA attributes"
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      },
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Links must have discernible text"
+      },
+      {
+        "id": "scrollable-region-focusable",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Scrollable region must have keyboard access"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

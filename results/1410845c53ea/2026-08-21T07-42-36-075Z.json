@@ -1,0 +1,203 @@
+{
+  "url": "https://scottw.com/",
+  "name": "scottw.com",
+  "group": "11ty-emeritus",
+  "groupName": "11ty Emeritus",
+  "timestamp": 1787298156075,
+  "date": "2026-08-21T07:42:36.075Z",
+  "runId": "2026-08-21T07-41-15-362Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 20543,
+  "error": null,
+  "variance": {
+    "min": 86,
+    "max": 89,
+    "spread": 3,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://scottw.com/",
+    "finalUrl": "https://scottw.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 89,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1729,
+      "lcp": 3635,
+      "si": 1729,
+      "tbt": 0,
+      "tti": 3635,
+      "cls": 0,
+      "ttfb": 467,
+      "maxPotentialFid": 49,
+      "serverResponseTime": 27,
+      "networkRtt": 0.9,
+      "networkServerLatency": 17
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 28.2,
+      "elementRenderDelay": 85.9
+    },
+    "weight": {
+      "total": 441600,
+      "requests": 16,
+      "mainDocument": 16467,
+      "byType": {
+        "total": {
+          "bytes": 440041,
+          "requests": 15
+        },
+        "font": {
+          "bytes": 352442,
+          "requests": 4
+        },
+        "image": {
+          "bytes": 50412,
+          "requests": 3
+        },
+        "document": {
+          "bytes": 16467,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 14169,
+          "requests": 2
+        },
+        "other": {
+          "bytes": 6551,
+          "requests": 5
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 11486,
+          "requests": 3
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 0,
+      "fonts": 4
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 11486,
+      "mainThreadMs": 6,
+      "top": [
+        {
+          "entity": "Cloudflare",
+          "bytes": 11450,
+          "mainThreadMs": 6
+        },
+        {
+          "entity": "cloudflareinsights.com",
+          "bytes": 36,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 271.1,
+      "byGroup": {
+        "styleLayout": 109.7,
+        "other": 101.5,
+        "scriptEvaluation": 34.3,
+        "parseHTML": 12.3,
+        "paintCompositeRender": 9,
+        "scriptParseCompile": 4.2
+      },
+      "bootupMs": 9.6,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 210,
+      "depth": 10,
+      "maxChildren": 8
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 4580,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 24,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 23
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 4490.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T07:42:44.483Z",
+      "runtimeMs": 6004.3
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "3.1.6",
+      "source": "meta",
+      "raw": "Eleventy v3.1.6"
+    },
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e800fe2b3f3119-SEA",
+      "server": "cloudflare"
+    },
+    "violations": 0,
+    "passes": 357,
+    "incomplete": 15,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

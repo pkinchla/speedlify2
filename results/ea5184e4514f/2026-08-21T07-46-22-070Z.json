@@ -1,0 +1,238 @@
+{
+  "url": "https://snipshop.lea-tortay.com/",
+  "name": "snipshop.lea-tortay.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787298382070,
+  "date": "2026-08-21T07:46:22.070Z",
+  "runId": "2026-08-21T07-41-15-362Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 22205,
+  "error": null,
+  "variance": {
+    "min": 82,
+    "max": 95,
+    "spread": 13,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://snipshop.lea-tortay.com/",
+    "finalUrl": "https://snipshop.lea-tortay.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 86,
+      "accessibility": 86,
+      "best-practices": 100,
+      "seo": 92,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 1696,
+      "lcp": 4116,
+      "si": 1696,
+      "tbt": 63,
+      "tti": 4431,
+      "cls": 0,
+      "ttfb": 629,
+      "maxPotentialFid": 176,
+      "serverResponseTime": 29,
+      "networkRtt": 4.6,
+      "networkServerLatency": 107.8
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 30.2,
+      "resourceLoadDelay": 9.7,
+      "resourceLoadDuration": 7.2,
+      "elementRenderDelay": 49.8
+    },
+    "weight": {
+      "total": 491940,
+      "requests": 13,
+      "mainDocument": 4289,
+      "byType": {
+        "total": {
+          "bytes": 491940,
+          "requests": 13
+        },
+        "script": {
+          "bytes": 366015,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 69732,
+          "requests": 4
+        },
+        "font": {
+          "bytes": 35540,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 12367,
+          "requests": 3
+        },
+        "document": {
+          "bytes": 4289,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 3997,
+          "requests": 3
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 487651,
+          "requests": 12
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 3,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 3,
+      "bytes": 487651,
+      "mainThreadMs": 44.5,
+      "top": [
+        {
+          "entity": "snipcart.com",
+          "bytes": 379752,
+          "mainThreadMs": 44.5
+        },
+        {
+          "entity": "unsplash.com",
+          "bytes": 69732,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Google Fonts",
+          "bytes": 38167,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 348.3,
+      "byGroup": {
+        "scriptEvaluation": 155.3,
+        "other": 77.3,
+        "scriptParseCompile": 61.8,
+        "styleLayout": 38,
+        "paintCompositeRender": 8.2,
+        "parseHTML": 7.7
+      },
+      "bootupMs": 216.1,
+      "longTasks": 1,
+      "longestTaskMs": 176
+    },
+    "dom": {
+      "elements": 47,
+      "depth": 9,
+      "maxChildren": 5
+    },
+    "waste": {
+      "unusedJsBytes": 262405,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 32581,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 768,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 3,
+      "applicableCount": 24,
+      "failingNodes": 5,
+      "failing": [
+        {
+          "id": "image-alt",
+          "title": "Image elements do not have `[alt]` attributes",
+          "nodes": 3
+        },
+        {
+          "id": "aria-required-children",
+          "title": "Elements with an ARIA `[role]` that require children to contain a specific `[role]` are missing some or all of those required children.",
+          "nodes": 1
+        },
+        {
+          "id": "listitem",
+          "title": "List items (`<li>`) are not contained within `<ul>`, `<ol>` or `<menu>` parent elements.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 8
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 4517,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T07:46:30.999Z",
+      "runtimeMs": 6389.9
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0HMJMMSGNSV8HHHJZ8VSVTR"
+    },
+    "violations": 5,
+    "passes": 109,
+    "incomplete": 11,
+    "violationRules": 3,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "image-alt",
+        "impact": "critical",
+        "nodes": 3,
+        "help": "Images must have alternative text"
+      },
+      {
+        "id": "aria-required-children",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Certain ARIA roles must contain particular children"
+      },
+      {
+        "id": "listitem",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "<li> elements must be contained in a <ul> or <ol>"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

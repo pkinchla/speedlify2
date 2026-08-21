@@ -1,0 +1,205 @@
+{
+  "url": "https://scales-okn.org/",
+  "name": "scales-okn.org",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787298130912,
+  "date": "2026-08-21T07:42:10.912Z",
+  "runId": "2026-08-21T07-41-15-362Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 22163,
+  "error": null,
+  "variance": {
+    "min": 84,
+    "max": 99,
+    "spread": 15,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://scales-okn.org/",
+    "finalUrl": "https://scales-okn.org/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 67
+    },
+    "timings": {
+      "fcp": 1536,
+      "lcp": 1912,
+      "si": 1536,
+      "tbt": 0,
+      "tti": 1919,
+      "cls": 0,
+      "ttfb": 469,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 10,
+      "networkRtt": 0.9,
+      "networkServerLatency": 19.2
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 11.6,
+      "resourceLoadDelay": 27.6,
+      "resourceLoadDuration": 7,
+      "elementRenderDelay": 45.1
+    },
+    "weight": {
+      "total": 268312,
+      "requests": 24,
+      "mainDocument": 4479,
+      "byType": {
+        "total": {
+          "bytes": 268312,
+          "requests": 24
+        },
+        "font": {
+          "bytes": 194019,
+          "requests": 9
+        },
+        "image": {
+          "bytes": 38553,
+          "requests": 7
+        },
+        "script": {
+          "bytes": 23891,
+          "requests": 3
+        },
+        "document": {
+          "bytes": 4479,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 4401,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 2969,
+          "requests": 3
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 22938,
+          "requests": 4
+        }
+      },
+      "scripts": 3,
+      "stylesheets": 1,
+      "fonts": 9
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 22938,
+      "mainThreadMs": 5.3,
+      "top": [
+        {
+          "entity": "Cloudflare",
+          "bytes": 22902,
+          "mainThreadMs": 5.3
+        },
+        {
+          "entity": "cloudflareinsights.com",
+          "bytes": 36,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 204.1,
+      "byGroup": {
+        "other": 84,
+        "styleLayout": 66.1,
+        "scriptEvaluation": 32.7,
+        "paintCompositeRender": 13.4,
+        "parseHTML": 5,
+        "scriptParseCompile": 2.8
+      },
+      "bootupMs": 9.6,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 182,
+      "depth": 8,
+      "maxChildren": 8
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 169,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 9457.503434027778,
+      "poorlyCachedCount": 3
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 19,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 20
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 4185.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T07:42:26.553Z",
+      "runtimeMs": 5689.5
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "3.0.0",
+      "source": "meta",
+      "raw": "Eleventy v3.0.0"
+    },
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e8006849f1ba0f-SEA",
+      "server": "cloudflare"
+    },
+    "violations": 0,
+    "passes": 294,
+    "incomplete": 12,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

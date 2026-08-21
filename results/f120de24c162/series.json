@@ -1,0 +1,3 @@
+{"version":1,"url":"https://scales-okn.org/","updated":"2026-08-21T07:42:33.075Z","points":[
+{"t":1787298130912,"performance":99,"accessibility":100,"best-practices":100,"seo":100,"lcp":1912,"cls":0,"tbt":0,"fcp":1536,"si":1536,"ttfb":469,"total":268312,"requests":24,"bytes":22938,"mainThreadMs":5.3,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":204.1,"longTasks":0,"elements":182,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":294,"bench":4185.5,"runs":3,"reqRuns":3,"ms":22163,"spread":15}
+]}
