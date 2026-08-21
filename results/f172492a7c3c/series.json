@@ -1,0 +1,3 @@
+{"version":1,"url":"https://unbreaking.org/","updated":"2026-08-21T16:51:21.609Z","points":[
+{"t":1787331058209,"performance":77,"accessibility":100,"best-practices":100,"seo":100,"lcp":6544,"cls":0,"tbt":0,"fcp":1144,"si":1144,"ttfb":619,"total":1076951,"requests":23,"bytes":3347,"mainThreadMs":3.5,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":306,"longTasks":0,"elements":156,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":404,"bench":2983.5,"runs":3,"reqRuns":3,"ms":23400,"spread":0}
+]}
