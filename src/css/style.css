@@ -803,11 +803,15 @@ th.col-rings { text-align: left !important; }
  * normal` so metric-name cells in the trend tables can wrap.
  */
 .col-url { text-align: left !important; white-space: nowrap; }
+/* Chips are short and there are rarely more than two, so the column holds them
+   on one line and lets the table scroll rather than growing the row. */
+.col-cats { text-align: left !important; white-space: nowrap; }
 .col-url + .col-url { padding-left: 0.9rem; }
 .redirects-arrow { color: var(--text-muted); padding: 0 0.15rem; }
-/* Which lists this URL belongs to. Quiet by design — it is context for the
-   row, not a second thing to read. */
-.redirects-group {
+/* Which lists a URL belongs to. Quiet by design — it is context for the row,
+   not a second thing to read. Named for what it is rather than for the first
+   table that used it, now that the perfect-scores board shows them too. */
+.cat-chip {
 	font-size: 0.72rem;
 	text-transform: uppercase;
 	letter-spacing: 0.04em;

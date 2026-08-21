@@ -188,6 +188,12 @@ permalink: /index.html
 				<th>TBT</th>
 				<th>Weight</th>
 				<th>Req</th>
+				{#
+					Last, and only on this table. The board is drawn from every
+					category at once, so "which list is this from?" is a question only
+					here — the category pages already answer it in their heading.
+				#}
+				<th class="col-cats">Categories</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -253,8 +259,11 @@ permalink: /index.html
 					<td class="num">{{ entry.latest.lab.timings.tbt | ms }}</td>
 					<td class="num">{{ entry.latest.lab.weight.total | bytes }}</td>
 					<td class="num">{{ entry.latest.lab.weight.requests | num }}</td>
+					<td class="col-cats">
+						{% for name in entry.groupNames %}<span class="cat-chip">{{ name }}</span>{% endfor %}
+					</td>
 				{% else %}
-					<td class="num muted" colspan="9">
+					<td class="num muted" colspan="10">
 						{% if entry.currentlyFailing %}every attempt failed{% else %}awaiting first measurement{% endif %}
 					</td>
 				{% endif %}
@@ -352,7 +361,7 @@ permalink: /index.html
 					<code>{{ move.to }}</code>
 				</td>
 				{# `cat`, not `group` — the outer loop is already using that name. #}
-				<td class="col-url">{% for cat in move.groups %}<span class="redirects-group">{{ cat }}</span>{% endfor %}</td>
+				<td class="col-url">{% for cat in move.groups %}<span class="cat-chip">{{ cat }}</span>{% endfor %}</td>
 			</tr>
 			{% endfor %}
 		</tbody>
