@@ -1,0 +1,265 @@
+{
+  "url": "https://www.zachleat.com/resume",
+  "name": "www.zachleat.com",
+  "group": "zachleat",
+  "groupName": "zachleat.com",
+  "timestamp": 1787323414840,
+  "date": "2026-08-21T14:43:34.840Z",
+  "runId": "2026-08-21T14-34-16-342Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 30780,
+  "error": null,
+  "variance": {
+    "min": 94,
+    "max": 99,
+    "spread": 5,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.zachleat.com/resume",
+    "finalUrl": "https://www.zachleat.com/resume",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 97,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1065,
+      "lcp": 2540,
+      "si": 1065,
+      "tbt": 0,
+      "tti": 2540,
+      "cls": 0.006,
+      "ttfb": 615,
+      "maxPotentialFid": 28,
+      "serverResponseTime": 21,
+      "networkRtt": 0.6,
+      "networkServerLatency": 121.4
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 22.6,
+      "elementRenderDelay": 176.1
+    },
+    "weight": {
+      "total": 141063,
+      "requests": 38,
+      "mainDocument": 25889,
+      "byType": {
+        "total": {
+          "bytes": 141063,
+          "requests": 38
+        },
+        "font": {
+          "bytes": 55955,
+          "requests": 4
+        },
+        "image": {
+          "bytes": 31909,
+          "requests": 24
+        },
+        "document": {
+          "bytes": 25889,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 17924,
+          "requests": 5
+        },
+        "stylesheet": {
+          "bytes": 5317,
+          "requests": 2
+        },
+        "other": {
+          "bytes": 4069,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 10500,
+          "requests": 6
+        }
+      },
+      "scripts": 5,
+      "stylesheets": 2,
+      "fonts": 4
+    },
+    "thirdParty": {
+      "count": 3,
+      "bytes": 10500,
+      "mainThreadMs": 2.5,
+      "top": [
+        {
+          "entity": "11ty.dev",
+          "bytes": 5759,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "zgo.at",
+          "bytes": 4362,
+          "mainThreadMs": 2.5
+        },
+        {
+          "entity": "goatcounter.com",
+          "bytes": 379,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 541.9,
+      "byGroup": {
+        "other": 197.6,
+        "styleLayout": 153.9,
+        "scriptEvaluation": 93.4,
+        "paintCompositeRender": 58.3,
+        "parseHTML": 34.3,
+        "scriptParseCompile": 4.4
+      },
+      "bootupMs": 40.9,
+      "longTasks": 1,
+      "longestTaskMs": 55
+    },
+    "dom": {
+      "elements": 522,
+      "depth": 17,
+      "maxChildren": 21
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 11067,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 2506,
+      "unminifiedCssBytes": 3359,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 4607.200000000001,
+      "poorlyCachedCount": 4
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 25,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 29
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2489,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T14:43:49.845Z",
+      "runtimeMs": 6940.4
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "origin",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-23",
+      "last": "2026-08-19"
+    },
+    "metrics": {
+      "fcp": {
+        "p75": 1025,
+        "rating": "good",
+        "distribution": {
+          "good": 92.7,
+          "needsImprovement": 4.8,
+          "poor": 2.6
+        }
+      },
+      "lcp": {
+        "p75": 1085,
+        "rating": "good",
+        "distribution": {
+          "good": 92.5,
+          "needsImprovement": 5.9,
+          "poor": 1.6
+        }
+      },
+      "rtt": {
+        "p75": 166,
+        "rating": null,
+        "distribution": {
+          "good": 45.1,
+          "needsImprovement": 42.7,
+          "poor": 12.2
+        }
+      },
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 98.5,
+          "needsImprovement": 1,
+          "poor": 0.6
+        }
+      },
+      "ttfb": {
+        "p75": 693,
+        "rating": "good",
+        "distribution": {
+          "good": 81.3,
+          "needsImprovement": 13.7,
+          "poor": 5
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 2
+  },
+  "axe": {
+    "generator": {
+      "id": "build-awesome",
+      "name": "Build Awesome",
+      "icon": "BuildAwesome",
+      "version": "4.0.0",
+      "source": "meta",
+      "raw": "Eleventy (Build Awesome) v4.0.0"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0JCETEGKAQABJCK9BCPBNE4"
+    },
+    "violations": 0,
+    "passes": 1021,
+    "incomplete": 0,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

@@ -1,0 +1,217 @@
+{
+  "url": "https://www.teotimepacreau.fr/",
+  "name": "www.teotimepacreau.fr",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787322983518,
+  "date": "2026-08-21T14:36:23.518Z",
+  "runId": "2026-08-21T14-34-16-342Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 22365,
+  "error": null,
+  "variance": {
+    "min": 67,
+    "max": 75,
+    "spread": 8,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.teotimepacreau.fr/",
+    "finalUrl": "https://www.teotimepacreau.fr/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 75,
+      "accessibility": 93,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 794,
+      "lcp": 8556,
+      "si": 1062,
+      "tbt": 0,
+      "tti": 8556,
+      "cls": 0,
+      "ttfb": 606,
+      "maxPotentialFid": 23,
+      "serverResponseTime": 6,
+      "networkRtt": 0,
+      "networkServerLatency": 7.9
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 7.4,
+      "elementRenderDelay": 1000.5
+    },
+    "weight": {
+      "total": 1480373,
+      "requests": 12,
+      "mainDocument": 4995,
+      "byType": {
+        "total": {
+          "bytes": 1480373,
+          "requests": 12
+        },
+        "image": {
+          "bytes": 879096,
+          "requests": 4
+        },
+        "font": {
+          "bytes": 557412,
+          "requests": 2
+        },
+        "script": {
+          "bytes": 30474,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 7295,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 4995,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 1101,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 29419,
+          "requests": 1
+        }
+      },
+      "scripts": 3,
+      "stylesheets": 1,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 29419,
+      "mainThreadMs": 29.1,
+      "top": [
+        {
+          "entity": "JSDelivr CDN",
+          "bytes": 29419,
+          "mainThreadMs": 29.1
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 685,
+      "byGroup": {
+        "other": 266.7,
+        "styleLayout": 176,
+        "scriptEvaluation": 160.2,
+        "paintCompositeRender": 57.5,
+        "parseHTML": 12.3,
+        "scriptParseCompile": 12.2
+      },
+      "bootupMs": 167.1,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 145,
+      "depth": 9,
+      "maxChildren": 7
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 20,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "button-name",
+          "title": "Buttons do not have an accessible name",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 37
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2480,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T14:36:38.789Z",
+      "runtimeMs": 6302.6
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": null,
+      "source": "meta",
+      "raw": "Eleventy"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0JC1DTGG3R067PKHNW4HBW6"
+    },
+    "violations": 5,
+    "passes": 246,
+    "incomplete": 6,
+    "violationRules": 2,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 4,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "button-name",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Buttons must have discernible text"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

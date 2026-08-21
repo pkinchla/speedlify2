@@ -1,0 +1,3 @@
+{"version":1,"url":"https://www.zachleat.com/","updated":"2026-08-21T14:43:00.906Z","points":[
+{"t":1787323354837,"performance":99,"accessibility":100,"best-practices":100,"seo":100,"lcp":1958,"cls":0.001,"tbt":0,"fcp":1079,"si":1079,"ttfb":607,"total":134641,"requests":24,"bytes":28110,"mainThreadMs":2.3,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":325.5,"longTasks":0,"elements":473,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":695,"field-lcp":1085,"field-cls":0,"field-fcp":1025,"field-ttfb":693,"bench":2492.5,"runs":3,"reqRuns":3,"ms":26069,"spread":1}
+]}

@@ -1,0 +1,286 @@
+{
+  "url": "https://www.willvincentvoice.com/",
+  "name": "www.willvincentvoice.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787323294349,
+  "date": "2026-08-21T14:41:34.349Z",
+  "runId": "2026-08-21T14-34-16-342Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 26294,
+  "error": null,
+  "variance": {
+    "min": 80,
+    "max": 81,
+    "spread": 1,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.willvincentvoice.com/",
+    "finalUrl": "https://www.willvincentvoice.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 80,
+      "accessibility": 88,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 1250,
+      "lcp": 3953,
+      "si": 1250,
+      "tbt": 321,
+      "tti": 4184,
+      "cls": 0,
+      "ttfb": 615,
+      "maxPotentialFid": 157,
+      "serverResponseTime": 6,
+      "networkRtt": 0.9,
+      "networkServerLatency": 24.7
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 8,
+      "resourceLoadDelay": 151.3,
+      "resourceLoadDuration": 17,
+      "elementRenderDelay": 70.4
+    },
+    "weight": {
+      "total": 454179,
+      "requests": 19,
+      "mainDocument": 78729,
+      "byType": {
+        "total": {
+          "bytes": 431219,
+          "requests": 17
+        },
+        "script": {
+          "bytes": 245718,
+          "requests": 4
+        },
+        "image": {
+          "bytes": 98577,
+          "requests": 4
+        },
+        "document": {
+          "bytes": 78729,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 6803,
+          "requests": 5
+        },
+        "stylesheet": {
+          "bytes": 1392,
+          "requests": 3
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 193827,
+          "requests": 5
+        }
+      },
+      "scripts": 4,
+      "stylesheets": 3,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 4,
+      "bytes": 193827,
+      "mainThreadMs": 66.9,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 180064,
+          "mainThreadMs": 60.6
+        },
+        {
+          "entity": "Cloudflare",
+          "bytes": 11451,
+          "mainThreadMs": 6.2
+        },
+        {
+          "entity": "plyr.io",
+          "bytes": 2276,
+          "mainThreadMs": 0.1
+        },
+        {
+          "entity": "cloudflareinsights.com",
+          "bytes": 36,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1169.8,
+      "byGroup": {
+        "scriptEvaluation": 488.1,
+        "other": 375.8,
+        "styleLayout": 133.5,
+        "scriptParseCompile": 73.6,
+        "parseHTML": 49.8,
+        "paintCompositeRender": 36.9,
+        "garbageCollection": 12.2
+      },
+      "bootupMs": 513.1,
+      "longTasks": 6,
+      "longestTaskMs": 157
+    },
+    "dom": {
+      "elements": 810,
+      "depth": 15,
+      "maxChildren": 17
+    },
+    "waste": {
+      "unusedJsBytes": 76751,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 4580.400000000001,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 4,
+      "applicableCount": 27,
+      "failingNodes": 6,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 3
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 1
+        },
+        {
+          "id": "label",
+          "title": "Form elements do not have associated labels",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": null,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 33
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2501.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T14:41:43.269Z",
+      "runtimeMs": 7339.3
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": null,
+      "source": "meta",
+      "raw": "Eleventy"
+    },
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2ea66d63890879e-IAD",
+      "server": "cloudflare"
+    },
+    "violations": 57,
+    "passes": 826,
+    "incomplete": 96,
+    "violationRules": 8,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 48,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 3,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Heading levels should only increase by one"
+      },
+      {
+        "id": "label",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Form elements must have labels"
+      },
+      {
+        "id": "landmark-no-duplicate-contentinfo",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should not have more than one contentinfo landmark"
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should have one main landmark"
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      },
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Page should contain a level-one heading"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

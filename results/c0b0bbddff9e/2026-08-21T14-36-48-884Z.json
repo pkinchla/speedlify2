@@ -1,0 +1,222 @@
+{
+  "url": "https://www.tgiles.dev/",
+  "name": "www.tgiles.dev",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787323008884,
+  "date": "2026-08-21T14:36:48.884Z",
+  "runId": "2026-08-21T14-34-16-342Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 20657,
+  "error": null,
+  "variance": {
+    "min": 94,
+    "max": 95,
+    "spread": 1,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.tgiles.dev/",
+    "finalUrl": "https://www.tgiles.dev/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 94,
+      "accessibility": 93,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 49
+    },
+    "timings": {
+      "fcp": 2277,
+      "lcp": 2449,
+      "si": 2277,
+      "tbt": 0,
+      "tti": 2449,
+      "cls": 0.065,
+      "ttfb": 605,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 4,
+      "networkRtt": 0.1,
+      "networkServerLatency": 18.2
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 5.7,
+      "elementRenderDelay": 58.1
+    },
+    "weight": {
+      "total": 237594,
+      "requests": 12,
+      "mainDocument": 5827,
+      "byType": {
+        "total": {
+          "bytes": 237594,
+          "requests": 12
+        },
+        "font": {
+          "bytes": 192628,
+          "requests": 4
+        },
+        "other": {
+          "bytes": 22524,
+          "requests": 4
+        },
+        "image": {
+          "bytes": 10386,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 5827,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 5634,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 595,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 218869,
+          "requests": 9
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 1,
+      "fonts": 4
+    },
+    "thirdParty": {
+      "count": 3,
+      "bytes": 218869,
+      "mainThreadMs": 3.5,
+      "top": [
+        {
+          "entity": "FontAwesome CDN",
+          "bytes": 181959,
+          "mainThreadMs": 3.5
+        },
+        {
+          "entity": "Cloudflare CDN",
+          "bytes": 24148,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Google Fonts",
+          "bytes": 12762,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 242.6,
+      "byGroup": {
+        "other": 95.2,
+        "styleLayout": 83.9,
+        "scriptEvaluation": 39.8,
+        "paintCompositeRender": 15.6,
+        "parseHTML": 5.2,
+        "scriptParseCompile": 2.7
+      },
+      "bootupMs": 10,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 93,
+      "depth": 6,
+      "maxChildren": 20
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 12184,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 768,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 15973.05,
+      "poorlyCachedCount": 2
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 14,
+      "failingNodes": 7,
+      "failing": [
+        {
+          "id": "aria-hidden-focus",
+          "title": "`[aria-hidden=\"true\"]` elements contain focusable descendents",
+          "nodes": 7
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 3
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2508.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T14:36:56.576Z",
+      "runtimeMs": 5885.4
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": null,
+      "source": "meta",
+      "raw": "Eleventy"
+    },
+    "host": {
+      "id": "amazons3",
+      "name": "Amazon S3",
+      "icon": "Amazon",
+      "source": "server"
+    },
+    "headers": {
+      "server": "AmazonS3",
+      "via": "1.1 b97ecc65af57f73e17a5596e8dc5a2d4.cloudfront.net (CloudFront)",
+      "x-amz-cf-id": "ojfnTvRJLEQXubhWwdkec0hT5PKINE33jtTkwvDeUXqw0jRrY9dOPQ=="
+    },
+    "violations": 7,
+    "passes": 168,
+    "incomplete": 0,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "aria-hidden-focus",
+        "impact": "serious",
+        "nodes": 7,
+        "help": "ARIA hidden element must not be focusable or contain focusable elements"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

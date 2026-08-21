@@ -1,0 +1,3 @@
+{"version":1,"url":"https://www.totmanga.com/","updated":"2026-08-21T14:38:04.676Z","points":[
+{"t":1787323063880,"performance":76,"accessibility":96,"best-practices":100,"seo":100,"lcp":1805,"cls":0.806,"tbt":0,"fcp":776,"si":776,"ttfb":605,"total":200675,"requests":9,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":140.8,"longTasks":0,"elements":43,"failingCount":1,"failingNodes":1,"axeViolations":5,"axePasses":86,"bench":2450,"runs":3,"reqRuns":3,"ms":20796,"spread":0}
+]}

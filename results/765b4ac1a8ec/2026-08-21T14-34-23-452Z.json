@@ -1,0 +1,348 @@
+{
+  "url": "https://www.strollmag.com/",
+  "name": "www.strollmag.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787322863452,
+  "date": "2026-08-21T14:34:23.452Z",
+  "runId": "2026-08-21T14-34-16-342Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 1,
+  "durationMs": 93480,
+  "error": null,
+  "partialErrors": [
+    "NO_FCP: The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)",
+    "NO_FCP: The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)"
+  ],
+  "variance": null,
+  "lab": {
+    "requestedUrl": "https://www.strollmag.com/",
+    "finalUrl": "https://www.strollmag.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 39,
+      "accessibility": 80,
+      "best-practices": 73,
+      "seo": 100,
+      "agentic-browsing": 67
+    },
+    "timings": {
+      "fcp": 2045,
+      "lcp": 13588,
+      "si": 15867,
+      "tbt": 1288,
+      "tti": 15900,
+      "cls": 0,
+      "ttfb": 10027,
+      "maxPotentialFid": 325,
+      "serverResponseTime": 15,
+      "networkRtt": 40.2,
+      "networkServerLatency": 35.3
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 10027.4,
+      "resourceLoadDelay": 81.2,
+      "resourceLoadDuration": 51,
+      "elementRenderDelay": 257.4
+    },
+    "weight": {
+      "total": 3181943,
+      "requests": 68,
+      "mainDocument": 14837,
+      "byType": {
+        "total": {
+          "bytes": 3113909,
+          "requests": 66
+        },
+        "image": {
+          "bytes": 1802968,
+          "requests": 9
+        },
+        "script": {
+          "bytes": 1020252,
+          "requests": 21
+        },
+        "other": {
+          "bytes": 135191,
+          "requests": 21
+        },
+        "font": {
+          "bytes": 95134,
+          "requests": 4
+        },
+        "stylesheet": {
+          "bytes": 44908,
+          "requests": 8
+        },
+        "document": {
+          "bytes": 15456,
+          "requests": 3
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 2854015,
+          "requests": 56
+        }
+      },
+      "scripts": 21,
+      "stylesheets": 8,
+      "fonts": 4
+    },
+    "thirdParty": {
+      "count": 13,
+      "bytes": 2853373,
+      "mainThreadMs": 522.9,
+      "top": [
+        {
+          "entity": "Amazon Web Services",
+          "bytes": 1793649,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 491215,
+          "mainThreadMs": 221.1
+        },
+        {
+          "entity": "Facebook",
+          "bytes": 173952,
+          "mainThreadMs": 113.7
+        },
+        {
+          "entity": "LiveHelpNow",
+          "bytes": 130188,
+          "mainThreadMs": 58.4
+        },
+        {
+          "entity": "Google Fonts",
+          "bytes": 98541,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 4960.3,
+      "byGroup": {
+        "scriptEvaluation": 2302.9,
+        "styleLayout": 993.2,
+        "other": 920.6,
+        "scriptParseCompile": 357,
+        "parseHTML": 238.8,
+        "garbageCollection": 78.6,
+        "paintCompositeRender": 69.1
+      },
+      "bootupMs": 2519.1,
+      "longTasks": 18,
+      "longestTaskMs": 397
+    },
+    "dom": {
+      "elements": 735,
+      "depth": 11,
+      "maxChildren": 458
+    },
+    "waste": {
+      "unusedJsBytes": 399093,
+      "unusedCssBytes": 49763,
+      "legacyJsBytes": 23640,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 13107,
+      "renderBlockingMs": 1845,
+      "renderBlockingCount": 3,
+      "poorlyCachedBytes": 2095925.4164618244,
+      "poorlyCachedCount": 22
+    },
+    "accessibility": {
+      "failingCount": 5,
+      "applicableCount": 26,
+      "failingNodes": 21,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 9
+        },
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "nodes": 6
+        },
+        {
+          "id": "button-name",
+          "title": "Buttons do not have an accessible name",
+          "nodes": 4
+        },
+        {
+          "id": "aria-allowed-attr",
+          "title": "`[aria-*]` attributes do not match their roles",
+          "nodes": 1
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": null,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 2,
+      "baselineLimitedFeatures": 18
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2495.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T14:35:31.653Z",
+      "runtimeMs": 20768.2
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-23",
+      "last": "2026-08-19"
+    },
+    "metrics": {
+      "cls": {
+        "p75": 0.01,
+        "rating": "good",
+        "distribution": {
+          "good": 93.2,
+          "needsImprovement": 0.7,
+          "poor": 6.1
+        }
+      },
+      "ttfb": {
+        "p75": 480,
+        "rating": "good",
+        "distribution": {
+          "good": 89.2,
+          "needsImprovement": 7.1,
+          "poor": 3.7
+        }
+      },
+      "fcp": {
+        "p75": 988,
+        "rating": "good",
+        "distribution": {
+          "good": 91.7,
+          "needsImprovement": 5,
+          "poor": 3.3
+        }
+      },
+      "inp": {
+        "p75": 108,
+        "rating": "good",
+        "distribution": {
+          "good": 96.1,
+          "needsImprovement": 3.4,
+          "poor": 0.5
+        }
+      },
+      "lcp": {
+        "p75": 1494,
+        "rating": "good",
+        "distribution": {
+          "good": 92,
+          "needsImprovement": 4.5,
+          "poor": 3.5
+        }
+      },
+      "rtt": {
+        "p75": 97,
+        "rating": null,
+        "distribution": {
+          "good": 55.3,
+          "needsImprovement": 40.8,
+          "poor": 4
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0JBZSYD7HQXT13GJJW46KYJ"
+    },
+    "violations": 22,
+    "passes": 807,
+    "incomplete": 4,
+    "violationRules": 7,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 9,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "nodes": 6,
+        "help": "Links must have discernible text"
+      },
+      {
+        "id": "button-name",
+        "impact": "critical",
+        "nodes": 3,
+        "help": "Buttons must have discernible text"
+      },
+      {
+        "id": "aria-allowed-attr",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Elements must only use supported ARIA attributes"
+      },
+      {
+        "id": "frame-title",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Frames must have an accessible name"
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Heading levels should only increase by one"
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

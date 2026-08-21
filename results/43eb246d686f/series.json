@@ -1,0 +1,3 @@
+{"version":1,"url":"https://www.tilt-studio.fr/","updated":"2026-08-21T14:37:40.880Z","points":[
+{"t":1787323032541,"performance":92,"accessibility":100,"best-practices":100,"seo":100,"lcp":3044,"cls":0.097,"tbt":0,"fcp":1019,"si":1019,"ttfb":719,"total":716746,"requests":24,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":1646.7,"longTasks":1,"elements":934,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":100,"bench":2500.5,"runs":3,"reqRuns":3,"ms":28338,"spread":7}
+]}

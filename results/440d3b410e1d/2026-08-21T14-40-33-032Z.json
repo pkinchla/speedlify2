@@ -1,0 +1,239 @@
+{
+  "url": "https://www.vigorteq.com/",
+  "name": "www.vigorteq.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787323233032,
+  "date": "2026-08-21T14:40:33.032Z",
+  "runId": "2026-08-21T14-34-16-342Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 33756,
+  "error": null,
+  "variance": {
+    "min": 57,
+    "max": 62,
+    "spread": 5,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.vigorteq.com/",
+    "finalUrl": "https://www.vigorteq.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 59,
+      "accessibility": 91,
+      "best-practices": 50,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 4211,
+      "lcp": 7486,
+      "si": 5655,
+      "tbt": 236,
+      "tti": 8874,
+      "cls": 0,
+      "ttfb": 611,
+      "maxPotentialFid": 160,
+      "serverResponseTime": 6,
+      "networkRtt": 0.2,
+      "networkServerLatency": 861
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 8,
+      "resourceLoadDelay": 257.2,
+      "resourceLoadDuration": 104.5,
+      "elementRenderDelay": 52.3
+    },
+    "weight": {
+      "total": 8899215,
+      "requests": 61,
+      "mainDocument": 8054,
+      "byType": {
+        "total": {
+          "bytes": 8897823,
+          "requests": 60
+        },
+        "media": {
+          "bytes": 7333092,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 595471,
+          "requests": 19
+        },
+        "script": {
+          "bytes": 508981,
+          "requests": 21
+        },
+        "font": {
+          "bytes": 297424,
+          "requests": 4
+        },
+        "stylesheet": {
+          "bytes": 153280,
+          "requests": 13
+        },
+        "document": {
+          "bytes": 8054,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 1521,
+          "requests": 1
+        },
+        "third-party": {
+          "bytes": 354707,
+          "requests": 6
+        }
+      },
+      "scripts": 21,
+      "stylesheets": 13,
+      "fonts": 4
+    },
+    "thirdParty": {
+      "count": 4,
+      "bytes": 354707,
+      "mainThreadMs": 133.9,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 170291,
+          "mainThreadMs": 64.2
+        },
+        {
+          "entity": "Yandex Metrica",
+          "bytes": 92365,
+          "mainThreadMs": 46.3
+        },
+        {
+          "entity": "Netlify",
+          "bytes": 55053,
+          "mainThreadMs": 23.4
+        },
+        {
+          "entity": "Google Fonts",
+          "bytes": 36998,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 2399.3,
+      "byGroup": {
+        "other": 930.2,
+        "scriptEvaluation": 741.8,
+        "styleLayout": 363.1,
+        "scriptParseCompile": 171.9,
+        "parseHTML": 99.4,
+        "paintCompositeRender": 92.9
+      },
+      "bootupMs": 805,
+      "longTasks": 10,
+      "longestTaskMs": 160
+    },
+    "dom": {
+      "elements": 464,
+      "depth": 16,
+      "maxChildren": 26
+    },
+    "waste": {
+      "unusedJsBytes": 188510,
+      "unusedCssBytes": 153547,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 21109,
+      "unminifiedCssBytes": 25438,
+      "renderBlockingMs": 4528,
+      "renderBlockingCount": 15,
+      "poorlyCachedBytes": 72675.2,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 18,
+      "failingNodes": 5,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 3
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 2
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 0,
+      "bfCacheFailures": 1,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 19
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2496.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T14:40:45.979Z",
+      "runtimeMs": 10121.9
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "3.0.0",
+      "source": "meta",
+      "raw": "Eleventy v3.0.0"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0JC9BYKHETWTD980H5NSM35"
+    },
+    "violations": 5,
+    "passes": 305,
+    "incomplete": 3,
+    "violationRules": 2,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 3,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 2,
+        "help": "Heading levels should only increase by one"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

@@ -1,0 +1,3 @@
+{"version":1,"url":"https://www.wisc.edu/","updated":"2026-08-21T14:42:31.837Z","points":[
+{"t":1787323323644,"performance":67,"accessibility":100,"best-practices":77,"seo":100,"lcp":10134,"cls":0,"tbt":240,"fcp":2411,"si":2422,"ttfb":607,"total":4390987,"requests":37,"bytes":720300,"mainThreadMs":173,"unusedJsBytes":270807,"unusedCssBytes":17152,"mainThreadTotal":1554.3,"longTasks":7,"elements":565,"failingCount":0,"failingNodes":0,"axeViolations":2,"axePasses":852,"field-lcp":1331,"field-inp":117,"field-cls":0.05,"field-fcp":1245,"field-ttfb":818,"bench":2451.5,"runs":3,"reqRuns":3,"ms":28192,"spread":6}
+]}

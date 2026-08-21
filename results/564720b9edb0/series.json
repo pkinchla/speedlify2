@@ -1,0 +1,3 @@
+{"version":1,"url":"https://www.tripgazer.com/","updated":"2026-08-21T14:39:12.695Z","points":[
+{"t":1787323087675,"performance":40,"accessibility":86,"best-practices":73,"seo":100,"lcp":14693,"cls":0,"tbt":959,"fcp":3480,"si":7105,"ttfb":606,"total":4120533,"requests":227,"bytes":1650406,"mainThreadMs":585.7,"unusedJsBytes":594414,"unusedCssBytes":44809,"mainThreadTotal":6240.1,"longTasks":20,"elements":1296,"failingCount":5,"failingNodes":80,"axeViolations":101,"axePasses":2455,"bench":2484.5,"runs":3,"reqRuns":3,"ms":65018,"spread":8}
+]}

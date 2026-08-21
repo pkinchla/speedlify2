@@ -1,0 +1,3 @@
+{"version":1,"url":"https://www.willvincentvoice.com/","updated":"2026-08-21T14:42:00.644Z","points":[
+{"t":1787323294349,"performance":80,"accessibility":88,"best-practices":100,"seo":100,"lcp":3953,"cls":0,"tbt":321,"fcp":1250,"si":1250,"ttfb":615,"total":454179,"requests":19,"bytes":193827,"mainThreadMs":66.9,"unusedJsBytes":76751,"unusedCssBytes":0,"mainThreadTotal":1169.8,"longTasks":6,"elements":810,"failingCount":4,"failingNodes":6,"axeViolations":57,"axePasses":826,"bench":2501.5,"runs":3,"reqRuns":3,"ms":26294,"spread":1}
+]}
