@@ -19,26 +19,17 @@ try { if (localStorage.getItem("speedlify-theme") === "light") document.document
 	<div class="wrap">
 		<h1 class="masthead-hed"><a href="/">{{ meta.title }}</a></h1>
 		{#
-			Tagline and coverage in one line: what this is, then how much of it has
-			data. The coverage half describes the instance rather than any one
-			page, which is why it sits in the shared masthead at all.
+			The tagline, and nothing else. How much of the corpus has data is a fact
+			about the instance rather than about the page you are on, so it reads as
+			a colophon — see the footer.
 		#}
 		<p class="masthead-subhed">
 			{#
-				Trailing full stop trimmed: the sentence continues into the coverage
-				clause here, where `<meta name="description">` above wants it whole.
+				Trailing full stop trimmed: the sentence continues into the clause
+				below, where `<meta name="description">` above wants it whole.
 			#}
 			{{ meta.description | replace(r/\.$/, "") }}
-			{%- if sites.coverage.measured %} — measured continuously.
-			<strong>{{ sites.coverage.measured }}/{{ sites.coverage.total }}</strong>
-			{{ sites.coverage.measured | plural("site") }} {{ sites.coverage.measured | verb("has", "have") }} data
-			{%- if sites.coverage.medianAgeHours %}, median age
-			{% if sites.coverage.medianAgeHours < 48 %}{{ sites.coverage.medianAgeHours }}h{% else %}{{ (sites.coverage.medianAgeHours / 24) | round(1) }}d{% endif %}
-			{%- endif %}.
-			{% if sites.coverage.stale %}<span class="worse">{{ sites.coverage.stale }} stale</span> (over {{ sites.coverage.staleAfterHours }}h).{% endif %}
-			{% if sites.coverage.never %}<span class="muted">{{ sites.coverage.never }} not yet measured.</span>{% endif %}
-			{% if sites.stats.failing %}<span class="failing-note"><em>{{ sites.stats.failing | num }} currently failing.</em></span>{% endif %}
-			{%- endif %}
+			{%- if sites.coverage.measured %} — measured continuously.{% else %}.{% endif %}
 		</p>
 		<p class="masthead-subhed">
 			<a href="/runs/">Measurement runs</a> · <a href="/embed/">Embed a score</a>
@@ -68,14 +59,32 @@ try { if (localStorage.getItem("speedlify-theme") === "light") document.document
 
 <footer class="footer">
 	<div class="wrap">
+		{#
+			Build stamp and coverage in one line. Coverage moved down from the
+			masthead: it is a status line about this instance, which belongs with
+			the stamp and the source link rather than above every page's content.
+		#}
 		<p>
-			{{ sites.stats.totalMeasurements | num }} measurements across
-			{{ sites.stats.total }} sites · built <time datetime="{{ sites.generated }}">{{ sites.generated | date("long") }}</time>{% if meta.repo %} ·
+			Built <time datetime="{{ sites.generated }}">{{ sites.generated | date("long") }}</time>{% if meta.repo %} ·
 			<a href="{{ meta.repo }}">Source on GitHub</a>{% endif %}
+			{%- if sites.coverage.measured %} ·
+			<strong>{{ sites.coverage.measured }}/{{ sites.coverage.total }}</strong>
+			{{ sites.coverage.measured | plural("site") }} {{ sites.coverage.measured | verb("has", "have") }} data
+			{#- The running total, which used to head its own line above. It is a
+			    fact about the same set of sites, so it reads as a gloss on the
+			    coverage fraction rather than as a separate statistic. #}
+			{%- if sites.stats.totalMeasurements %} ({{ sites.stats.totalMeasurements | num }} {{ sites.stats.totalMeasurements | plural("measurement") }}){% endif %}
+			{%- if sites.coverage.medianAgeHours %}, median age
+			{% if sites.coverage.medianAgeHours < 48 %}{{ sites.coverage.medianAgeHours }}h{% else %}{{ (sites.coverage.medianAgeHours / 24) | round(1) }}d{% endif %}
+			{%- endif %}.
+			{% if sites.coverage.stale %}<span class="worse">{{ sites.coverage.stale }} stale</span> (over {{ sites.coverage.staleAfterHours }}h).{% endif %}
+			{% if sites.coverage.never %}<span class="muted">{{ sites.coverage.never }} not yet measured.</span>{% endif %}
+			{% if sites.stats.failing %}<span class="failing-note"><em>{{ sites.stats.failing | num }} currently failing.</em></span>{% endif %}
+			{%- endif %}
 		</p>
 		<p class="muted">
 			Lab data from Lighthouse{% if sites.hasFieldData %}, field data from the Chrome UX Report (28-day trailing p75){% endif %}.
-			Lab numbers are a simulation on one machine and will not match real users exactly.
+			Lab numbers are a simulated on one machine and will vary from real user data.
 		</p>
 	</div>
 </footer>
