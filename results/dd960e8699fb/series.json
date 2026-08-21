@@ -1,3 +1,4 @@
-{"version":1,"url":"https://pnetto.com/","updated":"2026-08-21T14:37:32.341Z","points":[
-{"t":1787322956420,"error":"NO_FCP: The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)","fails":1,"runs":0,"reqRuns":3,"ms":95921}
+{"version":1,"url":"https://pnetto.com/","updated":"2026-08-21T21:28:42.807Z","points":[
+{"t":1787322956420,"error":"NO_FCP: The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)","fails":1,"runs":0,"reqRuns":3,"ms":95921},
+{"t":1787347626945,"error":"NO_FCP: The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)","fails":2,"runs":0,"reqRuns":3,"ms":95861}
 ]}

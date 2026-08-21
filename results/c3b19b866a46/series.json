@@ -1,3 +1,4 @@
-{"version":1,"url":"https://research.cloudflare.com/","updated":"2026-08-21T14:45:51.018Z","points":[
-{"t":1787323329775,"error":"The \"start lh:runner:gather\" performance mark has not been set","fails":1,"runs":0,"reqRuns":3,"ms":221242}
+{"version":1,"url":"https://research.cloudflare.com/","updated":"2026-08-21T21:31:12.495Z","points":[
+{"t":1787323329775,"error":"The \"start lh:runner:gather\" performance mark has not been set","fails":1,"runs":0,"reqRuns":3,"ms":221242},
+{"t":1787347725809,"error":"PAGE_HUNG: Lighthouse was unable to reliably load the URL you requested because the page stopped responding.","fails":2,"runs":0,"reqRuns":3,"ms":146685}
 ]}

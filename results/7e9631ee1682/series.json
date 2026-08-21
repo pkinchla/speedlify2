@@ -1,3 +1,4 @@
-{"version":1,"url":"https://optimised.email/","updated":"2026-08-21T05:36:10.786Z","points":[
-{"t":1787290554170,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":1,"runs":0,"reqRuns":3,"ms":16615}
+{"version":1,"url":"https://optimised.email/","updated":"2026-08-21T21:26:44.305Z","points":[
+{"t":1787290554170,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":1,"runs":0,"reqRuns":3,"ms":16615},
+{"t":1787347579756,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":2,"runs":0,"reqRuns":3,"ms":24548}
 ]}
