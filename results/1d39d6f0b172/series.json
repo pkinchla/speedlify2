@@ -1,0 +1,3 @@
+{"version":1,"url":"https://www.zachleat.com/web/google-fonts-display","updated":"2026-08-21T16:35:58.744Z","points":[
+{"t":1787330119828,"performance":91,"accessibility":100,"best-practices":100,"seo":100,"lcp":1765,"cls":0.192,"tbt":0,"fcp":1075,"si":1075,"ttfb":625,"total":140474,"requests":19,"bytes":5570,"mainThreadMs":2.1,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":528.5,"longTasks":1,"elements":788,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":1451,"field-lcp":1085,"field-cls":0,"field-fcp":1025,"field-ttfb":693,"bench":2704,"runs":3,"reqRuns":3,"ms":38915,"spread":4}
+]}
