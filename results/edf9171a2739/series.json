@@ -1,0 +1,3 @@
+{"version":1,"url":"https://www.raymondcamden.com/","updated":"2026-08-21T19:28:28.401Z","points":[
+{"t":1787340484465,"performance":100,"accessibility":96,"best-practices":100,"seo":100,"lcp":1531,"cls":0,"tbt":0,"fcp":813,"si":2197,"ttfb":1227,"total":69015,"requests":14,"bytes":7496,"mainThreadMs":2.2,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":236.9,"longTasks":0,"elements":109,"failingCount":1,"failingNodes":7,"axeViolations":7,"axePasses":265,"field-lcp":1480,"field-inp":83,"field-cls":0,"field-fcp":1436,"field-ttfb":969,"bench":2463.5,"runs":3,"reqRuns":3,"ms":23935,"spread":5}
+]}

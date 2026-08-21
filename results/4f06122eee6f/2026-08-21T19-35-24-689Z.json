@@ -1,0 +1,200 @@
+{
+  "url": "https://www.srwild.com/",
+  "name": "www.srwild.com",
+  "group": "11ty-emeritus",
+  "groupName": "11ty Emeritus",
+  "timestamp": 1787340924689,
+  "date": "2026-08-21T19:35:24.689Z",
+  "runId": "2026-08-21T19-25-13-095Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 22794,
+  "error": null,
+  "variance": {
+    "min": 99,
+    "max": 100,
+    "spread": 1,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.srwild.com/",
+    "finalUrl": "https://www.srwild.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 936,
+      "lcp": 1686,
+      "si": 936,
+      "tbt": 0,
+      "tti": 1686,
+      "cls": 0,
+      "ttfb": 606,
+      "maxPotentialFid": 19,
+      "serverResponseTime": 4,
+      "networkRtt": 0,
+      "networkServerLatency": 401.9
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 6.1,
+      "resourceLoadDelay": 10.2,
+      "resourceLoadDuration": 11,
+      "elementRenderDelay": 49.8
+    },
+    "weight": {
+      "total": 167908,
+      "requests": 8,
+      "mainDocument": 2712,
+      "byType": {
+        "total": {
+          "bytes": 167908,
+          "requests": 8
+        },
+        "font": {
+          "bytes": 89418,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 50104,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 19406,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 4761,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 2712,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 1507,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 521,
+          "requests": 1
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 1,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 521,
+      "mainThreadMs": 0,
+      "top": [
+        {
+          "entity": "Plausible",
+          "bytes": 521,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 193.3,
+      "byGroup": {
+        "other": 96.4,
+        "styleLayout": 57.1,
+        "scriptEvaluation": 24.1,
+        "paintCompositeRender": 7,
+        "parseHTML": 6.3,
+        "scriptParseCompile": 2.3
+      },
+      "bootupMs": 4.6,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 80,
+      "depth": 9,
+      "maxChildren": 5
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 2993.8416666666667,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 23,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 24
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2510,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T19:35:34.053Z",
+      "runtimeMs": 6204.3
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "astro",
+      "name": "Astro",
+      "icon": "Astro",
+      "version": "7.2.1",
+      "source": "meta",
+      "raw": "Astro v7.2.1"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0JX4YKBTZJ5VT6P5WS73JTH"
+    },
+    "violations": 0,
+    "passes": 199,
+    "incomplete": 6,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

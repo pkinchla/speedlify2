@@ -1,0 +1,3 @@
+{"version":1,"url":"https://www.orsymphony.org/","updated":"2026-08-21T19:27:35.995Z","points":[
+{"t":1787340417799,"performance":74,"accessibility":100,"best-practices":100,"seo":92,"lcp":5704,"cls":0.001,"tbt":87,"fcp":2805,"si":2805,"ttfb":604,"total":34000943,"requests":49,"bytes":30571863,"mainThreadMs":67.2,"unusedJsBytes":71234,"unusedCssBytes":59860,"mainThreadTotal":2469.8,"longTasks":5,"elements":1248,"failingCount":0,"failingNodes":0,"axeViolations":8,"axePasses":1049,"field-lcp":2172,"field-inp":124,"field-cls":0,"field-fcp":837,"field-ttfb":364,"bench":2498.5,"runs":3,"reqRuns":3,"ms":38195,"spread":0}
+]}

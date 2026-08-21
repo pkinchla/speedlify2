@@ -1,0 +1,22 @@
+{
+  "url": "https://www.stevenhicks.me/",
+  "name": "www.stevenhicks.me",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787341011346,
+  "date": "2026-08-21T19:36:51.346Z",
+  "runId": "2026-08-21T19-25-13-095Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 0,
+  "durationMs": 242108,
+  "error": "The \"start lh:prepare:navigationMode\" performance mark has not been set",
+  "errors": [
+    "lighthouse timed out after 120000ms",
+    "lighthouse timed out after 120000ms",
+    "The \"start lh:prepare:navigationMode\" performance mark has not been set"
+  ],
+  "field": null,
+  "axe": null,
+  "consecutiveFailures": 1
+}

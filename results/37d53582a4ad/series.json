@@ -1,0 +1,3 @@
+{"version":1,"url":"https://www.solidjs.com/","updated":"2026-08-21T19:34:51.220Z","points":[
+{"t":1787340859578,"performance":80,"accessibility":92,"best-practices":100,"seo":100,"lcp":4468,"cls":0.01,"tbt":95,"fcp":2663,"si":2663,"ttfb":466,"total":486516,"requests":27,"bytes":11450,"mainThreadMs":3.8,"unusedJsBytes":72646,"unusedCssBytes":10854,"mainThreadTotal":749.3,"longTasks":4,"elements":363,"failingCount":2,"failingNodes":2,"axeViolations":1,"axePasses":69,"field-lcp":1828,"field-inp":102,"field-cls":0.02,"field-fcp":1728,"field-ttfb":772,"bench":2507,"runs":3,"reqRuns":3,"ms":31641,"spread":3}
+]}

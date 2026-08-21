@@ -1,0 +1,268 @@
+{
+  "url": "https://www.sarrosenvironmental.com/",
+  "name": "www.sarrosenvironmental.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787340728533,
+  "date": "2026-08-21T19:32:08.533Z",
+  "runId": "2026-08-21T19-25-13-095Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 49165,
+  "error": null,
+  "variance": {
+    "min": 52,
+    "max": 64,
+    "spread": 12,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.sarrosenvironmental.com/",
+    "finalUrl": "https://sarrosenvironmental.com/",
+    "redirect": {
+      "from": "https://www.sarrosenvironmental.com/",
+      "to": "https://sarrosenvironmental.com/",
+      "chain": [
+        {
+          "url": "https://www.sarrosenvironmental.com/",
+          "status": 301
+        },
+        {
+          "url": "https://sarrosenvironmental.com/",
+          "status": 200
+        }
+      ],
+      "statuses": [
+        301
+      ],
+      "change": "host",
+      "permanent": true,
+      "schemeUpgrade": false,
+      "hops": 1
+    },
+    "statusCode": "ok",
+    "scores": {
+      "performance": 63,
+      "accessibility": 90,
+      "best-practices": 100,
+      "seo": 92,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 3839,
+      "lcp": 12133,
+      "si": 4369,
+      "tbt": 150,
+      "tti": 12306,
+      "cls": 0.026,
+      "ttfb": 664,
+      "maxPotentialFid": 107,
+      "serverResponseTime": 18,
+      "networkRtt": 1.8,
+      "networkServerLatency": 64
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 34.5,
+      "resourceLoadDelay": 11.8,
+      "resourceLoadDuration": 113.7,
+      "elementRenderDelay": 475.2
+    },
+    "weight": {
+      "total": 2456727,
+      "requests": 123,
+      "mainDocument": 27322,
+      "byType": {
+        "total": {
+          "bytes": 2456727,
+          "requests": 123
+        },
+        "image": {
+          "bytes": 1194569,
+          "requests": 34
+        },
+        "font": {
+          "bytes": 614228,
+          "requests": 5
+        },
+        "script": {
+          "bytes": 362558,
+          "requests": 36
+        },
+        "stylesheet": {
+          "bytes": 254648,
+          "requests": 45
+        },
+        "document": {
+          "bytes": 27322,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 3402,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 205454,
+          "requests": 2
+        }
+      },
+      "scripts": 36,
+      "stylesheets": 45,
+      "fonts": 5
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 205454,
+      "mainThreadMs": 53.3,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 153577,
+          "mainThreadMs": 53.3
+        },
+        {
+          "entity": "wpenginepowered.com",
+          "bytes": 51877,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 2480.5,
+      "byGroup": {
+        "scriptEvaluation": 934.7,
+        "other": 594.5,
+        "styleLayout": 486.6,
+        "parseHTML": 193,
+        "scriptParseCompile": 159.6,
+        "paintCompositeRender": 105.5,
+        "garbageCollection": 6.6
+      },
+      "bootupMs": 828.5,
+      "longTasks": 9,
+      "longestTaskMs": 107
+    },
+    "dom": {
+      "elements": 929,
+      "depth": 16,
+      "maxChildren": 56
+    },
+    "waste": {
+      "unusedJsBytes": 90326,
+      "unusedCssBytes": 177854,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 4398,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 1500,
+      "renderBlockingCount": 44,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 3,
+      "applicableCount": 24,
+      "failingNodes": 8,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 4
+        },
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "nodes": 3
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 762.4,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 31
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2510.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T19:32:43.876Z",
+      "runtimeMs": 12238.1
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": null,
+      "name": "Elementor",
+      "icon": null,
+      "version": "4.2.0",
+      "source": "meta",
+      "raw": "Elementor 4.2.0; features: additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap"
+    },
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2ec11085e2baf1b-SJC",
+      "server": "cloudflare",
+      "x-powered-by": "WP Engine"
+    },
+    "violations": 67,
+    "passes": 931,
+    "incomplete": 56,
+    "violationRules": 4,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 59,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 4,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "nodes": 3,
+        "help": "Links must have discernible text"
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should have one main landmark"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
