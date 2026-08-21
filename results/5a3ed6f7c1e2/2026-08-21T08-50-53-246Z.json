@@ -1,0 +1,323 @@
+{
+  "url": "https://westwarwicks.club/",
+  "name": "westwarwicks.club",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787302253246,
+  "date": "2026-08-21T08:50:53.246Z",
+  "runId": "2026-08-21T08-39-06-237Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 65662,
+  "error": null,
+  "variance": {
+    "min": 56,
+    "max": 56,
+    "spread": 0,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://westwarwicks.club/",
+    "finalUrl": "https://westwarwicks.club/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 56,
+      "accessibility": 92,
+      "best-practices": 73,
+      "seo": 100,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 5537,
+      "lcp": 21131,
+      "si": 11023,
+      "tbt": 54,
+      "tti": 21439,
+      "cls": 0,
+      "ttfb": 737,
+      "maxPotentialFid": 71,
+      "serverResponseTime": 261,
+      "networkRtt": 5.1,
+      "networkServerLatency": 163.1
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 263,
+      "resourceLoadDelay": 15.1,
+      "resourceLoadDuration": 703,
+      "elementRenderDelay": 1455.1
+    },
+    "weight": {
+      "total": 7248025,
+      "requests": 167,
+      "mainDocument": 30728,
+      "byType": {
+        "total": {
+          "bytes": 7248025,
+          "requests": 167
+        },
+        "image": {
+          "bytes": 5124821,
+          "requests": 25
+        },
+        "script": {
+          "bytes": 1398239,
+          "requests": 54
+        },
+        "font": {
+          "bytes": 350402,
+          "requests": 9
+        },
+        "stylesheet": {
+          "bytes": 277092,
+          "requests": 61
+        },
+        "document": {
+          "bytes": 88677,
+          "requests": 2
+        },
+        "other": {
+          "bytes": 8794,
+          "requests": 16
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 1285730,
+          "requests": 31
+        }
+      },
+      "scripts": 54,
+      "stylesheets": 61,
+      "fonts": 9
+    },
+    "thirdParty": {
+      "count": 5,
+      "bytes": 227721,
+      "mainThreadMs": 72.7,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 171872,
+          "mainThreadMs": 60.1
+        },
+        {
+          "entity": "Google Fonts",
+          "bytes": 33684,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "cleantalk.org",
+          "bytes": 12405,
+          "mainThreadMs": 7.1
+        },
+        {
+          "entity": "YouTube",
+          "bytes": 9712,
+          "mainThreadMs": 5.5
+        },
+        {
+          "entity": "Google Analytics",
+          "bytes": 48,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 2518.6,
+      "byGroup": {
+        "scriptEvaluation": 911.4,
+        "other": 806,
+        "styleLayout": 345.7,
+        "parseHTML": 212.9,
+        "scriptParseCompile": 158,
+        "paintCompositeRender": 59.5,
+        "garbageCollection": 25.1
+      },
+      "bootupMs": 850.4,
+      "longTasks": 7,
+      "longestTaskMs": 112
+    },
+    "dom": {
+      "elements": 772,
+      "depth": 19,
+      "maxChildren": 62
+    },
+    "waste": {
+      "unusedJsBytes": 115536,
+      "unusedCssBytes": 112525,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 3000,
+      "renderBlockingCount": 62,
+      "poorlyCachedBytes": 83.11875,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 3,
+      "applicableCount": 32,
+      "failingNodes": 7,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 4
+        },
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "nodes": 2
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 3,
+      "baselineLimitedFeatures": 50
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2767,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T08:51:20.868Z",
+      "runtimeMs": 16180.3
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-23",
+      "last": "2026-08-19"
+    },
+    "metrics": {
+      "ttfb": {
+        "p75": 537,
+        "rating": "good",
+        "distribution": {
+          "good": 85.3,
+          "needsImprovement": 8,
+          "poor": 6.7
+        }
+      },
+      "fcp": {
+        "p75": 1430,
+        "rating": "good",
+        "distribution": {
+          "good": 83.8,
+          "needsImprovement": 10.8,
+          "poor": 5.5
+        }
+      },
+      "lcp": {
+        "p75": 1689,
+        "rating": "good",
+        "distribution": {
+          "good": 85.5,
+          "needsImprovement": 8.8,
+          "poor": 5.7
+        }
+      },
+      "cls": {
+        "p75": 0.27,
+        "rating": "poor",
+        "distribution": {
+          "good": 55.9,
+          "needsImprovement": 3.6,
+          "poor": 40.5
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 2
+  },
+  "axe": {
+    "generator": {
+      "id": null,
+      "name": "Elementor",
+      "icon": null,
+      "version": "4.2.2",
+      "source": "meta",
+      "raw": "Elementor 4.2.2; features: additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap"
+    },
+    "host": {
+      "id": "self-hosted",
+      "name": "Self-hosted",
+      "icon": null,
+      "detail": "nginx",
+      "detailIcon": "Nginx",
+      "source": "server"
+    },
+    "headers": {
+      "server": "nginx"
+    },
+    "violations": 10,
+    "passes": 999,
+    "incomplete": 7,
+    "violationRules": 6,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 4,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "nodes": 2,
+        "help": "Links must have discernible text"
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Heading levels should only increase by one"
+      },
+      {
+        "id": "landmark-contentinfo-is-top-level",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Contentinfo landmark should not be contained in another landmark"
+      },
+      {
+        "id": "landmark-no-duplicate-contentinfo",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should not have more than one contentinfo landmark"
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

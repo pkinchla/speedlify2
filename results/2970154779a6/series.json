@@ -1,0 +1,3 @@
+{"version":1,"url":"https://worldtouroperators.com/","updated":"2026-08-21T08:53:01.370Z","points":[
+{"t":1787302346565,"performance":86,"accessibility":94,"best-practices":77,"seo":92,"lcp":3672,"cls":0.057,"tbt":96,"fcp":1548,"si":3920,"ttfb":2245,"total":621305,"requests":19,"bytes":329885,"mainThreadMs":97.9,"unusedJsBytes":136924,"unusedCssBytes":0,"mainThreadTotal":888.8,"longTasks":3,"elements":514,"failingCount":2,"failingNodes":8,"axeViolations":8,"axePasses":776,"bench":2610,"runs":3,"reqRuns":3,"ms":34805,"spread":11}
+]}

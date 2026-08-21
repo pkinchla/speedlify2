@@ -1,0 +1,3 @@
+{"version":1,"url":"https://vuepress.vuejs.org/","updated":"2026-08-21T08:48:03.556Z","points":[
+{"t":1787302059891,"performance":97,"accessibility":96,"best-practices":100,"seo":100,"lcp":2348,"cls":0,"tbt":82,"fcp":1373,"si":1373,"ttfb":623,"total":787369,"requests":81,"bytes":163107,"mainThreadMs":46.8,"unusedJsBytes":97076,"unusedCssBytes":13061,"mainThreadTotal":805.2,"longTasks":4,"elements":356,"failingCount":1,"failingNodes":2,"axeViolations":2,"axePasses":215,"bench":2851,"runs":3,"reqRuns":3,"ms":23664,"spread":21}
+]}

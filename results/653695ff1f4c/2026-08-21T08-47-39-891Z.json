@@ -1,0 +1,214 @@
+{
+  "url": "https://vuepress.vuejs.org/",
+  "name": "VuePress",
+  "group": "ssg",
+  "groupName": "Site Generators",
+  "timestamp": 1787302059891,
+  "date": "2026-08-21T08:47:39.891Z",
+  "runId": "2026-08-21T08-39-06-237Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 23664,
+  "error": null,
+  "variance": {
+    "min": 76,
+    "max": 97,
+    "spread": 21,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://vuepress.vuejs.org/",
+    "finalUrl": "https://vuepress.vuejs.org/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 97,
+      "accessibility": 96,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1373,
+      "lcp": 2348,
+      "si": 1373,
+      "tbt": 82,
+      "tti": 3668,
+      "cls": 0,
+      "ttfb": 623,
+      "maxPotentialFid": 99,
+      "serverResponseTime": 24,
+      "networkRtt": 0.1,
+      "networkServerLatency": 48.2
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 26.1,
+      "resourceLoadDelay": 10.2,
+      "resourceLoadDuration": 101.8,
+      "elementRenderDelay": 38.9
+    },
+    "weight": {
+      "total": 787369,
+      "requests": 81,
+      "mainDocument": 4494,
+      "byType": {
+        "total": {
+          "bytes": 787369,
+          "requests": 79
+        },
+        "other": {
+          "bytes": 376263,
+          "requests": 73
+        },
+        "script": {
+          "bytes": 236059,
+          "requests": 3
+        },
+        "image": {
+          "bytes": 153980,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 16573,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 4494,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 163107,
+          "requests": 1
+        }
+      },
+      "scripts": 3,
+      "stylesheets": 1,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 163107,
+      "mainThreadMs": 46.8,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 163107,
+          "mainThreadMs": 46.8
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 805.2,
+      "byGroup": {
+        "scriptEvaluation": 389.7,
+        "other": 253.9,
+        "styleLayout": 66.7,
+        "scriptParseCompile": 37.5,
+        "parseHTML": 30.9,
+        "garbageCollection": 21.7,
+        "paintCompositeRender": 4.9
+      },
+      "bootupMs": 423.8,
+      "longTasks": 4,
+      "longestTaskMs": 99
+    },
+    "dom": {
+      "elements": 356,
+      "depth": 13,
+      "maxChildren": 13
+    },
+    "waste": {
+      "unusedJsBytes": 97076,
+      "unusedCssBytes": 13061,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 150,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 24,
+      "failingNodes": 2,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 2
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 0,
+      "bfCacheFailures": 1,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 23
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2851,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T08:47:49.181Z",
+      "runtimeMs": 6553.3
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "vuepress",
+      "name": "VuePress",
+      "icon": "Vuedotjs",
+      "version": "2.0.0",
+      "source": "meta",
+      "raw": "VuePress 2.0.0-rc.26"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0HR2XG7B42CP984W13ERE3Z"
+    },
+    "violations": 2,
+    "passes": 215,
+    "incomplete": 0,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 2,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
