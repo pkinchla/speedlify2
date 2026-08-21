@@ -1,0 +1,212 @@
+{
+  "url": "https://kajkandler.com/",
+  "name": "kajkandler.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787281427567,
+  "date": "2026-08-21T03:03:47.567Z",
+  "runId": "2026-08-21T03-01-57-372Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 24919,
+  "error": null,
+  "variance": {
+    "min": 77,
+    "max": 87,
+    "spread": 10,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://kajkandler.com/",
+    "finalUrl": "https://kajkandler.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 86,
+      "accessibility": 96,
+      "best-practices": 96,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 2698,
+      "lcp": 3540,
+      "si": 2698,
+      "tbt": 82,
+      "tti": 3599,
+      "cls": 0,
+      "ttfb": 711,
+      "maxPotentialFid": 108,
+      "serverResponseTime": 111,
+      "networkRtt": 0.1,
+      "networkServerLatency": 111
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 112.7,
+      "resourceLoadDelay": 183.8,
+      "resourceLoadDuration": 221.3,
+      "elementRenderDelay": 25.5
+    },
+    "weight": {
+      "total": 330211,
+      "requests": 19,
+      "mainDocument": 11282,
+      "byType": {
+        "total": {
+          "bytes": 330211,
+          "requests": 19
+        },
+        "script": {
+          "bytes": 177753,
+          "requests": 2
+        },
+        "font": {
+          "bytes": 61398,
+          "requests": 2
+        },
+        "image": {
+          "bytes": 49801,
+          "requests": 9
+        },
+        "other": {
+          "bytes": 17114,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 12863,
+          "requests": 4
+        },
+        "document": {
+          "bytes": 11282,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 191363,
+          "requests": 4
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 4,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 191363,
+      "mainThreadMs": 54.4,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 171828,
+          "mainThreadMs": 54.4
+        },
+        {
+          "entity": "Google Fonts",
+          "bytes": 19535,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 502.9,
+      "byGroup": {
+        "scriptEvaluation": 197.2,
+        "other": 121.7,
+        "styleLayout": 87.9,
+        "scriptParseCompile": 46.7,
+        "paintCompositeRender": 36.7,
+        "parseHTML": 12.6
+      },
+      "bootupMs": 232.1,
+      "longTasks": 2,
+      "longestTaskMs": 108
+    },
+    "dom": {
+      "elements": 182,
+      "depth": 7,
+      "maxChildren": 54
+    },
+    "waste": {
+      "unusedJsBytes": 72845,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 1080,
+      "renderBlockingCount": 4,
+      "poorlyCachedBytes": 110452,
+      "poorlyCachedCount": 13
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 21,
+      "failingNodes": 3,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 3
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 10
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2343.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T03:04:04.314Z",
+      "runtimeMs": 6736.3
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "self-hosted",
+      "name": "Self-hosted",
+      "icon": null,
+      "detail": "nginx",
+      "detailIcon": "Nginx",
+      "source": "server"
+    },
+    "headers": {
+      "server": "nginx/1.18.0 (Ubuntu)"
+    },
+    "violations": 7,
+    "passes": 417,
+    "incomplete": 0,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 7,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

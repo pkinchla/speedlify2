@@ -1,0 +1,224 @@
+{
+  "url": "https://metagala.xyz/",
+  "name": "metagala.xyz",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787282056205,
+  "date": "2026-08-21T03:14:16.205Z",
+  "runId": "2026-08-21T03-01-57-372Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 52383,
+  "error": null,
+  "variance": {
+    "min": 42,
+    "max": 45,
+    "spread": 3,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://metagala.xyz/",
+    "finalUrl": "https://metagala.xyz/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 44,
+      "accessibility": 93,
+      "best-practices": 100,
+      "seo": 92,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1688,
+      "lcp": 9280,
+      "si": 3181,
+      "tbt": 4676,
+      "tti": 9303,
+      "cls": 0,
+      "ttfb": 623,
+      "maxPotentialFid": 4135,
+      "serverResponseTime": 13,
+      "networkRtt": 0.3,
+      "networkServerLatency": 23.1
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 14.3,
+      "resourceLoadDelay": 2345.9,
+      "resourceLoadDuration": 13.1,
+      "elementRenderDelay": 54.2
+    },
+    "weight": {
+      "total": 2768142,
+      "requests": 271,
+      "mainDocument": 15003,
+      "byType": {
+        "total": {
+          "bytes": 2768142,
+          "requests": 17
+        },
+        "image": {
+          "bytes": 2730244,
+          "requests": 8
+        },
+        "script": {
+          "bytes": 16135,
+          "requests": 4
+        },
+        "document": {
+          "bytes": 15003,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 4676,
+          "requests": 2
+        },
+        "other": {
+          "bytes": 2084,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 2746296,
+          "requests": 12
+        }
+      },
+      "scripts": 4,
+      "stylesheets": 2,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 3,
+      "bytes": 2746296,
+      "mainThreadMs": 21.5,
+      "top": [
+        {
+          "entity": "GitHub",
+          "bytes": 2730244,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "JSDelivr CDN",
+          "bytes": 14343,
+          "mainThreadMs": 21.5
+        },
+        {
+          "entity": "Google Fonts",
+          "bytes": 1709,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 9589,
+      "byGroup": {
+        "scriptEvaluation": 8770.6,
+        "other": 513.6,
+        "styleLayout": 111.5,
+        "garbageCollection": 101.4,
+        "paintCompositeRender": 65.7,
+        "scriptParseCompile": 15.9,
+        "parseHTML": 10.4
+      },
+      "bootupMs": 8783.2,
+      "longTasks": 4,
+      "longestTaskMs": 4135
+    },
+    "dom": {
+      "elements": 2870,
+      "depth": 9,
+      "maxChildren": 260
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 765,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 2617918.1333333333,
+      "poorlyCachedCount": 11
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 19,
+      "failingNodes": 259,
+      "failing": [
+        {
+          "id": "image-alt",
+          "title": "Image elements do not have `[alt]` attributes",
+          "nodes": 259
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 8
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2343.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T03:14:35.554Z",
+      "runtimeMs": 13866.4
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": null,
+      "source": "meta",
+      "raw": "Eleventy"
+    },
+    "host": {
+      "id": "vercel",
+      "name": "Vercel",
+      "icon": "Vercel",
+      "source": "x-vercel-id"
+    },
+    "headers": {
+      "server": "Vercel",
+      "x-vercel-id": "cle1::27vjr-1787282103278-530fc433c1a1"
+    },
+    "violations": 259,
+    "passes": 4388,
+    "incomplete": 56,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "image-alt",
+        "impact": "critical",
+        "nodes": 259,
+        "help": "Images must have alternative text"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

@@ -1,0 +1,3 @@
+{"version":1,"url":"https://leilukin.com/","updated":"2026-08-21T03:10:42.567Z","points":[
+{"t":1787281812354,"performance":91,"accessibility":100,"best-practices":100,"seo":100,"lcp":3043,"cls":0,"tbt":0,"fcp":1741,"si":3985,"ttfb":724,"total":204578,"requests":48,"bytes":1911,"mainThreadMs":0.8,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":436.6,"longTasks":1,"elements":396,"failingCount":1,"failingNodes":1,"axeViolations":0,"axePasses":1021,"field-lcp":1359,"field-cls":0,"field-fcp":1318,"bench":2335,"runs":3,"reqRuns":3,"ms":30212,"spread":6}
+]}

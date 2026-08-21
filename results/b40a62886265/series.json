@@ -1,0 +1,3 @@
+{"version":1,"url":"https://kreativan.dev/","updated":"2026-08-21T03:09:11.447Z","points":[
+{"t":1787281724567,"performance":97,"accessibility":87,"best-practices":77,"seo":100,"lcp":2213,"cls":0,"tbt":97,"fcp":1807,"si":1807,"ttfb":690,"total":1195047,"requests":27,"bytes":395902,"mainThreadMs":108,"unusedJsBytes":163521,"unusedCssBytes":0,"mainThreadTotal":1440.2,"longTasks":6,"elements":467,"failingCount":4,"failingNodes":6,"axeViolations":43,"axePasses":630,"bench":2351.5,"runs":3,"reqRuns":3,"ms":26880,"spread":8}
+]}

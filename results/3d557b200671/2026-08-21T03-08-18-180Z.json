@@ -1,0 +1,274 @@
+{
+  "url": "https://koboldthinktank.site/",
+  "name": "koboldthinktank.site",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787281698180,
+  "date": "2026-08-21T03:08:18.180Z",
+  "runId": "2026-08-21T03-01-57-372Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 23387,
+  "error": null,
+  "variance": {
+    "min": 88,
+    "max": 95,
+    "spread": 7,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://koboldthinktank.site/",
+    "finalUrl": "https://koboldthinktank.site/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 92,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 797,
+      "lcp": 3355,
+      "si": 797,
+      "tbt": 50,
+      "tti": 3480,
+      "cls": 0.032,
+      "ttfb": 623,
+      "maxPotentialFid": 104,
+      "serverResponseTime": 23,
+      "networkRtt": 0.4,
+      "networkServerLatency": 25.2
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 25.1,
+      "resourceLoadDelay": 10.7,
+      "resourceLoadDuration": 55.6,
+      "elementRenderDelay": 21.3
+    },
+    "weight": {
+      "total": 315071,
+      "requests": 12,
+      "mainDocument": 4336,
+      "byType": {
+        "total": {
+          "bytes": 315071,
+          "requests": 12
+        },
+        "script": {
+          "bytes": 168897,
+          "requests": 3
+        },
+        "font": {
+          "bytes": 113473,
+          "requests": 2
+        },
+        "image": {
+          "bytes": 27289,
+          "requests": 5
+        },
+        "document": {
+          "bytes": 4336,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 1076,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "other": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 285699,
+          "requests": 7
+        }
+      },
+      "scripts": 3,
+      "stylesheets": 1,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 3,
+      "bytes": 285699,
+      "mainThreadMs": 59.3,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 163662,
+          "mainThreadMs": 52
+        },
+        {
+          "entity": "Google Fonts",
+          "bytes": 114549,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "buymeacoffee.com",
+          "bytes": 7488,
+          "mainThreadMs": 7.3
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 506.7,
+      "byGroup": {
+        "scriptEvaluation": 213.8,
+        "other": 145,
+        "styleLayout": 72.8,
+        "scriptParseCompile": 42.5,
+        "paintCompositeRender": 21.7,
+        "parseHTML": 10.9
+      },
+      "bootupMs": 221,
+      "longTasks": 2,
+      "longestTaskMs": 104
+    },
+    "dom": {
+      "elements": 77,
+      "depth": 7,
+      "maxChildren": 9
+    },
+    "waste": {
+      "unusedJsBytes": 71136,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 27,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 9
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2340.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T03:08:27.231Z",
+      "runtimeMs": 6655.8
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "origin",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-22",
+      "last": "2026-08-18"
+    },
+    "metrics": {
+      "fcp": {
+        "p75": 935,
+        "rating": "good",
+        "distribution": {
+          "good": 93.8,
+          "needsImprovement": 3.8,
+          "poor": 2.4
+        }
+      },
+      "lcp": {
+        "p75": 1201,
+        "rating": "good",
+        "distribution": {
+          "good": 95.3,
+          "needsImprovement": 3.3,
+          "poor": 1.4
+        }
+      },
+      "rtt": {
+        "p75": 120,
+        "rating": null,
+        "distribution": {
+          "good": 44.3,
+          "needsImprovement": 49,
+          "poor": 6.8
+        }
+      },
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 94.1,
+          "needsImprovement": 3.5,
+          "poor": 2.4
+        }
+      },
+      "ttfb": {
+        "p75": 763,
+        "rating": "good",
+        "distribution": {
+          "good": 79,
+          "needsImprovement": 17.5,
+          "poor": 3.6
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 2
+  },
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "2.0.1",
+      "source": "meta",
+      "raw": "Eleventy v2.0.1"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0H4NGZSNEACYVT8K1AZ1H7Y"
+    },
+    "violations": 3,
+    "passes": 217,
+    "incomplete": 2,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 3,
+        "help": "All page content should be contained by landmarks"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

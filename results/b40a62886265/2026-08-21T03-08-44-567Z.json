@@ -1,0 +1,259 @@
+{
+  "url": "https://kreativan.dev/",
+  "name": "kreativan.dev",
+  "group": "11ty-emeritus",
+  "groupName": "11ty Emeritus",
+  "timestamp": 1787281724567,
+  "date": "2026-08-21T03:08:44.567Z",
+  "runId": "2026-08-21T03-01-57-372Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 26880,
+  "error": null,
+  "variance": {
+    "min": 90,
+    "max": 98,
+    "spread": 8,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://kreativan.dev/",
+    "finalUrl": "https://kreativan.dev/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 97,
+      "accessibility": 87,
+      "best-practices": 77,
+      "seo": 100,
+      "agentic-browsing": 33
+    },
+    "timings": {
+      "fcp": 1807,
+      "lcp": 2213,
+      "si": 1807,
+      "tbt": 97,
+      "tti": 8625,
+      "cls": 0,
+      "ttfb": 690,
+      "maxPotentialFid": 145,
+      "serverResponseTime": 79,
+      "networkRtt": 100,
+      "networkServerLatency": 90.1
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 138.4,
+      "resourceLoadDelay": 14,
+      "resourceLoadDuration": 82.5,
+      "elementRenderDelay": 78.3
+    },
+    "weight": {
+      "total": 1195047,
+      "requests": 27,
+      "mainDocument": 21845,
+      "byType": {
+        "total": {
+          "bytes": 1195047,
+          "requests": 27
+        },
+        "script": {
+          "bytes": 396983,
+          "requests": 9
+        },
+        "font": {
+          "bytes": 375357,
+          "requests": 7
+        },
+        "other": {
+          "bytes": 350528,
+          "requests": 4
+        },
+        "image": {
+          "bytes": 34151,
+          "requests": 3
+        },
+        "document": {
+          "bytes": 22282,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 15746,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 396339,
+          "requests": 13
+        }
+      },
+      "scripts": 9,
+      "stylesheets": 2,
+      "fonts": 7
+    },
+    "thirdParty": {
+      "count": 7,
+      "bytes": 395902,
+      "mainThreadMs": 108,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 279878,
+          "mainThreadMs": 70.3
+        },
+        {
+          "entity": "JSDelivr CDN",
+          "bytes": 71642,
+          "mainThreadMs": 23
+        },
+        {
+          "entity": "cal.com",
+          "bytes": 24352,
+          "mainThreadMs": 5.7
+        },
+        {
+          "entity": "Cloudflare",
+          "bytes": 11577,
+          "mainThreadMs": 3.1
+        },
+        {
+          "entity": "simpleanalyticscdn.com",
+          "bytes": 7348,
+          "mainThreadMs": 5.9
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1440.2,
+      "byGroup": {
+        "scriptEvaluation": 517.2,
+        "other": 386.2,
+        "styleLayout": 296.5,
+        "scriptParseCompile": 109.3,
+        "paintCompositeRender": 105.3,
+        "parseHTML": 25.8
+      },
+      "bootupMs": 495.5,
+      "longTasks": 6,
+      "longestTaskMs": 145
+    },
+    "dom": {
+      "elements": 467,
+      "depth": 14,
+      "maxChildren": 14
+    },
+    "waste": {
+      "unusedJsBytes": 163521,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 766,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 13811.099999999999,
+      "poorlyCachedCount": 6
+    },
+    "accessibility": {
+      "failingCount": 4,
+      "applicableCount": 24,
+      "failingNodes": 6,
+      "failing": [
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "nodes": 3
+        },
+        {
+          "id": "button-name",
+          "title": "Buttons do not have an accessible name",
+          "nodes": 1
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 36
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2351.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T03:08:45.830Z",
+      "runtimeMs": 7542.9
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2e66ff0accf4d2c-ORD",
+      "server": "cloudflare"
+    },
+    "violations": 43,
+    "passes": 630,
+    "incomplete": 27,
+    "violationRules": 4,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 40,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "button-name",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Buttons must have discernible text"
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Heading levels should only increase by one"
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should have one main landmark"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

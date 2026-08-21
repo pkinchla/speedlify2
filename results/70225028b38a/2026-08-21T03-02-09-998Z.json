@@ -1,0 +1,243 @@
+{
+  "url": "https://journal.thenewpolis.com/",
+  "name": "journal.thenewpolis.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787281329998,
+  "date": "2026-08-21T03:02:09.998Z",
+  "runId": "2026-08-21T03-01-57-372Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 29455,
+  "error": null,
+  "variance": {
+    "min": 71,
+    "max": 74,
+    "spread": 3,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://journal.thenewpolis.com/",
+    "finalUrl": "https://journal.thenewpolis.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 74,
+      "accessibility": 95,
+      "best-practices": 96,
+      "seo": 92,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 2500,
+      "lcp": 6589,
+      "si": 2500,
+      "tbt": 0,
+      "tti": 6589,
+      "cls": 0.003,
+      "ttfb": 496,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 33,
+      "networkRtt": 0.1,
+      "networkServerLatency": 46.2
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 35,
+      "resourceLoadDelay": 91.5,
+      "resourceLoadDuration": 44,
+      "elementRenderDelay": 36.8
+    },
+    "weight": {
+      "total": 1028823,
+      "requests": 21,
+      "mainDocument": 5508,
+      "byType": {
+        "total": {
+          "bytes": 1028823,
+          "requests": 20
+        },
+        "image": {
+          "bytes": 753957,
+          "requests": 5
+        },
+        "other": {
+          "bytes": 83977,
+          "requests": 4
+        },
+        "font": {
+          "bytes": 74264,
+          "requests": 3
+        },
+        "script": {
+          "bytes": 72702,
+          "requests": 4
+        },
+        "stylesheet": {
+          "bytes": 38415,
+          "requests": 3
+        },
+        "document": {
+          "bytes": 5508,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 85715,
+          "requests": 4
+        }
+      },
+      "scripts": 4,
+      "stylesheets": 3,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 85715,
+      "mainThreadMs": 3.9,
+      "top": [
+        {
+          "entity": "Google Fonts",
+          "bytes": 74264,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Cloudflare",
+          "bytes": 11451,
+          "mainThreadMs": 3.9
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 450.8,
+      "byGroup": {
+        "other": 250.3,
+        "scriptEvaluation": 96.5,
+        "styleLayout": 66.2,
+        "parseHTML": 21.3,
+        "paintCompositeRender": 8.6,
+        "scriptParseCompile": 7.9
+      },
+      "bootupMs": 49.5,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 110,
+      "depth": 10,
+      "maxChildren": 11
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 26187,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 2238,
+      "renderBlockingCount": 3,
+      "poorlyCachedBytes": 4580.400000000001,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 20,
+      "failingNodes": 2,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 2
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 3,
+      "baselineLimitedFeatures": 23
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2321.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T03:02:31.911Z",
+      "runtimeMs": 6265.3
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "build-awesome",
+      "name": "Build Awesome",
+      "icon": "BuildAwesome",
+      "version": "4.0.0",
+      "source": "meta",
+      "raw": "Eleventy (Build Awesome) v4.0.0"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "cf-ray": "a2e6666718dae826-ORD",
+      "server": "cloudflare",
+      "x-nf-request-id": "01M0H4AF3ZM2K4CCKWM8112S98"
+    },
+    "violations": 6,
+    "passes": 184,
+    "incomplete": 2,
+    "violationRules": 5,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 2,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "landmark-main-is-top-level",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Main landmark should not be contained in another landmark"
+      },
+      {
+        "id": "landmark-no-duplicate-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should not have more than one main landmark"
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "All page content should be contained by landmarks"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

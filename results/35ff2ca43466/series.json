@@ -1,0 +1,3 @@
+{"version":1,"url":"https://metagala.xyz/","updated":"2026-08-21T03:15:08.589Z","points":[
+{"t":1787282056205,"performance":44,"accessibility":93,"best-practices":100,"seo":92,"lcp":9280,"cls":0,"tbt":4676,"fcp":1688,"si":3181,"ttfb":623,"total":2768142,"requests":271,"bytes":2746296,"mainThreadMs":21.5,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":9589,"longTasks":4,"elements":2870,"failingCount":1,"failingNodes":259,"axeViolations":259,"axePasses":4388,"bench":2343.5,"runs":3,"reqRuns":3,"ms":52383,"spread":3}
+]}
