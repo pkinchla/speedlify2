@@ -1,0 +1,276 @@
+{
+  "url": "https://vercel.com/",
+  "name": "Vercel",
+  "group": "hosts",
+  "groupName": "Web Hosts",
+  "timestamp": 1787332205776,
+  "date": "2026-08-21T17:10:05.776Z",
+  "runId": "2026-08-21T17-09-34-285Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 90747,
+  "error": null,
+  "variance": {
+    "min": 35,
+    "max": 64,
+    "spread": 29,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://vercel.com/",
+    "finalUrl": "https://vercel.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 63,
+      "accessibility": 95,
+      "best-practices": 92,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1821,
+      "lcp": 4071,
+      "si": 5015,
+      "tbt": 834,
+      "tti": 12159,
+      "cls": 0,
+      "ttfb": 621,
+      "maxPotentialFid": 483,
+      "serverResponseTime": 2,
+      "networkRtt": 0,
+      "networkServerLatency": 39.7
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 3.8,
+      "elementRenderDelay": 588.3
+    },
+    "weight": {
+      "total": 2072671,
+      "requests": 124,
+      "mainDocument": 56595,
+      "byType": {
+        "total": {
+          "bytes": 2070529,
+          "requests": 123
+        },
+        "script": {
+          "bytes": 1243965,
+          "requests": 74
+        },
+        "other": {
+          "bytes": 318646,
+          "requests": 28
+        },
+        "font": {
+          "bytes": 227800,
+          "requests": 7
+        },
+        "stylesheet": {
+          "bytes": 150830,
+          "requests": 5
+        },
+        "image": {
+          "bytes": 72693,
+          "requests": 8
+        },
+        "document": {
+          "bytes": 56595,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 57387,
+          "requests": 5
+        }
+      },
+      "scripts": 74,
+      "stylesheets": 5,
+      "fonts": 7
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 57387,
+      "mainThreadMs": 0,
+      "top": [
+        {
+          "entity": "vercel-storage.com",
+          "bytes": 57118,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Sentry",
+          "bytes": 269,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 6670.8,
+      "byGroup": {
+        "scriptEvaluation": 2679.9,
+        "styleLayout": 2028.5,
+        "other": 1220.5,
+        "scriptParseCompile": 487.5,
+        "parseHTML": 123,
+        "paintCompositeRender": 117.8,
+        "garbageCollection": 13.6
+      },
+      "bootupMs": 2678.1,
+      "longTasks": 13,
+      "longestTaskMs": 483
+    },
+    "dom": {
+      "elements": 972,
+      "depth": 19,
+      "maxChildren": 26
+    },
+    "waste": {
+      "unusedJsBytes": 360774,
+      "unusedCssBytes": 20177,
+      "legacyJsBytes": 25241,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 750,
+      "renderBlockingCount": 4,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 28,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "meta-viewport",
+          "title": "`[user-scalable=\"no\"]` is used in the `<meta name=\"viewport\">` element or the `[maximum-scale]` attribute is less than 5.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": null,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 3,
+      "baselineLimitedFeatures": 87
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2490,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T17:11:05.523Z",
+      "runtimeMs": 28562.1
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-23",
+      "last": "2026-08-19"
+    },
+    "metrics": {
+      "fcp": {
+        "p75": 1858,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 73.6,
+          "needsImprovement": 13.4,
+          "poor": 13
+        }
+      },
+      "inp": {
+        "p75": 229,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 70.4,
+          "needsImprovement": 19.5,
+          "poor": 10.1
+        }
+      },
+      "lcp": {
+        "p75": 2062,
+        "rating": "good",
+        "distribution": {
+          "good": 81.2,
+          "needsImprovement": 9.5,
+          "poor": 9.3
+        }
+      },
+      "rtt": {
+        "p75": 246,
+        "rating": null,
+        "distribution": {
+          "good": 19.3,
+          "needsImprovement": 60.5,
+          "poor": 20.2
+        }
+      },
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 97.9,
+          "needsImprovement": 1.9,
+          "poor": 0.2
+        }
+      },
+      "ttfb": {
+        "p75": 949,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 69.3,
+          "needsImprovement": 19.7,
+          "poor": 11
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "vercel",
+      "name": "Vercel",
+      "icon": "Vercel",
+      "source": "x-vercel-id"
+    },
+    "headers": {
+      "server": "Vercel",
+      "x-vercel-id": "sfo1::iad1::w4nwv-1787332293315-0a54eae52501"
+    },
+    "violations": 1,
+    "passes": 1026,
+    "incomplete": 105,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "meta-viewport",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Zooming and scaling must not be disabled"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
