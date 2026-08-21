@@ -442,13 +442,22 @@ export default async function ($config) {
 	 * as a closed ring whose colour carries the answer. `null` leaves the track
 	 * bare, which is how "no data" looks in both renderers.
 	 */
-	function ring({ band, text, label, pct, size = 37 }) {
+	function ring({ band, text, label, pct, sublabel = "", size = 37 }) {
 		const stroke = 3;
 		const r = (size - stroke) / 2;
 		const c = size / 2;
 		const circumference = 2 * Math.PI * r;
 		// Dash the arc to the value, and rotate so it starts at 12 o'clock.
 		const dash = `${(circumference * Math.max(0, Math.min(1, pct ?? 0))).toFixed(2)} ${circumference.toFixed(2)}`;
+
+		/*
+		 * A sublabel shifts the value up to make room beneath it, both still
+		 * inside the ring. The pair is centred as a block rather than the value
+		 * staying put: a glyph pinned to the middle with text under it reads as
+		 * top-heavy, and there is only so much room before the descender of the
+		 * label meets the stroke.
+		 */
+		const valueY = sublabel ? c - 3.5 : c;
 
 		return [
 			`<svg class="ring ring-${band}" width="${size}" height="${size}" viewBox="0 0 ${size} ${size}"`,
@@ -458,8 +467,12 @@ export default async function ($config) {
 				? `<circle class="ring-arc" cx="${c}" cy="${c}" r="${r}" fill="none" stroke-width="${stroke}"` +
 					` stroke-dasharray="${dash}" stroke-linecap="round" transform="rotate(-90 ${c} ${c})"/>`
 				: "",
-			`<text class="ring-text" x="${c}" y="${c}" text-anchor="middle" dominant-baseline="central">`,
+			`<text class="ring-text" x="${c}" y="${valueY}" text-anchor="middle" dominant-baseline="central">`,
 			`${escapeAttr(text)}</text>`,
+			sublabel
+				? `<text class="ring-sublabel" x="${c}" y="${c + 7}" text-anchor="middle" dominant-baseline="central">` +
+					`${escapeAttr(sublabel)}</text>`
+				: "",
 			`</svg>`,
 		].join("");
 	}
@@ -504,13 +517,17 @@ export default async function ($config) {
 	$config.addShortcode("axeRing", function (axe, size = 37) {
 		const value = axe && !axe.error ? axe.violations : null;
 		if (typeof value !== "number") {
-			return ring({ band: "none", text: "–", label: "Axe: did not run", pct: null, size });
+			return ring({ band: "none", text: "–", sublabel: "AXE", label: "Axe: did not run", pct: null, size });
 		}
 
 		const rules = axe.violationRules;
 		return ring({
 			band: axeBand(value),
 			text: shortCount(value),
+			// Labelled like the CWV ring beside it: a bare count is the one number
+			// here that could be mistaken for a score, and 0 is the good end of
+			// this scale where 0 would be the bad end of the four before it.
+			sublabel: "AXE",
 			label:
 				`Axe: ${value} violating node${value === 1 ? "" : "s"}` +
 				(typeof rules === "number" ? ` across ${rules} rule${rules === 1 ? "" : "s"}` : ""),
@@ -531,6 +548,7 @@ export default async function ($config) {
 			return ring({
 				band: "none",
 				text: "–",
+				sublabel: "CWV",
 				label: "Core Web Vitals: no real-user data — not counted in the ranking",
 				pct: null,
 				size,
@@ -540,6 +558,10 @@ export default async function ($config) {
 		return ring({
 			band: cwvBand(failures),
 			text: failures === 0 ? "✓" : "✗",
+			// The one ring whose value is a verdict rather than a number, so it is
+			// the one that does not say what it is measuring. The others are read
+			// by position; a tick is read by guesswork without this.
+			sublabel: "CWV",
 			label: `Core Web Vitals: ${failures} of ${assessed ?? "?"} failing at p75`,
 			pct: 1,
 			size,

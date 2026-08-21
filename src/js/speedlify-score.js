@@ -156,6 +156,15 @@ class SpeedlifyScore extends HTMLElement {
 	font-variant-numeric: tabular-nums;
 	fill: currentColor;
 }
+/* Part of the mark rather than an annotation beside it: currentColor is the
+   band colour, the same one the value above it uses. */
+.ring-sublabel {
+	font-family: inherit;
+	font-size: 6px;
+	font-weight: 700;
+	letter-spacing: .04em;
+	fill: currentColor;
+}
 /*
  * The placeholder: the track alone, at the size the finished ring occupies —
  * that is what stops the swap from moving anything — with the arc, the value
@@ -359,7 +368,7 @@ class SpeedlifyScore extends HTMLElement {
 	 * closed ring whose colour carries the answer. `null` leaves the track bare,
 	 * which is how "no data" looks in both renderers.
 	 */
-	ring({ band, text, label, pct }) {
+	ring({ band, text, label, pct, sublabel = "" }) {
 		const { size, stroke, r, c, circumference } = SpeedlifyScore.geometry;
 		const arc =
 			typeof pct === "number"
@@ -372,7 +381,12 @@ class SpeedlifyScore extends HTMLElement {
 			`<svg class="ring ${band}" viewBox="0 0 ${size} ${size}" role="img" aria-label="${SpeedlifyScore.escape(label)}">`,
 			`<circle class="ring-track" cx="${c}" cy="${c}" r="${r}" fill="none" stroke-width="${stroke}"/>`,
 			arc,
-			`<text class="ring-text" x="${c}" y="${c}" text-anchor="middle" dominant-baseline="central">${SpeedlifyScore.escape(text)}</text>`,
+			// A sublabel shifts the value up so the pair sits centred as a block,
+			// both still inside the ring.
+			`<text class="ring-text" x="${c}" y="${sublabel ? c - 3.5 : c}" text-anchor="middle" dominant-baseline="central">${SpeedlifyScore.escape(text)}</text>`,
+			sublabel
+				? `<text class="ring-sublabel" x="${c}" y="${c + 7}" text-anchor="middle" dominant-baseline="central">${SpeedlifyScore.escape(sublabel)}</text>`
+				: "",
 			`</svg>`,
 		].join("");
 	}
@@ -416,11 +430,15 @@ class SpeedlifyScore extends HTMLElement {
 	 */
 	axeHtml(value) {
 		if (typeof value !== "number") {
-			return this.ring({ band: "none", text: "–", label: "Axe: did not run", pct: null });
+			return this.ring({ band: "none", text: "–", sublabel: "AXE", label: "Axe: did not run", pct: null });
 		}
 		return this.ring({
 			band: value === 0 ? "good" : value <= 5 ? "average" : "poor",
 			text: this.shortCount(value),
+			// Labelled like the CWV ring beside it: a bare count is the one number
+			// here that could be mistaken for a score, and 0 is the good end of
+			// this scale where 0 would be the bad end of the four before it.
+			sublabel: "AXE",
 			label: `Axe: ${value} violating node${value === 1 ? "" : "s"}`,
 			pct: 1,
 		});
@@ -435,12 +453,15 @@ class SpeedlifyScore extends HTMLElement {
 	 */
 	cwvHtml(cwv) {
 		if (!cwv || cwv.pass === null || cwv.pass === undefined) {
-			return this.ring({ band: "none", text: "–", label: "Core Web Vitals: no data", pct: null });
+			return this.ring({ band: "none", text: "–", sublabel: "CWV", label: "Core Web Vitals: no data", pct: null });
 		}
 		const source = cwv.source === "field" ? "real users" : "lab approximation";
 		return this.ring({
 			band: cwv.pass ? "good" : "poor",
 			text: cwv.pass ? "✓" : "✗",
+			// The one ring whose value is a verdict rather than a number, so it is
+			// the one that does not say what it is measuring.
+			sublabel: "CWV",
 			label: `Core Web Vitals: ${cwv.pass ? "pass" : "fail"} (${source})`,
 			pct: 1,
 		});

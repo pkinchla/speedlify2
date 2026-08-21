@@ -288,13 +288,18 @@ permalink: /index.html
 				</td>
 
 				{% if entry.latest %}
+					{# 22 rather than the shortcode's 16: these are the row's only
+					   pictures, in a column of their own, and at 16 they read as
+					   punctuation beside the numbers. The inline uses elsewhere — a
+					   tally row, a stat, a heading — sit next to text and keep the
+					   default. #}
 					<td class="col-stack">
-						{% if entry.generator %}{% stackIcon entry.generator %}
-						{% elif entry.presumedGenerator %}{% stackIcon entry.presumedGenerator %}
+						{% if entry.generator %}{% stackIcon entry.generator, 22 %}
+						{% elif entry.presumedGenerator %}{% stackIcon entry.presumedGenerator, 22 %}
 						{% else %}<span class="stack-none" title="No generator detected">·</span>{% endif %}
 					</td>
 					<td class="col-stack">
-						{% if entry.host %}{% stackIcon entry.host %}{% else %}<span class="stack-none" title="No host detected">·</span>{% endif %}
+						{% if entry.host %}{% stackIcon entry.host, 22 %}{% else %}<span class="stack-none" title="No host detected">·</span>{% endif %}
 					</td>
 					{#
 						Six rings, in the order <speedlify-score> draws them: the four

@@ -570,14 +570,29 @@ th.col-rings { text-align: left !important; }
 .ring-track { stroke: var(--border); }
 .ring-arc { stroke: var(--text-muted); }
 .ring-text { font-size: 12px; font-weight: 650; fill: var(--text); font-family: var(--sans); }
+/* Small enough to read as a caption rather than a value, and letter-spaced so
+   three capitals at this size do not run together. Takes the band colour from
+   the rules below, same as the value above it — the label is part of the mark,
+   not an annotation beside it. */
+.ring-sublabel {
+	font-size: 6px;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	fill: var(--text-muted);
+	font-family: var(--sans);
+}
 
 .ring-good .ring-arc { stroke: var(--good); }
-.ring-good .ring-text { fill: var(--good); }
+.ring-good .ring-text,
+.ring-good .ring-sublabel { fill: var(--good); }
 .ring-average .ring-arc { stroke: var(--average); }
-.ring-average .ring-text { fill: var(--average); }
+.ring-average .ring-text,
+.ring-average .ring-sublabel { fill: var(--average); }
 .ring-poor .ring-arc { stroke: var(--poor); }
-.ring-poor .ring-text { fill: var(--poor); }
-.ring-none .ring-text { fill: var(--text-muted); }
+.ring-poor .ring-text,
+.ring-poor .ring-sublabel { fill: var(--poor); }
+.ring-none .ring-text,
+.ring-none .ring-sublabel { fill: var(--text-muted); }
 
 /* --------------------------------------------------------- rank and title */
 
@@ -654,7 +669,12 @@ th.col-rings { text-align: left !important; }
 /* ------------------------------------------------------- built with / host */
 
 /* One mark per cell now, so the column only has to hold one. */
-.col-stack { text-align: center !important; white-space: nowrap; width: 2.2rem; }
+/* Wide enough for the 22px mark the leaderboards ask for, plus the cell's own
+   padding — narrower and the column would squeeze the icon it exists to show. */
+.col-stack { text-align: center !important; white-space: nowrap; width: 2.6rem; }
+/* The text chip is the fallback when a brand has no mark, so it grows with the
+   icons rather than sitting beside them looking like a different column. */
+.col-stack .stack-chip { font-size: 0.7rem; }
 .stack-icon { display: inline-block; vertical-align: middle; }
 .stack-chip {
 	display: inline-block;
