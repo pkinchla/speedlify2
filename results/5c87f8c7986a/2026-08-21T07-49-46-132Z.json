@@ -1,0 +1,261 @@
+{
+  "url": "https://thegymnasium.com/",
+  "name": "thegymnasium.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787298586132,
+  "date": "2026-08-21T07:49:46.132Z",
+  "runId": "2026-08-21T07-41-20-098Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 27970,
+  "error": null,
+  "variance": {
+    "min": 99,
+    "max": 100,
+    "spread": 1,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://thegymnasium.com/",
+    "finalUrl": "https://thegymnasium.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1081,
+      "lcp": 1381,
+      "si": 1081,
+      "tbt": 0,
+      "tti": 1381,
+      "cls": 0.021,
+      "ttfb": 631,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 118,
+      "networkRtt": 21.3,
+      "networkServerLatency": 1842.3
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 220.3,
+      "resourceLoadDelay": 8,
+      "resourceLoadDuration": 14.1,
+      "elementRenderDelay": 83.6
+    },
+    "weight": {
+      "total": 269722,
+      "requests": 32,
+      "mainDocument": 5738,
+      "byType": {
+        "total": {
+          "bytes": 260948,
+          "requests": 31
+        },
+        "font": {
+          "bytes": 116527,
+          "requests": 3
+        },
+        "image": {
+          "bytes": 104723,
+          "requests": 21
+        },
+        "other": {
+          "bytes": 18535,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 10940,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 5738,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 4485,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 17475,
+          "requests": 1
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 2,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 17475,
+      "mainThreadMs": 0,
+      "top": [
+        {
+          "entity": "WP Engine",
+          "bytes": 17475,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 834.4,
+      "byGroup": {
+        "other": 347.3,
+        "paintCompositeRender": 234.9,
+        "styleLayout": 210.9,
+        "scriptEvaluation": 25.6,
+        "parseHTML": 15.1,
+        "scriptParseCompile": 0.7
+      },
+      "bootupMs": 14.7,
+      "longTasks": 1,
+      "longestTaskMs": 68
+    },
+    "dom": {
+      "elements": 388,
+      "depth": 11,
+      "maxChildren": 36
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 11059,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 150,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 29,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 19
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2899.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T07:49:47.360Z",
+      "runtimeMs": 8821.6
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "origin",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-23",
+      "last": "2026-08-19"
+    },
+    "metrics": {
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 91.5,
+          "needsImprovement": 4.5,
+          "poor": 4
+        }
+      },
+      "ttfb": {
+        "p75": 868,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 67.2,
+          "needsImprovement": 23,
+          "poor": 9.8
+        }
+      },
+      "fcp": {
+        "p75": 1452,
+        "rating": "good",
+        "distribution": {
+          "good": 86.5,
+          "needsImprovement": 6.2,
+          "poor": 7.3
+        }
+      },
+      "lcp": {
+        "p75": 1464,
+        "rating": "good",
+        "distribution": {
+          "good": 91.6,
+          "needsImprovement": 3.6,
+          "poor": 4.8
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 2
+  },
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "3.0.0",
+      "source": "meta",
+      "raw": "Eleventy v3.0.0"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0HMRZAT5V1ZR8W17MF2V3P0"
+    },
+    "violations": 1,
+    "passes": 928,
+    "incomplete": 1,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

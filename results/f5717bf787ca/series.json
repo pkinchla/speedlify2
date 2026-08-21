@@ -1,0 +1,3 @@
+{"version":1,"url":"https://teami.io/","updated":"2026-08-21T07:49:43.131Z","points":[
+{"t":1787298535682,"to":"https://pesatoken.io/","perm":1,"performance":62,"accessibility":84,"best-practices":92,"seo":100,"lcp":12281,"cls":0,"tbt":32,"fcp":4959,"si":4959,"ttfb":711,"total":6719654,"requests":48,"bytes":1697975,"mainThreadMs":47.2,"unusedJsBytes":36696,"unusedCssBytes":18612,"mainThreadTotal":1660.1,"longTasks":1,"elements":119,"failingCount":3,"failingNodes":10,"axeViolations":197,"axePasses":715,"bench":3078,"runs":3,"reqRuns":3,"ms":47448,"spread":10}
+]}

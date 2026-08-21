@@ -1,0 +1,3 @@
+{"version":1,"url":"https://stoptxeviction.org/","updated":"2026-08-21T07:44:45.280Z","points":[
+{"t":1787298253228,"performance":70,"accessibility":96,"best-practices":100,"seo":85,"lcp":2785,"cls":0.002,"tbt":1317,"fcp":1609,"si":1963,"ttfb":681,"total":329355,"requests":28,"bytes":125847,"mainThreadMs":536.2,"unusedJsBytes":0,"unusedCssBytes":44834,"mainThreadTotal":2885.7,"longTasks":3,"elements":3340,"failingCount":3,"failingNodes":4,"axeViolations":10,"axePasses":1395,"field-cls":0,"field-fcp":1253,"bench":3008,"runs":3,"reqRuns":3,"ms":32051,"spread":8}
+]}

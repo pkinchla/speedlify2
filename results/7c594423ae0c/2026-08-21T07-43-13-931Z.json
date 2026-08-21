@@ -1,0 +1,284 @@
+{
+  "url": "https://stable.visual-framework.dev/",
+  "name": "stable.visual-framework.dev",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787298193931,
+  "date": "2026-08-21T07:43:13.931Z",
+  "runId": "2026-08-21T07-41-20-098Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 32539,
+  "error": null,
+  "variance": {
+    "min": 55,
+    "max": 64,
+    "spread": 9,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://stable.visual-framework.dev/",
+    "finalUrl": "https://stable.visual-framework.dev/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 59,
+      "accessibility": 89,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 28
+    },
+    "timings": {
+      "fcp": 3984,
+      "lcp": 7450,
+      "si": 3984,
+      "tbt": 213,
+      "tti": 8571,
+      "cls": 0.116,
+      "ttfb": 679,
+      "maxPotentialFid": 150,
+      "serverResponseTime": 107,
+      "networkRtt": 0.2,
+      "networkServerLatency": 88.2
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 108.3,
+      "resourceLoadDelay": 26.2,
+      "resourceLoadDuration": 4.8,
+      "elementRenderDelay": 159.6
+    },
+    "weight": {
+      "total": 1245993,
+      "requests": 28,
+      "mainDocument": 11823,
+      "byType": {
+        "total": {
+          "bytes": 1230533,
+          "requests": 26
+        },
+        "script": {
+          "bytes": 545457,
+          "requests": 5
+        },
+        "font": {
+          "bytes": 326232,
+          "requests": 5
+        },
+        "image": {
+          "bytes": 246130,
+          "requests": 7
+        },
+        "other": {
+          "bytes": 57521,
+          "requests": 7
+        },
+        "stylesheet": {
+          "bytes": 43370,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 11823,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 1212553,
+          "requests": 16
+        }
+      },
+      "scripts": 5,
+      "stylesheets": 1,
+      "fonts": 5
+    },
+    "thirdParty": {
+      "count": 7,
+      "bytes": 1228013,
+      "mainThreadMs": 140.5,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 454322,
+          "mainThreadMs": 111
+        },
+        {
+          "entity": "emblstatic.net",
+          "bytes": 340051,
+          "mainThreadMs": 27.3
+        },
+        {
+          "entity": "cloudimg.io",
+          "bytes": 242151,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "JSDelivr CDN",
+          "bytes": 116099,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "embl.org",
+          "bytes": 54102,
+          "mainThreadMs": 0.1
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1334.3,
+      "byGroup": {
+        "other": 541.6,
+        "scriptEvaluation": 452.1,
+        "styleLayout": 146.9,
+        "scriptParseCompile": 131.4,
+        "paintCompositeRender": 35.6,
+        "parseHTML": 26.7
+      },
+      "bootupMs": 574.1,
+      "longTasks": 7,
+      "longestTaskMs": 256
+    },
+    "dom": {
+      "elements": 619,
+      "depth": 12,
+      "maxChildren": 26
+    },
+    "waste": {
+      "unusedJsBytes": 248398,
+      "unusedCssBytes": 38414,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 27793,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 904,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 481789.83520833333,
+      "poorlyCachedCount": 7
+    },
+    "accessibility": {
+      "failingCount": 4,
+      "applicableCount": 28,
+      "failingNodes": 5,
+      "failing": [
+        {
+          "id": "list",
+          "title": "Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
+          "nodes": 2
+        },
+        {
+          "id": "aria-required-children",
+          "title": "Elements with an ARIA `[role]` that require children to contain a specific `[role]` are missing some or all of those required children.",
+          "nodes": 1
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": null,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 20
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 3058,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T07:43:38.503Z",
+      "runtimeMs": 6962.6
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "self-hosted",
+      "name": "Self-hosted",
+      "icon": null,
+      "detail": "nginx",
+      "detailIcon": "Nginx",
+      "source": "server"
+    },
+    "headers": {
+      "server": "nginx"
+    },
+    "violations": 19,
+    "passes": 464,
+    "incomplete": 60,
+    "violationRules": 8,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 11,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "list",
+        "impact": "serious",
+        "nodes": 2,
+        "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements"
+      },
+      {
+        "id": "aria-allowed-role",
+        "impact": "minor",
+        "nodes": 1,
+        "help": "ARIA role should be appropriate for the element"
+      },
+      {
+        "id": "aria-required-children",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Certain ARIA roles must contain particular children"
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Heading levels should only increase by one"
+      },
+      {
+        "id": "image-redundant-alt",
+        "impact": "minor",
+        "nodes": 1,
+        "help": "Alternative text of images should not be repeated as text"
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should have one main landmark"
+      },
+      {
+        "id": "scrollable-region-focusable",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Scrollable region must have keyboard access"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

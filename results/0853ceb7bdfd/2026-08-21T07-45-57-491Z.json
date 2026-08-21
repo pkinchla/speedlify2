@@ -1,0 +1,278 @@
+{
+  "url": "https://surma.dev/",
+  "name": "surma.dev",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787298357491,
+  "date": "2026-08-21T07:45:57.491Z",
+  "runId": "2026-08-21T07-41-20-098Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 20204,
+  "error": null,
+  "variance": {
+    "min": 96,
+    "max": 97,
+    "spread": 1,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://surma.dev/",
+    "finalUrl": "https://surma.dev/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 96,
+      "accessibility": 83,
+      "best-practices": 100,
+      "seo": 85,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 2113,
+      "lcp": 2416,
+      "si": 2113,
+      "tbt": 0,
+      "tti": 2416,
+      "cls": 0,
+      "ttfb": 613,
+      "maxPotentialFid": 24,
+      "serverResponseTime": 42,
+      "networkRtt": 5.1,
+      "networkServerLatency": 12.8
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 66.2,
+      "elementRenderDelay": 135.7
+    },
+    "weight": {
+      "total": 189236,
+      "requests": 24,
+      "mainDocument": 4810,
+      "byType": {
+        "total": {
+          "bytes": 189236,
+          "requests": 23
+        },
+        "font": {
+          "bytes": 145517,
+          "requests": 2
+        },
+        "script": {
+          "bytes": 16345,
+          "requests": 5
+        },
+        "image": {
+          "bytes": 14415,
+          "requests": 9
+        },
+        "stylesheet": {
+          "bytes": 6824,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 4810,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 1325,
+          "requests": 5
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 12429,
+          "requests": 4
+        }
+      },
+      "scripts": 5,
+      "stylesheets": 1,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 12429,
+      "mainThreadMs": 2.5,
+      "top": [
+        {
+          "entity": "Cloudflare",
+          "bytes": 11577,
+          "mainThreadMs": 2.5
+        },
+        {
+          "entity": "Google Analytics",
+          "bytes": 852,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 532.6,
+      "byGroup": {
+        "other": 233.3,
+        "styleLayout": 202.2,
+        "scriptEvaluation": 63.7,
+        "parseHTML": 19.3,
+        "paintCompositeRender": 12,
+        "scriptParseCompile": 2.1
+      },
+      "bootupMs": 33.9,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 121,
+      "depth": 6,
+      "maxChildren": 10
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 4630.8,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 14,
+      "failingNodes": 2,
+      "failing": [
+        {
+          "id": "html-has-lang",
+          "title": "`<html>` element does not have a `[lang]` attribute",
+          "nodes": 1
+        },
+        {
+          "id": "image-alt",
+          "title": "Image elements do not have `[alt]` attributes",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": null,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 18
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 3008.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-21T07:45:58.717Z",
+      "runtimeMs": 6115.4
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "origin",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-23",
+      "last": "2026-08-19"
+    },
+    "metrics": {
+      "fcp": {
+        "p75": 2028,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 71.2,
+          "needsImprovement": 21.3,
+          "poor": 7.5
+        }
+      },
+      "lcp": {
+        "p75": 2551,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 75.9,
+          "needsImprovement": 19.3,
+          "poor": 4.8
+        }
+      },
+      "rtt": {
+        "p75": 180,
+        "rating": null,
+        "distribution": {
+          "good": 38.1,
+          "needsImprovement": 46.1,
+          "poor": 15.8
+        }
+      },
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 97.8,
+          "needsImprovement": 1.5,
+          "poor": 0.7
+        }
+      },
+      "ttfb": {
+        "p75": 1306,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 48.9,
+          "needsImprovement": 37.9,
+          "poor": 13.2
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 2
+  },
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "cf-ray": "a2e805e5ee17c9b8-IAD",
+      "server": "cloudflare",
+      "x-nf-request-id": "01M0HMHTXMVSBY6N61H8S3E3BS"
+    },
+    "violations": 2,
+    "passes": 214,
+    "incomplete": 47,
+    "violationRules": 2,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "html-has-lang",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "<html> element must have a lang attribute"
+      },
+      {
+        "id": "image-alt",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Images must have alternative text"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

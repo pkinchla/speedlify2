@@ -1,0 +1,3 @@
+{"version":1,"url":"https://stable.visual-framework.dev/","updated":"2026-08-21T07:43:46.471Z","points":[
+{"t":1787298193931,"performance":59,"accessibility":89,"best-practices":100,"seo":100,"lcp":7450,"cls":0.116,"tbt":213,"fcp":3984,"si":3984,"ttfb":679,"total":1245993,"requests":28,"bytes":1228013,"mainThreadMs":140.5,"unusedJsBytes":248398,"unusedCssBytes":38414,"mainThreadTotal":1334.3,"longTasks":7,"elements":619,"failingCount":4,"failingNodes":5,"axeViolations":19,"axePasses":464,"bench":3058,"runs":3,"reqRuns":3,"ms":32539,"spread":9}
+]}
