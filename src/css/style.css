@@ -240,6 +240,21 @@ th.col-trend { text-align: center !important; }
 
 .row-failing { background: var(--poor-bg); }
 
+/*
+ * An event between two measurements rather than a measurement: no numbers, so
+ * it spans the table and reads as a rule across it. Quiet by default — the row
+ * beneath is still the data — with the badge carrying whatever weight it needs.
+ */
+.row-change td {
+	text-align: left !important;
+	white-space: normal !important;
+	font-size: 0.82rem;
+	color: var(--text-muted);
+	background: color-mix(in srgb, var(--accent) 6%, transparent);
+}
+.row-change strong { color: var(--text); font-weight: 650; }
+.change-mark { color: var(--accent); font-weight: 700; padding-right: 0.15rem; }
+
 /* ------------------------------------------------------------------ scores */
 
 .score { font-variant-numeric: tabular-nums; font-weight: 650; }

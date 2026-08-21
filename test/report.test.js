@@ -19,7 +19,7 @@ afterEach(() => {
 	while (tmp.length) fs.rmSync(tmp.pop(), { recursive: true, force: true });
 });
 
-function fixture({ sites = 1, points = 4, url = (i) => `https://site${i}.example/`, performance = (p) => 80 + p, axe = null, field = null } = {}) {
+function fixture({ sites = 1, points = 4, url = (i) => `https://site${i}.example/`, performance = (p) => 80 + p, axe = null, field = null, generator = () => null } = {}) {
 	const dir = fs.mkdtempSync(path.join(os.tmpdir(), "speedlify-report-"));
 	tmp.push(dir);
 
@@ -55,7 +55,9 @@ function fixture({ sites = 1, points = 4, url = (i) => `https://site${i}.example
 					lcpBreakdown: { timeToFirstByte: 100 },
 				},
 				field,
-				axe,
+				// The generator tag rides on the axe record, which is where the
+				// measurement step puts it.
+				axe: generator(p) ? { ...(axe ?? {}), generator: generator(p) } : axe,
 			});
 		}
 	}
@@ -817,5 +819,82 @@ describe("legacy API filenames", () => {
 
 		assert.equal(lighthouse.performance, 1);
 		assert.equal(lighthouse.seo, 1);
+	});
+});
+
+describe("generator history", () => {
+	/**
+	 * When a site changed what built it, derived from the tag recorded with each
+	 * measurement rather than from a note written when a category reassignment
+	 * happened. The stored-note version would record when *we noticed* — which
+	 * depends on when the site came up in a rolling schedule, is unknowable for
+	 * anything measured before the feature existed, and cannot be corrected by
+	 * re-running the report.
+	 */
+	test("records the measurement a change first appeared in", async () => {
+		const f = fixture({
+			points: 4,
+			generator: (p) => (p < 2 ? "Eleventy v3.0.0" : "Astro v4.16.18"),
+		});
+		const r = await buildReport({ resultsDir: f.resultsDir, configFile: f.configFile });
+		const changes = r.entries[0].generatorHistory;
+
+		assert.equal(changes.length, 1);
+		assert.equal(changes[0].from, "Eleventy");
+		assert.equal(changes[0].to, "Astro");
+		assert.equal(changes[0].leftEleventy, true);
+		assert.equal(changes[0].returnedToEleventy, false);
+		// The third measurement, which is the first that saw Astro.
+		assert.equal(changes[0].date, r.entries[0].history[2].date);
+	});
+
+	test("a rename is not a migration", async () => {
+		// "Build Awesome" is Eleventy's newer branding. The tag changes, the
+		// project does not, and flagging it would move the site to Emeritus.
+		const f = fixture({
+			points: 2,
+			generator: (p) => (p < 1 ? "Eleventy v3.0.0" : "Eleventy (Build Awesome) v4.0.0"),
+		});
+		const r = await buildReport({ resultsDir: f.resultsDir, configFile: f.configFile });
+		const changes = r.entries[0].generatorHistory;
+
+		assert.equal(changes.length, 1, "the change is still recorded");
+		assert.equal(changes[0].leftEleventy, false, "but it is not a departure");
+	});
+
+	test("notices a site coming back", async () => {
+		const f = fixture({ points: 2, generator: (p) => (p < 1 ? "Astro v4.16.18" : "Eleventy v3.0.0") });
+		const r = await buildReport({ resultsDir: f.resultsDir, configFile: f.configFile });
+
+		assert.equal(r.entries[0].generatorHistory[0].returnedToEleventy, true);
+	});
+
+	test("a steady generator is not a change", async () => {
+		const f = fixture({ points: 4, generator: () => "Eleventy v3.0.0" });
+		const r = await buildReport({ resultsDir: f.resultsDir, configFile: f.configFile });
+
+		assert.deepEqual(r.entries[0].generatorHistory, []);
+	});
+
+	test("says nothing for a site that emits no tag", async () => {
+		// The common case: most static sites have no generator meta at all, and
+		// absence must not read as a migration to nothing.
+		const f = fixture({ points: 4 });
+		const r = await buildReport({ resultsDir: f.resultsDir, configFile: f.configFile });
+
+		assert.deepEqual(r.entries[0].generatorHistory, []);
+	});
+
+	test("a measurement that dropped the tag does not split the run", async () => {
+		// One page load missing the meta — a failed run, a partial render — is not
+		// evidence of anything, so points without a tag are skipped rather than
+		// counted as a change to and from nothing.
+		const f = fixture({
+			points: 4,
+			generator: (p) => (p === 2 ? null : "Eleventy v3.0.0"),
+		});
+		const r = await buildReport({ resultsDir: f.resultsDir, configFile: f.configFile });
+
+		assert.deepEqual(r.entries[0].generatorHistory, []);
 	});
 });

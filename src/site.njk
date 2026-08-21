@@ -562,6 +562,27 @@ eleventyComputed:
 		</thead>
 		<tbody>
 		{% for point in entry.history | reverse | limit(30) %}
+			{#
+				A generator change is a fact about this row: the measurement below
+				is the first one that saw the new tag. Rendered as its own row
+				above it rather than a badge inside it, so the change reads as
+				something that happened between two measurements — which is all we
+				can honestly say about when it happened.
+			#}
+			{% for change in entry.generatorHistory %}
+			{% if change.date == point.date %}
+			<tr class="row-change">
+				<td colspan="11">
+					<span class="change-mark">{{ "↩" if change.returnedToEleventy else "→" }}</span>
+					Generator changed from <strong>{{ change.from }}</strong> to
+					<strong>{{ change.to }}</strong>
+					{% if change.leftEleventy %}<span class="badge badge-redirect" title="This is the move 11ty Emeritus is for — measurement follows it on its own">left Eleventy</span>{% endif %}
+					{% if change.returnedToEleventy %}<span class="badge badge-unlisted" title="Back on Eleventy or Build Awesome — it returns to Built Awesome on its own">back on Eleventy</span>{% endif %}
+					<span class="muted small">first seen this measurement</span>
+				</td>
+			</tr>
+			{% endif %}
+			{% endfor %}
 			<tr{% if point.error %} class="row-failing"{% endif %}>
 				<td class="col-site">
 					{{ point.date | date("long") }}
