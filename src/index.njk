@@ -230,8 +230,7 @@ permalink: /index.html
 				<th class="col-stack" title="Who serves the site, detected from its response headers on the same page load">Host</th>
 				<th class="col-rings" title="The four Lighthouse categories, then the Core Web Vitals verdict from real users and violating nodes from a full axe run — the primary ranking and its two tiebreakers, in order">Scores</th>
 				<th class="col-trend">Trend</th>
-				<th title="Time to first byte, from the lab run">TTFB</th>
-				<th>LCP</th>
+				<th class="col-lcp"><span class="lcp-head">LCP</span></th>
 				<th>CLS</th>
 				<th>TBT</th>
 				<th>Weight</th>
@@ -317,17 +316,18 @@ permalink: /index.html
 						</span>
 					</td>
 					<td class="col-trend">{% sparkline entry.trends.performance %}</td>
-					<td class="num">{{ entry.latest.lab.timings.ttfb | ms }}</td>
-					<td class="num">{{ entry.latest.lab.timings.lcp | ms }}</td>
+					<td class="num col-lcp"><span class="lcp-cell"><span class="lcp-value">{{ entry.latest.lab.timings.lcp | ms }}</span>{% lcpBar entry.latest.lab.lcpBreakdown, entry.latest.lab.timings.lcp %}</span></td>
 					<td class="num">{{ entry.latest.lab.timings.cls | unit("") }}</td>
 					<td class="num">{{ entry.latest.lab.timings.tbt | ms }}</td>
 					<td class="num">{{ entry.latest.lab.weight.total | bytes }}</td>
 					<td class="num">{{ entry.latest.lab.weight.requests | num }}</td>
 					<td class="col-cats">
-						{% for name in entry.groupNames %}<span class="cat-chip">{{ name }}</span>{% endfor %}
+						{#- Names and ids are index-aligned, so the id for a name is its
+						    position in the other list. #}
+						<span class="cat-chips">{% for name in entry.groupNames %}<a class="cat-chip" href="/group/{{ entry.groups[loop.index0] }}/">{{ name }}</a>{% endfor %}</span>
 					</td>
 				{% else %}
-					<td class="num muted" colspan="11">
+					<td class="num muted" colspan="10">
 						{% if entry.currentlyFailing %}every attempt failed{% else %}awaiting first measurement{% endif %}
 					</td>
 				{% endif %}

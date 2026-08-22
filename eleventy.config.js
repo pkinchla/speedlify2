@@ -51,6 +51,55 @@ const BRAND_COLORS = {
 	Gatsby: "BC52EE",
 };
 
+/**
+ * The phases of LCP, in the order they happen.
+ *
+ * Named as Lighthouse names them in `lcp-breakdown-insight`, which is where the
+ * numbers come from. Order is the point: the bar is a timeline, so it is fixed
+ * here rather than sorted by size at render time.
+ */
+/**
+ * The LCP the bar is drawn full-width at, in milliseconds.
+ *
+ * Three seconds is a little over the median for this corpus, so half the sites
+ * read as a length and the slower half peg at full width. That is the trade
+ * being made: resolution where most of the rows are, at the cost of telling a
+ * four-second site from a forty-second one — for which the number is right
+ * there beside the bar. Scaling to the true maximum of 203 seconds would render
+ * every other site as a couple of pixels.
+ *
+ * The track is 7.5rem wide in the stylesheet, which is 40px per second at the
+ * default root size. Change one and the other stops being true.
+ */
+const LCP_BAR_SCALE_MS = 3000;
+
+/**
+ * Pixels per second, which has to match the `.lcp-bar` width in the stylesheet.
+ *
+ * The scale above is one line's worth. Past it the bar wraps onto another line
+ * rather than stopping, so length keeps meaning duration all the way up instead
+ * of everything slow looking equally slow.
+ */
+const LCP_BAR_PX_PER_SECOND = 40;
+
+/**
+ * How many lines the bar may wrap onto before it gives up.
+ *
+ * There has to be a limit: the slowest site here takes 203 seconds, which is 68
+ * lines, and a table row cannot be 400 pixels tall because one site is broken.
+ * Four lines is twelve seconds, which is about 95% of this corpus, and stacks
+ * to 22px — inside the height the score rings already give a row, so wrapping
+ * costs the table nothing.
+ */
+const LCP_BAR_MAX_ROWS = 4;
+
+const LCP_SUBPARTS = [
+	{ key: "timeToFirstByte", label: "Time to first byte" },
+	{ key: "resourceLoadDelay", label: "Resource load delay" },
+	{ key: "resourceLoadDuration", label: "Resource load duration" },
+	{ key: "elementRenderDelay", label: "Element render delay" },
+];
+
 const FONT_AWESOME_ICONS = {
 	Amazon: "amazon",
 	BuildAwesome: "build-awesome",
@@ -769,6 +818,87 @@ export default async function ($config) {
 			`<title>${escapeAttr(label)}</title>`,
 			`<path d="${icon.path}"/>`,
 			`</svg>`,
+		].join("");
+	});
+
+	/**
+	 * The four phases of LCP as one stacked proportion bar.
+	 *
+	 * Deliberately normalized to the sum of the phases rather than to the LCP
+	 * value shown beside it, because the two are not on the same scale. With
+	 * simulated throttling — which is how everything here is measured — the
+	 * reported LCP is Lantern's simulation of a slow connection, while these
+	 * subparts come from the observed trace, which ran at the machine's own
+	 * speed. On this corpus that is a factor of ten to twenty, varying by site,
+	 * so drawing the phases against the LCP number would produce a bar that
+	 * covers a tenth of its track and means nothing.
+	 *
+	 * What survives the difference is the shape: which phase dominates. That is
+	 * the whole question the breakdown answers — server, discovery, download or
+	 * render — and it is what this bar shows.
+	 *
+	 * Lighthouse omits the two resource phases entirely when the LCP element is
+	 * text, so the bar is two segments there rather than four.
+	 */
+	$config.addShortcode("lcpBar", function (breakdown, lcp) {
+		if (!breakdown) return "";
+
+		const parts = LCP_SUBPARTS.map((part) => ({ ...part, value: breakdown[part.key] })).filter(
+			(part) => typeof part.value === "number" && part.value > 0,
+		);
+
+		const total = parts.reduce((sum, part) => sum + part.value, 0);
+		if (!total) return "";
+
+		// Length carries the LCP, so a two-second bar is twice a one-second bar.
+		// Against a fixed scale rather than the table's own maximum: one slow
+		// outlier would otherwise squash every other row on the page, and the
+		// bars would mean something different on each page they appear.
+		if (typeof lcp !== "number" || lcp <= 0) return "";
+
+		const rowPx = (LCP_BAR_SCALE_MS / 1000) * LCP_BAR_PX_PER_SECOND;
+		const wanted = (lcp / 1000) * LCP_BAR_PX_PER_SECOND;
+		const drawn = Math.min(wanted, rowPx * LCP_BAR_MAX_ROWS);
+		const clipped = wanted > drawn + 0.5;
+
+		// Percentage only, no milliseconds. The subpart durations are observed
+		// rather than simulated, so printing "4.1ms" beside a cell reading "1.2s"
+		// would read as a contradiction rather than as a different measurement of
+		// the same load.
+		const title = (part) => `${part.label} — ${Math.round((part.value / total) * 100)}% of the time to LCP`;
+
+		// Lay the phases end to end along the whole length, then cut that ribbon
+		// into lines. A phase landing on a line break is split across both — the
+		// bar is one timeline that happens to be folded, not four bars.
+		const rows = [[]];
+		let used = 0;
+
+		for (let part of parts) {
+			let remaining = (part.value / total) * drawn;
+
+			while (remaining > 0.05) {
+				const take = Math.min(remaining, rowPx - used);
+
+				rows[rows.length - 1].push(
+					`<span class="lcp-seg lcp-seg-${part.key}" style="width:${take.toFixed(1)}px" title="${escapeAttr(title(part))}"></span>`,
+				);
+
+				used += take;
+				remaining -= take;
+
+				if (used >= rowPx - 0.05 && remaining > 0.05) {
+					rows.push([]);
+					used = 0;
+				}
+			}
+		}
+
+		return [
+			`<span class="lcp-bar${clipped ? " lcp-bar-clipped" : ""}"`,
+			clipped ? ` title="${escapeAttr(`Bar stops at ${(rowPx * LCP_BAR_MAX_ROWS) / LCP_BAR_PX_PER_SECOND}s — see the number for the rest`)}"` : "",
+			`>`,
+			rows.map((row) => `<span class="lcp-row">${row.join("")}</span>`).join(""),
+			`</span>`,
 		].join("");
 	});
 
