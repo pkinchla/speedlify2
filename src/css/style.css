@@ -416,6 +416,44 @@ th.col-trend { text-align: center !important; }
 .failing-note { color: var(--poor-soft); }
 .flat { color: var(--text-muted); }
 
+/* --------------------------------------------------------------- filmstrip */
+
+/* A row, always — see the note in the template. `.table-scroll` around it
+   supplies the scrolling and the negative inline margin, so the strip runs to
+   the edge of the page the way the wide tables do. */
+.filmstrip {
+	display: flex;
+	gap: 0.5rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.filmstrip-frame {
+	flex: 0 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
+	align-items: center;
+}
+
+/* Sized down from the capture. Lighthouse renders these at the emulated
+   viewport width, which is wider than eight of them across a page. */
+.filmstrip-frame img {
+	display: block;
+	width: auto;
+	height: 180px;
+	border: 1px solid var(--border);
+	border-radius: 3px;
+	background: var(--surface);
+}
+
+.filmstrip-timing {
+	font-size: 0.75rem;
+	font-variant-numeric: tabular-nums;
+	color: var(--text-muted);
+}
+
 /* --------------------------------------------------------------- sparkline */
 
 .spark { display: block; overflow: visible; }
@@ -632,6 +670,25 @@ th.col-trend { text-align: center !important; }
 
 .data-age { margin: 0.15rem 0 0; font-size: 0.86rem; color: var(--text-muted); }
 .data-age.stale-age { color: var(--average); }
+
+/* How old the numbers are, as a pill — the same treatment the embeddable score
+   component gives it, and the same one the category ranks use, so the small
+   qualifying facts on a page all look like one kind of thing. Carries its own
+   colour when stale rather than inheriting the paragraph's, so the pill is
+   what reads as the warning. */
+.age-pill {
+	display: inline-block;
+	padding: 0.05rem 0.45rem;
+	border-radius: var(--pill);
+	background: color-mix(in srgb, var(--text-muted) 15%, transparent);
+	color: var(--text-muted);
+	font-size: 0.92em;
+	font-weight: 600;
+	font-variant-numeric: tabular-nums;
+	white-space: nowrap;
+	vertical-align: baseline;
+}
+.age-pill.stale { color: var(--average); background: color-mix(in srgb, var(--average) 16%, transparent); }
 
 /* --------------------------------------------------- leaderboard columns */
 
@@ -1161,6 +1218,9 @@ th.col-rings { text-align: left !important; }
 /* Chips are short and there are rarely more than two, so the column holds them
    on one line and lets the table scroll rather than growing the row. */
 .col-cats { text-align: left !important; white-space: nowrap; }
+/* The chips are emitted with no whitespace between them — a newline in the loop
+   would be a space inside the cell — so the gap belongs here. */
+.col-cats .cat-chip + .cat-chip { margin-left: 0.3rem; }
 .col-url + .col-url { padding-left: 0.9rem; }
 .redirects-arrow { color: var(--text-muted); padding: 0 0.15rem; }
 /* Which lists a URL belongs to. Quiet by design — it is context for the row,

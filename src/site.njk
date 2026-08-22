@@ -16,6 +16,11 @@ eleventyComputed:
 	leaderboards: those run to a thousand rows, and a thousand screenshot
 	requests is not a page, it is a load test pointed at someone else's server.
 
+	Not our own Lighthouse capture, though the Filmstrip section below is exactly
+	that. Those frames are thumbnails sized to the emulated viewport — 250px wide
+	on a mobile run — which is right for a strip of eight and too small for the
+	one picture at the top of the page.
+
 	Only above a performance score of 75, and only once there is a measurement.
 	The service renders the page on a timer, so the slower the site the more
 	likely the capture is of a half-drawn or empty page — a picture of our own
@@ -57,7 +62,7 @@ eleventyComputed:
 	{% endif %}
 	<p class="data-age {{ 'stale-age' if entry.dataStale }}">
 		{% if entry.latest %}
-			Data from {{ entry.latest.date | date("long") }} — <strong>{{ entry.latest.date | since }} old</strong>
+			Data from {{ entry.latest.date | date("long") }} — <span class="age-pill{{ ' stale' if entry.dataStale }}">{{ entry.latest.date | since }} old</span>
 			{%- if entry.dataStale %}, older than the {{ sites.coverage.staleAfterHours }}h freshness target{% endif %}.
 		{% else %}
 			No successful measurement yet.
@@ -78,7 +83,10 @@ eleventyComputed:
 		<a href="/group/{{ g }}/">{{ entry.groupNames[loop.index0] }}</a>
 		{%- if grp.ranked and entry.groupRanks[g].overall %}
 		<span class="cat-rank" title="Ranked {{ entry.groupRanks[g].overall | num }} of {{ grp.measured | num }} measured sites in {{ entry.groupNames[loop.index0] }}">#{{ entry.groupRanks[g].overall | num }}</span>
-		{%- endif %}{{ ", " if not loop.last }}
+		{#- No separator between them: each name is followed by its own rank pill,
+		    and a comma after the pill reads as punctuation belonging to the
+		    number rather than to the list. #}
+		{%- endif %}
 		{% endfor %} ·
 		{{ entry.totalCount }} measurement{{ "s" if entry.totalCount != 1 }}
 		{% if entry.windowed %}<span title="The report charts the most recent {{ entry.historyCount }}; the rest stay on disk">(charting last {{ entry.historyCount }})</span>{% endif %}
@@ -210,11 +218,18 @@ eleventyComputed:
 {% set hasCwv = entry.cwv %}
 {% set hasField = entry.latest.field %}
 {% set hasFieldHistory = entry.fieldHistory and entry.fieldHistory.series.length %}
+{#
+	One picture is a screenshot, not a filmstrip. A page that painted before the
+	first sample repeats that one frame for the rest of the strip, and the
+	section would be a heading over the same image eight times.
+#}
+{% set hasFilmstrip = entry.filmstrip and entry.filmstrip.distinct > 1 %}
 
 {% set toc = [] %}
 {% if hasStack %}{% set toc = (toc.push({ id: "stack", label: "Stack" }), toc) %}{% endif %}
 {% if hasCwv %}{% set toc = (toc.push({ id: "cwv", label: "Core Web Vitals" }), toc) %}{% endif %}
 {% set toc = (toc.push({ id: "scores", label: "Scores" }), toc) %}
+{% if hasFilmstrip %}{% set toc = (toc.push({ id: "filmstrip", label: "Filmstrip" }), toc) %}{% endif %}
 {% set toc = (toc.push({ id: "lab", label: "Lab metrics" }), toc) %}
 {% if hasField %}{% set toc = (toc.push({ id: "field", label: "Field data" }), toc) %}{% endif %}
 {% if hasFieldHistory %}{% set toc = (toc.push({ id: "field-history", label: "Field history" }), toc) %}{% endif %}
@@ -326,6 +341,41 @@ eleventyComputed:
 		{% endfor %}
 	</div>
 </section>
+
+{% if hasFilmstrip %}
+{#
+	The page drawing itself, from the same Lighthouse run the scores above came
+	from. Frames are named by a hash of their bytes, so a page that finished
+	early and repeated its last frame to the end of the strip stores that frame
+	once — the strip still renders at full length from a fraction of the files.
+
+	Horizontally scrollable rather than wrapped: a filmstrip read in two rows is
+	no longer a timeline, and the frames are tall and narrow enough that eight of
+	them will not fit across a phone.
+
+	Decorative, like the screenshot at the top. The timings under each frame are
+	the information here and they are text.
+#}
+<section class="panel" id="filmstrip">
+	<h2>Filmstrip <span class="tag">Lighthouse, {{ entry.latest.formFactor }}</span></h2>
+	<p class="muted small">
+		How the page drew during the measured load, at
+		{{ entry.filmstrip.frames.length }} points across
+		{{ entry.filmstrip.frames[entry.filmstrip.frames.length - 1].timing | unit("ms") }}.
+	</p>
+	<div class="table-scroll">
+		<ol class="filmstrip">
+			{% for frame in entry.filmstrip.frames %}
+			<li class="filmstrip-frame">
+				<img src="{{ frame.src }}" width="{{ entry.filmstrip.width }}" height="{{ entry.filmstrip.height }}"
+					alt="" loading="lazy" decoding="async">
+				<span class="filmstrip-timing">{{ frame.timing | unit("ms") }}</span>
+			</li>
+			{% endfor %}
+		</ol>
+	</div>
+</section>
+{% endif %}
 
 {% macro trendtable(rows, entryData, prefix="") %}
 <div class="table-scroll">

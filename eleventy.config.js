@@ -119,7 +119,11 @@ const localIcons = loadLocalIcons();
 function formatBytes(v) {
 	if (typeof v !== "number") return "—";
 	if (v < 1000) return `${v} B`;
-	if (v < 999950) return `${(v / 1000).toFixed(1)} kB`;
+	// The tenth of a kilobyte stops being worth a column's width once there are
+	// three digits in front of it: 847 kB and 847.3 kB say the same thing, and
+	// the second one says it in a wider cell.
+	if (v < 99950) return `${(v / 1000).toFixed(1)} kB`;
+	if (v < 999500) return `${Math.round(v / 1000)} kB`;
 	return `${(v / 1000 / 1000).toFixed(2)} MB`;
 }
 
@@ -148,6 +152,13 @@ export default async function ($config) {
 
 	$config.addPassthroughCopy({ "src/css": "css" });
 	$config.addPassthroughCopy({ "src/js": "js" });
+
+	// Lighthouse's screenshots of each site, captured during measurement and
+	// stored beside the numbers. Copied rather than passed through an image
+	// pipeline: they are already small JPEGs at the size they are shown, and
+	// they are named by a hash of their own bytes, so the URL changes only when
+	// the picture does.
+	$config.addPassthroughCopy("results/*/frames");
 
 	// Brand marks are inlined into the pages that use them, so the directory
 	// itself is a source of build inputs rather than output — and its README

@@ -72,6 +72,16 @@ export default {
 	// 3 is a decent tradeoff between noise and wall-clock time.
 	runs: 3,
 
+	// Whether to keep Lighthouse's loading filmstrip: "filmstrip" or "none",
+	// overridable per category and per site.
+	//
+	// These files are committed, since measure and publish are separate
+	// workflows on separate checkouts and the repository is the only channel
+	// between them. A deduplicated strip measured 19–84 KB per site, so at this
+	// corpus size expect roughly 75 MB in the tree, rewritten weekly as sites
+	// are re-measured. Set a category to "none" to keep it out.
+	screenshots: "filmstrip",
+
 	// "mobile" (throttled, Moto G Power emulation) or "desktop"
 	formFactor: "mobile",
 
@@ -262,6 +272,9 @@ export default {
 			freshnessHours: 24 * 7,
 			staleAfterHours: 24 * 7 * 2,
 
+			// for storage reasons
+			screenshots: "none",
+
 			// The list is a record of what was submitted, not of what is true now.
 			// A site measured as something other than Eleventy has moved on, so it
 			// moves to the category below rather than inflating this one.
@@ -306,6 +319,9 @@ export default {
 				delayMs: 3000,
 				hostCooldownMs: 60000,
 			},
+
+			// for storage reasons
+			screenshots: "none",
 
 			// The ones that came from the community list were filtered out of it,
 			// not missing from it. Without this they would be flagged "unlisted"
@@ -356,6 +372,9 @@ export default {
 
 			freshnessHours: 24 * 7,
 			staleAfterHours: 24 * 7 * 2,
+
+			// for storage reasons
+			screenshots: "none",
 
 			// Two ways in. Sites listed here were deleted from the community repo
 			// upstream — recovered from its git history, since a deletion removes
