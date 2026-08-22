@@ -431,10 +431,34 @@ eleventyComputed:
 	{{ trendtable(metrics.LAB_METRICS, entry) }}
 
 	{% if entry.latest.lab.lcpBreakdown %}
-	<h3>What LCP is made of</h3>
+	<h3>What LCP is made of <span class="tag">observed, unthrottled</span></h3>
 	<p class="muted small">
 		A flat LCP number tells you something regressed. The subparts tell you
 		whether it was the server, resource discovery, the download, or rendering.
+	</p>
+	{#
+		These will not add up to the LCP above, and the gap is usually large — 225
+		milliseconds against 4.07 seconds on one site here. Both are honest; they
+		are measured in different worlds.
+
+		Lighthouse runs with `throttlingMethod: "simulate"`: it loads the page at
+		this machine's real speed, records that trace, and then models what the
+		load would have taken on an emulated phone over slow 4G. LCP above is the
+		model's answer. These subparts are read off the observed trace, before any
+		of that modelling. The same record shows the difference plainly — the
+		server answered in 44ms, and the model bills 620ms for it.
+
+		The ratio is not a constant to divide out: it depends on the request
+		graph, and runs from about 10x to 20x across this corpus. So the durations
+		are shown as measured and labelled for what they are, rather than scaled
+		to a total they were never part of.
+	#}
+	<p class="muted small">
+		Measured on the trace before throttling is modelled, so these are real
+		durations that
+		<strong>will not sum to the {{ entry.latest.lab.timings.lcp | ms }} above</strong> —
+		that figure is a simulation of the same load on a slow phone and connection.
+		Read these for the proportions: which phase dominates.
 	</p>
 	<div class="breakdown">
 		{% set lcpMax = entry.latest.lab.lcpBreakdown | sortByValue | maxValue("value") %}
