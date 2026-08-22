@@ -1,6 +1,7 @@
-{"version":1,"url":"https://rooster-world.com/","updated":"2026-08-22T10:28:47.992Z","points":[
+{"version":1,"url":"https://rooster-world.com/","updated":"2026-08-22T18:37:20.189Z","points":[
 {"t":1787323662351,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":1,"runs":0,"reqRuns":3,"ms":15994},
 {"t":1787347875497,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":2,"runs":0,"reqRuns":3,"ms":15929},
 {"t":1787370494358,"error":"The \"start lh:driver:navigate\" performance mark has not been set","fails":3,"runs":0,"reqRuns":3,"ms":18698},
-{"t":1787394510954,"error":"The \"start lh:driver:navigate\" performance mark has not been set","fails":4,"runs":0,"reqRuns":3,"ms":17037}
+{"t":1787394510954,"error":"The \"start lh:driver:navigate\" performance mark has not been set","fails":4,"runs":0,"reqRuns":3,"ms":17037},
+{"t":1787423824022,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":5,"runs":0,"reqRuns":3,"ms":16167}
 ]}
