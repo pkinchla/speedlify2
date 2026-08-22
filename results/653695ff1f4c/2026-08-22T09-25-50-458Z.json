@@ -1,0 +1,213 @@
+{
+  "url": "https://vuepress.vuejs.org/",
+  "name": "VuePress",
+  "group": "ssg",
+  "groupName": "Site Generators",
+  "timestamp": 1787390750458,
+  "date": "2026-08-22T09:25:50.458Z",
+  "runId": "2026-08-22T09-25-17-127Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 23681,
+  "error": null,
+  "variance": {
+    "min": 86,
+    "max": 95,
+    "spread": 9,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://vuepress.vuejs.org/",
+    "finalUrl": "https://vuepress.vuejs.org/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 95,
+      "accessibility": 96,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1360,
+      "lcp": 2560,
+      "si": 1360,
+      "tbt": 139,
+      "tti": 3706,
+      "cls": 0,
+      "ttfb": 610,
+      "maxPotentialFid": 118,
+      "serverResponseTime": 10,
+      "networkRtt": 0.1,
+      "networkServerLatency": 47.2
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 12.1,
+      "resourceLoadDelay": 10.7,
+      "resourceLoadDuration": 28.5,
+      "elementRenderDelay": 59.1
+    },
+    "weight": {
+      "total": 787662,
+      "requests": 81,
+      "mainDocument": 4503,
+      "byType": {
+        "total": {
+          "bytes": 787662,
+          "requests": 79
+        },
+        "other": {
+          "bytes": 376329,
+          "requests": 73
+        },
+        "script": {
+          "bytes": 236252,
+          "requests": 3
+        },
+        "image": {
+          "bytes": 153980,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 16598,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 4503,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 163084,
+          "requests": 1
+        }
+      },
+      "scripts": 3,
+      "stylesheets": 1,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 163084,
+      "mainThreadMs": 55.7,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 163084,
+          "mainThreadMs": 55.7
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 949.1,
+      "byGroup": {
+        "scriptEvaluation": 479.7,
+        "other": 271.8,
+        "styleLayout": 105.4,
+        "scriptParseCompile": 51.2,
+        "parseHTML": 32.7,
+        "paintCompositeRender": 8.3
+      },
+      "bootupMs": 526.1,
+      "longTasks": 5,
+      "longestTaskMs": 118
+    },
+    "dom": {
+      "elements": 356,
+      "depth": 13,
+      "maxChildren": 13
+    },
+    "waste": {
+      "unusedJsBytes": 97151,
+      "unusedCssBytes": 13081,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 150,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 24,
+      "failingNodes": 2,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 2
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 0,
+      "bfCacheFailures": 1,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 23
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2333.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-22T09:25:59.307Z",
+      "runtimeMs": 6751.1
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "vuepress",
+      "name": "VuePress",
+      "icon": "Vuedotjs",
+      "version": "2.0.0",
+      "source": "meta",
+      "raw": "VuePress 2.0.0-rc.26"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0MCNHBGQ75V6ASYVQFXAFNV"
+    },
+    "violations": 2,
+    "passes": 215,
+    "incomplete": 0,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 2,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

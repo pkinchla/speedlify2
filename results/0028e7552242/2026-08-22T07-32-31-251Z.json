@@ -1,0 +1,22 @@
+{
+  "url": "https://www.becss.dev/",
+  "name": "www.becss.dev",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787383951251,
+  "date": "2026-08-22T07:32:31.251Z",
+  "runId": "2026-08-22T07-30-51-759Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 0,
+  "durationMs": 16180,
+  "error": "CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.",
+  "errors": [
+    "CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.",
+    "CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.",
+    "CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests."
+  ],
+  "field": null,
+  "axe": null,
+  "consecutiveFailures": 4
+}

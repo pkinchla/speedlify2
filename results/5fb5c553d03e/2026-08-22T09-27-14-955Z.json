@@ -1,0 +1,22 @@
+{
+  "url": "https://yoghaswara.vercel.app/",
+  "name": "yoghaswara.vercel.app",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787390834955,
+  "date": "2026-08-22T09:27:14.955Z",
+  "runId": "2026-08-22T09-25-17-127Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 0,
+  "durationMs": 12362,
+  "error": "ERRORED_DOCUMENT_REQUEST: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 404)",
+  "errors": [
+    "ERRORED_DOCUMENT_REQUEST: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 404)",
+    "ERRORED_DOCUMENT_REQUEST: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 404)",
+    "ERRORED_DOCUMENT_REQUEST: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 404)"
+  ],
+  "field": null,
+  "axe": null,
+  "consecutiveFailures": 4
+}

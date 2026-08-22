@@ -1,5 +1,7 @@
-{"version":1,"url":"https://demo.xiyu.pro/","updated":"2026-08-21T23:25:12.563Z","points":[
+{"version":1,"url":"https://demo.xiyu.pro/","updated":"2026-08-22T13:33:01.429Z","points":[
 {"t":1787257717869,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":1,"runs":0,"reqRuns":3,"ms":16251},
 {"t":1787330389163,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":2,"runs":0,"reqRuns":3,"ms":17111},
-{"t":1787354694320,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":3,"runs":0,"reqRuns":3,"ms":18243}
+{"t":1787354694320,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":3,"runs":0,"reqRuns":3,"ms":18243},
+{"t":1787376480638,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":4,"runs":0,"reqRuns":3,"ms":16590},
+{"t":1787405565197,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":5,"runs":0,"reqRuns":3,"ms":16231}
 ]}

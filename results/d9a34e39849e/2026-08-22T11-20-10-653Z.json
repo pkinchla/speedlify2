@@ -1,0 +1,196 @@
+{
+  "url": "https://webhint.io/",
+  "name": "webhint",
+  "group": "test-runners",
+  "groupName": "Test Runners",
+  "timestamp": 1787397610653,
+  "date": "2026-08-22T11:20:10.653Z",
+  "runId": "2026-08-22T11-20-03-971Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 24961,
+  "error": null,
+  "variance": {
+    "min": 94,
+    "max": 99,
+    "spread": 5,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://webhint.io/",
+    "finalUrl": "https://webhint.io/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 95,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1587,
+      "lcp": 2639,
+      "si": 2655,
+      "tbt": 125,
+      "tti": 2639,
+      "cls": 0,
+      "ttfb": 677,
+      "maxPotentialFid": 160,
+      "serverResponseTime": 81,
+      "networkRtt": 8.8,
+      "networkServerLatency": 76.6
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 263,
+      "resourceLoadDelay": 39.2,
+      "resourceLoadDuration": 106.6,
+      "elementRenderDelay": 1025.2
+    },
+    "weight": {
+      "total": 181114,
+      "requests": 21,
+      "mainDocument": 6523,
+      "byType": {
+        "total": {
+          "bytes": 181114,
+          "requests": 21
+        },
+        "font": {
+          "bytes": 72563,
+          "requests": 4
+        },
+        "script": {
+          "bytes": 50323,
+          "requests": 2
+        },
+        "image": {
+          "bytes": 35615,
+          "requests": 9
+        },
+        "stylesheet": {
+          "bytes": 14792,
+          "requests": 3
+        },
+        "document": {
+          "bytes": 6523,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 1298,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 55009,
+          "requests": 2
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 3,
+      "fonts": 4
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 55009,
+      "mainThreadMs": 16,
+      "top": [
+        {
+          "entity": "JSDelivr CDN",
+          "bytes": 55009,
+          "mainThreadMs": 16
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 818.6,
+      "byGroup": {
+        "other": 408.8,
+        "scriptEvaluation": 236.3,
+        "styleLayout": 74.7,
+        "parseHTML": 70,
+        "scriptParseCompile": 14.4,
+        "paintCompositeRender": 14.4
+      },
+      "bootupMs": 241.4,
+      "longTasks": 5,
+      "longestTaskMs": 160
+    },
+    "dom": {
+      "elements": 191,
+      "depth": 10,
+      "maxChildren": 7
+    },
+    "waste": {
+      "unusedJsBytes": 26980,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 7666,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 910,
+      "renderBlockingCount": 3,
+      "poorlyCachedBytes": 113927.9,
+      "poorlyCachedCount": 18
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 26,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 8
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2786,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-22T11:20:14.091Z",
+      "runtimeMs": 10286
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "github",
+      "name": "GitHub Pages",
+      "icon": "Github",
+      "source": "x-github-request-id"
+    },
+    "headers": {
+      "server": "GitHub.com",
+      "via": "1.1 varnish",
+      "x-fastly-request-id": "6e517e8d99837e71211518710d995f405f599685",
+      "x-github-request-id": "A996:16C3F5:28C745:2B1B65:6A8985ED",
+      "x-served-by": "cache-hhr-khhr2060032-HHR"
+    },
+    "violations": 0,
+    "passes": 402,
+    "incomplete": 0,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

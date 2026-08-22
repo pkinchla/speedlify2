@@ -1,5 +1,7 @@
-{"version":1,"url":"https://gaiety.dog/","updated":"2026-08-21T21:28:49.507Z","points":[
+{"version":1,"url":"https://gaiety.dog/","updated":"2026-08-22T12:40:32.425Z","points":[
 {"t":1787264970619,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":1,"runs":0,"reqRuns":3,"ms":19565},
 {"t":1787323308563,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":2,"runs":0,"reqRuns":3,"ms":17134},
-{"t":1787347711610,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":3,"runs":0,"reqRuns":3,"ms":17896}
+{"t":1787347711610,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":3,"runs":0,"reqRuns":3,"ms":17896},
+{"t":1787370271664,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":4,"runs":0,"reqRuns":3,"ms":18772},
+{"t":1787402412477,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":5,"runs":0,"reqRuns":3,"ms":19947}
 ]}
