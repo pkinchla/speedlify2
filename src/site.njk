@@ -62,8 +62,11 @@ eleventyComputed:
 	{% endif %}
 	<p class="data-age {{ 'stale-age' if entry.dataStale }}">
 		{% if entry.latest %}
-			Data from {{ entry.latest.date | date("long") }} — <span class="age-pill{{ ' stale' if entry.dataStale }}">{{ entry.latest.date | since }} old</span>
-			{%- if entry.dataStale %}, older than the {{ sites.coverage.staleAfterHours }}h freshness target{% endif %}.
+			{#- No dash and no full stop: the age is a pill rather than the end of a
+			    sentence, and punctuation either side of it reads as stray marks. #}
+			Data from {{ entry.latest.date | date("long") }}
+			<span class="age-pill{{ ' stale' if entry.dataStale }}">{{ entry.latest.date | since }} old</span>
+			{%- if entry.dataStale %}, older than the {{ sites.coverage.staleAfterHours }}h freshness target{% endif %}
 		{% else %}
 			No successful measurement yet.
 		{% endif %}
@@ -91,7 +94,6 @@ eleventyComputed:
 		{{ entry.totalCount }} measurement{{ "s" if entry.totalCount != 1 }}
 		{% if entry.windowed %}<span title="The report charts the most recent {{ entry.historyCount }}; the rest stay on disk">(charting last {{ entry.historyCount }})</span>{% endif %}
 		{% if entry.firstMeasured %}· since {{ entry.firstMeasured | date }}{% endif %}
-		{% if entry.lastMeasured %}· last attempt {{ entry.lastMeasured | since }}{% endif %}
 	</p>
 	</div>
 	{#

@@ -348,7 +348,11 @@ th.col-trend { text-align: center !important; }
 	font-size: 0.72rem;
 	font-weight: 600;
 	font-variant-numeric: tabular-nums;
-	vertical-align: middle;
+	/* Baseline, not middle: `middle` puts the box's centre at the baseline plus
+	   half an x-height, which for a padded pill lands visibly below the text it
+	   sits in and grows the line box to make room. Same as .age-pill, which is
+	   the pill directly above it on this page. */
+	vertical-align: baseline;
 	white-space: nowrap;
 }
 
