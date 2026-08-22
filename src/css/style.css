@@ -14,6 +14,13 @@
 	--border-strong: #5c5c5c;
 	--text: #ffffff;
 	--text-muted: #b0b0b0;
+	/* For muted text sitting on a *tinted* surface rather than on the page.
+	   Several components here tint their own background from --text-muted — a
+	   pill 15-25% of its own text colour — which pulls the two together and
+	   drops the pair under 4.5:1 no matter how legible each looks alone. This is
+	   the same grey, far enough along to clear the contrast floor on every one
+	   of those surfaces (worst case the 25% chip, at 4.52:1). */
+	--text-muted-strong: #cbcbcb;
 
 	/* Lighthouse's own score banding, used for the rings and the numbers. */
 	--good: #0cce6b;
@@ -22,6 +29,10 @@
 	--average-bg: #3d2f14;
 	--poor: #ff4e42;
 	--poor-bg: #3d1f1d;
+	/* --poor is a ring stroke first, where contrast rules do not apply. As text
+	   it fails: 4.15:1 on the page and 3.58:1 on a card. This is the same hue
+	   lightened until it passes on both. */
+	--poor-text: #ff8078;
 	/* Softer than --poor, for a count that is context rather than a verdict on
 	   any one row. Pink rather than red: still clearly the bad news, without
 	   competing with the failing rows themselves. */
@@ -58,6 +69,9 @@
 	--border-strong: #cdd1da;
 	--text: #14161a;
 	--text-muted: #666d7a;
+	/* See the dark theme above. Worst case is the 25% chip on a card rather than
+	   on the page — a #d6d8dc surface — which #606060 missed at 4.41:1. */
+	--text-muted-strong: #585858;
 
 	/* Darkened for contrast on white — the rings keep the Lighthouse hues. */
 	--good: #0a7c42;
@@ -66,6 +80,9 @@
 	--average-bg: #fdf3e0;
 	--poor: #c02026;
 	--poor-bg: #fdeaea;
+	/* Already dark enough to pass as text on every surface here — 5.22:1 on the
+	   failing-row tint, its worst case — so no separate value is needed. */
+	--poor-text: #c02026;
 	/* Deeper on white than its dark-mode counterpart: a pale pink on this
 	   background is unreadable, so the hue carries the softness and the value
 	   carries the contrast. */
@@ -298,6 +315,9 @@ th.col-trend { text-align: center !important; }
 .num { font-variant-numeric: tabular-nums; }
 
 .row-failing { background: var(--poor-bg); }
+/* The row's tint lifts the background under every cell, which takes plain muted
+   text to 4.49:1 — under the line by a hundredth. */
+.row-failing .muted { color: var(--text-muted-strong); }
 
 /*
  * An event between two measurements rather than a measurement: no numbers, so
@@ -319,7 +339,7 @@ th.col-trend { text-align: center !important; }
 .score { font-variant-numeric: tabular-nums; font-weight: 650; }
 .score-good { color: var(--good); }
 .score-average { color: var(--average); }
-.score-poor { color: var(--poor); }
+.score-poor { color: var(--poor-text); }
 .score-none { color: var(--text-muted); }
 
 /* ------------------------------------------------------------------ panels */
@@ -349,7 +369,7 @@ th.col-trend { text-align: center !important; }
 	padding: 0.05rem 0.4rem;
 	border-radius: var(--pill);
 	background: color-mix(in srgb, var(--text-muted) 15%, transparent);
-	color: var(--text-muted);
+	color: var(--text-muted-strong);
 	font-size: 0.72rem;
 	font-weight: 600;
 	font-variant-numeric: tabular-nums;
@@ -444,7 +464,7 @@ th.col-trend { text-align: center !important; }
 .card-delta { font-size: 0.78rem; font-variant-numeric: tabular-nums; }
 
 .better { color: var(--good); }
-.worse { color: var(--poor); }
+.worse { color: var(--poor-text); }
 /* Only the coverage line's failing count — `.worse` is shared with the stale
    count beside it and with the mover cards, which stay red. */
 .failing-note { color: var(--poor-soft); }
@@ -614,7 +634,7 @@ th.col-trend { text-align: center !important; }
 }
 
 .verdict-good th, .verdict-good td { color: var(--good); }
-.verdict-poor th, .verdict-poor td { color: var(--poor); }
+.verdict-poor th, .verdict-poor td { color: var(--poor-text); }
 .verdict-none th, .verdict-none td { color: var(--text-muted); }
 
 /* --------------------------------------------------------------- histogram */
@@ -758,7 +778,7 @@ th.col-trend { text-align: center !important; }
 	padding: 0.1rem 0.4rem;
 	border-radius: 4px;
 	background: color-mix(in srgb, var(--text-muted) 15%, transparent);
-	color: var(--text-muted);
+	color: var(--text-muted-strong);
 	vertical-align: middle;
 }
 .badge-error { background: var(--poor-bg); color: var(--poor); }
@@ -793,7 +813,7 @@ th.col-trend { text-align: center !important; }
 	font-weight: 500;
 	text-transform: none;
 	letter-spacing: 0;
-	color: var(--text-muted);
+	color: var(--text-muted-strong);
 	background: color-mix(in srgb, var(--text-muted) 12%, transparent);
 	padding: 0.1rem 0.45rem;
 	border-radius: 4px;
@@ -919,7 +939,7 @@ th.col-trend { text-align: center !important; }
 	padding: 0.05rem 0.45rem;
 	border-radius: var(--pill);
 	background: color-mix(in srgb, var(--text-muted) 15%, transparent);
-	color: var(--text-muted);
+	color: var(--text-muted-strong);
 	font-size: 0.92em;
 	font-weight: 600;
 	font-variant-numeric: tabular-nums;
@@ -1076,7 +1096,7 @@ th.col-rings { text-align: left !important; }
 	padding: 0 3px;
 	border-radius: 3px;
 	background: color-mix(in srgb, var(--text-muted) 25%, transparent);
-	color: var(--text-muted);
+	color: var(--text-muted-strong);
 }
 
 /* Holding a mark rather than letters: centre it and drop the text padding.
@@ -1194,12 +1214,16 @@ th.col-rings { text-align: left !important; }
 .contents-categories .contents-count { font-size: 0.8rem; }
 /* The denominator is context, not the number being reported — dimmed so the
    measured count is what the eye lands on. */
-.contents-of { opacity: 0.6; }
+/* Was `opacity: 0.6`, which blended this into the pill behind it and landed
+   at 2.17:1. Dimming text with opacity cannot be made accessible — it moves the
+   foreground toward the background by definition. The "/20" is already
+   secondary by being smaller and second; it does not need to be fainter too. */
+.contents-of { color: inherit; }
 
 .contents-count {
 	font-size: 0.72rem;
 	font-variant-numeric: tabular-nums;
-	color: var(--text-muted);
+	color: var(--text-muted-strong);
 	background: color-mix(in srgb, var(--text-muted) 15%, transparent);
 	padding: 0.05rem 0.35rem;
 	border-radius: 10px;
@@ -1356,7 +1380,7 @@ th.col-rings { text-align: left !important; }
 	padding: 0.05rem 0.35rem;
 	border-radius: var(--pill);
 	background: color-mix(in srgb, var(--text-muted) 15%, transparent);
-	color: var(--text-muted);
+	color: var(--text-muted-strong);
 	font-size: 0.72rem;
 	font-weight: 600;
 }
@@ -1383,7 +1407,8 @@ th.col-rings { text-align: left !important; }
 	gap: 0.75rem;
 	flex-wrap: wrap;
 }
-.tally-meta { text-transform: none; letter-spacing: 0; font-weight: 400; opacity: 0.8; }
+/* Same as .contents-of: `opacity: 0.8` here measured 4.06:1 on the card. */
+.tally-meta { text-transform: none; letter-spacing: 0; font-weight: 400; color: var(--text-muted-strong); }
 
 .tally-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem; }
 .tally-item {
@@ -1441,7 +1466,7 @@ th.col-rings { text-align: left !important; }
 .redirects-count {
 	font-size: 0.75rem;
 	font-variant-numeric: tabular-nums;
-	color: var(--text-muted);
+	color: var(--text-muted-strong);
 	background: color-mix(in srgb, var(--text-muted) 18%, transparent);
 	border-radius: var(--pill);
 	padding: 0.05rem 0.45rem;
@@ -1522,7 +1547,7 @@ a.cat-chip:hover, a.cat-chip:focus-visible { color: var(--text); border-color: v
 	border-radius: var(--pill);
 	font-size: 0.72rem;
 	font-variant-numeric: tabular-nums;
-	color: var(--text-muted);
+	color: var(--text-muted-strong);
 	background: color-mix(in srgb, var(--text-muted) 15%, transparent);
 	white-space: nowrap;
 }
@@ -1530,4 +1555,5 @@ a.cat-chip:hover, a.cat-chip:focus-visible { color: var(--text); border-color: v
 	color: var(--average);
 	background: color-mix(in srgb, var(--average) 18%, transparent);
 }
-.updated-tag.never { opacity: 0.6; }
+/* Same again — 2.02:1 over the failing row's tint. */
+.updated-tag.never { color: var(--text-muted-strong); }
