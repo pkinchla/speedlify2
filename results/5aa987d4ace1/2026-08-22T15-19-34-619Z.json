@@ -1,0 +1,200 @@
+{
+  "url": "https://frankfuchs.net/",
+  "name": "frankfuchs.net",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787411974619,
+  "date": "2026-08-22T15:19:34.619Z",
+  "runId": "2026-08-22T15-19-28-507Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 2,
+  "durationMs": 25157,
+  "error": null,
+  "partialErrors": [
+    "ERRORED_DOCUMENT_REQUEST: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 403)"
+  ],
+  "variance": {
+    "min": 98,
+    "max": 98,
+    "spread": 0,
+    "runs": 2
+  },
+  "lab": {
+    "requestedUrl": "https://frankfuchs.net/",
+    "finalUrl": "https://frankfuchs.net/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 798,
+      "lcp": 2279,
+      "si": 798,
+      "tbt": 0,
+      "tti": 2279,
+      "cls": 0,
+      "ttfb": 629,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 98,
+      "networkRtt": 0.5,
+      "networkServerLatency": 126.8
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 100,
+      "elementRenderDelay": 86.7
+    },
+    "weight": {
+      "total": 339996,
+      "requests": 32,
+      "mainDocument": 3244,
+      "byType": {
+        "total": {
+          "bytes": 336993,
+          "requests": 31
+        },
+        "font": {
+          "bytes": 228732,
+          "requests": 8
+        },
+        "image": {
+          "bytes": 77611,
+          "requests": 16
+        },
+        "script": {
+          "bytes": 20965,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 3890,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 3244,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 2551,
+          "requests": 3
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 20984,
+          "requests": 2
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 2,
+      "fonts": 8
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 20984,
+      "mainThreadMs": 8,
+      "top": [
+        {
+          "entity": "brainsellers.de",
+          "bytes": 20984,
+          "mainThreadMs": 8
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 366.1,
+      "byGroup": {
+        "other": 222.1,
+        "scriptEvaluation": 53.3,
+        "styleLayout": 53,
+        "paintCompositeRender": 20.5,
+        "parseHTML": 9.6,
+        "scriptParseCompile": 7.6
+      },
+      "bootupMs": 26.7,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 97,
+      "depth": 9,
+      "maxChildren": 6
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 33119.79999999999,
+      "poorlyCachedCount": 27
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 14,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 9
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2516.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-22T15:19:44.867Z",
+      "runtimeMs": 6968.6
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": null,
+      "source": "meta",
+      "raw": "Eleventy"
+    },
+    "host": {
+      "id": null,
+      "name": "hcdn",
+      "icon": null,
+      "source": "server"
+    },
+    "headers": {
+      "server": "hcdn"
+    },
+    "violations": 0,
+    "passes": 230,
+    "incomplete": 0,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
