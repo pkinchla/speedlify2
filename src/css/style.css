@@ -531,6 +531,74 @@ th.col-trend { text-align: center !important; }
 .bar-fill { display: block; height: 100%; background: var(--accent); border-radius: 4px; }
 .bar-warn .bar-fill { background: var(--average); }
 
+/* ------------------------------------------------------------------- tally */
+
+/* A short name-and-count list inside a stat tile — what built the perfect
+   scores. Same shape as .verdicts below, but the label carries brand marks and
+   the rows are data rather than fixed states, so it stays its own thing.
+
+   Not `.tally`, which is already the Technology section's bordered card. */
+.stat-tally {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 0.15rem 0 0;
+	font-variant-numeric: tabular-nums;
+}
+
+/* Marks and name on one line, with the icons aligned to the text rather than
+   sitting on the baseline and pushing the row taller. */
+.stat-tally th {
+	display: flex;
+	align-items: center;
+	gap: 0.3rem;
+	text-align: left;
+	font-weight: 500;
+	font-size: 0.82rem;
+	color: var(--text-muted);
+	padding: 0.08rem 0;
+}
+
+.stat-tally-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.stat-tally td {
+	text-align: right;
+	font-weight: 700;
+	font-size: 0.9rem;
+	padding: 0.08rem 0;
+}
+
+/* ---------------------------------------------------------------- verdicts */
+
+/* The three Core Web Vitals outcomes as a small table. Colour carries the
+   verdict, so the label is not the only thing distinguishing the rows — but
+   the words are there too, because colour alone is not a distinction. */
+.verdicts {
+	width: 100%;
+	border-collapse: collapse;
+	/* The heading sits above this table rather than under a value, and brings
+	   its own bottom margin, so the table starts flush. */
+	margin: 0 0 0.1rem;
+	font-variant-numeric: tabular-nums;
+}
+
+.verdicts th {
+	text-align: left;
+	font-weight: 500;
+	font-size: 0.82rem;
+	padding: 0.1rem 0;
+}
+
+.verdicts td {
+	text-align: right;
+	font-weight: 700;
+	font-size: 0.95rem;
+	padding: 0.1rem 0;
+}
+
+.verdict-good th, .verdict-good td { color: var(--good); }
+.verdict-poor th, .verdict-poor td { color: var(--poor); }
+.verdict-none th, .verdict-none td { color: var(--text-muted); }
+
 /* --------------------------------------------------------------- histogram */
 
 /* Page weight across the fleet, as a shape. Small on purpose — it sits in a

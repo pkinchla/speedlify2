@@ -56,14 +56,35 @@
 		</p>
 	</div>
 	<div class="stat" title="Sites scoring 100 in all four Lighthouse categories, with no axe violations and no Core Web Vital failing for real users">
-		<span class="stat-value">{{ stats.perfect }}<span class="stat-suffix">/{{ stats.measured }}</span></span>
 		<span class="stat-label">Perfect {{ stats.perfect | plural("score") }}</span>
-		{% if stats.perfectEleventy %}
-		<p class="stat-sub" title="{{ stats.perfectEleventy }} of the {{ stats.perfect }} perfect scores are built with Eleventy or Build Awesome, counting sites listed in the community repo that emit no generator tag">
-			{{ stats.perfectEleventy | num }}
-			{% for mark in stats.perfectEleventyMarks %}{% stackIcon mark %}{% endfor %}
-			<span class="stat-sub-pct">({{ (stats.perfectEleventy / stats.perfect * 100) | round }}%)</span>
-		</p>
+		<span class="stat-value">{{ stats.perfect }}<span class="stat-suffix">/{{ stats.measured }}</span></span>
+		{#
+			What built them, rather than one figure for Eleventy and nothing about
+			the rest. The rows sum to the number above — a site with no generator
+			tag is counted under its own row instead of being dropped, which is
+			what would make the two disagree.
+
+			A presumption counts the same as a detection, as it does everywhere
+			else on this site: most static sites emit no generator tag, so
+			detections alone would credit the wrong thing.
+		#}
+		{% if stats.perfectGenerators.length %}
+		{#
+			`stat-tally` rather than `tally`: that class is the Technology section's
+			card, with its own border and padding, and reusing the name here drew a
+			box around this table and would have reformatted that one.
+		#}
+		<table class="stat-tally">
+			{% for g in stats.perfectGenerators %}
+			<tr>
+				<th scope="row">
+					{% for mark in g.marks %}{% stackIcon mark, 14 %}{% endfor %}
+					<span class="stat-tally-name">{{ g.name }}</span>
+				</th>
+				<td title="{{ g.count | num }} of the {{ stats.perfect | num }} perfect {{ stats.perfect | plural('score') }} ({{ (g.count / stats.perfect * 100) | round }}%)">{{ g.count | num }}</td>
+			</tr>
+			{% endfor %}
+		</table>
 		{% endif %}
 	</div>
 	<div class="stat">
@@ -73,6 +94,7 @@
 			of megabytes drag the average somewhere almost no site actually sits. A
 			single number could not say that; the shape does, at a glance.
 		#}
+		<span class="stat-label">Page weight</span>
 		{% set weightMax = stats.weightBuckets | maxValue("count") %}
 		<span class="histogram" role="img"
 			aria-label="Page weight distribution across {{ stats.measured | num }} sites{% for b in stats.weightBuckets %}. {{ b.label }}: {{ b.count | num }}{% endfor %}">
@@ -85,7 +107,6 @@
 			</span>
 			{% endfor %}
 		</span>
-		<span class="stat-label">Page weight</span>
 		<p class="stat-sub-note muted small">
 			Median <strong>{{ stats.medianWeight | bytes }}</strong> · mean {{ stats.avgWeight | bytes }}
 		</p>
@@ -103,10 +124,30 @@
 		</span>
 		{% endif %}
 	</div>
-	{% if stats.cwvAssessed %}
+	{% if stats.measured %}
 	<div class="stat">
-		<span class="stat-value">{{ stats.cwvPassing }}<span class="stat-suffix">/{{ stats.cwvAssessed }}</span></span>
-		<span class="stat-label">Passing Core Web Vitals</span>
+		{#
+			Three states rather than a fraction. "890 of 1,441 passing" implied the
+			other 551 were failing, when almost all of them have no real-user data
+			at all — CrUX only reports sites with enough Chrome traffic, which most
+			of this corpus does not have. Unknown is the majority answer here, and
+			hiding it inside a denominator overstated both of the other two.
+		#}
+		<span class="stat-label">Core Web Vitals</span>
+		<table class="verdicts">
+			<tr class="verdict verdict-good">
+				<th scope="row">Passing</th>
+				<td title="Every Core Web Vital CrUX reports for this site is good at p75">{{ stats.cwvVerdicts.passing | num }}</td>
+			</tr>
+			<tr class="verdict verdict-poor">
+				<th scope="row">Failing</th>
+				<td title="At least one Core Web Vital is not good at p75">{{ stats.cwvVerdicts.failing | num }}</td>
+			</tr>
+			<tr class="verdict verdict-none">
+				<th scope="row">Unknown</th>
+				<td title="Too little Chrome traffic for CrUX to report on — no real-user verdict either way">{{ stats.cwvVerdicts.unknown | num }}</td>
+			</tr>
+		</table>
 	</div>
 	{% endif %}
 </section>
