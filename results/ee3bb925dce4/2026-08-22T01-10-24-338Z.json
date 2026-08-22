@@ -1,0 +1,245 @@
+{
+  "url": "https://gridsome.org/",
+  "name": "Gridsome",
+  "group": "ssg",
+  "groupName": "Site Generators",
+  "timestamp": 1787361024338,
+  "date": "2026-08-22T01:10:24.338Z",
+  "runId": "2026-08-22T01-09-49-427Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 30646,
+  "error": null,
+  "variance": {
+    "min": 72,
+    "max": 90,
+    "spread": 18,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://gridsome.org/",
+    "finalUrl": "https://gridsome.org/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 75,
+      "accessibility": 97,
+      "best-practices": 100,
+      "seo": 91,
+      "agentic-browsing": 99
+    },
+    "timings": {
+      "fcp": 1142,
+      "lcp": 6252,
+      "si": 1142,
+      "tbt": 175,
+      "tti": 6274,
+      "cls": 0.06,
+      "ttfb": 625,
+      "maxPotentialFid": 196,
+      "serverResponseTime": 26,
+      "networkRtt": 0.1,
+      "networkServerLatency": 26.2
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 27.1,
+      "elementRenderDelay": 374.6
+    },
+    "weight": {
+      "total": 1242234,
+      "requests": 120,
+      "mainDocument": 50741,
+      "byType": {
+        "total": {
+          "bytes": 1242234,
+          "requests": 109
+        },
+        "other": {
+          "bytes": 691860,
+          "requests": 99
+        },
+        "script": {
+          "bytes": 341420,
+          "requests": 4
+        },
+        "font": {
+          "bytes": 144163,
+          "requests": 4
+        },
+        "document": {
+          "bytes": 50741,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 14050,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 180761,
+          "requests": 3
+        }
+      },
+      "scripts": 4,
+      "stylesheets": 1,
+      "fonts": 4
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 180761,
+      "mainThreadMs": 56.7,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 159848,
+          "mainThreadMs": 51.1
+        },
+        {
+          "entity": "Google Analytics",
+          "bytes": 20913,
+          "mainThreadMs": 5.6
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 2161.4,
+      "byGroup": {
+        "other": 734.5,
+        "scriptEvaluation": 582.9,
+        "styleLayout": 434.2,
+        "paintCompositeRender": 207.5,
+        "scriptParseCompile": 148.5,
+        "parseHTML": 53.9
+      },
+      "bootupMs": 729.3,
+      "longTasks": 5,
+      "longestTaskMs": 196
+    },
+    "dom": {
+      "elements": 512,
+      "depth": 14,
+      "maxChildren": 16
+    },
+    "waste": {
+      "unusedJsBytes": 173182,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 18329,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 15656.25,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 27,
+      "failingNodes": 2,
+      "failing": [
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 14
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2333.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-22T01:10:44.619Z",
+      "runtimeMs": 8800.1
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "gridsome",
+      "name": "Gridsome",
+      "icon": "Gridsome",
+      "version": "0.7.20",
+      "source": "meta",
+      "raw": "Gridsome v0.7.20"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0KGAJDJ4R5K9NWPHGG8ZJCT"
+    },
+    "violations": 37,
+    "passes": 760,
+    "incomplete": 16,
+    "violationRules": 5,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 33,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Heading levels should only increase by one"
+      },
+      {
+        "id": "label-title-only",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Form elements should have a visible label"
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should have one main landmark"
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
