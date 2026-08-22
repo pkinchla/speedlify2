@@ -209,6 +209,15 @@ export default async function ($config) {
 	// the picture does.
 	$config.addPassthroughCopy("results/*/frames");
 
+	// Emulated passthrough copy: during `--serve`, files are served from where
+	// they already are instead of being copied into the output first. Opt-in —
+	// Eleventy defaults to "copy" — and worth opting into here, because the
+	// frames directory is one folder per site and copying all of it on every
+	// rebuild is the difference between an instant reload and a noticeable one.
+	//
+	// No effect on a production build, which still writes real files.
+	$config.setServerPassthroughCopyBehavior("passthrough");
+
 	// Brand marks are inlined into the pages that use them, so the directory
 	// itself is a source of build inputs rather than output — and its README
 	// would otherwise render as a page.
