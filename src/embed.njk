@@ -13,7 +13,7 @@ title: Embed
 	</p>
 </header>
 
-<script type="module" src="/js/speedlify-score.js"></script>
+<script type="module" src="/js/speedlify2-score.js"></script>
 
 <section class="panel">
 	<h2>Live examples</h2>
@@ -103,7 +103,7 @@ title: Embed
 				about — left as "/" these would ask the domain root for their data
 				and 404 on a project site served from a subdirectory.
 			#}
-			<speedlify-score speedlify-url="{{ '/' | htmlBaseUrl }}" url="{{ entry.url }}"></speedlify-score>
+			<speedlify2-score speedlify-url="{{ '/' | htmlBaseUrl }}" url="{{ entry.url }}"></speedlify2-score>
 			<code>{{ entry.displayUrl }}</code>
 			{#
 				Only where the page said so itself. A site whose mark is presumed from
@@ -120,12 +120,12 @@ title: Embed
 <section class="panel">
 	<h2>Usage</h2>
 
-	<p>The current version of <code>&lt;speedlify-score&gt;</code> on npm is compatible with speedlify2. The version shown here is not yet published to npm.</p>
+	<p>The upstream <code>&lt;speedlify-score&gt;</code> on npm is a different component; this one is <code>&lt;speedlify2-score&gt;</code> and is not published there.</p>
 
-	<p>Download the zero dependency JavaScript file manually: <a href="{{ meta.url }}/js/speedlify-score.js"><code>{{ meta.url }}/js/speedlify-score.js</code></a></p>
+	<p>Download the zero dependency JavaScript file manually: <a href="{{ meta.url }}/js/speedlify2-score.js"><code>{{ meta.url }}/js/speedlify2-score.js</code></a></p>
 
 	<div class="notice notice-warn">
-		<strong>It would be unwise to hotlink the speedlify-score component script.</strong>
+		<strong>It would be unwise to hotlink the speedlify2-score component script.</strong>
 		<p>
 			Third party JavaScript is a big no-no! It also carries no versioning, no deprecation
 			policy and no uptime commitment: the file can change shape, move or stop
@@ -133,14 +133,14 @@ title: Embed
 		</p>
 	</div>
 
-	<pre><code>&lt;!-- You need to fix this URL to point to your speedlify-score.js --&gt;
-&lt;script type="module" src="speedlify-score.js"&gt;&lt;/script&gt;
+	<pre><code>&lt;!-- You need to fix this URL to point to your speedlify2-score.js --&gt;
+&lt;script type="module" src="speedlify2-score.js"&gt;&lt;/script&gt;
 
 &lt;!-- Scores for the page it sits on --&gt;
-&lt;speedlify-score speedlify-url="{{ meta.url }}/"&gt;&lt;/speedlify-score&gt;
+&lt;speedlify2-score speedlify-url="{{ meta.url }}/"&gt;&lt;/speedlify2-score&gt;
 
 &lt;!-- Or a specific URL --&gt;
-&lt;speedlify-score speedlify-url="{{ meta.url }}/" url="https://example.com/"&gt;&lt;/speedlify-score&gt;</code></pre>
+&lt;speedlify2-score speedlify-url="{{ meta.url }}/" url="https://example.com/"&gt;&lt;/speedlify2-score&gt;</code></pre>
 
 	<h3>Attributes</h3>
 	<p class="muted small">

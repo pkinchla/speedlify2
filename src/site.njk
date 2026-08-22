@@ -769,7 +769,7 @@ eleventyComputed:
 	<p class="muted small">
 		Live below, then the markup that produces it. Drop that on any page to show
 		{{ entry.displayUrl }}'s scores, updated whenever this instance
-		re-measures — <a href="/embed/">more about the component</a>. <em>Don’t forget to bundle the <code>speedlify-score.js</code> component code into your site!</em>
+		re-measures — <a href="/embed/">more about the component</a>. <em>Don’t forget to bundle the <code>speedlify2-score.js</code> component code into your site!</em>
 	</p>
 	{#
 		The live one and the snippet resolve their instance URL differently, and
@@ -782,12 +782,12 @@ eleventyComputed:
 		/speedlify2/ would resolve against that site's domain. It needs the
 		absolute URL, which is meta.url.
 	#}
-	<script type="module" src="/js/speedlify-score.js"></script>
+	<script type="module" src="/js/speedlify2-score.js"></script>
 	<p class="embed-live">
-		<speedlify-score speedlify-url="{{ '/' | htmlBaseUrl }}" url="{{ entry.url }}"></speedlify-score>
+		<speedlify2-score speedlify-url="{{ '/' | htmlBaseUrl }}" url="{{ entry.url }}"></speedlify2-score>
 	</p>
 
-	<pre><code>&lt;speedlify-score speedlify-url="{{ meta.url }}/" url="{{ entry.url }}"&gt;&lt;/speedlify-score&gt;</code></pre>
+	<pre><code>&lt;speedlify2-score speedlify-url="{{ meta.url }}/" url="{{ entry.url }}"&gt;&lt;/speedlify2-score&gt;</code></pre>
 </section>
 
 </article>

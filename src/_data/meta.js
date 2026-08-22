@@ -7,7 +7,7 @@ export default {
 	// Where this instance is published. Used for the copy-paste embed snippets,
 	// which land on other people's sites and so need an absolute URL — a path
 	// would resolve against their domain. No trailing slash: the templates add
-	// one, and two would give //js/speedlify-score.js.
+	// one, and two would give //js/speedlify2-score.js.
 	url: process.env.SPEEDLIFY_SITE_URL || "https://zachleat.github.io/speedlify2",
 	// Where the source lives, linked from the footer. Defaulted rather than left
 	// blank: an empty string silently drops the link, which is how the header one
