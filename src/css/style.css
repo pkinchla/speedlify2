@@ -1220,6 +1220,18 @@ th.col-rings { text-align: left !important; }
    secondary by being smaller and second; it does not need to be fainter too. */
 .contents-of { color: inherit; }
 
+/* Freshness beside the coverage count. Same pill treatment as the count, in the
+   contrast-safe muted so it clears 4.5:1 on its own tint — see
+   --text-muted-strong. */
+.contents-age {
+	font-size: 0.72rem;
+	font-variant-numeric: tabular-nums;
+	color: var(--text-muted-strong);
+	background: color-mix(in srgb, var(--text-muted) 15%, transparent);
+	padding: 0.05rem 0.35rem;
+	border-radius: 10px;
+}
+
 .contents-count {
 	font-size: 0.72rem;
 	font-variant-numeric: tabular-nums;

@@ -60,6 +60,16 @@ permalink: /index.html
 			<span class="contents-count" title="{{ group.measured | num }} of {{ group.entries.length | num }} measured at least once">
 				{{ group.measured | num }}<span class="contents-of">/{{ group.entries.length | num }}</span>
 			</span>
+			{#
+				How long ago anything in this category was last measured. Measurement
+				is rolling and each category sets its own cadence, so the curated
+				handfuls refresh daily while the big imported lists take days to come
+				round — a figure worth showing beside the coverage count rather than
+				leaving to be inferred from it.
+			#}
+			{% if group.lastMeasured %}
+			<span class="contents-age" title="Most recently measured site in {{ group.name }}: {{ group.lastMeasured | date('long') }}">{{ group.lastMeasured | since }}</span>
+			{% endif %}
 		</li>
 		{% endif %}
 		{% endfor %}
