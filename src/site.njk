@@ -309,7 +309,14 @@ eleventyComputed:
 	<div class="cwv">
 		{% for part in entry.cwv.parts %}
 		<div class="cwv-item cwv-{{ part.rating | ratingClass }}">
-			<span class="cwv-key">{{ part.key | upper }}{% if part.proxyFor %} <span class="tag">for {{ part.proxyFor | upper }}</span>{% endif %}</span>
+			{#
+				A value borrowed from the origin is the whole site's number, not
+				this page's — CrUX did not have enough samples to report this one
+				here. Said out loud rather than left to the reader to assume,
+				since the difference matters most for INP, which is the metric
+				most often missing.
+			#}
+			<span class="cwv-key">{{ part.key | upper }}{% if part.proxyFor %} <span class="tag">for {{ part.proxyFor | upper }}</span>{% endif %}{% if part.scope == "origin" %} <span class="tag" title="Not enough samples for this page, so this is the figure for the whole origin">site-wide</span>{% endif %}</span>
 			<span class="cwv-value">{{ part.value | unit("ms" if part.key != "cls" else "") }}</span>
 			<span class="cwv-rating">{{ part.rating or "no data" }}</span>
 		</div>

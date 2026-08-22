@@ -137,6 +137,110 @@ describe("fetchFieldData", () => {
 	});
 });
 
+describe("filling a page's gaps from its origin", () => {
+	/** A URL-scoped record CrUX could not rate INP for: too few interactions. */
+	const URL_NO_INP = {
+		record: {
+			key: { formFactor: "PHONE", url: "https://example.com/page/" },
+			metrics: {
+				largest_contentful_paint: { percentiles: { p75: 2300 }, histogram: [{ density: 0.7 }, { density: 0.2 }, { density: 0.1 }] },
+				cumulative_layout_shift: { percentiles: { p75: "0.05" }, histogram: [{ density: 0.9 }, { density: 0.07 }, { density: 0.03 }] },
+			},
+			collectionPeriod: { firstDate: { year: 2026, month: 7, day: 1 }, lastDate: { year: 2026, month: 7, day: 28 } },
+		},
+	};
+
+	/** The whole site, which has plenty of interactions and a poor INP. */
+	const ORIGIN_WITH_INP = {
+		record: {
+			key: { formFactor: "PHONE", origin: "https://example.com" },
+			metrics: {
+				largest_contentful_paint: { percentiles: { p75: 9000 }, histogram: [{ density: 0.1 }, { density: 0.2 }, { density: 0.7 }] },
+				interaction_to_next_paint: { percentiles: { p75: 640 }, histogram: [{ density: 0.2 }, { density: 0.3 }, { density: 0.5 }] },
+			},
+			collectionPeriod: { firstDate: { year: 2026, month: 7, day: 1 }, lastDate: { year: 2026, month: 7, day: 28 } },
+		},
+	};
+
+	/** Answer each request by which key it carries, as the real API does. */
+	function mockByScope(urlPayload, originPayload) {
+		const bodies = [];
+		globalThis.fetch = async (endpoint, opts) => {
+			const body = JSON.parse(opts.body);
+			bodies.push(body);
+			const payload = body.origin ? originPayload : urlPayload;
+			return {
+				ok: Boolean(payload),
+				status: payload ? 200 : 404,
+				headers: { get: () => null },
+				json: async () => payload ?? { error: { code: 404 } },
+			};
+		};
+		return bodies;
+	}
+
+	test("borrows the missing metric and marks where it came from", async () => {
+		mockByScope(URL_NO_INP, ORIGIN_WITH_INP);
+		const r = await fetchFieldData("https://example.com/page/", { apiKey: "k" });
+
+		assert.equal(r.scope, "url");
+		assert.equal(r.metrics.inp.p75, 640);
+		assert.equal(r.metrics.inp.scope, "origin");
+		assert.deepEqual(r.borrowedFromOrigin, ["inp"]);
+	});
+
+	test("never overwrites a value the page has of its own", async () => {
+		mockByScope(URL_NO_INP, ORIGIN_WITH_INP);
+		const r = await fetchFieldData("https://example.com/page/", { apiKey: "k" });
+
+		// The origin's LCP is 9000 and fails; the page's own 2300 stands.
+		assert.equal(r.metrics.lcp.p75, 2300);
+		assert.equal(r.metrics.lcp.scope, undefined);
+	});
+
+	test("recomputes the verdict over the filled-in set", async () => {
+		mockByScope(URL_NO_INP, ORIGIN_WITH_INP);
+		const r = await fetchFieldData("https://example.com/page/", { apiKey: "k" });
+
+		// Two good metrics became three assessed, one of them poor.
+		assert.equal(r.cwvAssessed, 3);
+		assert.equal(r.cwvPass, false);
+	});
+
+	test("asks the origin only when a Core Web Vital is missing", async () => {
+		const bodies = mockByScope(CURRENT, ORIGIN_WITH_INP);
+		await fetchFieldData("https://example.com/page/", { apiKey: "k" });
+
+		// CURRENT has all three, so the second request is never made.
+		assert.equal(bodies.length, 1);
+		assert.ok(bodies[0].url);
+	});
+
+	test("keeps the page's own answer when the origin request fails", async () => {
+		globalThis.fetch = async (endpoint, opts) => {
+			const body = JSON.parse(opts.body);
+			if (body.origin) throw new Error("network");
+			return { ok: true, status: 200, headers: { get: () => null }, json: async () => URL_NO_INP };
+		};
+
+		const r = await fetchFieldData("https://example.com/page/", { apiKey: "k" });
+		assert.equal(r.metrics.lcp.p75, 2300);
+		assert.equal(r.metrics.inp, undefined);
+		assert.equal(r.borrowedFromOrigin, undefined);
+	});
+
+	test("an origin-scoped record is not filled from itself", async () => {
+		const bodies = mockByScope(null, ORIGIN_WITH_INP);
+		const r = await fetchFieldData("https://example.com/page/", { apiKey: "k" });
+
+		// URL 404s, origin answers, and no third request follows despite the
+		// origin record having no CLS.
+		assert.equal(r.scope, "origin");
+		assert.equal(bodies.length, 2);
+		assert.equal(r.metrics.cls, undefined);
+	});
+});
+
 describe("fetchFieldHistory", () => {
 	const HISTORY = {
 		record: {
