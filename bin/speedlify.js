@@ -57,7 +57,13 @@ const FIELD_FRESH_DAYS = 6;
 const BACKFILL_BUDGET_MINUTES = 15;
 
 /**
- * When a site's field history was last fetched, or null if never.
+ * When a site's field history was last fetched, and whether it found anything.
+ *
+ * `at` is null if the site has never been asked. `empty` marks a recorded miss
+ * — CrUX answered 404 for both the URL and the origin, which is the normal
+ * answer for a site below its reporting threshold. Both are stored the same
+ * way, so freshness alone cannot tell "25 weeks of metrics" from "asked, and
+ * Google has nothing", and the two need reporting separately.
  *
  * Read out of the file rather than taken from its mtime: CI checks the repo out
  * fresh every run, which stamps every file with the checkout time and would
@@ -70,12 +76,12 @@ function fieldFetchedAt(resultsDir, hash) {
 	try {
 		text = fs.readFileSync(path.join(resultsDir, hash, "field-history.json"), "utf8");
 	} catch {
-		return null;
+		return { at: null, empty: false };
 	}
 
 	const match = /"fetchedAt":\s*"([^"]+)"/.exec(text);
 	const at = match ? Date.parse(match[1]) : Number.NaN;
-	return Number.isNaN(at) ? null : at;
+	return { at: Number.isNaN(at) ? null : at, empty: /"series":\s*\[\s*\]/.test(text) };
 }
 
 const HELP = `
@@ -458,10 +464,16 @@ async function backfill() {
 	// consecutive runs walk the corpus instead of restarting at the top of it and
 	// re-covering the same prefix forever.
 	const freshBefore = Date.now() - FIELD_FRESH_DAYS * 24 * 60 * 60 * 1000;
-	const queue = sites
-		.map((site) => ({ site, fetchedAt: fieldFetchedAt(RESULTS_DIR, site.hash) }))
-		.filter(({ fetchedAt }) => flags.force || fetchedAt === null || fetchedAt < freshBefore)
-		.sort((a, b) => (a.fetchedAt ?? 0) - (b.fetchedAt ?? 0));
+	const scanned = sites.map((site) => ({ site, ...fieldFetchedAt(RESULTS_DIR, site.hash) }));
+	const queue = scanned
+		.filter(({ at }) => flags.force || at === null || at < freshBefore)
+		.sort((a, b) => (a.at ?? 0) - (b.at ?? 0));
+
+	// Of the ones not due, how many were asked and came back with nothing. The
+	// freshness line below is about when we last asked, which on this corpus is
+	// a much larger number than how many sites CrUX actually reports on.
+	const held = scanned.filter(({ at }) => at !== null);
+	const withData = held.filter(({ empty }) => !empty).length;
 
 	const limit = numFlag(flags.limit, null);
 	const work = limit ? queue.slice(0, limit) : queue;
@@ -485,7 +497,11 @@ async function backfill() {
 	if (!work.length) {
 		await logger.close(summary);
 		if (!flags.quiet) {
-			process.stdout.write(`\n  Nothing due: all ${sites.length} field histories are under ${FIELD_FRESH_DAYS} days old.\n\n`);
+			process.stdout.write(
+				`\n  Nothing due: all ${sites.length} field histories are under ${FIELD_FRESH_DAYS} days old.\n` +
+					`  ${withData} of them carry CrUX data; ${held.length - withData} are recorded misses —\n` +
+					`  sites CrUX has no record for, at either URL or origin scope.\n\n`
+			);
 		}
 		return;
 	}
