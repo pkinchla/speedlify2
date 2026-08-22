@@ -540,6 +540,7 @@ th.col-trend { text-align: center !important; }
    Not `.tally`, which is already the Technology section's bordered card. */
 .stat-tally {
 	width: 100%;
+	table-layout: fixed;
 	border-collapse: collapse;
 	margin: 0.15rem 0 0;
 	font-variant-numeric: tabular-nums;

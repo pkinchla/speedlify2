@@ -79,7 +79,9 @@
 			<tr>
 				<th scope="row">
 					{% for mark in g.marks %}{% stackIcon mark, 14 %}{% endfor %}
-					<span class="stat-tally-name">{{ g.name }}</span>
+					{#- No generator at all is the absence of a value, not a brand
+					    called "None" — italics say so without a second column. #}
+					<span class="stat-tally-name">{% if g.id %}{{ g.name }}{% else %}<em>{{ g.name }}</em>{% endif %}</span>
 				</th>
 				<td title="{{ g.count | num }} of the {{ stats.perfect | num }} perfect {{ stats.perfect | plural('score') }} ({{ (g.count / stats.perfect * 100) | round }}%)">{{ g.count | num }}</td>
 			</tr>
