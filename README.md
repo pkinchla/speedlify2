@@ -2,7 +2,7 @@
 
 Measure web performance across a list of sites and compare the results over time. Lighthouse for lab data, the Chrome UX Report for real-user field data, append-only JSON logs for history, and a static Build Awesome site for output.
 
-- [See live at `zachleat.github.io/speedlify2`](https://zachleat.github.io/speedlify2/)
+- [See it live at `speedlify.dev`](https://www.speedlify.dev/)
 - The successor to [`zachleat/speedlify`](https://github.com/zachleat/speedlify).
 
 ```bash
