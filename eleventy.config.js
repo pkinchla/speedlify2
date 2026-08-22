@@ -178,7 +178,9 @@ function formatBytes(v) {
 
 export default async function ($config) {
 	$config.addPlugin(HtmlBasePlugin, {
-		baseHref: process.env.GITHUB_ACTIONS ? "speedlify2" : "/",
+		// for GitHub Actions in a subdirectory (not for speedlify.dev)
+		// baseHref: process.env.GITHUB_ACTIONS ? "speedlify2" : "/",
+		baseHref: "/",
 	});
 
 	/*
