@@ -152,6 +152,10 @@ export default {
 				{ name: "Qwik", url: "https://qwik.dev/" },
 				{ name: "TanStack", url: "https://tanstack.com/" },
 				{ name: "Nuxt", url: "https://nuxt.com/" },
+
+				// Added here rather than in the imported order above: the upstream
+				// list predates it.
+				{ name: "Zola", url: "https://www.getzola.org/" },
 			],
 		},
 
