@@ -1,0 +1,291 @@
+{
+  "url": "https://render.com/",
+  "name": "Render",
+  "group": "hosts",
+  "groupName": "Web Hosts",
+  "timestamp": 1787380804110,
+  "date": "2026-08-22T06:40:04.110Z",
+  "runId": "2026-08-22T06-38-10-226Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 167463,
+  "error": null,
+  "variance": {
+    "min": 22,
+    "max": 46,
+    "spread": 24,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://render.com/",
+    "finalUrl": "https://render.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 23,
+      "accessibility": 84,
+      "best-practices": 54,
+      "seo": 100,
+      "agentic-browsing": 35
+    },
+    "timings": {
+      "fcp": 1573,
+      "lcp": 7797,
+      "si": 2995,
+      "tbt": 2114,
+      "tti": 17474,
+      "cls": 0.832,
+      "ttfb": 673,
+      "maxPotentialFid": 423,
+      "serverResponseTime": 72,
+      "networkRtt": 0.9,
+      "networkServerLatency": 73.3
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 74.3,
+      "elementRenderDelay": 222.4
+    },
+    "weight": {
+      "total": 2629417,
+      "requests": 142,
+      "mainDocument": 82383,
+      "byType": {
+        "total": {
+          "bytes": 2629420,
+          "requests": 136
+        },
+        "script": {
+          "bytes": 1524574,
+          "requests": 83
+        },
+        "font": {
+          "bytes": 640945,
+          "requests": 11
+        },
+        "image": {
+          "bytes": 284872,
+          "requests": 24
+        },
+        "document": {
+          "bytes": 82383,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 55241,
+          "requests": 14
+        },
+        "stylesheet": {
+          "bytes": 41405,
+          "requests": 3
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 956906,
+          "requests": 45
+        }
+      },
+      "scripts": 86,
+      "stylesheets": 3,
+      "fonts": 11
+    },
+    "thirdParty": {
+      "count": 8,
+      "bytes": 956928,
+      "mainThreadMs": 293.6,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 500588,
+          "mainThreadMs": 183.3
+        },
+        {
+          "entity": "sanity.io",
+          "bytes": 284488,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "posthog.com",
+          "bytes": 127966,
+          "mainThreadMs": 81.2
+        },
+        {
+          "entity": "LinkedIn Ads",
+          "bytes": 41239,
+          "mainThreadMs": 27.7
+        },
+        {
+          "entity": "SalesLoft",
+          "bytes": 2438,
+          "mainThreadMs": 1.4
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 8321.6,
+      "byGroup": {
+        "scriptEvaluation": 5128.9,
+        "other": 1529.7,
+        "scriptParseCompile": 568.3,
+        "styleLayout": 560.4,
+        "paintCompositeRender": 244,
+        "garbageCollection": 189.3,
+        "parseHTML": 101
+      },
+      "bootupMs": 5302.4,
+      "longTasks": 20,
+      "longestTaskMs": 423
+    },
+    "dom": {
+      "elements": 2553,
+      "depth": 20,
+      "maxChildren": 93
+    },
+    "waste": {
+      "unusedJsBytes": 346138,
+      "unusedCssBytes": 34118,
+      "legacyJsBytes": 41614,
+      "duplicatedJsBytes": 14889,
+      "unminifiedJsBytes": 31797,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 300,
+      "renderBlockingCount": 3,
+      "poorlyCachedBytes": 78402.97440740741,
+      "poorlyCachedCount": 6
+    },
+    "accessibility": {
+      "failingCount": 4,
+      "applicableCount": 25,
+      "failingNodes": 95,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 47
+        },
+        {
+          "id": "svg-img-alt",
+          "title": "SVG elements with an `img` role do not have an accessible text alternative",
+          "nodes": 45
+        },
+        {
+          "id": "button-name",
+          "title": "Buttons do not have an accessible name",
+          "nodes": 2
+        },
+        {
+          "id": "meta-viewport",
+          "title": "`[user-scalable=\"no\"]` is used in the `<meta name=\"viewport\">` element or the `[maximum-scale]` attribute is less than 5.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": null,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 2,
+      "baselineLimitedFeatures": 49
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2297,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-22T06:40:21.283Z",
+      "runtimeMs": 15256.1
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-24",
+      "last": "2026-08-20"
+    },
+    "metrics": {
+      "inp": {
+        "p75": 307,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 56.5,
+          "needsImprovement": 34.4,
+          "poor": 9.1
+        }
+      },
+      "lcp": {
+        "p75": 2163,
+        "rating": "good",
+        "distribution": {
+          "good": 80.7,
+          "needsImprovement": 11.1,
+          "poor": 8.2
+        }
+      },
+      "rtt": {
+        "p75": 273,
+        "rating": null,
+        "distribution": {
+          "good": 15,
+          "needsImprovement": 60.9,
+          "poor": 24.2
+        }
+      },
+      "cls": {
+        "p75": 0.01,
+        "rating": "good",
+        "distribution": {
+          "good": 83.3,
+          "needsImprovement": 7.2,
+          "poor": 9.5
+        }
+      },
+      "ttfb": {
+        "p75": 1090,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 59.9,
+          "needsImprovement": 30.5,
+          "poor": 9.7
+        }
+      },
+      "fcp": {
+        "p75": 1843,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 73.8,
+          "needsImprovement": 16.4,
+          "poor": 9.9
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": null,
+    "host": null,
+    "headers": {},
+    "violations": null,
+    "passes": null,
+    "incomplete": null,
+    "violationRules": null,
+    "version": null,
+    "top": [],
+    "error": "Navigation timeout of 120000 ms exceeded"
+  },
+  "consecutiveFailures": 0
+}
