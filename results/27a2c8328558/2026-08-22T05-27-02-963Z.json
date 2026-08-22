@@ -1,0 +1,22 @@
+{
+  "url": "https://testautomation.space/",
+  "name": "testautomation.space",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787376422963,
+  "date": "2026-08-22T05:27:02.963Z",
+  "runId": "2026-08-22T05-26-02-810Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 0,
+  "durationMs": 16394,
+  "error": "CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.",
+  "errors": [
+    "CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.",
+    "CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.",
+    "CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests."
+  ],
+  "field": null,
+  "axe": null,
+  "consecutiveFailures": 3
+}
