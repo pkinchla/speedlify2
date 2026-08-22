@@ -162,8 +162,10 @@ pre code { font-size: inherit; }
 .lede { color: var(--text-muted); max-width: 62ch; margin: 0; }
 
 .statbar {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+	display: flex;
+	/* Without this the tiles all crush onto one line — flex does not wrap by
+	   default the way an auto-fill grid does. */
+	flex-wrap: wrap;
 	gap: 0.75rem;
 	margin-bottom: 2.5rem;
 	/* Matching .table-scroll and the sticky nav, so the tiles' outer edges line
@@ -172,6 +174,9 @@ pre code { font-size: inherit; }
 	margin-inline: -0.7rem;
 }
 .stat {
+	/* Grow and shrink around a 14em basis, so a row of tiles fills the width the
+	   way the grid's 1fr tracks used to rather than leaving a ragged right edge. */
+	flex: 1 1 14em;
 	background: var(--surface);
 	border: 1px solid var(--border);
 	border-radius: var(--radius);
@@ -562,7 +567,11 @@ th.col-trend { text-align: center !important; }
 	padding: 0.08rem 0;
 }
 
-.stat-tally-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+/* The max-width is what lets the ellipsis fire. Without it the table's
+   min-content width is the full name, and a table in auto layout will not
+   shrink below that — so the tile overflowed rather than truncating. Capping
+   the name gives the table a smaller minimum to collapse to. */
+.stat-tally-name { max-width: 8rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
 /* 1% is not a real width — it is under any content's minimum, so the column
    collapses to exactly what the number needs and the name column takes the
