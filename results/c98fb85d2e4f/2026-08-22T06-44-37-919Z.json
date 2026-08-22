@@ -1,0 +1,258 @@
+{
+  "url": "https://meinamsterdam.nl/",
+  "name": "meinamsterdam.nl",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787381077919,
+  "date": "2026-08-22T06:44:37.919Z",
+  "runId": "2026-08-22T06-38-11-298Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 95915,
+  "error": null,
+  "variance": {
+    "min": 56,
+    "max": 67,
+    "spread": 11,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://meinamsterdam.nl/",
+    "finalUrl": "https://meinamsterdam.nl/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 56,
+      "accessibility": 96,
+      "best-practices": 73,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 9087,
+      "lcp": 15526,
+      "si": 9087,
+      "tbt": 73,
+      "tti": 15570,
+      "cls": 0.008,
+      "ttfb": 699,
+      "maxPotentialFid": 79,
+      "serverResponseTime": 99,
+      "networkRtt": 146,
+      "networkServerLatency": 129.3
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 100.7,
+      "elementRenderDelay": 2250.6
+    },
+    "weight": {
+      "total": 1389783,
+      "requests": 139,
+      "mainDocument": 9907,
+      "byType": {
+        "total": {
+          "bytes": 1387941,
+          "requests": 133
+        },
+        "script": {
+          "bytes": 639044,
+          "requests": 24
+        },
+        "image": {
+          "bytes": 220461,
+          "requests": 31
+        },
+        "font": {
+          "bytes": 182396,
+          "requests": 7
+        },
+        "document": {
+          "bytes": 174181,
+          "requests": 18
+        },
+        "other": {
+          "bytes": 132981,
+          "requests": 48
+        },
+        "stylesheet": {
+          "bytes": 38878,
+          "requests": 5
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 1232043,
+          "requests": 125
+        }
+      },
+      "scripts": 26,
+      "stylesheets": 5,
+      "fonts": 7
+    },
+    "thirdParty": {
+      "count": 4,
+      "bytes": 335020,
+      "mainThreadMs": 182.6,
+      "top": [
+        {
+          "entity": "Google/Doubleclick Ads",
+          "bytes": 222747,
+          "mainThreadMs": 169.2
+        },
+        {
+          "entity": "Google Fonts",
+          "bytes": 89403,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "adtrafficquality.google",
+          "bytes": 21319,
+          "mainThreadMs": 11
+        },
+        {
+          "entity": "bsky.app",
+          "bytes": 1551,
+          "mainThreadMs": 2.4
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 2650,
+      "byGroup": {
+        "scriptEvaluation": 1172.9,
+        "styleLayout": 790.1,
+        "other": 524.7,
+        "scriptParseCompile": 60,
+        "paintCompositeRender": 59.1,
+        "parseHTML": 23.9,
+        "garbageCollection": 19.3
+      },
+      "bootupMs": 1219.3,
+      "longTasks": 9,
+      "longestTaskMs": 148
+    },
+    "dom": {
+      "elements": 447,
+      "depth": 12,
+      "maxChildren": 214
+    },
+    "waste": {
+      "unusedJsBytes": 108755,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 1749,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 256738.36254655488,
+      "poorlyCachedCount": 20
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 29,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "frame-title",
+          "title": "`<frame>` or `<iframe>` elements do not have a title",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "http/1.1",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 3,
+      "baselineLimitedFeatures": 43
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2472,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-22T06:45:54.671Z",
+      "runtimeMs": 16361.2
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": {
+      "id": "eleventy",
+      "name": "Eleventy",
+      "icon": "Eleventy",
+      "version": "3.1.6",
+      "source": "meta",
+      "raw": "Eleventy v3.1.6"
+    },
+    "host": {
+      "id": "self-hosted",
+      "name": "Self-hosted",
+      "icon": null,
+      "detail": "nginx",
+      "detailIcon": "Nginx",
+      "source": "server"
+    },
+    "headers": {
+      "server": "nginx/1.28.1"
+    },
+    "violations": 16,
+    "passes": 1239,
+    "incomplete": 6,
+    "violationRules": 6,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "nodes": 5,
+        "help": "Page should contain a level-one heading"
+      },
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "nodes": 4,
+        "help": "Links must have discernible text"
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 2,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "frame-title",
+        "impact": "serious",
+        "nodes": 2,
+        "help": "Frames must have an accessible name"
+      },
+      {
+        "id": "image-alt",
+        "impact": "critical",
+        "nodes": 2,
+        "help": "Images must have alternative text"
+      },
+      {
+        "id": "aria-command-name",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "ARIA commands must have an accessible name"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
