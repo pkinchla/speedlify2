@@ -1,6 +1,7 @@
-{"version":1,"url":"https://books.hiddedevries.nl/","updated":"2026-08-22T02:54:47.368Z","points":[
+{"version":1,"url":"https://books.hiddedevries.nl/","updated":"2026-08-22T11:22:41.052Z","points":[
 {"t":1787242273637,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":1,"runs":0,"reqRuns":3,"ms":17125},
 {"t":1787317081139,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":2,"runs":0,"reqRuns":3,"ms":17809},
 {"t":1787340414142,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":3,"runs":0,"reqRuns":3,"ms":17515},
-{"t":1787367270139,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":4,"runs":0,"reqRuns":3,"ms":17228}
+{"t":1787367270139,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":4,"runs":0,"reqRuns":3,"ms":17228},
+{"t":1787397743075,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":5,"runs":0,"reqRuns":3,"ms":17977}
 ]}
