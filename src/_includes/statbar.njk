@@ -67,8 +67,28 @@
 		{% endif %}
 	</div>
 	<div class="stat">
-		<span class="stat-value">{{ stats.avgWeight | bytes }}</span>
-		<span class="stat-label">Avg page weight</span>
+		{#
+			A distribution rather than an average. The mean here is 1.11 MB and the
+			median 256 kB — four times apart, because a handful of sites in the tens
+			of megabytes drag the average somewhere almost no site actually sits. A
+			single number could not say that; the shape does, at a glance.
+		#}
+		{% set weightMax = stats.weightBuckets | maxValue("count") %}
+		<span class="histogram" role="img"
+			aria-label="Page weight distribution across {{ stats.measured | num }} sites{% for b in stats.weightBuckets %}. {{ b.label }}: {{ b.count | num }}{% endfor %}">
+			{% for b in stats.weightBuckets %}
+			<span class="histogram-col" title="{{ b.label }} — {{ b.count | num }} {{ b.count | plural("site") }} ({{ b.share }}%)">
+				<span class="histogram-track">
+					<span class="histogram-bar" style="height:{{ (b.count / weightMax * 100) | round(1) }}%"></span>
+				</span>
+				<span class="histogram-tick">{{ b.tick }}</span>
+			</span>
+			{% endfor %}
+		</span>
+		<span class="stat-label">Page weight</span>
+		<p class="stat-sub-note muted small">
+			Median <strong>{{ stats.medianWeight | bytes }}</strong> · mean {{ stats.avgWeight | bytes }}
+		</p>
 		{#
 			Absent until the report has enough days to be worth drawing — see
 			MIN_WEIGHT_HISTORY_DAYS in lib/report.js.

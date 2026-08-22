@@ -531,6 +531,47 @@ th.col-trend { text-align: center !important; }
 .bar-fill { display: block; height: 100%; background: var(--accent); border-radius: 4px; }
 .bar-warn .bar-fill { background: var(--average); }
 
+/* --------------------------------------------------------------- histogram */
+
+/* Page weight across the fleet, as a shape. Small on purpose — it sits in a
+   stat tile beside single numbers, and it is there to be read at a glance
+   rather than measured off. The exact counts are in the tooltips. */
+.histogram {
+	display: flex;
+	align-items: flex-end;
+	gap: 3px;
+	height: 52px;
+	margin: 0.1rem 0 0.35rem;
+}
+
+.histogram-col {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2px;
+	flex: 1 1 0;
+	min-width: 0;
+}
+
+/* The track gives every column the same full height, so the bars grow from a
+   common baseline rather than from wherever their own box happens to end. */
+.histogram-track { display: flex; align-items: flex-end; width: 100%; height: 38px; }
+
+.histogram-bar {
+	display: block;
+	width: 100%;
+	min-height: 2px;
+	border-radius: 2px 2px 0 0;
+	background: var(--accent);
+}
+
+.histogram-tick {
+	font-size: 0.6rem;
+	line-height: 1;
+	color: var(--text-muted);
+	font-variant-numeric: tabular-nums;
+}
+
 /* ---------------------------------------------------------------- lcp bar */
 
 /* The phases of LCP under the number, as proportions — see the lcpBar
