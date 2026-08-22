@@ -1188,7 +1188,9 @@ th.col-rings { text-align: left !important; }
 	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
-	gap: 0.4rem 1.1rem;
+	/* Wide column gap: each entry is now three pieces — count, name, age — and
+	   without a clear separation between entries they read as one run-on line. */
+	gap: 0.4rem 2rem;
 }
 .contents li { display: inline-flex; align-items: baseline; gap: 0.35rem; font-size: 0.9rem; }
 /* The home page's category list is the way into the site rather than a table of
@@ -1214,12 +1216,6 @@ th.col-rings { text-align: left !important; }
 .contents-categories .contents-count { font-size: 0.8rem; }
 /* The denominator is context, not the number being reported — dimmed so the
    measured count is what the eye lands on. */
-/* Was `opacity: 0.6`, which blended this into the pill behind it and landed
-   at 2.17:1. Dimming text with opacity cannot be made accessible — it moves the
-   foreground toward the background by definition. The "/20" is already
-   secondary by being smaller and second; it does not need to be fainter too. */
-.contents-of { color: inherit; }
-
 /* Freshness beside the coverage count. Same pill treatment as the count, in the
    contrast-safe muted so it clears 4.5:1 on its own tint — see
    --text-muted-strong. */
@@ -1232,13 +1228,14 @@ th.col-rings { text-align: left !important; }
 	border-radius: 10px;
 }
 
+/* Plain text, not a pill. Back to --text-muted rather than the strong variant:
+   that exists for text sitting on a tinted background of its own colour, and
+   with the tint gone there is nothing eating the contrast — 5.4:1 dark and
+   5.2:1 light against the page. */
 .contents-count {
 	font-size: 0.72rem;
 	font-variant-numeric: tabular-nums;
-	color: var(--text-muted-strong);
-	background: color-mix(in srgb, var(--text-muted) 15%, transparent);
-	padding: 0.05rem 0.35rem;
-	border-radius: 10px;
+	color: var(--text-muted);
 }
 
 /*
@@ -1419,7 +1416,8 @@ th.col-rings { text-align: left !important; }
 	gap: 0.75rem;
 	flex-wrap: wrap;
 }
-/* Same as .contents-of: `opacity: 0.8` here measured 4.06:1 on the card. */
+/* Dimming text with opacity cannot be made accessible — it moves the foreground
+   toward the background by definition. `opacity: 0.8` here measured 4.06:1. */
 .tally-meta { text-transform: none; letter-spacing: 0; font-weight: 400; color: var(--text-muted-strong); }
 
 .tally-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem; }

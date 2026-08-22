@@ -47,38 +47,29 @@ permalink: /index.html
 	   screen reader announces is the one on the page. #}
 	<nav class="contents contents-categories" aria-labelledby="categories-heading">
 	<ul>
-		{#
-			Measured over listed, not just listed. Measurement is rolling — a
-			category is added in one commit and fills in over the following days —
-			so a bare total says how many URLs someone typed, while this says how
-			much of the category the site can actually show you.
-		#}
 		{% for group in sites.groups %}
 		{% if group.entries.length %}
 		<li>
 			<a href="/group/{{ group.id }}/">{{ group.name }}</a>
-			<span class="contents-count" title="{{ group.measured | num }} of {{ group.entries.length | num }} measured at least once">
-				{{ group.measured | num }}<span class="contents-of">/{{ group.entries.length | num }}</span>
-			</span>
+			{#
+				How many sites are in the category, full stop. The coverage fraction
+				that used to be here — measured over listed — was answering a
+				different question than the one this list asks, and the freshness
+				pill beside it already says whether the data is keeping up.
+			#}
+			<span class="contents-count" title="{{ group.entries.length | num }} {{ group.entries.length | plural('site') }} in {{ group.name }}">×{{ group.entries.length | num }}</span>
 			{#
 				How long ago anything in this category was last measured. Measurement
 				is rolling and each category sets its own cadence, so the curated
 				handfuls refresh daily while the big imported lists take days to come
-				round — a figure worth showing beside the coverage count rather than
-				leaving to be inferred from it.
+				round — a figure worth showing rather than leaving to be inferred.
 			#}
 			{% if group.lastMeasured %}
-			<span class="contents-age" title="Most recently measured site in {{ group.name }}: {{ group.lastMeasured | date('long') }}">{{ group.lastMeasured | since }}</span>
+			<span class="contents-age" title="Most recently measured site in {{ group.name }}: {{ group.lastMeasured | date('long') }}">{{ group.lastMeasured | since }} ago</span>
 			{% endif %}
 		</li>
 		{% endif %}
 		{% endfor %}
-		{% if sites.moving.length %}
-		<li>
-			<a href="#moving">{{ sites.moving.length | plural("Site") }} that {{ sites.moving.length | verb("redirects", "redirect") }}</a>
-			<span class="contents-count">{{ sites.moving.length }}</span>
-		</li>
-		{% endif %}
 		{% if sites.orphans.length %}
 		<li>
 			<a href="#orphans">Orphaned {{ sites.orphans.length | plural("history", "histories") }}</a>
