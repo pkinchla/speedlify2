@@ -55,8 +55,8 @@ eleventyComputed:
 			{% for score in metrics.SCORES %}
 			{% scoreRing entry.latest.lab.scores[score.key], score.label %}
 			{% endfor %}
-			{% cwvRing entry.cwvFailures, entry.cwv.assessed %}
 			{% axeRing entry.axe %}
+			{% cwvRing entry.cwvFailures, entry.cwv.assessed %}
 		</span>
 	</div>
 	{% endif %}

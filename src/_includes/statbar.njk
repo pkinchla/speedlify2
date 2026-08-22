@@ -35,8 +35,8 @@
 				{% for score in metrics.SCORES %}
 				{% scoreRing stats.medians.scores[score.key], "Median " + score.label %}
 				{% endfor %}
-				{% cwvRing stats.medians.cwvFailures, null, 37, "Median Core Web Vitals: " + (stats.medians.cwvFailures | default("no data")) + " failing, across " + (stats.medians.counts.cwv | num) + " sites with real-user data" %}
 				{% axeRing stats.medians.axe, 37, "Median axe violations: " + (stats.medians.axe | default("no data")) + ", across " + (stats.medians.counts.axe | num) + " sites" %}
+				{% cwvRing stats.medians.cwvFailures, null, 37, "Median Core Web Vitals: " + (stats.medians.cwvFailures | default("no data")) + " failing, across " + (stats.medians.counts.cwv | num) + " sites with real-user data" %}
 			</span>
 			<span class="stat-label">Median scores</span>
 		</div>
@@ -45,8 +45,8 @@
 				{% for score in metrics.SCORES %}
 				{% scoreRing stats.means.scores[score.key], "Mean " + score.label %}
 				{% endfor %}
-				{% cwvRing stats.means.cwvFailures, null, 37, "Mean Core Web Vitals: " + (stats.means.cwvFailures | default("no data")) + " failing per site, rounded, across " + (stats.means.counts.cwv | num) + " sites with real-user data" %}
 				{% axeRing stats.means.axe, 37, "Mean axe violations: " + (stats.means.axe | default("no data")) + " per site, rounded, across " + (stats.means.counts.axe | num) + " sites" %}
+				{% cwvRing stats.means.cwvFailures, null, 37, "Mean Core Web Vitals: " + (stats.means.cwvFailures | default("no data")) + " failing per site, rounded, across " + (stats.means.counts.cwv | num) + " sites with real-user data" %}
 			</span>
 			<span class="stat-label">Mean scores</span>
 		</div>

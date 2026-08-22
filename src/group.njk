@@ -132,7 +132,7 @@ eleventyComputed:
 				<th class="col-site">Site</th>
 				<th class="col-stack" title="What built the site, detected from its generator tag or presumed from the list it is on">Tool</th>
 				<th class="col-stack" title="Who serves the site, detected from its response headers on the same page load">Host</th>
-				<th class="col-rings" title="The four Lighthouse categories, then the Core Web Vitals verdict from real users and violating nodes from a full axe run — the primary ranking and its two tiebreakers, in order">Scores</th>
+				<th class="col-rings" title="The four Lighthouse categories, then violating nodes from a full axe run and the Core Web Vitals verdict from real users. The ranking breaks ties the other way round: Core Web Vitals first, then axe">Scores</th>
 				<th class="col-trend">Perf trend</th>
 				<th class="col-lcp"><span class="lcp-head">LCP</span></th><th>CLS</th><th>TBT</th>
 				<th>Weight</th><th>Req</th>
@@ -187,8 +187,8 @@ eleventyComputed:
 						{% for score in metrics.SCORES %}
 							{% scoreRing entry.latest.lab.scores[score.key], score.label %}
 						{% endfor %}
-						{% cwvRing entry.cwvFailures, entry.cwv.assessed %}
 						{% axeRing entry.axe %}
+						{% cwvRing entry.cwvFailures, entry.cwv.assessed %}
 						</span>
 					</td>
 					<td class="col-trend">{% sparkline entry.trends.performance %}</td>

@@ -538,9 +538,12 @@ th.col-trend { text-align: center !important; }
    the rows are data rather than fixed states, so it stays its own thing.
 
    Not `.tally`, which is already the Technology section's bordered card. */
+/* Auto layout, not fixed. `table-layout: fixed` splits the columns evenly and
+   ignores `width: min-content` on a cell, so the count column got half the tile
+   for three digits. Auto plus the `width: 1%` below is the idiom that actually
+   shrinks a column to its contents. */
 .stat-tally {
 	width: 100%;
-	table-layout: fixed;
 	border-collapse: collapse;
 	margin: 0.15rem 0 0;
 	font-variant-numeric: tabular-nums;
@@ -561,7 +564,12 @@ th.col-trend { text-align: center !important; }
 
 .stat-tally-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
+/* 1% is not a real width — it is under any content's minimum, so the column
+   collapses to exactly what the number needs and the name column takes the
+   rest. `nowrap` stops a long count wrapping to make itself narrower still. */
 .stat-tally td {
+	width: 1%;
+	white-space: nowrap;
 	text-align: right;
 	font-weight: 700;
 	font-size: 0.9rem;

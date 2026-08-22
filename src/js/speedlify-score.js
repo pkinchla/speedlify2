@@ -538,8 +538,9 @@ class SpeedlifyScore extends HTMLElement {
 	 * rather than as a row of differently-shaped badges.
 	 *
 	 * These six are the ones the leaderboard ranks by — the four categories,
-	 * then Core Web Vitals and axe as its tiebreakers, in that order. Total, rank, weight and
-	 * requests are all in the tooltip, which costs nothing until asked for.
+	 * then axe and Core Web Vitals, the two things Lighthouse's own four do not
+	 * cover. Total, rank, weight and requests are all in the tooltip, which
+	 * costs nothing until asked for.
 	 */
 	render(data) {
 		const parts = [
@@ -547,11 +548,11 @@ class SpeedlifyScore extends HTMLElement {
 			this.scoreHtml("Accessibility", data.lighthouse?.accessibility),
 			this.scoreHtml("Best Practices", data.lighthouse?.bestPractices),
 			this.scoreHtml("SEO", data.lighthouse?.seo),
-			// The two the ranking uses as tiebreakers, in the order it applies
-			// them, and the two things Lighthouse's own four do not cover:
-			// real-user Core Web Vitals, then a full axe run.
-			this.cwvHtml(data.cwv),
+			// The two things Lighthouse's own four do not cover: a full axe run,
+			// then real-user Core Web Vitals. Display order only — the ranking
+			// still breaks ties on Core Web Vitals before axe.
 			this.axeHtml(data.axe),
+			this.cwvHtml(data.cwv),
 		];
 
 		return [
