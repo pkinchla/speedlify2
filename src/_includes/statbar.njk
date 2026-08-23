@@ -72,6 +72,15 @@
 			{% for site in stats.recentlyMeasured %}
 			<li>
 				<a href="/site/{{ site.slug }}/">{{ site.displayUrl }}</a>
+				{#
+					The six rings reduced to their colours — the shape of that run at a
+					glance, in the width a number would need. Decorative on purpose:
+					the link beside it goes to the page with the actual figures, and
+					six unlabelled colours read aloud would be noise.
+				#}
+				<span class="recents-dots" aria-hidden="true">
+					{% for band in site.bands %}<span class="recents-dot recents-dot-{{ band }}"></span>{% endfor %}
+				</span>
 				<span class="recents-age">{{ site.timestamp | since }}</span>
 			</li>
 			{% endfor %}

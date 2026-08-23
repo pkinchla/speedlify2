@@ -287,12 +287,14 @@ describe("Core Web Vitals tier", () => {
 		assert.equal(first(passes, fails), "a", "field failures outrank a better axe count");
 	});
 
-	test("but the axe band still decides ahead of the field tier", () => {
-		// Green beats amber on the ring itself, and that is settled before any
-		// vitals are read — the price of banding axe alongside the categories.
+	test("and now ahead of the axe band too", () => {
+		// This used to go the other way: green beat amber on the axe ring, and that
+		// was settled before any vitals were read. It made a site CrUX says is
+		// failing real users outrank one it says is passing, on the strength of a
+		// cleaner axe run — which is what the Core Web Vitals tier exists to stop.
 		const passes = withCwv({ violations: 5 }, field("good", "good", "good"));
 		const fails = withCwv({ violations: 0 }, field("poor", "good", "good"));
-		assert.equal(first(passes, fails), "b", "amber loses to green before the tier is reached");
+		assert.equal(first(passes, fails), "a", "a measured failure loses to a measured pass, whatever axe says");
 	});
 
 	test("a site with no field data is not demoted by the tier", () => {
