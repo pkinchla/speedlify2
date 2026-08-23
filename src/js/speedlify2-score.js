@@ -125,33 +125,37 @@ class SpeedlifyScore extends HTMLElement {
 	static css = `
 /*
  * Colours come from custom properties so the same stylesheet can render on a
- * light page or a dark one. Three states, in this order:
+ * light page or a dark one.
  *
- *   :host                              the dark palette, unconditionally
- *   @media (prefers-color-scheme: light)  light, unless theme="dark" says otherwise
- *   :host([theme="light"])             light, whatever the system says
- *   :host([theme="dark"])              dark, whatever the system says
+ * light-dark() resolves against the element's used color-scheme, which is
+ * an inherited property — so it crosses the shadow boundary and picks up
+ * whatever the *host page* declares. That is the behaviour this needs. A media
+ * query would follow the reader's operating system instead, which is a
+ * different question and gets it wrong exactly when it matters: a dark site
+ * read on a machine set to light rendered a light badge in the middle of a dark
+ * page. Following the page also means the badge tracks a theme toggle live,
+ * with no script and no attribute to keep in sync.
  *
- * The media query has to be guarded against an explicit theme="dark" or it
- * would win over it; the explicit rules come last so they win over the query.
+ * theme forces it either way by setting color-scheme outright, which is
+ * what a page embedding this on a background it controls will want.
  *
  * This matters more than it looks. The numerals inside the rings are drawn in
- * the band colour directly onto the *host page's* background — there is no card
+ * the band colour directly onto the host page's background — there is no card
  * behind them — and the dark-page greens and ambers measure about 2:1 on white.
- * A badge on a light page was close to unreadable before this.
+ * The light values are the leaderboard's own, at 5.1:1 or better.
  */
 :host {
-	--ss-good: #0cce6b;
-	--ss-average: #ffa400;
-	--ss-poor: #ff4e42;
-	--ss-none: #888;
-	--ss-track: rgb(136 136 136 / .35);
-	--ss-tip-bg: #1c1c1c;
-	--ss-tip-text: #fff;
-	--ss-tip-link: #7cc0ff;
-	--ss-tip-shadow: rgb(0 0 0 / .35);
-	--ss-age-text: rgb(255 255 255 / .72);
-	--ss-age-bg: rgb(255 255 255 / .12);
+	--ss-good: light-dark(#0a7c42, #0cce6b);
+	--ss-average: light-dark(#9a6200, #ffa400);
+	--ss-poor: light-dark(#c02026, #ff4e42);
+	--ss-none: light-dark(#6b6b6b, #888);
+	--ss-track: light-dark(rgb(0 0 0 / .18), rgb(136 136 136 / .35));
+	--ss-tip-bg: light-dark(#ffffff, #1c1c1c);
+	--ss-tip-text: light-dark(#14161a, #fff);
+	--ss-tip-link: light-dark(#1a5fd0, #7cc0ff);
+	--ss-tip-shadow: light-dark(rgb(0 0 0 / .18), rgb(0 0 0 / .35));
+	--ss-age-text: light-dark(rgb(0 0 0 / .68), rgb(255 255 255 / .72));
+	--ss-age-bg: light-dark(rgb(0 0 0 / .08), rgb(255 255 255 / .12));
 
 	display: inline-flex;
 	align-items: center;
@@ -163,53 +167,10 @@ class SpeedlifyScore extends HTMLElement {
 	vertical-align: middle;
 }
 
-/*
- * The light values, shared by the media query and the explicit attribute. The
- * band colours are the same ones the leaderboard uses in its light theme, so a
- * score embedded elsewhere and the same score on the site are the same colour:
- * 5.1:1 or better on white, where the dark set manages 2:1.
- */
-@media (prefers-color-scheme: light) {
-	:host(:not([theme="dark"])) {
-		--ss-good: #0a7c42;
-		--ss-average: #9a6200;
-		--ss-poor: #c02026;
-		--ss-none: #6b6b6b;
-		--ss-track: rgb(0 0 0 / .18);
-		--ss-tip-bg: #ffffff;
-		--ss-tip-text: #14161a;
-		--ss-tip-link: #1a5fd0;
-		--ss-tip-shadow: rgb(0 0 0 / .18);
-		--ss-age-text: rgb(0 0 0 / .68);
-		--ss-age-bg: rgb(0 0 0 / .08);
-	}
-}
-:host([theme="light"]) {
-	--ss-good: #0a7c42;
-	--ss-average: #9a6200;
-	--ss-poor: #c02026;
-	--ss-none: #6b6b6b;
-	--ss-track: rgb(0 0 0 / .18);
-	--ss-tip-bg: #ffffff;
-	--ss-tip-text: #14161a;
-	--ss-tip-link: #1a5fd0;
-	--ss-tip-shadow: rgb(0 0 0 / .18);
-	--ss-age-text: rgb(0 0 0 / .68);
-	--ss-age-bg: rgb(0 0 0 / .08);
-}
-:host([theme="dark"]) {
-	--ss-good: #0cce6b;
-	--ss-average: #ffa400;
-	--ss-poor: #ff4e42;
-	--ss-none: #888;
-	--ss-track: rgb(136 136 136 / .35);
-	--ss-tip-bg: #1c1c1c;
-	--ss-tip-text: #fff;
-	--ss-tip-link: #7cc0ff;
-	--ss-tip-shadow: rgb(0 0 0 / .35);
-	--ss-age-text: rgb(255 255 255 / .72);
-	--ss-age-bg: rgb(255 255 255 / .12);
-}
+/* Overriding color-scheme is the whole of forcing a theme: every colour above
+   is resolved from it. */
+:host([theme="light"]) { color-scheme: light; }
+:host([theme="dark"]) { color-scheme: dark; }
 
 :host([hidden]) { display: none; }
 
