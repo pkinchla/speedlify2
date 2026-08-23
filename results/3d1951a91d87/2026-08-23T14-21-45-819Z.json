@@ -1,0 +1,303 @@
+{
+  "url": "https://www.netlify.com/",
+  "name": "Netlify",
+  "group": "hosts",
+  "groupName": "Web Hosts",
+  "timestamp": 1787494905819,
+  "date": "2026-08-23T14:21:45.819Z",
+  "runId": "2026-08-23T14-21-38-176Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 53549,
+  "error": null,
+  "variance": {
+    "min": 35,
+    "max": 52,
+    "spread": 17,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.netlify.com/",
+    "finalUrl": "https://www.netlify.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 51,
+      "accessibility": 97,
+      "best-practices": 77,
+      "seo": 92,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 3239,
+      "lcp": 4364,
+      "si": 3724,
+      "tbt": 1682,
+      "tti": 19738,
+      "cls": 0.001,
+      "ttfb": 613,
+      "maxPotentialFid": 515,
+      "serverResponseTime": 31,
+      "networkRtt": 0.4,
+      "networkServerLatency": 151.3
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 32.5,
+      "elementRenderDelay": 181
+    },
+    "weight": {
+      "total": 2534460,
+      "requests": 137,
+      "mainDocument": 111354,
+      "byType": {
+        "total": {
+          "bytes": 2534460,
+          "requests": 133
+        },
+        "script": {
+          "bytes": 1703557,
+          "requests": 49
+        },
+        "font": {
+          "bytes": 214709,
+          "requests": 7
+        },
+        "image": {
+          "bytes": 206513,
+          "requests": 27
+        },
+        "document": {
+          "bytes": 170925,
+          "requests": 4
+        },
+        "other": {
+          "bytes": 150228,
+          "requests": 36
+        },
+        "stylesheet": {
+          "bytes": 88528,
+          "requests": 10
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 2534460,
+          "requests": 133
+        }
+      },
+      "scripts": 49,
+      "stylesheets": 10,
+      "fonts": 7
+    },
+    "thirdParty": {
+      "count": 11,
+      "bytes": 1570142,
+      "mainThreadMs": 764.8,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 696816,
+          "mainThreadMs": 322.3
+        },
+        {
+          "entity": "Google CDN",
+          "bytes": 320174,
+          "mainThreadMs": 204.8
+        },
+        {
+          "entity": "Hubspot",
+          "bytes": 308853,
+          "mainThreadMs": 115.1
+        },
+        {
+          "entity": "Optanon",
+          "bytes": 190641,
+          "mainThreadMs": 97.5
+        },
+        {
+          "entity": "Segment",
+          "bytes": 47737,
+          "mainThreadMs": 22.4
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 8305.9,
+      "byGroup": {
+        "scriptEvaluation": 4632.9,
+        "other": 1385.8,
+        "styleLayout": 952.9,
+        "scriptParseCompile": 718.9,
+        "paintCompositeRender": 307.1,
+        "parseHTML": 155.3,
+        "garbageCollection": 153
+      },
+      "bootupMs": 5039.3,
+      "longTasks": 20,
+      "longestTaskMs": 515
+    },
+    "dom": {
+      "elements": 2435,
+      "depth": 17,
+      "maxChildren": 140
+    },
+    "waste": {
+      "unusedJsBytes": 900026,
+      "unusedCssBytes": 16728,
+      "legacyJsBytes": 8874,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 1515,
+      "renderBlockingCount": 9,
+      "poorlyCachedBytes": 390437.35666666663,
+      "poorlyCachedCount": 25
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 35,
+      "failingNodes": 3,
+      "failing": [
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "nodes": 2
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": null,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 85
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2451,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-23T14:22:20.879Z",
+      "runtimeMs": 15116.7
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-25",
+      "last": "2026-08-21"
+    },
+    "metrics": {
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 94.7,
+          "needsImprovement": 5.1,
+          "poor": 0.2
+        }
+      },
+      "ttfb": {
+        "p75": 794,
+        "rating": "good",
+        "distribution": {
+          "good": 75.2,
+          "needsImprovement": 16,
+          "poor": 8.8
+        }
+      },
+      "fcp": {
+        "p75": 1875,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 73.4,
+          "needsImprovement": 14.2,
+          "poor": 12.5
+        }
+      },
+      "inp": {
+        "p75": 298,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 58.6,
+          "needsImprovement": 31.6,
+          "poor": 9.9
+        }
+      },
+      "lcp": {
+        "p75": 2098,
+        "rating": "good",
+        "distribution": {
+          "good": 80.9,
+          "needsImprovement": 10.3,
+          "poor": 8.8
+        }
+      },
+      "rtt": {
+        "p75": 228,
+        "rating": null,
+        "distribution": {
+          "good": 19.6,
+          "needsImprovement": 62.2,
+          "poor": 18.3
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": {
+      "id": "astro",
+      "name": "Astro",
+      "icon": "Astro",
+      "version": "5.18.2",
+      "source": "meta",
+      "raw": "Astro v5.18.2"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0QG0Y8744EZGFHQYWNM3AF1"
+    },
+    "violations": 1,
+    "passes": 1879,
+    "incomplete": 27,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
