@@ -1,0 +1,277 @@
+{
+  "url": "https://mochajs.org/",
+  "name": "Mocha",
+  "group": "test-runners",
+  "groupName": "Test Runners",
+  "timestamp": 1787462909597,
+  "date": "2026-08-23T05:28:29.597Z",
+  "runId": "2026-08-23T05-28-28-313Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 32980,
+  "error": null,
+  "variance": {
+    "min": 99,
+    "max": 100,
+    "spread": 1,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://mochajs.org/",
+    "finalUrl": "https://mochajs.org/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 91,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 906,
+      "lcp": 1774,
+      "si": 906,
+      "tbt": 0,
+      "tti": 1782,
+      "cls": 0,
+      "ttfb": 605,
+      "maxPotentialFid": 45,
+      "serverResponseTime": 5,
+      "networkRtt": 1,
+      "networkServerLatency": 183.2
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 6.4,
+      "elementRenderDelay": 97.7
+    },
+    "weight": {
+      "total": 333667,
+      "requests": 111,
+      "mainDocument": 12279,
+      "byType": {
+        "total": {
+          "bytes": 333667,
+          "requests": 111
+        },
+        "image": {
+          "bytes": 235674,
+          "requests": 97
+        },
+        "script": {
+          "bytes": 71576,
+          "requests": 8
+        },
+        "stylesheet": {
+          "bytes": 12832,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 12279,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 1306,
+          "requests": 3
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 273675,
+          "requests": 95
+        }
+      },
+      "scripts": 8,
+      "stylesheets": 2,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 4,
+      "bytes": 273395,
+      "mainThreadMs": 11.4,
+      "top": [
+        {
+          "entity": "opencollective.com",
+          "bytes": 225346,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Matomo",
+          "bytes": 45127,
+          "mainThreadMs": 11.4
+        },
+        {
+          "entity": "Netlify",
+          "bytes": 1693,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "shields.io",
+          "bytes": 1229,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 912.4,
+      "byGroup": {
+        "other": 516.9,
+        "scriptEvaluation": 149.2,
+        "styleLayout": 126.1,
+        "paintCompositeRender": 61.3,
+        "parseHTML": 38.9,
+        "scriptParseCompile": 20.1
+      },
+      "bootupMs": 72.3,
+      "longTasks": 2,
+      "longestTaskMs": 63
+    },
+    "dom": {
+      "elements": 682,
+      "depth": 15,
+      "maxChildren": 85
+    },
+    "waste": {
+      "unusedJsBytes": 30210,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 150,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 97029.72602420852,
+      "poorlyCachedCount": 92
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 25,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 34
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2496,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-23T05:28:52.086Z",
+      "runtimeMs": 9258
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-25",
+      "last": "2026-08-21"
+    },
+    "metrics": {
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 98.5,
+          "needsImprovement": 0.6,
+          "poor": 0.9
+        }
+      },
+      "ttfb": {
+        "p75": 1089,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 69.7,
+          "needsImprovement": 25.3,
+          "poor": 5
+        }
+      },
+      "fcp": {
+        "p75": 1297,
+        "rating": "good",
+        "distribution": {
+          "good": 84.7,
+          "needsImprovement": 11.1,
+          "poor": 4.2
+        }
+      },
+      "lcp": {
+        "p75": 1384,
+        "rating": "good",
+        "distribution": {
+          "good": 92.8,
+          "needsImprovement": 6.3,
+          "poor": 0.9
+        }
+      },
+      "rtt": {
+        "p75": 243,
+        "rating": null,
+        "distribution": {
+          "good": 23.1,
+          "needsImprovement": 55.7,
+          "poor": 21.3
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 2
+  },
+  "axe": {
+    "generator": {
+      "id": "astro",
+      "name": "Astro",
+      "icon": "Astro",
+      "version": "7.1.1",
+      "source": "meta",
+      "raw": "Astro v7.1.1"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0PHFY5QDQQC19DEKZ4TF5ZB"
+    },
+    "violations": 1,
+    "passes": 1087,
+    "incomplete": 0,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "All page content should be contained by landmarks"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
