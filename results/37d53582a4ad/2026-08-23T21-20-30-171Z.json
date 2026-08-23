@@ -1,0 +1,275 @@
+{
+  "url": "https://www.solidjs.com/",
+  "name": "SolidJS",
+  "group": "ssg",
+  "groupName": "Site Generators",
+  "timestamp": 1787520030171,
+  "date": "2026-08-23T21:20:30.171Z",
+  "runId": "2026-08-23T21-20-23-516Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 35024,
+  "error": null,
+  "variance": {
+    "min": 69,
+    "max": 86,
+    "spread": 17,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.solidjs.com/",
+    "finalUrl": "https://www.solidjs.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 86,
+      "accessibility": 92,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 33
+    },
+    "timings": {
+      "fcp": 2713,
+      "lcp": 3534,
+      "si": 2713,
+      "tbt": 46,
+      "tti": 3706,
+      "cls": 0.003,
+      "ttfb": 617,
+      "maxPotentialFid": 142,
+      "serverResponseTime": 24,
+      "networkRtt": 2.1,
+      "networkServerLatency": 16.6
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 26,
+      "elementRenderDelay": 195.6
+    },
+    "weight": {
+      "total": 482947,
+      "requests": 27,
+      "mainDocument": 1430,
+      "byType": {
+        "total": {
+          "bytes": 482947,
+          "requests": 18
+        },
+        "font": {
+          "bytes": 266356,
+          "requests": 4
+        },
+        "script": {
+          "bytes": 178512,
+          "requests": 5
+        },
+        "image": {
+          "bytes": 19249,
+          "requests": 5
+        },
+        "stylesheet": {
+          "bytes": 14001,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 3399,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 1430,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 11577,
+          "requests": 1
+        }
+      },
+      "scripts": 5,
+      "stylesheets": 1,
+      "fonts": 4
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 11577,
+      "mainThreadMs": 3.3,
+      "top": [
+        {
+          "entity": "Cloudflare",
+          "bytes": 11577,
+          "mainThreadMs": 3.3
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 725.8,
+      "byGroup": {
+        "other": 230.2,
+        "scriptEvaluation": 215.3,
+        "styleLayout": 158.7,
+        "parseHTML": 74.7,
+        "paintCompositeRender": 43.7,
+        "scriptParseCompile": 3.3
+      },
+      "bootupMs": 189,
+      "longTasks": 2,
+      "longestTaskMs": 142
+    },
+    "dom": {
+      "elements": 363,
+      "depth": 18,
+      "maxChildren": 11
+    },
+    "waste": {
+      "unusedJsBytes": 72693,
+      "unusedCssBytes": 10910,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 300,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 4630.8,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 25,
+      "failingNodes": 2,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 18
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2487,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-23T21:20:53.236Z",
+      "runtimeMs": 9165.1
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-25",
+      "last": "2026-08-21"
+    },
+    "metrics": {
+      "lcp": {
+        "p75": 1804,
+        "rating": "good",
+        "distribution": {
+          "good": 86,
+          "needsImprovement": 9.4,
+          "poor": 4.5
+        }
+      },
+      "rtt": {
+        "p75": 145,
+        "rating": null,
+        "distribution": {
+          "good": 44.3,
+          "needsImprovement": 46.5,
+          "poor": 9.2
+        }
+      },
+      "cls": {
+        "p75": 0.02,
+        "rating": "good",
+        "distribution": {
+          "good": 95.9,
+          "needsImprovement": 1.6,
+          "poor": 2.5
+        }
+      },
+      "ttfb": {
+        "p75": 755,
+        "rating": "good",
+        "distribution": {
+          "good": 76.5,
+          "needsImprovement": 16.9,
+          "poor": 6.6
+        }
+      },
+      "fcp": {
+        "p75": 1725,
+        "rating": "good",
+        "distribution": {
+          "good": 76.7,
+          "needsImprovement": 15.2,
+          "poor": 8.1
+        }
+      },
+      "inp": {
+        "p75": 102,
+        "rating": "good",
+        "distribution": {
+          "good": 94,
+          "needsImprovement": 4.7,
+          "poor": 1.3
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2fd2a207af323d0-IAD",
+      "server": "cloudflare"
+    },
+    "violations": 1,
+    "passes": 69,
+    "incomplete": 0,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "meta-refresh",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Delayed refresh under 20 hours must not be used"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
