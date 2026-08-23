@@ -1,0 +1,316 @@
+{
+  "url": "https://tanstack.com/",
+  "name": "TanStack",
+  "group": "ssg",
+  "groupName": "Site Generators",
+  "timestamp": 1787480542092,
+  "date": "2026-08-23T10:22:22.092Z",
+  "runId": "2026-08-23T10-22-14-953Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 68388,
+  "error": null,
+  "variance": {
+    "min": 46,
+    "max": 51,
+    "spread": 5,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://tanstack.com/",
+    "finalUrl": "https://tanstack.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 51,
+      "accessibility": 84,
+      "best-practices": 100,
+      "seo": 92,
+      "agentic-browsing": 67
+    },
+    "timings": {
+      "fcp": 4130,
+      "lcp": 7172,
+      "si": 4825,
+      "tbt": 570,
+      "tti": 8816,
+      "cls": 0,
+      "ttfb": 473,
+      "maxPotentialFid": 364,
+      "serverResponseTime": 187,
+      "networkRtt": 0.3,
+      "networkServerLatency": 23
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 188.7,
+      "resourceLoadDelay": 16,
+      "resourceLoadDuration": 57.5,
+      "elementRenderDelay": 1097.5
+    },
+    "weight": {
+      "total": 3069300,
+      "requests": 57,
+      "mainDocument": 41126,
+      "byType": {
+        "total": {
+          "bytes": 3067597,
+          "requests": 56
+        },
+        "media": {
+          "bytes": 1572878,
+          "requests": 2
+        },
+        "script": {
+          "bytes": 665073,
+          "requests": 33
+        },
+        "image": {
+          "bytes": 521451,
+          "requests": 5
+        },
+        "font": {
+          "bytes": 180619,
+          "requests": 5
+        },
+        "stylesheet": {
+          "bytes": 72882,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 41126,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 13568,
+          "requests": 8
+        },
+        "third-party": {
+          "bytes": 119870,
+          "requests": 7
+        }
+      },
+      "scripts": 33,
+      "stylesheets": 2,
+      "fonts": 5
+    },
+    "thirdParty": {
+      "count": 3,
+      "bytes": 119870,
+      "mainThreadMs": 1.9,
+      "top": [
+        {
+          "entity": "Google Fonts",
+          "bytes": 108324,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Cloudflare",
+          "bytes": 11451,
+          "mainThreadMs": 1.9
+        },
+        {
+          "entity": "Sentry",
+          "bytes": 95,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 4964,
+      "byGroup": {
+        "scriptEvaluation": 1651.2,
+        "styleLayout": 1448.2,
+        "other": 1138.5,
+        "paintCompositeRender": 394.3,
+        "scriptParseCompile": 233.2,
+        "parseHTML": 89.1,
+        "garbageCollection": 9.5
+      },
+      "bootupMs": 1843.9,
+      "longTasks": 11,
+      "longestTaskMs": 364
+    },
+    "dom": {
+      "elements": 1038,
+      "depth": 16,
+      "maxChildren": 21
+    },
+    "waste": {
+      "unusedJsBytes": 354298,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 2145,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 1577458.4,
+      "poorlyCachedCount": 3
+    },
+    "accessibility": {
+      "failingCount": 4,
+      "applicableCount": 24,
+      "failingNodes": 8,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 5
+        },
+        {
+          "id": "button-name",
+          "title": "Buttons do not have an accessible name",
+          "nodes": 1
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 1
+        },
+        {
+          "id": "label",
+          "title": "Form elements do not have associated labels",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 64
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2270.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-23T10:22:50.570Z",
+      "runtimeMs": 19145.8
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-25",
+      "last": "2026-08-21"
+    },
+    "metrics": {
+      "lcp": {
+        "p75": 3589,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 48.2,
+          "needsImprovement": 34.2,
+          "poor": 17.6
+        }
+      },
+      "rtt": {
+        "p75": 152,
+        "rating": null,
+        "distribution": {
+          "good": 40.6,
+          "needsImprovement": 50.6,
+          "poor": 8.8
+        }
+      },
+      "cls": {
+        "p75": 0.01,
+        "rating": "good",
+        "distribution": {
+          "good": 92.6,
+          "needsImprovement": 4.2,
+          "poor": 3.3
+        }
+      },
+      "ttfb": {
+        "p75": 2596,
+        "rating": "poor",
+        "distribution": {
+          "good": 15.9,
+          "needsImprovement": 35.3,
+          "poor": 48.8
+        }
+      },
+      "fcp": {
+        "p75": 3299,
+        "rating": "poor",
+        "distribution": {
+          "good": 32.6,
+          "needsImprovement": 34.2,
+          "poor": 33.3
+        }
+      },
+      "inp": {
+        "p75": 386,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 42.4,
+          "needsImprovement": 43.2,
+          "poor": 14.4
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a2f966e9782bfe29-IAD",
+      "server": "cloudflare"
+    },
+    "violations": 23,
+    "passes": 674,
+    "incomplete": 15,
+    "violationRules": 4,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 16,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 5,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "button-name",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Buttons must have discernible text"
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Heading levels should only increase by one"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
