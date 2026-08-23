@@ -1570,6 +1570,9 @@ th.col-rings { text-align: left !important; }
  * disclosure widget, and the details renders permanently open — so the flex row
  * lives on a span inside it, and the marker is styled rather than replaced.
  */
+/* The same block rhythm the sections around it use, so a closed <details> does
+   not sit tight against the group above it. */
+.redirects-pending { margin-block: 1.5rem; }
 .redirects-pending > summary { cursor: pointer; }
 .redirects-pending > summary::marker { color: var(--text-muted); }
 .redirects-pending > summary .redirects-head { display: inline-flex; margin: 0; }
