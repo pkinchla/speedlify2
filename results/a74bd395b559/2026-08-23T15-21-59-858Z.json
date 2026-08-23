@@ -1,0 +1,270 @@
+{
+  "url": "https://www.zachleat.com/resume",
+  "name": "www.zachleat.com",
+  "group": "zachleat",
+  "groupName": "zachleat.com",
+  "timestamp": 1787498519858,
+  "date": "2026-08-23T15:21:59.858Z",
+  "runId": "2026-08-23T15-20-52-689Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 27213,
+  "error": null,
+  "variance": {
+    "min": 93,
+    "max": 99,
+    "spread": 6,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.zachleat.com/resume",
+    "finalUrl": "https://www.zachleat.com/resume",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1670,
+      "lcp": 2110,
+      "si": 1670,
+      "tbt": 0,
+      "tti": 2125,
+      "cls": 0.006,
+      "ttfb": 610,
+      "maxPotentialFid": 33,
+      "serverResponseTime": 7,
+      "networkRtt": 1.2,
+      "networkServerLatency": 120.8
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 9.3,
+      "elementRenderDelay": 107.1
+    },
+    "weight": {
+      "total": 150350,
+      "requests": 40,
+      "mainDocument": 25802,
+      "byType": {
+        "total": {
+          "bytes": 150350,
+          "requests": 40
+        },
+        "font": {
+          "bytes": 55903,
+          "requests": 4
+        },
+        "image": {
+          "bytes": 31992,
+          "requests": 24
+        },
+        "script": {
+          "bytes": 26731,
+          "requests": 6
+        },
+        "document": {
+          "bytes": 25802,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 5292,
+          "requests": 2
+        },
+        "other": {
+          "bytes": 4630,
+          "requests": 3
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 19894,
+          "requests": 8
+        }
+      },
+      "scripts": 6,
+      "stylesheets": 2,
+      "fonts": 4
+    },
+    "thirdParty": {
+      "count": 4,
+      "bytes": 19894,
+      "mainThreadMs": 3.4,
+      "top": [
+        {
+          "entity": "speedlify.dev",
+          "bytes": 9421,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "11ty.dev",
+          "bytes": 5754,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "zgo.at",
+          "bytes": 4339,
+          "mainThreadMs": 3.4
+        },
+        {
+          "entity": "goatcounter.com",
+          "bytes": 380,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 605.7,
+      "byGroup": {
+        "other": 231,
+        "styleLayout": 157,
+        "scriptEvaluation": 107.5,
+        "paintCompositeRender": 65.6,
+        "parseHTML": 39.5,
+        "scriptParseCompile": 5.2
+      },
+      "bootupMs": 65.8,
+      "longTasks": 1,
+      "longestTaskMs": 60
+    },
+    "dom": {
+      "elements": 574,
+      "depth": 17,
+      "maxChildren": 21
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 11050,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 5940,
+      "unminifiedCssBytes": 3356,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 12753.283333333331,
+      "poorlyCachedCount": 5
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 26,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 35
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2356.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-23T15:22:11.077Z",
+      "runtimeMs": 7130.9
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "origin",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-25",
+      "last": "2026-08-21"
+    },
+    "metrics": {
+      "lcp": {
+        "p75": 1085,
+        "rating": "good",
+        "distribution": {
+          "good": 93.1,
+          "needsImprovement": 5.4,
+          "poor": 1.5
+        }
+      },
+      "rtt": {
+        "p75": 166,
+        "rating": null,
+        "distribution": {
+          "good": 44.1,
+          "needsImprovement": 44,
+          "poor": 12
+        }
+      },
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 98.5,
+          "needsImprovement": 1.1,
+          "poor": 0.5
+        }
+      },
+      "ttfb": {
+        "p75": 693,
+        "rating": "good",
+        "distribution": {
+          "good": 81.8,
+          "needsImprovement": 13.8,
+          "poor": 4.4
+        }
+      },
+      "fcp": {
+        "p75": 1012,
+        "rating": "good",
+        "distribution": {
+          "good": 93.7,
+          "needsImprovement": 3.8,
+          "poor": 2.6
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 2
+  },
+  "axe": {
+    "generator": {
+      "id": "build-awesome",
+      "name": "Build Awesome",
+      "icon": "BuildAwesome",
+      "version": "4.0.0",
+      "source": "meta",
+      "raw": "Eleventy (Build Awesome) v4.0.0"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0QKEFWB12A7MQETGSP46F8D"
+    },
+    "violations": 0,
+    "passes": 1117,
+    "incomplete": 8,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
