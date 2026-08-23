@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% if title %}{{ title }} · {% endif %}{{ meta.title }}</title>
 <meta name="description" content="{{ description or meta.description }}">
-{% if buildAwesome.env.runMode == "build" %}
+{% if buildawesome.env.runMode == "build" %}
 <style>{% include "../css/style.css" %}</style>
 {% else %}
 <link rel="stylesheet" href="/css/style.css">
