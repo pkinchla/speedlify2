@@ -1,0 +1,317 @@
+{
+  "url": "https://aws.amazon.com/amplify",
+  "name": "AWS Amplify",
+  "group": "hosts",
+  "groupName": "Web Hosts",
+  "timestamp": 1787523828882,
+  "date": "2026-08-23T22:23:48.882Z",
+  "runId": "2026-08-23T22-20-07-857Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 76104,
+  "error": null,
+  "variance": {
+    "min": 27,
+    "max": 27,
+    "spread": 0,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://aws.amazon.com/amplify",
+    "finalUrl": "https://aws.amazon.com/amplify/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 27,
+      "accessibility": 91,
+      "best-practices": 92,
+      "seo": 92,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 14619,
+      "lcp": 44544,
+      "si": 17410,
+      "tbt": 2039,
+      "tti": 50867,
+      "cls": 0,
+      "ttfb": 629,
+      "maxPotentialFid": 748,
+      "serverResponseTime": 40,
+      "networkRtt": 3.2,
+      "networkServerLatency": 159.7
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 61.8,
+      "resourceLoadDelay": 150.2,
+      "resourceLoadDuration": 439.6,
+      "elementRenderDelay": 835
+    },
+    "weight": {
+      "total": 11618435,
+      "requests": 155,
+      "mainDocument": 56786,
+      "byType": {
+        "total": {
+          "bytes": 11472554,
+          "requests": 147
+        },
+        "script": {
+          "bytes": 6493655,
+          "requests": 54
+        },
+        "image": {
+          "bytes": 4161934,
+          "requests": 31
+        },
+        "stylesheet": {
+          "bytes": 347354,
+          "requests": 15
+        },
+        "font": {
+          "bytes": 268815,
+          "requests": 5
+        },
+        "document": {
+          "bytes": 117095,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 48410,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 35291,
+          "requests": 39
+        },
+        "third-party": {
+          "bytes": 11472554,
+          "requests": 147
+        }
+      },
+      "scripts": 55,
+      "stylesheets": 15,
+      "fonts": 8
+    },
+    "thirdParty": {
+      "count": 5,
+      "bytes": 10344673,
+      "mainThreadMs": 716.7,
+      "top": [
+        {
+          "entity": "awsstatic.com",
+          "bytes": 8722253,
+          "mainThreadMs": 401.6
+        },
+        {
+          "entity": "aws.dev",
+          "bytes": 1618113,
+          "mainThreadMs": 315
+        },
+        {
+          "entity": "Adobe Experience Cloud",
+          "bytes": 3059,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "api.aws",
+          "bytes": 957,
+          "mainThreadMs": 0.1
+        },
+        {
+          "entity": "clrt.ai",
+          "bytes": 291,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 10766.8,
+      "byGroup": {
+        "scriptEvaluation": 5058,
+        "other": 3229.1,
+        "scriptParseCompile": 809.5,
+        "styleLayout": 754.3,
+        "paintCompositeRender": 579.9,
+        "parseHTML": 220.6,
+        "garbageCollection": 115.4
+      },
+      "bootupMs": 5653.3,
+      "longTasks": 20,
+      "longestTaskMs": 748
+    },
+    "dom": {
+      "elements": 2391,
+      "depth": 31,
+      "maxChildren": 20
+    },
+    "waste": {
+      "unusedJsBytes": 2224467,
+      "unusedCssBytes": 338237,
+      "legacyJsBytes": 21257,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 648179,
+      "unminifiedCssBytes": 8226,
+      "renderBlockingMs": 6181,
+      "renderBlockingCount": 15,
+      "poorlyCachedBytes": 1692775.4645833333,
+      "poorlyCachedCount": 10
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 30,
+      "failingNodes": 2,
+      "failing": [
+        {
+          "id": "button-name",
+          "title": "Buttons do not have an accessible name",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 779.2,
+      "consoleErrors": 5,
+      "baselineLimitedFeatures": 62
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2453.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-23T22:24:14.299Z",
+      "runtimeMs": 23800.7
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "origin",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-25",
+      "last": "2026-08-21"
+    },
+    "metrics": {
+      "ttfb": {
+        "p75": 1294,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 49.1,
+          "needsImprovement": 38.7,
+          "poor": 12.2
+        }
+      },
+      "fcp": {
+        "p75": 3652,
+        "rating": "poor",
+        "distribution": {
+          "good": 38.4,
+          "needsImprovement": 26.8,
+          "poor": 34.9
+        }
+      },
+      "inp": {
+        "p75": 317,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 61,
+          "needsImprovement": 25.8,
+          "poor": 13.2
+        }
+      },
+      "lcp": {
+        "p75": 3997,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 50.4,
+          "needsImprovement": 24.4,
+          "poor": 25.2
+        }
+      },
+      "rtt": {
+        "p75": 156,
+        "rating": null,
+        "distribution": {
+          "good": 36.2,
+          "needsImprovement": 53.7,
+          "poor": 10.2
+        }
+      },
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 89.1,
+          "needsImprovement": 8.3,
+          "poor": 2.6
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": null,
+      "name": "Server",
+      "icon": null,
+      "source": "server"
+    },
+    "headers": {
+      "server": "Server",
+      "via": "1.1 00f06a69591175d4912909a93b231ea8.cloudfront.net (CloudFront)",
+      "x-amz-cf-id": "lYHciZF2XIEzM1-LKFW8GjR5igm3MP-vhJ1ydTCcGRuMTuc0HF9jBg=="
+    },
+    "violations": 5,
+    "passes": 1869,
+    "incomplete": 45,
+    "violationRules": 4,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 2,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "aria-allowed-role",
+        "impact": "minor",
+        "nodes": 1,
+        "help": "ARIA role should be appropriate for the element"
+      },
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Links must have discernible text"
+      },
+      {
+        "id": "list",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
