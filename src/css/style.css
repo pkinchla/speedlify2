@@ -626,6 +626,16 @@ th.col-trend { text-align: center !important; }
 	padding: 0.08rem 0;
 }
 
+/* A number and its trend on one line, so the sparkline reads as belonging to
+   the figure rather than as a second statistic under it. */
+.stat-headline {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 0.6rem;
+}
+.stat-headline .stat-spark { flex: none; align-self: center; }
+
 /* ----------------------------------------------------------------- recents */
 
 /* Ten URLs and their ages, in a stat tile. Each row is one line — the URLs run
@@ -754,6 +764,9 @@ th.col-trend { text-align: center !important; }
 /* The second histogram in the same tile, so it reads as a different measure
    rather than more of the first. */
 .histogram-bar-script { background: var(--lcp-load-delay); }
+/* A third measure in the same card, so a third colour — the teal from the LCP
+   phase ramp, since this is the metric those phases add up to. */
+.histogram-bar-lcp { background: var(--lcp-load-duration); }
 
 /* A heading inside a card that already has one. Smaller and spaced above, so it
    divides the tile instead of competing with the label at the top. */

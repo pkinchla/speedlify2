@@ -260,7 +260,8 @@ export default {
 		"11ty-community": {
 			name: "Built Awesome",
 			enabled: true,
-			description: "Community-submitted sites from the 11ty/11ty-community repository.",
+			description:
+				'Community-submitted sites from the <a href="https://github.com/11ty/11ty-community">11ty/11ty-community</a> repository.',
 
 			// Same reasoning as Personal Websites: other people's sites, most on
 			// modest hosting, measured at a deliberate pace.
