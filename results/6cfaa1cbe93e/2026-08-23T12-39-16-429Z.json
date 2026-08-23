@@ -1,0 +1,309 @@
+{
+  "url": "https://www.heroku.com/",
+  "name": "Heroku",
+  "group": "hosts",
+  "groupName": "Web Hosts",
+  "timestamp": 1787488756429,
+  "date": "2026-08-23T12:39:16.429Z",
+  "runId": "2026-08-23T12-37-39-964Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 38929,
+  "error": null,
+  "variance": {
+    "min": 70,
+    "max": 80,
+    "spread": 10,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.heroku.com/",
+    "finalUrl": "https://www.heroku.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 77,
+      "accessibility": 93,
+      "best-practices": 54,
+      "seo": 92,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 2469,
+      "lcp": 3078,
+      "si": 2839,
+      "tbt": 543,
+      "tti": 18260,
+      "cls": 0.017,
+      "ttfb": 603,
+      "maxPotentialFid": 193,
+      "serverResponseTime": 3,
+      "networkRtt": 0.3,
+      "networkServerLatency": 170.3
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 4.2,
+      "elementRenderDelay": 130
+    },
+    "weight": {
+      "total": 2653610,
+      "requests": 107,
+      "mainDocument": 51530,
+      "byType": {
+        "total": {
+          "bytes": 2653610,
+          "requests": 105
+        },
+        "script": {
+          "bytes": 1703579,
+          "requests": 49
+        },
+        "other": {
+          "bytes": 465830,
+          "requests": 16
+        },
+        "font": {
+          "bytes": 212004,
+          "requests": 6
+        },
+        "stylesheet": {
+          "bytes": 130222,
+          "requests": 7
+        },
+        "document": {
+          "bytes": 80031,
+          "requests": 2
+        },
+        "image": {
+          "bytes": 61944,
+          "requests": 25
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 1165174,
+          "requests": 30
+        }
+      },
+      "scripts": 49,
+      "stylesheets": 7,
+      "fonts": 6
+    },
+    "thirdParty": {
+      "count": 10,
+      "bytes": 1057264,
+      "mainThreadMs": 259.4,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 511688,
+          "mainThreadMs": 152.9
+        },
+        {
+          "entity": "Google CDN",
+          "bytes": 320172,
+          "mainThreadMs": 78.5
+        },
+        {
+          "entity": "herokucdn.com",
+          "bytes": 146226,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "LinkedIn Ads",
+          "bytes": 41130,
+          "mainThreadMs": 9.9
+        },
+        {
+          "entity": "Parse.ly",
+          "bytes": 22924,
+          "mainThreadMs": 14.3
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 3803.1,
+      "byGroup": {
+        "scriptEvaluation": 2029.5,
+        "other": 692.7,
+        "styleLayout": 411,
+        "scriptParseCompile": 324.7,
+        "parseHTML": 173.2,
+        "paintCompositeRender": 117.2,
+        "garbageCollection": 54.8
+      },
+      "bootupMs": 2024.5,
+      "longTasks": 18,
+      "longestTaskMs": 193
+    },
+    "dom": {
+      "elements": 2315,
+      "depth": 31,
+      "maxChildren": 351
+    },
+    "waste": {
+      "unusedJsBytes": 736718,
+      "unusedCssBytes": 97698,
+      "legacyJsBytes": 36742,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 4001,
+      "unminifiedCssBytes": 3111,
+      "renderBlockingMs": 1674,
+      "renderBlockingCount": 6,
+      "poorlyCachedBytes": 78707.2,
+      "poorlyCachedCount": 10
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 29,
+      "failingNodes": 12,
+      "failing": [
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "nodes": 10
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 2
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 1,
+      "baselineLimitedFeatures": 46
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2976.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-23T12:39:41.948Z",
+      "runtimeMs": 10946.8
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-25",
+      "last": "2026-08-21"
+    },
+    "metrics": {
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 96.9,
+          "needsImprovement": 2.5,
+          "poor": 0.6
+        }
+      },
+      "ttfb": {
+        "p75": 617,
+        "rating": "good",
+        "distribution": {
+          "good": 82.7,
+          "needsImprovement": 13.3,
+          "poor": 4.1
+        }
+      },
+      "fcp": {
+        "p75": 1300,
+        "rating": "good",
+        "distribution": {
+          "good": 86.2,
+          "needsImprovement": 9,
+          "poor": 4.8
+        }
+      },
+      "inp": {
+        "p75": 146,
+        "rating": "good",
+        "distribution": {
+          "good": 86.3,
+          "needsImprovement": 11.8,
+          "poor": 1.9
+        }
+      },
+      "lcp": {
+        "p75": 1486,
+        "rating": "good",
+        "distribution": {
+          "good": 90.8,
+          "needsImprovement": 5.9,
+          "poor": 3.3
+        }
+      },
+      "rtt": {
+        "p75": 242,
+        "rating": null,
+        "distribution": {
+          "good": 14.9,
+          "needsImprovement": 64.7,
+          "poor": 20.4
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "self-hosted",
+      "name": "Self-hosted",
+      "icon": null,
+      "detail": "nginx",
+      "detailIcon": "Nginx",
+      "source": "server"
+    },
+    "headers": {
+      "server": "nginx"
+    },
+    "violations": 4,
+    "passes": 1556,
+    "incomplete": 6,
+    "violationRules": 3,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 2,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "All page content should be contained by landmarks"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
