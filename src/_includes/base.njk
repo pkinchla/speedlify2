@@ -5,7 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% if title %}{{ title }} · {% endif %}{{ meta.title }}</title>
 <meta name="description" content="{{ description or meta.description }}">
+{% if buildAwesome.runMode == "build" %}
+<style>{% include "../css/style.css" %}</style>
+{% else %}
 <link rel="stylesheet" href="/css/style.css">
+{% endif %}
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='13' font-size='14'>⚡</text></svg>">
 <script>
 /* Applied before first paint so a light-mode reader never sees a dark flash.
