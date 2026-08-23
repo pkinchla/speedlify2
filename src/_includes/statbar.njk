@@ -100,7 +100,7 @@
 	{% if siteOfTheDay %}
 	{% set sotd = siteOfTheDay.entry %}
 	<div class="stat">
-		<span class="stat-label">Site of the day</span>
+		<span class="stat-label">Perfect site of the day</span>
 		{#
 			Guarded on the service being configured: with none, the filter returns
 			an empty string, and `src=""` does not render nothing — it resolves to
@@ -120,9 +120,6 @@
 			{% axeRing sotd.axe %}
 			{% cwvRing sotd.cwvFailures, sotd.cwv.assessed %}
 		</span>
-		<p class="stat-sub-note muted small">
-			One of {{ siteOfTheDay.pool | num }}, until midnight UTC
-		</p>
 	</div>
 	{% endif %}
 	{#

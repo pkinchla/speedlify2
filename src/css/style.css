@@ -573,7 +573,7 @@ th.col-trend { text-align: center !important; }
 	background: var(--bg);
 }
 
-.sotd-name { margin: 0 0 0.45rem; font-size: 0.9rem; font-weight: 600; }
+.sotd-name { margin: 0 0 0.45rem; font-size: 1.05rem; font-weight: 600; }
 .sotd-name a { color: var(--text); text-decoration: none; }
 .sotd-name a:hover { text-decoration: underline; }
 
@@ -648,7 +648,12 @@ th.col-trend { text-align: center !important; }
 	gap: 0.5rem;
 }
 
+/* Block padding sized to clear 24px — WCAG 2.2's minimum target size — rather
+   than a min-height. The text is 0.76rem on a 1.5 line box, so 18.2px of
+   content; 0.2rem top and bottom brings the box to 24.6px and centres the label
+   in it, which a min-height would not do. */
 .recents a {
+	padding: 0.2rem 0.15rem;
 	color: var(--text-muted);
 	text-decoration: none;
 	overflow: hidden;
