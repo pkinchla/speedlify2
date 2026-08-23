@@ -85,7 +85,12 @@ permalink: /index.html
 	<div class="group-head">
 		<h2>Summary</h2>
 	</div>
-	{{ statbar(sites.stats, metrics) }}
+	{#
+		The site of the day is a fact about the whole corpus rather than about one
+		category, so it is passed in rather than computed per set — the category
+		pages call the same macro without it and simply do not show the card.
+	#}
+	{{ statbar(sites.stats, metrics, sites.siteOfTheDay, meta.screenshotService) }}
 </section>
 
 {% if not sites.stats.measured %}
@@ -209,52 +214,6 @@ permalink: /index.html
 {% for entry in sites.entries %}
 	{% if entry.perfect and not entry.excludedFromPerfectScores %}{% set shown = (shown.push(entry), shown) %}{% endif %}
 {% endfor %}
-{#
-	One of the perfect scores, held for the whole UTC day — see siteOfTheDay in
-	lib/report.js for why it is picked by hashing the date rather than at random.
-
-	A screenshot rather than a row: the leaderboard below already lists all of
-	them, and the point of pulling one out is to show what it looks like. One
-	request to the screenshot service per build, and only for a site scoring 100
-	on performance, so the timing floor the site pages apply cannot bite here.
-#}
-{% if sites.siteOfTheDay %}
-{% set sotd = sites.siteOfTheDay.entry %}
-<section class="group" id="site-of-the-day">
-	<div class="group-head">
-		<h2>Site of the day</h2>
-		<p class="muted">
-			One of the {{ sites.siteOfTheDay.pool | num }} perfect scores, drawn for
-			{{ sites.siteOfTheDay.date }} and held until midnight UTC.
-		</p>
-	</div>
-
-	<div class="sotd">
-		<a class="sotd-shot" href="/site/{{ sotd.slug }}/" tabindex="-1" aria-hidden="true">
-			<img src="{{ sotd.url | screenshot(meta.screenshotService) }}" width="650" height="650"
-				alt="" loading="lazy" decoding="async">
-		</a>
-		<div class="sotd-body">
-			<h3 class="sotd-name"><a href="/site/{{ sotd.slug }}/">{{ sotd.displayUrl }}</a></h3>
-			<p class="sotd-url"><a href="{{ sotd.url }}">{{ sotd.url }}</a></p>
-			<span class="rings">
-				{% for score in metrics.SCORES %}
-				{% scoreRing sotd.latest.lab.scores[score.key], score.label %}
-				{% endfor %}
-				{% axeRing sotd.axe %}
-				{% cwvRing sotd.cwvFailures, sotd.cwv.assessed %}
-			</span>
-			<p class="sotd-meta muted small">
-				{% if sotd.generator %}{% stackIcon sotd.generator, 16 %} {{ sotd.generator.name }}{% endif %}
-				{% if sotd.host %} · {% stackIcon sotd.host, 16 %} {{ sotd.host.name }}{% endif %}
-				· {{ sotd.latest.lab.weight.total | bytes }}
-				· LCP {{ sotd.latest.lab.timings.lcp | ms }}
-			</p>
-		</div>
-	</div>
-</section>
-{% endif %}
-
 <section class="group" id="leaderboard">
 	<div class="group-head">
 		<h2>Perfect scores</h2>

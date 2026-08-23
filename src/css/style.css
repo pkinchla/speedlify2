@@ -558,38 +558,24 @@ th.col-trend { text-align: center !important; }
 
 /* ------------------------------------------------------ site of the day */
 
-/* Picture beside the facts, collapsing to a stack when there is not room for
-   both. The screenshot is the point of the section, so it leads on mobile. */
-.sotd {
-	display: grid;
-	grid-template-columns: minmax(0, 18rem) minmax(0, 1fr);
-	gap: 1.25rem;
-	align-items: center;
-	background: var(--surface);
-	border: 1px solid var(--border);
-	border-radius: var(--radius);
-	padding: 1rem;
-}
-
-@media (max-width: 640px) {
-	.sotd { grid-template-columns: 1fr; }
-}
-
-.sotd-shot { display: block; line-height: 0; }
+/* Inside a stat tile now, so it stacks rather than sitting beside its facts.
+   The screenshot is a banner crop: the tile is a few hundred pixels wide, and a
+   whole page scaled into that is a grey rectangle — the top of the page is the
+   part anyone recognises. */
+.sotd-shot { display: block; line-height: 0; margin: 0.15rem 0 0.5rem; }
 .sotd-shot img {
 	width: 100%;
-	height: auto;
-	border-radius: 6px;
+	height: 10rem;
+	object-fit: cover;
+	object-position: top center;
+	border-radius: 5px;
 	border: 1px solid var(--border);
 	background: var(--bg);
 }
 
-.sotd-body { min-width: 0; }
-.sotd-name { margin: 0 0 0.2rem; font-size: 1.15rem; letter-spacing: -0.01em; }
+.sotd-name { margin: 0 0 0.45rem; font-size: 0.9rem; font-weight: 600; }
 .sotd-name a { color: var(--text); text-decoration: none; }
 .sotd-name a:hover { text-decoration: underline; }
-.sotd-url { margin: 0 0 0.7rem; font-family: var(--mono); font-size: 0.8rem; word-break: break-all; }
-.sotd-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 0.35rem; margin: 0.7rem 0 0; }
 
 /* ------------------------------------------------------------------- tally */
 
