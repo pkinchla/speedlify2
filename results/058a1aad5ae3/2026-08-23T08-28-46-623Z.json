@@ -1,0 +1,250 @@
+{
+  "url": "https://remix.run/",
+  "name": "Remix",
+  "group": "ssg",
+  "groupName": "Site Generators",
+  "timestamp": 1787473726623,
+  "date": "2026-08-23T08:28:46.623Z",
+  "runId": "2026-08-23T08-28-45-516Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 467121,
+  "error": null,
+  "variance": {
+    "min": 46,
+    "max": 62,
+    "spread": 16,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://remix.run/",
+    "finalUrl": "https://remix.run/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 61,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1800,
+      "lcp": 1800,
+      "si": 7897,
+      "tbt": 170104,
+      "tti": 176153,
+      "cls": 0.002,
+      "ttfb": 600,
+      "maxPotentialFid": 2422,
+      "serverResponseTime": 2,
+      "networkRtt": 0,
+      "networkServerLatency": 54.1
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 6.4,
+      "elementRenderDelay": 215.6
+    },
+    "weight": {
+      "total": 1102831,
+      "requests": 142,
+      "mainDocument": 10874,
+      "byType": {
+        "total": {
+          "bytes": 1102831,
+          "requests": 142
+        },
+        "other": {
+          "bytes": 601320,
+          "requests": 3
+        },
+        "script": {
+          "bytes": 320206,
+          "requests": 124
+        },
+        "font": {
+          "bytes": 125496,
+          "requests": 2
+        },
+        "image": {
+          "bytes": 30612,
+          "requests": 8
+        },
+        "stylesheet": {
+          "bytes": 14323,
+          "requests": 4
+        },
+        "document": {
+          "bytes": 10874,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 3190,
+          "requests": 2
+        }
+      },
+      "scripts": 124,
+      "stylesheets": 4,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 3190,
+      "mainThreadMs": 2.5,
+      "top": [
+        {
+          "entity": "Fathom Analytics",
+          "bytes": 3190,
+          "mainThreadMs": 2.5
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 180090.3,
+      "byGroup": {
+        "other": 176354.9,
+        "scriptEvaluation": 1923.7,
+        "styleLayout": 1510,
+        "paintCompositeRender": 221.9,
+        "parseHTML": 48,
+        "scriptParseCompile": 23.6,
+        "garbageCollection": 8.2
+      },
+      "bootupMs": 1840.5,
+      "longTasks": 20,
+      "longestTaskMs": 2422
+    },
+    "dom": {
+      "elements": 368,
+      "depth": 10,
+      "maxChildren": 184
+    },
+    "waste": {
+      "unusedJsBytes": 82506,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 124539.19999999998,
+      "poorlyCachedCount": 9
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 25,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 46
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2485.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-23T08:32:40.396Z",
+      "runtimeMs": 113934.9
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-25",
+      "last": "2026-08-21"
+    },
+    "metrics": {
+      "cls": {
+        "p75": 0.01,
+        "rating": "good",
+        "distribution": {
+          "good": 99.6,
+          "needsImprovement": 0.4,
+          "poor": 0.1
+        }
+      },
+      "ttfb": {
+        "p75": 1029,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 68.4,
+          "needsImprovement": 21.9,
+          "poor": 9.7
+        }
+      },
+      "fcp": {
+        "p75": 1893,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 72.5,
+          "needsImprovement": 17.1,
+          "poor": 10.4
+        }
+      },
+      "inp": {
+        "p75": 339,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 54,
+          "needsImprovement": 31.4,
+          "poor": 14.6
+        }
+      },
+      "lcp": {
+        "p75": 1863,
+        "rating": "good",
+        "distribution": {
+          "good": 86,
+          "needsImprovement": 8.7,
+          "poor": 5.2
+        }
+      },
+      "rtt": {
+        "p75": 200,
+        "rating": null,
+        "distribution": {
+          "good": 23.6,
+          "needsImprovement": 59.9,
+          "poor": 16.5
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": null,
+    "host": null,
+    "headers": {},
+    "violations": null,
+    "passes": null,
+    "incomplete": null,
+    "violationRules": null,
+    "version": null,
+    "top": [],
+    "error": "Navigation timeout of 120000 ms exceeded"
+  },
+  "consecutiveFailures": 0
+}

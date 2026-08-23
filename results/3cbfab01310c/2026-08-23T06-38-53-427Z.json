@@ -1,0 +1,305 @@
+{
+  "url": "https://neocities.org/",
+  "name": "Neocities",
+  "group": "hosts",
+  "groupName": "Web Hosts",
+  "timestamp": 1787467133427,
+  "date": "2026-08-23T06:38:53.427Z",
+  "runId": "2026-08-23T06-38-47-350Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 32122,
+  "error": null,
+  "variance": {
+    "min": 61,
+    "max": 92,
+    "spread": 31,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://neocities.org/",
+    "finalUrl": "https://neocities.org/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 89,
+      "accessibility": 89,
+      "best-practices": 58,
+      "seo": 100,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 1511,
+      "lcp": 3761,
+      "si": 1511,
+      "tbt": 22,
+      "tti": 3761,
+      "cls": 0,
+      "ttfb": 611,
+      "maxPotentialFid": 71,
+      "serverResponseTime": 81,
+      "networkRtt": 16.1,
+      "networkServerLatency": 30.7
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 83.2,
+      "resourceLoadDelay": 62.1,
+      "resourceLoadDuration": 39.4,
+      "elementRenderDelay": 39
+    },
+    "weight": {
+      "total": 2734234,
+      "requests": 52,
+      "mainDocument": 6614,
+      "byType": {
+        "total": {
+          "bytes": 2734234,
+          "requests": 48
+        },
+        "image": {
+          "bytes": 1642902,
+          "requests": 24
+        },
+        "script": {
+          "bytes": 590770,
+          "requests": 6
+        },
+        "font": {
+          "bytes": 196172,
+          "requests": 4
+        },
+        "document": {
+          "bytes": 193833,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 93597,
+          "requests": 7
+        },
+        "other": {
+          "bytes": 16960,
+          "requests": 4
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 742150,
+          "requests": 7
+        }
+      },
+      "scripts": 6,
+      "stylesheets": 7,
+      "fonts": 4
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 101612,
+      "mainThreadMs": 44.2,
+      "top": [
+        {
+          "entity": "hcaptcha.com",
+          "bytes": 101612,
+          "mainThreadMs": 44.2
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 730.1,
+      "byGroup": {
+        "other": 225.3,
+        "scriptEvaluation": 203.6,
+        "styleLayout": 146.4,
+        "paintCompositeRender": 61.6,
+        "scriptParseCompile": 47.8,
+        "parseHTML": 45.5
+      },
+      "bootupMs": 237.6,
+      "longTasks": 3,
+      "longestTaskMs": 71
+    },
+    "dom": {
+      "elements": 263,
+      "depth": 12,
+      "maxChildren": 12
+    },
+    "waste": {
+      "unusedJsBytes": 52718,
+      "unusedCssBytes": 75898,
+      "legacyJsBytes": 14322,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 750,
+      "renderBlockingCount": 8,
+      "poorlyCachedBytes": 1974988.9500000002,
+      "poorlyCachedCount": 40
+    },
+    "accessibility": {
+      "failingCount": 3,
+      "applicableCount": 31,
+      "failingNodes": 13,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 9
+        },
+        {
+          "id": "label",
+          "title": "Form elements do not have associated labels",
+          "nodes": 2
+        },
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "nodes": 2
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": null,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 38
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 3091,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-23T06:39:06.796Z",
+      "runtimeMs": 8120.2
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-25",
+      "last": "2026-08-21"
+    },
+    "metrics": {
+      "rtt": {
+        "p75": 165,
+        "rating": null,
+        "distribution": {
+          "good": 35.1,
+          "needsImprovement": 54.5,
+          "poor": 10.4
+        }
+      },
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 95.8,
+          "needsImprovement": 2.7,
+          "poor": 1.5
+        }
+      },
+      "ttfb": {
+        "p75": 1357,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 56.8,
+          "needsImprovement": 31.6,
+          "poor": 11.6
+        }
+      },
+      "fcp": {
+        "p75": 1882,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 72.7,
+          "needsImprovement": 18.7,
+          "poor": 8.6
+        }
+      },
+      "inp": {
+        "p75": 192,
+        "rating": "good",
+        "distribution": {
+          "good": 75.6,
+          "needsImprovement": 20.7,
+          "poor": 3.7
+        }
+      },
+      "lcp": {
+        "p75": 2095,
+        "rating": "good",
+        "distribution": {
+          "good": 82.8,
+          "needsImprovement": 11.8,
+          "poor": 5.4
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": null,
+      "name": "neocities",
+      "icon": null,
+      "source": "server"
+    },
+    "headers": {
+      "server": "neocities"
+    },
+    "violations": 15,
+    "passes": 640,
+    "incomplete": 44,
+    "violationRules": 5,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 9,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "label",
+        "impact": "critical",
+        "nodes": 2,
+        "help": "Form elements must have labels"
+      },
+      {
+        "id": "link-in-text-block",
+        "impact": "serious",
+        "nodes": 2,
+        "help": "Links must be distinguishable without relying on color"
+      },
+      {
+        "id": "landmark-contentinfo-is-top-level",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Contentinfo landmark should not be contained in another landmark"
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
