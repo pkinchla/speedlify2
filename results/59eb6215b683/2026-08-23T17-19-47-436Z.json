@@ -1,0 +1,200 @@
+{
+  "url": "https://www.speedlify.dev/",
+  "name": "www.speedlify.dev",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787505587436,
+  "date": "2026-08-23T17:19:47.436Z",
+  "runId": "2026-08-23T17-19-40-244Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 56341,
+  "error": null,
+  "variance": {
+    "min": 92,
+    "max": 99,
+    "spread": 7,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.speedlify.dev/",
+    "finalUrl": "https://www.speedlify.dev/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 99,
+      "accessibility": 96,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1202,
+      "lcp": 1277,
+      "si": 1202,
+      "tbt": 120,
+      "tti": 1562,
+      "cls": 0,
+      "ttfb": 602,
+      "maxPotentialFid": 123,
+      "serverResponseTime": 2,
+      "networkRtt": 0.5,
+      "networkServerLatency": 13.5
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 3.4,
+      "elementRenderDelay": 112.8
+    },
+    "weight": {
+      "total": 183154,
+      "requests": 27,
+      "mainDocument": 62787,
+      "byType": {
+        "total": {
+          "bytes": 183154,
+          "requests": 27
+        },
+        "image": {
+          "bytes": 102340,
+          "requests": 25
+        },
+        "document": {
+          "bytes": 62787,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 18027,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "script": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "other": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 102340,
+          "requests": 25
+        }
+      },
+      "scripts": 0,
+      "stylesheets": 1,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 102340,
+      "mainThreadMs": 0,
+      "top": [
+        {
+          "entity": "11ty.dev",
+          "bytes": 102340,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1175,
+      "byGroup": {
+        "styleLayout": 436.1,
+        "paintCompositeRender": 288.6,
+        "other": 282.2,
+        "parseHTML": 134.2,
+        "scriptEvaluation": 31.7,
+        "scriptParseCompile": 2.1
+      },
+      "bootupMs": 32.7,
+      "longTasks": 5,
+      "longestTaskMs": 123
+    },
+    "dom": {
+      "elements": 10790,
+      "depth": 12,
+      "maxChildren": 154
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 11970,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 9999,
+      "renderBlockingMs": 150,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 103652.55,
+      "poorlyCachedCount": 26
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 30,
+      "failingNodes": 10,
+      "failing": [
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "nodes": 10
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 12
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2486,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-23T17:20:17.358Z",
+      "runtimeMs": 12107.5
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "github",
+      "name": "GitHub Pages",
+      "icon": "Github",
+      "source": "x-github-request-id"
+    },
+    "headers": {
+      "server": "GitHub.com",
+      "via": "1.1 varnish",
+      "x-fastly-request-id": "7a505f7defe818dbf3864c6b1c3d603a2fa9bc46",
+      "x-github-request-id": "5340:9FDB1:FE7B94:109C74E:6A8B2BB6",
+      "x-served-by": "cache-sjc1000113-SJC"
+    },
+    "violations": 0,
+    "passes": 27187,
+    "incomplete": 1113,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
