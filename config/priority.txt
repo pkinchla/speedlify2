@@ -1,0 +1,15 @@
+# Priority queue — URLs measured ahead of the schedule on the next run.
+#
+# One URL per line. Blank lines and lines starting with # are ignored, so a
+# note about why something is queued can sit beside it.
+#
+# A queued URL skips the freshness window and the failure backoff, and sorts to
+# the front of the batch. It is removed from this file once it has had its turn,
+# whether the measurement succeeded or not — the queue is a list of intentions,
+# not a record of what happened.
+#
+# Two things it will not do: revive an archived URL, or measure something that
+# is not in config/sites.js. Both are decisions about whether a site is measured
+# at all; this only changes when.
+
+# https://www.speedlify.dev/

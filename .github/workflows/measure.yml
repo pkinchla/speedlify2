@@ -89,6 +89,12 @@ jobs:
         # it loses nothing: whatever the others would have learned is relearned
         # from their committed results next cycle.
         #
+        # config/priority.txt: each shard removes only the queued URLs in its own
+        # slice, so the four commits touch different lines and rebase merges them.
+        # A conflict here is not worth resolving cleverly — the abort-and-retry
+        # below is enough, and the worst case is a queued URL surviving one extra
+        # cycle and getting priority again, which is what it asked for.
+        #
         # logs/runs.ndjson: appended by every shard, so it cannot be owned the
         # same way without losing three quarters of the log. .gitattributes
         # marks it merge=union instead, which takes both sides' lines. The
@@ -103,7 +109,7 @@ jobs:
             git checkout -- results/aliases.json 2>/dev/null || true
           fi
 
-          git add results logs/runs.ndjson
+          git add results logs/runs.ndjson config/priority.txt
           git diff --staged --quiet && exit 0
 
           git commit -m "Measurements: shard ${{ matrix.shard }}/4"

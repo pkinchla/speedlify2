@@ -13,11 +13,18 @@ import { Runner } from "../lib/runner.js";
 import { fetchFieldHistory, checkApiKey } from "../lib/crux.js";
 import { stamp, urlHash } from "../lib/hash.js";
 import { selectBatch, parseShard, nextFailureCount } from "../lib/schedule.js";
+import { readQueue, dropFromQueue } from "../lib/priority.js";
 import { learnAliases, readAliases, applyAliases } from "../lib/aliases.js";
 import { confirmRedirect } from "../lib/redirect.js";
 import { buildReport } from "../lib/report.js";
 
 const RESULTS_DIR = process.env.SPEEDLIFY_RESULTS_DIR || "results";
+
+/**
+ * URLs to measure ahead of the schedule, one per line. See lib/priority.js.
+ * Absent by default — a missing or empty file means nothing is queued.
+ */
+const PRIORITY_FILE = process.env.SPEEDLIFY_PRIORITY_FILE || "config/priority.txt";
 
 /**
  * Stop a measure run when the heap gets this close to V8's ceiling.
@@ -197,12 +204,23 @@ async function measure() {
 	// staleest sites and stops — no invocation needs to see the whole list, and
 	// an interrupted run costs at most the sites it hadn't reached.
 	const limit = numFlag(flags.limit, config.batchSize ?? null);
+
+	// Hand-queued URLs, measured ahead of whatever is stalest. Checked against the
+	// configured list first: a queued URL nobody has configured cannot be
+	// measured, and saying so is more use than silently doing nothing.
+	const queued = readQueue(PRIORITY_FILE);
+	const configuredUrls = new Set(matched.map((s) => s.url));
+	for (let url of queued.filter((u) => !configuredUrls.has(u))) {
+		logger.warn("queued URL is not in the site list, skipping", { url, file: PRIORITY_FILE });
+	}
+
 	const batch = selectBatch(matched, store, {
 		limit,
 		freshnessHours: flags.force ? 0 : config.freshnessHours,
 		retryErrorsAfterHours: config.retryErrorsAfterHours,
 		failureBackoff: config.failureBackoff,
 		shard,
+		priority: queued,
 	});
 
 	const sites = batch.selected;
@@ -214,6 +232,7 @@ async function measure() {
 		skippedBackoff: batch.skipped.backoff,
 		caughtUp: batch.caughtUp,
 		shard: shard ? `${shard.index + 1}/${shard.total}` : null,
+		queued: batch.priority.length,
 		formFactor,
 		runsPer,
 		field: Boolean(cruxApiKey),
@@ -380,6 +399,20 @@ async function measure() {
 		confirmations: config.redirectConfirmations,
 	});
 
+	// Queued URLs come off the queue once they have had their turn, whether the
+	// measurement succeeded or not. The queue records an intention to measure
+	// something next, and that has now happened; a site that failed is on the
+	// ordinary retry path from here, and leaving it queued would give it priority
+	// again on every run until it recovered.
+	//
+	// Only what this shard actually took. A queued URL in another shard's slice,
+	// or one that did not fit inside the batch limit, is still waiting.
+	summary.queued = batch.priority.length;
+	if (batch.priority.length) {
+		const removed = dropFromQueue(PRIORITY_FILE, batch.priority);
+		logger.info(`cleared ${removed} queued URL(s)`, { file: PRIORITY_FILE });
+	}
+
 	summary.aliasesLearned = learned.length;
 	for (let alias of learned) {
 		logger.warn(`confirmed move: ${alias.from} -> ${alias.to}`, alias);
@@ -392,6 +425,7 @@ async function measure() {
 			Math.max(0, batch.eligible - sites.length) + (summary.stoppedEarly?.remaining ?? 0);
 		process.stdout.write(
 			`\n  ${summary.measured} measured · ${summary.skipped} fresh · ${summary.failed} failed` +
+				(summary.queued ? ` · ${summary.queued} queued` : "") +
 				`  (${(record.durationMs / 1000).toFixed(1)}s)\n` +
 				(summary.stoppedEarly
 					? `  ! stopped early under memory pressure after ${summary.stoppedEarly.after} site(s)\n` +

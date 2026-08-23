@@ -556,6 +556,41 @@ th.col-trend { text-align: center !important; }
 .bar-fill { display: block; height: 100%; background: var(--accent); border-radius: 4px; }
 .bar-warn .bar-fill { background: var(--average); }
 
+/* ------------------------------------------------------ site of the day */
+
+/* Picture beside the facts, collapsing to a stack when there is not room for
+   both. The screenshot is the point of the section, so it leads on mobile. */
+.sotd {
+	display: grid;
+	grid-template-columns: minmax(0, 18rem) minmax(0, 1fr);
+	gap: 1.25rem;
+	align-items: center;
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+	padding: 1rem;
+}
+
+@media (max-width: 640px) {
+	.sotd { grid-template-columns: 1fr; }
+}
+
+.sotd-shot { display: block; line-height: 0; }
+.sotd-shot img {
+	width: 100%;
+	height: auto;
+	border-radius: 6px;
+	border: 1px solid var(--border);
+	background: var(--bg);
+}
+
+.sotd-body { min-width: 0; }
+.sotd-name { margin: 0 0 0.2rem; font-size: 1.15rem; letter-spacing: -0.01em; }
+.sotd-name a { color: var(--text); text-decoration: none; }
+.sotd-name a:hover { text-decoration: underline; }
+.sotd-url { margin: 0 0 0.7rem; font-family: var(--mono); font-size: 0.8rem; word-break: break-all; }
+.sotd-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 0.35rem; margin: 0.7rem 0 0; }
+
 /* ------------------------------------------------------------------- tally */
 
 /* A short name-and-count list inside a stat tile — what built the perfect
@@ -603,6 +638,41 @@ th.col-trend { text-align: center !important; }
 	font-weight: 700;
 	font-size: 0.9rem;
 	padding: 0.08rem 0;
+}
+
+/* ----------------------------------------------------------------- recents */
+
+/* Ten URLs and their ages, in a stat tile. Each row is one line — the URLs run
+   long and wrapping them would make the tile taller than the rest of the row by
+   an unpredictable amount. */
+.recents {
+	list-style: none;
+	margin: 0.15rem 0 0;
+	padding: 0;
+	font-size: 0.76rem;
+	line-height: 1.5;
+}
+
+.recents li {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 0.5rem;
+}
+
+.recents a {
+	color: var(--text-muted);
+	text-decoration: none;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.recents a:hover, .recents a:focus-visible { color: var(--text); text-decoration: underline; }
+
+.recents-age {
+	flex: none;
+	font-variant-numeric: tabular-nums;
+	color: var(--text-muted);
 }
 
 /* ---------------------------------------------------------------- verdicts */
@@ -670,6 +740,14 @@ th.col-trend { text-align: center !important; }
 	border-radius: 2px 2px 0 0;
 	background: var(--accent);
 }
+
+/* The second histogram in the same tile, so it reads as a different measure
+   rather than more of the first. */
+.histogram-bar-script { background: var(--lcp-load-delay); }
+
+/* A heading inside a card that already has one. Smaller and spaced above, so it
+   divides the tile instead of competing with the label at the top. */
+.stat-label-sub { margin-top: 0.6rem; font-size: 0.7rem; }
 
 .histogram-tick {
 	font-size: 0.52rem;

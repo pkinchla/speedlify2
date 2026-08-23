@@ -113,6 +113,31 @@
 			Median <strong>{{ stats.medianWeight | bytes }}</strong> · mean {{ stats.avgWeight | bytes }}
 		</p>
 		{#
+			JavaScript on its own, under the total. Its own bucket edges, because it
+			is an order of magnitude smaller than the page around it — see
+			SCRIPT_BUCKETS in lib/report.js — and its own leading bucket for the
+			sites that ship none at all.
+		#}
+		{% if stats.scriptBuckets.length %}
+		{% set scriptMax = stats.scriptBuckets | maxValue("count") %}
+		<span class="stat-label stat-label-sub">JavaScript Weight</span>
+		<span class="histogram" role="img"
+			aria-label="JavaScript weight distribution across {{ stats.measured | num }} sites{% for b in stats.scriptBuckets %}. {{ b.label }}: {{ b.count | num }}{% endfor %}">
+			{% for b in stats.scriptBuckets %}
+			<span class="histogram-col" title="{{ b.label }} — {{ b.count | num }} {{ b.count | plural("site") }} ({{ b.share }}%)">
+				<span class="histogram-track">
+					<span class="histogram-bar histogram-bar-script" style="height:{{ (b.count / scriptMax * 100) | round(1) }}%"></span>
+				</span>
+				<span class="histogram-tick">{{ b.tick }}</span>
+			</span>
+			{% endfor %}
+		</span>
+		<p class="stat-sub-note muted small">
+			Median <strong>{{ stats.medianScript | bytes }}</strong> ·
+			{{ stats.scriptBuckets[0].count | num }} ship none
+		</p>
+		{% endif %}
+		{#
 			Absent until the report has enough days to be worth drawing — see
 			MIN_WEIGHT_HISTORY_DAYS in lib/report.js.
 		#}
@@ -126,6 +151,23 @@
 		</span>
 		{% endif %}
 	</div>
+	{% if stats.recentlyMeasured.length %}
+	<div class="stat">
+		{#
+			What the measurement loop has just done. Everything else on this bar is
+			a state of the corpus; this is the only thing that shows it moving.
+		#}
+		<span class="stat-label">Recently measured</span>
+		<ol class="recents">
+			{% for site in stats.recentlyMeasured %}
+			<li>
+				<a href="/site/{{ site.slug }}/">{{ site.displayUrl }}</a>
+				<span class="recents-age">{{ site.timestamp | since }}</span>
+			</li>
+			{% endfor %}
+		</ol>
+	</div>
+	{% endif %}
 	{% if stats.measured %}
 	<div class="stat">
 		{#
