@@ -52,12 +52,12 @@ permalink: /index.html
 		<li>
 			<a href="/group/{{ group.id }}/">{{ group.name }}</a>
 			{#
-				How many sites are in the category, full stop. The coverage fraction
-				that used to be here — measured over listed — was answering a
-				different question than the one this list asks, and the freshness
-				pill beside it already says whether the data is keeping up.
+				Sites with data, not sites listed. Measurement is rolling — a category
+				is added in one commit and fills in over the following days — so the
+				listed total counts URLs somebody typed, while this counts what the
+				page behind the link can actually show you.
 			#}
-			<span class="contents-count" title="{{ group.entries.length | num }} {{ group.entries.length | plural('site') }} in {{ group.name }}">×{{ group.entries.length | num }}</span>
+			<span class="contents-count" title="{{ group.measured | num }} of {{ group.entries.length | num }} {{ group.entries.length | plural('site') }} in {{ group.name }} {{ group.measured | verb('has', 'have') }} data">×{{ group.measured | num }}</span>
 			{#
 				How long ago anything in this category was last measured. Measurement
 				is rolling and each category sets its own cadence, so the curated
