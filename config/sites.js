@@ -56,7 +56,7 @@ const EXTRA_EMERITUS = ["https://annotator.incubator.apache.org/"];
  * re-added by hand is usually one that reports something unusual. See
  * `pinned` below.
  */
-const EXTRA_COMMUNITY = ["https://open-wc.org/"];
+const EXTRA_COMMUNITY = ["https://open-wc.org/", "https://www.ryzokuken.dev/"];
 const EMERITUS = [...new Set([...emeritus.urls, ...EXTRA_EMERITUS])];
 
 /**

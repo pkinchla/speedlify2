@@ -335,3 +335,26 @@ describe("Obsidian Publish", () => {
 		assert.equal(found.id, "eleventy");
 	});
 });
+
+describe("a page declaring more than one generator", () => {
+	test("a deferred tag loses to the generator it publishes through", () => {
+		// internet2000.net stamps both, Silex first. Read in document order it was
+		// filed under Silex, which moved it out of the community list for not
+		// being Eleventy.
+		const found = detectGenerator({ metas: ["Silex v3.0.0", "Eleventy v3.0.0"] });
+		assert.equal(found.name, "Eleventy");
+		assert.equal(found.version, "3.0.0");
+	});
+
+	test("but still wins when it is the only tag", () => {
+		const found = detectGenerator({ metas: ["Silex v3.0.0"] });
+		assert.equal(found.name, "Silex");
+		assert.equal(found.version, "3.0.0", "deferred keeps its version, unlike secondary");
+	});
+
+	test("a secondary tag still yields to the CMS and drops its version", () => {
+		const found = detectGenerator({ metas: ["Site Kit by Google 1.185.0", "WordPress 6.5"] });
+		assert.equal(found.name, "WordPress");
+		assert.equal(found.version, "6.5", "the CMS's own number, not the plugin's");
+	});
+});

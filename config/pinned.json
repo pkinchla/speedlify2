@@ -2,6 +2,7 @@
   "note": "URLs held in the categories config/sites.js lists them in, exempt from the generator rules. Hand-curated. See `pinned` in config/sites.js.",
   "urls": [
     "https://eleventy-step.netlify.app/",
-    "https://open-wc.org/"
+    "https://open-wc.org/",
+    "https://www.ryzokuken.dev/"
   ]
 }
