@@ -1,4 +1,5 @@
 import archived from "./archived.json" with { type: "json" };
+import pinned from "./pinned.json" with { type: "json" };
 import community from "./11ty-community.json" with { type: "json" };
 import emeritus from "./11ty-emeritus.json" with { type: "json" };
 import starters from "./11ty-starters.json" with { type: "json" };
@@ -19,6 +20,7 @@ import starters from "./11ty-starters.json" with { type: "json" };
 const EXTRA_STARTERS = [
 	"https://11skeleton.vercel.app/",
 	"https://eleventy-test-bed-dollplayer2501.netlify.app/",
+	"https://eleventy-step.netlify.app/",
 ];
 const STARTERS = [...new Set([...starters.urls, ...EXTRA_STARTERS])];
 
@@ -63,10 +65,35 @@ const EMERITUS = [...new Set([...emeritus.urls, ...EXTRA_EMERITUS])];
  */
 const ARCHIVED = archived.urls;
 
+/**
+ * Sites held where this config puts them.
+ *
+ * Categories normally reclassify themselves: `requireGenerator` moves a site out
+ * of Built Awesome when its page reports something else, and `rejectGenerator`
+ * moves it back out of Emeritus when it reports Eleventy again. That is right
+ * almost always, and it re-applies on every build — so a category change made by
+ * hand does not survive the next report unless the detection agrees with it.
+ *
+ * This is the exception list for when detection is reading the page correctly
+ * and still getting the answer wrong: a stale generator tag left in a template,
+ * a proxy or platform stamping its own, a site built with one thing and
+ * reporting another. A URL here keeps whatever categories it is listed in.
+ *
+ * Not a way to disagree with a correct detection. A site that really has moved
+ * to Astro belongs in Emeritus, and pinning it there would make this list a
+ * quiet second source of truth about what built the web.
+ */
+const PINNED = pinned.urls;
+
 export default {
 	// Read by lib/config.js, which marks the matching sites as it flattens the
 	// groups — one place rather than a filter on each category's list.
 	archived: ARCHIVED,
+
+	// Exempt from the generator rules, same mechanism. A site entry can also
+	// carry `pinGroup: true` directly, for the hand-written categories; this list
+	// is for the ones whose entries come from a generated file.
+	pinned: PINNED,
 
 	// Lighthouse runs per URL per measurement. The median run is kept.
 	// 3 is a decent tradeoff between noise and wall-clock time.

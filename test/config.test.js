@@ -405,3 +405,48 @@ describe("archived sites", () => {
 		assert.equal(sites.every((s) => s.archived === false), true);
 	});
 });
+
+describe("pinning a site to its configured categories", () => {
+	function fixture(extra = {}) {
+		return {
+			...extra,
+			groups: {
+				community: {
+					name: "Community",
+					requireGenerator: ["eleventy"],
+					emeritusGroup: "emeritus",
+					sites: [{ url: "https://moved.example/" }, { url: "https://pinned.example/" }],
+				},
+				emeritus: { name: "Emeritus", rejectGenerator: ["eleventy"], rejectGroup: "community", sites: [] },
+			},
+		};
+	}
+
+	test("the list form marks the matching sites", async () => {
+		const config = await load(fixture({ pinned: ["https://pinned.example/"] }));
+		const byUrl = Object.fromEntries(config.sites.map((s) => [s.url, s]));
+
+		assert.equal(byUrl["https://pinned.example/"].pinGroup, true);
+		assert.equal(byUrl["https://moved.example/"].pinGroup, false);
+	});
+
+	test("normalizes before matching, like the archived list", async () => {
+		const config = await load(fixture({ pinned: ["https://pinned.example"] }));
+		const site = config.sites.find((s) => s.url === "https://pinned.example/");
+		assert.equal(site.pinGroup, true);
+	});
+
+	test("a site entry can carry the flag itself", async () => {
+		const config = await load({
+			groups: {
+				community: { name: "Community", sites: [{ url: "https://hand.example/", pinGroup: true }] },
+			},
+		});
+		assert.equal(config.sites[0].pinGroup, true);
+	});
+
+	test("nothing is pinned by default", async () => {
+		const config = await load(fixture());
+		assert.ok(config.sites.every((s) => s.pinGroup === false));
+	});
+});

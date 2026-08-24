@@ -219,7 +219,7 @@ describe("generator-driven reclassification", () => {
 	 * `requireGenerator` moves the drifted entries into an emeritus category at
 	 * report time, from what measurement actually found.
 	 */
-	function generatorFixture(generators) {
+	function generatorFixture(generators, pinned = []) {
 		const dir = fs.mkdtempSync(path.join(os.tmpdir(), "speedlify-emeritus-"));
 		tmp.push(dir);
 		const store = new ResultStore(path.join(dir, "results"));
@@ -253,7 +253,7 @@ describe("generator-driven reclassification", () => {
 		const configFile = path.join(dir, "sites.js");
 		fs.writeFileSync(
 			configFile,
-			`export default { groups: {
+			`export default { pinned: ${JSON.stringify(pinned)}, groups: {
 				curated: { name: "Curated", requireGenerator: ["eleventy", "build-awesome"], emeritusGroup: "past", sites: [${entries}] },
 				past: { name: "Emeritus", sites: [] },
 			} };`,
@@ -273,6 +273,27 @@ describe("generator-driven reclassification", () => {
 		assert.equal(r.emeritus.length, 1);
 		assert.equal(r.emeritus[0].generator, "Astro");
 		assert.equal(r.emeritus[0].to, "past");
+	});
+
+	test("a pinned site is exempt from the rule", async () => {
+		// The escape hatch for detection that reads the page correctly and still
+		// gets the answer wrong — a stale generator tag, a proxy stamping its own.
+		// Without it, a category change made by hand is undone on the next build.
+		const f = generatorFixture(["Astro v5.0.0"], ["https://site0.example/"]);
+		const r = await buildReport(f);
+
+		assert.equal(groupOf(r, "curated").entries.length, 1, "stays where the config puts it");
+		assert.equal(groupOf(r, "past").entries.length, 0);
+		assert.equal(r.emeritus.length, 0, "and is not reported as reclassified");
+	});
+
+	test("pinning one site does not exempt the others", async () => {
+		const f = generatorFixture(["Astro v5.0.0", "Astro v5.0.0"], ["https://site0.example/"]);
+		const r = await buildReport(f);
+
+		assert.equal(groupOf(r, "curated").entries.length, 1);
+		assert.equal(groupOf(r, "past").entries.length, 1);
+		assert.equal(r.emeritus[0].url, "https://site1.example/");
 	});
 
 	test("keeps a site with no generator detected", async () => {
