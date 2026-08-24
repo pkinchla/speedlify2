@@ -16,4 +16,3 @@
 # fresh measurement for the deferred-tag fix to take effect.
 
 # Serves a WordPress generator tag now; the 21 Aug probe found none at all.
-https://kromatic.fr/
