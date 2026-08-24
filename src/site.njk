@@ -81,6 +81,21 @@ eleventyComputed:
 			`ranked: false` precisely so nobody reads a placing into it, and
 			printing one here would say the thing that page refuses to.
 		#}
+		{#
+			The unified rank first, before the per-category ones — the same board
+			the home page shows, across every measured site. Plain text, unlike the
+			category names beside it: those lead somewhere that lists the site,
+			and this one has no page of its own to point at.
+
+			Only for the top half. "Better than 12% of sites" is a true sentence
+			that nobody put their site on this list to read, and the six rings
+			above already say plainly how it is doing — this line exists to give
+			credit, not to rank the bottom of the board to its face.
+		#}
+		{% if entry.ranks.overall %}
+		Overall
+		<span class="cat-rank" title="Ranked {{ entry.ranks.overall | num }} of {{ sites.stats.measured | num }} measured sites overall">#{{ entry.ranks.overall | num }}</span>
+		{% endif %}
 		{% for g in entry.groups %}
 		{% set grp = sites.groups | groupById(g) %}
 		<a href="/group/{{ g }}/">{{ entry.groupNames[loop.index0] }}</a>

@@ -473,12 +473,15 @@ class SpeedlifyScore extends HTMLElement {
 		if (typeof value !== "number") {
 			return this.ring({ band: "none", text: "–", sublabel: "AXE", label: "Axe: did not run", pct: null });
 		}
+		// Three glyphs for the three bands: clean, some, many. A count was the odd
+		// one out on a row where everything else is a score or a tick. The figure
+		// itself is in the label.
+		const band = value === 0 ? "good" : value <= 5 ? "average" : "poor";
 		return this.ring({
-			band: value === 0 ? "good" : value <= 5 ? "average" : "poor",
-			text: this.shortCount(value),
-			// Labelled like the CWV ring beside it: a bare count is the one number
-			// here that could be mistaken for a score, and 0 is the good end of
-			// this scale where 0 would be the bad end of the four before it.
+			band,
+			text: band === "good" ? "✓" : band === "average" ? "!" : "✗",
+			// Labelled like the CWV ring beside it: without it a tick is read by
+			// guesswork, and the others are read by position.
 			sublabel: "AXE",
 			label: `Axe: ${value} violating node${value === 1 ? "" : "s"}`,
 			pct: 1,

@@ -606,6 +606,16 @@ export default async function ($config) {
 	 * ranks on points — a local copy of the thresholds here is how a row ends up
 	 * ranked above one it visibly ties with.
 	 */
+	/**
+	 * Accessibility violations, shown as a verdict rather than a count.
+	 *
+	 * Three glyphs for the three bands: clean, some, many. A number here was the
+	 * odd one out on a row of six rings — the other five are read as "higher is
+	 * better" or as a tick, and "13" in the middle of them reads as a score of
+	 * thirteen rather than as thirteen faults. The count is still the whole
+	 * point, so it stays: in the tooltip, and in the ranking, which bands on the
+	 * raw figure exactly as before.
+	 */
 	$config.addShortcode("axeRing", function (axe, size = 37, label = null) {
 		// A number where the caller has one already — the median tile passes a
 		// figure rather than a site's axe record.
@@ -615,12 +625,14 @@ export default async function ($config) {
 		}
 
 		const rules = typeof axe === "number" ? null : axe.violationRules;
+		const band = axeBand(value);
 		return ring({
-			band: axeBand(value),
-			text: shortCount(value),
-			// Labelled like the CWV ring beside it: a bare count is the one number
-			// here that could be mistaken for a score, and 0 is the good end of
-			// this scale where 0 would be the bad end of the four before it.
+			band,
+			// ✓ clean · ! some · ✗ many. The bands are unchanged, so the glyph and
+			// the ranking always agree — see axeBand in lib/rank.js.
+			text: band === "good" ? "✓" : band === "average" ? "!" : "✗",
+			// Labelled like the CWV ring beside it: without it a tick is read by
+			// guesswork, and the others are read by position.
 			sublabel: "AXE",
 			label:
 				label ??
