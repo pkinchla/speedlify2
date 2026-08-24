@@ -120,7 +120,22 @@ class SpeedlifyScore extends HTMLElement {
 		url: "url",
 		// "light" or "dark". Absent means follow the reader's system setting.
 		theme: "theme",
+		// Present at all — `no-tooltip` — suppresses the hover card.
+		noTooltip: "no-tooltip",
 	};
+
+	/**
+	 * Whether to render the hover card at all.
+	 *
+	 * For a page that wants the six rings as a badge and nothing more — an
+	 * author's own site, say, where the numbers are the point and a card of
+	 * measurement detail is somebody else's furniture. With the card hidden the
+	 * rings link straight to the full report instead, so the detail is one click
+	 * away rather than gone.
+	 */
+	get noTooltip() {
+		return this.hasAttribute(SpeedlifyScore.attrs.noTooltip);
+	}
 
 	static css = `
 /*
@@ -238,6 +253,13 @@ class SpeedlifyScore extends HTMLElement {
 	cursor: help;
 }
 .trigger:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; border-radius: 4px; }
+/* No card to open, so nothing to invite: no help cursor, and not in the tab
+   order — it is a span, so it never was. */
+.trigger-static { cursor: default; }
+
+/* The linked form. Focusable and clickable, unlike the static one, so it keeps
+   the focus ring the button had. */
+.trigger-link { cursor: pointer; text-decoration: none; color: inherit; }
 
 .tip {
 	position: absolute;
@@ -598,6 +620,22 @@ class SpeedlifyScore extends HTMLElement {
 			this.axeHtml(data.axe),
 			this.cwvHtml(data.cwv),
 		];
+
+		// Without the tooltip, the rings become the link the tooltip used to
+		// contain: a button that opens nothing would be a trap for anyone tabbing
+		// through, and the full report is where the detail went. Same destination
+		// as the tooltip's "Full report" link, so hiding the card moves that link
+		// rather than losing it.
+		//
+		// Falls back to a plain span if the payload has no page — an older API, or
+		// a site published under a hash — because a link with nowhere to go is
+		// worse than no link.
+		if (this.noTooltip) {
+			if (!data.page) return `<span class="trigger trigger-static">${parts.join("")}</span>`;
+
+			const href = SpeedlifyStore.join(this.speedlifyUrl, data.page);
+			return `<a class="trigger trigger-link" href="${href}" title="Full report for ${data.name ?? data.url}">${parts.join("")}</a>`;
+		}
 
 		return [
 			`<button class="trigger" type="button" aria-describedby="tip">${parts.join("")}</button>`,
