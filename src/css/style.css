@@ -636,6 +636,12 @@ th.col-trend { text-align: center !important; }
 }
 .stat-headline .stat-spark { flex: none; align-self: center; }
 
+/* The benchmark step, beside the index it belongs to. Quiet by default — most
+   runs barely move — and coloured only when the machine got slower, which is
+   the direction that inflates CPU-bound metrics and invents regressions. */
+.bench-change { font-size: 0.85em; opacity: 0.75; }
+.bench-change.worse { color: var(--average); opacity: 1; }
+
 /* ----------------------------------------------------------------- recents */
 
 /* Ten URLs and their ages, in a stat tile. Each row is one line — the URLs run

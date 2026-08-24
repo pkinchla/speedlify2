@@ -696,6 +696,12 @@ export default async function ($config) {
 		return `every ${hours} hours`;
 	});
 
+	/** A number with its sign always shown: +27, -12, 0. */
+	$config.addFilter("signed", (value) => {
+		if (typeof value !== "number") return "";
+		return value > 0 ? `+${value}` : String(value);
+	});
+
 	/** One group from the report's list, by id. */
 	$config.addFilter("groupById", (groups, id) => (groups || []).find((g) => g.id === id) ?? null);
 

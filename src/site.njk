@@ -211,7 +211,12 @@ eleventyComputed:
 	<p>
 		Lighthouse benchmark index was {{ entry.environmentDrift.current }} against a
 		baseline of {{ entry.environmentDrift.baseline }}
-		({{ entry.environmentDrift.ratio * 100 | round }}%). CPU-bound metrics — TBT,
+		{#
+			Parenthesised. A filter binds tighter than the multiplication in
+			Nunjucks, so `ratio * 100 | round` rounded 100 and left the product
+			alone — printing "34.300000000000004%".
+		#}
+		({{ (entry.environmentDrift.ratio * 100) | round }}%). CPU-bound metrics — TBT,
 		TTI, main thread work — are affected by this and may have moved without the
 		site changing at all.
 	</p>
@@ -767,7 +772,23 @@ eleventyComputed:
 					<td class="num">{{ point.total | bytes }}</td>
 					<td class="num muted">{{ point.completedRuns }}/{{ point.requestedRuns }}</td>
 					<td class="num muted">{{ ("±" + point.spread) if point.spread != null else "—" }}</td>
-					<td class="num muted" title="Lighthouse benchmark index of the measuring machine">{{ point.bench | num }}</td>
+					{#
+						The benchmark index, and how far it moved from the run before.
+						On its own the number means nothing to a reader — 2470 is not
+						good or bad — but "+27%" between two rows explains a TBT that
+						jumped without the site changing, which is the only reason
+						this column is here.
+
+						Against the previous row rather than the site's baseline: the
+						notice above the page already gives the baseline comparison,
+						and what a log wants is the step.
+					#}
+					<td class="num muted" title="Lighthouse benchmark index of the measuring machine{% if point.benchChange != null %} — {{ point.benchChange | signed }}% against the previous run{% endif %}">
+						{{ point.bench | num }}
+						{%- if point.benchChange != null %}
+						<span class="bench-change {{ 'worse' if point.benchChange < 0 }}">{{ point.benchChange | signed }}%</span>
+						{%- endif %}
+					</td>
 					<td class="num muted">{{ (point.durationMs / 1000) | round(1) }}s</td>
 				{% endif %}
 			</tr>
