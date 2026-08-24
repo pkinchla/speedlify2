@@ -1,8 +1,9 @@
-{"version":1,"url":"https://chetanmittaldev.com/","updated":"2026-08-23T05:31:35.553Z","points":[
+{"version":1,"url":"https://chetanmittaldev.com/","updated":"2026-08-24T05:40:08.073Z","points":[
 {"t":1787243775359,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":1,"runs":0,"reqRuns":3,"ms":16383},
 {"t":1787323018766,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":2,"runs":0,"reqRuns":3,"ms":16252},
 {"t":1787347635929,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":3,"runs":0,"reqRuns":3,"ms":16226},
 {"t":1787370196407,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":4,"runs":0,"reqRuns":3,"ms":16056},
 {"t":1787402336980,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":5,"runs":0,"reqRuns":3,"ms":16388},
-{"t":1787463079722,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":6,"runs":0,"reqRuns":3,"ms":15830}
+{"t":1787463079722,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":6,"runs":0,"reqRuns":3,"ms":15830},
+{"t":1787549991594,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":7,"runs":0,"reqRuns":3,"ms":16478}
 ]}
