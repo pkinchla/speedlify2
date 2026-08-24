@@ -267,7 +267,7 @@ export default {
 				"Home pages of the hosting and deploy platforms this project detects in the Host column.",
 			...DAILY,
 			sites: [
-				{ name: "Netlify", url: "https://www.netlify.com/" },
+				{ name: "Netlify", url: "https://www.netlify.com/", groups: ["11ty-emeritus"] },
 				{ name: "Vercel", url: "https://vercel.com/" },
 				{ name: "Cloudflare", url: "https://www.cloudflare.com/" },
 				{ name: "Cloudflare Pages", url: "https://pages.cloudflare.com/" },
