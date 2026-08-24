@@ -636,11 +636,28 @@ th.col-trend { text-align: center !important; }
 }
 .stat-headline .stat-spark { flex: none; align-self: center; }
 
-/* The benchmark step, beside the index it belongs to. Quiet by default — most
-   runs barely move — and coloured only when the machine got slower, which is
-   the direction that inflates CPU-bound metrics and invents regressions. */
-.bench-change { font-size: 0.85em; opacity: 0.75; }
-.bench-change.worse { color: var(--average); opacity: 1; }
+/* The benchmark step, beside the index it belongs to. A pill, like the other
+   small qualifying figures on these pages — it is a note on the number next to
+   it rather than a column of its own.
+
+   Quiet by default, because most runs barely move, and coloured only when the
+   machine got slower: that is the direction that inflates CPU-bound metrics and
+   invents regressions. A faster machine is not a problem to flag. */
+.bench-change {
+	display: inline-block;
+	margin-left: 0.25rem;
+	padding: 0.05rem 0.35rem;
+	border-radius: var(--pill);
+	background: color-mix(in srgb, var(--text-muted) 15%, transparent);
+	color: var(--text-muted-strong);
+	font-size: 0.85em;
+	font-variant-numeric: tabular-nums;
+	white-space: nowrap;
+}
+.bench-change.worse {
+	background: color-mix(in srgb, var(--average) 16%, transparent);
+	color: var(--average);
+}
 
 /* ----------------------------------------------------------------- recents */
 
