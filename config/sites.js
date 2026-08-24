@@ -104,6 +104,34 @@ const ARCHIVED = archived.urls;
  */
 const PINNED = pinned.urls;
 
+/**
+ * The two cadences, and the one politeness setting, that repeat across
+ * categories.
+ *
+ * Spread into a group rather than retyped: these are the same decision applied
+ * to several lists, and seven copies of the same four lines is how one of them
+ * ends up a hundred hours out of step with the rest for no reason anybody can
+ * reconstruct.
+ */
+
+/** Hand-maintained handfuls: measured daily, stale after two days. */
+const DAILY = { freshnessHours: 24, staleAfterHours: 48 };
+
+/** The big imported lists: weekly, stale after a fortnight. */
+const WEEKLY = { freshnessHours: 24 * 7, staleAfterHours: 24 * 7 * 2 };
+
+/**
+ * Other people's sites, mostly on modest hosting, measured at a deliberate
+ * pace. Measurement is already sequential — one Chrome, one run at a time — so
+ * nothing is ever requested concurrently; this governs the pace on top of that.
+ *
+ * At 3s between sites plus ~15s to measure one, each person's server sees a
+ * handful of page loads once per cycle: no more than a single visitor would
+ * generate. The host cooldown is belt and braces, for two entries that turn out
+ * to share a domain.
+ */
+const POLITE = { rateLimit: { delayMs: 3000, hostCooldownMs: 60000 } };
+
 export default {
 	// Read by lib/config.js, which marks the matching sites as it flattens the
 	// groups — one place rather than a filter on each category's list.
@@ -184,8 +212,7 @@ export default {
 			name: "Site Generators",
 			enabled: true,
 			description: "Home pages for popular site generators and frameworks.",
-			freshnessHours: 24,
-  		staleAfterHours: 48,
+			...DAILY,
 			// The list from https://www.speedlify.dev/ssg/, in its order.
 			sites: [
 				{ name: "Eleventy", url: "https://www.11ty.dev/" },
@@ -218,8 +245,7 @@ export default {
 			name: "Test Runners",
 			enabled: true,
 			description: "Home pages for JavaScript test runners and linters.",
-			freshnessHours: 24,
-  		staleAfterHours: 48,
+			...DAILY,
 			// The list from https://www.speedlify.dev/test-runners/, in its order.
 			sites: [
 				{ name: "QUnit", url: "https://qunitjs.com/" },
@@ -242,8 +268,7 @@ export default {
 
 			// A curated handful of company sites, so the same cadence as the other
 			// hand-maintained categories rather than the address book's weekly pace.
-			freshnessHours: 24,
-			staleAfterHours: 48,
+			...DAILY,
 
 			sites: [
 				{ name: "Netlify", url: "https://www.netlify.com/" },
@@ -281,12 +306,8 @@ export default {
 			// A handful of pages on one site, so the curated cadence — and one
 			// origin serving all of them, so the same politeness the other
 			// many-pages-per-host categories get.
-			freshnessHours: 24,
-			staleAfterHours: 48,
-			rateLimit: {
-				delayMs: 3000,
-				hostCooldownMs: 60000,
-			},
+			...DAILY,
+			...POLITE,
 
 			sites: [
 				{ url: "https://www.zachleat.com/" },
@@ -311,13 +332,9 @@ export default {
 
 			// Same reasoning as Personal Websites: other people's sites, most on
 			// modest hosting, measured at a deliberate pace.
-			rateLimit: {
-				delayMs: 3000,
-				hostCooldownMs: 60000,
-			},
+			...POLITE,
 
-			freshnessHours: 24 * 7,
-			staleAfterHours: 24 * 7 * 2,
+			...WEEKLY,
 
 			// for storage reasons
 			screenshots: "none",
@@ -360,12 +377,8 @@ export default {
 			description:
 				"Starter projects and templates built with Eleventy. Measured apart from the community list because a starter is a demonstration of a stack rather than a site someone runs.",
 
-			freshnessHours: 24 * 7,
-			staleAfterHours: 24 * 7 * 2,
-			rateLimit: {
-				delayMs: 3000,
-				hostCooldownMs: 60000,
-			},
+			...WEEKLY,
+			...POLITE,
 
 			// for storage reasons
 			screenshots: "none",
@@ -416,13 +429,9 @@ export default {
 				"Sites that were previously built with Eleventy or Build Awesome but have moved away (since April 2018).",
 
 			// Same deliberate pace as the community list it came from.
-			rateLimit: {
-				delayMs: 3000,
-				hostCooldownMs: 60000,
-			},
+			...POLITE,
 
-			freshnessHours: 24 * 7,
-			staleAfterHours: 24 * 7 * 2,
+			...WEEKLY,
 
 			// for storage reasons
 			screenshots: "none",
