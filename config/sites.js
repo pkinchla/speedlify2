@@ -407,6 +407,10 @@ export default {
 			// The page still measures them; it just does not place them.
 			ranked: false,
 
+			// And no "Biggest movers" panel, for the same reason: a site that has
+			// moved on is not a contestant whose form is worth remarking on.
+			movers: false,
+
 			enabled: true,
 			description:
 				"Sites that were previously built with Eleventy or Build Awesome but have moved away (since April 2018).",
