@@ -354,14 +354,27 @@ describe("score bands", () => {
 		assert.deepEqual(bandProfile(entry({ violations: 40 })), [3, 0, 0, 0, 0]);
 	});
 
-	test("a missing category ranks with red, not as skipped", () => {
+	test("a missing category ranks between amber and red", () => {
 		// Not scored is not green: an incomplete run must not outrank a complete
-		// one by having fewer rings to fail in.
-		assert.deepEqual(bandProfile(entry({ seo: null })), [3, 0, 0, 0, 0]);
+		// one by having fewer rings to fail in. But it is not a measured failure
+		// either, so it costs more than any real amber and less than a real red.
+		assert.deepEqual(bandProfile(entry({ seo: null })), [2.5, 0, 0, 0, 0]);
 	});
 
-	test("a site axe never ran against ranks with red", () => {
-		assert.deepEqual(bandProfile(entry({ axe: false })), [3, 0, 0, 0, 0]);
+	test("a site axe never ran against ranks the same way", () => {
+		assert.deepEqual(bandProfile(entry({ axe: false })), [2.5, 0, 0, 0, 0]);
+	});
+
+	test("unknown still loses to any amber, and beats any red", () => {
+		// The ordering this is all for: a grey ring must not let a site climb past
+		// one that was measured and scored, and must not be treated as proof of
+		// failure either.
+		const unknown = bandProfile(entry({ axe: false }));
+		const amber = bandProfile(entry({ seo: 75 }));
+		const red = bandProfile(entry({ seo: 30 }));
+
+		assert.ok(unknown[0] > amber[0], "worse than a measured amber");
+		assert.ok(unknown[0] < red[0], "better than a measured red");
 	});
 
 	test("Core Web Vitals do not enter the band profile", () => {
