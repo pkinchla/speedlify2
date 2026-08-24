@@ -20,7 +20,17 @@ eleventyComputed:
 		supplies.
 	#}
 	{% if group.description %}<p class="lede">{{ group.description | safe }}</p>{% endif %}
-	<p class="muted">{{ group.measured }} of {{ group.entries.length | countOf("site") }} measured</p>
+	{#
+		Coverage, then cadence. Measurement is rolling and invisible from the
+		page, so "1,143 of 1,235 measured" reads as a gap to be closed rather than
+		as a schedule doing its job — the second half says which it is.
+	#}
+	<p class="muted">
+		{{ group.measured }} of {{ group.entries.length | countOf("site") }} measured
+		{%- if group.freshnessHours %} · each site {{ group.freshnessHours | cadence }}
+		{%- if group.lastMeasured %}, most recently {{ group.lastMeasured | since }} ago{% endif %}
+		{%- endif %}
+	</p>
 </header>
 
 {# The same tiles as the home page, over this category alone. #}

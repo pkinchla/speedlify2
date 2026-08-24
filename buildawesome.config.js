@@ -677,6 +677,25 @@ export default async function ($config) {
 		});
 	});
 
+	/**
+	 * A freshness window as a cadence: "once a day", "once a week".
+	 *
+	 * The stored figure is a *minimum age* — a site is not eligible again until
+	 * its data is this old — which is the same thing as a cadence only because
+	 * there is capacity to measure everything that becomes eligible. That holds
+	 * today at roughly 960 sites a day against 1,566 configured; it would stop
+	 * holding if the list grew much faster than the schedule.
+	 */
+	$config.addFilter("cadence", (hours) => {
+		if (typeof hours !== "number" || hours <= 0) return null;
+		if (hours === 24) return "once a day";
+		if (hours === 24 * 7) return "once a week";
+		if (hours % (24 * 7) === 0) return `every ${hours / (24 * 7)} weeks`;
+		if (hours % 24 === 0) return `every ${hours / 24} days`;
+		if (hours === 1) return "once an hour";
+		return `every ${hours} hours`;
+	});
+
 	/** One group from the report's list, by id. */
 	$config.addFilter("groupById", (groups, id) => (groups || []).find((g) => g.id === id) ?? null);
 

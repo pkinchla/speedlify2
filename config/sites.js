@@ -265,11 +265,7 @@ export default {
 			enabled: true,
 			description:
 				"Home pages of the hosting and deploy platforms this project detects in the Host column.",
-
-			// A curated handful of company sites, so the same cadence as the other
-			// hand-maintained categories rather than the address book's weekly pace.
 			...DAILY,
-
 			sites: [
 				{ name: "Netlify", url: "https://www.netlify.com/" },
 				{ name: "Vercel", url: "https://vercel.com/" },
@@ -302,13 +298,8 @@ export default {
 			name: "zachleat.com",
 			enabled: true,
 			description: "Pages from zachleat.com.",
-
-			// A handful of pages on one site, so the curated cadence — and one
-			// origin serving all of them, so the same politeness the other
-			// many-pages-per-host categories get.
-			...DAILY,
+			...WEEKLY,
 			...POLITE,
-
 			sites: [
 				{ url: "https://www.zachleat.com/" },
 				{ url: "https://www.zachleat.com/about/" },
@@ -329,13 +320,8 @@ export default {
 			enabled: true,
 			description:
 				'Community-submitted sites from the <a href="https://github.com/11ty/11ty-community">11ty/11ty-community</a> repository.',
-
-			// Same reasoning as Personal Websites: other people's sites, most on
-			// modest hosting, measured at a deliberate pace.
 			...POLITE,
-
 			...WEEKLY,
-
 			// for storage reasons
 			screenshots: "none",
 
@@ -376,9 +362,8 @@ export default {
 			name: "Build Awesome Starters",
 			description:
 				"Starter projects and templates built with Eleventy. Measured apart from the community list because a starter is a demonstration of a stack rather than a site someone runs.",
-
-			...WEEKLY,
 			...POLITE,
+			...WEEKLY,
 
 			// for storage reasons
 			screenshots: "none",
@@ -428,9 +413,7 @@ export default {
 			description:
 				"Sites that were previously built with Eleventy or Build Awesome but have moved away (since April 2018).",
 
-			// Same deliberate pace as the community list it came from.
 			...POLITE,
-
 			...WEEKLY,
 
 			// for storage reasons
