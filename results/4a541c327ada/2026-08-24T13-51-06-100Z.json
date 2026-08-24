@@ -1,0 +1,22 @@
+{
+  "url": "https://thefutureislikepie.com/",
+  "name": "thefutureislikepie.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787579466100,
+  "date": "2026-08-24T13:51:06.100Z",
+  "runId": "2026-08-24T13-50-44-694Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 0,
+  "durationMs": 16120,
+  "error": "INSECURE_DOCUMENT_REQUEST: The URL you have provided does not have a valid security certificate. net::ERR_CERT_COMMON_NAME_INVALID",
+  "errors": [
+    "INSECURE_DOCUMENT_REQUEST: The URL you have provided does not have a valid security certificate. net::ERR_CERT_COMMON_NAME_INVALID",
+    "INSECURE_DOCUMENT_REQUEST: The URL you have provided does not have a valid security certificate. net::ERR_CERT_COMMON_NAME_INVALID",
+    "INSECURE_DOCUMENT_REQUEST: The URL you have provided does not have a valid security certificate. net::ERR_CERT_COMMON_NAME_INVALID"
+  ],
+  "field": null,
+  "axe": null,
+  "consecutiveFailures": 7
+}
