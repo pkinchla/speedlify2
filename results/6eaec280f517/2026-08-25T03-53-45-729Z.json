@@ -1,0 +1,244 @@
+{
+  "url": "https://gruntjs.com/",
+  "name": "Grunt",
+  "group": "test-runners",
+  "groupName": "Test Runners",
+  "timestamp": 1787630025729,
+  "date": "2026-08-25T03:53:45.729Z",
+  "runId": "2026-08-25T03-53-07-344Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 22429,
+  "error": null,
+  "variance": {
+    "min": 100,
+    "max": 100,
+    "spread": 0,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://gruntjs.com/",
+    "finalUrl": "https://gruntjs.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 100,
+      "accessibility": 73,
+      "best-practices": 96,
+      "seo": 92,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 1073,
+      "lcp": 1373,
+      "si": 1073,
+      "tbt": 0,
+      "tti": 1373,
+      "cls": 0,
+      "ttfb": 623,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 19,
+      "networkRtt": 0,
+      "networkServerLatency": 22.9
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 20.7,
+      "elementRenderDelay": 73.1
+    },
+    "weight": {
+      "total": 100827,
+      "requests": 24,
+      "mainDocument": 3233,
+      "byType": {
+        "total": {
+          "bytes": 97783,
+          "requests": 23
+        },
+        "image": {
+          "bytes": 76614,
+          "requests": 19
+        },
+        "stylesheet": {
+          "bytes": 14788,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 3233,
+          "requests": 1
+        },
+        "font": {
+          "bytes": 2858,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 290,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "script": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 0,
+          "requests": 0
+        }
+      },
+      "scripts": 0,
+      "stylesheets": 1,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 0,
+      "bytes": 0,
+      "mainThreadMs": 0,
+      "top": []
+    },
+    "mainThread": {
+      "total": 311.4,
+      "byGroup": {
+        "other": 183.1,
+        "styleLayout": 93,
+        "paintCompositeRender": 16.1,
+        "parseHTML": 11,
+        "scriptEvaluation": 7.8,
+        "scriptParseCompile": 0.4
+      },
+      "bootupMs": 7.3,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 185,
+      "depth": 11,
+      "maxChildren": 12
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 12721,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 300,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 90332.5,
+      "poorlyCachedCount": 21
+    },
+    "accessibility": {
+      "failingCount": 4,
+      "applicableCount": 14,
+      "failingNodes": 28,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 15
+        },
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "nodes": 11
+        },
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": null,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 6
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2485,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-25T03:54:00.886Z",
+      "runtimeMs": 6234.3
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a307a72bce6a76f2-SEA",
+      "server": "cloudflare",
+      "x-powered-by": "Express"
+    },
+    "violations": 29,
+    "passes": 362,
+    "incomplete": 20,
+    "violationRules": 6,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 15,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "link-in-text-block",
+        "impact": "serious",
+        "nodes": 8,
+        "help": "Links must be distinguishable without relying on color"
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 3,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should have one main landmark"
+      },
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Links must have discernible text"
+      },
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Page should contain a level-one heading"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
