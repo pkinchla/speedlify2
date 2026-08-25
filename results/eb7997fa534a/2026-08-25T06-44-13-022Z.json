@@ -1,0 +1,291 @@
+{
+  "url": "https://nextjs.org/",
+  "name": "Next.js",
+  "group": "ssg",
+  "groupName": "Site Generators",
+  "timestamp": 1787640253022,
+  "date": "2026-08-25T06:44:13.022Z",
+  "runId": "2026-08-25T06-44-06-361Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 51272,
+  "error": null,
+  "variance": {
+    "min": 65,
+    "max": 93,
+    "spread": 28,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://nextjs.org/",
+    "finalUrl": "https://nextjs.org/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 85,
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1516,
+      "lcp": 3916,
+      "si": 1517,
+      "tbt": 200,
+      "tti": 4827,
+      "cls": 0,
+      "ttfb": 616,
+      "maxPotentialFid": 163,
+      "serverResponseTime": 2,
+      "networkRtt": 0,
+      "networkServerLatency": 25
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 4,
+      "elementRenderDelay": 235.8
+    },
+    "weight": {
+      "total": 1051969,
+      "requests": 82,
+      "mainDocument": 36985,
+      "byType": {
+        "total": {
+          "bytes": 1051969,
+          "requests": 76
+        },
+        "script": {
+          "bytes": 533886,
+          "requests": 35
+        },
+        "image": {
+          "bytes": 241947,
+          "requests": 21
+        },
+        "font": {
+          "bytes": 94971,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 91739,
+          "requests": 3
+        },
+        "other": {
+          "bytes": 52441,
+          "requests": 14
+        },
+        "document": {
+          "bytes": 36985,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 7557,
+          "requests": 2
+        }
+      },
+      "scripts": 35,
+      "stylesheets": 3,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 7557,
+      "mainThreadMs": 4.9,
+      "top": [
+        {
+          "entity": "cr-relay.com",
+          "bytes": 7557,
+          "mainThreadMs": 4.9
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 4100.8,
+      "byGroup": {
+        "scriptEvaluation": 1611.9,
+        "other": 1326.8,
+        "styleLayout": 536.6,
+        "paintCompositeRender": 264.3,
+        "scriptParseCompile": 209.4,
+        "parseHTML": 128.9,
+        "garbageCollection": 22.9
+      },
+      "bootupMs": 1629.9,
+      "longTasks": 7,
+      "longestTaskMs": 163
+    },
+    "dom": {
+      "elements": 2213,
+      "depth": 18,
+      "maxChildren": 607
+    },
+    "waste": {
+      "unusedJsBytes": 92053,
+      "unusedCssBytes": 12973,
+      "legacyJsBytes": 24617,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 600,
+      "renderBlockingCount": 3,
+      "poorlyCachedBytes": 5914.400000000001,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 25,
+      "failingNodes": 5,
+      "failing": [
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "nodes": 5
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": null,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 1,
+      "baselineLimitedFeatures": 58
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2422.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-25T06:44:32.967Z",
+      "runtimeMs": 15044.9
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-27",
+      "last": "2026-08-23"
+    },
+    "metrics": {
+      "fcp": {
+        "p75": 1403,
+        "rating": "good",
+        "distribution": {
+          "good": 83.2,
+          "needsImprovement": 8.6,
+          "poor": 8.2
+        }
+      },
+      "inp": {
+        "p75": 127,
+        "rating": "good",
+        "distribution": {
+          "good": 85.8,
+          "needsImprovement": 10.6,
+          "poor": 3.6
+        }
+      },
+      "lcp": {
+        "p75": 1471,
+        "rating": "good",
+        "distribution": {
+          "good": 89.1,
+          "needsImprovement": 5.7,
+          "poor": 5.2
+        }
+      },
+      "rtt": {
+        "p75": 195,
+        "rating": null,
+        "distribution": {
+          "good": 26.9,
+          "needsImprovement": 58.5,
+          "poor": 14.7
+        }
+      },
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 98.3,
+          "needsImprovement": 1.2,
+          "poor": 0.5
+        }
+      },
+      "ttfb": {
+        "p75": 621,
+        "rating": "good",
+        "distribution": {
+          "good": 82.7,
+          "needsImprovement": 11.6,
+          "poor": 5.7
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": {
+      "id": "nextjs",
+      "name": "Next.js",
+      "icon": "Nextdotjs",
+      "version": null,
+      "source": "dom",
+      "raw": null
+    },
+    "host": {
+      "id": "vercel",
+      "name": "Vercel",
+      "icon": "Vercel",
+      "source": "x-vercel-id"
+    },
+    "headers": {
+      "server": "Vercel",
+      "x-powered-by": "Next.js",
+      "x-vercel-id": "sfo1::pdx1::wjlqx-1787640302056-01f5f04f9015"
+    },
+    "violations": 3,
+    "passes": 1120,
+    "incomplete": 69,
+    "violationRules": 3,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "landmark-main-is-top-level",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Main landmark should not be contained in another landmark"
+      },
+      {
+        "id": "landmark-no-duplicate-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should not have more than one main landmark"
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

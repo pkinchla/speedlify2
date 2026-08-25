@@ -1,0 +1,283 @@
+{
+  "url": "https://qwik.dev/",
+  "name": "Qwik",
+  "group": "ssg",
+  "groupName": "Site Generators",
+  "timestamp": 1787651539662,
+  "date": "2026-08-25T09:52:19.662Z",
+  "runId": "2026-08-25T09-34-00-305Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 36914,
+  "error": null,
+  "variance": {
+    "min": 96,
+    "max": 97,
+    "spread": 1,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://qwik.dev/",
+    "finalUrl": "https://qwik.dev/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 97,
+      "accessibility": 96,
+      "best-practices": 58,
+      "seo": 92,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1969,
+      "lcp": 2106,
+      "si": 1969,
+      "tbt": 81,
+      "tti": 2588,
+      "cls": 0,
+      "ttfb": 453,
+      "maxPotentialFid": 154,
+      "serverResponseTime": 27,
+      "networkRtt": 0.2,
+      "networkServerLatency": 90.2
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 29,
+      "elementRenderDelay": 90.1
+    },
+    "weight": {
+      "total": 2195536,
+      "requests": 454,
+      "mainDocument": 45593,
+      "byType": {
+        "total": {
+          "bytes": 2195537,
+          "requests": 453
+        },
+        "image": {
+          "bytes": 1068397,
+          "requests": 11
+        },
+        "script": {
+          "bytes": 680467,
+          "requests": 196
+        },
+        "other": {
+          "bytes": 375836,
+          "requests": 241
+        },
+        "document": {
+          "bytes": 45593,
+          "requests": 2
+        },
+        "font": {
+          "bytes": 25244,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 358526,
+          "requests": 7
+        }
+      },
+      "scripts": 197,
+      "stylesheets": 0,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 11451,
+      "mainThreadMs": 3.9,
+      "top": [
+        {
+          "entity": "Cloudflare",
+          "bytes": 11451,
+          "mainThreadMs": 3.9
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 2229.1,
+      "byGroup": {
+        "other": 1164.7,
+        "scriptEvaluation": 774.9,
+        "styleLayout": 98.6,
+        "scriptParseCompile": 82.8,
+        "parseHTML": 58.1,
+        "paintCompositeRender": 50
+      },
+      "bootupMs": 762.3,
+      "longTasks": 3,
+      "longestTaskMs": 154
+    },
+    "dom": {
+      "elements": 740,
+      "depth": 22,
+      "maxChildren": 15
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 574,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 858483.6000000002,
+      "poorlyCachedCount": 12
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 25,
+      "failingNodes": 3,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 3
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 51
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2244.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-25T09:52:33.934Z",
+      "runtimeMs": 10706.1
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-27",
+      "last": "2026-08-23"
+    },
+    "metrics": {
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 94.2,
+          "needsImprovement": 3.8,
+          "poor": 2
+        }
+      },
+      "ttfb": {
+        "p75": 1147,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 55.4,
+          "needsImprovement": 34.2,
+          "poor": 10.4
+        }
+      },
+      "fcp": {
+        "p75": 1610,
+        "rating": "good",
+        "distribution": {
+          "good": 79.9,
+          "needsImprovement": 14.7,
+          "poor": 5.4
+        }
+      },
+      "inp": {
+        "p75": 48,
+        "rating": "good",
+        "distribution": {
+          "good": 99.1,
+          "needsImprovement": 0.9,
+          "poor": 0
+        }
+      },
+      "lcp": {
+        "p75": 1738,
+        "rating": "good",
+        "distribution": {
+          "good": 91,
+          "needsImprovement": 5.5,
+          "poor": 3.5
+        }
+      },
+      "rtt": {
+        "p75": 201,
+        "rating": null,
+        "distribution": {
+          "good": 25.7,
+          "needsImprovement": 58.8,
+          "poor": 15.5
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": {
+      "id": "qwik",
+      "name": "Qwik",
+      "icon": "Qwik",
+      "version": null,
+      "source": "dom",
+      "raw": null
+    },
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a309b4a8ee59d657-IAD",
+      "server": "cloudflare"
+    },
+    "violations": 6,
+    "passes": 1100,
+    "incomplete": 44,
+    "violationRules": 2,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 5,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Page should contain a level-one heading"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
