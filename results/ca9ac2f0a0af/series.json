@@ -1,0 +1,3 @@
+{"version":1,"url":"https://central.sonatype.com/","updated":"2026-08-25T16:36:32.251Z","points":[
+{"t":1787675753308,"performance":31,"accessibility":95,"best-practices":69,"seo":92,"lcp":6416,"cls":0.45,"tbt":1503,"fcp":1628,"si":2444,"ttfb":640,"total":3171352,"requests":85,"bytes":907531,"mainThreadMs":272.8,"unusedJsBytes":1644393,"unusedCssBytes":13601,"mainThreadTotal":4368.3,"longTasks":16,"elements":553,"failingCount":2,"failingNodes":2,"axeViolations":14,"axePasses":1204,"field-lcp":3421,"field-inp":287,"field-cls":0.46,"field-fcp":2401,"field-ttfb":1571,"bench":2479,"runs":3,"reqRuns":3,"ms":38939,"spread":13}
+]}

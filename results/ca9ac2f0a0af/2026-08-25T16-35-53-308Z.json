@@ -1,0 +1,312 @@
+{
+  "url": "https://central.sonatype.com/",
+  "name": "Maven Central",
+  "group": "package-managers",
+  "groupName": "Package Managers",
+  "timestamp": 1787675753308,
+  "date": "2026-08-25T16:35:53.308Z",
+  "runId": "2026-08-25T16-35-52-210Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 38939,
+  "error": null,
+  "variance": {
+    "min": 28,
+    "max": 41,
+    "spread": 13,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://central.sonatype.com/",
+    "finalUrl": "https://central.sonatype.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 31,
+      "accessibility": 95,
+      "best-practices": 69,
+      "seo": 92,
+      "agentic-browsing": 60
+    },
+    "timings": {
+      "fcp": 1628,
+      "lcp": 6416,
+      "si": 2444,
+      "tbt": 1503,
+      "tti": 18602,
+      "cls": 0.45,
+      "ttfb": 640,
+      "maxPotentialFid": 582,
+      "serverResponseTime": 52,
+      "networkRtt": 0.5,
+      "networkServerLatency": 75.3
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 54,
+      "resourceLoadDelay": 85,
+      "resourceLoadDuration": 53.5,
+      "elementRenderDelay": 207.7
+    },
+    "weight": {
+      "total": 3171352,
+      "requests": 85,
+      "mainDocument": 10281,
+      "byType": {
+        "total": {
+          "bytes": 3169135,
+          "requests": 84
+        },
+        "script": {
+          "bytes": 2435045,
+          "requests": 31
+        },
+        "image": {
+          "bytes": 547619,
+          "requests": 9
+        },
+        "font": {
+          "bytes": 91607,
+          "requests": 5
+        },
+        "stylesheet": {
+          "bytes": 69707,
+          "requests": 15
+        },
+        "other": {
+          "bytes": 14876,
+          "requests": 23
+        },
+        "document": {
+          "bytes": 10281,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 907531,
+          "requests": 13
+        }
+      },
+      "scripts": 31,
+      "stylesheets": 15,
+      "fonts": 5
+    },
+    "thirdParty": {
+      "count": 5,
+      "bytes": 907531,
+      "mainThreadMs": 272.8,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 485326,
+          "mainThreadMs": 149.6
+        },
+        {
+          "entity": "ZenDesk",
+          "bytes": 395808,
+          "mainThreadMs": 112.1
+        },
+        {
+          "entity": "Bizible",
+          "bytes": 26160,
+          "mainThreadMs": 11.1
+        },
+        {
+          "entity": "scarf.sh",
+          "bytes": 216,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Other Google APIs/SDKs",
+          "bytes": 21,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 4368.3,
+      "byGroup": {
+        "scriptEvaluation": 2459.6,
+        "other": 849.2,
+        "scriptParseCompile": 757.7,
+        "styleLayout": 175.3,
+        "paintCompositeRender": 75.1,
+        "parseHTML": 37.2,
+        "garbageCollection": 14.2
+      },
+      "bootupMs": 3026.4,
+      "longTasks": 16,
+      "longestTaskMs": 582
+    },
+    "dom": {
+      "elements": 553,
+      "depth": 16,
+      "maxChildren": 17
+    },
+    "waste": {
+      "unusedJsBytes": 1644393,
+      "unusedCssBytes": 13601,
+      "legacyJsBytes": 53703,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 450,
+      "renderBlockingCount": 13,
+      "poorlyCachedBytes": 13742.400000000001,
+      "poorlyCachedCount": 2
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 30,
+      "failingNodes": 2,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 1
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 0,
+      "bfCacheFailures": 3,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 2,
+      "baselineLimitedFeatures": 25
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2479,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-25T16:36:18.514Z",
+      "runtimeMs": 11093.5
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-27",
+      "last": "2026-08-23"
+    },
+    "metrics": {
+      "rtt": {
+        "p75": 216,
+        "rating": null,
+        "distribution": {
+          "good": 25.9,
+          "needsImprovement": 57.2,
+          "poor": 16.9
+        }
+      },
+      "cls": {
+        "p75": 0.46,
+        "rating": "poor",
+        "distribution": {
+          "good": 42.5,
+          "needsImprovement": 20.4,
+          "poor": 37.1
+        }
+      },
+      "ttfb": {
+        "p75": 1571,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 42,
+          "needsImprovement": 38.2,
+          "poor": 19.8
+        }
+      },
+      "fcp": {
+        "p75": 2401,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 56.5,
+          "needsImprovement": 27.8,
+          "poor": 15.7
+        }
+      },
+      "inp": {
+        "p75": 287,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 61.9,
+          "needsImprovement": 33.6,
+          "poor": 4.5
+        }
+      },
+      "lcp": {
+        "p75": 3421,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 55.2,
+          "needsImprovement": 27.4,
+          "poor": 17.4
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": {
+      "id": "nextjs",
+      "name": "Next.js",
+      "icon": "Nextdotjs",
+      "version": null,
+      "source": "dom",
+      "raw": null
+    },
+    "interstitial": null,
+    "host": null,
+    "headers": {
+      "x-powered-by": "Next.js"
+    },
+    "violations": 14,
+    "passes": 1204,
+    "incomplete": 17,
+    "violationRules": 3,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 12,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Heading levels should only increase by one"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
