@@ -351,6 +351,38 @@ export default {
 			],
 		},
 
+		// Migrated from v1's _data/sites/paulkinchladotcom.js and
+		// _data/sites/sevenpx.js, one group per v1 file. Plain URL list, same as
+		// the zachleat group above — no per-site options carried over from v1
+		// (that file's Cloudflare userAgent bypass has no vanilla equivalent
+		// here and is intentionally left out).
+		paulkinchladotcom: {
+			name: "paulkinchla.com",
+			enabled: true,
+			description: "My personal website.",
+			...DAILY,
+			...POLITE,
+			sites: [
+				{ url: "https://paulkinchla.com" },
+				{ url: "https://paulkinchla.com/about/" },
+				{ url: "https://paulkinchla.com/projects/" },
+				{ url: "https://paulkinchla.com/blog/" },
+				{ url: "https://paulkinchla.com/blog/2020/10/28/javascript-still-a-ghost/" },
+			],
+		},
+
+		sevenpx: {
+			name: "sevenpx.design",
+			enabled: true,
+			description: "Side project about drawing using Fresh",
+			...DAILY,
+			...POLITE,
+			sites: [
+				{ url: "https://sevenpx.design" },
+				{ url: "https://sevenpx.design/drawings/" },
+			],
+		},
+
 		"11ty-community": {
 			name: "Built Awesome",
 			enabled: true,
