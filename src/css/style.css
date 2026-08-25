@@ -434,15 +434,16 @@ th.col-trend { text-align: center !important; }
 
 .detail-shot {
 	width: var(--shot-width, 300px);
-	/* 4:3, matching the 800x600 viewport our own capture is taken at — stated so
-	   the space is reserved before the image arrives rather than after.
+	/* Square, and stated rather than inherited so the space is reserved before
+	   the image arrives rather than after.
 
-	   `cover` and a top anchor are still here for the sites whose picture still
-	   comes from the screenshot service at 1:1: those crop to their top edge
-	   rather than squashing, which is the half of a square screenshot worth
-	   showing anyway. */
+	   Not the capture's own ratio: those are 412x823 portrait now, matching the
+	   phone Lighthouse measures on, and a thumbnail that tall would push the
+	   rings and the URL beside it down the page. `cover` with a top anchor crops
+	   to the masthead instead, which is the part that identifies a site — and it
+	   handles the older 1:1 pictures from the screenshot service unchanged. */
 	height: auto;
-	aspect-ratio: 800 / 600;
+	aspect-ratio: 1;
 	object-fit: cover;
 	object-position: top center;
 	border: 1px solid var(--border);
@@ -1713,8 +1714,9 @@ a.cat-chip:hover, a.cat-chip:focus-visible { color: var(--text); border-color: v
  * show one at a time, which is the one arrangement that defeats it.
  */
 .nojs-pair {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
 	gap: 1rem;
 	margin-block: 1rem;
 }
@@ -1724,14 +1726,24 @@ a.cat-chip:hover, a.cat-chip:focus-visible { color: var(--text); border-color: v
 	min-width: 0;
 }
 
-/* The headline figure for the pair below it. Sized like a stat rather than
-   like body copy, because it is the one number this section exists to state. */
+/*
+ * The figure between the two frames, which is where it belongs: it describes
+ * the distance from one to the other, and reading it in the gap makes that
+ * relationship the sentence rather than a caption above the pair.
+ *
+ * A flex item among the frames, so it takes the middle column and centres
+ * against them. It stays legible when the row wraps on a narrow screen, where
+ * source order puts it between the two stacked pictures.
+ */
 .nojs-diff {
-	margin-block: 0.75rem 0;
+	margin: 0;
+	flex: 0 1 14em;
+	min-width: 8em;
 	display: flex;
-	align-items: baseline;
-	flex-wrap: wrap;
-	gap: 0.4rem;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 0.25rem;
 }
 
 .nojs-diff strong {
@@ -1747,15 +1759,30 @@ a.cat-chip:hover, a.cat-chip:focus-visible { color: var(--text); border-color: v
 }
 
 /*
- * Capped by height rather than width so the pair stays the same size as each
- * other whatever the viewport was. The border matters more than it looks: a
- * page that renders nothing without JavaScript is a white rectangle, and
- * without an edge it reads as a missing image rather than as the answer.
+ * Sized by height, with the width falling out of the ratio, so the two frames
+ * are always the same size as each other and always the same size from site to
+ * site — a comparison between two pictures only works if neither is scaled.
+ *
+ * 412x823 is the phone Lighthouse measures on, mirrored in lib/axe.js. Stated
+ * here rather than left to the intrinsic ratio so the row reserves its space
+ * before either image arrives.
+ *
+ * The border matters more than it looks: a page that renders nothing without
+ * JavaScript is a white rectangle, and without an edge it reads as a missing
+ * image rather than as the answer.
  */
 .nojs-shot img {
 	display: block;
-	width: 100%;
-	height: auto;
+	width: auto;
+	/* Tall enough to read, and capped so a tall window does not turn the pair
+	   into a wall. */
+	height: min(60vh, 26em);
+	aspect-ratio: 412 / 823;
+	/* Only bites if a capture is not the ratio above — a desktop run is 1350x940
+	   — where cropping to the top beats distorting the page. */
+	object-fit: cover;
+	object-position: top center;
+	max-width: 100%;
 	border: 1px solid var(--border);
 	border-radius: 3px;
 	background: var(--surface);

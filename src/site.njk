@@ -467,19 +467,6 @@ eleventyComputed:
 		application and damning for a blog, and this page cannot tell which it is
 		looking at. The figure is stated and left alone.
 	#}
-	{% if entry.ownScreenshot.difference !== null %}
-	<p class="nojs-diff">
-		<strong>{{ entry.ownScreenshot.difference }}%</strong>
-		<span class="muted small">of pixels differ between the two &mdash;
-			{% if entry.ownScreenshot.difference >= 95 %}they have almost nothing in common
-			{%- elif entry.ownScreenshot.difference >= 50 %}the page changes substantially
-			{%- elif entry.ownScreenshot.difference >= 10 %}parts of the page change
-			{%- elif entry.ownScreenshot.difference > 0 %}they are nearly identical
-			{%- else %}they are identical{% endif %}.
-			A shifted layout counts as difference, so a &lt;noscript&gt; banner alone
-			can account for a large figure.</span>
-	</p>
-	{% endif %}
 	{#
 		Scripts disabled first, so the eye lands on it before the familiar one.
 		The rendered page is what everybody expects a screenshot to be; putting it
@@ -493,6 +480,19 @@ eleventyComputed:
 				width="{{ entry.ownScreenshot.noJs.width or 800 }}" height="{{ entry.ownScreenshot.noJs.height or 600 }}"
 				alt="" loading="lazy" decoding="async">
 		</figure>
+		{% if entry.ownScreenshot.difference !== null %}
+		<p class="nojs-diff">
+			<strong>{{ entry.ownScreenshot.difference }}%</strong>
+			<span class="muted small">of pixels differ &mdash;
+				{% if entry.ownScreenshot.difference >= 95 %}they have almost nothing in common
+				{%- elif entry.ownScreenshot.difference >= 50 %}the page changes substantially
+				{%- elif entry.ownScreenshot.difference >= 10 %}parts of the page change
+				{%- elif entry.ownScreenshot.difference > 0 %}they are nearly identical
+				{%- else %}they are identical{% endif %}.
+				A shifted layout counts as difference, so a &lt;noscript&gt; banner alone
+				can account for a large figure.</span>
+		</p>
+		{% endif %}
 		<figure class="nojs-shot">
 			<figcaption>As rendered</figcaption>
 			<img src="{{ entry.ownScreenshot.src }}"
