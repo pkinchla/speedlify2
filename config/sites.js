@@ -311,6 +311,25 @@ export default {
 			],
 		},
 
+		builders: {
+			name: "Website Builders",
+			enabled: true,
+			description:
+				"Hosted tools that build and serve a site for you. The counterweight to every other category here: these pages are what a site looks like when the person making it never sees the output.",
+			...DAILY,
+			sites: [
+				{ name: "WordPress.com", url: "https://wordpress.com/" },
+				{ name: "Shopify", url: "https://www.shopify.com/" },
+				{ name: "Wix", url: "https://www.wix.com/" },
+				{ name: "Squarespace", url: "https://www.squarespace.com/" },
+				{ name: "Tilda", url: "https://tilda.cc/" },
+				{ name: "Webflow", url: "https://webflow.com/" },
+				{ name: "Duda", url: "https://www.duda.co/" },
+				{ name: "Framer", url: "https://www.framer.com/" },
+				{ name: "Nordcraft", url: "https://nordcraft.com/" },
+			],
+		},
+
 		zachleat: {
 			name: "zachleat.com",
 			enabled: true,
