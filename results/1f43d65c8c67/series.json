@@ -1,3 +1,0 @@
-{"version":1,"url":"https://electric-lime-starter.freshjuice.dev/","updated":"2026-08-20T21:27:04.124Z","points":[
-{"t":1787261198815,"performance":83,"accessibility":100,"best-practices":100,"seo":100,"lcp":1571,"cls":0.329,"tbt":0,"fcp":1545,"si":1545,"ttfb":615,"total":98688,"requests":10,"bytes":1256,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":349.6,"longTasks":2,"elements":236,"failingCount":0,"failingNodes":0,"axeViolations":2,"axePasses":410,"bench":2480,"runs":3,"reqRuns":3,"ms":25307,"spread":16}
-]}

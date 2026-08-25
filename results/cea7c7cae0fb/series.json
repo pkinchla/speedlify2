@@ -1,3 +1,0 @@
-{"version":1,"url":"https://kozen.or.jp/","updated":"2026-08-21T03:04:18.213Z","points":[
-{"t":1787281418449,"performance":59,"accessibility":91,"best-practices":100,"seo":100,"lcp":11203,"cls":0,"tbt":178,"fcp":4644,"si":6038,"ttfb":805,"total":1883968,"requests":31,"bytes":1395604,"mainThreadMs":53.8,"unusedJsBytes":93707,"unusedCssBytes":41040,"mainThreadTotal":973.6,"longTasks":3,"elements":355,"failingCount":2,"failingNodes":18,"axeViolations":20,"axePasses":463,"bench":2462.5,"runs":3,"reqRuns":3,"ms":39763,"spread":12}
-]}

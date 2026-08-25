@@ -1,3 +1,0 @@
-{"version":1,"url":"https://www.wix.com/","updated":"2026-08-25T14:02:06.284Z","points":[
-{"t":1787666434572,"performance":51,"accessibility":93,"best-practices":73,"seo":92,"lcp":3983,"cls":0.068,"tbt":1897,"fcp":3683,"si":3683,"ttfb":675,"total":3608107,"requests":388,"bytes":1362880,"mainThreadMs":723.1,"unusedJsBytes":597076,"unusedCssBytes":31157,"mainThreadTotal":12209.9,"longTasks":20,"elements":5412,"failingCount":3,"failingNodes":5,"axeViolations":3,"axePasses":5452,"field-lcp":3483,"field-inp":460,"field-cls":0,"field-fcp":2378,"field-ttfb":959,"bench":2825,"runs":3,"reqRuns":3,"ms":91711,"spread":28}
-]}

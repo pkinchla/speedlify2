@@ -1,3 +1,0 @@
-{"version":1,"url":"https://surma.dev/","updated":"2026-08-21T07:46:17.696Z","points":[
-{"t":1787298357491,"performance":96,"accessibility":83,"best-practices":100,"seo":85,"lcp":2416,"cls":0,"tbt":0,"fcp":2113,"si":2113,"ttfb":613,"total":189236,"requests":24,"bytes":12429,"mainThreadMs":2.5,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":532.6,"longTasks":0,"elements":121,"failingCount":2,"failingNodes":2,"axeViolations":2,"axePasses":214,"field-lcp":2551,"field-cls":0,"field-fcp":2028,"field-ttfb":1306,"bench":3008.5,"runs":3,"reqRuns":3,"ms":20204,"spread":1}
-]}

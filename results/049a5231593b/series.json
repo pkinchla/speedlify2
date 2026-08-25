@@ -1,3 +1,0 @@
-{"version":1,"url":"https://dominationchronicles.com/","updated":"2026-08-20T21:31:52.098Z","points":[
-{"t":1787261484156,"performance":84,"accessibility":100,"best-practices":100,"seo":100,"lcp":4525,"cls":0,"tbt":0,"fcp":1256,"si":1477,"ttfb":513,"total":659586,"requests":9,"bytes":11451,"mainThreadMs":1.5,"unusedJsBytes":0,"unusedCssBytes":42628,"mainThreadTotal":388.1,"longTasks":0,"elements":458,"failingCount":0,"failingNodes":0,"axeViolations":1,"axePasses":808,"bench":2283.5,"runs":3,"reqRuns":3,"ms":27941,"spread":7}
-]}

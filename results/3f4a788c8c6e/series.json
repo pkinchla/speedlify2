@@ -1,3 +1,0 @@
-{"version":1,"url":"https://fifty.snook.ca/","updated":"2026-08-20T22:31:24.117Z","points":[
-{"t":1787265061367,"performance":95,"accessibility":97,"best-practices":100,"seo":100,"lcp":2408,"cls":0,"tbt":0,"fcp":2277,"si":2277,"ttfb":603,"total":123844,"requests":10,"bytes":113095,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":182.2,"longTasks":0,"elements":392,"failingCount":1,"failingNodes":1,"axeViolations":2,"axePasses":696,"bench":2755.5,"runs":3,"reqRuns":3,"ms":22749,"spread":5}
-]}

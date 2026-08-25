@@ -1,3 +1,0 @@
-{"version":1,"url":"https://mijndertstuij.nl/","updated":"2026-08-21T04:41:35.213Z","points":[
-{"t":1787287272569,"performance":94,"accessibility":95,"best-practices":100,"seo":100,"lcp":2464,"cls":0.016,"tbt":0,"fcp":2464,"si":2464,"ttfb":469,"total":70081,"requests":12,"bytes":42007,"mainThreadMs":3.5,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":217.8,"longTasks":0,"elements":67,"failingCount":1,"failingNodes":23,"axeViolations":23,"axePasses":145,"bench":2491.5,"runs":3,"reqRuns":3,"ms":22643,"spread":0}
-]}

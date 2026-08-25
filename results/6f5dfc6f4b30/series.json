@@ -1,3 +1,0 @@
-{"version":1,"url":"https://smolcss.dev/","updated":"2026-08-21T06:51:37.115Z","points":[
-{"t":1787295068856,"performance":96,"accessibility":100,"best-practices":100,"seo":100,"lcp":2710,"cls":0,"tbt":0,"fcp":1204,"si":1204,"ttfb":604,"total":3057411,"requests":18,"bytes":180323,"mainThreadMs":2,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":547.4,"longTasks":1,"elements":2345,"failingCount":1,"failingNodes":20,"axeViolations":1,"axePasses":1898,"bench":2486.5,"runs":3,"reqRuns":3,"ms":28259,"spread":8}
-]}

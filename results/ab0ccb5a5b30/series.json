@@ -1,3 +1,0 @@
-{"version":1,"url":"https://11straps.com/","updated":"2026-08-20T19:03:34.708Z","points":[
-{"t":1787252589681,"performance":93,"accessibility":95,"best-practices":96,"seo":100,"lcp":2602,"cls":0.004,"tbt":0,"fcp":2602,"si":2602,"ttfb":603,"total":89765,"requests":14,"bytes":49841,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":239.9,"longTasks":0,"elements":70,"failingCount":1,"failingNodes":1,"axeViolations":1,"axePasses":147,"bench":2514.5,"runs":3,"reqRuns":3,"ms":25024,"spread":6}
-]}

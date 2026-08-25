@@ -1,3 +1,0 @@
-{"version":1,"url":"https://developer.chrome.com/","updated":"2026-08-20T20:39:38.341Z","points":[
-{"t":1787258329456,"performance":50,"accessibility":93,"best-practices":77,"seo":92,"lcp":7030,"cls":0.003,"tbt":1000,"fcp":2805,"si":2933,"ttfb":801,"total":1741727,"requests":68,"bytes":1770883,"mainThreadMs":441.8,"unusedJsBytes":525900,"unusedCssBytes":134239,"mainThreadTotal":3423,"longTasks":11,"elements":828,"failingCount":2,"failingNodes":22,"axeViolations":23,"axePasses":970,"field-lcp":3036,"field-inp":287,"field-cls":0.02,"field-fcp":2976,"field-ttfb":1899,"bench":2336.5,"runs":3,"reqRuns":3,"ms":48884,"spread":3}
-]}

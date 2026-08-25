@@ -1,3 +1,0 @@
-{"version":1,"url":"https://jonwebb.dev/","updated":"2026-08-21T01:15:37.386Z","points":[
-{"t":1787274915096,"to":"https://jonwebb.dev/Home","perm":0,"performance":92,"accessibility":96,"best-practices":100,"seo":100,"lcp":3220,"cls":0,"tbt":41,"fcp":1758,"si":1758,"ttfb":695,"total":288196,"requests":9,"bytes":318165,"mainThreadMs":56,"unusedJsBytes":77509,"unusedCssBytes":16805,"mainThreadTotal":496.7,"longTasks":2,"elements":131,"failingCount":2,"failingNodes":2,"axeViolations":15,"axePasses":157,"bench":2493,"runs":3,"reqRuns":3,"ms":22290,"spread":3}
-]}

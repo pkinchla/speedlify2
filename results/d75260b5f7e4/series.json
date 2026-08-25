@@ -1,3 +1,0 @@
-{"version":1,"url":"https://stevennewcomb.com/","updated":"2026-08-21T08:44:50.551Z","points":[
-{"t":1787301867779,"performance":99,"accessibility":100,"best-practices":100,"seo":100,"lcp":1720,"cls":0,"tbt":0,"fcp":1570,"si":1570,"ttfb":499,"total":33261,"requests":8,"bytes":11451,"mainThreadMs":3,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":146.7,"longTasks":0,"elements":84,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":95,"bench":2481,"runs":3,"reqRuns":3,"ms":22771,"spread":1}
-]}

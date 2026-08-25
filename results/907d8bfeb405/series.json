@@ -1,3 +1,0 @@
-{"version":1,"url":"https://www.sarrosenvironmental.com/","updated":"2026-08-21T19:32:57.698Z","points":[
-{"t":1787340728533,"to":"https://sarrosenvironmental.com/","perm":1,"performance":63,"accessibility":90,"best-practices":100,"seo":92,"lcp":12133,"cls":0.026,"tbt":150,"fcp":3839,"si":4369,"ttfb":664,"total":2456727,"requests":123,"bytes":205454,"mainThreadMs":53.3,"unusedJsBytes":90326,"unusedCssBytes":177854,"mainThreadTotal":2480.5,"longTasks":9,"elements":929,"failingCount":3,"failingNodes":8,"axeViolations":67,"axePasses":931,"bench":2510.5,"runs":3,"reqRuns":3,"ms":49165,"spread":12}
-]}

@@ -1,3 +1,0 @@
-{"version":1,"url":"https://www.vitaline.by/","updated":"2026-08-21T20:26:57.422Z","points":[
-{"t":1787343988760,"performance":77,"accessibility":100,"best-practices":77,"seo":100,"lcp":4977,"cls":0,"tbt":102,"fcp":2590,"si":3211,"ttfb":781,"total":401700,"requests":17,"bytes":233839,"mainThreadMs":44.7,"unusedJsBytes":54196,"unusedCssBytes":0,"mainThreadTotal":518.7,"longTasks":1,"elements":336,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":666,"bench":2484.5,"runs":3,"reqRuns":3,"ms":28661,"spread":17}
-]}

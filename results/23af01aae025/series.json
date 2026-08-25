@@ -1,3 +1,0 @@
-{"version":1,"url":"https://www.albertoballesteros.com/","updated":"2026-08-21T17:30:14.999Z","points":[
-{"t":1787333391209,"performance":97,"accessibility":100,"best-practices":100,"seo":100,"lcp":2349,"cls":0.007,"tbt":133,"fcp":1204,"si":2193,"ttfb":812,"total":335862,"requests":15,"bytes":2436,"mainThreadMs":1.9,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":908.6,"longTasks":2,"elements":118,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":114,"bench":2463,"runs":3,"reqRuns":3,"ms":23789,"spread":7}
-]}

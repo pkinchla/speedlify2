@@ -1,3 +1,0 @@
-{"version":1,"url":"https://mindos.in/","updated":"2026-08-21T03:09:36.865Z","points":[
-{"t":1787281745567,"performance":87,"accessibility":96,"best-practices":73,"seo":100,"lcp":3251,"cls":0,"tbt":72,"fcp":2827,"si":3296,"ttfb":825,"total":247663,"requests":15,"bytes":161420,"mainThreadMs":62.2,"unusedJsBytes":71273,"unusedCssBytes":0,"mainThreadTotal":498.9,"longTasks":2,"elements":316,"failingCount":2,"failingNodes":3,"axeViolations":18,"axePasses":458,"bench":2279,"runs":3,"reqRuns":3,"ms":31297,"spread":4}
-]}

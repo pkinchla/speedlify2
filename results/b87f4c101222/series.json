@@ -1,3 +1,0 @@
-{"version":1,"url":"https://tilda.cc/","updated":"2026-08-25T13:50:44.707Z","points":[
-{"t":1787665804318,"performance":62,"accessibility":81,"best-practices":100,"seo":92,"lcp":5149,"cls":0.308,"tbt":0,"fcp":2384,"si":2384,"ttfb":673,"total":695032,"requests":99,"bytes":582084,"mainThreadMs":50,"unusedJsBytes":23982,"unusedCssBytes":0,"mainThreadTotal":5472.8,"longTasks":9,"elements":1704,"failingCount":6,"failingNodes":65,"axeViolations":103,"axePasses":2255,"field-lcp":3276,"field-inp":245,"field-cls":0.39,"field-fcp":1950,"field-ttfb":1239,"bench":2353,"runs":3,"reqRuns":3,"ms":40385,"spread":4}
-]}

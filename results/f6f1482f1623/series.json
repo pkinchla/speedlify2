@@ -1,3 +1,0 @@
-{"version":1,"url":"https://robjwood.com/","updated":"2026-08-21T05:43:14.496Z","points":[
-{"t":1787290960547,"performance":77,"accessibility":66,"best-practices":73,"seo":85,"lcp":5084,"cls":0.052,"tbt":211,"fcp":1579,"si":1579,"ttfb":734,"total":709876,"requests":20,"bytes":351561,"mainThreadMs":70.1,"unusedJsBytes":72568,"unusedCssBytes":47542,"mainThreadTotal":2207.5,"longTasks":4,"elements":953,"failingCount":11,"failingNodes":32,"axeViolations":81,"axePasses":971,"bench":2386.5,"runs":3,"reqRuns":3,"ms":33947,"spread":7}
-]}

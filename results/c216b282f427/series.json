@@ -1,3 +1,0 @@
-{"version":1,"url":"https://htmlrecipes.dev/","updated":"2026-08-20T23:32:06.441Z","points":[
-{"t":1787268699661,"performance":99,"accessibility":100,"best-practices":100,"seo":91,"lcp":1696,"cls":0,"tbt":0,"fcp":1696,"si":1696,"ttfb":636,"total":14120,"requests":9,"bytes":2673,"mainThreadMs":2.8,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":277.7,"longTasks":1,"elements":2115,"failingCount":0,"failingNodes":0,"axeViolations":16,"axePasses":3031,"bench":2310.5,"runs":3,"reqRuns":3,"ms":26780,"spread":1}
-]}

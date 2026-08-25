@@ -1,3 +1,0 @@
-{"version":1,"url":"https://wipdeveloper.com/","updated":"2026-08-21T10:35:00.135Z","points":[
-{"t":1787308475778,"performance":64,"accessibility":100,"best-practices":100,"seo":100,"lcp":10365,"cls":0.212,"tbt":0,"fcp":1598,"si":1598,"ttfb":532,"total":1826160,"requests":19,"bytes":11451,"mainThreadMs":5,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":311,"longTasks":0,"elements":175,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":312,"bench":2392,"runs":3,"reqRuns":3,"ms":24356,"spread":11}
-]}

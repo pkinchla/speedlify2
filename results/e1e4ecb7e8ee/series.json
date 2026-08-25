@@ -1,3 +1,0 @@
-{"version":1,"url":"https://imaginelenses.com/","updated":"2026-08-20T23:29:29.387Z","points":[
-{"t":1787268547389,"performance":96,"accessibility":100,"best-practices":100,"seo":100,"lcp":2563,"cls":0,"tbt":0,"fcp":1826,"si":1826,"ttfb":613,"total":480852,"requests":16,"bytes":59455,"mainThreadMs":7.2,"unusedJsBytes":0,"unusedCssBytes":28123,"mainThreadTotal":306.7,"longTasks":0,"elements":80,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":167,"bench":2447,"runs":3,"reqRuns":3,"ms":21997,"spread":2}
-]}

@@ -1,3 +1,0 @@
-{"version":1,"url":"https://hamburg.stefanimhoff.de/","updated":"2026-08-20T23:32:55.308Z","points":[
-{"t":1787268744895,"performance":97,"accessibility":100,"best-practices":100,"seo":100,"lcp":2460,"cls":0,"tbt":0,"fcp":1545,"si":2843,"ttfb":614,"total":1070154,"requests":30,"bytes":3393,"mainThreadMs":1.6,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":460.2,"longTasks":0,"elements":177,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":436,"bench":2488.5,"runs":3,"reqRuns":3,"ms":30412,"spread":1}
-]}

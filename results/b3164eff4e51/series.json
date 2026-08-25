@@ -1,3 +1,0 @@
-{"version":1,"url":"https://www.grandlimousine.com/","updated":"2026-08-21T10:38:03.189Z","points":[
-{"t":1787308659312,"performance":87,"accessibility":100,"best-practices":100,"seo":100,"lcp":3304,"cls":0,"tbt":0,"fcp":3004,"si":3004,"ttfb":604,"total":414180,"requests":15,"bytes":801,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":50839,"mainThreadTotal":291.4,"longTasks":0,"elements":606,"failingCount":0,"failingNodes":0,"axeViolations":1,"axePasses":1009,"bench":2988.5,"runs":3,"reqRuns":3,"ms":23877,"spread":12}
-]}

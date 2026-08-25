@@ -1,3 +1,0 @@
-{"version":1,"url":"https://nicolas-hoizey.photo/","updated":"2026-08-21T04:44:34.077Z","points":[
-{"t":1787287446412,"performance":91,"accessibility":100,"best-practices":100,"seo":100,"lcp":3458,"cls":0.03,"tbt":0,"fcp":920,"si":920,"ttfb":749,"total":496621,"requests":18,"bytes":422054,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":252.6,"longTasks":0,"elements":385,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":712,"bench":4199.5,"runs":3,"reqRuns":3,"ms":27664,"spread":1}
-]}

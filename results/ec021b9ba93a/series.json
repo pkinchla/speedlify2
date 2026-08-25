@@ -1,3 +1,0 @@
-{"version":1,"url":"https://melaniekat.com/","updated":"2026-08-21T03:07:47.450Z","points":[
-{"t":1787281641690,"performance":99,"accessibility":100,"best-practices":96,"seo":69,"lcp":1738,"cls":0.012,"tbt":0,"fcp":1657,"si":1657,"ttfb":697,"total":99057,"requests":16,"bytes":639,"mainThreadMs":1.3,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":974.5,"longTasks":3,"elements":30,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":61,"bench":2328.5,"runs":3,"reqRuns":3,"ms":25759,"spread":4}
-]}

@@ -1,3 +1,0 @@
-{"version":1,"url":"https://mess.gr/","updated":"2026-08-21T04:40:16.293Z","points":[
-{"t":1787287194864,"performance":82,"accessibility":85,"best-practices":100,"seo":100,"lcp":4181,"cls":0.001,"tbt":36,"fcp":2604,"si":2604,"ttfb":629,"total":395989,"requests":11,"bytes":382518,"mainThreadMs":51.3,"unusedJsBytes":138301,"unusedCssBytes":0,"mainThreadTotal":1121.1,"longTasks":2,"elements":116,"failingCount":3,"failingNodes":9,"axeViolations":11,"axePasses":196,"bench":4195,"runs":3,"reqRuns":3,"ms":21428,"spread":12}
-]}

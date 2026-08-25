@@ -1,3 +1,0 @@
-{"version":1,"url":"https://yonga.io/","updated":"2026-08-21T20:32:28.872Z","points":[
-{"t":1787344322349,"performance":96,"accessibility":90,"best-practices":100,"seo":92,"lcp":2570,"cls":0.045,"tbt":58,"fcp":1753,"si":1753,"ttfb":460,"total":401123,"requests":15,"bytes":182789,"mainThreadMs":56.9,"unusedJsBytes":73068,"unusedCssBytes":0,"mainThreadTotal":558.6,"longTasks":2,"elements":223,"failingCount":3,"failingNodes":11,"axeViolations":11,"axePasses":360,"bench":2466.5,"runs":3,"reqRuns":3,"ms":26522,"spread":12}
-]}

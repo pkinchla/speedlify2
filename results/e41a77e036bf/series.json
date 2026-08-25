@@ -1,3 +1,0 @@
-{"version":1,"url":"https://danielpza.xyz/","updated":"2026-08-20T19:39:59.705Z","points":[
-{"t":1787254778302,"performance":99,"accessibility":100,"best-practices":100,"seo":91,"lcp":1698,"cls":0,"tbt":0,"fcp":1698,"si":1698,"ttfb":483,"total":26923,"requests":5,"bytes":12357,"mainThreadMs":4.1,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":140.1,"longTasks":0,"elements":32,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":84,"bench":2373,"runs":3,"reqRuns":3,"ms":21402,"spread":3}
-]}

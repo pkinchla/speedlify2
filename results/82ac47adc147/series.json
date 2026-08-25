@@ -1,3 +1,0 @@
-{"version":1,"url":"https://moderncss.dev/","updated":"2026-08-21T05:31:51.488Z","points":[
-{"t":1787290283031,"performance":99,"accessibility":100,"best-practices":100,"seo":100,"lcp":1954,"cls":0,"tbt":0,"fcp":904,"si":904,"ttfb":604,"total":188242,"requests":13,"bytes":76516,"mainThreadMs":6.5,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":283.7,"longTasks":1,"elements":301,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":475,"field-lcp":1352,"field-cls":0,"field-fcp":1353,"field-ttfb":710,"bench":2475,"runs":3,"reqRuns":3,"ms":28455,"spread":6}
-]}

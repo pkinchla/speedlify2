@@ -1,3 +1,0 @@
-{"version":1,"url":"https://barsan.kz/","updated":"2026-08-20T15:47:35.885Z","points":[
-{"t":1787240827767,"performance":77,"accessibility":96,"best-practices":100,"seo":100,"lcp":4892,"cls":0,"tbt":238,"fcp":1667,"si":1874,"ttfb":617,"total":1334125,"requests":34,"bytes":311555,"mainThreadMs":128,"unusedJsBytes":170886,"unusedCssBytes":18701,"mainThreadTotal":1372.9,"longTasks":4,"elements":361,"failingCount":1,"failingNodes":5,"axeViolations":7,"axePasses":689,"bench":2251.5,"runs":3,"reqRuns":3,"ms":28117,"spread":8}
-]}

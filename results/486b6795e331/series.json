@@ -1,3 +1,0 @@
-{"version":1,"url":"https://www.gifgun.io/","updated":"2026-08-21T11:45:53.276Z","points":[
-{"t":1787312715232,"performance":100,"accessibility":100,"best-practices":96,"seo":100,"lcp":1889,"cls":0,"tbt":52,"fcp":909,"si":909,"ttfb":609,"total":9732490,"requests":20,"bytes":6427541,"mainThreadMs":52.4,"unusedJsBytes":73063,"unusedCssBytes":0,"mainThreadTotal":683.2,"longTasks":3,"elements":382,"failingCount":0,"failingNodes":0,"axeViolations":1,"axePasses":519,"bench":2488.5,"runs":3,"reqRuns":3,"ms":38043,"spread":0}
-]}

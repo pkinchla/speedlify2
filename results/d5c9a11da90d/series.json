@@ -1,3 +1,0 @@
-{"version":1,"url":"https://classic-mahjong.com/","updated":"2026-08-20T20:29:29.676Z","points":[
-{"t":1787257721675,"performance":50,"accessibility":100,"best-practices":77,"seo":100,"lcp":4505,"cls":0,"tbt":3694,"fcp":2105,"si":4680,"ttfb":605,"total":2891528,"requests":128,"bytes":2013805,"mainThreadMs":645.9,"unusedJsBytes":992208,"unusedCssBytes":0,"mainThreadTotal":7110.2,"longTasks":20,"elements":442,"failingCount":0,"failingNodes":0,"axeViolations":3,"axePasses":605,"field-lcp":1967,"field-inp":120,"field-cls":0,"field-fcp":1159,"field-ttfb":502,"bench":2492,"runs":3,"reqRuns":3,"ms":48001,"spread":6}
-]}

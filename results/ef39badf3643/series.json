@@ -1,3 +1,0 @@
-{"version":1,"url":"https://11ty-beer.vercel.app/","updated":"2026-08-20T19:04:05.028Z","points":[
-{"t":1787252617714,"performance":100,"accessibility":98,"best-practices":100,"seo":100,"lcp":1555,"cls":0,"tbt":0,"fcp":1076,"si":1076,"ttfb":626,"total":2373143,"requests":32,"bytes":1973,"mainThreadMs":2.4,"unusedJsBytes":0,"unusedCssBytes":14533,"mainThreadTotal":535,"longTasks":1,"elements":508,"failingCount":1,"failingNodes":1,"axeViolations":2,"axePasses":382,"bench":3027.5,"runs":3,"reqRuns":3,"ms":27313,"spread":44}
-]}

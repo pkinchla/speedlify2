@@ -1,3 +1,0 @@
-{"version":1,"url":"https://extensionworkshop.com/","updated":"2026-08-20T22:30:33.677Z","points":[
-{"t":1787265003852,"performance":82,"accessibility":93,"best-practices":100,"seo":92,"lcp":4754,"cls":0.002,"tbt":107,"fcp":1369,"si":1939,"ttfb":769,"total":777442,"requests":41,"bytes":183689,"mainThreadMs":49.5,"unusedJsBytes":101988,"unusedCssBytes":33724,"mainThreadTotal":1140.5,"longTasks":4,"elements":1412,"failingCount":3,"failingNodes":8,"axeViolations":6,"axePasses":638,"field-lcp":1948,"field-inp":174,"field-cls":0.01,"field-fcp":1426,"field-ttfb":786,"bench":2348.5,"runs":3,"reqRuns":3,"ms":29824,"spread":22}
-]}

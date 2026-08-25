@@ -1,3 +1,0 @@
-{"version":1,"url":"https://perthshiregravel.com/","updated":"2026-08-21T14:34:57.810Z","points":[
-{"t":1787322866048,"performance":99,"accessibility":100,"best-practices":100,"seo":100,"lcp":2155,"cls":0,"tbt":6,"fcp":1018,"si":1018,"ttfb":603,"total":673515,"requests":19,"bytes":520,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":443.9,"longTasks":2,"elements":874,"failingCount":0,"failingNodes":0,"axeViolations":7,"axePasses":1182,"bench":2392,"runs":3,"reqRuns":3,"ms":31760,"spread":9}
-]}

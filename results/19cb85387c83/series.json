@@ -1,3 +1,0 @@
-{"version":1,"url":"https://whitep4nth3r.com/","updated":"2026-08-21T10:35:41.386Z","points":[
-{"t":1787308490005,"performance":48,"accessibility":100,"best-practices":100,"seo":100,"lcp":6195,"cls":0.835,"tbt":80,"fcp":2934,"si":2934,"ttfb":632,"total":696527,"requests":25,"bytes":677158,"mainThreadMs":74,"unusedJsBytes":36559,"unusedCssBytes":0,"mainThreadTotal":754.6,"longTasks":1,"elements":181,"failingCount":1,"failingNodes":6,"axeViolations":0,"axePasses":429,"field-lcp":1573,"field-cls":0,"field-fcp":1418,"field-ttfb":811,"bench":2304.5,"runs":2,"reqRuns":3,"ms":51380,"spread":20}
-]}

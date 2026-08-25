@@ -1,3 +1,0 @@
-{"version":1,"url":"https://bigaston.me/","updated":"2026-08-20T16:10:45.614Z","points":[
-{"t":1787242217796,"performance":74,"accessibility":72,"best-practices":100,"seo":82,"lcp":8795,"cls":0.015,"tbt":0,"fcp":1916,"si":1916,"ttfb":695,"total":10013240,"requests":32,"bytes":8558084,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":530.1,"longTasks":0,"elements":127,"failingCount":3,"failingNodes":69,"axeViolations":69,"axePasses":264,"bench":2355,"runs":3,"reqRuns":3,"ms":27817,"spread":4}
-]}

@@ -1,3 +1,0 @@
-{"version":1,"url":"https://hylia.website/","updated":"2026-08-20T23:35:09.513Z","points":[
-{"t":1787268886737,"performance":99,"accessibility":100,"best-practices":100,"seo":100,"lcp":1649,"cls":0,"tbt":54,"fcp":1649,"si":1649,"ttfb":737,"total":126604,"requests":7,"bytes":66888,"mainThreadMs":28.6,"unusedJsBytes":0,"unusedCssBytes":21305,"mainThreadTotal":321.1,"longTasks":1,"elements":75,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":194,"bench":2485,"runs":3,"reqRuns":3,"ms":22776,"spread":1}
-]}

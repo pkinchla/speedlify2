@@ -1,3 +1,0 @@
-{"version":1,"url":"https://2022.barcampomaha.org/","updated":"2026-08-20T15:37:40.805Z","points":[
-{"t":1787240232271,"performance":79,"accessibility":81,"best-practices":100,"seo":92,"lcp":4271,"cls":0.078,"tbt":5,"fcp":2906,"si":2906,"ttfb":613,"total":950975,"requests":69,"bytes":84016,"mainThreadMs":0.4,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":3201.3,"longTasks":2,"elements":226,"failingCount":3,"failingNodes":6,"axeViolations":10,"axePasses":497,"bench":2323.5,"runs":3,"reqRuns":3,"ms":28533,"spread":1}
-]}

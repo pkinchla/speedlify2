@@ -1,3 +1,0 @@
-{"version":1,"url":"https://atom-editor.cc/","updated":"2026-08-20T16:30:34.403Z","points":[
-{"t":1787243411567,"performance":99,"accessibility":90,"best-practices":100,"seo":83,"lcp":1917,"cls":0,"tbt":0,"fcp":1547,"si":1547,"ttfb":625,"total":278232,"requests":24,"bytes":11451,"mainThreadMs":3.4,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":461.5,"longTasks":1,"elements":180,"failingCount":3,"failingNodes":5,"axeViolations":15,"axePasses":310,"field-lcp":1811,"field-inp":95,"field-cls":0,"field-fcp":1496,"field-ttfb":974,"bench":2451.5,"runs":3,"reqRuns":3,"ms":22836,"spread":0}
-]}

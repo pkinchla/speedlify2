@@ -1,3 +1,0 @@
-{"version":1,"url":"https://www.mikestreety.co.uk/","updated":"2026-08-21T13:50:13.532Z","points":[
-{"t":1787320190185,"performance":99,"accessibility":100,"best-practices":100,"seo":100,"lcp":1707,"cls":0.001,"tbt":0,"fcp":1707,"si":1707,"ttfb":482,"total":82344,"requests":13,"bytes":16460,"mainThreadMs":5.9,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":236,"longTasks":0,"elements":118,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":241,"bench":2461,"runs":3,"reqRuns":3,"ms":23346,"spread":6}
-]}

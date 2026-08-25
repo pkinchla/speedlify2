@@ -1,3 +1,0 @@
-{"version":1,"url":"https://rknight.me/","updated":"2026-08-21T06:50:15.959Z","points":[
-{"t":1787294984781,"performance":77,"accessibility":100,"best-practices":100,"seo":100,"lcp":5087,"cls":0,"tbt":0,"fcp":1998,"si":4224,"ttfb":737,"total":1019301,"requests":74,"bytes":3806,"mainThreadMs":3.1,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":474.7,"longTasks":0,"elements":626,"failingCount":0,"failingNodes":0,"axeViolations":14,"axePasses":605,"field-lcp":1692,"field-inp":52,"field-cls":0,"field-fcp":1689,"field-ttfb":819,"bench":2614,"runs":3,"reqRuns":3,"ms":31177,"spread":15}
-]}

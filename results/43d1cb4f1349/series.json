@@ -1,3 +1,0 @@
-{"version":1,"url":"https://southpawspetservice.com/","updated":"2026-08-21T06:53:36.468Z","points":[
-{"t":1787295181240,"to":"https://www.southpawspetservice.com/","perm":1,"performance":83,"accessibility":100,"best-practices":100,"seo":85,"lcp":3890,"cls":0.013,"tbt":141,"fcp":2558,"si":2558,"ttfb":671,"total":203300,"requests":51,"bytes":1833404,"mainThreadMs":143.1,"unusedJsBytes":71601,"unusedCssBytes":0,"mainThreadTotal":1745.6,"longTasks":5,"elements":711,"failingCount":0,"failingNodes":0,"axeViolations":1,"axePasses":722,"bench":2466.5,"runs":3,"reqRuns":3,"ms":35227,"spread":26}
-]}

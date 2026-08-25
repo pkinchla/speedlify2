@@ -1,3 +1,0 @@
-{"version":1,"url":"https://theo-courant.com/","updated":"2026-08-21T09:41:02.505Z","points":[
-{"t":1787305234873,"performance":74,"accessibility":97,"best-practices":96,"seo":100,"lcp":7862,"cls":0,"tbt":0,"fcp":2026,"si":2026,"ttfb":475,"total":1906421,"requests":53,"bytes":1655307,"mainThreadMs":10.8,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":684.8,"longTasks":1,"elements":279,"failingCount":1,"failingNodes":1,"axeViolations":45,"axePasses":436,"field-lcp":1624,"field-inp":79,"field-cls":0,"field-fcp":1257,"field-ttfb":646,"bench":2389,"runs":3,"reqRuns":3,"ms":27631,"spread":4}
-]}

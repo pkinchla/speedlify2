@@ -1,3 +1,0 @@
-{"version":1,"url":"https://www.srva.ai/","updated":"2026-08-21T19:35:21.689Z","points":[
-{"t":1787340894220,"performance":99,"accessibility":100,"best-practices":100,"seo":100,"lcp":1646,"cls":0.024,"tbt":32,"fcp":1646,"si":1646,"ttfb":632,"total":588371,"requests":17,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":1345.8,"longTasks":2,"elements":1039,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":1051,"bench":2456.5,"runs":3,"reqRuns":3,"ms":27468,"spread":0}
-]}

@@ -1,3 +1,0 @@
-{"version":1,"url":"https://www.averagenerdpost.com/","updated":"2026-08-21T09:41:20.864Z","points":[
-{"t":1787305258342,"performance":99,"accessibility":95,"best-practices":100,"seo":100,"lcp":1868,"cls":0,"tbt":0,"fcp":1703,"si":1703,"ttfb":484,"total":326421,"requests":32,"bytes":11450,"mainThreadMs":3.9,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":268.7,"longTasks":0,"elements":102,"failingCount":2,"failingNodes":5,"axeViolations":0,"axePasses":222,"bench":2481,"runs":3,"reqRuns":3,"ms":22521,"spread":2}
-]}

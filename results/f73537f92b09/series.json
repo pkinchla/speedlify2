@@ -1,3 +1,0 @@
-{"version":1,"url":"https://contentthread.com/","updated":"2026-08-20T20:33:19.753Z","points":[
-{"t":1787257966432,"to":"https://aircompany.ai/en/adobe","perm":1,"performance":61,"accessibility":80,"best-practices":73,"seo":67,"lcp":14051,"cls":0,"tbt":289,"fcp":3338,"si":4143,"ttfb":609,"total":3215816,"requests":85,"bytes":3214713,"mainThreadMs":305.3,"unusedJsBytes":340215,"unusedCssBytes":12938,"mainThreadTotal":2023.9,"longTasks":8,"elements":659,"failingCount":6,"failingNodes":19,"axeViolations":14,"axePasses":1035,"bench":2505.5,"runs":3,"reqRuns":3,"ms":33320,"spread":7}
-]}

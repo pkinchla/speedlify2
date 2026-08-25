@@ -1,3 +1,0 @@
-{"version":1,"url":"https://developers.thegreenwebfoundation.org/","updated":"2026-08-20T21:29:55.181Z","points":[
-{"t":1787261371356,"performance":99,"accessibility":94,"best-practices":100,"seo":100,"lcp":1832,"cls":0.028,"tbt":0,"fcp":1682,"si":1682,"ttfb":619,"total":47447,"requests":11,"bytes":20514,"mainThreadMs":6.8,"unusedJsBytes":0,"unusedCssBytes":11518,"mainThreadTotal":304.1,"longTasks":0,"elements":314,"failingCount":2,"failingNodes":4,"axeViolations":33,"axePasses":512,"bench":2379.5,"runs":3,"reqRuns":3,"ms":23824,"spread":2}
-]}

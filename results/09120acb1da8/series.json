@@ -1,3 +1,0 @@
-{"version":1,"url":"https://bejamas.io/","updated":"2026-08-20T15:49:26.569Z","points":[
-{"t":1787240923022,"to":"https://bejamas.com/","perm":1,"performance":85,"accessibility":100,"best-practices":73,"seo":100,"lcp":3674,"cls":0,"tbt":54,"fcp":2764,"si":2764,"ttfb":483,"total":1470297,"requests":45,"bytes":1469877,"mainThreadMs":126.4,"unusedJsBytes":47710,"unusedCssBytes":0,"mainThreadTotal":2261.1,"longTasks":3,"elements":503,"failingCount":0,"failingNodes":0,"axeViolations":1,"axePasses":585,"bench":2351.5,"runs":3,"reqRuns":3,"ms":43547,"spread":3}
-]}

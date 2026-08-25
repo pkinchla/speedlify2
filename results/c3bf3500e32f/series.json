@@ -1,3 +1,0 @@
-{"version":1,"url":"https://pracowniawschodnia.pl/","updated":"2026-08-21T05:42:37.535Z","points":[
-{"t":1787290933446,"performance":95,"accessibility":100,"best-practices":100,"seo":100,"lcp":2840,"cls":0,"tbt":48,"fcp":1078,"si":1078,"ttfb":628,"total":266744,"requests":12,"bytes":187937,"mainThreadMs":62.7,"unusedJsBytes":90942,"unusedCssBytes":0,"mainThreadTotal":419.7,"longTasks":2,"elements":106,"failingCount":0,"failingNodes":0,"axeViolations":1,"axePasses":217,"bench":2470.5,"runs":3,"reqRuns":3,"ms":24088,"spread":10}
-]}

@@ -1,3 +1,0 @@
-{"version":1,"url":"https://practical.guide/","updated":"2026-08-21T06:48:46.794Z","points":[
-{"t":1787294895982,"performance":67,"accessibility":73,"best-practices":100,"seo":82,"lcp":9528,"cls":0,"tbt":149,"fcp":3103,"si":3134,"ttfb":1128,"total":4138926,"requests":13,"bytes":382289,"mainThreadMs":87.4,"unusedJsBytes":137034,"unusedCssBytes":0,"mainThreadTotal":705.6,"longTasks":4,"elements":162,"failingCount":4,"failingNodes":22,"axeViolations":24,"axePasses":272,"bench":2448.5,"runs":3,"reqRuns":3,"ms":30811,"spread":21}
-]}

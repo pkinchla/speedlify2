@@ -1,3 +1,0 @@
-{"version":1,"url":"https://www.ellyloel.com/","updated":"2026-08-21T12:47:50.420Z","points":[
-{"t":1787316442661,"performance":64,"accessibility":96,"best-practices":96,"seo":100,"lcp":4560,"cls":0.388,"tbt":15,"fcp":1839,"si":1839,"ttfb":470,"total":561665,"requests":37,"bytes":43863,"mainThreadMs":7.7,"unusedJsBytes":0,"unusedCssBytes":18195,"mainThreadTotal":826.1,"longTasks":4,"elements":626,"failingCount":1,"failingNodes":1,"axeViolations":3,"axePasses":1161,"bench":2461.5,"runs":3,"reqRuns":3,"ms":27759,"spread":11}
-]}

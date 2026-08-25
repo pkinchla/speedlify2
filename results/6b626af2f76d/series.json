@@ -1,3 +1,0 @@
-{"version":1,"url":"https://lessonsofacto.com/","updated":"2026-08-21T03:10:59.640Z","points":[
-{"t":1787281819928,"performance":88,"accessibility":96,"best-practices":100,"seo":100,"lcp":3841,"cls":0,"tbt":0,"fcp":1734,"si":1734,"ttfb":616,"total":1623038,"requests":67,"bytes":38749,"mainThreadMs":21,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":845.4,"longTasks":2,"elements":527,"failingCount":1,"failingNodes":22,"axeViolations":24,"axePasses":429,"bench":2428.5,"runs":3,"reqRuns":3,"ms":39711,"spread":7}
-]}

@@ -1,3 +1,0 @@
-{"version":1,"url":"https://darrenhickling.com/","updated":"2026-08-20T21:27:58.742Z","points":[
-{"t":1787261250449,"performance":98,"accessibility":92,"best-practices":100,"seo":100,"lcp":2260,"cls":0,"tbt":75,"fcp":910,"si":910,"ttfb":610,"total":479910,"requests":88,"bytes":0,"mainThreadMs":0,"unusedJsBytes":27954,"unusedCssBytes":0,"mainThreadTotal":943.4,"longTasks":1,"elements":229,"failingCount":3,"failingNodes":40,"axeViolations":23,"axePasses":394,"bench":2316,"runs":3,"reqRuns":3,"ms":28293,"spread":6}
-]}

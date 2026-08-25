@@ -1,3 +1,0 @@
-{"version":1,"url":"https://shivjm.name/","updated":"2026-08-21T08:00:16.317Z","points":[
-{"t":1787299195130,"performance":95,"accessibility":100,"best-practices":96,"seo":100,"lcp":891,"cls":0.143,"tbt":0,"fcp":891,"si":1578,"ttfb":716,"total":78379,"requests":7,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":166.2,"longTasks":0,"elements":51,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":125,"bench":2804.5,"runs":3,"reqRuns":3,"ms":21186,"spread":9}
-]}

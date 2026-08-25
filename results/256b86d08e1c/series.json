@@ -1,3 +1,0 @@
-{"version":1,"url":"https://wtf.smth.uk/","updated":"2026-08-21T10:40:35.396Z","points":[
-{"t":1787308813607,"performance":100,"accessibility":100,"best-practices":100,"seo":100,"lcp":856,"cls":0,"tbt":0,"fcp":856,"si":856,"ttfb":682,"total":761796,"requests":12,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":263.5,"longTasks":0,"elements":31,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":51,"bench":2307,"runs":3,"reqRuns":3,"ms":21788,"spread":0}
-]}

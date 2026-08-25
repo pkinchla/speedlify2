@@ -1,3 +1,0 @@
-{"version":1,"url":"https://nealgamradt.com/","updated":"2026-08-21T04:53:04.075Z","points":[
-{"t":1787287957220,"performance":74,"accessibility":63,"best-practices":96,"seo":100,"lcp":4933,"cls":0.004,"tbt":179,"fcp":3003,"si":3003,"ttfb":603,"total":486369,"requests":19,"bytes":232717,"mainThreadMs":83.9,"unusedJsBytes":95039,"unusedCssBytes":12648,"mainThreadTotal":653,"longTasks":4,"elements":65,"failingCount":5,"failingNodes":9,"axeViolations":12,"axePasses":87,"bench":2514.5,"runs":3,"reqRuns":3,"ms":26854,"spread":18}
-]}

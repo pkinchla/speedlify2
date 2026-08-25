@@ -1,3 +1,0 @@
-{"version":1,"url":"https://eleventy-kickstart-blog.vercel.app/","updated":"2026-08-20T21:31:48.930Z","points":[
-{"t":1787261486616,"performance":68,"accessibility":89,"best-practices":100,"seo":91,"lcp":14748,"cls":0,"tbt":147,"fcp":3048,"si":3048,"ttfb":648,"total":2617371,"requests":11,"bytes":166527,"mainThreadMs":78.7,"unusedJsBytes":68961,"unusedCssBytes":0,"mainThreadTotal":1403.5,"longTasks":5,"elements":89,"failingCount":2,"failingNodes":2,"axeViolations":7,"axePasses":127,"bench":2293.5,"runs":3,"reqRuns":3,"ms":22313,"spread":1}
-]}

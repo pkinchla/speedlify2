@@ -1,3 +1,0 @@
-{"version":1,"url":"https://quickchart.io/","updated":"2026-08-21T06:51:55.299Z","points":[
-{"t":1787295087729,"performance":82,"accessibility":67,"best-practices":100,"seo":82,"lcp":4751,"cls":0.019,"tbt":120,"fcp":1026,"si":1380,"ttfb":513,"total":928691,"requests":37,"bytes":451604,"mainThreadMs":131,"unusedJsBytes":179720,"unusedCssBytes":0,"mainThreadTotal":1038.5,"longTasks":5,"elements":1006,"failingCount":7,"failingNodes":43,"axeViolations":74,"axePasses":632,"field-lcp":1279,"field-inp":95,"field-cls":0,"field-fcp":1170,"field-ttfb":653,"bench":2489,"runs":3,"reqRuns":3,"ms":27570,"spread":7}
-]}

@@ -1,3 +1,0 @@
-{"version":1,"url":"https://jcmendez.io/","updated":"2026-08-21T01:17:47.636Z","points":[
-{"t":1787275031355,"performance":75,"accessibility":94,"best-practices":77,"seo":100,"lcp":5433,"cls":0.002,"tbt":58,"fcp":2758,"si":2758,"ttfb":466,"total":1714210,"requests":36,"bytes":376495,"mainThreadMs":79.7,"unusedJsBytes":136411,"unusedCssBytes":51250,"mainThreadTotal":1359.8,"longTasks":4,"elements":998,"failingCount":2,"failingNodes":13,"axeViolations":18,"axePasses":1416,"bench":2477,"runs":3,"reqRuns":3,"ms":36281,"spread":16}
-]}

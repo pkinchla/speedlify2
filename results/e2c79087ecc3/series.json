@@ -1,3 +1,0 @@
-{"version":1,"url":"https://cybercultural.com/","updated":"2026-08-20T19:33:16.551Z","points":[
-{"t":1787254373027,"performance":95,"accessibility":100,"best-practices":100,"seo":100,"lcp":2855,"cls":0,"tbt":41,"fcp":1695,"si":1695,"ttfb":477,"total":742941,"requests":20,"bytes":167369,"mainThreadMs":50.6,"unusedJsBytes":70094,"unusedCssBytes":0,"mainThreadTotal":448,"longTasks":2,"elements":161,"failingCount":0,"failingNodes":0,"axeViolations":1,"axePasses":370,"field-lcp":1122,"field-cls":0,"field-fcp":990,"field-ttfb":536,"bench":2445.5,"runs":3,"reqRuns":3,"ms":23522,"spread":3}
-]}

@@ -1,3 +1,0 @@
-{"version":1,"url":"https://ninerakes.com/","updated":"2026-08-21T04:44:56.217Z","points":[
-{"t":1787287477078,"to":"https://www.ninerakes.com/","perm":0,"performance":97,"accessibility":83,"best-practices":100,"seo":100,"lcp":2355,"cls":0,"tbt":0,"fcp":1695,"si":1695,"ttfb":620,"total":72310,"requests":10,"bytes":12469,"mainThreadMs":1.7,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":162.4,"longTasks":0,"elements":90,"failingCount":2,"failingNodes":2,"axeViolations":2,"axePasses":27,"bench":4468,"runs":2,"reqRuns":3,"ms":19138,"spread":0}
-]}

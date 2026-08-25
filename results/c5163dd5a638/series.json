@@ -1,3 +1,0 @@
-{"version":1,"url":"https://badlydrawnben.com/","updated":"2026-08-20T16:32:47.402Z","points":[
-{"t":1787243543468,"performance":100,"accessibility":100,"best-practices":100,"seo":100,"lcp":1079,"cls":0,"tbt":0,"fcp":978,"si":978,"ttfb":629,"total":425107,"requests":25,"bytes":53749,"mainThreadMs":22.1,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":731.8,"longTasks":0,"elements":309,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":425,"bench":2482.5,"runs":3,"reqRuns":3,"ms":23933,"spread":1}
-]}

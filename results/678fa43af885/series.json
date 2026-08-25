@@ -1,3 +1,0 @@
-{"version":1,"url":"https://checkthisout.today/","updated":"2026-08-20T19:36:24.159Z","points":[
-{"t":1787254562870,"performance":96,"accessibility":100,"best-practices":100,"seo":100,"lcp":2655,"cls":0.011,"tbt":0,"fcp":1689,"si":1689,"ttfb":630,"total":435258,"requests":24,"bytes":78418,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":308.2,"longTasks":0,"elements":96,"failingCount":0,"failingNodes":0,"axeViolations":1,"axePasses":156,"bench":4421.5,"runs":3,"reqRuns":3,"ms":21288,"spread":6}
-]}

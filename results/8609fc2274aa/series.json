@@ -1,3 +1,0 @@
-{"version":1,"url":"https://rootedregalia.com/","updated":"2026-08-21T14:48:29.818Z","points":[
-{"t":1787323681349,"performance":69,"accessibility":79,"best-practices":96,"seo":92,"lcp":24157,"cls":0,"tbt":264,"fcp":1763,"si":1763,"ttfb":502,"total":4104674,"requests":17,"bytes":608308,"mainThreadMs":111.5,"unusedJsBytes":89738,"unusedCssBytes":34461,"mainThreadTotal":1015.6,"longTasks":3,"elements":132,"failingCount":4,"failingNodes":7,"axeViolations":1,"axePasses":69,"bench":2474.5,"runs":3,"reqRuns":3,"ms":28468,"spread":17}
-]}

@@ -1,3 +1,0 @@
-{"version":1,"url":"https://normadesign.it/","updated":"2026-08-21T05:41:08.256Z","points":[
-{"t":1787290845276,"to":"https://normadesign.it/en","perm":0,"performance":78,"accessibility":96,"best-practices":100,"seo":100,"lcp":5605,"cls":0,"tbt":0,"fcp":1850,"si":1850,"ttfb":464,"total":1325690,"requests":30,"bytes":757936,"mainThreadMs":3.7,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":359.6,"longTasks":0,"elements":258,"failingCount":1,"failingNodes":5,"axeViolations":1,"axePasses":582,"bench":2490.5,"runs":3,"reqRuns":3,"ms":22979,"spread":15}
-]}

@@ -1,3 +1,0 @@
-{"version":1,"url":"https://www.imkhoi.com/","updated":"2026-08-21T12:46:20.050Z","points":[
-{"t":1787316357469,"performance":78,"accessibility":95,"best-practices":100,"seo":100,"lcp":6164,"cls":0.004,"tbt":0,"fcp":914,"si":914,"ttfb":614,"total":1236160,"requests":16,"bytes":295513,"mainThreadMs":2.2,"unusedJsBytes":0,"unusedCssBytes":20565,"mainThreadTotal":349.5,"longTasks":0,"elements":331,"failingCount":1,"failingNodes":2,"axeViolations":3,"axePasses":260,"bench":2487.5,"runs":3,"reqRuns":3,"ms":22580,"spread":8}
-]}

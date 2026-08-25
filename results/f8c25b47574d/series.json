@@ -1,3 +1,0 @@
-{"version":1,"url":"https://sonnet.io/","updated":"2026-08-21T06:52:34.060Z","points":[
-{"t":1787295129468,"performance":84,"accessibility":100,"best-practices":96,"seo":100,"lcp":3342,"cls":0.07,"tbt":0,"fcp":3342,"si":3342,"ttfb":612,"total":196350,"requests":11,"bytes":184370,"mainThreadMs":2.1,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":191.5,"longTasks":0,"elements":42,"failingCount":0,"failingNodes":0,"axeViolations":1,"axePasses":99,"bench":2493.5,"runs":3,"reqRuns":3,"ms":24592,"spread":0}
-]}

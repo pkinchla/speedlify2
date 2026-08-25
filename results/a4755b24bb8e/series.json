@@ -1,3 +1,0 @@
-{"version":1,"url":"https://codeadrian.github.io/","updated":"2026-08-20T19:34:29.233Z","points":[
-{"t":1787254444186,"performance":99,"accessibility":100,"best-practices":100,"seo":100,"lcp":1532,"cls":0.046,"tbt":0,"fcp":1532,"si":1532,"ttfb":602,"total":156708,"requests":19,"bytes":41424,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":476.6,"longTasks":0,"elements":688,"failingCount":0,"failingNodes":0,"axeViolations":9,"axePasses":728,"bench":2399,"runs":3,"reqRuns":3,"ms":25046,"spread":1}
-]}

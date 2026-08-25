@@ -1,3 +1,0 @@
-{"version":1,"url":"https://www.fluid-type-scale.com/","updated":"2026-08-21T11:44:17.979Z","points":[
-{"t":1787312635960,"performance":96,"accessibility":100,"best-practices":100,"seo":100,"lcp":2280,"cls":0.071,"tbt":60,"fcp":1905,"si":1905,"ttfb":460,"total":168685,"requests":19,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":508.6,"longTasks":2,"elements":241,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":591,"bench":2496,"runs":3,"reqRuns":3,"ms":22019,"spread":1}
-]}

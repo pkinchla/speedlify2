@@ -1,3 +1,0 @@
-{"version":1,"url":"https://trusting-pasteur-48f806.netlify.app/","updated":"2026-08-21T09:46:26.627Z","points":[
-{"t":1787305564747,"performance":100,"accessibility":88,"best-practices":100,"seo":100,"lcp":1803,"cls":0,"tbt":0,"fcp":770,"si":770,"ttfb":603,"total":212592,"requests":5,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":129.9,"longTasks":0,"elements":49,"failingCount":3,"failingNodes":3,"axeViolations":11,"axePasses":125,"bench":2494.5,"runs":3,"reqRuns":3,"ms":21879,"spread":1}
-]}

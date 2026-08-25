@@ -1,3 +1,0 @@
-{"version":1,"url":"https://www.adamdj.tel/","updated":"2026-08-21T17:29:48.209Z","points":[
-{"t":1787333362871,"performance":96,"accessibility":100,"best-practices":81,"seo":100,"lcp":1011,"cls":0,"tbt":230,"fcp":1011,"si":2078,"ttfb":660,"total":359985,"requests":11,"bytes":11577,"mainThreadMs":3.9,"unusedJsBytes":0,"unusedCssBytes":20505,"mainThreadTotal":1310.4,"longTasks":2,"elements":131,"failingCount":0,"failingNodes":0,"axeViolations":1,"axePasses":73,"bench":2451,"runs":3,"reqRuns":3,"ms":25337,"spread":6}
-]}

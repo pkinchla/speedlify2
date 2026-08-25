@@ -1,3 +1,0 @@
-{"version":1,"url":"https://www.fiff.de/","updated":"2026-08-21T12:49:07.207Z","points":[
-{"t":1787316492597,"performance":59,"accessibility":91,"best-practices":100,"seo":83,"lcp":17707,"cls":0.009,"tbt":0,"fcp":4001,"si":8414,"ttfb":888,"total":5960230,"requests":201,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":50809,"mainThreadTotal":1224.1,"longTasks":3,"elements":1950,"failingCount":5,"failingNodes":107,"axeViolations":151,"axePasses":3676,"bench":2468,"runs":3,"reqRuns":3,"ms":54609,"spread":23}
-]}

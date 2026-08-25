@@ -1,3 +1,0 @@
-{"version":1,"url":"https://sebduggan.uk/","updated":"2026-08-21T07:55:15.428Z","points":[
-{"t":1787298888873,"performance":99,"accessibility":100,"best-practices":100,"seo":100,"lcp":1559,"cls":0,"tbt":0,"fcp":1552,"si":1552,"ttfb":630,"total":73674,"requests":10,"bytes":11419,"mainThreadMs":3,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":211.8,"longTasks":0,"elements":124,"failingCount":0,"failingNodes":0,"axeViolations":2,"axePasses":230,"bench":2817.5,"runs":3,"reqRuns":3,"ms":26554,"spread":0}
-]}

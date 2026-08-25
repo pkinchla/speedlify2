@@ -1,3 +1,0 @@
-{"version":1,"url":"https://spacebook.app/","updated":"2026-08-21T07:48:45.841Z","points":[
-{"t":1787298505018,"performance":100,"accessibility":96,"best-practices":100,"seo":92,"lcp":806,"cls":0,"tbt":0,"fcp":806,"si":806,"ttfb":628,"total":62593,"requests":5,"bytes":7681,"mainThreadMs":0.7,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":199.7,"longTasks":0,"elements":208,"failingCount":1,"failingNodes":1,"axeViolations":4,"axePasses":470,"bench":4293,"runs":3,"reqRuns":3,"ms":20823,"spread":1}
-]}

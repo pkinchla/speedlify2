@@ -1,3 +1,0 @@
-{"version":1,"url":"https://vpnclear.com/","updated":"2026-08-21T08:47:39.891Z","points":[
-{"t":1787301961571,"performance":84,"accessibility":96,"best-practices":58,"seo":100,"lcp":2620,"cls":0.082,"tbt":285,"fcp":2470,"si":3864,"ttfb":471,"total":1315582,"requests":104,"bytes":684932,"mainThreadMs":221.4,"unusedJsBytes":354205,"unusedCssBytes":0,"mainThreadTotal":2893.2,"longTasks":6,"elements":367,"failingCount":1,"failingNodes":13,"axeViolations":14,"axePasses":665,"field-lcp":1852,"field-inp":277,"field-cls":0.09,"field-fcp":1855,"field-ttfb":1154,"bench":2829.5,"runs":3,"reqRuns":3,"ms":98319,"spread":44}
-]}

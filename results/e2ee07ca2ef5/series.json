@@ -1,3 +1,0 @@
-{"version":1,"url":"https://ww0cj.radio/","updated":"2026-08-21T17:28:41.406Z","points":[
-{"t":1787333300677,"performance":95,"accessibility":100,"best-practices":100,"seo":100,"lcp":2307,"cls":0.055,"tbt":0,"fcp":2307,"si":2307,"ttfb":611,"total":33829,"requests":5,"bytes":29680,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":267.3,"longTasks":1,"elements":28,"failingCount":0,"failingNodes":0,"axeViolations":5,"axePasses":3,"bench":2426,"runs":3,"reqRuns":3,"ms":20728,"spread":4}
-]}

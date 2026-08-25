@@ -1,3 +1,0 @@
-{"version":1,"url":"https://cathydutton.co.uk/","updated":"2026-08-20T19:35:26.749Z","points":[
-{"t":1787254505182,"performance":95,"accessibility":100,"best-practices":100,"seo":100,"lcp":2724,"cls":0,"tbt":22,"fcp":1526,"si":2790,"ttfb":614,"total":282075,"requests":27,"bytes":171525,"mainThreadMs":38.7,"unusedJsBytes":73068,"unusedCssBytes":0,"mainThreadTotal":455.3,"longTasks":2,"elements":234,"failingCount":1,"failingNodes":1,"axeViolations":8,"axePasses":686,"bench":3876,"runs":3,"reqRuns":3,"ms":21566,"spread":6}
-]}

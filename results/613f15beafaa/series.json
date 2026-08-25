@@ -1,3 +1,0 @@
-{"version":1,"url":"https://chromatichq.com/","updated":"2026-08-20T19:37:38.753Z","points":[
-{"t":1787254625801,"performance":62,"accessibility":93,"best-practices":58,"seo":100,"lcp":12847,"cls":0,"tbt":484,"fcp":1084,"si":2849,"ttfb":634,"total":1590894,"requests":93,"bytes":904277,"mainThreadMs":287.4,"unusedJsBytes":309246,"unusedCssBytes":24622,"mainThreadTotal":3600.8,"longTasks":13,"elements":336,"failingCount":3,"failingNodes":5,"axeViolations":39,"axePasses":505,"bench":4394.5,"runs":3,"reqRuns":3,"ms":32952,"spread":8}
-]}

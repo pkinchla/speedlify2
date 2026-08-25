@@ -1,3 +1,0 @@
-{"version":1,"url":"https://doddle.agency/","updated":"2026-08-20T20:32:20.634Z","points":[
-{"t":1787257911220,"performance":91,"accessibility":95,"best-practices":96,"seo":100,"lcp":2112,"cls":0.135,"tbt":132,"fcp":2112,"si":2112,"ttfb":718,"total":1175355,"requests":28,"bytes":1030947,"mainThreadMs":103.6,"unusedJsBytes":213548,"unusedCssBytes":0,"mainThreadTotal":1000.4,"longTasks":5,"elements":448,"failingCount":1,"failingNodes":15,"axeViolations":15,"axePasses":809,"bench":2486.5,"runs":3,"reqRuns":3,"ms":29413,"spread":16}
-]}

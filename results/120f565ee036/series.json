@@ -1,3 +1,0 @@
-{"version":1,"url":"https://jordanjohnson.pt/","updated":"2026-08-21T01:21:34.175Z","points":[
-{"t":1787275271425,"performance":99,"accessibility":100,"best-practices":100,"seo":100,"lcp":2085,"cls":0,"tbt":5,"fcp":822,"si":822,"ttfb":474,"total":225390,"requests":20,"bytes":17657,"mainThreadMs":24.5,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":345.4,"longTasks":1,"elements":107,"failingCount":0,"failingNodes":0,"axeViolations":1,"axePasses":253,"bench":2485,"runs":3,"reqRuns":3,"ms":22749,"spread":1}
-]}

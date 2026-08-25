@@ -1,3 +1,0 @@
-{"version":1,"url":"https://dino-fakten.de/","updated":"2026-08-20T20:28:53.717Z","points":[
-{"t":1787257703403,"performance":76,"accessibility":97,"best-practices":100,"seo":100,"lcp":6932,"cls":0.001,"tbt":0,"fcp":1770,"si":1770,"ttfb":686,"total":967501,"requests":40,"bytes":12729,"mainThreadMs":4.3,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":857.2,"longTasks":1,"elements":413,"failingCount":2,"failingNodes":9,"axeViolations":19,"axePasses":853,"bench":2465,"runs":3,"reqRuns":3,"ms":30313,"spread":4}
-]}

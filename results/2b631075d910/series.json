@@ -1,3 +1,0 @@
-{"version":1,"url":"https://samsmith.uk/","updated":"2026-08-21T07:52:32.692Z","points":[
-{"t":1787298730403,"performance":100,"accessibility":100,"best-practices":100,"seo":100,"lcp":1735,"cls":0,"tbt":0,"fcp":984,"si":1815,"ttfb":945,"total":225527,"requests":14,"bytes":4916,"mainThreadMs":2.8,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":205.1,"longTasks":0,"elements":91,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":178,"bench":2832.5,"runs":3,"reqRuns":3,"ms":22289,"spread":0}
-]}

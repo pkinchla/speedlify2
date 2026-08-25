@@ -1,3 +1,0 @@
-{"version":1,"url":"https://www.hno-marienplatz.de/","updated":"2026-08-21T12:51:20.528Z","points":[
-{"t":1787316656396,"performance":98,"accessibility":96,"best-practices":96,"seo":100,"lcp":1948,"cls":0,"tbt":0,"fcp":1948,"si":1948,"ttfb":629,"total":161785,"requests":14,"bytes":2433,"mainThreadMs":2.7,"unusedJsBytes":0,"unusedCssBytes":12584,"mainThreadTotal":299.5,"longTasks":0,"elements":322,"failingCount":1,"failingNodes":6,"axeViolations":9,"axePasses":407,"field-lcp":954,"field-cls":0,"field-fcp":877,"bench":2383.5,"runs":3,"reqRuns":3,"ms":24131,"spread":2}
-]}

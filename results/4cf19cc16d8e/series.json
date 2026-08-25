@@ -1,3 +1,0 @@
-{"version":1,"url":"https://horseracingdatasets.com/","updated":"2026-08-21T01:14:51.026Z","points":[
-{"t":1787274869095,"performance":99,"accessibility":100,"best-practices":100,"seo":100,"lcp":1837,"cls":0,"tbt":0,"fcp":1666,"si":1666,"ttfb":637,"total":178653,"requests":8,"bytes":2673,"mainThreadMs":1.9,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":150.6,"longTasks":0,"elements":93,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":222,"bench":3454,"runs":3,"reqRuns":3,"ms":21930,"spread":1}
-]}

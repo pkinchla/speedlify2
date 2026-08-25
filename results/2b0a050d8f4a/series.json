@@ -1,3 +1,0 @@
-{"version":1,"url":"https://divriots.com/","updated":"2026-08-20T21:30:51.757Z","points":[
-{"t":1787261421606,"performance":73,"accessibility":94,"best-practices":92,"seo":92,"lcp":5390,"cls":0.003,"tbt":22,"fcp":3408,"si":3408,"ttfb":614,"total":934985,"requests":39,"bytes":657690,"mainThreadMs":3.9,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":2019.9,"longTasks":3,"elements":883,"failingCount":2,"failingNodes":9,"axeViolations":43,"axePasses":1205,"field-lcp":1322,"field-cls":0.28,"field-fcp":1071,"field-ttfb":615,"bench":2308.5,"runs":3,"reqRuns":3,"ms":30151,"spread":2}
-]}

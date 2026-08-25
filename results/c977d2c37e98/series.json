@@ -1,3 +1,0 @@
-{"version":1,"url":"https://platforms.barnardos.org.uk/","updated":"2026-08-21T04:43:30.533Z","points":[
-{"t":1787287388557,"performance":98,"accessibility":100,"best-practices":100,"seo":100,"lcp":2022,"cls":0,"tbt":17,"fcp":1872,"si":1872,"ttfb":461,"total":83803,"requests":7,"bytes":66589,"mainThreadMs":29.4,"unusedJsBytes":0,"unusedCssBytes":21305,"mainThreadTotal":261.9,"longTasks":2,"elements":150,"failingCount":0,"failingNodes":0,"axeViolations":1,"axePasses":206,"bench":2489,"runs":3,"reqRuns":3,"ms":21975,"spread":2}
-]}

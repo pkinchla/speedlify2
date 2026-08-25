@@ -1,3 +1,0 @@
-{"version":1,"url":"https://myonlinecookbook.netlify.app/","updated":"2026-08-21T04:38:17.293Z","points":[
-{"t":1787287075965,"performance":93,"accessibility":100,"best-practices":100,"seo":100,"lcp":3156,"cls":0.002,"tbt":87,"fcp":1356,"si":1356,"ttfb":606,"total":511197,"requests":6,"bytes":64045,"mainThreadMs":33.2,"unusedJsBytes":0,"unusedCssBytes":21305,"mainThreadTotal":342.1,"longTasks":1,"elements":114,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":143,"bench":2496.5,"runs":3,"reqRuns":3,"ms":21327,"spread":1}
-]}

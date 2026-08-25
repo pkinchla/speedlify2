@@ -1,3 +1,0 @@
-{"version":1,"url":"https://aphera.co/","updated":"2026-08-20T15:44:48.138Z","points":[
-{"t":1787240657512,"performance":73,"accessibility":92,"best-practices":77,"seo":100,"lcp":35333,"cls":0.065,"tbt":0,"fcp":1724,"si":2577,"ttfb":608,"total":9077973,"requests":35,"bytes":32377,"mainThreadMs":10.3,"unusedJsBytes":0,"unusedCssBytes":13189,"mainThreadTotal":2079,"longTasks":1,"elements":318,"failingCount":2,"failingNodes":11,"axeViolations":11,"axePasses":641,"bench":2387,"runs":3,"reqRuns":3,"ms":30625,"spread":1}
-]}

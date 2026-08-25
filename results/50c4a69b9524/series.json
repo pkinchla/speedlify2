@@ -1,3 +1,0 @@
-{"version":1,"url":"https://renatasalonunique.nl/","updated":"2026-08-21T05:36:52.842Z","points":[
-{"t":1787290587970,"performance":99,"accessibility":100,"best-practices":100,"seo":100,"lcp":1693,"cls":0,"tbt":0,"fcp":1693,"si":1693,"ttfb":693,"total":296654,"requests":15,"bytes":3787,"mainThreadMs":0.6,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":229.8,"longTasks":0,"elements":194,"failingCount":0,"failingNodes":0,"axeViolations":3,"axePasses":270,"bench":2319.5,"runs":3,"reqRuns":3,"ms":24871,"spread":1}
-]}

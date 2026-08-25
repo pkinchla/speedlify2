@@ -1,3 +1,0 @@
-{"version":1,"url":"https://plaksin.net/","updated":"2026-08-21T14:35:53.419Z","points":[
-{"t":1787322927633,"performance":100,"accessibility":100,"best-practices":100,"seo":100,"lcp":1632,"cls":0,"tbt":0,"fcp":1002,"si":1002,"ttfb":778,"total":79343,"requests":22,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":241.9,"longTasks":0,"elements":97,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":254,"bench":2477.5,"runs":3,"reqRuns":3,"ms":25785,"spread":0}
-]}

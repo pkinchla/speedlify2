@@ -1,3 +1,0 @@
-{"version":1,"url":"https://florian.ec/","updated":"2026-08-20T22:27:56.731Z","points":[
-{"t":1787264853564,"performance":99,"accessibility":100,"best-practices":100,"seo":100,"lcp":1673,"cls":0.034,"tbt":0,"fcp":1523,"si":1523,"ttfb":458,"total":155965,"requests":12,"bytes":16262,"mainThreadMs":4.9,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":278.6,"longTasks":0,"elements":174,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":406,"bench":2351.5,"runs":3,"reqRuns":3,"ms":23163,"spread":5}
-]}

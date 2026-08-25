@@ -1,3 +1,0 @@
-{"version":1,"url":"https://sport-game-catalog.netlify.app/","updated":"2026-08-21T07:43:10.932Z","points":[
-{"t":1787298159514,"performance":98,"accessibility":100,"best-practices":100,"seo":100,"lcp":2256,"cls":0.043,"tbt":41,"fcp":1206,"si":1206,"ttfb":606,"total":432978,"requests":40,"bytes":95053,"mainThreadMs":42.4,"unusedJsBytes":34708,"unusedCssBytes":0,"mainThreadTotal":2227.7,"longTasks":3,"elements":320,"failingCount":0,"failingNodes":0,"axeViolations":6,"axePasses":540,"bench":2952.5,"runs":3,"reqRuns":3,"ms":31417,"spread":23}
-]}

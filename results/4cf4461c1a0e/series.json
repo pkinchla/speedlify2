@@ -1,3 +1,0 @@
-{"version":1,"url":"https://webawesome.com/","updated":"2026-08-21T10:31:54.050Z","points":[
-{"t":1787308272205,"performance":56,"accessibility":97,"best-practices":100,"seo":100,"lcp":5686,"cls":0.043,"tbt":642,"fcp":2461,"si":5103,"ttfb":660,"total":807198,"requests":347,"bytes":215076,"mainThreadMs":40.1,"unusedJsBytes":97403,"unusedCssBytes":0,"mainThreadTotal":3800.1,"longTasks":15,"elements":4961,"failingCount":1,"failingNodes":1,"axeViolations":8,"axePasses":1544,"field-lcp":6222,"field-inp":337,"field-cls":0.07,"field-fcp":6202,"field-ttfb":1199,"bench":2349.5,"runs":3,"reqRuns":3,"ms":41844,"spread":1}
-]}

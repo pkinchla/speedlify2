@@ -1,3 +1,0 @@
-{"version":1,"url":"https://authomnibus.com/","updated":"2026-08-20T16:30:58.799Z","points":[
-{"t":1787243437403,"performance":76,"accessibility":98,"best-practices":100,"seo":100,"lcp":1832,"cls":0.586,"tbt":0,"fcp":1682,"si":1682,"ttfb":624,"total":92735,"requests":14,"bytes":42456,"mainThreadMs":2.7,"unusedJsBytes":0,"unusedCssBytes":26257,"mainThreadTotal":275,"longTasks":0,"elements":222,"failingCount":1,"failingNodes":1,"axeViolations":3,"axePasses":519,"bench":2510.5,"runs":3,"reqRuns":3,"ms":21396,"spread":0}
-]}

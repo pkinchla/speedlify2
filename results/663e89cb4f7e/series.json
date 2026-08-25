@@ -1,3 +1,0 @@
-{"version":1,"url":"https://craigerskine.github.io/11ty-twind","updated":"2026-08-20T19:12:43.961Z","points":[
-{"t":1787253143527,"performance":97,"accessibility":100,"best-practices":100,"seo":100,"lcp":2038,"cls":0.014,"tbt":0,"fcp":2038,"si":2255,"ttfb":841,"total":139837,"requests":9,"bytes":53059,"mainThreadMs":0,"unusedJsBytes":33542,"unusedCssBytes":0,"mainThreadTotal":485.7,"longTasks":1,"elements":308,"failingCount":0,"failingNodes":0,"axeViolations":2,"axePasses":456,"bench":2999.5,"runs":2,"reqRuns":3,"ms":20434,"spread":1}
-]}

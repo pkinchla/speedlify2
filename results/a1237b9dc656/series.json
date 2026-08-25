@@ -1,3 +1,0 @@
-{"version":1,"url":"https://shimma.info/","updated":"2026-08-21T07:59:52.129Z","points":[
-{"t":1787299160915,"performance":59,"accessibility":84,"best-practices":96,"seo":92,"lcp":10419,"cls":0,"tbt":403,"fcp":2262,"si":5063,"ttfb":819,"total":2814808,"requests":20,"bytes":480696,"mainThreadMs":134.4,"unusedJsBytes":208950,"unusedCssBytes":18363,"mainThreadTotal":1373.3,"longTasks":6,"elements":617,"failingCount":4,"failingNodes":51,"axeViolations":48,"axePasses":821,"field-lcp":659,"field-inp":88,"field-cls":0,"field-fcp":526,"field-ttfb":198,"bench":2800.5,"runs":3,"reqRuns":3,"ms":31214,"spread":13}
-]}

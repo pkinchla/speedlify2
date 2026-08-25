@@ -1,3 +1,0 @@
-{"version":1,"url":"https://fightwithtools.dev/","updated":"2026-08-20T21:34:59.422Z","points":[
-{"t":1787261677378,"performance":99,"accessibility":82,"best-practices":100,"seo":100,"lcp":1604,"cls":0,"tbt":0,"fcp":1538,"si":1538,"ttfb":612,"total":37152,"requests":11,"bytes":24228,"mainThreadMs":2.8,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":164.1,"longTasks":0,"elements":174,"failingCount":3,"failingNodes":60,"axeViolations":60,"axePasses":376,"bench":3256.5,"runs":3,"reqRuns":3,"ms":22043,"spread":6}
-]}

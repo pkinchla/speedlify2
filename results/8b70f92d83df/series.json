@@ -1,3 +1,0 @@
-{"version":1,"url":"https://pierre.awaragi.com/","updated":"2026-08-21T06:47:47.691Z","points":[
-{"t":1787294844793,"performance":93,"accessibility":100,"best-practices":100,"seo":100,"lcp":2497,"cls":0.001,"tbt":100,"fcp":2497,"si":2497,"ttfb":672,"total":208354,"requests":8,"bytes":178857,"mainThreadMs":51.7,"unusedJsBytes":72202,"unusedCssBytes":0,"mainThreadTotal":387.2,"longTasks":2,"elements":113,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":248,"bench":2469.5,"runs":3,"reqRuns":3,"ms":22897,"spread":6}
-]}

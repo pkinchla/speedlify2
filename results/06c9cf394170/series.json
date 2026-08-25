@@ -1,3 +1,0 @@
-{"version":1,"url":"https://henry.codes/","updated":"2026-08-20T23:38:15.486Z","points":[
-{"t":1787269061914,"performance":77,"accessibility":98,"best-practices":96,"seo":100,"lcp":4649,"cls":0,"tbt":60,"fcp":2624,"si":4596,"ttfb":674,"total":654031,"requests":49,"bytes":3167,"mainThreadMs":1.5,"unusedJsBytes":43476,"unusedCssBytes":10604,"mainThreadTotal":1375.4,"longTasks":2,"elements":555,"failingCount":2,"failingNodes":2,"axeViolations":38,"axePasses":843,"field-lcp":2262,"field-cls":0,"field-fcp":2085,"field-ttfb":1007,"bench":2379.5,"runs":3,"reqRuns":3,"ms":33571,"spread":13}
-]}

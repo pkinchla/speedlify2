@@ -1,3 +1,0 @@
-{"version":1,"url":"https://www.mikestilling.com/","updated":"2026-08-21T13:49:47.184Z","points":[
-{"t":1787320160430,"performance":73,"accessibility":100,"best-practices":100,"seo":100,"lcp":9452,"cls":0.01,"tbt":138,"fcp":971,"si":3345,"ttfb":671,"total":1994590,"requests":16,"bytes":2997,"mainThreadMs":2.3,"unusedJsBytes":32643,"unusedCssBytes":0,"mainThreadTotal":1460.8,"longTasks":2,"elements":458,"failingCount":0,"failingNodes":0,"axeViolations":1,"axePasses":757,"bench":2488.5,"runs":3,"reqRuns":3,"ms":26753,"spread":21}
-]}

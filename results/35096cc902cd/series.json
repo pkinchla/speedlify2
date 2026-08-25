@@ -1,3 +1,0 @@
-{"version":1,"url":"https://lerhonewalker.com/","updated":"2026-08-21T03:08:14.412Z","points":[
-{"t":1787281667682,"performance":83,"accessibility":100,"best-practices":100,"seo":100,"lcp":3880,"cls":0,"tbt":125,"fcp":2614,"si":2614,"ttfb":462,"total":379745,"requests":14,"bytes":227658,"mainThreadMs":63.3,"unusedJsBytes":71326,"unusedCssBytes":0,"mainThreadTotal":889.6,"longTasks":4,"elements":268,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":479,"bench":2474,"runs":3,"reqRuns":3,"ms":26730,"spread":31}
-]}

@@ -1,3 +1,0 @@
-{"version":1,"url":"https://juanlam.com/","updated":"2026-08-21T03:02:29.081Z","points":[
-{"t":1787281320903,"performance":67,"accessibility":87,"best-practices":100,"seo":92,"lcp":18055,"cls":0.148,"tbt":121,"fcp":1906,"si":1906,"ttfb":604,"total":3274800,"requests":50,"bytes":715506,"mainThreadMs":90.8,"unusedJsBytes":92120,"unusedCssBytes":14724,"mainThreadTotal":1540.8,"longTasks":6,"elements":431,"failingCount":3,"failingNodes":41,"axeViolations":49,"axePasses":553,"bench":2491.5,"runs":3,"reqRuns":3,"ms":28177,"spread":6}
-]}

@@ -1,3 +1,0 @@
-{"version":1,"url":"https://www.stefanimhoff.de/","updated":"2026-08-21T19:36:19.885Z","points":[
-{"t":1787340950484,"performance":91,"accessibility":96,"best-practices":96,"seo":100,"lcp":3313,"cls":0,"tbt":0,"fcp":1835,"si":2948,"ttfb":763,"total":369356,"requests":34,"bytes":3065,"mainThreadMs":1.4,"unusedJsBytes":30898,"unusedCssBytes":0,"mainThreadTotal":786.8,"longTasks":0,"elements":149,"failingCount":1,"failingNodes":4,"axeViolations":4,"axePasses":302,"bench":2459,"runs":3,"reqRuns":3,"ms":29400,"spread":16}
-]}

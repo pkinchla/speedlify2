@@ -1,3 +1,0 @@
-{"version":1,"url":"https://calgarygroups.ca/","updated":"2026-08-20T19:31:16.425Z","points":[
-{"t":1787254227863,"performance":65,"accessibility":92,"best-practices":100,"seo":100,"lcp":4318,"cls":0,"tbt":777,"fcp":1870,"si":1870,"ttfb":624,"total":438636,"requests":14,"bytes":378761,"mainThreadMs":307.8,"unusedJsBytes":0,"unusedCssBytes":18406,"mainThreadTotal":2956.1,"longTasks":6,"elements":6541,"failingCount":2,"failingNodes":285,"axeViolations":286,"axePasses":8474,"bench":2341.5,"runs":3,"reqRuns":3,"ms":48560,"spread":23}
-]}

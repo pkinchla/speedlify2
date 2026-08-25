@@ -1,3 +1,0 @@
-{"version":1,"url":"https://alextheward.com/","updated":"2026-08-20T16:24:38.130Z","points":[
-{"t":1787243056217,"performance":97,"accessibility":86,"best-practices":96,"seo":100,"lcp":2412,"cls":0,"tbt":0,"fcp":1700,"si":1700,"ttfb":609,"total":366446,"requests":14,"bytes":300479,"mainThreadMs":5.8,"unusedJsBytes":54905,"unusedCssBytes":18560,"mainThreadTotal":422.9,"longTasks":1,"elements":80,"failingCount":4,"failingNodes":4,"axeViolations":15,"axePasses":159,"bench":2467,"runs":3,"reqRuns":3,"ms":21912,"spread":1}
-]}

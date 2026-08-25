@@ -1,3 +1,0 @@
-{"version":1,"url":"https://jndjs.dev/","updated":"2026-08-21T01:14:43.300Z","points":[
-{"t":1787274852261,"performance":96,"accessibility":100,"best-practices":96,"seo":100,"lcp":2614,"cls":0,"tbt":0,"fcp":942,"si":2564,"ttfb":777,"total":62007,"requests":16,"bytes":8459,"mainThreadMs":3.9,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":252.6,"longTasks":0,"elements":231,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":528,"bench":2486,"runs":3,"reqRuns":3,"ms":31037,"spread":3}
-]}

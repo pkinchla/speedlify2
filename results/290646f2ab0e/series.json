@@ -1,3 +1,0 @@
-{"version":1,"url":"https://pack11ty.dev/","updated":"2026-08-21T05:40:01.766Z","points":[
-{"t":1787290781543,"performance":100,"accessibility":100,"best-practices":100,"seo":100,"lcp":818,"cls":0.001,"tbt":0,"fcp":818,"si":818,"ttfb":636,"total":17018,"requests":8,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":148,"longTasks":0,"elements":125,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":300,"bench":3662.5,"runs":3,"reqRuns":3,"ms":20222,"spread":0}
-]}

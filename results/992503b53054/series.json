@@ -1,3 +1,0 @@
-{"version":1,"url":"https://artbarcelonamag.com/","updated":"2026-08-20T16:31:02.132Z","points":[
-{"t":1787243439495,"performance":85,"accessibility":97,"best-practices":100,"seo":100,"lcp":1755,"cls":0.287,"tbt":0,"fcp":1553,"si":1553,"ttfb":629,"total":785659,"requests":20,"bytes":28597,"mainThreadMs":13.8,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":260.4,"longTasks":0,"elements":149,"failingCount":1,"failingNodes":1,"axeViolations":4,"axePasses":257,"bench":2475,"runs":3,"reqRuns":3,"ms":22636,"spread":2}
-]}

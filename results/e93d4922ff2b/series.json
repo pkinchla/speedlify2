@@ -1,3 +1,0 @@
-{"version":1,"url":"https://www.award-winning-books.com/","updated":"2026-08-21T17:32:34.927Z","points":[
-{"t":1787333516796,"performance":90,"accessibility":86,"best-practices":96,"seo":100,"lcp":3024,"cls":0,"tbt":90,"fcp":2631,"si":2631,"ttfb":632,"total":904918,"requests":69,"bytes":827640,"mainThreadMs":81.8,"unusedJsBytes":122466,"unusedCssBytes":0,"mainThreadTotal":1212.7,"longTasks":6,"elements":1123,"failingCount":4,"failingNodes":115,"axeViolations":131,"axePasses":1797,"field-fcp":1068,"bench":2434,"runs":3,"reqRuns":3,"ms":38130,"spread":15}
-]}

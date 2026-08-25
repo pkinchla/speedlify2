@@ -1,3 +1,0 @@
-{"version":1,"url":"https://www.patrickxchong.com/","updated":"2026-08-21T13:48:02.751Z","points":[
-{"t":1787320058089,"performance":100,"accessibility":100,"best-practices":100,"seo":100,"lcp":1545,"cls":0,"tbt":0,"fcp":918,"si":918,"ttfb":618,"total":243599,"requests":14,"bytes":19821,"mainThreadMs":8.5,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":232.2,"longTasks":0,"elements":223,"failingCount":0,"failingNodes":0,"axeViolations":1,"axePasses":406,"bench":2485.5,"runs":3,"reqRuns":3,"ms":24661,"spread":0}
-]}

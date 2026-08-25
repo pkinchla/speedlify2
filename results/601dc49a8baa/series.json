@@ -1,3 +1,0 @@
-{"version":1,"url":"https://dockerwebdev.com/","updated":"2026-08-20T21:27:33.475Z","points":[
-{"t":1787261229982,"performance":99,"accessibility":95,"best-practices":100,"seo":100,"lcp":2012,"cls":0,"tbt":0,"fcp":946,"si":946,"ttfb":473,"total":40905,"requests":21,"bytes":11590,"mainThreadMs":8.5,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":430.3,"longTasks":1,"elements":355,"failingCount":1,"failingNodes":3,"axeViolations":4,"axePasses":556,"bench":2326.5,"runs":3,"reqRuns":3,"ms":23492,"spread":1}
-]}

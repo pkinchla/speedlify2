@@ -1,3 +1,0 @@
-{"version":1,"url":"https://buttonbuddy.dev/","updated":"2026-08-20T16:25:16.020Z","points":[
-{"t":1787243093322,"performance":99,"accessibility":100,"best-practices":100,"seo":100,"lcp":1793,"cls":0,"tbt":0,"fcp":1658,"si":2631,"ttfb":678,"total":77936,"requests":8,"bytes":2675,"mainThreadMs":1.7,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":340.9,"longTasks":2,"elements":192,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":452,"bench":3264,"runs":3,"reqRuns":3,"ms":22698,"spread":1}
-]}

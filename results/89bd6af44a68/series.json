@@ -1,3 +1,0 @@
-{"version":1,"url":"https://jobboardbox.com/","updated":"2026-08-21T01:23:04.656Z","points":[
-{"t":1787275357248,"performance":97,"accessibility":100,"best-practices":100,"seo":91,"lcp":2367,"cls":0,"tbt":0,"fcp":1656,"si":2568,"ttfb":715,"total":28171,"requests":11,"bytes":7394,"mainThreadMs":3.3,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":193.9,"longTasks":0,"elements":72,"failingCount":1,"failingNodes":1,"axeViolations":4,"axePasses":143,"bench":2481,"runs":3,"reqRuns":3,"ms":27407,"spread":1}
-]}

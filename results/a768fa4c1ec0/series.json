@@ -1,3 +1,0 @@
-{"version":1,"url":"https://reedinpartnership.co.uk/","updated":"2026-08-21T06:47:48.963Z","points":[
-{"t":1787294834433,"performance":78,"accessibility":96,"best-practices":77,"seo":100,"lcp":3789,"cls":0,"tbt":282,"fcp":2738,"si":3037,"ttfb":481,"total":2450998,"requests":53,"bytes":420357,"mainThreadMs":126.4,"unusedJsBytes":141462,"unusedCssBytes":0,"mainThreadTotal":1779,"longTasks":6,"elements":641,"failingCount":1,"failingNodes":14,"axeViolations":1,"axePasses":685,"field-lcp":2001,"field-inp":82,"field-cls":0,"field-fcp":1524,"field-ttfb":962,"bench":2608,"runs":3,"reqRuns":3,"ms":34530,"spread":38}
-]}

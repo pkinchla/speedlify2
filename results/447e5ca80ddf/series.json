@@ -1,3 +1,0 @@
-{"version":1,"url":"https://valinor.earth/","updated":"2026-08-21T09:49:08.079Z","points":[
-{"t":1787305721294,"performance":78,"accessibility":96,"best-practices":100,"seo":92,"lcp":5646,"cls":0,"tbt":79,"fcp":1523,"si":1523,"ttfb":460,"total":925120,"requests":15,"bytes":123873,"mainThreadMs":50.6,"unusedJsBytes":71634,"unusedCssBytes":0,"mainThreadTotal":537.5,"longTasks":2,"elements":128,"failingCount":1,"failingNodes":3,"axeViolations":3,"axePasses":245,"bench":2485,"runs":3,"reqRuns":3,"ms":26784,"spread":5}
-]}

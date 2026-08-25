@@ -1,3 +1,0 @@
-{"version":1,"url":"https://iamdtms.hu/","updated":"2026-08-21T01:14:47.897Z","points":[
-{"t":1787274854877,"performance":64,"accessibility":100,"best-practices":100,"seo":63,"lcp":4919,"cls":0.001,"tbt":327,"fcp":4285,"si":4285,"ttfb":649,"total":627142,"requests":17,"bytes":60169,"mainThreadMs":2.4,"unusedJsBytes":0,"unusedCssBytes":18009,"mainThreadTotal":1250,"longTasks":2,"elements":591,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":649,"bench":2520.5,"runs":3,"reqRuns":3,"ms":33019,"spread":28}
-]}

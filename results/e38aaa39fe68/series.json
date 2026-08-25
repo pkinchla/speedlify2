@@ -1,3 +1,0 @@
-{"version":1,"url":"https://11st.frede.dev/","updated":"2026-08-20T19:03:35.465Z","points":[
-{"t":1787252590063,"performance":99,"accessibility":100,"best-practices":100,"seo":100,"lcp":1605,"cls":0.017,"tbt":0,"fcp":1605,"si":1605,"ttfb":694,"total":383237,"requests":8,"bytes":366544,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":223.6,"longTasks":0,"elements":57,"failingCount":0,"failingNodes":0,"axeViolations":1,"axePasses":139,"bench":2390.5,"runs":3,"reqRuns":3,"ms":25401,"spread":1}
-]}

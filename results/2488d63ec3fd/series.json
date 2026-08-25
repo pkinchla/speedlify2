@@ -1,3 +1,0 @@
-{"version":1,"url":"https://www.kadotaproductions.com/","updated":"2026-08-21T18:43:11.506Z","points":[
-{"t":1787337705732,"performance":58,"accessibility":77,"best-practices":77,"seo":91,"lcp":4396,"cls":0.438,"tbt":106,"fcp":3044,"si":3778,"ttfb":631,"total":17505047,"requests":151,"bytes":313266,"mainThreadMs":44.4,"unusedJsBytes":60230,"unusedCssBytes":21305,"mainThreadTotal":1517.5,"longTasks":5,"elements":228,"failingCount":4,"failingNodes":32,"axeViolations":60,"axePasses":446,"bench":2357,"runs":3,"reqRuns":3,"ms":85773,"spread":20}
-]}

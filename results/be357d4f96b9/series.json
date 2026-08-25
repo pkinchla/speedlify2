@@ -1,3 +1,0 @@
-{"version":1,"url":"https://bucolic-pegasus-5dab5c.netlify.app/","updated":"2026-08-20T19:07:42.652Z","points":[
-{"t":1787252841166,"performance":99,"accessibility":82,"best-practices":100,"seo":91,"lcp":1822,"cls":0,"tbt":0,"fcp":1530,"si":1530,"ttfb":622,"total":519966,"requests":14,"bytes":12070,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":12005,"mainThreadTotal":149.6,"longTasks":0,"elements":66,"failingCount":2,"failingNodes":9,"axeViolations":11,"axePasses":112,"bench":3008,"runs":3,"reqRuns":3,"ms":21485,"spread":0}
-]}

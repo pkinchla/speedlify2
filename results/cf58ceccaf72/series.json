@@ -1,3 +1,0 @@
-{"version":1,"url":"https://kirillunlimited.com/","updated":"2026-08-21T03:08:15.179Z","points":[
-{"t":1787281672834,"performance":98,"accessibility":100,"best-practices":100,"seo":100,"lcp":2130,"cls":0,"tbt":0,"fcp":1687,"si":1687,"ttfb":465,"total":91291,"requests":12,"bytes":18065,"mainThreadMs":5.2,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":227.9,"longTasks":0,"elements":152,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":341,"bench":2322,"runs":3,"reqRuns":3,"ms":22344,"spread":1}
-]}

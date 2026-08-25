@@ -1,3 +1,0 @@
-{"version":1,"url":"https://rsixersdonates.com/","updated":"2026-08-21T06:52:55.557Z","points":[
-{"t":1787295151695,"performance":97,"accessibility":90,"best-practices":100,"seo":100,"lcp":1561,"cls":0.092,"tbt":0,"fcp":1561,"si":1561,"ttfb":621,"total":1543076,"requests":16,"bytes":30207,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":39282,"mainThreadTotal":708.5,"longTasks":0,"elements":92,"failingCount":2,"failingNodes":2,"axeViolations":9,"axePasses":120,"bench":2602.5,"runs":3,"reqRuns":3,"ms":23862,"spread":1}
-]}

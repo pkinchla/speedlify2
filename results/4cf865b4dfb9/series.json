@@ -1,3 +1,0 @@
-{"version":1,"url":"https://nicksimson.com/","updated":"2026-08-21T04:54:26.571Z","points":[
-{"t":1787288043947,"to":"https://www.nicksimson.com/","perm":1,"performance":87,"accessibility":100,"best-practices":100,"seo":100,"lcp":3609,"cls":0.005,"tbt":0,"fcp":2409,"si":2409,"ttfb":603,"total":355890,"requests":10,"bytes":259528,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":518.9,"longTasks":0,"elements":139,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":325,"bench":2469,"runs":3,"reqRuns":3,"ms":22623,"spread":12}
-]}

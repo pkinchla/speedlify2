@@ -1,3 +1,0 @@
-{"version":1,"url":"https://bholmes.dev/","updated":"2026-08-20T19:07:51.312Z","points":[
-{"t":1787252844610,"performance":90,"accessibility":100,"best-practices":100,"seo":100,"lcp":3476,"cls":0,"tbt":10,"fcp":1779,"si":1779,"ttfb":610,"total":321333,"requests":20,"bytes":238707,"mainThreadMs":2.7,"unusedJsBytes":21380,"unusedCssBytes":0,"mainThreadTotal":827.6,"longTasks":1,"elements":287,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":375,"bench":2333.5,"runs":3,"reqRuns":3,"ms":26701,"spread":7}
-]}

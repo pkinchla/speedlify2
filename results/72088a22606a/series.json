@@ -1,3 +1,0 @@
-{"version":1,"url":"https://www.hawksworx.com/","updated":"2026-08-21T18:40:05.067Z","points":[
-{"t":1787337583893,"performance":78,"accessibility":93,"best-practices":96,"seo":40,"lcp":1702,"cls":0.006,"tbt":961,"fcp":939,"si":1055,"ttfb":608,"total":688186,"requests":20,"bytes":27416,"mainThreadMs":14.7,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":1778.9,"longTasks":7,"elements":36,"failingCount":1,"failingNodes":1,"axeViolations":1,"axePasses":69,"bench":2292,"runs":1,"reqRuns":3,"ms":21173}
-]}

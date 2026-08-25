@@ -1,3 +1,0 @@
-{"version":1,"url":"https://fruits-express.netlify.app/","updated":"2026-08-20T22:37:25.662Z","points":[
-{"t":1787265423866,"performance":100,"accessibility":100,"best-practices":100,"seo":100,"lcp":1849,"cls":0,"tbt":0,"fcp":799,"si":799,"ttfb":619,"total":255507,"requests":22,"bytes":196025,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":186.8,"longTasks":0,"elements":139,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":313,"bench":3267.5,"runs":3,"reqRuns":3,"ms":21796,"spread":1}
-]}

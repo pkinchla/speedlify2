@@ -1,3 +1,0 @@
-{"version":1,"url":"https://www.srwild.com/","updated":"2026-08-21T19:35:47.484Z","points":[
-{"t":1787340924689,"performance":100,"accessibility":100,"best-practices":96,"seo":100,"lcp":1686,"cls":0,"tbt":0,"fcp":936,"si":936,"ttfb":606,"total":167908,"requests":8,"bytes":521,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":193.3,"longTasks":0,"elements":80,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":199,"bench":2510,"runs":3,"reqRuns":3,"ms":22794,"spread":1}
-]}

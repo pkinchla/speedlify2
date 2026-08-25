@@ -1,3 +1,0 @@
-{"version":1,"url":"https://000000076.xyz/","updated":"2026-08-20T16:10:09.428Z","points":[
-{"t":1787242181581,"performance":78,"accessibility":100,"best-practices":100,"seo":100,"lcp":4078,"cls":0,"tbt":0,"fcp":3627,"si":3627,"ttfb":520,"total":387237,"requests":12,"bytes":312718,"mainThreadMs":2.9,"unusedJsBytes":0,"unusedCssBytes":48906,"mainThreadTotal":235,"longTasks":0,"elements":147,"failingCount":0,"failingNodes":0,"axeViolations":2,"axePasses":287,"bench":3025.5,"runs":3,"reqRuns":3,"ms":27846,"spread":51}
-]}

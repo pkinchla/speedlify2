@@ -1,3 +1,0 @@
-{"version":1,"url":"https://www.ryangittings.co.uk/","updated":"2026-08-21T13:53:26.170Z","points":[
-{"t":1787320376495,"performance":96,"accessibility":100,"best-practices":100,"seo":100,"lcp":2536,"cls":0,"tbt":114,"fcp":1082,"si":1347,"ttfb":620,"total":1047063,"requests":30,"bytes":161878,"mainThreadMs":54.9,"unusedJsBytes":68001,"unusedCssBytes":0,"mainThreadTotal":1295,"longTasks":3,"elements":615,"failingCount":0,"failingNodes":0,"axeViolations":4,"axePasses":907,"bench":2503.5,"runs":3,"reqRuns":3,"ms":29675,"spread":9}
-]}

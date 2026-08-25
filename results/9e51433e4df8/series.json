@@ -1,3 +1,0 @@
-{"version":1,"url":"https://kushagra.dev/","updated":"2026-08-21T03:08:54.951Z","points":[
-{"t":1787281711031,"performance":80,"accessibility":98,"best-practices":100,"seo":100,"lcp":4514,"cls":0.058,"tbt":111,"fcp":2306,"si":2306,"ttfb":464,"total":423487,"requests":12,"bytes":188760,"mainThreadMs":60.8,"unusedJsBytes":70173,"unusedCssBytes":0,"mainThreadTotal":646,"longTasks":2,"elements":36,"failingCount":2,"failingNodes":2,"axeViolations":2,"axePasses":111,"bench":2473,"runs":3,"reqRuns":3,"ms":23919,"spread":2}
-]}

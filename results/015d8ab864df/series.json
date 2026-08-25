@@ -1,3 +1,0 @@
-{"version":1,"url":"https://karatronics.de/","updated":"2026-08-21T03:06:01.386Z","points":[
-{"t":1787281455488,"performance":76,"accessibility":90,"best-practices":96,"seo":100,"lcp":5950,"cls":0,"tbt":172,"fcp":925,"si":1230,"ttfb":625,"total":1995135,"requests":59,"bytes":310634,"mainThreadMs":104.4,"unusedJsBytes":93485,"unusedCssBytes":21305,"mainThreadTotal":1537.5,"longTasks":6,"elements":547,"failingCount":2,"failingNodes":9,"axeViolations":58,"axePasses":765,"bench":2343,"runs":2,"reqRuns":3,"ms":105897,"spread":9}
-]}

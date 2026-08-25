@@ -1,3 +1,0 @@
-{"version":1,"url":"https://www.josephrex.me/","updated":"2026-08-21T18:41:42.733Z","points":[
-{"t":1787337681311,"performance":100,"accessibility":100,"best-practices":100,"seo":100,"lcp":799,"cls":0,"tbt":88,"fcp":799,"si":799,"ttfb":608,"total":174152,"requests":4,"bytes":163298,"mainThreadMs":48.4,"unusedJsBytes":70610,"unusedCssBytes":0,"mainThreadTotal":351.3,"longTasks":2,"elements":131,"failingCount":0,"failingNodes":0,"axeViolations":1,"axePasses":305,"bench":2360,"runs":3,"reqRuns":3,"ms":21421,"spread":1}
-]}

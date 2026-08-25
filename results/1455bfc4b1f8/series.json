@@ -1,3 +1,0 @@
-{"version":1,"url":"https://www.simoncox.com/","updated":"2026-08-21T14:36:52.745Z","points":[
-{"t":1787322988494,"performance":99,"accessibility":100,"best-practices":100,"seo":92,"lcp":1566,"cls":0,"tbt":0,"fcp":1566,"si":1566,"ttfb":495,"total":122237,"requests":15,"bytes":14617,"mainThreadMs":5.3,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":246.8,"longTasks":0,"elements":217,"failingCount":1,"failingNodes":2,"axeViolations":0,"axePasses":523,"field-lcp":700,"field-cls":0,"field-fcp":669,"bench":2350,"runs":3,"reqRuns":3,"ms":24251,"spread":1}
-]}

@@ -1,3 +1,0 @@
-{"version":1,"url":"https://bharatkat.axcora.com/","updated":"2026-08-20T19:06:29.646Z","points":[
-{"t":1787252761900,"performance":75,"accessibility":90,"best-practices":96,"seo":100,"lcp":7242,"cls":0,"tbt":0,"fcp":1719,"si":1719,"ttfb":642,"total":3427805,"requests":43,"bytes":229664,"mainThreadMs":26,"unusedJsBytes":28964,"unusedCssBytes":43769,"mainThreadTotal":654.8,"longTasks":0,"elements":441,"failingCount":3,"failingNodes":14,"axeViolations":18,"axePasses":731,"bench":3004,"runs":3,"reqRuns":3,"ms":27745,"spread":10}
-]}

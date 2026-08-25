@@ -1,3 +1,0 @@
-{"version":1,"url":"https://eleventy-explorer.netlify.app/","updated":"2026-08-20T20:35:55.875Z","points":[
-{"t":1787258127615,"performance":93,"accessibility":82,"best-practices":100,"seo":100,"lcp":1007,"cls":0.163,"tbt":16,"fcp":1007,"si":1007,"ttfb":625,"total":109012,"requests":19,"bytes":24129,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":468.9,"longTasks":2,"elements":1293,"failingCount":4,"failingNodes":39,"axeViolations":7,"axePasses":2586,"bench":2483,"runs":3,"reqRuns":3,"ms":28259,"spread":0}
-]}

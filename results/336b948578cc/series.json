@@ -1,3 +1,0 @@
-{"version":1,"url":"https://11ty-gallery.netlify.app/","updated":"2026-08-20T19:04:00.713Z","points":[
-{"t":1787252618465,"performance":100,"accessibility":100,"best-practices":96,"seo":100,"lcp":1060,"cls":0,"tbt":0,"fcp":841,"si":841,"ttfb":610,"total":107039,"requests":10,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":154.8,"longTasks":0,"elements":20,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":51,"bench":2247,"runs":3,"reqRuns":3,"ms":22247,"spread":5}
-]}

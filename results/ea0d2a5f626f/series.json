@@ -1,3 +1,0 @@
-{"version":1,"url":"https://www.squarespace.com/","updated":"2026-08-25T14:00:34.565Z","points":[
-{"t":1787666137690,"performance":26,"accessibility":97,"best-practices":54,"seo":92,"lcp":34933,"cls":0,"tbt":2813,"fcp":15541,"si":18873,"ttfb":753,"total":7495236,"requests":184,"bytes":5400824,"mainThreadMs":466.1,"unusedJsBytes":1415142,"unusedCssBytes":13942,"mainThreadTotal":25698.4,"longTasks":20,"elements":3275,"failingCount":2,"failingNodes":4,"field-lcp":4062,"field-inp":290,"field-cls":0,"field-fcp":2294,"field-ttfb":1103,"bench":3100.5,"runs":2,"reqRuns":3,"ms":296874,"spread":0}
-]}

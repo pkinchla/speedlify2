@@ -1,3 +1,0 @@
-{"version":1,"url":"https://www.lhemingway.com/","updated":"2026-08-21T12:51:17.724Z","points":[
-{"t":1787316623132,"performance":76,"accessibility":100,"best-practices":96,"seo":100,"lcp":5960,"cls":0,"tbt":3,"fcp":1788,"si":3336,"ttfb":880,"total":6229504,"requests":64,"bytes":676277,"mainThreadMs":22.5,"unusedJsBytes":0,"unusedCssBytes":10708,"mainThreadTotal":1061.1,"longTasks":1,"elements":305,"failingCount":0,"failingNodes":0,"axeViolations":3,"axePasses":650,"field-lcp":2067,"field-inp":89,"field-cls":0,"field-fcp":1780,"field-ttfb":1570,"bench":2487.5,"runs":3,"reqRuns":3,"ms":54591,"spread":4}
-]}

@@ -1,3 +1,0 @@
-{"version":1,"url":"https://2019.nejsconf.com/","updated":"2026-08-20T15:37:09.271Z","points":[
-{"t":1787240204270,"performance":92,"accessibility":94,"best-practices":100,"seo":100,"lcp":3309,"cls":0.059,"tbt":0,"fcp":816,"si":816,"ttfb":609,"total":490419,"requests":32,"bytes":84609,"mainThreadMs":0.9,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":536.1,"longTasks":1,"elements":228,"failingCount":2,"failingNodes":2,"axeViolations":12,"axePasses":556,"bench":2344,"runs":3,"reqRuns":3,"ms":25000,"spread":8}
-]}

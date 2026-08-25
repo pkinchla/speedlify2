@@ -1,3 +1,0 @@
-{"version":1,"url":"https://emp-starter.lastguru.dev/","updated":"2026-08-20T22:28:18.466Z","points":[
-{"t":1787264877276,"performance":90,"accessibility":99,"best-practices":100,"seo":100,"lcp":2714,"cls":0.113,"tbt":0,"fcp":2271,"si":2271,"ttfb":614,"total":180149,"requests":13,"bytes":73953,"mainThreadMs":4,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":304.3,"longTasks":0,"elements":199,"failingCount":2,"failingNodes":17,"axeViolations":21,"axePasses":530,"bench":2392.5,"runs":3,"reqRuns":3,"ms":21188,"spread":0}
-]}

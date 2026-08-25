@@ -1,3 +1,0 @@
-{"version":1,"url":"https://www.chadams.me/","updated":"2026-08-21T11:30:05.988Z","points":[
-{"t":1787311783080,"performance":66,"accessibility":98,"best-practices":100,"seo":100,"lcp":28310,"cls":0,"tbt":8,"fcp":1111,"si":10587,"ttfb":615,"total":9560557,"requests":20,"bytes":2435,"mainThreadMs":2.4,"unusedJsBytes":41989,"unusedCssBytes":0,"mainThreadTotal":721.2,"longTasks":1,"elements":112,"failingCount":1,"failingNodes":1,"axeViolations":3,"axePasses":231,"bench":2453.5,"runs":3,"reqRuns":3,"ms":22907,"spread":0}
-]}

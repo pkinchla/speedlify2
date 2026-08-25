@@ -1,3 +1,0 @@
-{"version":1,"url":"https://yoncetheme.com/","updated":"2026-08-21T12:56:32.524Z","points":[
-{"t":1787316965439,"performance":66,"accessibility":100,"best-practices":73,"seo":100,"lcp":14240,"cls":0.128,"tbt":84,"fcp":2639,"si":2639,"ttfb":740,"total":3131401,"requests":25,"bytes":130601,"mainThreadMs":34,"unusedJsBytes":0,"unusedCssBytes":69252,"mainThreadTotal":1305.8,"longTasks":2,"elements":116,"failingCount":0,"failingNodes":0,"axeViolations":3,"axePasses":313,"bench":2315.5,"runs":3,"reqRuns":3,"ms":27085,"spread":6}
-]}

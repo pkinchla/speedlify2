@@ -1,3 +1,0 @@
-{"version":1,"url":"https://rmendes.net/","updated":"2026-08-21T05:42:07.943Z","points":[
-{"t":1787290867452,"performance":92,"accessibility":90,"best-practices":96,"seo":92,"lcp":2646,"cls":0,"tbt":151,"fcp":1521,"si":4013,"ttfb":696,"total":364826,"requests":56,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":24051,"mainThreadTotal":1535.8,"longTasks":3,"elements":1964,"failingCount":3,"failingNodes":20,"axeViolations":21,"axePasses":2305,"bench":2289.5,"runs":3,"reqRuns":3,"ms":60490,"spread":1}
-]}

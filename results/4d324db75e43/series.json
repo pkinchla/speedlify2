@@ -1,3 +1,0 @@
-{"version":1,"url":"https://annotator.incubator.apache.org/","updated":"2026-08-20T15:43:38.588Z","points":[
-{"t":1787240595894,"to":"https://incubator.apache.org/projects/annotator.html","perm":0,"performance":91,"accessibility":53,"best-practices":65,"seo":82,"lcp":3173,"cls":0.001,"tbt":0,"fcp":2272,"si":2272,"ttfb":609,"total":200725,"requests":11,"bytes":30124,"mainThreadMs":1.8,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":218.5,"longTasks":0,"elements":355,"failingCount":7,"failingNodes":44,"axeViolations":31,"axePasses":699,"bench":2311.5,"runs":3,"reqRuns":3,"ms":22694,"spread":0}
-]}

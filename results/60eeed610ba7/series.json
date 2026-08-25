@@ -1,3 +1,0 @@
-{"version":1,"url":"https://zoepage.github.io/","updated":"2026-08-21T16:35:33.883Z","points":[
-{"t":1787330113122,"performance":75,"accessibility":82,"best-practices":100,"seo":100,"lcp":15028,"cls":0,"tbt":0,"fcp":800,"si":800,"ttfb":610,"total":2747916,"requests":6,"bytes":2742543,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":177.2,"longTasks":0,"elements":106,"failingCount":3,"failingNodes":6,"axeViolations":6,"axePasses":240,"bench":2483,"runs":3,"reqRuns":3,"ms":20760,"spread":25}
-]}

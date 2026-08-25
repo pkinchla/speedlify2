@@ -1,3 +1,0 @@
-{"version":1,"url":"https://perrodinero.blog/","updated":"2026-08-21T04:42:14.505Z","points":[
-{"t":1787287309511,"performance":98,"accessibility":100,"best-practices":100,"seo":100,"lcp":2428,"cls":0,"tbt":0,"fcp":905,"si":905,"ttfb":605,"total":347676,"requests":14,"bytes":29031,"mainThreadMs":11.9,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":360.8,"longTasks":0,"elements":311,"failingCount":0,"failingNodes":0,"axeViolations":8,"axePasses":457,"bench":2485,"runs":3,"reqRuns":3,"ms":24994,"spread":6}
-]}

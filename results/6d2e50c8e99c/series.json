@@ -1,3 +1,0 @@
-{"version":1,"url":"https://bostontparty.co.za/","updated":"2026-08-20T19:11:00.766Z","points":[
-{"t":1787253038074,"performance":100,"accessibility":100,"best-practices":100,"seo":100,"lcp":1207,"cls":0,"tbt":0,"fcp":785,"si":785,"ttfb":607,"total":559662,"requests":10,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":193.1,"longTasks":0,"elements":100,"failingCount":0,"failingNodes":0,"axeViolations":1,"axePasses":266,"bench":2473.5,"runs":3,"reqRuns":3,"ms":22692,"spread":0}
-]}

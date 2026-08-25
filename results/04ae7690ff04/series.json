@@ -1,3 +1,0 @@
-{"version":1,"url":"https://chaboryk.xyz/","updated":"2026-08-20T19:31:42.025Z","points":[
-{"t":1787254279426,"performance":99,"accessibility":100,"best-practices":100,"seo":100,"lcp":1665,"cls":0,"tbt":0,"fcp":1665,"si":1665,"ttfb":747,"total":77012,"requests":15,"bytes":48090,"mainThreadMs":7.6,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":417.3,"longTasks":0,"elements":88,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":185,"bench":2396,"runs":3,"reqRuns":3,"ms":22598,"spread":0}
-]}

@@ -1,3 +1,0 @@
-{"version":1,"url":"https://jaredgorski.org/","updated":"2026-08-21T01:17:22.537Z","points":[
-{"t":1787275021416,"performance":100,"accessibility":100,"best-practices":100,"seo":100,"lcp":813,"cls":0,"tbt":0,"fcp":813,"si":813,"ttfb":634,"total":5228,"requests":4,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":116.9,"longTasks":0,"elements":60,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":154,"bench":2487,"runs":3,"reqRuns":3,"ms":21120,"spread":0}
-]}

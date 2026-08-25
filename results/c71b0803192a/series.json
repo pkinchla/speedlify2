@@ -1,4 +1,0 @@
-{"version":1,"url":"https://quinndombrowski.com/","updated":"2026-08-21T15:32:59.021Z","points":[
-{"t":1787287551240,"error":"The \"start lh:runner:gather\" performance mark has not been set","fails":1,"runs":0,"reqRuns":3,"ms":273207},
-{"t":1787326350664,"to":"https://quinndaedal.com/","perm":1,"performance":66,"accessibility":100,"best-practices":100,"seo":100,"lcp":6831,"cls":0,"tbt":28,"fcp":4314,"si":4314,"ttfb":733,"total":687873,"requests":16,"bytes":687777,"mainThreadMs":47.4,"unusedJsBytes":25413,"unusedCssBytes":24720,"mainThreadTotal":1075.7,"longTasks":6,"elements":90,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":210,"bench":2131.5,"runs":3,"reqRuns":3,"ms":28355,"spread":1}
-]}

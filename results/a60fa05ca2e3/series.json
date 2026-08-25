@@ -1,3 +1,0 @@
-{"version":1,"url":"https://www.vess.co.nz/","updated":"2026-08-21T14:43:33.144Z","points":[
-{"t":1787323390396,"performance":99,"accessibility":98,"best-practices":96,"seo":100,"lcp":1864,"cls":0,"tbt":0,"fcp":1714,"si":1714,"ttfb":636,"total":300817,"requests":13,"bytes":42297,"mainThreadMs":4.2,"unusedJsBytes":0,"unusedCssBytes":26092,"mainThreadTotal":323.3,"longTasks":0,"elements":104,"failingCount":1,"failingNodes":1,"axeViolations":10,"axePasses":172,"bench":2389,"runs":3,"reqRuns":3,"ms":22748,"spread":1}
-]}

@@ -1,3 +1,0 @@
-{"version":1,"url":"https://optimasiwebsite.axcora.com/","updated":"2026-08-21T05:44:49.848Z","points":[
-{"t":1787291066632,"performance":92,"accessibility":100,"best-practices":100,"seo":100,"lcp":3178,"cls":0.057,"tbt":0,"fcp":1670,"si":1670,"ttfb":464,"total":438650,"requests":17,"bytes":11091,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":34534,"mainThreadTotal":323.8,"longTasks":0,"elements":193,"failingCount":0,"failingNodes":0,"axeViolations":7,"axePasses":304,"bench":2509.5,"runs":3,"reqRuns":3,"ms":23216,"spread":1}
-]}

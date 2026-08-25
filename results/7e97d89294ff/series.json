@@ -1,3 +1,0 @@
-{"version":1,"url":"https://piraces.dev/","updated":"2026-08-21T14:35:24.633Z","points":[
-{"t":1787322900809,"performance":100,"accessibility":93,"best-practices":81,"seo":100,"lcp":1515,"cls":0,"tbt":0,"fcp":1515,"si":1515,"ttfb":452,"total":43172,"requests":313,"bytes":11451,"mainThreadMs":3.1,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":647.4,"longTasks":0,"elements":61,"failingCount":1,"failingNodes":1,"axeViolations":1,"axePasses":143,"bench":2469,"runs":3,"reqRuns":3,"ms":23824,"spread":7}
-]}

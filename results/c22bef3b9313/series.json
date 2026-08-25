@@ -1,3 +1,0 @@
-{"version":1,"url":"https://markdorison.com/","updated":"2026-08-21T03:06:52.756Z","points":[
-{"t":1787281558995,"to":"https://www.markdorison.com/","perm":1,"performance":88,"accessibility":100,"best-practices":100,"seo":100,"lcp":2052,"cls":0,"tbt":0,"fcp":1598,"si":22109,"ttfb":15204,"total":198810,"requests":8,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":190.1,"longTasks":0,"elements":120,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":265,"bench":2283,"runs":3,"reqRuns":3,"ms":53760,"spread":10}
-]}

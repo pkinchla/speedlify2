@@ -1,3 +1,0 @@
-{"version":1,"url":"https://www.adamdjbrett.com/","updated":"2026-08-21T10:37:37.969Z","points":[
-{"t":1787308634261,"performance":96,"accessibility":100,"best-practices":100,"seo":100,"lcp":2363,"cls":0,"tbt":0,"fcp":2038,"si":2038,"ttfb":484,"total":167805,"requests":13,"bytes":88425,"mainThreadMs":4.1,"unusedJsBytes":0,"unusedCssBytes":36863,"mainThreadTotal":394.3,"longTasks":0,"elements":278,"failingCount":0,"failingNodes":0,"axeViolations":2,"axePasses":344,"bench":2475.5,"runs":3,"reqRuns":3,"ms":23707,"spread":3}
-]}

@@ -1,3 +1,0 @@
-{"version":1,"url":"https://swelldiary.com/","updated":"2026-08-21T16:35:11.460Z","points":[
-{"t":1787330077534,"performance":80,"accessibility":88,"best-practices":77,"seo":100,"lcp":4216,"cls":0.013,"tbt":128,"fcp":2900,"si":2900,"ttfb":603,"total":668000,"requests":25,"bytes":655268,"mainThreadMs":100.8,"unusedJsBytes":72520,"unusedCssBytes":32119,"mainThreadTotal":899.4,"longTasks":4,"elements":1108,"failingCount":3,"failingNodes":214,"axeViolations":156,"axePasses":2302,"bench":2463.5,"runs":3,"reqRuns":3,"ms":33925,"spread":11}
-]}

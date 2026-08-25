@@ -1,3 +1,0 @@
-{"version":1,"url":"https://wirgen.dev/","updated":"2026-08-21T08:52:23.565Z","points":[
-{"t":1787302321909,"performance":100,"accessibility":99,"best-practices":100,"seo":100,"lcp":967,"cls":0,"tbt":78,"fcp":967,"si":1232,"ttfb":793,"total":178431,"requests":8,"bytes":172243,"mainThreadMs":46.9,"unusedJsBytes":70867,"unusedCssBytes":0,"mainThreadTotal":365.5,"longTasks":2,"elements":121,"failingCount":1,"failingNodes":4,"axeViolations":4,"axePasses":228,"bench":2728,"runs":3,"reqRuns":3,"ms":21655,"spread":1}
-]}

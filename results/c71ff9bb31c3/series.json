@@ -1,3 +1,0 @@
-{"version":1,"url":"https://gerencialeite.com.br/","updated":"2026-08-20T22:32:27.789Z","points":[
-{"t":1787265122855,"performance":95,"accessibility":95,"best-practices":100,"seo":100,"lcp":1879,"cls":0.04,"tbt":220,"fcp":811,"si":811,"ttfb":604,"total":597879,"requests":23,"bytes":336039,"mainThreadMs":126.6,"unusedJsBytes":133915,"unusedCssBytes":0,"mainThreadTotal":855.1,"longTasks":4,"elements":183,"failingCount":1,"failingNodes":2,"axeViolations":2,"axePasses":299,"bench":2237.5,"runs":3,"reqRuns":3,"ms":24933,"spread":22}
-]}

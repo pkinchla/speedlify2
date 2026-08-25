@@ -1,3 +1,0 @@
-{"version":1,"url":"https://cats-in-residence.org/","updated":"2026-08-20T19:38:12.681Z","points":[
-{"t":1787254670437,"performance":99,"accessibility":100,"best-practices":100,"seo":100,"lcp":1825,"cls":0,"tbt":0,"fcp":1629,"si":1629,"ttfb":625,"total":166595,"requests":11,"bytes":92229,"mainThreadMs":2.3,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":189.1,"longTasks":0,"elements":127,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":299,"bench":2418.5,"runs":3,"reqRuns":3,"ms":22244,"spread":1}
-]}

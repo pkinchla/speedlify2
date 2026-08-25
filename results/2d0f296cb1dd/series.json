@@ -1,3 +1,0 @@
-{"version":1,"url":"https://www.naprogu.pl/","updated":"2026-08-21T13:51:14.914Z","points":[
-{"t":1787320244530,"performance":71,"accessibility":91,"best-practices":100,"seo":100,"lcp":6019,"cls":0.071,"tbt":216,"fcp":2196,"si":2205,"ttfb":624,"total":1140710,"requests":22,"bytes":384812,"mainThreadMs":130.3,"unusedJsBytes":142562,"unusedCssBytes":21305,"mainThreadTotal":1214,"longTasks":7,"elements":3041,"failingCount":2,"failingNodes":2,"axeViolations":2,"axePasses":5557,"bench":2502.5,"runs":3,"reqRuns":3,"ms":30384,"spread":2}
-]}

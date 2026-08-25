@@ -1,3 +1,0 @@
-{"version":1,"url":"https://eleventy-react.netlify.app/","updated":"2026-08-20T21:30:45.307Z","points":[
-{"t":1787261425150,"performance":99,"accessibility":100,"best-practices":100,"seo":100,"lcp":2260,"cls":0.019,"tbt":0,"fcp":788,"si":788,"ttfb":606,"total":139871,"requests":5,"bytes":134997,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":153.2,"longTasks":0,"elements":41,"failingCount":0,"failingNodes":0,"axeViolations":3,"axePasses":86,"bench":2468,"runs":3,"reqRuns":3,"ms":20156,"spread":1}
-]}

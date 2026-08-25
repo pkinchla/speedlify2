@@ -1,3 +1,0 @@
-{"version":1,"url":"https://surajwate.com/","updated":"2026-08-21T08:40:37.666Z","points":[
-{"t":1787301611231,"performance":97,"accessibility":100,"best-practices":100,"seo":91,"lcp":1976,"cls":0.014,"tbt":141,"fcp":1837,"si":1837,"ttfb":610,"total":808458,"requests":80,"bytes":800955,"mainThreadMs":70.1,"unusedJsBytes":102929,"unusedCssBytes":14785,"mainThreadTotal":850.9,"longTasks":3,"elements":44,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":96,"bench":3321.5,"runs":3,"reqRuns":3,"ms":26434,"spread":38}
-]}

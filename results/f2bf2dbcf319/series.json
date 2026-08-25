@@ -1,3 +1,0 @@
-{"version":1,"url":"https://tonfotos.com/","updated":"2026-08-21T09:37:57.086Z","points":[
-{"t":1787305042991,"performance":84,"accessibility":94,"best-practices":77,"seo":100,"lcp":4535,"cls":0.02,"tbt":59,"fcp":1123,"si":1292,"ttfb":785,"total":1001966,"requests":46,"bytes":91258,"mainThreadMs":33.6,"unusedJsBytes":54345,"unusedCssBytes":0,"mainThreadTotal":1046.2,"longTasks":1,"elements":372,"failingCount":2,"failingNodes":28,"axeViolations":47,"axePasses":834,"field-lcp":1477,"field-cls":0,"field-fcp":1093,"field-ttfb":777,"bench":2496.5,"runs":3,"reqRuns":3,"ms":34094,"spread":8}
-]}

@@ -1,3 +1,0 @@
-{"version":1,"url":"https://www.kloh.ch/403.html","updated":"2026-08-21T12:49:50.817Z","points":[
-{"t":1787316563713,"performance":97,"accessibility":100,"best-practices":100,"seo":100,"lcp":2280,"cls":0,"tbt":0,"fcp":1605,"si":2536,"ttfb":705,"total":266947,"requests":9,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":142.3,"longTasks":0,"elements":58,"failingCount":0,"failingNodes":0,"axeViolations":5,"axePasses":132,"bench":2437.5,"runs":3,"reqRuns":3,"ms":27103,"spread":1}
-]}

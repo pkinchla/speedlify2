@@ -1,3 +1,0 @@
-{"version":1,"url":"https://artificial.design/","updated":"2026-08-20T16:29:39.816Z","points":[
-{"t":1787243349158,"performance":68,"accessibility":80,"best-practices":100,"seo":91,"lcp":23725,"cls":0,"tbt":31,"fcp":2775,"si":4397,"ttfb":925,"total":4381760,"requests":15,"bytes":191017,"mainThreadMs":43.2,"unusedJsBytes":86344,"unusedCssBytes":0,"mainThreadTotal":553.5,"longTasks":1,"elements":103,"failingCount":3,"failingNodes":19,"axeViolations":22,"axePasses":187,"bench":2378,"runs":3,"reqRuns":3,"ms":30657,"spread":3}
-]}

@@ -1,3 +1,0 @@
-{"version":1,"url":"https://clioandcalliope.com/","updated":"2026-08-20T19:39:21.326Z","points":[
-{"t":1787254738515,"performance":85,"accessibility":96,"best-practices":96,"seo":91,"lcp":4426,"cls":0.009,"tbt":35,"fcp":817,"si":817,"ttfb":640,"total":525365,"requests":16,"bytes":310135,"mainThreadMs":56,"unusedJsBytes":138255,"unusedCssBytes":0,"mainThreadTotal":450.8,"longTasks":1,"elements":164,"failingCount":1,"failingNodes":17,"axeViolations":18,"axePasses":327,"bench":4170,"runs":3,"reqRuns":3,"ms":22810,"spread":11}
-]}
