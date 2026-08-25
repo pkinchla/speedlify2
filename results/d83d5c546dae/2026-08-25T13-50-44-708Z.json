@@ -1,0 +1,289 @@
+{
+  "url": "https://www.shopify.com/",
+  "name": "Shopify",
+  "group": "builders",
+  "groupName": "Website Builders",
+  "timestamp": 1787665844708,
+  "date": "2026-08-25T13:50:44.708Z",
+  "runId": "2026-08-25T13-49-59-713Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 86029,
+  "error": null,
+  "variance": {
+    "min": 44,
+    "max": 45,
+    "spread": 1,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.shopify.com/",
+    "finalUrl": "https://www.shopify.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 44,
+      "accessibility": 100,
+      "best-practices": 58,
+      "seo": 100,
+      "agentic-browsing": 67
+    },
+    "timings": {
+      "fcp": 3188,
+      "lcp": 6000,
+      "si": 3938,
+      "tbt": 1730,
+      "tti": 16080,
+      "cls": 0.024,
+      "ttfb": 614,
+      "maxPotentialFid": 830,
+      "serverResponseTime": 45,
+      "networkRtt": 0.4,
+      "networkServerLatency": 181.1
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 46.2,
+      "resourceLoadDelay": 16.8,
+      "resourceLoadDuration": 28.4,
+      "elementRenderDelay": 163.3
+    },
+    "weight": {
+      "total": 2164071,
+      "requests": 132,
+      "mainDocument": 107231,
+      "byType": {
+        "total": {
+          "bytes": 2164071,
+          "requests": 131
+        },
+        "script": {
+          "bytes": 974044,
+          "requests": 46
+        },
+        "image": {
+          "bytes": 591053,
+          "requests": 46
+        },
+        "other": {
+          "bytes": 320386,
+          "requests": 32
+        },
+        "font": {
+          "bytes": 169569,
+          "requests": 4
+        },
+        "document": {
+          "bytes": 109019,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 2164071,
+          "requests": 131
+        }
+      },
+      "scripts": 46,
+      "stylesheets": 0,
+      "fonts": 4
+    },
+    "thirdParty": {
+      "count": 4,
+      "bytes": 245128,
+      "mainThreadMs": 165.6,
+      "top": [
+        {
+          "entity": "Facebook",
+          "bytes": 201258,
+          "mainThreadMs": 130.6
+        },
+        {
+          "entity": "LinkedIn Ads",
+          "bytes": 42980,
+          "mainThreadMs": 35
+        },
+        {
+          "entity": "Other Google APIs/SDKs",
+          "bytes": 713,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Bing Ads",
+          "bytes": 177,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 7136.2,
+      "byGroup": {
+        "scriptEvaluation": 3582.4,
+        "other": 1530.3,
+        "styleLayout": 1257.1,
+        "scriptParseCompile": 290.4,
+        "paintCompositeRender": 250.3,
+        "parseHTML": 145.6,
+        "garbageCollection": 80
+      },
+      "bootupMs": 3832,
+      "longTasks": 20,
+      "longestTaskMs": 830
+    },
+    "dom": {
+      "elements": 2281,
+      "depth": 16,
+      "maxChildren": 72
+    },
+    "waste": {
+      "unusedJsBytes": 222939,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 12240,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 195337.4833333333,
+      "poorlyCachedCount": 11
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 34,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 0,
+      "bfCacheFailures": 1,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 63
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2458.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-25T13:51:41.307Z",
+      "runtimeMs": 26945.7
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-27",
+      "last": "2026-08-23"
+    },
+    "metrics": {
+      "cls": {
+        "p75": 0.02,
+        "rating": "good",
+        "distribution": {
+          "good": 93.4,
+          "needsImprovement": 4.6,
+          "poor": 2.1
+        }
+      },
+      "ttfb": {
+        "p75": 906,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 70.8,
+          "needsImprovement": 21.4,
+          "poor": 7.7
+        }
+      },
+      "fcp": {
+        "p75": 1792,
+        "rating": "good",
+        "distribution": {
+          "good": 75.3,
+          "needsImprovement": 16.4,
+          "poor": 8.3
+        }
+      },
+      "inp": {
+        "p75": 405,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 48.4,
+          "needsImprovement": 33.3,
+          "poor": 18.3
+        }
+      },
+      "lcp": {
+        "p75": 2074,
+        "rating": "good",
+        "distribution": {
+          "good": 82,
+          "needsImprovement": 11.4,
+          "poor": 6.6
+        }
+      },
+      "rtt": {
+        "p75": 207,
+        "rating": null,
+        "distribution": {
+          "good": 24.7,
+          "needsImprovement": 60.1,
+          "poor": 15.3
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": null,
+    "interstitial": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a30b12ab9f7ae678-SJC",
+      "server": "cloudflare"
+    },
+    "violations": 1,
+    "passes": 1571,
+    "incomplete": 65,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "aria-allowed-role",
+        "impact": "minor",
+        "nodes": 1,
+        "help": "ARIA role should be appropriate for the element"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
