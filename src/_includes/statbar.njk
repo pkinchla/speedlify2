@@ -88,11 +88,11 @@
 	</div>
 	{% endif %}
 	{#
-		One of the perfect scores, held for the whole UTC day — see siteOfTheDay in
-		lib/report.js for why it is picked by hashing the date rather than at
-		random. A picture rather than a row, because the leaderboard below already
-		lists every one of them and the point of pulling one out is to show what it
-		looks like.
+		One of the perfect scores, held for the whole UTC day. Every eligible site
+		is featured once before any is featured twice — see siteOfTheDay in
+		lib/report.js. A picture rather than a row, because the leaderboard below
+		already lists every one of them and the point of pulling one out is to
+		show what it looks like.
 
 		Cropped to the top of the page: at this size the whole screenshot would be
 		a grey smudge, and the masthead is the recognisable part.
@@ -102,11 +102,24 @@
 	<div class="stat">
 		<span class="stat-label">Perfect site of the day</span>
 		{#
-			Guarded on the service being configured: with none, the filter returns
-			an empty string, and `src=""` does not render nothing — it resolves to
-			the current page and fetches this whole document as an image.
+			Our own capture first: the same page load that produced the scores under
+			it, taken at Lighthouse's own pixel ratio because this site scored a
+			straight 400 — see isPerfectLighthouse in lib/runner.js, which exists so
+			that the one screenshot shown this large is the sharp one.
+
+			The service is the fallback, for a site that has not been re-measured
+			since captures were introduced. Guarded on it being configured: with
+			none, the filter returns an empty string, and `src=""` does not render
+			nothing — it resolves to the current page and fetches this whole
+			document as an image.
 		#}
-		{% if screenshotService %}
+		{% if sotd.ownScreenshot %}
+		<a class="sotd-shot" href="/site/{{ sotd.slug }}/" tabindex="-1" aria-hidden="true">
+			<img src="{{ sotd.ownScreenshot.src }}"
+				width="{{ sotd.ownScreenshot.width }}" height="{{ sotd.ownScreenshot.height }}"
+				alt="" loading="lazy" decoding="async">
+		</a>
+		{% elif screenshotService %}
 		<a class="sotd-shot" href="/site/{{ sotd.slug }}/" tabindex="-1" aria-hidden="true">
 			<img src="{{ sotd.url | screenshot(screenshotService) }}" width="650" height="650"
 				alt="" loading="lazy" decoding="async">
