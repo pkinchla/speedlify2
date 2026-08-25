@@ -1,0 +1,3 @@
+{"version":1,"url":"https://www.npmjs.com/","updated":"2026-08-25T16:36:47.129Z","points":[
+{"t":1787675780113,"performance":64,"accessibility":100,"best-practices":96,"seo":91,"lcp":8058,"cls":0.002,"tbt":252,"fcp":3208,"si":3208,"ttfb":628,"total":1208175,"requests":30,"bytes":86794,"mainThreadMs":0,"unusedJsBytes":301703,"unusedCssBytes":51767,"mainThreadTotal":894,"longTasks":4,"elements":134,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":344,"field-lcp":2034,"field-inp":114,"field-cls":0.01,"field-fcp":1818,"field-ttfb":1075,"bench":2294,"runs":3,"reqRuns":3,"ms":27014,"spread":8}
+]}

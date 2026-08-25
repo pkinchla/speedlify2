@@ -1,0 +1,3 @@
+{"version":1,"url":"https://packagist.org/","updated":"2026-08-25T16:36:20.112Z","points":[
+{"t":1787675750881,"performance":85,"accessibility":81,"best-practices":100,"seo":100,"lcp":3965,"cls":0,"tbt":113,"fcp":1626,"si":3140,"ttfb":726,"total":463100,"requests":17,"bytes":4688,"mainThreadMs":0.2,"unusedJsBytes":97488,"unusedCssBytes":31959,"mainThreadTotal":619.4,"longTasks":2,"elements":707,"failingCount":4,"failingNodes":16,"axeViolations":20,"axePasses":356,"field-lcp":2561,"field-inp":187,"field-cls":0,"field-fcp":2501,"field-ttfb":1679,"bench":2353.5,"runs":3,"reqRuns":3,"ms":29229,"spread":9}
+]}
