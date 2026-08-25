@@ -1,0 +1,225 @@
+{
+  "url": "https://qunitjs.com/",
+  "name": "QUnit",
+  "group": "test-runners",
+  "groupName": "Test Runners",
+  "timestamp": 1787647241904,
+  "date": "2026-08-25T08:40:41.904Z",
+  "runId": "2026-08-25T08-40-40-808Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 23722,
+  "error": null,
+  "variance": {
+    "min": 99,
+    "max": 100,
+    "spread": 1,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://qunitjs.com/",
+    "finalUrl": "https://qunitjs.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 100,
+      "accessibility": 98,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 828,
+      "lcp": 918,
+      "si": 828,
+      "tbt": 0,
+      "tti": 918,
+      "cls": 0,
+      "ttfb": 618,
+      "maxPotentialFid": 42,
+      "serverResponseTime": 18,
+      "networkRtt": 0,
+      "networkServerLatency": 18.1
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 19.3,
+      "elementRenderDelay": 72.1
+    },
+    "weight": {
+      "total": 91629,
+      "requests": 10,
+      "mainDocument": 3873,
+      "byType": {
+        "total": {
+          "bytes": 91629,
+          "requests": 9
+        },
+        "script": {
+          "bytes": 73250,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 8233,
+          "requests": 2
+        },
+        "image": {
+          "bytes": 4499,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 4421,
+          "requests": 2
+        },
+        "other": {
+          "bytes": 1226,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 73591,
+          "requests": 2
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 2,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 73591,
+      "mainThreadMs": 11.4,
+      "top": [
+        {
+          "entity": "jQuery CDN",
+          "bytes": 73591,
+          "mainThreadMs": 11.4
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 365.6,
+      "byGroup": {
+        "other": 143.7,
+        "styleLayout": 106.3,
+        "scriptEvaluation": 54.7,
+        "scriptParseCompile": 27.7,
+        "parseHTML": 17.7,
+        "paintCompositeRender": 15.5
+      },
+      "bootupMs": 71.6,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 200,
+      "depth": 9,
+      "maxChildren": 54
+    },
+    "waste": {
+      "unusedJsBytes": 35017,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 36002,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 11358.416666666666,
+      "poorlyCachedCount": 4
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 25,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 9
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2487,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-25T08:40:57.841Z",
+      "runtimeMs": 6480.3
+    }
+  },
+  "field": null,
+  "axe": {
+    "generator": null,
+    "host": {
+      "id": "github",
+      "name": "GitHub Pages",
+      "icon": "Github",
+      "source": "x-github-request-id"
+    },
+    "headers": {
+      "server": "GitHub.com",
+      "via": "1.1 varnish",
+      "x-fastly-request-id": "152aa39cc4116c3b43e2b8508e15f9945ce3b3b2",
+      "x-github-request-id": "DAE0:ACFE:27592E:2A239D:6A8CCBD0",
+      "x-served-by": "cache-dfw-kdfw8210157-DFW"
+    },
+    "violations": 19,
+    "passes": 426,
+    "incomplete": 7,
+    "violationRules": 4,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 14,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 3,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Heading levels should only increase by one"
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
