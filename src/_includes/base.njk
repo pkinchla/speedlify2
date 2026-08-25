@@ -3,6 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Dark first, matching `color-scheme: dark` on :root below. This is not a
+     duplicate of that declaration: the CSS wins once it is parsed, but the UA
+     reads this while the document is still arriving, so it governs the canvas
+     and the scrollbar in the window before then — and, between pages, the
+     background the browser paints for the incoming document. Both schemes are
+     listed because both are real: a stored choice of "light" flips :root to
+     color-scheme: light a few lines further down. -->
+<meta name="color-scheme" content="dark light">
 <title>{% if title %}{{ title }} · {% endif %}{{ meta.title }}</title>
 <meta name="description" content="{{ description or meta.description }}">
 {% if buildawesome.env.runMode == "build" %}

@@ -1724,6 +1724,22 @@ a.cat-chip:hover, a.cat-chip:focus-visible { color: var(--text); border-color: v
 	min-width: 0;
 }
 
+/* The headline figure for the pair below it. Sized like a stat rather than
+   like body copy, because it is the one number this section exists to state. */
+.nojs-diff {
+	margin-block: 0.75rem 0;
+	display: flex;
+	align-items: baseline;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+}
+
+.nojs-diff strong {
+	font-size: 1.5rem;
+	font-variant-numeric: tabular-nums;
+	letter-spacing: -0.02em;
+}
+
 .nojs-shot figcaption {
 	font-size: 0.8em;
 	color: var(--text-muted-strong);

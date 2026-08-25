@@ -454,6 +454,33 @@ eleventyComputed:
 		scripts disabled, once as rendered.
 	</p>
 	{#
+		The share of pixels that differ between the two captures.
+
+		Described as visual difference and not as "how much of this page needs
+		JavaScript", because the two are not the same thing and the gap between
+		them is large. A page that renders identically but carries a <noscript>
+		banner has its whole layout pushed down by the height of that banner, so
+		nearly every pixel moves and the figure lands above 50% — pypi.org is the
+		case in point, and it works fine without scripts.
+
+		Not banded green-to-red either: a high number is unremarkable for an
+		application and damning for a blog, and this page cannot tell which it is
+		looking at. The figure is stated and left alone.
+	#}
+	{% if entry.ownScreenshot.difference !== null %}
+	<p class="nojs-diff">
+		<strong>{{ entry.ownScreenshot.difference }}%</strong>
+		<span class="muted small">of pixels differ between the two &mdash;
+			{% if entry.ownScreenshot.difference >= 95 %}they have almost nothing in common
+			{%- elif entry.ownScreenshot.difference >= 50 %}the page changes substantially
+			{%- elif entry.ownScreenshot.difference >= 10 %}parts of the page change
+			{%- elif entry.ownScreenshot.difference > 0 %}they are nearly identical
+			{%- else %}they are identical{% endif %}.
+			A shifted layout counts as difference, so a &lt;noscript&gt; banner alone
+			can account for a large figure.</span>
+	</p>
+	{% endif %}
+	{#
 		Scripts disabled first, so the eye lands on it before the familiar one.
 		The rendered page is what everybody expects a screenshot to be; putting it
 		second makes it read as the answer to the picture beside it rather than as
