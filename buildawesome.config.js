@@ -204,6 +204,10 @@ export default async function ($config) {
 	$config.addPassthroughCopy({ "src/css": "css" });
 	$config.addPassthroughCopy({ "src/js": "js" });
 
+	// Netlify reads this from the publish directory root, not from src/ —
+	// see src/_headers for what it's for.
+	$config.addPassthroughCopy({ "src/_headers": "_headers" });
+
 	// Lighthouse's screenshots of each site, captured during measurement and
 	// stored beside the numbers. Copied rather than passed through an image
 	// pipeline: they are already small JPEGs at the size they are shown, and

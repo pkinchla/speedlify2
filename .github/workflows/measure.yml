@@ -3,21 +3,20 @@ name: Measure
 # Measurement is a rolling process, decoupled from publishing.
 #
 # This workflow measures a bounded batch of the stalest sites and commits the
-# results. It does not try to cover the whole list, and it does not need to
-# succeed for the site to build — see publish.yml, which deploys whatever data
-# exists whenever it runs.
+# results. It does not try to cover the whole list. Deployment happens
+# separately — Netlify is connected to this repo and builds on every push to
+# main, independent of anything in this file.
 #
 # To go faster, raise `batch` or add shards to the matrix. To go slower, run it
 # less often. Neither choice requires changing anything else.
 
 on:
   schedule:
-    # Hourly. With batch=20 and 4 shards that is 1,920 sites/day — the same
-    # throughput as before, arriving in smaller, more frequent pieces. Shorter
-    # runs matter more than the total: Lighthouse does not fully release memory
-    # between runs, and a job that ends sooner is a job that cannot exhaust the
-    # heap or overrun the timeout mid-batch.
-    - cron: "0 * * * *"
+    # Once a day, at midnight UTC. This fork tracks 7 sites against a
+    # freshnessHours of 24 (see config/sites.js) — batch=20 across a single
+    # shard clears the whole list in one run, so there is nothing for an
+    # hourly cadence to buy here.
+    - cron: "0 0 * * *"
   workflow_dispatch:
     inputs:
       batch:

@@ -1,0 +1,10 @@
+# <speedlify2-score> (src/js/speedlify2-score.js) fetches these directly from
+# the visitor's browser, from whatever origin embeds it — a different origin
+# than this site in every real case. Without this, the browser blocks the
+# fetch as cross-origin and the embed silently disappears (it hides itself on
+# any fetch failure, per SpeedlifyStore.fetch).
+#
+# Read-only, non-secret data, so a wildcard matches what the reference
+# instance at speedlify.dev already sends on the same path.
+/api/*
+  Access-Control-Allow-Origin: *
