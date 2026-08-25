@@ -12,7 +12,4 @@
 # is not in config/sites.js. Both are decisions about whether a site is measured
 # at all; this only changes when.
 
-# Declares Silex and Eleventy; the stored record kept only Silex, so it needs a
-# fresh measurement for the deferred-tag fix to take effect.
-
-# Serves a WordPress generator tag now; the 21 Aug probe found none at all.
+https://zapparov.dev/
