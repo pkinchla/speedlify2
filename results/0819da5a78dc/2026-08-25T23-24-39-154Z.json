@@ -1,0 +1,316 @@
+{
+  "url": "https://bunny.net/",
+  "name": "Bunny",
+  "group": "hosts",
+  "groupName": "Web Hosts",
+  "timestamp": 1787700279154,
+  "date": "2026-08-25T23:24:39.154Z",
+  "runId": "2026-08-25T23-24-29-981Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 107617,
+  "error": null,
+  "variance": {
+    "min": 44,
+    "max": 64,
+    "spread": 20,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://bunny.net/",
+    "finalUrl": "https://bunny.net/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 62,
+      "accessibility": 92,
+      "best-practices": 96,
+      "seo": 100,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 2782,
+      "lcp": 10268,
+      "si": 2868,
+      "tbt": 331,
+      "tti": 10471,
+      "cls": 0.04,
+      "ttfb": 637,
+      "maxPotentialFid": 210,
+      "serverResponseTime": 38,
+      "networkRtt": 0.2,
+      "networkServerLatency": 105.5
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 40.4,
+      "elementRenderDelay": 1094.9
+    },
+    "weight": {
+      "total": 4734407,
+      "requests": 145,
+      "mainDocument": 181158,
+      "byType": {
+        "total": {
+          "bytes": 4734407,
+          "requests": 140
+        },
+        "media": {
+          "bytes": 2866034,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 763098,
+          "requests": 16
+        },
+        "image": {
+          "bytes": 518919,
+          "requests": 93
+        },
+        "font": {
+          "bytes": 355043,
+          "requests": 7
+        },
+        "document": {
+          "bytes": 186085,
+          "requests": 6
+        },
+        "other": {
+          "bytes": 43620,
+          "requests": 16
+        },
+        "stylesheet": {
+          "bytes": 1608,
+          "requests": 1
+        },
+        "third-party": {
+          "bytes": 3145092,
+          "requests": 24
+        }
+      },
+      "scripts": 16,
+      "stylesheets": 1,
+      "fonts": 7
+    },
+    "thirdParty": {
+      "count": 3,
+      "bytes": 3106873,
+      "mainThreadMs": 69.1,
+      "top": [
+        {
+          "entity": "b-cdn.net",
+          "bytes": 2866034,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Cookiebot",
+          "bytes": 232552,
+          "mainThreadMs": 58.9
+        },
+        {
+          "entity": "Trust Pilot",
+          "bytes": 8287,
+          "mainThreadMs": 10.2
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 4460,
+      "byGroup": {
+        "other": 1922.5,
+        "scriptEvaluation": 1088.8,
+        "styleLayout": 702.4,
+        "scriptParseCompile": 271.7,
+        "parseHTML": 247.8,
+        "paintCompositeRender": 196.9,
+        "garbageCollection": 29.8
+      },
+      "bootupMs": 1236.7,
+      "longTasks": 12,
+      "longestTaskMs": 210
+    },
+    "dom": {
+      "elements": 2041,
+      "depth": 22,
+      "maxChildren": 26
+    },
+    "waste": {
+      "unusedJsBytes": 360092,
+      "unusedCssBytes": 157515,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 1006,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 48583.28486111111,
+      "poorlyCachedCount": 6
+    },
+    "accessibility": {
+      "failingCount": 3,
+      "applicableCount": 30,
+      "failingNodes": 17,
+      "failing": [
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "nodes": 8
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 6
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 3
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 9,
+      "baselineLimitedFeatures": 34
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2492,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-25T23:25:44.029Z",
+      "runtimeMs": 16870.2
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-27",
+      "last": "2026-08-23"
+    },
+    "metrics": {
+      "rtt": {
+        "p75": 207,
+        "rating": null,
+        "distribution": {
+          "good": 23.9,
+          "needsImprovement": 60.2,
+          "poor": 16
+        }
+      },
+      "cls": {
+        "p75": 0.04,
+        "rating": "good",
+        "distribution": {
+          "good": 88.9,
+          "needsImprovement": 8.6,
+          "poor": 2.5
+        }
+      },
+      "ttfb": {
+        "p75": 865,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 73.5,
+          "needsImprovement": 17.7,
+          "poor": 8.9
+        }
+      },
+      "fcp": {
+        "p75": 1725,
+        "rating": "good",
+        "distribution": {
+          "good": 76.8,
+          "needsImprovement": 13.8,
+          "poor": 9.4
+        }
+      },
+      "inp": {
+        "p75": 203,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 74.2,
+          "needsImprovement": 19.8,
+          "poor": 6.1
+        }
+      },
+      "lcp": {
+        "p75": 2860,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 69.5,
+          "needsImprovement": 17.6,
+          "poor": 12.9
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": {
+      "id": "gatsby",
+      "name": "Gatsby",
+      "icon": "Gatsby",
+      "version": "4.25.9",
+      "source": "meta",
+      "raw": "Gatsby 4.25.9"
+    },
+    "interstitial": null,
+    "host": {
+      "id": "bunny",
+      "name": "Bunny CDN",
+      "icon": null,
+      "source": "server"
+    },
+    "headers": {
+      "server": "BunnyCDN-MSP1-1084"
+    },
+    "violations": 18,
+    "passes": 1454,
+    "incomplete": 75,
+    "violationRules": 4,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "nodes": 8,
+        "help": "Links must have discernible text"
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 6,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 3,
+        "help": "Heading levels should only increase by one"
+      },
+      {
+        "id": "scrollable-region-focusable",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Scrollable region must have keyboard access"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
