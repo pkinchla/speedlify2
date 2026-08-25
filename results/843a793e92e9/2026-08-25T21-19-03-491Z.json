@@ -1,0 +1,264 @@
+{
+  "url": "https://vercel.com/",
+  "name": "Vercel",
+  "group": "hosts",
+  "groupName": "Web Hosts",
+  "timestamp": 1787692743491,
+  "date": "2026-08-25T21:19:03.491Z",
+  "runId": "2026-08-25T21-19-02-409Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 2,
+  "durationMs": 315566,
+  "error": null,
+  "partialErrors": [
+    "PAGE_HUNG: Lighthouse was unable to reliably load the URL you requested because the page stopped responding."
+  ],
+  "variance": {
+    "min": 32,
+    "max": 53,
+    "spread": 21,
+    "runs": 2
+  },
+  "lab": {
+    "requestedUrl": "https://vercel.com/",
+    "finalUrl": "https://vercel.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 32,
+      "accessibility": 95,
+      "best-practices": 92,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 2721,
+      "lcp": 6973,
+      "si": 19056,
+      "tbt": 76160,
+      "tti": 85715,
+      "cls": 0,
+      "ttfb": 657,
+      "maxPotentialFid": 10000,
+      "serverResponseTime": 21,
+      "networkRtt": 26.6,
+      "networkServerLatency": 56.9
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 283,
+      "elementRenderDelay": 591.9
+    },
+    "weight": {
+      "total": 2158024,
+      "requests": 115,
+      "mainDocument": 56627,
+      "byType": {
+        "total": {
+          "bytes": 2156073,
+          "requests": 114
+        },
+        "script": {
+          "bytes": 1274387,
+          "requests": 72
+        },
+        "font": {
+          "bytes": 227689,
+          "requests": 7
+        },
+        "other": {
+          "bytes": 226640,
+          "requests": 19
+        },
+        "image": {
+          "bytes": 204051,
+          "requests": 8
+        },
+        "stylesheet": {
+          "bytes": 166679,
+          "requests": 7
+        },
+        "document": {
+          "bytes": 56627,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 80371,
+          "requests": 4
+        }
+      },
+      "scripts": 72,
+      "stylesheets": 7,
+      "fonts": 7
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 80371,
+      "mainThreadMs": 0,
+      "top": [
+        {
+          "entity": "vercel-storage.com",
+          "bytes": 57505,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Twitter",
+          "bytes": 22866,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 180133.9,
+      "byGroup": {
+        "other": 175666.7,
+        "scriptEvaluation": 3166.7,
+        "styleLayout": 621.7,
+        "scriptParseCompile": 467.8,
+        "parseHTML": 151.1,
+        "paintCompositeRender": 44.8,
+        "garbageCollection": 15
+      },
+      "bootupMs": 3159,
+      "longTasks": 20,
+      "longestTaskMs": 10000
+    },
+    "dom": {
+      "elements": 970,
+      "depth": 19,
+      "maxChildren": 24
+    },
+    "waste": {
+      "unusedJsBytes": 560700,
+      "unusedCssBytes": 20172,
+      "legacyJsBytes": 25467,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 750,
+      "renderBlockingCount": 4,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 28,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "meta-viewport",
+          "title": "`[user-scalable=\"no\"]` is used in the `<meta name=\"viewport\">` element or the `[maximum-scale]` attribute is less than 5.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": null,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "http/1.1",
+      "legacyHttpRequests": 0,
+      "redirectMs": 806.9,
+      "consoleErrors": 1,
+      "baselineLimitedFeatures": 77
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2155,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-25T21:19:05.212Z",
+      "runtimeMs": 97897.1
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-27",
+      "last": "2026-08-23"
+    },
+    "metrics": {
+      "rtt": {
+        "p75": 246,
+        "rating": null,
+        "distribution": {
+          "good": 19.2,
+          "needsImprovement": 60.3,
+          "poor": 20.5
+        }
+      },
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 97.7,
+          "needsImprovement": 2.1,
+          "poor": 0.2
+        }
+      },
+      "ttfb": {
+        "p75": 945,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 69.6,
+          "needsImprovement": 19.4,
+          "poor": 11
+        }
+      },
+      "fcp": {
+        "p75": 1854,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 74.3,
+          "needsImprovement": 13.2,
+          "poor": 12.5
+        }
+      },
+      "inp": {
+        "p75": 244,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 68.9,
+          "needsImprovement": 19.6,
+          "poor": 11.5
+        }
+      },
+      "lcp": {
+        "p75": 2055,
+        "rating": "good",
+        "distribution": {
+          "good": 81.2,
+          "needsImprovement": 9.4,
+          "poor": 9.4
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": null,
+    "host": null,
+    "headers": {},
+    "violations": null,
+    "passes": null,
+    "incomplete": null,
+    "violationRules": null,
+    "version": null,
+    "top": [],
+    "error": "Page/Frame is not ready"
+  },
+  "consecutiveFailures": 0
+}
