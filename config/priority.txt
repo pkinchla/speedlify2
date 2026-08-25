@@ -12,7 +12,6 @@
 # is not in config/sites.js. Both are decisions about whether a site is measured
 # at all; this only changes when.
 
-https://zapparov.dev/
 https://www.11ty.dev/
 https://astro.build/
 https://webdriver.io/
