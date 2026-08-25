@@ -1,0 +1,3 @@
+{"version":1,"url":"https://crates.io/","updated":"2026-08-25T16:36:57.277Z","points":[
+{"t":1787675790666,"performance":95,"accessibility":96,"best-practices":100,"seo":92,"lcp":2785,"cls":0.01,"tbt":76,"fcp":1581,"si":1581,"ttfb":606,"total":205541,"requests":64,"bytes":6211,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":1000.9,"longTasks":3,"elements":658,"failingCount":2,"failingNodes":160,"axeViolations":100,"axePasses":1422,"field-lcp":1983,"field-inp":106,"field-cls":0.21,"field-fcp":1879,"field-ttfb":1065,"bench":2490.5,"runs":3,"reqRuns":3,"ms":26607,"spread":1}
+]}
