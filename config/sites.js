@@ -277,6 +277,39 @@ export default {
 			],
 		},
 
+		"package-managers": {
+			name: "Package Managers",
+			enabled: true,
+			description:
+				"Package browsers: the searchable front ends to a package registry. Every one of these has a similar job \u2014 a search box over a package index.",
+			...DAILY,
+			sites: [
+				{ name: "npm", url: "https://www.npmjs.com/" },
+				{ name: "Yarn", url: "https://yarnpkg.com/" },
+				{ name: "JSR", url: "https://jsr.io/" },
+				{ name: "npmx", url: "https://npmx.dev/" },
+				{ name: "PyPI", url: "https://pypi.org/" },
+				{ name: "crates.io", url: "https://crates.io/" },
+				{ name: "Packagist", url: "https://packagist.org/" },
+				{ name: "RubyGems", url: "https://rubygems.org/" },
+				{ name: "Maven Central", url: "https://central.sonatype.com/" },
+				{ name: "NuGet", url: "https://www.nuget.org/" },
+				{ name: "pkg.go.dev", url: "https://pkg.go.dev/" },
+				{ name: "pub.dev", url: "https://pub.dev/" },
+				{ name: "Hex", url: "https://hex.pm/" },
+				{ name: "Homebrew", url: "https://brew.sh/" },
+
+				/*
+				 * Documentation sites, not package browsers (left out for now)
+				 */
+				// { name: "pnpm", url: "https://pnpm.io/" },
+				// { name: "vlt", url: "https://www.vlt.io/" },
+				// { name: "jspm", url: "https://jspm.org/" },
+				// { name: "uv", url: "https://docs.astral.sh/uv/" },
+				// { name: "Chocolatey", url: "https://chocolatey.org/" },
+			],
+		},
+
 		hosts: {
 			name: "Web Hosts",
 			enabled: true,
