@@ -1,6 +1,5 @@
 import archived from "./archived.json" with { type: "json" };
 import pinned from "./pinned.json" with { type: "json" };
-import screenshotBlocked from "./screenshot-blocked.json" with { type: "json" };
 import community from "./11ty-community.json" with { type: "json" };
 import emeritus from "./11ty-emeritus.json" with { type: "json" };
 import starters from "./11ty-starters.json" with { type: "json" };
@@ -142,22 +141,6 @@ export default {
 	// carry `pinGroup: true` directly, for the hand-written categories; this list
 	// is for the ones whose entries come from a generated file.
 	pinned: PINNED,
-
-	/**
-	 * Sites the screenshot service cannot photograph.
-	 *
-	 * It is an automated client like any other, so a site behind a bot check
-	 * serves it the challenge page — and the site page then shows Cloudflare's
-	 * waiting room under that site's name, which claims we saw something we did
-	 * not. solidjs.com is the case in point: the service gets "Performing
-	 * security verification" while our own Chrome loads the real page and scores
-	 * it 86/92/100/100.
-	 *
-	 * A URL here makes the measurement keep Lighthouse's own full-page capture,
-	 * and the page prefers that. Not the default: the image is around 240 KB
-	 * against a filmstrip frame's 25, and all of it is committed.
-	 */
-	screenshotBlocked: screenshotBlocked.urls,
 
 	// Lighthouse runs per URL per measurement. The median run is kept.
 	// 3 is a decent tradeoff between noise and wall-clock time.

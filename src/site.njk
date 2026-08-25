@@ -44,9 +44,10 @@ eleventyComputed:
 {% set shotWidth = 650 %}
 {% set shotHeight = 650 %}
 {#
-	Our own capture first, where we have one. It exists only for sites the
-	screenshot service is served a bot check by, and it is the picture our own
-	Chrome saw — the real page, taken on the same run as the numbers beside it.
+	Our own capture first, where we have one: the picture our own Chrome saw,
+	taken on the same page load as the numbers beside it. Every site gets one
+	from the axe pass now, so the service below is only for sites that have not
+	come round for measurement since — see lib/axe.js.
 
 	No performance floor on this branch: that floor exists because the service
 	renders on a timer and photographs half-drawn pages, and our capture is a
@@ -273,6 +274,8 @@ eleventyComputed:
 {% if hasCwv %}{% set toc = (toc.push({ id: "cwv", label: "Core Web Vitals" }), toc) %}{% endif %}
 {% set toc = (toc.push({ id: "scores", label: "Scores" }), toc) %}
 {% if hasFilmstrip %}{% set toc = (toc.push({ id: "filmstrip", label: "Filmstrip" }), toc) %}{% endif %}
+{% set hasNoJs = entry.ownScreenshot.noJs and not entry.interstitial %}
+{% if hasNoJs %}{% set toc = (toc.push({ id: "without-javascript", label: "Without JavaScript" }), toc) %}{% endif %}
 {% set toc = (toc.push({ id: "lab", label: "Lab metrics" }), toc) %}
 {% if hasField %}{% set toc = (toc.push({ id: "field", label: "Field data" }), toc) %}{% endif %}
 {% if hasFieldHistory %}{% set toc = (toc.push({ id: "field-history", label: "Field history" }), toc) %}{% endif %}
@@ -423,6 +426,52 @@ eleventyComputed:
 			</li>
 			{% endfor %}
 		</ol>
+	</div>
+</section>
+{% endif %}
+
+{% if hasNoJs %}
+{#
+	The same page twice: as the browser renders it, and with script execution
+	disabled before the navigation. Both are captured on the axe pass, at the
+	same viewport, moments apart — so the difference between them is JavaScript
+	and nothing else. Neither is a full-page capture, deliberately: a site that
+	renders nothing without JavaScript would otherwise produce a tall picture
+	beside a short one, and the comparison would be between two aspect ratios.
+
+	Not a claim about whether the site *should* work without JavaScript. Plenty
+	of these pages are applications, where the answer is obviously no. It is the
+	one thing a screenshot can show that a number cannot.
+
+	Decorative, like the screenshot at the top: the headings above each frame
+	carry the information, and they are text.
+#}
+<section class="panel" id="without-javascript">
+	<h2>Without JavaScript</h2>
+	<p class="muted small">
+		The same load, photographed twice at
+		{{ entry.ownScreenshot.width or 800 }}&times;{{ entry.ownScreenshot.height or 600 }}: once with
+		scripts disabled, once as rendered.
+	</p>
+	{#
+		Scripts disabled first, so the eye lands on it before the familiar one.
+		The rendered page is what everybody expects a screenshot to be; putting it
+		second makes it read as the answer to the picture beside it rather than as
+		the subject the no-JS shot is a footnote to.
+	#}
+	<div class="nojs-pair">
+		<figure class="nojs-shot">
+			<figcaption>Scripts disabled</figcaption>
+			<img src="{{ entry.ownScreenshot.noJs.src }}"
+				width="{{ entry.ownScreenshot.noJs.width or 800 }}" height="{{ entry.ownScreenshot.noJs.height or 600 }}"
+				alt="" loading="lazy" decoding="async">
+		</figure>
+		<figure class="nojs-shot">
+			<figcaption>As rendered</figcaption>
+			<img src="{{ entry.ownScreenshot.src }}"
+				width="{{ entry.ownScreenshot.width or 800 }}" height="{{ entry.ownScreenshot.height or 600 }}"
+				alt="" loading="lazy" decoding="async">
+		</figure>
 	</div>
 </section>
 {% endif %}

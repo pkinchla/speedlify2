@@ -419,7 +419,11 @@ th.col-trend { text-align: center !important; }
  */
 .detail-head.has-shot {
 	display: grid;
-	grid-template-columns: minmax(0, 1fr) 200px;
+	/* One number for the column and the image inside it. They have to agree —
+	   a wider image than its track overflows the grid — and having said it
+	   twice is how they stop agreeing. */
+	--shot-width: 300px;
+	grid-template-columns: minmax(0, 1fr) var(--shot-width);
 	gap: 1.25rem;
 	align-items: start;
 }
@@ -429,11 +433,16 @@ th.col-trend { text-align: center !important; }
 .detail-shot-link:hover .detail-shot { border-color: var(--border-strong); }
 
 .detail-shot {
-	width: 200px;
-	/* Square, matching the service's default 1:1 — stated so the space is
-	   reserved before the image arrives rather than after. */
+	width: var(--shot-width, 300px);
+	/* 4:3, matching the 800x600 viewport our own capture is taken at — stated so
+	   the space is reserved before the image arrives rather than after.
+
+	   `cover` and a top anchor are still here for the sites whose picture still
+	   comes from the screenshot service at 1:1: those crop to their top edge
+	   rather than squashing, which is the half of a square screenshot worth
+	   showing anyway. */
 	height: auto;
-	aspect-ratio: 1;
+	aspect-ratio: 800 / 600;
 	object-fit: cover;
 	object-position: top center;
 	border: 1px solid var(--border);
@@ -446,7 +455,7 @@ th.col-trend { text-align: center !important; }
    first, so it stacks heading-then-image without any reordering. */
 @media (max-width: 34rem) {
 	.detail-head.has-shot { grid-template-columns: minmax(0, 1fr); }
-	.detail-shot { width: 100%; max-width: 260px; }
+	.detail-shot { width: 100%; max-width: var(--shot-width, 300px); }
 }
 
 /* ------------------------------------------------------------------- cards */
@@ -1694,3 +1703,44 @@ a.cat-chip:hover, a.cat-chip:focus-visible { color: var(--text); border-color: v
 }
 /* Same again — 2.02:1 over the failing row's tint. */
 .updated-tag.never { color: var(--text-muted-strong); }
+
+/*
+ * The two screenshots on a site page, as rendered and with scripts disabled.
+ *
+ * Two columns that collapse to one below the breakpoint rather than a scroller:
+ * there are only ever two frames, and the whole point is seeing them at once.
+ * Stacked on a phone still reads as a comparison; a horizontal scroll would
+ * show one at a time, which is the one arrangement that defeats it.
+ */
+.nojs-pair {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+	gap: 1rem;
+	margin-block: 1rem;
+}
+
+.nojs-shot {
+	margin: 0;
+	min-width: 0;
+}
+
+.nojs-shot figcaption {
+	font-size: 0.8em;
+	color: var(--text-muted-strong);
+	margin-block-end: 0.35rem;
+}
+
+/*
+ * Capped by height rather than width so the pair stays the same size as each
+ * other whatever the viewport was. The border matters more than it looks: a
+ * page that renders nothing without JavaScript is a white rectangle, and
+ * without an edge it reads as a missing image rather than as the answer.
+ */
+.nojs-shot img {
+	display: block;
+	width: 100%;
+	height: auto;
+	border: 1px solid var(--border);
+	border-radius: 3px;
+	background: var(--surface);
+}

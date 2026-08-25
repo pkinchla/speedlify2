@@ -204,12 +204,21 @@ export default async function ($config) {
 	$config.addPassthroughCopy({ "src/css": "css" });
 	$config.addPassthroughCopy({ "src/js": "js" });
 
-	// Lighthouse's screenshots of each site, captured during measurement and
-	// stored beside the numbers. Copied rather than passed through an image
+	// Lighthouse's filmstrip frames for each site, captured during measurement
+	// and stored beside the numbers. Copied rather than passed through an image
 	// pipeline: they are already small JPEGs at the size they are shown, and
 	// they are named by a hash of their own bytes, so the URL changes only when
 	// the picture does.
 	$config.addPassthroughCopy("results/*/frames");
+
+	// The pair from the axe pass — the page as rendered, and with scripts
+	// disabled — which sit beside the frames directory rather than inside it.
+	//
+	// The extension is part of the glob because these are not hash-named: the
+	// filename is fixed and the format is the capture's choice, so a switch away
+	// from WebP upstream has to keep being copied. See writeScreenshots in
+	// lib/store.js, which sweeps the file of the old type when that happens.
+	$config.addPassthroughCopy("results/*/screenshot*.{webp,jpg,jpeg,png,avif}");
 
 	// Emulated passthrough copy: during `--serve`, files are served from where
 	// they already are instead of being copied into the output first. Opt-in —
