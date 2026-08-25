@@ -211,6 +211,15 @@ export default async function ($config) {
 	// the picture does.
 	$config.addPassthroughCopy("results/*/frames");
 
+	// Our own full-page screenshot for a `screenshotBlocked` site — see
+	// readOwnScreenshot in lib/report.js, which points `ownScreenshot.src` at
+	// `/results/<hash>/<file>` on the assumption this copies it through. Same
+	// reasoning as the frames line above: already the size it's shown at, named
+	// by content hash isn't guaranteed here (Lighthouse names it `screenshot.*`),
+	// but it's one file per site rather than a set, so a re-measure just
+	// overwrites it in place.
+	$config.addPassthroughCopy("results/*/screenshot.*");
+
 	// Emulated passthrough copy: during `--serve`, files are served from where
 	// they already are instead of being copied into the output first. Opt-in —
 	// Eleventy defaults to "copy" — and worth opting into here, because the
