@@ -1,0 +1,88 @@
+{
+  "url": "https://vercel.com/",
+  "name": "Vercel",
+  "group": "hosts",
+  "groupName": "Web Hosts",
+  "timestamp": 1787669089210,
+  "date": "2026-08-25T14:44:49.210Z",
+  "runId": "2026-08-25T14-43-46-996Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 0,
+  "durationMs": 153989,
+  "error": "PAGE_HUNG: Lighthouse was unable to reliably load the URL you requested because the page stopped responding.",
+  "errors": [
+    "PAGE_HUNG: Lighthouse was unable to reliably load the URL you requested because the page stopped responding.",
+    "PAGE_HUNG: Lighthouse was unable to reliably load the URL you requested because the page stopped responding.",
+    "PAGE_HUNG: Lighthouse was unable to reliably load the URL you requested because the page stopped responding."
+  ],
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-27",
+      "last": "2026-08-23"
+    },
+    "metrics": {
+      "rtt": {
+        "p75": 246,
+        "rating": null,
+        "distribution": {
+          "good": 19.2,
+          "needsImprovement": 60.3,
+          "poor": 20.5
+        }
+      },
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 97.7,
+          "needsImprovement": 2.1,
+          "poor": 0.2
+        }
+      },
+      "ttfb": {
+        "p75": 945,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 69.6,
+          "needsImprovement": 19.4,
+          "poor": 11
+        }
+      },
+      "fcp": {
+        "p75": 1854,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 74.3,
+          "needsImprovement": 13.2,
+          "poor": 12.5
+        }
+      },
+      "inp": {
+        "p75": 244,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 68.9,
+          "needsImprovement": 19.6,
+          "poor": 11.5
+        }
+      },
+      "lcp": {
+        "p75": 2055,
+        "rating": "good",
+        "distribution": {
+          "good": 81.2,
+          "needsImprovement": 9.4,
+          "poor": 9.4
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 3
+  },
+  "axe": null,
+  "consecutiveFailures": 2
+}
