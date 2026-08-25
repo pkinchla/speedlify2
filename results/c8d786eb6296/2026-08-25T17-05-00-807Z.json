@@ -1,80 +1,75 @@
 {
-  "url": "https://paulkinchla.com/blog",
+  "url": "https://paulkinchla.com/projects",
   "name": "paulkinchla.com",
   "group": "paulkinchladotcom",
   "groupName": "paulkinchla.com",
-  "timestamp": 1787675722709,
-  "date": "2026-08-25T16:35:22.709Z",
-  "runId": "2026-08-25T16-31-15-105Z",
+  "timestamp": 1787677500807,
+  "date": "2026-08-25T17:05:00.807Z",
+  "runId": "2026-08-25T17-01-48-856Z",
   "formFactor": "mobile",
-  "requestedRuns": 3,
-  "completedRuns": 3,
-  "durationMs": 22391,
+  "requestedRuns": 1,
+  "completedRuns": 1,
+  "durationMs": 8599,
   "error": null,
-  "variance": {
-    "min": 94,
-    "max": 95,
-    "spread": 1,
-    "runs": 3
-  },
+  "variance": null,
   "lab": {
-    "requestedUrl": "https://paulkinchla.com/blog",
-    "finalUrl": "https://paulkinchla.com/blog/",
+    "requestedUrl": "https://paulkinchla.com/projects",
+    "finalUrl": "https://paulkinchla.com/projects/",
     "redirect": null,
     "statusCode": "ok",
     "scores": {
-      "performance": 94,
+      "performance": 96,
       "accessibility": 100,
       "best-practices": 100,
       "seo": 100,
       "agentic-browsing": 100
     },
     "timings": {
-      "fcp": 1382,
-      "lcp": 2989,
-      "si": 1382,
+      "fcp": 1220,
+      "lcp": 2720,
+      "si": 1220,
       "tbt": 0,
-      "tti": 2989,
-      "cls": 0,
-      "ttfb": 496,
-      "maxPotentialFid": 43,
-      "serverResponseTime": 48,
-      "networkRtt": 0,
-      "networkServerLatency": 46.4
+      "tti": 2720,
+      "cls": 0.003,
+      "ttfb": 457,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 52,
+      "networkRtt": 47.3,
+      "networkServerLatency": 6.6
     },
     "lcpBreakdown": {
-      "timeToFirstByte": 82,
-      "resourceLoadDelay": 9.6,
-      "resourceLoadDuration": 38.6,
-      "elementRenderDelay": 53
+      "timeToFirstByte": 134.2,
+      "resourceLoadDelay": 10,
+      "resourceLoadDuration": 147.4,
+      "elementRenderDelay": 28.2
     },
     "weight": {
-      "total": 269020,
+      "total": 235752,
       "requests": 10,
-      "mainDocument": 23820,
+      "mainDocument": 22349,
       "byType": {
         "total": {
-          "bytes": 269020,
+          "bytes": 235752,
           "requests": 9
         },
         "font": {
-          "bytes": 163507,
+          "bytes": 163509,
           "requests": 3
         },
         "image": {
-          "bytes": 67544,
+          "bytes": 35624,
           "requests": 1
         },
         "document": {
-          "bytes": 23820,
+          "bytes": 22349,
           "requests": 1
         },
         "script": {
-          "bytes": 11225,
+          "bytes": 11231,
           "requests": 1
         },
         "other": {
-          "bytes": 2924,
+          "bytes": 3039,
           "requests": 3
         },
         "stylesheet": {
@@ -101,21 +96,22 @@
       "top": []
     },
     "mainThread": {
-      "total": 294.3,
+      "total": 367.6,
       "byGroup": {
-        "other": 122.2,
-        "styleLayout": 68,
-        "scriptEvaluation": 51.1,
-        "parseHTML": 29.6,
-        "paintCompositeRender": 21.3,
-        "scriptParseCompile": 2.1
+        "other": 141.2,
+        "styleLayout": 105.9,
+        "scriptEvaluation": 38.2,
+        "parseHTML": 31.2,
+        "paintCompositeRender": 30.3,
+        "garbageCollection": 19.2,
+        "scriptParseCompile": 1.7
       },
-      "bootupMs": 47.6,
+      "bootupMs": 15.7,
       "longTasks": 0,
       "longestTaskMs": null
     },
     "dom": {
-      "elements": 217,
+      "elements": 182,
       "depth": 12,
       "maxChildren": 9
     },
@@ -133,7 +129,7 @@
     },
     "accessibility": {
       "failingCount": 0,
-      "applicableCount": 26,
+      "applicableCount": 25,
       "failingNodes": 0,
       "failing": []
     },
@@ -148,24 +144,31 @@
       "bfCacheFailures": 0,
       "protocol": "h3",
       "legacyHttpRequests": 0,
-      "redirectMs": 796.4,
+      "redirectMs": 756.6,
       "consoleErrors": 0,
-      "baselineLimitedFeatures": 46
+      "baselineLimitedFeatures": 45
     },
     "environment": {
       "lighthouseVersion": "13.4.1",
-      "benchmarkIndex": 2332.5,
+      "benchmarkIndex": 2338,
       "formFactor": "mobile",
       "throttlingMethod": "simulate",
       "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36",
-      "fetchTime": "2026-08-25T16:35:36.487Z",
-      "runtimeMs": 6100.3
+      "fetchTime": "2026-08-25T17:05:01.990Z",
+      "runtimeMs": 6087.2
     }
   },
   "field": null,
   "axe": {
-    "generator": null,
-    "interstitial": "Just a moment...",
+    "generator": {
+      "id": "wordpress",
+      "name": "WordPress",
+      "icon": "Wordpress",
+      "version": "7.0.2",
+      "source": "meta",
+      "raw": "WordPress 7.0.2"
+    },
+    "interstitial": null,
     "host": {
       "id": "cloudflare",
       "name": "Cloudflare",
@@ -173,22 +176,15 @@
       "source": "server"
     },
     "headers": {
-      "cf-ray": "a30c02e9cac34d08-BOS",
+      "cf-ray": "a30c2e092f80ae27-BOS",
       "server": "cloudflare"
     },
-    "violations": 1,
-    "passes": 69,
+    "violations": 0,
+    "passes": 288,
     "incomplete": 0,
-    "violationRules": 1,
+    "violationRules": 0,
     "version": "4.13.0",
-    "top": [
-      {
-        "id": "meta-refresh",
-        "impact": "critical",
-        "nodes": 1,
-        "help": "Delayed refresh under 20 hours must not be used"
-      }
-    ],
+    "top": [],
     "error": null
   },
   "consecutiveFailures": 0

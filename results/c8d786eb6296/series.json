@@ -1,4 +1,4 @@
-{"version":1,"url":"https://paulkinchla.com/projects","updated":"2026-08-25T16:34:44.049Z","points":[
+{"version":1,"url":"https://paulkinchla.com/projects/","updated":"2026-08-25T17:08:37.815Z","points":[
 {"t":1783439986824,"performance":97,"accessibility":100,"best-practices":100,"seo":100,"lcp":2533.942,"cls":0.00267671101375467,"tbt":0,"fcp":1108.942,"si":1108.942,"ttfb":141.106,"total":234928,"requests":9,"bytes":0,"axeViolations":0,"axePasses":287,"runs":3,"reqRuns":3},
-{"t":1787675662709,"performance":95,"accessibility":100,"best-practices":100,"seo":100,"lcp":2844,"cls":0,"tbt":0,"fcp":1391,"si":1391,"ttfb":498,"total":235662,"requests":10,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":303,"longTasks":0,"elements":182,"failingCount":0,"failingNodes":0,"axeViolations":1,"axePasses":69,"bench":2255,"runs":3,"reqRuns":3,"ms":21339,"spread":1}
+{"t":1787677500807,"performance":96,"accessibility":100,"best-practices":100,"seo":100,"lcp":2720,"cls":0.003,"tbt":0,"fcp":1220,"si":1220,"ttfb":457,"total":235752,"requests":10,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":367.6,"longTasks":0,"elements":182,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":288,"bench":2338,"runs":1,"reqRuns":1,"ms":8599}
 ]}

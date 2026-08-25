@@ -63,6 +63,9 @@ jobs:
       - name: Measure batch
         env:
           CRUX_API_KEY: ${{ secrets.CRUX_API_KEY }}
+          # Lets the axe pass clear paulkinchla.com's Cloudflare bot check —
+          # see CLOUDFLARE_BYPASS_SECRET in config/sites.js.
+          CLOUDFLARE_BYPASS_SECRET: ${{ secrets.CLOUDFLARE_BYPASS_SECRET }}
         run: |
           node bin/speedlify.js measure \
             --shard=${{ matrix.shard }}/4 \

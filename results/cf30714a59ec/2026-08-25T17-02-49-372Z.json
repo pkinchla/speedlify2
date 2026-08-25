@@ -3,76 +3,71 @@
   "name": "sevenpx.design",
   "group": "sevenpx",
   "groupName": "sevenpx.design",
-  "timestamp": 1787675808103,
-  "date": "2026-08-25T16:36:48.103Z",
-  "runId": "2026-08-25T16-31-15-105Z",
+  "timestamp": 1787677369372,
+  "date": "2026-08-25T17:02:49.372Z",
+  "runId": "2026-08-25T17-01-48-856Z",
   "formFactor": "mobile",
-  "requestedRuns": 3,
-  "completedRuns": 3,
-  "durationMs": 22561,
+  "requestedRuns": 1,
+  "completedRuns": 1,
+  "durationMs": 8432,
   "error": null,
-  "variance": {
-    "min": 68,
-    "max": 88,
-    "spread": 20,
-    "runs": 3
-  },
+  "variance": null,
   "lab": {
     "requestedUrl": "https://sevenpx.design/drawings",
     "finalUrl": "https://sevenpx.design/drawings/",
     "redirect": null,
     "statusCode": "ok",
     "scores": {
-      "performance": 87,
+      "performance": 99,
       "accessibility": 100,
       "best-practices": 100,
       "seo": 100,
       "agentic-browsing": 67
     },
     "timings": {
-      "fcp": 1895,
-      "lcp": 3815,
-      "si": 2475,
+      "fcp": 1721,
+      "lcp": 1721,
+      "si": 2065,
       "tbt": 0,
-      "tti": 3815,
-      "cls": 0,
-      "ttfb": 665,
-      "maxPotentialFid": 42,
-      "serverResponseTime": 172,
+      "tti": 1721,
+      "cls": 0.026,
+      "ttfb": 671,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 94,
       "networkRtt": 0,
-      "networkServerLatency": 65.2
+      "networkServerLatency": 70.7
     },
     "lcpBreakdown": {
-      "timeToFirstByte": 238.5,
-      "elementRenderDelay": 241
+      "timeToFirstByte": 654.1,
+      "elementRenderDelay": 222.5
     },
     "weight": {
-      "total": 955658,
+      "total": 955918,
       "requests": 14,
-      "mainDocument": 165300,
+      "mainDocument": 165623,
       "byType": {
         "total": {
-          "bytes": 923758,
+          "bytes": 924053,
           "requests": 13
         },
         "font": {
-          "bytes": 699477,
+          "bytes": 699479,
           "requests": 2
         },
         "document": {
-          "bytes": 165300,
+          "bytes": 165623,
           "requests": 1
         },
         "script": {
-          "bytes": 56776,
+          "bytes": 56746,
           "requests": 8
         },
         "stylesheet": {
-          "bytes": 2127,
+          "bytes": 2128,
           "requests": 1
         },
         "other": {
-          "bytes": 78,
+          "bytes": 77,
           "requests": 1
         },
         "image": {
@@ -99,18 +94,19 @@
       "top": []
     },
     "mainThread": {
-      "total": 419.2,
+      "total": 414.6,
       "byGroup": {
-        "other": 191,
-        "scriptEvaluation": 92.2,
-        "styleLayout": 79.8,
-        "paintCompositeRender": 30,
-        "parseHTML": 23.9,
-        "scriptParseCompile": 2.3
+        "other": 174.7,
+        "styleLayout": 88.4,
+        "scriptEvaluation": 73.8,
+        "paintCompositeRender": 37,
+        "parseHTML": 23.7,
+        "garbageCollection": 15.1,
+        "scriptParseCompile": 1.9
       },
-      "bootupMs": 88.2,
+      "bootupMs": 29.2,
       "longTasks": 1,
-      "longestTaskMs": 74
+      "longestTaskMs": 56
     },
     "dom": {
       "elements": 374,
@@ -146,18 +142,18 @@
       "bfCacheFailures": 0,
       "protocol": "h2",
       "legacyHttpRequests": 0,
-      "redirectMs": 815.2,
+      "redirectMs": 820.7,
       "consoleErrors": 0,
       "baselineLimitedFeatures": 14
     },
     "environment": {
       "lighthouseVersion": "13.4.1",
-      "benchmarkIndex": 2285,
+      "benchmarkIndex": 2315,
       "formFactor": "mobile",
       "throttlingMethod": "simulate",
       "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36",
-      "fetchTime": "2026-08-25T16:36:57.794Z",
-      "runtimeMs": 6276.2
+      "fetchTime": "2026-08-25T17:02:50.576Z",
+      "runtimeMs": 6856.5
     }
   },
   "field": null,

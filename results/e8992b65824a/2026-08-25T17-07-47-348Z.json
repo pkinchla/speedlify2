@@ -1,81 +1,76 @@
 {
-  "url": "https://paulkinchla.com/blog/2020/10/28/javascript-still-a-ghost",
+  "url": "https://paulkinchla.com/",
   "name": "paulkinchla.com",
   "group": "paulkinchladotcom",
   "groupName": "paulkinchla.com",
-  "timestamp": 1787675482707,
-  "date": "2026-08-25T16:31:22.707Z",
-  "runId": "2026-08-25T16-31-15-105Z",
+  "timestamp": 1787677667348,
+  "date": "2026-08-25T17:07:47.348Z",
+  "runId": "2026-08-25T17-07-46-836Z",
   "formFactor": "mobile",
-  "requestedRuns": 3,
-  "completedRuns": 3,
-  "durationMs": 24002,
+  "requestedRuns": 1,
+  "completedRuns": 1,
+  "durationMs": 8803,
   "error": null,
-  "variance": {
-    "min": 95,
-    "max": 99,
-    "spread": 4,
-    "runs": 3
-  },
+  "variance": null,
   "lab": {
-    "requestedUrl": "https://paulkinchla.com/blog/2020/10/28/javascript-still-a-ghost",
-    "finalUrl": "https://paulkinchla.com/blog/2020/10/28/javascript-still-a-ghost/",
+    "requestedUrl": "https://paulkinchla.com/",
+    "finalUrl": "https://paulkinchla.com/",
     "redirect": null,
     "statusCode": "ok",
     "scores": {
-      "performance": 96,
+      "performance": 97,
       "accessibility": 100,
       "best-practices": 100,
       "seo": 100,
       "agentic-browsing": 100
     },
     "timings": {
-      "fcp": 1667,
-      "lcp": 2668,
-      "si": 1667,
-      "tbt": 0,
-      "tti": 2668,
-      "cls": 0,
-      "ttfb": 489,
-      "maxPotentialFid": 49,
-      "serverResponseTime": 28,
-      "networkRtt": 0.1,
-      "networkServerLatency": 39.5
+      "fcp": 1138,
+      "lcp": 2578,
+      "si": 1141,
+      "tbt": 10,
+      "tti": 2578,
+      "cls": 0.001,
+      "ttfb": 464,
+      "maxPotentialFid": 60,
+      "serverResponseTime": 53,
+      "networkRtt": 35.3,
+      "networkServerLatency": 14
     },
     "lcpBreakdown": {
-      "timeToFirstByte": 63.3,
-      "resourceLoadDelay": 9,
-      "resourceLoadDuration": 41.9,
-      "elementRenderDelay": 78.4
+      "timeToFirstByte": 201.4,
+      "resourceLoadDelay": 11.9,
+      "resourceLoadDuration": 121,
+      "elementRenderDelay": 41.8
     },
     "weight": {
-      "total": 216180,
-      "requests": 11,
-      "mainDocument": 27685,
+      "total": 225155,
+      "requests": 9,
+      "mainDocument": 23640,
       "byType": {
         "total": {
-          "bytes": 216180,
-          "requests": 10
+          "bytes": 225155,
+          "requests": 8
         },
         "font": {
-          "bytes": 163498,
+          "bytes": 163524,
           "requests": 3
         },
+        "image": {
+          "bytes": 24445,
+          "requests": 1
+        },
         "document": {
-          "bytes": 27685,
+          "bytes": 23640,
           "requests": 1
         },
         "script": {
-          "bytes": 19889,
-          "requests": 2
-        },
-        "image": {
-          "bytes": 3541,
+          "bytes": 11222,
           "requests": 1
         },
         "other": {
-          "bytes": 1567,
-          "requests": 3
+          "bytes": 2324,
+          "requests": 2
         },
         "stylesheet": {
           "bytes": 0,
@@ -90,7 +85,7 @@
           "requests": 0
         }
       },
-      "scripts": 2,
+      "scripts": 1,
       "stylesheets": 0,
       "fonts": 3
     },
@@ -101,24 +96,23 @@
       "top": []
     },
     "mainThread": {
-      "total": 447.4,
+      "total": 378,
       "byGroup": {
-        "styleLayout": 144.3,
-        "other": 131.6,
-        "scriptEvaluation": 92.8,
-        "paintCompositeRender": 40.3,
-        "parseHTML": 33.1,
-        "garbageCollection": 3.3,
+        "other": 145.9,
+        "styleLayout": 111.5,
+        "scriptEvaluation": 57,
+        "parseHTML": 39.5,
+        "paintCompositeRender": 22.1,
         "scriptParseCompile": 2
       },
-      "bootupMs": 88.6,
-      "longTasks": 0,
-      "longestTaskMs": null
+      "bootupMs": 54.7,
+      "longTasks": 1,
+      "longestTaskMs": 60
     },
     "dom": {
-      "elements": 766,
+      "elements": 168,
       "depth": 12,
-      "maxChildren": 124
+      "maxChildren": 9
     },
     "waste": {
       "unusedJsBytes": 0,
@@ -149,24 +143,31 @@
       "bfCacheFailures": 0,
       "protocol": "h3",
       "legacyHttpRequests": 0,
-      "redirectMs": 789.5,
+      "redirectMs": 0,
       "consoleErrors": 0,
-      "baselineLimitedFeatures": 46
+      "baselineLimitedFeatures": 44
     },
     "environment": {
       "lighthouseVersion": "13.4.1",
-      "benchmarkIndex": 2266,
+      "benchmarkIndex": 2212.5,
       "formFactor": "mobile",
       "throttlingMethod": "simulate",
       "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36",
-      "fetchTime": "2026-08-25T16:31:37.911Z",
-      "runtimeMs": 6391.1
+      "fetchTime": "2026-08-25T17:07:48.627Z",
+      "runtimeMs": 6414.2
     }
   },
   "field": null,
   "axe": {
-    "generator": null,
-    "interstitial": "Just a moment...",
+    "generator": {
+      "id": "wordpress",
+      "name": "WordPress",
+      "icon": "Wordpress",
+      "version": "7.0.4",
+      "source": "meta",
+      "raw": "WordPress 7.0.4"
+    },
+    "interstitial": null,
     "host": {
       "id": "cloudflare",
       "name": "Cloudflare",
@@ -174,22 +175,15 @@
       "source": "server"
     },
     "headers": {
-      "cf-ray": "a30bfd18bedac062-BOS",
+      "cf-ray": "a30c321b5d45c6f2-BOS",
       "server": "cloudflare"
     },
-    "violations": 1,
-    "passes": 69,
-    "incomplete": 0,
-    "violationRules": 1,
+    "violations": 0,
+    "passes": 241,
+    "incomplete": 1,
+    "violationRules": 0,
     "version": "4.13.0",
-    "top": [
-      {
-        "id": "meta-refresh",
-        "impact": "critical",
-        "nodes": 1,
-        "help": "Delayed refresh under 20 hours must not be used"
-      }
-    ],
+    "top": [],
     "error": null
   },
   "consecutiveFailures": 0

@@ -3,72 +3,67 @@
   "name": "sevenpx.design",
   "group": "sevenpx",
   "groupName": "sevenpx.design",
-  "timestamp": 1787675748102,
-  "date": "2026-08-25T16:35:48.102Z",
-  "runId": "2026-08-25T16-31-15-105Z",
+  "timestamp": 1787677309371,
+  "date": "2026-08-25T17:01:49.371Z",
+  "runId": "2026-08-25T17-01-48-856Z",
   "formFactor": "mobile",
-  "requestedRuns": 3,
-  "completedRuns": 3,
-  "durationMs": 20869,
+  "requestedRuns": 1,
+  "completedRuns": 1,
+  "durationMs": 8330,
   "error": null,
-  "variance": {
-    "min": 92,
-    "max": 93,
-    "spread": 1,
-    "runs": 3
-  },
+  "variance": null,
   "lab": {
     "requestedUrl": "https://sevenpx.design/",
     "finalUrl": "https://sevenpx.design/",
     "redirect": null,
     "statusCode": "ok",
     "scores": {
-      "performance": 92,
+      "performance": 100,
       "accessibility": 100,
       "best-practices": 100,
       "seo": 100,
       "agentic-browsing": 67
     },
     "timings": {
-      "fcp": 1449,
-      "lcp": 3331,
-      "si": 2183,
-      "tbt": 4,
-      "tti": 3331,
+      "fcp": 1267,
+      "lcp": 1267,
+      "si": 2036,
+      "tbt": 0,
+      "tti": 1267,
       "cls": 0,
-      "ttfb": 778,
-      "maxPotentialFid": 43,
-      "serverResponseTime": 559,
-      "networkRtt": 38,
-      "networkServerLatency": 31.3
+      "ttfb": 799,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 619,
+      "networkRtt": 39.3,
+      "networkServerLatency": 20.7
     },
     "lcpBreakdown": {
-      "timeToFirstByte": 777.9,
-      "elementRenderDelay": 236
+      "timeToFirstByte": 798.9,
+      "elementRenderDelay": 211.8
     },
     "weight": {
-      "total": 869956,
+      "total": 869949,
       "requests": 9,
-      "mainDocument": 83321,
+      "mainDocument": 83308,
       "byType": {
         "total": {
-          "bytes": 838072,
+          "bytes": 838065,
           "requests": 8
         },
         "font": {
-          "bytes": 699563,
+          "bytes": 699564,
           "requests": 2
         },
         "document": {
-          "bytes": 83321,
+          "bytes": 83308,
           "requests": 1
         },
         "script": {
-          "bytes": 53042,
+          "bytes": 53046,
           "requests": 4
         },
         "stylesheet": {
-          "bytes": 2146,
+          "bytes": 2147,
           "requests": 1
         },
         "image": {
@@ -99,18 +94,18 @@
       "top": []
     },
     "mainThread": {
-      "total": 371.7,
+      "total": 268.1,
       "byGroup": {
-        "other": 149.8,
-        "styleLayout": 137.1,
-        "scriptEvaluation": 49,
-        "paintCompositeRender": 18.2,
-        "parseHTML": 15.9,
-        "scriptParseCompile": 1.7
+        "other": 115.2,
+        "styleLayout": 83.6,
+        "scriptEvaluation": 42.7,
+        "paintCompositeRender": 13.5,
+        "parseHTML": 11.3,
+        "scriptParseCompile": 1.9
       },
-      "bootupMs": 13.4,
-      "longTasks": 2,
-      "longestTaskMs": 70
+      "bootupMs": 12.6,
+      "longTasks": 0,
+      "longestTaskMs": null
     },
     "dom": {
       "elements": 178,
@@ -152,12 +147,12 @@
     },
     "environment": {
       "lighthouseVersion": "13.4.1",
-      "benchmarkIndex": 2371.5,
+      "benchmarkIndex": 2274,
       "formFactor": "mobile",
       "throttlingMethod": "simulate",
       "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36",
-      "fetchTime": "2026-08-25T16:35:49.273Z",
-      "runtimeMs": 6886.3
+      "fetchTime": "2026-08-25T17:01:50.621Z",
+      "runtimeMs": 6938.9
     }
   },
   "field": null,
