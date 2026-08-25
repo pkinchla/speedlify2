@@ -1,11 +1,11 @@
 {
   "file": "screenshot.webp",
-  "width": 800,
-  "height": 600,
+  "width": 412,
+  "height": 823,
   "noJs": {
     "file": "screenshot-nojs.webp",
-    "width": 800,
-    "height": 600
+    "width": 412,
+    "height": 823
   },
-  "difference": 33.2
+  "difference": 40.6
 }
