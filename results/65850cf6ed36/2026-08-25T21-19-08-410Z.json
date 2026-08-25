@@ -1,0 +1,363 @@
+{
+  "url": "https://webdriver.io/",
+  "name": "WebdriverIO",
+  "group": "test-runners",
+  "groupName": "Test Runners",
+  "timestamp": 1787692748410,
+  "date": "2026-08-25T21:19:08.410Z",
+  "runId": "2026-08-25T21-19-03-312Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 55826,
+  "error": null,
+  "variance": {
+    "min": 42,
+    "max": 45,
+    "spread": 3,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://webdriver.io/",
+    "finalUrl": "https://webdriver.io/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 43,
+      "accessibility": 88,
+      "best-practices": 96,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 2589,
+      "lcp": 20089,
+      "si": 4260,
+      "tbt": 1565,
+      "tti": 25527,
+      "cls": 0.002,
+      "ttfb": 614,
+      "maxPotentialFid": 1150,
+      "serverResponseTime": 11,
+      "networkRtt": 5.8,
+      "networkServerLatency": 122.1
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 13.4,
+      "elementRenderDelay": 606.4
+    },
+    "weight": {
+      "total": 10879720,
+      "requests": 190,
+      "mainDocument": 78237,
+      "byType": {
+        "total": {
+          "bytes": 10879720,
+          "requests": 184
+        },
+        "image": {
+          "bytes": 7516236,
+          "requests": 139
+        },
+        "script": {
+          "bytes": 2920553,
+          "requests": 16
+        },
+        "stylesheet": {
+          "bytes": 176069,
+          "requests": 5
+        },
+        "document": {
+          "bytes": 137672,
+          "requests": 2
+        },
+        "font": {
+          "bytes": 95206,
+          "requests": 4
+        },
+        "other": {
+          "bytes": 33984,
+          "requests": 18
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 5791976,
+          "requests": 129
+        }
+      },
+      "scripts": 16,
+      "stylesheets": 5,
+      "fonts": 4
+    },
+    "thirdParty": {
+      "count": 5,
+      "bytes": 4699681,
+      "mainThreadMs": 128.7,
+      "top": [
+        {
+          "entity": "GitHub",
+          "bytes": 4444655,
+          "mainThreadMs": 1.5
+        },
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 171351,
+          "mainThreadMs": 93.4
+        },
+        {
+          "entity": "Google Fonts",
+          "bytes": 62039,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Google Analytics",
+          "bytes": 20913,
+          "mainThreadMs": 33.8
+        },
+        {
+          "entity": "mendable.ai",
+          "bytes": 723,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 6505.4,
+      "byGroup": {
+        "scriptEvaluation": 2587.4,
+        "other": 2064.6,
+        "styleLayout": 897.7,
+        "paintCompositeRender": 457.4,
+        "scriptParseCompile": 398,
+        "parseHTML": 56.8,
+        "garbageCollection": 43.4
+      },
+      "bootupMs": 2885.9,
+      "longTasks": 11,
+      "longestTaskMs": 1150
+    },
+    "dom": {
+      "elements": 1195,
+      "depth": 16,
+      "maxChildren": 49
+    },
+    "waste": {
+      "unusedJsBytes": 862679,
+      "unusedCssBytes": 71893,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 7785,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 3020,
+      "renderBlockingCount": 5,
+      "poorlyCachedBytes": 9277936.452083332,
+      "poorlyCachedCount": 150
+    },
+    "accessibility": {
+      "failingCount": 4,
+      "applicableCount": 27,
+      "failingNodes": 108,
+      "failing": [
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "nodes": 61
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 44
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 2
+        },
+        {
+          "id": "frame-title",
+          "title": "`<frame>` or `<iframe>` elements do not have a title",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 51
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2158.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-25T21:19:45.522Z",
+      "runtimeMs": 15780.1
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-27",
+      "last": "2026-08-23"
+    },
+    "metrics": {
+      "cls": {
+        "p75": 0.01,
+        "rating": "good",
+        "distribution": {
+          "good": 94.2,
+          "needsImprovement": 4.8,
+          "poor": 1
+        }
+      },
+      "ttfb": {
+        "p75": 558,
+        "rating": "good",
+        "distribution": {
+          "good": 84.4,
+          "needsImprovement": 8,
+          "poor": 7.7
+        }
+      },
+      "fcp": {
+        "p75": 1717,
+        "rating": "good",
+        "distribution": {
+          "good": 78.9,
+          "needsImprovement": 11.1,
+          "poor": 10
+        }
+      },
+      "inp": {
+        "p75": 264,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 66.6,
+          "needsImprovement": 27,
+          "poor": 6.4
+        }
+      },
+      "lcp": {
+        "p75": 1957,
+        "rating": "good",
+        "distribution": {
+          "good": 83.5,
+          "needsImprovement": 9.1,
+          "poor": 7.4
+        }
+      },
+      "rtt": {
+        "p75": 143,
+        "rating": null,
+        "distribution": {
+          "good": 36.9,
+          "needsImprovement": 57.8,
+          "poor": 5.3
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": {
+      "id": "docusaurus",
+      "name": "Docusaurus",
+      "icon": "Docusaurus",
+      "version": "3.9.2",
+      "source": "meta",
+      "raw": "Docusaurus v3.9.2"
+    },
+    "interstitial": null,
+    "host": {
+      "id": "amazons3",
+      "name": "Amazon S3",
+      "icon": "Amazon",
+      "source": "server"
+    },
+    "headers": {
+      "server": "AmazonS3",
+      "via": "1.1 cb2339b8008ceeabfc2dd9e6cfbc465c.cloudfront.net (CloudFront)",
+      "x-amz-cf-id": "qiSTwXoMzxuzb4osgAPbkv1S0e60rKqJQ63kifEr8vvxKIwPWJAPOw=="
+    },
+    "violations": 53,
+    "passes": 2328,
+    "incomplete": 50,
+    "violationRules": 9,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 44,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 2,
+        "help": "Heading levels should only increase by one"
+      },
+      {
+        "id": "aria-allowed-attr",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Elements must only use supported ARIA attributes"
+      },
+      {
+        "id": "aria-prohibited-attr",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Elements must only use permitted ARIA attributes"
+      },
+      {
+        "id": "button-name",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Buttons must have discernible text"
+      },
+      {
+        "id": "frame-title",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Frames must have an accessible name"
+      },
+      {
+        "id": "landmark-no-duplicate-banner",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should not have more than one banner landmark"
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "All page content should be contained by landmarks"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
