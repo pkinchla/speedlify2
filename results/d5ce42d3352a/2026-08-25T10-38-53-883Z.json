@@ -1,0 +1,271 @@
+{
+  "url": "https://svelte.dev/",
+  "name": "Svelte",
+  "group": "ssg",
+  "groupName": "Site Generators",
+  "timestamp": 1787654333883,
+  "date": "2026-08-25T10:38:53.883Z",
+  "runId": "2026-08-25T10-31-42-267Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 89928,
+  "error": null,
+  "variance": {
+    "min": 91,
+    "max": 96,
+    "spread": 5,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://svelte.dev/",
+    "finalUrl": "https://svelte.dev/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 96,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1529,
+      "lcp": 2580,
+      "si": 1529,
+      "tbt": 23,
+      "tti": 2595,
+      "cls": 0.051,
+      "ttfb": 629,
+      "maxPotentialFid": 73,
+      "serverResponseTime": 7,
+      "networkRtt": 0.1,
+      "networkServerLatency": 29.2
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 8.4,
+      "elementRenderDelay": 207.4
+    },
+    "weight": {
+      "total": 10396628,
+      "requests": 71,
+      "mainDocument": 23926,
+      "byType": {
+        "total": {
+          "bytes": 10396628,
+          "requests": 56
+        },
+        "media": {
+          "bytes": 9444334,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 379858,
+          "requests": 5
+        },
+        "image": {
+          "bytes": 337051,
+          "requests": 12
+        },
+        "script": {
+          "bytes": 117204,
+          "requests": 28
+        },
+        "font": {
+          "bytes": 70942,
+          "requests": 3
+        },
+        "document": {
+          "bytes": 23926,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 23313,
+          "requests": 6
+        },
+        "third-party": {
+          "bytes": 9444334,
+          "requests": 1
+        }
+      },
+      "scripts": 28,
+      "stylesheets": 6,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 4063353,
+      "mainThreadMs": 0,
+      "top": [
+        {
+          "entity": "GitHub",
+          "bytes": 4063353,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1691.6,
+      "byGroup": {
+        "other": 686.5,
+        "scriptEvaluation": 443.3,
+        "styleLayout": 284.9,
+        "paintCompositeRender": 199.8,
+        "parseHTML": 62.1,
+        "scriptParseCompile": 14.9
+      },
+      "bootupMs": 428.1,
+      "longTasks": 3,
+      "longestTaskMs": 73
+    },
+    "dom": {
+      "elements": 348,
+      "depth": 11,
+      "maxChildren": 96
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 150,
+      "renderBlockingCount": 5,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 21,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 39
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2383.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-25T10:39:04.798Z",
+      "runtimeMs": 7940
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-27",
+      "last": "2026-08-23"
+    },
+    "metrics": {
+      "lcp": {
+        "p75": 1331,
+        "rating": "good",
+        "distribution": {
+          "good": 92.1,
+          "needsImprovement": 4.8,
+          "poor": 3.2
+        }
+      },
+      "rtt": {
+        "p75": 144,
+        "rating": null,
+        "distribution": {
+          "good": 39.9,
+          "needsImprovement": 53.2,
+          "poor": 6.9
+        }
+      },
+      "cls": {
+        "p75": 0.01,
+        "rating": "good",
+        "distribution": {
+          "good": 99.3,
+          "needsImprovement": 0.6,
+          "poor": 0.2
+        }
+      },
+      "ttfb": {
+        "p75": 512,
+        "rating": "good",
+        "distribution": {
+          "good": 85.1,
+          "needsImprovement": 10.9,
+          "poor": 4
+        }
+      },
+      "fcp": {
+        "p75": 1310,
+        "rating": "good",
+        "distribution": {
+          "good": 86,
+          "needsImprovement": 8.8,
+          "poor": 5.3
+        }
+      },
+      "inp": {
+        "p75": 122,
+        "rating": "good",
+        "distribution": {
+          "good": 90.2,
+          "needsImprovement": 7.5,
+          "poor": 2.3
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": {
+      "id": "sveltekit",
+      "name": "SvelteKit",
+      "icon": "Svelte",
+      "version": null,
+      "source": "dom",
+      "raw": null
+    },
+    "host": {
+      "id": "vercel",
+      "name": "Vercel",
+      "icon": "Vercel",
+      "source": "x-vercel-id"
+    },
+    "headers": {
+      "server": "Vercel",
+      "x-vercel-id": "iad1::fnz8f-1787654359832-90a01075d52b"
+    },
+    "violations": 1,
+    "passes": 592,
+    "incomplete": 3,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "All page content should be contained by landmarks"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
