@@ -187,6 +187,82 @@ describe("partition", () => {
 		assert.throws(() => partition(sites("a"), { index: 4, total: 4 }), /between 0 and 3/);
 		assert.throws(() => partition(sites("a"), { index: 0, total: 0 }), /positive integer/);
 	});
+
+	/*
+	 * The shard that measures a queued URL is the one that removes it from
+	 * config/priority.txt. Four shards deleting adjacent lines of that file in
+	 * one cycle conflict in git, and the commit step's retry cannot resolve a
+	 * content conflict. Routing every queued URL to one shard makes the file
+	 * single-writer, so the conflict cannot arise.
+	 */
+	test("every queued URL goes to the first shard", () => {
+		const list = sites(...Array.from({ length: 60 }, (_, i) => `site${i}`));
+		// Pick URLs that the hash would scatter, so this proves an override.
+		const queued = new Set(list.filter((_, i) => i % 7 === 0).map((s) => s.url));
+
+		const elsewhere = [];
+		for (let i = 1; i < 4; i++) {
+			for (let s of partition(list, { index: i, total: 4 }, queued)) {
+				if (queued.has(s.url)) elsewhere.push(`${s.name} in shard ${i + 1}`);
+			}
+		}
+		assert.deepEqual(elsewhere, [], "no queued URL outside the first shard");
+
+		const first = partition(list, { index: 0, total: 4 }, queued);
+		for (let url of queued) {
+			assert.ok(first.some((s) => s.url === url), `${url} missing from the first shard`);
+		}
+	});
+
+	test("the override keeps the shards disjoint and complete", () => {
+		const list = sites(...Array.from({ length: 60 }, (_, i) => `site${i}`));
+		const queued = new Set(list.filter((_, i) => i % 5 === 0).map((s) => s.url));
+		const seen = new Set();
+
+		for (let i = 0; i < 4; i++) {
+			for (let s of partition(list, { index: i, total: 4 }, queued)) {
+				assert.ok(!seen.has(s.hash), `${s.name} appeared in more than one shard`);
+				seen.add(s.hash);
+			}
+		}
+		assert.equal(seen.size, list.length, "every site still measured exactly once");
+	});
+
+	/*
+	 * A queue longer than one batch drains across cycles rather than in one go.
+	 * Only what the batch actually took is reported back, so dropFromQueue
+	 * leaves the overflow in the file for next time — and because every queued
+	 * URL is on this one shard, "next time" is the same writer again.
+	 */
+	test("a queue larger than the batch drains over successive runs", () => {
+		const list = sites(...Array.from({ length: 200 }, (_, i) => `site${i}`));
+		const store = { lastMeasuredAt: () => Date.now() - 5 * 3600e3, latest: () => ({}) };
+
+		const remaining = new Set(list.slice(0, 50).map((s) => s.url));
+		const took = [];
+
+		for (let cycle = 0; cycle < 3; cycle++) {
+			const batch = selectBatch(list, store, {
+				limit: 20,
+				shard: { index: 0, total: 4 },
+				priority: remaining,
+				freshnessHours: 24,
+			});
+			took.push(batch.priority.length);
+			for (let url of batch.priority) remaining.delete(url);
+		}
+
+		assert.deepEqual(took, [20, 20, 10], "batches take what fits, no more");
+		assert.equal(remaining.size, 0, "and the queue empties");
+	});
+
+	test("an empty or absent queue changes nothing", () => {
+		const list = sites(...Array.from({ length: 30 }, (_, i) => `site${i}`));
+		const plain = partition(list, { index: 2, total: 4 }).map((s) => s.name);
+		assert.deepEqual(partition(list, { index: 2, total: 4 }, new Set()).map((s) => s.name), plain);
+		assert.deepEqual(partition(list, { index: 2, total: 4 }, null).map((s) => s.name), plain);
+		assert.deepEqual(partition(list, { index: 2, total: 4 }, []).map((s) => s.name), plain);
+	});
 });
 
 describe("parseShard", () => {
