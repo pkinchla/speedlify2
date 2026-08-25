@@ -1,75 +1,75 @@
 {
-  "url": "https://paulkinchla.com/blog/2020/10/28/javascript-still-a-ghost",
+  "url": "https://paulkinchla.com/blog",
   "name": "paulkinchla.com",
   "group": "paulkinchladotcom",
   "groupName": "paulkinchla.com",
-  "timestamp": 1787677644072,
-  "date": "2026-08-25T17:07:24.072Z",
-  "runId": "2026-08-25T17-07-23-559Z",
+  "timestamp": 1787678452545,
+  "date": "2026-08-25T17:20:52.545Z",
+  "runId": "2026-08-25T17-18-44-941Z",
   "formFactor": "mobile",
   "requestedRuns": 1,
   "completedRuns": 1,
-  "durationMs": 9909,
+  "durationMs": 8757,
   "error": null,
   "variance": null,
   "lab": {
-    "requestedUrl": "https://paulkinchla.com/blog/2020/10/28/javascript-still-a-ghost",
-    "finalUrl": "https://paulkinchla.com/blog/2020/10/28/javascript-still-a-ghost/",
+    "requestedUrl": "https://paulkinchla.com/blog",
+    "finalUrl": "https://paulkinchla.com/blog/",
     "redirect": null,
     "statusCode": "ok",
     "scores": {
-      "performance": 96,
+      "performance": 95,
       "accessibility": 100,
       "best-practices": 100,
       "seo": 100,
       "agentic-browsing": 100
     },
     "timings": {
-      "fcp": 1684,
-      "lcp": 2636,
-      "si": 1684,
+      "fcp": 1293,
+      "lcp": 2887,
+      "si": 1293,
       "tbt": 6,
-      "tti": 2636,
+      "tti": 2887,
       "cls": 0.002,
-      "ttfb": 479,
+      "ttfb": 462,
       "maxPotentialFid": 56,
-      "serverResponseTime": 62,
-      "networkRtt": 43.4,
-      "networkServerLatency": 28.6
+      "serverResponseTime": 41,
+      "networkRtt": 41.5,
+      "networkServerLatency": 12.4
     },
     "lcpBreakdown": {
-      "timeToFirstByte": 227.9,
-      "resourceLoadDelay": 12.8,
-      "resourceLoadDuration": 117.6,
-      "elementRenderDelay": 81.3
+      "timeToFirstByte": 108.4,
+      "resourceLoadDelay": 10.4,
+      "resourceLoadDuration": 134.8,
+      "elementRenderDelay": 24.1
     },
     "weight": {
-      "total": 216296,
-      "requests": 11,
-      "mainDocument": 27686,
+      "total": 267742,
+      "requests": 10,
+      "mainDocument": 23830,
       "byType": {
         "total": {
-          "bytes": 216296,
-          "requests": 10
+          "bytes": 267742,
+          "requests": 9
         },
         "font": {
-          "bytes": 163531,
+          "bytes": 163511,
           "requests": 3
         },
+        "image": {
+          "bytes": 67550,
+          "requests": 1
+        },
         "document": {
-          "bytes": 27686,
+          "bytes": 23830,
           "requests": 1
         },
         "script": {
-          "bytes": 19903,
-          "requests": 2
-        },
-        "image": {
-          "bytes": 3540,
+          "bytes": 11224,
           "requests": 1
         },
         "other": {
-          "bytes": 1636,
+          "bytes": 1627,
           "requests": 3
         },
         "stylesheet": {
@@ -85,7 +85,7 @@
           "requests": 0
         }
       },
-      "scripts": 2,
+      "scripts": 1,
       "stylesheets": 0,
       "fonts": 3
     },
@@ -96,23 +96,24 @@
       "top": []
     },
     "mainThread": {
-      "total": 518.1,
+      "total": 373.5,
       "byGroup": {
-        "styleLayout": 198.9,
-        "other": 145,
-        "scriptEvaluation": 83.1,
-        "paintCompositeRender": 45.8,
-        "parseHTML": 43.6,
-        "scriptParseCompile": 1.7
+        "other": 140.3,
+        "styleLayout": 107.9,
+        "scriptEvaluation": 48.3,
+        "parseHTML": 35.9,
+        "paintCompositeRender": 27.6,
+        "garbageCollection": 12.1,
+        "scriptParseCompile": 1.4
       },
-      "bootupMs": 82.3,
-      "longTasks": 2,
+      "bootupMs": 43.6,
+      "longTasks": 1,
       "longestTaskMs": 56
     },
     "dom": {
-      "elements": 766,
+      "elements": 217,
       "depth": 12,
-      "maxChildren": 124
+      "maxChildren": 9
     },
     "waste": {
       "unusedJsBytes": 0,
@@ -143,18 +144,18 @@
       "bfCacheFailures": 0,
       "protocol": "h3",
       "legacyHttpRequests": 0,
-      "redirectMs": 778.6,
+      "redirectMs": 762.4,
       "consoleErrors": 0,
-      "baselineLimitedFeatures": 46
+      "baselineLimitedFeatures": 45
     },
     "environment": {
       "lighthouseVersion": "13.4.1",
-      "benchmarkIndex": 2295,
+      "benchmarkIndex": 2312.5,
       "formFactor": "mobile",
       "throttlingMethod": "simulate",
       "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36",
-      "fetchTime": "2026-08-25T17:07:25.455Z",
-      "runtimeMs": 6934.3
+      "fetchTime": "2026-08-25T17:20:53.723Z",
+      "runtimeMs": 6338.3
     }
   },
   "field": null,
@@ -175,12 +176,12 @@
       "source": "server"
     },
     "headers": {
-      "cf-ray": "a30c318e2e164339-EWR",
+      "cf-ray": "a30c45476c484282-EWR",
       "server": "cloudflare"
     },
     "violations": 0,
-    "passes": 1127,
-    "incomplete": 1,
+    "passes": 357,
+    "incomplete": 0,
     "violationRules": 0,
     "version": "4.13.0",
     "top": [],

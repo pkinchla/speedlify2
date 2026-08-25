@@ -1,76 +1,76 @@
 {
-  "url": "https://paulkinchla.com/",
+  "url": "https://paulkinchla.com/projects",
   "name": "paulkinchla.com",
   "group": "paulkinchladotcom",
   "groupName": "paulkinchla.com",
-  "timestamp": 1787677667348,
-  "date": "2026-08-25T17:07:47.348Z",
-  "runId": "2026-08-25T17-07-46-836Z",
+  "timestamp": 1787678392543,
+  "date": "2026-08-25T17:19:52.543Z",
+  "runId": "2026-08-25T17-18-44-941Z",
   "formFactor": "mobile",
   "requestedRuns": 1,
   "completedRuns": 1,
-  "durationMs": 8803,
+  "durationMs": 8663,
   "error": null,
   "variance": null,
   "lab": {
-    "requestedUrl": "https://paulkinchla.com/",
-    "finalUrl": "https://paulkinchla.com/",
+    "requestedUrl": "https://paulkinchla.com/projects",
+    "finalUrl": "https://paulkinchla.com/projects/",
     "redirect": null,
     "statusCode": "ok",
     "scores": {
-      "performance": 97,
+      "performance": 99,
       "accessibility": 100,
       "best-practices": 100,
       "seo": 100,
       "agentic-browsing": 100
     },
     "timings": {
-      "fcp": 1138,
-      "lcp": 2578,
-      "si": 1141,
-      "tbt": 10,
-      "tti": 2578,
-      "cls": 0.001,
-      "ttfb": 464,
-      "maxPotentialFid": 60,
-      "serverResponseTime": 53,
-      "networkRtt": 35.3,
-      "networkServerLatency": 14
+      "fcp": 1297,
+      "lcp": 1986,
+      "si": 1297,
+      "tbt": 11,
+      "tti": 1986,
+      "cls": 0.003,
+      "ttfb": 462,
+      "maxPotentialFid": 61,
+      "serverResponseTime": 47,
+      "networkRtt": 35.1,
+      "networkServerLatency": 11.9
     },
     "lcpBreakdown": {
-      "timeToFirstByte": 201.4,
-      "resourceLoadDelay": 11.9,
-      "resourceLoadDuration": 121,
-      "elementRenderDelay": 41.8
+      "timeToFirstByte": 165,
+      "resourceLoadDelay": 11.5,
+      "resourceLoadDuration": 128.7,
+      "elementRenderDelay": 18
     },
     "weight": {
-      "total": 225155,
-      "requests": 9,
-      "mainDocument": 23640,
+      "total": 235777,
+      "requests": 10,
+      "mainDocument": 22355,
       "byType": {
         "total": {
-          "bytes": 225155,
-          "requests": 8
+          "bytes": 235777,
+          "requests": 9
         },
         "font": {
-          "bytes": 163524,
+          "bytes": 163526,
           "requests": 3
         },
         "image": {
-          "bytes": 24445,
+          "bytes": 35628,
           "requests": 1
         },
         "document": {
-          "bytes": 23640,
+          "bytes": 22355,
           "requests": 1
         },
         "script": {
-          "bytes": 11222,
+          "bytes": 11224,
           "requests": 1
         },
         "other": {
-          "bytes": 2324,
-          "requests": 2
+          "bytes": 3044,
+          "requests": 3
         },
         "stylesheet": {
           "bytes": 0,
@@ -96,21 +96,22 @@
       "top": []
     },
     "mainThread": {
-      "total": 378,
+      "total": 402.3,
       "byGroup": {
-        "other": 145.9,
-        "styleLayout": 111.5,
-        "scriptEvaluation": 57,
-        "parseHTML": 39.5,
-        "paintCompositeRender": 22.1,
-        "scriptParseCompile": 2
+        "other": 156.1,
+        "styleLayout": 111.9,
+        "scriptEvaluation": 54.8,
+        "parseHTML": 34,
+        "paintCompositeRender": 31.3,
+        "garbageCollection": 11.1,
+        "scriptParseCompile": 3
       },
-      "bootupMs": 54.7,
+      "bootupMs": 52.3,
       "longTasks": 1,
-      "longestTaskMs": 60
+      "longestTaskMs": 61
     },
     "dom": {
-      "elements": 168,
+      "elements": 182,
       "depth": 12,
       "maxChildren": 9
     },
@@ -128,7 +129,7 @@
     },
     "accessibility": {
       "failingCount": 0,
-      "applicableCount": 26,
+      "applicableCount": 25,
       "failingNodes": 0,
       "failing": []
     },
@@ -143,18 +144,18 @@
       "bfCacheFailures": 0,
       "protocol": "h3",
       "legacyHttpRequests": 0,
-      "redirectMs": 0,
+      "redirectMs": 761.9,
       "consoleErrors": 0,
-      "baselineLimitedFeatures": 44
+      "baselineLimitedFeatures": 45
     },
     "environment": {
       "lighthouseVersion": "13.4.1",
-      "benchmarkIndex": 2212.5,
+      "benchmarkIndex": 2358.5,
       "formFactor": "mobile",
       "throttlingMethod": "simulate",
       "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36",
-      "fetchTime": "2026-08-25T17:07:48.627Z",
-      "runtimeMs": 6414.2
+      "fetchTime": "2026-08-25T17:19:53.731Z",
+      "runtimeMs": 6186.6
     }
   },
   "field": null,
@@ -163,9 +164,9 @@
       "id": "wordpress",
       "name": "WordPress",
       "icon": "Wordpress",
-      "version": "7.0.4",
+      "version": "7.0.2",
       "source": "meta",
-      "raw": "WordPress 7.0.4"
+      "raw": "WordPress 7.0.2"
     },
     "interstitial": null,
     "host": {
@@ -175,12 +176,12 @@
       "source": "server"
     },
     "headers": {
-      "cf-ray": "a30c321b5d45c6f2-BOS",
+      "cf-ray": "a30c43cedf5b72c2-EWR",
       "server": "cloudflare"
     },
     "violations": 0,
-    "passes": 241,
-    "incomplete": 1,
+    "passes": 288,
+    "incomplete": 0,
     "violationRules": 0,
     "version": "4.13.0",
     "top": [],

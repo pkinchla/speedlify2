@@ -23,6 +23,15 @@ const DAILY = { freshnessHours: 24, staleAfterHours: 48 };
  *
  * Verified live (2026-08-25): the axe pass gets served Cloudflare's "Just a
  * moment..." interstitial without this tag on all 5 paulkinchla.com URLs.
+ *
+ * That fixes the axe pass, but the site's own screenshot is a separate
+ * problem: the report falls back to the external screenshot.11ty.dev service
+ * whenever a site has no `ownScreenshot` (see src/site.njk), and that service
+ * is a third party we have no way to tag — it always gets Cloudflare's
+ * interstitial for these URLs. `screenshotBlocked: true` below is the
+ * project's existing answer for exactly this (see the `screenshotBlocked`
+ * config docs — solidjs.com is the precedent): it keeps Lighthouse's own
+ * full-page capture instead and prefers it on the page.
  */
 const CLOUDFLARE_BYPASS_SECRET = process.env.CLOUDFLARE_BYPASS_SECRET;
 
@@ -46,13 +55,26 @@ export default {
 			...DAILY,
 			...POLITE,
 			sites: [
-				{ url: "https://paulkinchla.com", userAgent: CLOUDFLARE_BYPASS_SECRET },
-				{ url: "https://paulkinchla.com/about/", userAgent: CLOUDFLARE_BYPASS_SECRET },
-				{ url: "https://paulkinchla.com/projects/", userAgent: CLOUDFLARE_BYPASS_SECRET },
-				{ url: "https://paulkinchla.com/blog/", userAgent: CLOUDFLARE_BYPASS_SECRET },
+				{ url: "https://paulkinchla.com", userAgent: CLOUDFLARE_BYPASS_SECRET, screenshotBlocked: true },
+				{
+					url: "https://paulkinchla.com/about/",
+					userAgent: CLOUDFLARE_BYPASS_SECRET,
+					screenshotBlocked: true,
+				},
+				{
+					url: "https://paulkinchla.com/projects/",
+					userAgent: CLOUDFLARE_BYPASS_SECRET,
+					screenshotBlocked: true,
+				},
+				{
+					url: "https://paulkinchla.com/blog/",
+					userAgent: CLOUDFLARE_BYPASS_SECRET,
+					screenshotBlocked: true,
+				},
 				{
 					url: "https://paulkinchla.com/blog/2020/10/28/javascript-still-a-ghost/",
 					userAgent: CLOUDFLARE_BYPASS_SECRET,
+					screenshotBlocked: true,
 				},
 			],
 		},

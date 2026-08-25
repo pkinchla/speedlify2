@@ -1,75 +1,75 @@
 {
-  "url": "https://paulkinchla.com/blog",
+  "url": "https://paulkinchla.com/blog/2020/10/28/javascript-still-a-ghost",
   "name": "paulkinchla.com",
   "group": "paulkinchladotcom",
   "groupName": "paulkinchla.com",
-  "timestamp": 1787677560807,
-  "date": "2026-08-25T17:06:00.807Z",
-  "runId": "2026-08-25T17-01-48-856Z",
+  "timestamp": 1787678512545,
+  "date": "2026-08-25T17:21:52.545Z",
+  "runId": "2026-08-25T17-18-44-941Z",
   "formFactor": "mobile",
   "requestedRuns": 1,
   "completedRuns": 1,
-  "durationMs": 8596,
+  "durationMs": 9540,
   "error": null,
   "variance": null,
   "lab": {
-    "requestedUrl": "https://paulkinchla.com/blog",
-    "finalUrl": "https://paulkinchla.com/blog/",
+    "requestedUrl": "https://paulkinchla.com/blog/2020/10/28/javascript-still-a-ghost",
+    "finalUrl": "https://paulkinchla.com/blog/2020/10/28/javascript-still-a-ghost/",
     "redirect": null,
     "statusCode": "ok",
     "scores": {
-      "performance": 95,
+      "performance": 97,
       "accessibility": 100,
       "best-practices": 100,
       "seo": 100,
       "agentic-browsing": 100
     },
     "timings": {
-      "fcp": 1288,
-      "lcp": 2886,
-      "si": 1288,
-      "tbt": 2,
-      "tti": 2886,
-      "cls": 0.004,
-      "ttfb": 462,
-      "maxPotentialFid": 52,
-      "serverResponseTime": 47,
-      "networkRtt": 39.9,
-      "networkServerLatency": 12
+      "fcp": 1545,
+      "lcp": 2595,
+      "si": 1545,
+      "tbt": 11,
+      "tti": 2595,
+      "cls": 0.002,
+      "ttfb": 465,
+      "maxPotentialFid": 61,
+      "serverResponseTime": 40,
+      "networkRtt": 36.3,
+      "networkServerLatency": 14.9
     },
     "lcpBreakdown": {
-      "timeToFirstByte": 113.6,
-      "resourceLoadDelay": 9.5,
-      "resourceLoadDuration": 237.3,
-      "elementRenderDelay": 24.3
+      "timeToFirstByte": 267.6,
+      "resourceLoadDelay": 23,
+      "resourceLoadDuration": 76.8,
+      "elementRenderDelay": 142.4
     },
     "weight": {
-      "total": 269136,
-      "requests": 10,
-      "mainDocument": 23827,
+      "total": 216293,
+      "requests": 11,
+      "mainDocument": 27679,
       "byType": {
         "total": {
-          "bytes": 269136,
-          "requests": 9
+          "bytes": 216293,
+          "requests": 10
         },
         "font": {
-          "bytes": 163531,
+          "bytes": 163529,
           "requests": 3
         },
-        "image": {
-          "bytes": 67545,
-          "requests": 1
-        },
         "document": {
-          "bytes": 23827,
+          "bytes": 27679,
           "requests": 1
         },
         "script": {
-          "bytes": 11228,
+          "bytes": 19895,
+          "requests": 2
+        },
+        "image": {
+          "bytes": 3538,
           "requests": 1
         },
         "other": {
-          "bytes": 3005,
+          "bytes": 1652,
           "requests": 3
         },
         "stylesheet": {
@@ -85,7 +85,7 @@
           "requests": 0
         }
       },
-      "scripts": 1,
+      "scripts": 2,
       "stylesheets": 0,
       "fonts": 3
     },
@@ -96,24 +96,24 @@
       "top": []
     },
     "mainThread": {
-      "total": 365.6,
+      "total": 654.7,
       "byGroup": {
-        "other": 137.6,
-        "styleLayout": 105.6,
-        "scriptEvaluation": 40,
-        "paintCompositeRender": 34.6,
-        "parseHTML": 33.5,
-        "garbageCollection": 13.1,
-        "scriptParseCompile": 1.2
+        "styleLayout": 225,
+        "other": 202.2,
+        "scriptEvaluation": 103.7,
+        "parseHTML": 59.3,
+        "paintCompositeRender": 53.5,
+        "garbageCollection": 9,
+        "scriptParseCompile": 2.1
       },
-      "bootupMs": 37.9,
-      "longTasks": 1,
-      "longestTaskMs": 52
+      "bootupMs": 68.8,
+      "longTasks": 3,
+      "longestTaskMs": 64
     },
     "dom": {
-      "elements": 217,
+      "elements": 766,
       "depth": 12,
-      "maxChildren": 9
+      "maxChildren": 124
     },
     "waste": {
       "unusedJsBytes": 0,
@@ -144,18 +144,18 @@
       "bfCacheFailures": 0,
       "protocol": "h3",
       "legacyHttpRequests": 0,
-      "redirectMs": 762,
+      "redirectMs": 764.9,
       "consoleErrors": 0,
-      "baselineLimitedFeatures": 45
+      "baselineLimitedFeatures": 46
     },
     "environment": {
       "lighthouseVersion": "13.4.1",
-      "benchmarkIndex": 2272,
+      "benchmarkIndex": 2404,
       "formFactor": "mobile",
       "throttlingMethod": "simulate",
       "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36",
-      "fetchTime": "2026-08-25T17:06:01.975Z",
-      "runtimeMs": 6279.8
+      "fetchTime": "2026-08-25T17:21:53.734Z",
+      "runtimeMs": 6725.1
     }
   },
   "field": null,
@@ -176,12 +176,12 @@
       "source": "server"
     },
     "headers": {
-      "cf-ray": "a30c2f7fecb47583-BOS",
+      "cf-ray": "a30c46c01c8d0c51-BOS",
       "server": "cloudflare"
     },
     "violations": 0,
-    "passes": 357,
-    "incomplete": 0,
+    "passes": 1127,
+    "incomplete": 1,
     "violationRules": 0,
     "version": "4.13.0",
     "top": [],

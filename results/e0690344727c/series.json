@@ -1,4 +1,4 @@
-{"version":1,"url":"https://paulkinchla.com/blog/2020/10/28/javascript-still-a-ghost/","updated":"2026-08-25T17:08:37.816Z","points":[
+{"version":1,"url":"https://paulkinchla.com/blog/2020/10/28/javascript-still-a-ghost/","updated":"2026-08-25T17:23:38.559Z","points":[
 {"t":1783439928946,"performance":97,"accessibility":100,"best-practices":100,"seo":100,"lcp":2437.7,"cls":0.0036196289389281173,"tbt":5,"fcp":1387.7,"si":1387.7,"ttfb":58.882000000000005,"total":217181,"requests":10,"bytes":0,"axeViolations":0,"axePasses":1127,"runs":3,"reqRuns":3},
-{"t":1787677644072,"performance":96,"accessibility":100,"best-practices":100,"seo":100,"lcp":2636,"cls":0.002,"tbt":6,"fcp":1684,"si":1684,"ttfb":479,"total":216296,"requests":11,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":518.1,"longTasks":2,"elements":766,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":1127,"bench":2295,"runs":1,"reqRuns":1,"ms":9909}
+{"t":1787678512545,"performance":97,"accessibility":100,"best-practices":100,"seo":100,"lcp":2595,"cls":0.002,"tbt":11,"fcp":1545,"si":1545,"ttfb":465,"total":216293,"requests":11,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":654.7,"longTasks":3,"elements":766,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":1127,"bench":2404,"runs":1,"reqRuns":1,"ms":9540}
 ]}
