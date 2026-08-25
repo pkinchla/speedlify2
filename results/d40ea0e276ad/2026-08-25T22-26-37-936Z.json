@@ -1,0 +1,312 @@
+{
+  "url": "https://aws.amazon.com/amplify",
+  "name": "AWS Amplify",
+  "group": "hosts",
+  "groupName": "Web Hosts",
+  "timestamp": 1787696797936,
+  "date": "2026-08-25T22:26:37.936Z",
+  "runId": "2026-08-25T22-25-55-466Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 84198,
+  "error": null,
+  "variance": {
+    "min": 27,
+    "max": 28,
+    "spread": 1,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://aws.amazon.com/amplify",
+    "finalUrl": "https://aws.amazon.com/amplify/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 27,
+      "accessibility": 91,
+      "best-practices": 73,
+      "seo": 92,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 16170,
+      "lcp": 45987,
+      "si": 19302,
+      "tbt": 2201,
+      "tti": 51926,
+      "cls": 0,
+      "ttfb": 626,
+      "maxPotentialFid": 859,
+      "serverResponseTime": 45,
+      "networkRtt": 65.4,
+      "networkServerLatency": 319.7
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 151.9,
+      "resourceLoadDelay": 217.2,
+      "resourceLoadDuration": 120.6,
+      "elementRenderDelay": 1849.9
+    },
+    "weight": {
+      "total": 11615783,
+      "requests": 169,
+      "mainDocument": 56795,
+      "byType": {
+        "total": {
+          "bytes": 11469901,
+          "requests": 161
+        },
+        "script": {
+          "bytes": 6478670,
+          "requests": 54
+        },
+        "image": {
+          "bytes": 4162960,
+          "requests": 32
+        },
+        "stylesheet": {
+          "bytes": 348060,
+          "requests": 15
+        },
+        "font": {
+          "bytes": 268815,
+          "requests": 5
+        },
+        "document": {
+          "bytes": 121688,
+          "requests": 3
+        },
+        "media": {
+          "bytes": 48411,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 41297,
+          "requests": 51
+        },
+        "third-party": {
+          "bytes": 11469901,
+          "requests": 161
+        }
+      },
+      "scripts": 55,
+      "stylesheets": 15,
+      "fonts": 8
+    },
+    "thirdParty": {
+      "count": 6,
+      "bytes": 10330666,
+      "mainThreadMs": 770.7,
+      "top": [
+        {
+          "entity": "awsstatic.com",
+          "bytes": 8710978,
+          "mainThreadMs": 392.8
+        },
+        {
+          "entity": "aws.dev",
+          "bytes": 1612715,
+          "mainThreadMs": 377.7
+        },
+        {
+          "entity": "Adobe Experience Cloud",
+          "bytes": 3537,
+          "mainThreadMs": 0.1
+        },
+        {
+          "entity": "Adobe Tag Manager",
+          "bytes": 2229,
+          "mainThreadMs": 0.1
+        },
+        {
+          "entity": "api.aws",
+          "bytes": 956,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 12127.6,
+      "byGroup": {
+        "scriptEvaluation": 5889.7,
+        "other": 3584.5,
+        "styleLayout": 997,
+        "scriptParseCompile": 738.3,
+        "paintCompositeRender": 531.6,
+        "parseHTML": 224.6,
+        "garbageCollection": 161.9
+      },
+      "bootupMs": 6354.4,
+      "longTasks": 20,
+      "longestTaskMs": 859
+    },
+    "dom": {
+      "elements": 2401,
+      "depth": 31,
+      "maxChildren": 20
+    },
+    "waste": {
+      "unusedJsBytes": 2329529,
+      "unusedCssBytes": 339090,
+      "legacyJsBytes": 21265,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 649700,
+      "unminifiedCssBytes": 8226,
+      "renderBlockingMs": 6552,
+      "renderBlockingCount": 15,
+      "poorlyCachedBytes": 1686963.7729166667,
+      "poorlyCachedCount": 10
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 30,
+      "failingNodes": 2,
+      "failing": [
+        {
+          "id": "button-name",
+          "title": "Buttons do not have an accessible name",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 801.8,
+      "consoleErrors": 11,
+      "baselineLimitedFeatures": 64
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2443,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-25T22:26:39.217Z",
+      "runtimeMs": 30398.6
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "origin",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-27",
+      "last": "2026-08-23"
+    },
+    "metrics": {
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 88.4,
+          "needsImprovement": 8.8,
+          "poor": 2.8
+        }
+      },
+      "ttfb": {
+        "p75": 1300,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 48.8,
+          "needsImprovement": 38.9,
+          "poor": 12.3
+        }
+      },
+      "fcp": {
+        "p75": 3666,
+        "rating": "poor",
+        "distribution": {
+          "good": 38.2,
+          "needsImprovement": 26.5,
+          "poor": 35.3
+        }
+      },
+      "inp": {
+        "p75": 318,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 60.5,
+          "needsImprovement": 26,
+          "poor": 13.5
+        }
+      },
+      "lcp": {
+        "p75": 4028,
+        "rating": "poor",
+        "distribution": {
+          "good": 50.3,
+          "needsImprovement": 24.5,
+          "poor": 25.2
+        }
+      },
+      "rtt": {
+        "p75": 156,
+        "rating": null,
+        "distribution": {
+          "good": 35.9,
+          "needsImprovement": 54,
+          "poor": 10.1
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": null,
+    "interstitial": null,
+    "host": {
+      "id": null,
+      "name": "Server",
+      "icon": null,
+      "source": "server"
+    },
+    "headers": {
+      "server": "Server",
+      "via": "1.1 4894bef31db1c311602a51393339af0a.cloudfront.net (CloudFront)",
+      "x-amz-cf-id": "cZlkKBT8Z9jONB341HT6VOLh_ISHAN-gqdpaOWYZquxsfapBv1I9bQ=="
+    },
+    "violations": 3,
+    "passes": 1687,
+    "incomplete": 38,
+    "violationRules": 3,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "button-name",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Buttons must have discernible text"
+      },
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Links must have discernible text"
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "All page content should be contained by landmarks"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
