@@ -1,0 +1,1586 @@
+{
+  "url": "https://www.squarespace.com/",
+  "name": "Squarespace",
+  "group": "builders",
+  "fetchedAt": "2026-08-25T13:50:01.202Z",
+  "source": "crux-history",
+  "scope": "url",
+  "formFactor": "PHONE",
+  "series": [
+    {
+      "period": {
+        "first": "2026-02-08",
+        "last": "2026-03-07"
+      },
+      "date": "2026-03-07",
+      "metrics": {
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 94.3,
+            "needsImprovement": 3.3,
+            "poor": 2.4
+          }
+        },
+        "ttfb": {
+          "p75": 1254,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 56.6,
+            "needsImprovement": 32.6,
+            "poor": 10.8
+          }
+        },
+        "fcp": {
+          "p75": 2113,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 66.7,
+            "needsImprovement": 21,
+            "poor": 12.3
+          }
+        },
+        "inp": {
+          "p75": 257,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 67.8,
+            "needsImprovement": 22.5,
+            "poor": 9.7
+          }
+        },
+        "lcp": {
+          "p75": 2351,
+          "rating": "good",
+          "distribution": {
+            "good": 77.9,
+            "needsImprovement": 13.7,
+            "poor": 8.4
+          }
+        },
+        "rtt": {
+          "p75": 143,
+          "rating": null,
+          "distribution": {
+            "good": 40.3,
+            "needsImprovement": 52.1,
+            "poor": 7.7
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-02-15",
+        "last": "2026-03-14"
+      },
+      "date": "2026-03-14",
+      "metrics": {
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 94.8,
+            "needsImprovement": 3,
+            "poor": 2.2
+          }
+        },
+        "ttfb": {
+          "p75": 1295,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 53.6,
+            "needsImprovement": 35.2,
+            "poor": 11.2
+          }
+        },
+        "fcp": {
+          "p75": 2225,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 63.7,
+            "needsImprovement": 23,
+            "poor": 13.3
+          }
+        },
+        "inp": {
+          "p75": 275,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 64.3,
+            "needsImprovement": 24.4,
+            "poor": 11.3
+          }
+        },
+        "lcp": {
+          "p75": 2451,
+          "rating": "good",
+          "distribution": {
+            "good": 76.2,
+            "needsImprovement": 15.3,
+            "poor": 8.5
+          }
+        },
+        "rtt": {
+          "p75": 146,
+          "rating": null,
+          "distribution": {
+            "good": 38,
+            "needsImprovement": 53.9,
+            "poor": 8.1
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-02-22",
+        "last": "2026-03-21"
+      },
+      "date": "2026-03-21",
+      "metrics": {
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 94.5,
+            "needsImprovement": 3.3,
+            "poor": 2.3
+          }
+        },
+        "ttfb": {
+          "p75": 1314,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 52.8,
+            "needsImprovement": 35.4,
+            "poor": 11.8
+          }
+        },
+        "fcp": {
+          "p75": 2266,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 62.2,
+            "needsImprovement": 23.4,
+            "poor": 14.4
+          }
+        },
+        "inp": {
+          "p75": 272,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 65.1,
+            "needsImprovement": 23.8,
+            "poor": 11.1
+          }
+        },
+        "lcp": {
+          "p75": 2496,
+          "rating": "good",
+          "distribution": {
+            "good": 75.4,
+            "needsImprovement": 15.6,
+            "poor": 9
+          }
+        },
+        "rtt": {
+          "p75": 146,
+          "rating": null,
+          "distribution": {
+            "good": 37.4,
+            "needsImprovement": 54.4,
+            "poor": 8.2
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-03-01",
+        "last": "2026-03-28"
+      },
+      "date": "2026-03-28",
+      "metrics": {
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 95,
+            "needsImprovement": 3,
+            "poor": 2
+          }
+        },
+        "ttfb": {
+          "p75": 1306,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 52.7,
+            "needsImprovement": 35.7,
+            "poor": 11.6
+          }
+        },
+        "fcp": {
+          "p75": 2280,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 62.5,
+            "needsImprovement": 23.2,
+            "poor": 14.3
+          }
+        },
+        "inp": {
+          "p75": 269,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 65.5,
+            "needsImprovement": 23.5,
+            "poor": 11.1
+          }
+        },
+        "lcp": {
+          "p75": 2515,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 75.6,
+            "needsImprovement": 15.7,
+            "poor": 8.7
+          }
+        },
+        "rtt": {
+          "p75": 146,
+          "rating": null,
+          "distribution": {
+            "good": 37.4,
+            "needsImprovement": 54.7,
+            "poor": 7.9
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-03-08",
+        "last": "2026-04-04"
+      },
+      "date": "2026-04-04",
+      "metrics": {
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 94.1,
+            "needsImprovement": 3.5,
+            "poor": 2.4
+          }
+        },
+        "ttfb": {
+          "p75": 1269,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 55.8,
+            "needsImprovement": 33.5,
+            "poor": 10.7
+          }
+        },
+        "fcp": {
+          "p75": 2222,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 63.8,
+            "needsImprovement": 22.5,
+            "poor": 13.7
+          }
+        },
+        "inp": {
+          "p75": 254,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 67.8,
+            "needsImprovement": 22.7,
+            "poor": 9.5
+          }
+        },
+        "lcp": {
+          "p75": 2444,
+          "rating": "good",
+          "distribution": {
+            "good": 76.1,
+            "needsImprovement": 14.9,
+            "poor": 9
+          }
+        },
+        "rtt": {
+          "p75": 144,
+          "rating": null,
+          "distribution": {
+            "good": 38.8,
+            "needsImprovement": 53.1,
+            "poor": 8
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-03-15",
+        "last": "2026-04-11"
+      },
+      "date": "2026-04-11",
+      "metrics": {
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 94.1,
+            "needsImprovement": 3.4,
+            "poor": 2.4
+          }
+        },
+        "ttfb": {
+          "p75": 1200,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 60,
+            "needsImprovement": 30.5,
+            "poor": 9.5
+          }
+        },
+        "fcp": {
+          "p75": 2150,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 66.3,
+            "needsImprovement": 21.3,
+            "poor": 12.4
+          }
+        },
+        "inp": {
+          "p75": 249,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 67.2,
+            "needsImprovement": 22.8,
+            "poor": 9.9
+          }
+        },
+        "lcp": {
+          "p75": 2353,
+          "rating": "good",
+          "distribution": {
+            "good": 77.2,
+            "needsImprovement": 14.2,
+            "poor": 8.6
+          }
+        },
+        "rtt": {
+          "p75": 145,
+          "rating": null,
+          "distribution": {
+            "good": 39.4,
+            "needsImprovement": 52.7,
+            "poor": 7.9
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-03-22",
+        "last": "2026-04-18"
+      },
+      "date": "2026-04-18",
+      "metrics": {
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 94.2,
+            "needsImprovement": 3.3,
+            "poor": 2.5
+          }
+        },
+        "ttfb": {
+          "p75": 1167,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 61.4,
+            "needsImprovement": 29.3,
+            "poor": 9.4
+          }
+        },
+        "fcp": {
+          "p75": 2115,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 66.5,
+            "needsImprovement": 21,
+            "poor": 12.5
+          }
+        },
+        "inp": {
+          "p75": 251,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 68.6,
+            "needsImprovement": 21.8,
+            "poor": 9.5
+          }
+        },
+        "lcp": {
+          "p75": 2315,
+          "rating": "good",
+          "distribution": {
+            "good": 78.7,
+            "needsImprovement": 13,
+            "poor": 8.3
+          }
+        },
+        "rtt": {
+          "p75": 146,
+          "rating": null,
+          "distribution": {
+            "good": 39.3,
+            "needsImprovement": 52.9,
+            "poor": 7.8
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-03-29",
+        "last": "2026-04-25"
+      },
+      "date": "2026-04-25",
+      "metrics": {
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 94.2,
+            "needsImprovement": 3.6,
+            "poor": 2.2
+          }
+        },
+        "ttfb": {
+          "p75": 1144,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 62.9,
+            "needsImprovement": 28.7,
+            "poor": 8.4
+          }
+        },
+        "fcp": {
+          "p75": 2085,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 67.3,
+            "needsImprovement": 20.8,
+            "poor": 11.9
+          }
+        },
+        "inp": {
+          "p75": 271,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 65.4,
+            "needsImprovement": 23.8,
+            "poor": 10.7
+          }
+        },
+        "lcp": {
+          "p75": 2291,
+          "rating": "good",
+          "distribution": {
+            "good": 78.6,
+            "needsImprovement": 13.3,
+            "poor": 8.1
+          }
+        },
+        "rtt": {
+          "p75": 152,
+          "rating": null,
+          "distribution": {
+            "good": 38,
+            "needsImprovement": 53.4,
+            "poor": 8.6
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-04-05",
+        "last": "2026-05-02"
+      },
+      "date": "2026-05-02",
+      "metrics": {
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 94,
+            "needsImprovement": 3.7,
+            "poor": 2.3
+          }
+        },
+        "ttfb": {
+          "p75": 1138,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 62.3,
+            "needsImprovement": 28.3,
+            "poor": 9.4
+          }
+        },
+        "fcp": {
+          "p75": 2051,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 68.5,
+            "needsImprovement": 20.1,
+            "poor": 11.4
+          }
+        },
+        "inp": {
+          "p75": 283,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 63.8,
+            "needsImprovement": 24.9,
+            "poor": 11.3
+          }
+        },
+        "lcp": {
+          "p75": 2266,
+          "rating": "good",
+          "distribution": {
+            "good": 78.9,
+            "needsImprovement": 12.9,
+            "poor": 8.2
+          }
+        },
+        "rtt": {
+          "p75": 151,
+          "rating": null,
+          "distribution": {
+            "good": 38.4,
+            "needsImprovement": 53,
+            "poor": 8.6
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-04-12",
+        "last": "2026-05-09"
+      },
+      "date": "2026-05-09",
+      "metrics": {
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 94,
+            "needsImprovement": 3.5,
+            "poor": 2.5
+          }
+        },
+        "ttfb": {
+          "p75": 1158,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 61.4,
+            "needsImprovement": 29.2,
+            "poor": 9.4
+          }
+        },
+        "fcp": {
+          "p75": 2004,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 69.7,
+            "needsImprovement": 18.8,
+            "poor": 11.6
+          }
+        },
+        "inp": {
+          "p75": 282,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 64.4,
+            "needsImprovement": 24.2,
+            "poor": 11.5
+          }
+        },
+        "lcp": {
+          "p75": 2222,
+          "rating": "good",
+          "distribution": {
+            "good": 80.3,
+            "needsImprovement": 12.1,
+            "poor": 7.6
+          }
+        },
+        "rtt": {
+          "p75": 145,
+          "rating": null,
+          "distribution": {
+            "good": 39.7,
+            "needsImprovement": 52.2,
+            "poor": 8.1
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-04-19",
+        "last": "2026-05-16"
+      },
+      "date": "2026-05-16",
+      "metrics": {
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 93.7,
+            "needsImprovement": 3.9,
+            "poor": 2.4
+          }
+        },
+        "ttfb": {
+          "p75": 1168,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 60.8,
+            "needsImprovement": 29.2,
+            "poor": 10
+          }
+        },
+        "fcp": {
+          "p75": 1956,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 70.8,
+            "needsImprovement": 18.4,
+            "poor": 10.8
+          }
+        },
+        "inp": {
+          "p75": 281,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 63.6,
+            "needsImprovement": 24.8,
+            "poor": 11.6
+          }
+        },
+        "lcp": {
+          "p75": 2167,
+          "rating": "good",
+          "distribution": {
+            "good": 80.4,
+            "needsImprovement": 11.8,
+            "poor": 7.8
+          }
+        },
+        "rtt": {
+          "p75": 144,
+          "rating": null,
+          "distribution": {
+            "good": 40.7,
+            "needsImprovement": 51.2,
+            "poor": 8.1
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-04-26",
+        "last": "2026-05-23"
+      },
+      "date": "2026-05-23",
+      "metrics": {
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 93.6,
+            "needsImprovement": 3.9,
+            "poor": 2.6
+          }
+        },
+        "ttfb": {
+          "p75": 1227,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 56.9,
+            "needsImprovement": 31.8,
+            "poor": 11.3
+          }
+        },
+        "fcp": {
+          "p75": 2001,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 69.3,
+            "needsImprovement": 18.9,
+            "poor": 11.9
+          }
+        },
+        "inp": {
+          "p75": 270,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 65.3,
+            "needsImprovement": 24.2,
+            "poor": 10.6
+          }
+        },
+        "lcp": {
+          "p75": 2184,
+          "rating": "good",
+          "distribution": {
+            "good": 80.2,
+            "needsImprovement": 11.7,
+            "poor": 8.1
+          }
+        },
+        "rtt": {
+          "p75": 135,
+          "rating": null,
+          "distribution": {
+            "good": 42.9,
+            "needsImprovement": 50.4,
+            "poor": 6.7
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-05-03",
+        "last": "2026-05-30"
+      },
+      "date": "2026-05-30",
+      "metrics": {
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 93.9,
+            "needsImprovement": 3.5,
+            "poor": 2.6
+          }
+        },
+        "ttfb": {
+          "p75": 1260,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 55,
+            "needsImprovement": 33,
+            "poor": 12
+          }
+        },
+        "fcp": {
+          "p75": 2051,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 68.3,
+            "needsImprovement": 19.4,
+            "poor": 12.2
+          }
+        },
+        "inp": {
+          "p75": 276,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 64.2,
+            "needsImprovement": 24.8,
+            "poor": 11
+          }
+        },
+        "lcp": {
+          "p75": 2232,
+          "rating": "good",
+          "distribution": {
+            "good": 79.1,
+            "needsImprovement": 12,
+            "poor": 9
+          }
+        },
+        "rtt": {
+          "p75": 136,
+          "rating": null,
+          "distribution": {
+            "good": 42.6,
+            "needsImprovement": 50.2,
+            "poor": 7.1
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-05-10",
+        "last": "2026-06-06"
+      },
+      "date": "2026-06-06",
+      "metrics": {
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 94.2,
+            "needsImprovement": 3.3,
+            "poor": 2.5
+          }
+        },
+        "ttfb": {
+          "p75": 1275,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 54.8,
+            "needsImprovement": 33.2,
+            "poor": 12
+          }
+        },
+        "fcp": {
+          "p75": 2096,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 67.6,
+            "needsImprovement": 20,
+            "poor": 12.4
+          }
+        },
+        "inp": {
+          "p75": 279,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 63.8,
+            "needsImprovement": 24.4,
+            "poor": 11.8
+          }
+        },
+        "lcp": {
+          "p75": 2279,
+          "rating": "good",
+          "distribution": {
+            "good": 78.6,
+            "needsImprovement": 12.5,
+            "poor": 8.9
+          }
+        },
+        "rtt": {
+          "p75": 138,
+          "rating": null,
+          "distribution": {
+            "good": 42.7,
+            "needsImprovement": 50,
+            "poor": 7.4
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-05-17",
+        "last": "2026-06-13"
+      },
+      "date": "2026-06-13",
+      "metrics": {
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 94.3,
+            "needsImprovement": 3.4,
+            "poor": 2.3
+          }
+        },
+        "ttfb": {
+          "p75": 1285,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 54.4,
+            "needsImprovement": 33.4,
+            "poor": 12.3
+          }
+        },
+        "fcp": {
+          "p75": 2146,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 66.3,
+            "needsImprovement": 20.4,
+            "poor": 13.3
+          }
+        },
+        "inp": {
+          "p75": 286,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 64,
+            "needsImprovement": 23.9,
+            "poor": 12.2
+          }
+        },
+        "lcp": {
+          "p75": 2331,
+          "rating": "good",
+          "distribution": {
+            "good": 77.8,
+            "needsImprovement": 13.2,
+            "poor": 9.1
+          }
+        },
+        "rtt": {
+          "p75": 138,
+          "rating": null,
+          "distribution": {
+            "good": 41.9,
+            "needsImprovement": 50.3,
+            "poor": 7.8
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-05-24",
+        "last": "2026-06-20"
+      },
+      "date": "2026-06-20",
+      "metrics": {
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 93.8,
+            "needsImprovement": 3.7,
+            "poor": 2.5
+          }
+        },
+        "ttfb": {
+          "p75": 1249,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 57.1,
+            "needsImprovement": 31.4,
+            "poor": 11.5
+          }
+        },
+        "fcp": {
+          "p75": 2112,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 67.3,
+            "needsImprovement": 19.6,
+            "poor": 13.2
+          }
+        },
+        "inp": {
+          "p75": 286,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 63,
+            "needsImprovement": 25.1,
+            "poor": 11.9
+          }
+        },
+        "lcp": {
+          "p75": 2307,
+          "rating": "good",
+          "distribution": {
+            "good": 78,
+            "needsImprovement": 12.9,
+            "poor": 9.1
+          }
+        },
+        "rtt": {
+          "p75": 142,
+          "rating": null,
+          "distribution": {
+            "good": 41.1,
+            "needsImprovement": 50.7,
+            "poor": 8.2
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-05-31",
+        "last": "2026-06-27"
+      },
+      "date": "2026-06-27",
+      "metrics": {
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 94.2,
+            "needsImprovement": 3.4,
+            "poor": 2.4
+          }
+        },
+        "ttfb": {
+          "p75": 1203,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 59.6,
+            "needsImprovement": 29.6,
+            "poor": 10.8
+          }
+        },
+        "fcp": {
+          "p75": 2070,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 68.1,
+            "needsImprovement": 19.7,
+            "poor": 12.2
+          }
+        },
+        "inp": {
+          "p75": 278,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 63.6,
+            "needsImprovement": 24.9,
+            "poor": 11.5
+          }
+        },
+        "lcp": {
+          "p75": 2268,
+          "rating": "good",
+          "distribution": {
+            "good": 78.4,
+            "needsImprovement": 12.8,
+            "poor": 8.8
+          }
+        },
+        "rtt": {
+          "p75": 144,
+          "rating": null,
+          "distribution": {
+            "good": 40.9,
+            "needsImprovement": 50.2,
+            "poor": 8.9
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-06-07",
+        "last": "2026-07-04"
+      },
+      "date": "2026-07-04",
+      "metrics": {
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 94,
+            "needsImprovement": 3.5,
+            "poor": 2.5
+          }
+        },
+        "ttfb": {
+          "p75": 1156,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 61.4,
+            "needsImprovement": 28.7,
+            "poor": 9.9
+          }
+        },
+        "fcp": {
+          "p75": 2004,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 69.8,
+            "needsImprovement": 18.4,
+            "poor": 11.8
+          }
+        },
+        "inp": {
+          "p75": 274,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 64.8,
+            "needsImprovement": 24.8,
+            "poor": 10.4
+          }
+        },
+        "lcp": {
+          "p75": 2209,
+          "rating": "good",
+          "distribution": {
+            "good": 79.5,
+            "needsImprovement": 12.1,
+            "poor": 8.4
+          }
+        },
+        "rtt": {
+          "p75": 143,
+          "rating": null,
+          "distribution": {
+            "good": 41.7,
+            "needsImprovement": 49.9,
+            "poor": 8.5
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-06-14",
+        "last": "2026-07-11"
+      },
+      "date": "2026-07-11",
+      "metrics": {
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 93.9,
+            "needsImprovement": 3.4,
+            "poor": 2.6
+          }
+        },
+        "ttfb": {
+          "p75": 1089,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 64.5,
+            "needsImprovement": 27,
+            "poor": 8.6
+          }
+        },
+        "fcp": {
+          "p75": 1952,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 70.7,
+            "needsImprovement": 18.3,
+            "poor": 11
+          }
+        },
+        "inp": {
+          "p75": 268,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 65.9,
+            "needsImprovement": 24.1,
+            "poor": 10
+          }
+        },
+        "lcp": {
+          "p75": 2155,
+          "rating": "good",
+          "distribution": {
+            "good": 80.3,
+            "needsImprovement": 11.8,
+            "poor": 7.8
+          }
+        },
+        "rtt": {
+          "p75": 141,
+          "rating": null,
+          "distribution": {
+            "good": 41.5,
+            "needsImprovement": 50.2,
+            "poor": 8.3
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-06-21",
+        "last": "2026-07-18"
+      },
+      "date": "2026-07-18",
+      "metrics": {
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 91.9,
+            "needsImprovement": 6,
+            "poor": 2.2
+          }
+        },
+        "ttfb": {
+          "p75": 1099,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 63.9,
+            "needsImprovement": 27.4,
+            "poor": 8.7
+          }
+        },
+        "fcp": {
+          "p75": 2085,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 67.9,
+            "needsImprovement": 19.6,
+            "poor": 12.5
+          }
+        },
+        "inp": {
+          "p75": 273,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 65.4,
+            "needsImprovement": 24.4,
+            "poor": 10.2
+          }
+        },
+        "lcp": {
+          "p75": 2593,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 74,
+            "needsImprovement": 14.2,
+            "poor": 11.7
+          }
+        },
+        "rtt": {
+          "p75": 143,
+          "rating": null,
+          "distribution": {
+            "good": 40.9,
+            "needsImprovement": 50.6,
+            "poor": 8.5
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-06-28",
+        "last": "2026-07-25"
+      },
+      "date": "2026-07-25",
+      "metrics": {
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 91.2,
+            "needsImprovement": 6.6,
+            "poor": 2.2
+          }
+        },
+        "ttfb": {
+          "p75": 1099,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 64,
+            "needsImprovement": 27.1,
+            "poor": 8.9
+          }
+        },
+        "fcp": {
+          "p75": 2140,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 66.4,
+            "needsImprovement": 20.6,
+            "poor": 13.1
+          }
+        },
+        "inp": {
+          "p75": 275,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 65,
+            "needsImprovement": 24,
+            "poor": 11
+          }
+        },
+        "lcp": {
+          "p75": 3066,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 66.7,
+            "needsImprovement": 17,
+            "poor": 16.3
+          }
+        },
+        "rtt": {
+          "p75": 143,
+          "rating": null,
+          "distribution": {
+            "good": 41.3,
+            "needsImprovement": 49.9,
+            "poor": 8.9
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-07-05",
+        "last": "2026-08-01"
+      },
+      "date": "2026-08-01",
+      "metrics": {
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 90.9,
+            "needsImprovement": 6.8,
+            "poor": 2.3
+          }
+        },
+        "ttfb": {
+          "p75": 1116,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 63.9,
+            "needsImprovement": 27,
+            "poor": 9
+          }
+        },
+        "fcp": {
+          "p75": 2202,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 65.3,
+            "needsImprovement": 20.7,
+            "poor": 14.1
+          }
+        },
+        "inp": {
+          "p75": 277,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 63.8,
+            "needsImprovement": 25.3,
+            "poor": 10.9
+          }
+        },
+        "lcp": {
+          "p75": 3501,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 59.4,
+            "needsImprovement": 19.9,
+            "poor": 20.7
+          }
+        },
+        "rtt": {
+          "p75": 142,
+          "rating": null,
+          "distribution": {
+            "good": 40.8,
+            "needsImprovement": 49.9,
+            "poor": 9.2
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-07-12",
+        "last": "2026-08-08"
+      },
+      "date": "2026-08-08",
+      "metrics": {
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 91.8,
+            "needsImprovement": 6.3,
+            "poor": 1.9
+          }
+        },
+        "ttfb": {
+          "p75": 1120,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 63.9,
+            "needsImprovement": 26.8,
+            "poor": 9.3
+          }
+        },
+        "fcp": {
+          "p75": 2277,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 63.4,
+            "needsImprovement": 21.9,
+            "poor": 14.7
+          }
+        },
+        "inp": {
+          "p75": 285,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 63,
+            "needsImprovement": 25.9,
+            "poor": 11.1
+          }
+        },
+        "lcp": {
+          "p75": 3991,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 52.4,
+            "needsImprovement": 22.7,
+            "poor": 25
+          }
+        },
+        "rtt": {
+          "p75": 144,
+          "rating": null,
+          "distribution": {
+            "good": 40.3,
+            "needsImprovement": 50.7,
+            "poor": 9.1
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-07-19",
+        "last": "2026-08-15"
+      },
+      "date": "2026-08-15",
+      "metrics": {
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 94.6,
+            "needsImprovement": 3.6,
+            "poor": 1.8
+          }
+        },
+        "ttfb": {
+          "p75": 1096,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 64.7,
+            "needsImprovement": 25.9,
+            "poor": 9.4
+          }
+        },
+        "fcp": {
+          "p75": 2252,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 63.6,
+            "needsImprovement": 22.6,
+            "poor": 13.9
+          }
+        },
+        "inp": {
+          "p75": 282,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 63.4,
+            "needsImprovement": 25.7,
+            "poor": 10.9
+          }
+        },
+        "lcp": {
+          "p75": 4142,
+          "rating": "poor",
+          "distribution": {
+            "good": 50,
+            "needsImprovement": 23.8,
+            "poor": 26.3
+          }
+        },
+        "rtt": {
+          "p75": 142,
+          "rating": null,
+          "distribution": {
+            "good": 40.4,
+            "needsImprovement": 50.9,
+            "poor": 8.6
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-07-26",
+        "last": "2026-08-22"
+      },
+      "date": "2026-08-22",
+      "metrics": {
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 95.3,
+            "needsImprovement": 2.8,
+            "poor": 1.9
+          }
+        },
+        "ttfb": {
+          "p75": 1103,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 64.3,
+            "needsImprovement": 26.1,
+            "poor": 9.6
+          }
+        },
+        "fcp": {
+          "p75": 2292,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 61.8,
+            "needsImprovement": 23.7,
+            "poor": 14.4
+          }
+        },
+        "inp": {
+          "p75": 289,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 62.2,
+            "needsImprovement": 26.7,
+            "poor": 11.2
+          }
+        },
+        "lcp": {
+          "p75": 4076,
+          "rating": "poor",
+          "distribution": {
+            "good": 50.9,
+            "needsImprovement": 23.4,
+            "poor": 25.8
+          }
+        },
+        "rtt": {
+          "p75": 144,
+          "rating": null,
+          "distribution": {
+            "good": 39,
+            "needsImprovement": 52.3,
+            "poor": 8.7
+          }
+        }
+      }
+    }
+  ]
+}
