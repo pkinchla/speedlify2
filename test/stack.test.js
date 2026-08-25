@@ -67,6 +67,22 @@ describe("generator detection", () => {
 		assert.equal(detectGenerator({ meta: "Silex" }).version, null);
 	});
 
+	test("recognises Framer, and reads its build SHA as no version", () => {
+		// Framer stamps a commit hash where a version would go: "Framer 831f5a1".
+		// The digits run straight into a letter, so versionFrom finds no word
+		// boundary and reports null rather than a nonsense "831".
+		const found = detectGenerator({ meta: "Framer 831f5a1" });
+		assert.equal(found.id, "framer");
+		assert.equal(found.name, "Framer");
+		assert.equal(found.icon, "Framer");
+		assert.equal(found.version, null);
+
+		// Anchored at the front: the word has to open the string. Without that,
+		// every generator with "framer" anywhere in it becomes Framer.
+		assert.equal(detectGenerator({ meta: "Xframer" }).id, null);
+		assert.equal(detectGenerator({ meta: "Some Framer-like thing" }).id, null);
+	});
+
 	test("recognises Next.js and Nuxt by their build output paths", () => {
 		// Both ship without a generator meta tag, so the reference falls back to
 		// script[src^='/_next/'] and script[src^='/_nuxt/'] — so do we.
