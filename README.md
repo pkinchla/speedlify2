@@ -379,12 +379,11 @@ speedlify prune --days=365 --keep=30 --dry-run
 
 ## Automation
 
-Two workflows, deliberately separate:
+- [`measure.yml`](.github/workflows/measure.yml) — once a day at midnight UTC, 4 shards in parallel, a bounded batch each, committing results back to `main`. A shard failing doesn't stop the others.
 
-- [`measure.yml`](.github/workflows/measure.yml) — every 2 hours, 4 shards in parallel, a bounded batch each, committing results back to the repo. A shard failing doesn't stop the others.
-- [`publish.yml`](.github/workflows/publish.yml) — hourly and on push, builds and deploys whatever data exists. It never waits for a measurement run and never fails because coverage is incomplete.
+Deployment is not a workflow in this repo: Netlify is connected directly to the GitHub repository and builds on every push to `main`, independent of anything here.
 
-To use them, add `CRUX_API_KEY` as a repository secret and enable GitHub Pages with "GitHub Actions" as the source. Without the secret both still run; field data is just skipped.
+To use `measure.yml`, add `CRUX_API_KEY` as a repository secret. Without it the workflow still runs; field data is just skipped.
 
 Shards write to disjoint directories but push to one branch, so the commit step rebases and retries on a race.
 
