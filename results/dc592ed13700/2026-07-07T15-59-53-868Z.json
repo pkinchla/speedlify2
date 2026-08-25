@@ -1,0 +1,77 @@
+{
+  "url": "https://paulkinchla.com/blog",
+  "name": "paulkinchla.com",
+  "group": "paulkinchladotcom",
+  "groupName": "paulkinchla.com",
+  "timestamp": 1783439993868,
+  "date": "2026-07-07T15:59:53.868Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "error": null,
+  "consecutiveFailures": 0,
+  "lab": {
+    "requestedUrl": "https://paulkinchla.com/blog/",
+    "finalUrl": "https://paulkinchla.com/blog",
+    "scores": {
+      "performance": 96,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "timings": {
+      "fcp": 1137.104,
+      "lcp": 2726.1040000000003,
+      "si": 1167.4523211230726,
+      "tbt": 11,
+      "tti": 2726.1040000000003,
+      "cls": 0.0042815624248054756,
+      "ttfb": 53.59900000000002,
+      "maxPotentialFid": 61
+    },
+    "weight": {
+      "total": 267454,
+      "requests": 9,
+      "byType": {
+        "script": {
+          "bytes": 11202,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 25223,
+          "requests": 1
+        },
+        "font": {
+          "bytes": 163485,
+          "requests": 3
+        },
+        "image": {
+          "bytes": 67544,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 0,
+          "requests": 0
+        }
+      }
+    },
+    "thirdParty": {
+      "count": 0,
+      "bytes": 0
+    },
+    "environment": {
+      "lighthouseVersion": "12.8.1",
+      "formFactor": "mobile",
+      "fetchTime": "2026-07-07T15:59:53.868Z"
+    }
+  },
+  "field": null,
+  "axe": {
+    "passes": 357,
+    "violations": 0
+  }
+}

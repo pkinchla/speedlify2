@@ -1,0 +1,77 @@
+{
+  "url": "https://paulkinchla.com/blog/2020/10/28/javascript-still-a-ghost",
+  "name": "paulkinchla.com",
+  "group": "paulkinchladotcom",
+  "groupName": "paulkinchla.com",
+  "timestamp": 1783439928946,
+  "date": "2026-07-07T15:58:48.946Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "error": null,
+  "consecutiveFailures": 0,
+  "lab": {
+    "requestedUrl": "https://paulkinchla.com/blog/2020/10/28/javascript-still-a-ghost/",
+    "finalUrl": "https://paulkinchla.com/blog/2020/10/28/javascript-still-a-ghost",
+    "scores": {
+      "performance": 97,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "timings": {
+      "fcp": 1387.7,
+      "lcp": 2437.7,
+      "si": 1387.7,
+      "tbt": 5,
+      "tti": 2437.7,
+      "cls": 0.0036196289389281173,
+      "ttfb": 58.882000000000005,
+      "maxPotentialFid": 55
+    },
+    "weight": {
+      "total": 217181,
+      "requests": 10,
+      "byType": {
+        "script": {
+          "bytes": 19860,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 29344,
+          "requests": 1
+        },
+        "font": {
+          "bytes": 163489,
+          "requests": 3
+        },
+        "image": {
+          "bytes": 3518,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 0,
+          "requests": 0
+        }
+      }
+    },
+    "thirdParty": {
+      "count": 0,
+      "bytes": 0
+    },
+    "environment": {
+      "lighthouseVersion": "12.8.1",
+      "formFactor": "mobile",
+      "fetchTime": "2026-07-07T15:58:48.946Z"
+    }
+  },
+  "field": null,
+  "axe": {
+    "passes": 1127,
+    "violations": 0
+  }
+}

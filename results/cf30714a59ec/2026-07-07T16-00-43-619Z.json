@@ -1,0 +1,77 @@
+{
+  "url": "https://sevenpx.design/drawings",
+  "name": "sevenpx.design",
+  "group": "sevenpx",
+  "groupName": "sevenpx.design",
+  "timestamp": 1783440043619,
+  "date": "2026-07-07T16:00:43.619Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "error": null,
+  "consecutiveFailures": 0,
+  "lab": {
+    "requestedUrl": "https://sevenpx.design/drawings/",
+    "finalUrl": "https://sevenpx.design/drawings",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "timings": {
+      "fcp": 1115.838,
+      "lcp": 1115.838,
+      "si": 1838.3958839806444,
+      "tbt": 0,
+      "tti": 1115.838,
+      "cls": 0.02596426480272232,
+      "ttfb": 175.659,
+      "maxPotentialFid": 16
+    },
+    "weight": {
+      "total": 826050,
+      "requests": 13,
+      "byType": {
+        "script": {
+          "bytes": 54280,
+          "requests": 8
+        },
+        "document": {
+          "bytes": 37018,
+          "requests": 1
+        },
+        "font": {
+          "bytes": 700663,
+          "requests": 2
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "stylesheet": {
+          "bytes": 2164,
+          "requests": 1
+        },
+        "third-party": {
+          "bytes": 0,
+          "requests": 0
+        }
+      }
+    },
+    "thirdParty": {
+      "count": 0,
+      "bytes": 0
+    },
+    "environment": {
+      "lighthouseVersion": "12.8.1",
+      "formFactor": "mobile",
+      "fetchTime": "2026-07-07T16:00:43.619Z"
+    }
+  },
+  "field": null,
+  "axe": {
+    "passes": 479,
+    "violations": 0
+  }
+}

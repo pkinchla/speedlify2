@@ -1,0 +1,77 @@
+{
+  "url": "https://sevenpx.design/",
+  "name": "sevenpx.design",
+  "group": "sevenpx",
+  "groupName": "sevenpx.design",
+  "timestamp": 1783440020451,
+  "date": "2026-07-07T16:00:20.451Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "error": null,
+  "consecutiveFailures": 0,
+  "lab": {
+    "requestedUrl": "https://sevenpx.design/",
+    "finalUrl": "https://sevenpx.design/",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "timings": {
+      "fcp": 1240.174,
+      "lcp": 1240.174,
+      "si": 2454.396502020453,
+      "tbt": 0,
+      "tti": 1240.174,
+      "cls": 0,
+      "ttfb": 318.299,
+      "maxPotentialFid": 16
+    },
+    "weight": {
+      "total": 825819,
+      "requests": 9,
+      "byType": {
+        "script": {
+          "bytes": 52908,
+          "requests": 4
+        },
+        "document": {
+          "bytes": 35877,
+          "requests": 1
+        },
+        "font": {
+          "bytes": 702715,
+          "requests": 2
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "stylesheet": {
+          "bytes": 2187,
+          "requests": 1
+        },
+        "third-party": {
+          "bytes": 0,
+          "requests": 0
+        }
+      }
+    },
+    "thirdParty": {
+      "count": 0,
+      "bytes": 0
+    },
+    "environment": {
+      "lighthouseVersion": "12.8.1",
+      "formFactor": "mobile",
+      "fetchTime": "2026-07-07T16:00:20.451Z"
+    }
+  },
+  "field": null,
+  "axe": {
+    "passes": 67,
+    "violations": 0
+  }
+}
