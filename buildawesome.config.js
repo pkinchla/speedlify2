@@ -242,6 +242,13 @@ export default async function ($config) {
 	// The report is the only input; rebuild when it changes.
 	$config.addWatchTarget(process.env.SPEEDLIFY_REPORT_FILE || "report.json");
 
+	/*
+	 * Keep the watcher out of the dataset.
+	 * Depends on https://github.com/11ty/buildawesome/issues/4351 in v4.0.0-alpha.11
+	 */
+	$config.watchIgnores.add("results/**");
+	$config.watchIgnores.add("logs/**");
+
 	// 8080 is a busy port on most machines, and this project is often running
 	// alongside whatever else is being measured.
 	$config.setServerOptions({ port: 2830 });
