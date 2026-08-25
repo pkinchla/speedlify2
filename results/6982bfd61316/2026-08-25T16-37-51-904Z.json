@@ -1,0 +1,271 @@
+{
+  "url": "https://www.nuget.org/",
+  "name": "NuGet",
+  "group": "package-managers",
+  "groupName": "Package Managers",
+  "timestamp": 1787675871904,
+  "date": "2026-08-25T16:37:51.904Z",
+  "runId": "2026-08-25T16-35-45-981Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 22636,
+  "error": null,
+  "variance": {
+    "min": 83,
+    "max": 98,
+    "spread": 15,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.nuget.org/",
+    "finalUrl": "https://www.nuget.org/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 96,
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 92,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1512,
+      "lcp": 2666,
+      "si": 1512,
+      "tbt": 18,
+      "tti": 3631,
+      "cls": 0,
+      "ttfb": 606,
+      "maxPotentialFid": 81,
+      "serverResponseTime": 14,
+      "networkRtt": 4.5,
+      "networkServerLatency": 78.8
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 16,
+      "elementRenderDelay": 99.8
+    },
+    "weight": {
+      "total": 486975,
+      "requests": 20,
+      "mainDocument": 6110,
+      "byType": {
+        "total": {
+          "bytes": 470340,
+          "requests": 19
+        },
+        "font": {
+          "bytes": 197608,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 178460,
+          "requests": 4
+        },
+        "stylesheet": {
+          "bytes": 70929,
+          "requests": 2
+        },
+        "image": {
+          "bytes": 14325,
+          "requests": 5
+        },
+        "document": {
+          "bytes": 6110,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 2908,
+          "requests": 6
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 273373,
+          "requests": 5
+        }
+      },
+      "scripts": 4,
+      "stylesheets": 2,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 4,
+      "bytes": 273373,
+      "mainThreadMs": 18.1,
+      "top": [
+        {
+          "entity": "office.net",
+          "bytes": 197608,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Bing Ads",
+          "bytes": 53534,
+          "mainThreadMs": 3.5
+        },
+        {
+          "entity": "azure.com",
+          "bytes": 22077,
+          "mainThreadMs": 14.5
+        },
+        {
+          "entity": "Visual Studio",
+          "bytes": 154,
+          "mainThreadMs": 0.1
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 662.2,
+      "byGroup": {
+        "other": 239.2,
+        "scriptEvaluation": 223.8,
+        "styleLayout": 91.9,
+        "scriptParseCompile": 54.6,
+        "parseHTML": 33.7,
+        "paintCompositeRender": 18.8
+      },
+      "bootupMs": 261,
+      "longTasks": 3,
+      "longestTaskMs": 81
+    },
+    "dom": {
+      "elements": 131,
+      "depth": 12,
+      "maxChildren": 8
+    },
+    "waste": {
+      "unusedJsBytes": 94497,
+      "unusedCssBytes": 63489,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 1212,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 258447.8291666667,
+      "poorlyCachedCount": 11
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 24,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "http/1.1",
+      "legacyHttpRequests": 12,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 14
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2352,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-25T16:38:07.222Z",
+      "runtimeMs": 6498.4
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-27",
+      "last": "2026-08-23"
+    },
+    "metrics": {
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 96,
+          "needsImprovement": 0.6,
+          "poor": 3.4
+        }
+      },
+      "ttfb": {
+        "p75": 2462,
+        "rating": "poor",
+        "distribution": {
+          "good": 40.3,
+          "needsImprovement": 27.1,
+          "poor": 32.6
+        }
+      },
+      "fcp": {
+        "p75": 3084,
+        "rating": "poor",
+        "distribution": {
+          "good": 59.2,
+          "needsImprovement": 15.2,
+          "poor": 25.6
+        }
+      },
+      "inp": {
+        "p75": 104,
+        "rating": "good",
+        "distribution": {
+          "good": 92.2,
+          "needsImprovement": 5.8,
+          "poor": 2.1
+        }
+      },
+      "lcp": {
+        "p75": 2800,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 72.3,
+          "needsImprovement": 12.6,
+          "poor": 15.1
+        }
+      },
+      "rtt": {
+        "p75": 179,
+        "rating": null,
+        "distribution": {
+          "good": 31.2,
+          "needsImprovement": 56.2,
+          "poor": 12.6
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": null,
+    "interstitial": null,
+    "host": null,
+    "headers": {},
+    "violations": 0,
+    "passes": 256,
+    "incomplete": 28,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

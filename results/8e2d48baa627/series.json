@@ -1,0 +1,3 @@
+{"version":1,"url":"https://pub.dev/","updated":"2026-08-25T16:37:51.903Z","points":[
+{"t":1787675845186,"performance":87,"accessibility":92,"best-practices":100,"seo":100,"lcp":3317,"cls":0.003,"tbt":162,"fcp":2465,"si":2465,"ttfb":630,"total":629899,"requests":38,"bytes":372758,"mainThreadMs":96,"unusedJsBytes":192026,"unusedCssBytes":12300,"mainThreadTotal":1415,"longTasks":6,"elements":347,"failingCount":2,"failingNodes":2,"axeViolations":3,"axePasses":812,"field-lcp":1721,"field-inp":96,"field-cls":0,"field-fcp":1618,"field-ttfb":861,"bench":2285.5,"runs":3,"reqRuns":3,"ms":26716,"spread":12}
+]}

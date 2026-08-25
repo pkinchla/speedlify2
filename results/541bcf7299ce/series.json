@@ -1,0 +1,3 @@
+{"version":1,"url":"https://npmx.dev/","updated":"2026-08-25T16:37:25.186Z","points":[
+{"t":1787675813561,"performance":77,"accessibility":100,"best-practices":96,"seo":100,"lcp":4903,"cls":0.003,"tbt":202,"fcp":2128,"si":2128,"ttfb":628,"total":12919234,"requests":159,"bytes":11388571,"mainThreadMs":0,"unusedJsBytes":56922,"unusedCssBytes":45821,"mainThreadTotal":2518.3,"longTasks":7,"elements":373,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":452,"field-lcp":1081,"field-inp":182,"field-cls":0.01,"field-fcp":885,"field-ttfb":442,"bench":2367,"runs":3,"reqRuns":3,"ms":31623,"spread":10}
+]}

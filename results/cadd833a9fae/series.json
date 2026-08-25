@@ -1,0 +1,3 @@
+{"version":1,"url":"https://yarnpkg.com/","updated":"2026-08-25T16:38:44.877Z","points":[
+{"t":1787675894541,"performance":68,"accessibility":93,"best-practices":100,"seo":92,"lcp":8714,"cls":0.002,"tbt":294,"fcp":1105,"si":3104,"ttfb":640,"total":1696677,"requests":32,"bytes":54890,"mainThreadMs":32.8,"unusedJsBytes":290245,"unusedCssBytes":50067,"mainThreadTotal":4318.7,"longTasks":6,"elements":163,"failingCount":2,"failingNodes":7,"axeViolations":7,"axePasses":179,"field-lcp":1962,"field-inp":211,"field-cls":0,"field-fcp":1671,"field-ttfb":783,"bench":2325,"runs":3,"reqRuns":3,"ms":30335,"spread":11}
+]}
