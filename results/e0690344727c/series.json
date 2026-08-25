@@ -1,3 +1,4 @@
-{"version":1,"url":"https://paulkinchla.com/blog/2020/10/28/javascript-still-a-ghost","updated":"2026-08-25T16:10:04.998Z","points":[
-{"t":1783439928946,"performance":97,"accessibility":100,"best-practices":100,"seo":100,"lcp":2437.7,"cls":0.0036196289389281173,"tbt":5,"fcp":1387.7,"si":1387.7,"ttfb":58.882000000000005,"total":217181,"requests":10,"bytes":0,"axeViolations":0,"axePasses":1127,"runs":3,"reqRuns":3}
+{"version":1,"url":"https://paulkinchla.com/blog/2020/10/28/javascript-still-a-ghost","updated":"2026-08-25T16:31:46.711Z","points":[
+{"t":1783439928946,"performance":97,"accessibility":100,"best-practices":100,"seo":100,"lcp":2437.7,"cls":0.0036196289389281173,"tbt":5,"fcp":1387.7,"si":1387.7,"ttfb":58.882000000000005,"total":217181,"requests":10,"bytes":0,"axeViolations":0,"axePasses":1127,"runs":3,"reqRuns":3},
+{"t":1787675482707,"performance":96,"accessibility":100,"best-practices":100,"seo":100,"lcp":2668,"cls":0,"tbt":0,"fcp":1667,"si":1667,"ttfb":489,"total":216180,"requests":11,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":447.4,"longTasks":0,"elements":766,"failingCount":0,"failingNodes":0,"axeViolations":1,"axePasses":69,"bench":2266,"runs":3,"reqRuns":3,"ms":24002,"spread":4}
 ]}

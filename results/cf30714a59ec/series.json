@@ -1,3 +1,4 @@
-{"version":1,"url":"https://sevenpx.design/drawings","updated":"2026-08-25T16:10:04.997Z","points":[
-{"t":1783440043619,"performance":100,"accessibility":100,"best-practices":100,"seo":100,"lcp":1115.838,"cls":0.02596426480272232,"tbt":0,"fcp":1115.838,"si":1838.3958839806444,"ttfb":175.659,"total":826050,"requests":13,"bytes":0,"axeViolations":0,"axePasses":479,"runs":3,"reqRuns":3}
+{"version":1,"url":"https://sevenpx.design/drawings","updated":"2026-08-25T16:37:10.666Z","points":[
+{"t":1783440043619,"performance":100,"accessibility":100,"best-practices":100,"seo":100,"lcp":1115.838,"cls":0.02596426480272232,"tbt":0,"fcp":1115.838,"si":1838.3958839806444,"ttfb":175.659,"total":826050,"requests":13,"bytes":0,"axeViolations":0,"axePasses":479,"runs":3,"reqRuns":3},
+{"t":1787675808103,"performance":87,"accessibility":100,"best-practices":100,"seo":100,"lcp":3815,"cls":0,"tbt":0,"fcp":1895,"si":2475,"ttfb":665,"total":955658,"requests":14,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":419.2,"longTasks":1,"elements":374,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":479,"bench":2285,"runs":3,"reqRuns":3,"ms":22561,"spread":20}
 ]}

@@ -1,3 +1,4 @@
-{"version":1,"url":"https://paulkinchla.com/","updated":"2026-08-25T16:10:04.997Z","points":[
-{"t":1783439936519,"performance":99,"accessibility":100,"best-practices":100,"seo":100,"lcp":1794.687,"cls":0.0441804978685947,"tbt":0,"fcp":1194.687,"si":1194.687,"ttfb":60.012,"total":211779,"requests":9,"bytes":0,"axeViolations":0,"axePasses":241,"runs":3,"reqRuns":3}
+{"version":1,"url":"https://paulkinchla.com/","updated":"2026-08-25T16:32:44.529Z","points":[
+{"t":1783439936519,"performance":99,"accessibility":100,"best-practices":100,"seo":100,"lcp":1794.687,"cls":0.0441804978685947,"tbt":0,"fcp":1194.687,"si":1194.687,"ttfb":60.012,"total":211779,"requests":9,"bytes":0,"axeViolations":0,"axePasses":241,"runs":3,"reqRuns":3},
+{"t":1787675542707,"performance":97,"accessibility":100,"best-practices":100,"seo":100,"lcp":2589,"cls":0.001,"tbt":0,"fcp":1284,"si":1284,"ttfb":545,"total":225055,"requests":9,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":288.8,"longTasks":0,"elements":168,"failingCount":0,"failingNodes":0,"axeViolations":1,"axePasses":69,"bench":2391,"runs":3,"reqRuns":3,"ms":21821,"spread":1}
 ]}
