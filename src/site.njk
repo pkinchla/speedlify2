@@ -35,7 +35,28 @@ eleventyComputed:
 #}
 {% set SCREENSHOT_MIN_PERFORMANCE = 75 %}
 {% set screenshot = "" %}
-{% if entry.latest.lab.scores.performance >= SCREENSHOT_MIN_PERFORMANCE %}
+{#
+	Nothing at all when the page we measured was a bot check. The screenshot
+	service is as automated as we are, so it meets the same waiting room — and a
+	picture of Cloudflare captioned with this site's name claims we saw something
+	we did not.
+#}
+{% set shotWidth = 650 %}
+{% set shotHeight = 650 %}
+{#
+	Our own capture first, where we have one. It exists only for sites the
+	screenshot service is served a bot check by, and it is the picture our own
+	Chrome saw — the real page, taken on the same run as the numbers beside it.
+
+	No performance floor on this branch: that floor exists because the service
+	renders on a timer and photographs half-drawn pages, and our capture is a
+	byproduct of a measurement that already finished.
+#}
+{% if not entry.interstitial and entry.ownScreenshot %}
+	{% set screenshot = entry.ownScreenshot.src %}
+	{% set shotWidth = entry.ownScreenshot.width or 650 %}
+	{% set shotHeight = entry.ownScreenshot.height or 650 %}
+{% elif not entry.interstitial and entry.latest.lab.scores.performance >= SCREENSHOT_MIN_PERFORMANCE %}
 	{% set screenshot = entry.url | screenshot(meta.screenshotService) %}
 {% endif %}
 
@@ -125,7 +146,7 @@ eleventyComputed:
 		still there, in words.
 	#}
 	<a class="detail-shot-link" href="{{ entry.url }}" tabindex="-1" aria-hidden="true">
-		<img class="detail-shot" src="{{ screenshot }}" width="650" height="650"
+		<img class="detail-shot" src="{{ screenshot }}" width="{{ shotWidth }}" height="{{ shotHeight }}"
 			alt="" loading="lazy" decoding="async">
 	</a>
 	{% endif %}
@@ -245,7 +266,7 @@ eleventyComputed:
 	first sample repeats that one frame for the rest of the strip, and the
 	section would be a heading over the same image eight times.
 #}
-{% set hasFilmstrip = entry.filmstrip and entry.filmstrip.distinct > 1 %}
+{% set hasFilmstrip = entry.filmstrip and entry.filmstrip.distinct > 1 and not entry.interstitial %}
 
 {% set toc = [] %}
 {% if hasStack %}{% set toc = (toc.push({ id: "stack", label: "Stack" }), toc) %}{% endif %}

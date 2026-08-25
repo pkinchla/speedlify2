@@ -1,0 +1,6 @@
+{
+  "note": "Sites whose screenshot must come from our own measurement rather than the screenshot service, because the service is served a bot check. See `screenshotBlocked` in config/sites.js.",
+  "urls": [
+    "https://www.solidjs.com/"
+  ]
+}

@@ -2,7 +2,7 @@ import { test, describe } from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 
-import { detectGenerator, detectHost, pickHostHeaders, pageProbe } from "../lib/stack.js";
+import { detectGenerator, detectHost, pickHostHeaders, pageProbe, detectInterstitial } from "../lib/stack.js";
 
 /**
  * Every generator that https://github.com/11ty/api-generator recognises, with a
@@ -356,5 +356,38 @@ describe("a page declaring more than one generator", () => {
 		const found = detectGenerator({ metas: ["Site Kit by Google 1.185.0", "WordPress 6.5"] });
 		assert.equal(found.name, "WordPress");
 		assert.equal(found.version, "6.5", "the CMS's own number, not the plugin's");
+	});
+});
+
+describe("detecting a bot check", () => {
+	const seen = (title) => detectInterstitial({ title });
+
+	test("recognises the wording these pages use", () => {
+		// The several products that do this copy each other's phrasing, which is
+		// what makes titles a usable signal at all.
+		assert.ok(seen("Just a moment..."));
+		assert.ok(seen("example.com | Performing security verification"));
+		assert.ok(seen("Checking your browser before accessing example.com"));
+		assert.ok(seen("Attention Required! | Cloudflare"));
+		assert.ok(seen("Verifying you are human. This may take a few seconds."));
+	});
+
+	test("returns the title, so a page can say what it hit", () => {
+		assert.equal(seen("  Just a moment...  "), "Just a moment...");
+	});
+
+	test("leaves ordinary titles alone", () => {
+		// A false positive hides a real site's screenshot and writes off its
+		// numbers, which is worse than showing one waiting room.
+		assert.equal(seen("My Personal Site"), null);
+		assert.equal(seen("Security — a blog about verification"), null);
+		assert.equal(seen("Just a Moment in Time — photography"), null, "must anchor at the start");
+	});
+
+	test("no title is not a bot check", () => {
+		assert.equal(seen(""), null);
+		assert.equal(seen("   "), null);
+		assert.equal(detectInterstitial({}), null);
+		assert.equal(detectInterstitial(null), null);
 	});
 });
