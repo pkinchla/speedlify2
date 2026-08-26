@@ -1,0 +1,22 @@
+{
+  "url": "https://cafeiso.com/",
+  "name": "cafeiso.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787733724087,
+  "date": "2026-08-26T08:42:04.087Z",
+  "runId": "2026-08-26T08-41-39-696Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 0,
+  "durationMs": 17444,
+  "error": "CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.",
+  "errors": [
+    "CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.",
+    "CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.",
+    "CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests."
+  ],
+  "field": null,
+  "axe": null,
+  "consecutiveFailures": 9
+}
