@@ -57,8 +57,14 @@ jobs:
         # The embed snippets need an absolute URL for this instance — someone
         # pastes them onto a different site, where a root-relative path means
         # their own domain. Empty locally, which falls back to a placeholder.
+        #
+        # `base_path` is the directory Pages will serve this from: empty for a
+        # custom domain, "/repo" for a project page. Passing it means neither
+        # case has to be guessed, and a fork with a custom domain does not get
+        # its repository name wrongly prepended to every URL.
         env:
           SPEEDLIFY_SITE_URL: ${{ steps.pages.outputs.base_url }}
+          SPEEDLIFY_BASE_HREF: ${{ steps.pages.outputs.base_path }}
         run: npx @awesome.me/buildawesome
 
       - name: Report coverage

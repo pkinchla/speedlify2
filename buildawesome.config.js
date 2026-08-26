@@ -177,10 +177,18 @@ function formatBytes(v) {
 }
 
 export default async function ($config) {
+	/*
+	 * Where this instance is served from.
+	 *
+	 * "/" for a custom domain, which is what speedlify.dev is. A fork on GitHub
+	 * Pages without one is served at `user.github.io/repo/`, where root-relative
+	 * URLs would resolve a directory too high and 404 the whole site — so the
+	 * path has to be known at build time. `publish.yml` sets this from
+	 * `actions/configure-pages`, which reports the path it is about to publish
+	 * under: empty for a custom domain, "/repo" for a project page.
+	 */
 	$config.addPlugin(HtmlBasePlugin, {
-		// for GitHub Actions in a subdirectory (not for speedlify.dev)
-		// baseHref: process.env.GITHUB_ACTIONS ? "speedlify2" : "/",
-		baseHref: "/",
+		baseHref: process.env.SPEEDLIFY_BASE_HREF || "/"
 	});
 
 	/*
