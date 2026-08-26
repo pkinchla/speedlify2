@@ -2,74 +2,11 @@
   "url": "https://www.wisc.edu/",
   "name": "www.wisc.edu",
   "group": "11ty-community",
-  "fetchedAt": "2026-08-20T20:44:35.464Z",
+  "fetchedAt": "2026-08-26T23:00:50.447Z",
   "source": "crux-history",
   "scope": "url",
   "formFactor": "PHONE",
   "series": [
-    {
-      "period": {
-        "first": "2026-02-01",
-        "last": "2026-02-28"
-      },
-      "date": "2026-02-28",
-      "metrics": {
-        "cls": {
-          "p75": 0,
-          "rating": "good",
-          "distribution": {
-            "good": 99.2,
-            "needsImprovement": 0.4,
-            "poor": 0.4
-          }
-        },
-        "ttfb": {
-          "p75": 830,
-          "rating": "needs-improvement",
-          "distribution": {
-            "good": 74,
-            "needsImprovement": 19.4,
-            "poor": 6.6
-          }
-        },
-        "fcp": {
-          "p75": 1253,
-          "rating": "good",
-          "distribution": {
-            "good": 86.6,
-            "needsImprovement": 8.2,
-            "poor": 5.2
-          }
-        },
-        "inp": {
-          "p75": 115,
-          "rating": "good",
-          "distribution": {
-            "good": 93.4,
-            "needsImprovement": 6.4,
-            "poor": 0.2
-          }
-        },
-        "lcp": {
-          "p75": 1302,
-          "rating": "good",
-          "distribution": {
-            "good": 92.4,
-            "needsImprovement": 4.7,
-            "poor": 2.9
-          }
-        },
-        "rtt": {
-          "p75": 144,
-          "rating": null,
-          "distribution": {
-            "good": 43.3,
-            "needsImprovement": 47.6,
-            "poor": 9.1
-          }
-        }
-      }
-    },
     {
       "period": {
         "first": "2026-02-08",
@@ -1578,6 +1515,69 @@
             "good": 41.4,
             "needsImprovement": 49.1,
             "poor": 9.5
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-07-26",
+        "last": "2026-08-22"
+      },
+      "date": "2026-08-22",
+      "metrics": {
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 80.5,
+            "needsImprovement": 14.2,
+            "poor": 5.3
+          }
+        },
+        "ttfb": {
+          "p75": 808,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 75,
+            "needsImprovement": 18.3,
+            "poor": 6.8
+          }
+        },
+        "fcp": {
+          "p75": 1243,
+          "rating": "good",
+          "distribution": {
+            "good": 87,
+            "needsImprovement": 7.6,
+            "poor": 5.5
+          }
+        },
+        "inp": {
+          "p75": 118,
+          "rating": "good",
+          "distribution": {
+            "good": 91.9,
+            "needsImprovement": 7.8,
+            "poor": 0.3
+          }
+        },
+        "lcp": {
+          "p75": 1326,
+          "rating": "good",
+          "distribution": {
+            "good": 91.8,
+            "needsImprovement": 4.6,
+            "poor": 3.6
+          }
+        },
+        "rtt": {
+          "p75": 141,
+          "rating": null,
+          "distribution": {
+            "good": 40.5,
+            "needsImprovement": 49.8,
+            "poor": 9.7
           }
         }
       }

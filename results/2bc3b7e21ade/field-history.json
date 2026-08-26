@@ -2,65 +2,11 @@
   "url": "https://blog.dwac.dev/",
   "name": "blog.dwac.dev",
   "group": "11ty-community",
-  "fetchedAt": "2026-08-20T20:28:39.290Z",
+  "fetchedAt": "2026-08-26T22:45:58.656Z",
   "source": "crux-history",
   "scope": "origin",
   "formFactor": "PHONE",
   "series": [
-    {
-      "period": {
-        "first": "2026-02-01",
-        "last": "2026-02-28"
-      },
-      "date": "2026-02-28",
-      "metrics": {
-        "cls": {
-          "p75": 0,
-          "rating": "good",
-          "distribution": {
-            "good": 100,
-            "needsImprovement": 0,
-            "poor": 0
-          }
-        },
-        "ttfb": {
-          "p75": 402,
-          "rating": "good",
-          "distribution": {
-            "good": 95.6,
-            "needsImprovement": 2.5,
-            "poor": 1.9
-          }
-        },
-        "fcp": {
-          "p75": 633,
-          "rating": "good",
-          "distribution": {
-            "good": 98.1,
-            "needsImprovement": 0.6,
-            "poor": 1.3
-          }
-        },
-        "lcp": {
-          "p75": 680,
-          "rating": "good",
-          "distribution": {
-            "good": 98.1,
-            "needsImprovement": 0.6,
-            "poor": 1.3
-          }
-        },
-        "rtt": {
-          "p75": 87,
-          "rating": null,
-          "distribution": {
-            "good": 70.8,
-            "needsImprovement": 27.8,
-            "poor": 1.4
-          }
-        }
-      }
-    },
     {
       "period": {
         "first": "2026-02-08",
@@ -1309,6 +1255,60 @@
         "last": "2026-08-15"
       },
       "date": "2026-08-15",
+      "metrics": {
+        "cls": {
+          "p75": null,
+          "rating": null,
+          "distribution": {
+            "good": null,
+            "needsImprovement": null,
+            "poor": null
+          }
+        },
+        "ttfb": {
+          "p75": null,
+          "rating": null,
+          "distribution": {
+            "good": null,
+            "needsImprovement": null,
+            "poor": null
+          }
+        },
+        "fcp": {
+          "p75": null,
+          "rating": null,
+          "distribution": {
+            "good": null,
+            "needsImprovement": null,
+            "poor": null
+          }
+        },
+        "lcp": {
+          "p75": null,
+          "rating": null,
+          "distribution": {
+            "good": null,
+            "needsImprovement": null,
+            "poor": null
+          }
+        },
+        "rtt": {
+          "p75": null,
+          "rating": null,
+          "distribution": {
+            "good": null,
+            "needsImprovement": null,
+            "poor": null
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-07-26",
+        "last": "2026-08-22"
+      },
+      "date": "2026-08-22",
       "metrics": {
         "cls": {
           "p75": null,

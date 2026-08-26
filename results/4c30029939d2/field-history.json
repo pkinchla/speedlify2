@@ -2,65 +2,11 @@
   "url": "https://jamstack-comments.netlify.app/",
   "name": "jamstack-comments.netlify.app",
   "group": "11ty-community",
-  "fetchedAt": "2026-08-20T20:33:45.334Z",
+  "fetchedAt": "2026-08-26T22:50:33.664Z",
   "source": "crux-history",
   "scope": "url",
   "formFactor": "PHONE",
   "series": [
-    {
-      "period": {
-        "first": "2026-02-01",
-        "last": "2026-02-28"
-      },
-      "date": "2026-02-28",
-      "metrics": {
-        "ttfb": {
-          "p75": null,
-          "rating": null,
-          "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
-        },
-        "fcp": {
-          "p75": null,
-          "rating": null,
-          "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
-        },
-        "lcp": {
-          "p75": null,
-          "rating": null,
-          "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
-        },
-        "rtt": {
-          "p75": null,
-          "rating": null,
-          "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
-        },
-        "cls": {
-          "p75": null,
-          "rating": null,
-          "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
-        }
-      }
-    },
     {
       "period": {
         "first": "2026-02-08",
@@ -1352,6 +1298,60 @@
           "distribution": {
             "good": 100,
             "needsImprovement": 0,
+            "poor": 0
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-07-26",
+        "last": "2026-08-22"
+      },
+      "date": "2026-08-22",
+      "metrics": {
+        "ttfb": {
+          "p75": 1326,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 46.9,
+            "needsImprovement": 44.3,
+            "poor": 8.9
+          }
+        },
+        "fcp": {
+          "p75": 1529,
+          "rating": "good",
+          "distribution": {
+            "good": 85.9,
+            "needsImprovement": 10.5,
+            "poor": 3.6
+          }
+        },
+        "lcp": {
+          "p75": 1486,
+          "rating": "good",
+          "distribution": {
+            "good": 95.4,
+            "needsImprovement": 2.8,
+            "poor": 1.9
+          }
+        },
+        "rtt": {
+          "p75": 294,
+          "rating": null,
+          "distribution": {
+            "good": 11.6,
+            "needsImprovement": 59.6,
+            "poor": 28.8
+          }
+        },
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 98.9,
+            "needsImprovement": 1.1,
             "poor": 0
           }
         }

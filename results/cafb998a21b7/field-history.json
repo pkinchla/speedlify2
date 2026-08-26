@@ -2,74 +2,11 @@
   "url": "https://extensionworkshop.com/",
   "name": "extensionworkshop.com",
   "group": "11ty-community",
-  "fetchedAt": "2026-08-20T20:31:53.556Z",
+  "fetchedAt": "2026-08-26T22:48:48.196Z",
   "source": "crux-history",
   "scope": "url",
   "formFactor": "PHONE",
   "series": [
-    {
-      "period": {
-        "first": "2026-02-01",
-        "last": "2026-02-28"
-      },
-      "date": "2026-02-28",
-      "metrics": {
-        "cls": {
-          "p75": 0.01,
-          "rating": "good",
-          "distribution": {
-            "good": 96.9,
-            "needsImprovement": 1.9,
-            "poor": 1.3
-          }
-        },
-        "ttfb": {
-          "p75": 682,
-          "rating": "good",
-          "distribution": {
-            "good": 80.9,
-            "needsImprovement": 13.7,
-            "poor": 5.5
-          }
-        },
-        "fcp": {
-          "p75": 1313,
-          "rating": "good",
-          "distribution": {
-            "good": 85.1,
-            "needsImprovement": 10.6,
-            "poor": 4.3
-          }
-        },
-        "inp": {
-          "p75": 156,
-          "rating": "good",
-          "distribution": {
-            "good": 84.4,
-            "needsImprovement": 13.3,
-            "poor": 2.3
-          }
-        },
-        "lcp": {
-          "p75": 2019,
-          "rating": "good",
-          "distribution": {
-            "good": 84.8,
-            "needsImprovement": 7.3,
-            "poor": 7.9
-          }
-        },
-        "rtt": {
-          "p75": 209,
-          "rating": null,
-          "distribution": {
-            "good": 32,
-            "needsImprovement": 53.2,
-            "poor": 14.8
-          }
-        }
-      }
-    },
     {
       "period": {
         "first": "2026-02-08",
@@ -483,13 +420,14 @@
           }
         },
         "inp": {
-          "p75": null,
-          "rating": null,
+          "p75": 158,
+          "rating": "good",
           "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
+            "good": 82.3,
+            "needsImprovement": 15.8,
+            "poor": 2
+          },
+          "scope": "origin"
         },
         "lcp": {
           "p75": 2201,
@@ -509,7 +447,10 @@
             "poor": 16.5
           }
         }
-      }
+      },
+      "borrowedFromOrigin": [
+        "inp"
+      ]
     },
     {
       "period": {
@@ -1578,6 +1519,69 @@
             "good": 23.2,
             "needsImprovement": 53.6,
             "poor": 23.3
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-07-26",
+        "last": "2026-08-22"
+      },
+      "date": "2026-08-22",
+      "metrics": {
+        "cls": {
+          "p75": 0.01,
+          "rating": "good",
+          "distribution": {
+            "good": 96.1,
+            "needsImprovement": 1.7,
+            "poor": 2.2
+          }
+        },
+        "ttfb": {
+          "p75": 770,
+          "rating": "good",
+          "distribution": {
+            "good": 77.2,
+            "needsImprovement": 17.9,
+            "poor": 4.9
+          }
+        },
+        "fcp": {
+          "p75": 1418,
+          "rating": "good",
+          "distribution": {
+            "good": 86.5,
+            "needsImprovement": 8.9,
+            "poor": 4.6
+          }
+        },
+        "inp": {
+          "p75": 168,
+          "rating": "good",
+          "distribution": {
+            "good": 81.1,
+            "needsImprovement": 14.6,
+            "poor": 4.3
+          }
+        },
+        "lcp": {
+          "p75": 1950,
+          "rating": "good",
+          "distribution": {
+            "good": 83.6,
+            "needsImprovement": 10.7,
+            "poor": 5.7
+          }
+        },
+        "rtt": {
+          "p75": 245,
+          "rating": null,
+          "distribution": {
+            "good": 20.1,
+            "needsImprovement": 58.2,
+            "poor": 21.7
           }
         }
       }

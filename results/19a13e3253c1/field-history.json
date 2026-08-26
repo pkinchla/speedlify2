@@ -2,74 +2,11 @@
   "url": "https://repado.com/",
   "name": "repado.com",
   "group": "11ty-community",
-  "fetchedAt": "2026-08-20T20:38:00.655Z",
+  "fetchedAt": "2026-08-26T22:54:26.009Z",
   "source": "crux-history",
   "scope": "url",
   "formFactor": "PHONE",
   "series": [
-    {
-      "period": {
-        "first": "2026-02-01",
-        "last": "2026-02-28"
-      },
-      "date": "2026-02-28",
-      "metrics": {
-        "lcp": {
-          "p75": null,
-          "rating": null,
-          "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
-        },
-        "rtt": {
-          "p75": null,
-          "rating": null,
-          "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
-        },
-        "cls": {
-          "p75": null,
-          "rating": null,
-          "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
-        },
-        "ttfb": {
-          "p75": null,
-          "rating": null,
-          "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
-        },
-        "fcp": {
-          "p75": null,
-          "rating": null,
-          "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
-        },
-        "inp": {
-          "p75": null,
-          "rating": null,
-          "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
-        }
-      }
-    },
     {
       "period": {
         "first": "2026-02-08",
@@ -708,49 +645,54 @@
       "date": "2026-05-16",
       "metrics": {
         "lcp": {
-          "p75": null,
-          "rating": null,
+          "p75": 2210,
+          "rating": "good",
           "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
+            "good": 80.2,
+            "needsImprovement": 12.7,
+            "poor": 7.1
+          },
+          "scope": "origin"
         },
         "rtt": {
-          "p75": null,
+          "p75": 186,
           "rating": null,
           "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
+            "good": 19.8,
+            "needsImprovement": 67.7,
+            "poor": 12.5
+          },
+          "scope": "origin"
         },
         "cls": {
-          "p75": null,
-          "rating": null,
+          "p75": 0,
+          "rating": "good",
           "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
+            "good": 94.4,
+            "needsImprovement": 2.8,
+            "poor": 2.8
+          },
+          "scope": "origin"
         },
         "ttfb": {
-          "p75": null,
-          "rating": null,
+          "p75": 1324,
+          "rating": "needs-improvement",
           "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
+            "good": 57,
+            "needsImprovement": 37.5,
+            "poor": 5.6
+          },
+          "scope": "origin"
         },
         "fcp": {
-          "p75": null,
-          "rating": null,
+          "p75": 1996,
+          "rating": "needs-improvement",
           "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
+            "good": 70.1,
+            "needsImprovement": 20.6,
+            "poor": 9.3
+          },
+          "scope": "origin"
         },
         "inp": {
           "p75": null,
@@ -761,7 +703,14 @@
             "poor": null
           }
         }
-      }
+      },
+      "borrowedFromOrigin": [
+        "ttfb",
+        "fcp",
+        "lcp",
+        "rtt",
+        "cls"
+      ]
     },
     {
       "period": {
@@ -1410,13 +1359,14 @@
           }
         },
         "rtt": {
-          "p75": null,
+          "p75": 352,
           "rating": null,
           "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
+            "good": 25.8,
+            "needsImprovement": 38.7,
+            "poor": 35.6
+          },
+          "scope": "origin"
         },
         "cls": {
           "p75": 0,
@@ -1454,7 +1404,10 @@
             "poor": null
           }
         }
-      }
+      },
+      "borrowedFromOrigin": [
+        "rtt"
+      ]
     },
     {
       "period": {
@@ -1464,49 +1417,54 @@
       "date": "2026-08-08",
       "metrics": {
         "lcp": {
-          "p75": null,
-          "rating": null,
+          "p75": 2748,
+          "rating": "needs-improvement",
           "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
+            "good": 68.5,
+            "needsImprovement": 22.8,
+            "poor": 8.7
+          },
+          "scope": "origin"
         },
         "rtt": {
-          "p75": null,
+          "p75": 381,
           "rating": null,
           "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
+            "good": 28.1,
+            "needsImprovement": 30,
+            "poor": 42
+          },
+          "scope": "origin"
         },
         "cls": {
-          "p75": null,
-          "rating": null,
+          "p75": 0,
+          "rating": "good",
           "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
+            "good": 90.1,
+            "needsImprovement": 6.3,
+            "poor": 3.6
+          },
+          "scope": "origin"
         },
         "ttfb": {
-          "p75": null,
-          "rating": null,
+          "p75": 1377,
+          "rating": "needs-improvement",
           "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
+            "good": 52.7,
+            "needsImprovement": 34.8,
+            "poor": 12.5
+          },
+          "scope": "origin"
         },
         "fcp": {
-          "p75": null,
-          "rating": null,
+          "p75": 2336,
+          "rating": "needs-improvement",
           "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
+            "good": 60.4,
+            "needsImprovement": 24.3,
+            "poor": 15.3
+          },
+          "scope": "origin"
         },
         "inp": {
           "p75": null,
@@ -1517,7 +1475,14 @@
             "poor": null
           }
         }
-      }
+      },
+      "borrowedFromOrigin": [
+        "ttfb",
+        "fcp",
+        "lcp",
+        "rtt",
+        "cls"
+      ]
     },
     {
       "period": {
@@ -1536,13 +1501,14 @@
           }
         },
         "rtt": {
-          "p75": null,
+          "p75": 335,
           "rating": null,
           "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
+            "good": 22.5,
+            "needsImprovement": 45.1,
+            "poor": 32.4
+          },
+          "scope": "origin"
         },
         "cls": {
           "p75": 0,
@@ -1580,7 +1546,77 @@
             "poor": null
           }
         }
-      }
+      },
+      "borrowedFromOrigin": [
+        "rtt"
+      ]
+    },
+    {
+      "period": {
+        "first": "2026-07-26",
+        "last": "2026-08-22"
+      },
+      "date": "2026-08-22",
+      "metrics": {
+        "lcp": {
+          "p75": 2496,
+          "rating": "good",
+          "distribution": {
+            "good": 74.7,
+            "needsImprovement": 15.9,
+            "poor": 9.4
+          }
+        },
+        "rtt": {
+          "p75": 310,
+          "rating": null,
+          "distribution": {
+            "good": 22.4,
+            "needsImprovement": 47.9,
+            "poor": 29.7
+          },
+          "scope": "origin"
+        },
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 96.5,
+            "needsImprovement": 3.5,
+            "poor": 0
+          }
+        },
+        "ttfb": {
+          "p75": 1415,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 53.8,
+            "needsImprovement": 31.3,
+            "poor": 15
+          }
+        },
+        "fcp": {
+          "p75": 2182,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 59.3,
+            "needsImprovement": 26.8,
+            "poor": 13.9
+          }
+        },
+        "inp": {
+          "p75": null,
+          "rating": null,
+          "distribution": {
+            "good": null,
+            "needsImprovement": null,
+            "poor": null
+          }
+        }
+      },
+      "borrowedFromOrigin": [
+        "rtt"
+      ]
     }
   ]
 }

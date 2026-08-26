@@ -2,74 +2,11 @@
   "url": "https://benmyers.dev/",
   "name": "benmyers.dev",
   "group": "11ty-community",
-  "fetchedAt": "2026-08-20T20:28:20.291Z",
+  "fetchedAt": "2026-08-26T22:45:40.804Z",
   "source": "crux-history",
   "scope": "origin",
   "formFactor": "PHONE",
   "series": [
-    {
-      "period": {
-        "first": "2026-02-01",
-        "last": "2026-02-28"
-      },
-      "date": "2026-02-28",
-      "metrics": {
-        "cls": {
-          "p75": 0.01,
-          "rating": "good",
-          "distribution": {
-            "good": 81.9,
-            "needsImprovement": 1.9,
-            "poor": 16.3
-          }
-        },
-        "ttfb": {
-          "p75": null,
-          "rating": null,
-          "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
-        },
-        "fcp": {
-          "p75": 2839,
-          "rating": "needs-improvement",
-          "distribution": {
-            "good": 35.9,
-            "needsImprovement": 45.1,
-            "poor": 19
-          }
-        },
-        "inp": {
-          "p75": null,
-          "rating": null,
-          "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
-        },
-        "lcp": {
-          "p75": 2860,
-          "rating": "needs-improvement",
-          "distribution": {
-            "good": 65.8,
-            "needsImprovement": 26.9,
-            "poor": 7.4
-          }
-        },
-        "rtt": {
-          "p75": 173,
-          "rating": null,
-          "distribution": {
-            "good": 33.7,
-            "needsImprovement": 56.4,
-            "poor": 9.9
-          }
-        }
-      }
-    },
     {
       "period": {
         "first": "2026-02-08",
@@ -1525,6 +1462,69 @@
         "last": "2026-08-15"
       },
       "date": "2026-08-15",
+      "metrics": {
+        "cls": {
+          "p75": null,
+          "rating": null,
+          "distribution": {
+            "good": null,
+            "needsImprovement": null,
+            "poor": null
+          }
+        },
+        "ttfb": {
+          "p75": null,
+          "rating": null,
+          "distribution": {
+            "good": null,
+            "needsImprovement": null,
+            "poor": null
+          }
+        },
+        "fcp": {
+          "p75": null,
+          "rating": null,
+          "distribution": {
+            "good": null,
+            "needsImprovement": null,
+            "poor": null
+          }
+        },
+        "inp": {
+          "p75": null,
+          "rating": null,
+          "distribution": {
+            "good": null,
+            "needsImprovement": null,
+            "poor": null
+          }
+        },
+        "lcp": {
+          "p75": null,
+          "rating": null,
+          "distribution": {
+            "good": null,
+            "needsImprovement": null,
+            "poor": null
+          }
+        },
+        "rtt": {
+          "p75": null,
+          "rating": null,
+          "distribution": {
+            "good": null,
+            "needsImprovement": null,
+            "poor": null
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-07-26",
+        "last": "2026-08-22"
+      },
+      "date": "2026-08-22",
       "metrics": {
         "cls": {
           "p75": null,

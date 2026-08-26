@@ -2,74 +2,11 @@
   "url": "https://www.freecodecamp.org/news",
   "name": "www.freecodecamp.org",
   "group": "11ty-community",
-  "fetchedAt": "2026-08-20T20:42:21.332Z",
+  "fetchedAt": "2026-08-26T22:58:36.813Z",
   "source": "crux-history",
   "scope": "url",
   "formFactor": "PHONE",
   "series": [
-    {
-      "period": {
-        "first": "2026-02-01",
-        "last": "2026-02-28"
-      },
-      "date": "2026-02-28",
-      "metrics": {
-        "inp": {
-          "p75": 93,
-          "rating": "good",
-          "distribution": {
-            "good": 91.2,
-            "needsImprovement": 8,
-            "poor": 0.9
-          }
-        },
-        "lcp": {
-          "p75": 2496,
-          "rating": "good",
-          "distribution": {
-            "good": 74.6,
-            "needsImprovement": 11.7,
-            "poor": 13.6
-          }
-        },
-        "rtt": {
-          "p75": 203,
-          "rating": null,
-          "distribution": {
-            "good": 36.4,
-            "needsImprovement": 49.7,
-            "poor": 13.8
-          }
-        },
-        "cls": {
-          "p75": 0,
-          "rating": "good",
-          "distribution": {
-            "good": 99.1,
-            "needsImprovement": 0.6,
-            "poor": 0.3
-          }
-        },
-        "ttfb": {
-          "p75": 1635,
-          "rating": "needs-improvement",
-          "distribution": {
-            "good": 49.2,
-            "needsImprovement": 29.2,
-            "poor": 21.6
-          }
-        },
-        "fcp": {
-          "p75": 1703,
-          "rating": "good",
-          "distribution": {
-            "good": 76.5,
-            "needsImprovement": 11.9,
-            "poor": 11.7
-          }
-        }
-      }
-    },
     {
       "period": {
         "first": "2026-02-08",
@@ -1578,6 +1515,69 @@
             "good": 72.6,
             "needsImprovement": 16.6,
             "poor": 10.8
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-07-26",
+        "last": "2026-08-22"
+      },
+      "date": "2026-08-22",
+      "metrics": {
+        "inp": {
+          "p75": 99,
+          "rating": "good",
+          "distribution": {
+            "good": 92.1,
+            "needsImprovement": 6.5,
+            "poor": 1.5
+          }
+        },
+        "lcp": {
+          "p75": 2577,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 74.2,
+            "needsImprovement": 12.6,
+            "poor": 13.2
+          }
+        },
+        "rtt": {
+          "p75": 204,
+          "rating": null,
+          "distribution": {
+            "good": 30,
+            "needsImprovement": 55.1,
+            "poor": 15
+          }
+        },
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 97.6,
+            "needsImprovement": 2.1,
+            "poor": 0.3
+          }
+        },
+        "ttfb": {
+          "p75": 1907,
+          "rating": "poor",
+          "distribution": {
+            "good": 46.2,
+            "needsImprovement": 26.5,
+            "poor": 27.3
+          }
+        },
+        "fcp": {
+          "p75": 1885,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 73.2,
+            "needsImprovement": 15.2,
+            "poor": 11.7
           }
         }
       }

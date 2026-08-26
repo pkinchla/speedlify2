@@ -2,74 +2,11 @@
   "url": "https://www.globe.church/",
   "name": "www.globe.church",
   "group": "11ty-community",
-  "fetchedAt": "2026-08-20T20:42:28.064Z",
+  "fetchedAt": "2026-08-26T22:58:44.394Z",
   "source": "crux-history",
   "scope": "origin",
   "formFactor": "PHONE",
   "series": [
-    {
-      "period": {
-        "first": "2026-02-01",
-        "last": "2026-02-28"
-      },
-      "date": "2026-02-28",
-      "metrics": {
-        "cls": {
-          "p75": 0,
-          "rating": "good",
-          "distribution": {
-            "good": 99.2,
-            "needsImprovement": 0.6,
-            "poor": 0.1
-          }
-        },
-        "ttfb": {
-          "p75": 703,
-          "rating": "good",
-          "distribution": {
-            "good": 81.8,
-            "needsImprovement": 15,
-            "poor": 3.2
-          }
-        },
-        "fcp": {
-          "p75": 1039,
-          "rating": "good",
-          "distribution": {
-            "good": 90.9,
-            "needsImprovement": 5.8,
-            "poor": 3.4
-          }
-        },
-        "inp": {
-          "p75": 62,
-          "rating": "good",
-          "distribution": {
-            "good": 99.4,
-            "needsImprovement": 0.5,
-            "poor": 0.2
-          }
-        },
-        "lcp": {
-          "p75": 1273,
-          "rating": "good",
-          "distribution": {
-            "good": 94.1,
-            "needsImprovement": 4.6,
-            "poor": 1.3
-          }
-        },
-        "rtt": {
-          "p75": 90,
-          "rating": null,
-          "distribution": {
-            "good": 68.2,
-            "needsImprovement": 25.4,
-            "poor": 6.5
-          }
-        }
-      }
-    },
     {
       "period": {
         "first": "2026-02-08",
@@ -1569,6 +1506,69 @@
             "good": null,
             "needsImprovement": null,
             "poor": null
+          }
+        },
+        "rtt": {
+          "p75": null,
+          "rating": null,
+          "distribution": {
+            "good": null,
+            "needsImprovement": null,
+            "poor": null
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-07-26",
+        "last": "2026-08-22"
+      },
+      "date": "2026-08-22",
+      "metrics": {
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 99.2,
+            "needsImprovement": 0.7,
+            "poor": 0.1
+          }
+        },
+        "ttfb": {
+          "p75": 670,
+          "rating": "good",
+          "distribution": {
+            "good": 84.7,
+            "needsImprovement": 12.2,
+            "poor": 3.1
+          }
+        },
+        "fcp": {
+          "p75": 1050,
+          "rating": "good",
+          "distribution": {
+            "good": 90.8,
+            "needsImprovement": 6.3,
+            "poor": 3
+          }
+        },
+        "inp": {
+          "p75": null,
+          "rating": null,
+          "distribution": {
+            "good": null,
+            "needsImprovement": null,
+            "poor": null
+          }
+        },
+        "lcp": {
+          "p75": 1278,
+          "rating": "good",
+          "distribution": {
+            "good": 96,
+            "needsImprovement": 1.7,
+            "poor": 2.3
           }
         },
         "rtt": {

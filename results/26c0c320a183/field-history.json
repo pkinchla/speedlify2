@@ -2,65 +2,11 @@
   "url": "https://leilukin.com/",
   "name": "leilukin.com",
   "group": "11ty-community",
-  "fetchedAt": "2026-08-20T20:35:09.742Z",
+  "fetchedAt": "2026-08-26T22:51:41.716Z",
   "source": "crux-history",
   "scope": "origin",
   "formFactor": "PHONE",
   "series": [
-    {
-      "period": {
-        "first": "2026-02-01",
-        "last": "2026-02-28"
-      },
-      "date": "2026-02-28",
-      "metrics": {
-        "cls": {
-          "p75": 0,
-          "rating": "good",
-          "distribution": {
-            "good": 88.6,
-            "needsImprovement": 1.1,
-            "poor": 10.3
-          }
-        },
-        "ttfb": {
-          "p75": null,
-          "rating": null,
-          "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
-        },
-        "fcp": {
-          "p75": 1374,
-          "rating": "good",
-          "distribution": {
-            "good": 88.6,
-            "needsImprovement": 8,
-            "poor": 3.4
-          }
-        },
-        "lcp": {
-          "p75": 1439,
-          "rating": "good",
-          "distribution": {
-            "good": 94.3,
-            "needsImprovement": 5.1,
-            "poor": 0.5
-          }
-        },
-        "rtt": {
-          "p75": 130,
-          "rating": null,
-          "distribution": {
-            "good": 51.4,
-            "needsImprovement": 42.7,
-            "poor": 5.9
-          }
-        }
-      }
-    },
     {
       "period": {
         "first": "2026-02-08",
@@ -1353,6 +1299,60 @@
             "good": 57.7,
             "needsImprovement": 40.3,
             "poor": 2
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-07-26",
+        "last": "2026-08-22"
+      },
+      "date": "2026-08-22",
+      "metrics": {
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 97.7,
+            "needsImprovement": 1.5,
+            "poor": 0.8
+          }
+        },
+        "ttfb": {
+          "p75": null,
+          "rating": null,
+          "distribution": {
+            "good": null,
+            "needsImprovement": null,
+            "poor": null
+          }
+        },
+        "fcp": {
+          "p75": 1222,
+          "rating": "good",
+          "distribution": {
+            "good": 89.5,
+            "needsImprovement": 6.7,
+            "poor": 3.8
+          }
+        },
+        "lcp": {
+          "p75": null,
+          "rating": null,
+          "distribution": {
+            "good": null,
+            "needsImprovement": null,
+            "poor": null
+          }
+        },
+        "rtt": {
+          "p75": 96,
+          "rating": null,
+          "distribution": {
+            "good": 58.7,
+            "needsImprovement": 40.1,
+            "poor": 1.2
           }
         }
       }

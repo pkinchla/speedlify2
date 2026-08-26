@@ -2,74 +2,11 @@
   "url": "https://www.fundaciongoethe.org/es",
   "name": "www.fundaciongoethe.org",
   "group": "11ty-community",
-  "fetchedAt": "2026-08-20T20:42:23.013Z",
+  "fetchedAt": "2026-08-26T22:58:38.494Z",
   "source": "crux-history",
   "scope": "origin",
   "formFactor": "PHONE",
   "series": [
-    {
-      "period": {
-        "first": "2026-02-01",
-        "last": "2026-02-28"
-      },
-      "date": "2026-02-28",
-      "metrics": {
-        "cls": {
-          "p75": 0,
-          "rating": "good",
-          "distribution": {
-            "good": 99.4,
-            "needsImprovement": 0,
-            "poor": 0.6
-          }
-        },
-        "ttfb": {
-          "p75": null,
-          "rating": null,
-          "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
-        },
-        "fcp": {
-          "p75": 1261,
-          "rating": "good",
-          "distribution": {
-            "good": 91.7,
-            "needsImprovement": 6.9,
-            "poor": 1.5
-          }
-        },
-        "inp": {
-          "p75": null,
-          "rating": null,
-          "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
-        },
-        "lcp": {
-          "p75": 1546,
-          "rating": "good",
-          "distribution": {
-            "good": 92.8,
-            "needsImprovement": 5.4,
-            "poor": 1.8
-          }
-        },
-        "rtt": {
-          "p75": 120,
-          "rating": null,
-          "distribution": {
-            "good": 52.1,
-            "needsImprovement": 39.4,
-            "poor": 8.6
-          }
-        }
-      }
-    },
     {
       "period": {
         "first": "2026-02-08",
@@ -1569,6 +1506,69 @@
             "good": null,
             "needsImprovement": null,
             "poor": null
+          }
+        },
+        "rtt": {
+          "p75": null,
+          "rating": null,
+          "distribution": {
+            "good": null,
+            "needsImprovement": null,
+            "poor": null
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-07-26",
+        "last": "2026-08-22"
+      },
+      "date": "2026-08-22",
+      "metrics": {
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 100,
+            "needsImprovement": 0,
+            "poor": 0
+          }
+        },
+        "ttfb": {
+          "p75": 968,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 63.9,
+            "needsImprovement": 27.5,
+            "poor": 8.6
+          }
+        },
+        "fcp": {
+          "p75": 1492,
+          "rating": "good",
+          "distribution": {
+            "good": 83.1,
+            "needsImprovement": 12.2,
+            "poor": 4.8
+          }
+        },
+        "inp": {
+          "p75": null,
+          "rating": null,
+          "distribution": {
+            "good": null,
+            "needsImprovement": null,
+            "poor": null
+          }
+        },
+        "lcp": {
+          "p75": 1764,
+          "rating": "good",
+          "distribution": {
+            "good": 89.3,
+            "needsImprovement": 8.6,
+            "poor": 2
           }
         },
         "rtt": {
