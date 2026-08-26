@@ -1,0 +1,352 @@
+{
+  "url": "https://wordpress.com/",
+  "name": "WordPress.com",
+  "group": "builders",
+  "groupName": "Website Builders",
+  "timestamp": 1787753061509,
+  "date": "2026-08-26T14:04:21.509Z",
+  "runId": "2026-08-26T13-54-09-279Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 33959,
+  "error": null,
+  "variance": {
+    "min": 57,
+    "max": 73,
+    "spread": 16,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://wordpress.com/",
+    "finalUrl": "https://wordpress.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 57,
+      "accessibility": 86,
+      "best-practices": 73,
+      "seo": 100,
+      "agentic-browsing": 67
+    },
+    "timings": {
+      "fcp": 3162,
+      "lcp": 4812,
+      "si": 3162,
+      "tbt": 826,
+      "tti": 12995,
+      "cls": 0,
+      "ttfb": 612,
+      "maxPotentialFid": 293,
+      "serverResponseTime": 27,
+      "networkRtt": 0.1,
+      "networkServerLatency": 119.7
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 28.4,
+      "resourceLoadDelay": 12.8,
+      "resourceLoadDuration": 17.8,
+      "elementRenderDelay": 139.1
+    },
+    "weight": {
+      "total": 1851111,
+      "requests": 68,
+      "mainDocument": 69425,
+      "byType": {
+        "total": {
+          "bytes": 1851111,
+          "requests": 68
+        },
+        "script": {
+          "bytes": 880142,
+          "requests": 27
+        },
+        "image": {
+          "bytes": 457503,
+          "requests": 27
+        },
+        "font": {
+          "bytes": 380415,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 69442,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 55937,
+          "requests": 4
+        },
+        "other": {
+          "bytes": 7672,
+          "requests": 6
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 1823682,
+          "requests": 62
+        }
+      },
+      "scripts": 27,
+      "stylesheets": 4,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 10,
+      "bytes": 730746,
+      "mainThreadMs": 319.9,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 331077,
+          "mainThreadMs": 137.7
+        },
+        {
+          "entity": "Facebook",
+          "bytes": 186029,
+          "mainThreadMs": 99
+        },
+        {
+          "entity": "Other Google APIs/SDKs",
+          "bytes": 99184,
+          "mainThreadMs": 9.5
+        },
+        {
+          "entity": "Hotjar",
+          "bytes": 64769,
+          "mainThreadMs": 33.1
+        },
+        {
+          "entity": "Parse.ly",
+          "bytes": 21764,
+          "mainThreadMs": 22.7
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 4127.8,
+      "byGroup": {
+        "styleLayout": 1692.4,
+        "scriptEvaluation": 1481.8,
+        "other": 480.2,
+        "scriptParseCompile": 275.3,
+        "parseHTML": 97.8,
+        "paintCompositeRender": 56.8,
+        "garbageCollection": 43.5
+      },
+      "bootupMs": 1522.4,
+      "longTasks": 13,
+      "longestTaskMs": 293
+    },
+    "dom": {
+      "elements": 1433,
+      "depth": 17,
+      "maxChildren": 69
+    },
+    "waste": {
+      "unusedJsBytes": 326587,
+      "unusedCssBytes": 43113,
+      "legacyJsBytes": 25158,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 300,
+      "renderBlockingCount": 3,
+      "poorlyCachedBytes": 170766.49166666664,
+      "poorlyCachedCount": 3
+    },
+    "accessibility": {
+      "failingCount": 5,
+      "applicableCount": 33,
+      "failingNodes": 10,
+      "failing": [
+        {
+          "id": "aria-allowed-attr",
+          "title": "`[aria-*]` attributes do not match their roles",
+          "nodes": 3
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "title": "Elements use prohibited ARIA attributes",
+          "nodes": 2
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 2
+        },
+        {
+          "id": "presentation-role-conflict",
+          "title": "Elements with `role=\"none\"` or `role=\"presentation\"` have conflicts",
+          "nodes": 2
+        },
+        {
+          "id": "label",
+          "title": "Form elements do not have associated labels",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": null,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 1,
+      "baselineLimitedFeatures": 48
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2578.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-26T14:04:33.132Z",
+      "runtimeMs": 10002.4
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-28",
+      "last": "2026-08-24"
+    },
+    "metrics": {
+      "rtt": {
+        "p75": 203,
+        "rating": null,
+        "distribution": {
+          "good": 28.1,
+          "needsImprovement": 56.4,
+          "poor": 15.4
+        }
+      },
+      "cls": {
+        "p75": 0.02,
+        "rating": "good",
+        "distribution": {
+          "good": 88.4,
+          "needsImprovement": 7.5,
+          "poor": 4.1
+        }
+      },
+      "ttfb": {
+        "p75": 995,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 64.5,
+          "needsImprovement": 25.7,
+          "poor": 9.8
+        }
+      },
+      "fcp": {
+        "p75": 1728,
+        "rating": "good",
+        "distribution": {
+          "good": 76.6,
+          "needsImprovement": 13.7,
+          "poor": 9.8
+        }
+      },
+      "inp": {
+        "p75": 248,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 66.7,
+          "needsImprovement": 25.1,
+          "poor": 8.3
+        }
+      },
+      "lcp": {
+        "p75": 5649,
+        "rating": "poor",
+        "distribution": {
+          "good": 43.3,
+          "needsImprovement": 17.7,
+          "poor": 39.1
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": {
+      "id": "wordpress",
+      "name": "WordPress",
+      "icon": "Wordpress",
+      "version": null,
+      "source": "meta",
+      "raw": "WordPress.com"
+    },
+    "interstitial": null,
+    "host": {
+      "id": "self-hosted",
+      "name": "Self-hosted",
+      "icon": null,
+      "detail": "nginx",
+      "detailIcon": "Nginx",
+      "source": "server"
+    },
+    "headers": {
+      "server": "nginx"
+    },
+    "violations": 11,
+    "passes": 965,
+    "incomplete": 8,
+    "violationRules": 6,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "aria-allowed-attr",
+        "impact": "critical",
+        "nodes": 3,
+        "help": "Elements must only use supported ARIA attributes"
+      },
+      {
+        "id": "aria-prohibited-attr",
+        "impact": "serious",
+        "nodes": 2,
+        "help": "Elements must only use permitted ARIA attributes"
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 2,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "presentation-role-conflict",
+        "impact": "minor",
+        "nodes": 2,
+        "help": "Elements marked as presentational should be consistently ignored"
+      },
+      {
+        "id": "label-title-only",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Form elements should have a visible label"
+      },
+      {
+        "id": "label",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "Form elements must have labels"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
