@@ -117,7 +117,7 @@ body {
  * table needs ~1195px with the current columns, so this leaves headroom for
  * another one or two before it starts scrolling again.
  */
-.wrap { max-width: 1460px; margin: 0 auto; padding: 0 1.25rem; }
+.wrap { max-width: 1550px; margin: 0 auto; padding: 0 1.25rem; }
 /* Content only. The masthead and footer share `.wrap` and set their own
    vertical rhythm, and the masthead is sticky — padding there would deepen the
    bar that follows you down the page. */
