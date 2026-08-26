@@ -77,16 +77,11 @@ try { if (localStorage.getItem("speedlify-theme") === "light") document.document
 		· <form class="cat-switch" method="get" action="/#categories">
 			<select id="cat-switch" name="group" aria-label="Jump to a category">
 				{#
-					On a category page the current one is selected, so the prompt would
-					have nothing to say — the way back out goes there instead. A path
-					rather than an id, which is how the script below tells the two
-					apart; anything starting with a slash is somewhere to go directly.
-
-					Everywhere else the first option is a prompt, so the control never
-					opens claiming the reader is somewhere they are not.
+					A prompt only where nothing is selected. On a category page the
+					current one is, so the control never opens claiming the reader is
+					somewhere they are not.
 				#}
-				{% if group %}<option value="/">All Websites</option>
-				{% else %}<option value="" selected>Categories&hellip;</option>{% endif %}
+				{% if not group %}<option value="" selected>Categories&hellip;</option>{% endif %}
 				{% for g in sites.groups %}
 				<option value="{{ g.id }}"{% if group and g.id == group.id %} selected{% endif %}>{{ g.name }}</option>
 				{% endfor %}
@@ -111,9 +106,7 @@ try { if (localStorage.getItem("speedlify-theme") === "light") document.document
 				var value = select.value;
 				if (!value) return;
 				event.preventDefault();
-				// A leading slash is a destination in its own right — the Home entry.
-				// Anything else is a category id to be turned into its page.
-				location.href = value.charAt(0) === "/" ? value : "/group/" + encodeURIComponent(value) + "/";
+				location.href = "/group/" + encodeURIComponent(value) + "/";
 			}
 			form.addEventListener("submit", go);
 			select.addEventListener("change", go);
