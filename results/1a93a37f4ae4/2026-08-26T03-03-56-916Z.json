@@ -1,0 +1,300 @@
+{
+  "url": "https://firebase.google.com/products/hosting",
+  "name": "Firebase Hosting",
+  "group": "hosts",
+  "groupName": "Web Hosts",
+  "timestamp": 1787713436916,
+  "date": "2026-08-26T03:03:56.916Z",
+  "runId": "2026-08-26T03-03-55-276Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 39614,
+  "error": null,
+  "variance": {
+    "min": 43,
+    "max": 64,
+    "spread": 21,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://firebase.google.com/products/hosting",
+    "finalUrl": "https://firebase.google.com/products/hosting",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 58,
+      "accessibility": 95,
+      "best-practices": 96,
+      "seo": 85,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 4403,
+      "lcp": 4853,
+      "si": 4403,
+      "tbt": 513,
+      "tti": 13908,
+      "cls": 0,
+      "ttfb": 756,
+      "maxPotentialFid": 215,
+      "serverResponseTime": 384,
+      "networkRtt": 1.5,
+      "networkServerLatency": 155.9
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 387.4,
+      "elementRenderDelay": 152.9
+    },
+    "weight": {
+      "total": 1993263,
+      "requests": 80,
+      "mainDocument": 88292,
+      "byType": {
+        "total": {
+          "bytes": 1993263,
+          "requests": 80
+        },
+        "script": {
+          "bytes": 1214408,
+          "requests": 50
+        },
+        "image": {
+          "bytes": 320496,
+          "requests": 10
+        },
+        "font": {
+          "bytes": 197511,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 170412,
+          "requests": 6
+        },
+        "document": {
+          "bytes": 88818,
+          "requests": 2
+        },
+        "other": {
+          "bytes": 1618,
+          "requests": 9
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 1585823,
+          "requests": 63
+        }
+      },
+      "scripts": 50,
+      "stylesheets": 6,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 3,
+      "bytes": 1615174,
+      "mainThreadMs": 347.1,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 764486,
+          "mainThreadMs": 243.8
+        },
+        {
+          "entity": "Google CDN",
+          "bytes": 645812,
+          "mainThreadMs": 103.3
+        },
+        {
+          "entity": "Google Fonts",
+          "bytes": 204876,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 2877.1,
+      "byGroup": {
+        "scriptEvaluation": 1432.9,
+        "other": 625,
+        "styleLayout": 332,
+        "scriptParseCompile": 277.9,
+        "parseHTML": 97.1,
+        "paintCompositeRender": 80.7,
+        "garbageCollection": 31.4
+      },
+      "bootupMs": 1419.2,
+      "longTasks": 11,
+      "longestTaskMs": 215
+    },
+    "dom": {
+      "elements": 762,
+      "depth": 19,
+      "maxChildren": 16
+    },
+    "waste": {
+      "unusedJsBytes": 548385,
+      "unusedCssBytes": 203738,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 3347,
+      "renderBlockingCount": 5,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 29,
+      "failingNodes": 4,
+      "failing": [
+        {
+          "id": "image-alt",
+          "title": "Image elements do not have `[alt]` attributes",
+          "nodes": 4
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": null,
+      "csp": null,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 1,
+      "baselineLimitedFeatures": 46
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2984,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-26T03:04:23.812Z",
+      "runtimeMs": 10385.1
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-27",
+      "last": "2026-08-23"
+    },
+    "metrics": {
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 97.3,
+          "needsImprovement": 1.8,
+          "poor": 0.9
+        }
+      },
+      "ttfb": {
+        "p75": 2143,
+        "rating": "poor",
+        "distribution": {
+          "good": 4.8,
+          "needsImprovement": 58.2,
+          "poor": 37.1
+        }
+      },
+      "fcp": {
+        "p75": 2944,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 42.5,
+          "needsImprovement": 33.9,
+          "poor": 23.7
+        }
+      },
+      "inp": {
+        "p75": 197,
+        "rating": "good",
+        "distribution": {
+          "good": 76.2,
+          "needsImprovement": 19.5,
+          "poor": 4.4
+        }
+      },
+      "lcp": {
+        "p75": 3038,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 62.1,
+          "needsImprovement": 26.1,
+          "poor": 11.8
+        }
+      },
+      "rtt": {
+        "p75": 217,
+        "rating": null,
+        "distribution": {
+          "good": 19,
+          "needsImprovement": 64.4,
+          "poor": 16.6
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": null,
+    "interstitial": null,
+    "host": {
+      "id": null,
+      "name": "Google Frontend",
+      "icon": null,
+      "source": "server"
+    },
+    "headers": {
+      "server": "Google Frontend",
+      "x-cloud-trace-context": "3fbf5c832987a2a4bc075b2a95d0d87e"
+    },
+    "violations": 7,
+    "passes": 723,
+    "incomplete": 11,
+    "violationRules": 4,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "image-alt",
+        "impact": "critical",
+        "nodes": 4,
+        "help": "Images must have alternative text"
+      },
+      {
+        "id": "landmark-main-is-top-level",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Main landmark should not be contained in another landmark"
+      },
+      {
+        "id": "landmark-no-duplicate-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should not have more than one main landmark"
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
