@@ -213,7 +213,9 @@ if (!steps.length) {
 	process.exit(0);
 }
 
-console.log(`\n  Reset ${rel(root)} to a fresh instance\n`);
+// The absolute path, not `rel(root)` — that resolves to "." and this is the
+// line that says which checkout is about to be emptied.
+console.log(`\n  Reset ${root} to a fresh instance\n`);
 for (const step of steps) console.log(`    · ${step.label}`);
 console.log(`
   Not touched: git history, the workflows, src/, lib/, or anything else.
