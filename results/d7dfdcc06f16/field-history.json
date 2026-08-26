@@ -2,65 +2,11 @@
   "url": "https://withleaf.io/",
   "name": "withleaf.io",
   "group": "11ty-community",
-  "fetchedAt": "2026-08-20T18:38:25.703Z",
+  "fetchedAt": "2026-08-26T19:03:29.057Z",
   "source": "crux-history",
   "scope": "url",
   "formFactor": "PHONE",
   "series": [
-    {
-      "period": {
-        "first": "2026-02-01",
-        "last": "2026-02-28"
-      },
-      "date": "2026-02-28",
-      "metrics": {
-        "cls": {
-          "p75": null,
-          "rating": null,
-          "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
-        },
-        "ttfb": {
-          "p75": null,
-          "rating": null,
-          "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
-        },
-        "fcp": {
-          "p75": null,
-          "rating": null,
-          "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
-        },
-        "lcp": {
-          "p75": null,
-          "rating": null,
-          "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
-        },
-        "rtt": {
-          "p75": null,
-          "rating": null,
-          "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
-        }
-      }
-    },
     {
       "period": {
         "first": "2026-02-08",
@@ -888,13 +834,14 @@
           }
         },
         "ttfb": {
-          "p75": null,
-          "rating": null,
+          "p75": 791,
+          "rating": "good",
           "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
+            "good": 75.5,
+            "needsImprovement": 16.4,
+            "poor": 8.1
+          },
+          "scope": "origin"
         },
         "fcp": {
           "p75": 2146,
@@ -915,15 +862,20 @@
           }
         },
         "rtt": {
-          "p75": null,
+          "p75": 128,
           "rating": null,
           "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
+            "good": 43.6,
+            "needsImprovement": 50.1,
+            "poor": 6.3
+          },
+          "scope": "origin"
         }
-      }
+      },
+      "borrowedFromOrigin": [
+        "ttfb",
+        "rtt"
+      ]
     },
     {
       "period": {
@@ -969,15 +921,19 @@
           }
         },
         "rtt": {
-          "p75": null,
+          "p75": 120,
           "rating": null,
           "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
+            "good": 47.4,
+            "needsImprovement": 46.9,
+            "poor": 5.7
+          },
+          "scope": "origin"
         }
-      }
+      },
+      "borrowedFromOrigin": [
+        "rtt"
+      ]
     },
     {
       "period": {
@@ -1041,40 +997,44 @@
       "date": "2026-07-11",
       "metrics": {
         "cls": {
-          "p75": null,
-          "rating": null,
+          "p75": 0,
+          "rating": "good",
           "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
+            "good": 100,
+            "needsImprovement": 0,
+            "poor": 0
+          },
+          "scope": "origin"
         },
         "ttfb": {
-          "p75": null,
-          "rating": null,
+          "p75": 843,
+          "rating": "needs-improvement",
           "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
+            "good": 73,
+            "needsImprovement": 18.1,
+            "poor": 9
+          },
+          "scope": "origin"
         },
         "fcp": {
-          "p75": null,
-          "rating": null,
+          "p75": 1867,
+          "rating": "needs-improvement",
           "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
+            "good": 72.5,
+            "needsImprovement": 20.8,
+            "poor": 6.7
+          },
+          "scope": "origin"
         },
         "lcp": {
-          "p75": null,
-          "rating": null,
+          "p75": 1965,
+          "rating": "good",
           "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
+            "good": 84,
+            "needsImprovement": 11.8,
+            "poor": 4.1
+          },
+          "scope": "origin"
         },
         "rtt": {
           "p75": null,
@@ -1085,7 +1045,13 @@
             "poor": null
           }
         }
-      }
+      },
+      "borrowedFromOrigin": [
+        "ttfb",
+        "fcp",
+        "lcp",
+        "cls"
+      ]
     },
     {
       "period": {
@@ -1309,6 +1275,60 @@
         "last": "2026-08-15"
       },
       "date": "2026-08-15",
+      "metrics": {
+        "cls": {
+          "p75": null,
+          "rating": null,
+          "distribution": {
+            "good": null,
+            "needsImprovement": null,
+            "poor": null
+          }
+        },
+        "ttfb": {
+          "p75": null,
+          "rating": null,
+          "distribution": {
+            "good": null,
+            "needsImprovement": null,
+            "poor": null
+          }
+        },
+        "fcp": {
+          "p75": null,
+          "rating": null,
+          "distribution": {
+            "good": null,
+            "needsImprovement": null,
+            "poor": null
+          }
+        },
+        "lcp": {
+          "p75": null,
+          "rating": null,
+          "distribution": {
+            "good": null,
+            "needsImprovement": null,
+            "poor": null
+          }
+        },
+        "rtt": {
+          "p75": null,
+          "rating": null,
+          "distribution": {
+            "good": null,
+            "needsImprovement": null,
+            "poor": null
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-07-26",
+        "last": "2026-08-22"
+      },
+      "date": "2026-08-22",
       "metrics": {
         "cls": {
           "p75": null,

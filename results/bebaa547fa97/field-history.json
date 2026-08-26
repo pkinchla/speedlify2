@@ -2,74 +2,11 @@
   "url": "https://docs.gitlab.com/user/project/pages",
   "name": "GitLab Pages",
   "group": "hosts",
-  "fetchedAt": "2026-08-20T18:37:28.610Z",
+  "fetchedAt": "2026-08-26T19:03:05.925Z",
   "source": "crux-history",
   "scope": "origin",
   "formFactor": "PHONE",
   "series": [
-    {
-      "period": {
-        "first": "2026-02-01",
-        "last": "2026-02-28"
-      },
-      "date": "2026-02-28",
-      "metrics": {
-        "inp": {
-          "p75": 561,
-          "rating": "poor",
-          "distribution": {
-            "good": 54.6,
-            "needsImprovement": 11.1,
-            "poor": 34.3
-          }
-        },
-        "lcp": {
-          "p75": 1238,
-          "rating": "good",
-          "distribution": {
-            "good": 93.2,
-            "needsImprovement": 4.4,
-            "poor": 2.5
-          }
-        },
-        "rtt": {
-          "p75": 164,
-          "rating": null,
-          "distribution": {
-            "good": 36.1,
-            "needsImprovement": 54.1,
-            "poor": 9.8
-          }
-        },
-        "cls": {
-          "p75": 0,
-          "rating": "good",
-          "distribution": {
-            "good": 95.8,
-            "needsImprovement": 2.2,
-            "poor": 2
-          }
-        },
-        "ttfb": {
-          "p75": 575,
-          "rating": "good",
-          "distribution": {
-            "good": 82.5,
-            "needsImprovement": 13.6,
-            "poor": 3.9
-          }
-        },
-        "fcp": {
-          "p75": 1196,
-          "rating": "good",
-          "distribution": {
-            "good": 88,
-            "needsImprovement": 7.2,
-            "poor": 4.7
-          }
-        }
-      }
-    },
     {
       "period": {
         "first": "2026-02-08",
@@ -1578,6 +1515,69 @@
             "good": 86.4,
             "needsImprovement": 8,
             "poor": 5.6
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-07-26",
+        "last": "2026-08-22"
+      },
+      "date": "2026-08-22",
+      "metrics": {
+        "inp": {
+          "p75": 560,
+          "rating": "poor",
+          "distribution": {
+            "good": 55.2,
+            "needsImprovement": 11.6,
+            "poor": 33.2
+          }
+        },
+        "lcp": {
+          "p75": 1337,
+          "rating": "good",
+          "distribution": {
+            "good": 91.4,
+            "needsImprovement": 5,
+            "poor": 3.6
+          }
+        },
+        "rtt": {
+          "p75": 193,
+          "rating": null,
+          "distribution": {
+            "good": 30.4,
+            "needsImprovement": 56.2,
+            "poor": 13.4
+          }
+        },
+        "cls": {
+          "p75": 0.12,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 66.9,
+            "needsImprovement": 29.4,
+            "poor": 3.8
+          }
+        },
+        "ttfb": {
+          "p75": 595,
+          "rating": "good",
+          "distribution": {
+            "good": 83.2,
+            "needsImprovement": 12.2,
+            "poor": 4.6
+          }
+        },
+        "fcp": {
+          "p75": 1265,
+          "rating": "good",
+          "distribution": {
+            "good": 86.4,
+            "needsImprovement": 7.8,
+            "poor": 5.8
           }
         }
       }

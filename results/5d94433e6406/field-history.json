@@ -2,47 +2,11 @@
   "url": "https://www.bijouteriebarriere.com/",
   "name": "www.bijouteriebarriere.com",
   "group": "11ty-community",
-  "fetchedAt": "2026-08-20T18:38:32.475Z",
+  "fetchedAt": "2026-08-26T19:03:37.478Z",
   "source": "crux-history",
   "scope": "url",
   "formFactor": "PHONE",
   "series": [
-    {
-      "period": {
-        "first": "2026-02-01",
-        "last": "2026-02-28"
-      },
-      "date": "2026-02-28",
-      "metrics": {
-        "cls": {
-          "p75": null,
-          "rating": null,
-          "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
-        },
-        "fcp": {
-          "p75": null,
-          "rating": null,
-          "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
-        },
-        "lcp": {
-          "p75": null,
-          "rating": null,
-          "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
-        }
-      }
-    },
     {
       "period": {
         "first": "2026-02-08",
@@ -796,8 +760,21 @@
             "needsImprovement": 1.8,
             "poor": 1
           }
+        },
+        "ttfb": {
+          "p75": 246,
+          "rating": "good",
+          "distribution": {
+            "good": 98.3,
+            "needsImprovement": 1.1,
+            "poor": 0.6
+          },
+          "scope": "origin"
         }
-      }
+      },
+      "borrowedFromOrigin": [
+        "ttfb"
+      ]
     },
     {
       "period": {
@@ -877,6 +854,42 @@
         "last": "2026-08-15"
       },
       "date": "2026-08-15",
+      "metrics": {
+        "cls": {
+          "p75": null,
+          "rating": null,
+          "distribution": {
+            "good": null,
+            "needsImprovement": null,
+            "poor": null
+          }
+        },
+        "fcp": {
+          "p75": null,
+          "rating": null,
+          "distribution": {
+            "good": null,
+            "needsImprovement": null,
+            "poor": null
+          }
+        },
+        "lcp": {
+          "p75": null,
+          "rating": null,
+          "distribution": {
+            "good": null,
+            "needsImprovement": null,
+            "poor": null
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-07-26",
+        "last": "2026-08-22"
+      },
+      "date": "2026-08-22",
       "metrics": {
         "cls": {
           "p75": null,

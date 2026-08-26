@@ -2,65 +2,11 @@
   "url": "https://www.kogakure.de/",
   "name": "www.kogakure.de",
   "group": "11ty-community",
-  "fetchedAt": "2026-08-20T16:43:33.087Z",
+  "fetchedAt": "2026-08-26T19:02:33.259Z",
   "source": "crux-history",
   "scope": "origin",
   "formFactor": "PHONE",
   "series": [
-    {
-      "period": {
-        "first": "2026-02-01",
-        "last": "2026-02-28"
-      },
-      "date": "2026-02-28",
-      "metrics": {
-        "cls": {
-          "p75": 0,
-          "rating": "good",
-          "distribution": {
-            "good": 91,
-            "needsImprovement": 5.1,
-            "poor": 3.8
-          }
-        },
-        "ttfb": {
-          "p75": null,
-          "rating": null,
-          "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
-        },
-        "fcp": {
-          "p75": 850,
-          "rating": "good",
-          "distribution": {
-            "good": 90.5,
-            "needsImprovement": 6.1,
-            "poor": 3.4
-          }
-        },
-        "lcp": {
-          "p75": 1068,
-          "rating": "good",
-          "distribution": {
-            "good": 94,
-            "needsImprovement": 4,
-            "poor": 2
-          }
-        },
-        "rtt": {
-          "p75": 124,
-          "rating": null,
-          "distribution": {
-            "good": 51.6,
-            "needsImprovement": 40.7,
-            "poor": 7.6
-          }
-        }
-      }
-    },
     {
       "period": {
         "first": "2026-02-08",
@@ -1353,6 +1299,60 @@
             "good": 46.5,
             "needsImprovement": 49.3,
             "poor": 4.2
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-07-26",
+        "last": "2026-08-22"
+      },
+      "date": "2026-08-22",
+      "metrics": {
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 94.3,
+            "needsImprovement": 3.1,
+            "poor": 2.5
+          }
+        },
+        "ttfb": {
+          "p75": 612,
+          "rating": "good",
+          "distribution": {
+            "good": 85.4,
+            "needsImprovement": 11.5,
+            "poor": 3.1
+          }
+        },
+        "fcp": {
+          "p75": 949,
+          "rating": "good",
+          "distribution": {
+            "good": 95.3,
+            "needsImprovement": 2.4,
+            "poor": 2.3
+          }
+        },
+        "lcp": {
+          "p75": 1060,
+          "rating": "good",
+          "distribution": {
+            "good": 96.3,
+            "needsImprovement": 2.3,
+            "poor": 1.4
+          }
+        },
+        "rtt": {
+          "p75": 135,
+          "rating": null,
+          "distribution": {
+            "good": 49.2,
+            "needsImprovement": 46.8,
+            "poor": 3.9
           }
         }
       }

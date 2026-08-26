@@ -2,65 +2,11 @@
   "url": "https://www.karapanou.com/",
   "name": "www.karapanou.com",
   "group": "11ty-community",
-  "fetchedAt": "2026-08-20T16:43:32.214Z",
+  "fetchedAt": "2026-08-26T19:02:32.411Z",
   "source": "crux-history",
   "scope": "origin",
   "formFactor": "PHONE",
   "series": [
-    {
-      "period": {
-        "first": "2026-02-01",
-        "last": "2026-02-28"
-      },
-      "date": "2026-02-28",
-      "metrics": {
-        "ttfb": {
-          "p75": null,
-          "rating": null,
-          "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
-        },
-        "fcp": {
-          "p75": null,
-          "rating": null,
-          "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
-        },
-        "lcp": {
-          "p75": null,
-          "rating": null,
-          "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
-        },
-        "rtt": {
-          "p75": null,
-          "rating": null,
-          "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
-        },
-        "cls": {
-          "p75": null,
-          "rating": null,
-          "distribution": {
-            "good": null,
-            "needsImprovement": null,
-            "poor": null
-          }
-        }
-      }
-    },
     {
       "period": {
         "first": "2026-02-08",
@@ -1335,6 +1281,60 @@
             "good": 90.4,
             "needsImprovement": 8,
             "poor": 1.6
+          }
+        },
+        "rtt": {
+          "p75": null,
+          "rating": null,
+          "distribution": {
+            "good": null,
+            "needsImprovement": null,
+            "poor": null
+          }
+        },
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 100,
+            "needsImprovement": 0,
+            "poor": 0
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-07-26",
+        "last": "2026-08-22"
+      },
+      "date": "2026-08-22",
+      "metrics": {
+        "ttfb": {
+          "p75": 839,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 72.5,
+            "needsImprovement": 23.5,
+            "poor": 4
+          }
+        },
+        "fcp": {
+          "p75": 1256,
+          "rating": "good",
+          "distribution": {
+            "good": 88.3,
+            "needsImprovement": 8.5,
+            "poor": 3.1
+          }
+        },
+        "lcp": {
+          "p75": null,
+          "rating": null,
+          "distribution": {
+            "good": null,
+            "needsImprovement": null,
+            "poor": null
           }
         },
         "rtt": {

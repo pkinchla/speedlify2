@@ -2,65 +2,11 @@
   "url": "https://www.makethingsaccessible.com/",
   "name": "www.makethingsaccessible.com",
   "group": "11ty-community",
-  "fetchedAt": "2026-08-20T16:43:35.948Z",
+  "fetchedAt": "2026-08-26T19:02:36.506Z",
   "source": "crux-history",
   "scope": "origin",
   "formFactor": "PHONE",
   "series": [
-    {
-      "period": {
-        "first": "2026-02-01",
-        "last": "2026-02-28"
-      },
-      "date": "2026-02-28",
-      "metrics": {
-        "ttfb": {
-          "p75": 951,
-          "rating": "needs-improvement",
-          "distribution": {
-            "good": 66.6,
-            "needsImprovement": 28.5,
-            "poor": 4.9
-          }
-        },
-        "fcp": {
-          "p75": 1498,
-          "rating": "good",
-          "distribution": {
-            "good": 85,
-            "needsImprovement": 7.1,
-            "poor": 7.8
-          }
-        },
-        "lcp": {
-          "p75": 1502,
-          "rating": "good",
-          "distribution": {
-            "good": 90,
-            "needsImprovement": 6.2,
-            "poor": 3.7
-          }
-        },
-        "rtt": {
-          "p75": 117,
-          "rating": null,
-          "distribution": {
-            "good": 54.3,
-            "needsImprovement": 42.6,
-            "poor": 3.1
-          }
-        },
-        "cls": {
-          "p75": 0,
-          "rating": "good",
-          "distribution": {
-            "good": 100,
-            "needsImprovement": 0,
-            "poor": 0
-          }
-        }
-      }
-    },
     {
       "period": {
         "first": "2026-02-08",
@@ -1353,6 +1299,60 @@
             "good": null,
             "needsImprovement": null,
             "poor": null
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-07-26",
+        "last": "2026-08-22"
+      },
+      "date": "2026-08-22",
+      "metrics": {
+        "ttfb": {
+          "p75": null,
+          "rating": null,
+          "distribution": {
+            "good": null,
+            "needsImprovement": null,
+            "poor": null
+          }
+        },
+        "fcp": {
+          "p75": 2179,
+          "rating": "needs-improvement",
+          "distribution": {
+            "good": 54.9,
+            "needsImprovement": 36.5,
+            "poor": 8.6
+          }
+        },
+        "lcp": {
+          "p75": 2187,
+          "rating": "good",
+          "distribution": {
+            "good": 82.7,
+            "needsImprovement": 11.3,
+            "poor": 6
+          }
+        },
+        "rtt": {
+          "p75": null,
+          "rating": null,
+          "distribution": {
+            "good": null,
+            "needsImprovement": null,
+            "poor": null
+          }
+        },
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 100,
+            "needsImprovement": 0,
+            "poor": 0
           }
         }
       }

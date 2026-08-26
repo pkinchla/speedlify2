@@ -2,65 +2,11 @@
   "url": "https://www.aleksandrhovhannisyan.com/",
   "name": "www.aleksandrhovhannisyan.com",
   "group": "11ty-community",
-  "fetchedAt": "2026-08-20T18:38:29.135Z",
+  "fetchedAt": "2026-08-26T19:03:33.268Z",
   "source": "crux-history",
   "scope": "origin",
   "formFactor": "PHONE",
   "series": [
-    {
-      "period": {
-        "first": "2026-02-01",
-        "last": "2026-02-28"
-      },
-      "date": "2026-02-28",
-      "metrics": {
-        "cls": {
-          "p75": 0,
-          "rating": "good",
-          "distribution": {
-            "good": 98,
-            "needsImprovement": 1.6,
-            "poor": 0.5
-          }
-        },
-        "ttfb": {
-          "p75": 705,
-          "rating": "good",
-          "distribution": {
-            "good": 78.2,
-            "needsImprovement": 17,
-            "poor": 4.7
-          }
-        },
-        "fcp": {
-          "p75": 1208,
-          "rating": "good",
-          "distribution": {
-            "good": 91.6,
-            "needsImprovement": 5.6,
-            "poor": 2.8
-          }
-        },
-        "lcp": {
-          "p75": 1220,
-          "rating": "good",
-          "distribution": {
-            "good": 94.8,
-            "needsImprovement": 4.1,
-            "poor": 1.2
-          }
-        },
-        "rtt": {
-          "p75": 142,
-          "rating": null,
-          "distribution": {
-            "good": 43.3,
-            "needsImprovement": 51.2,
-            "poor": 5.5
-          }
-        }
-      }
-    },
     {
       "period": {
         "first": "2026-02-08",
@@ -1353,6 +1299,60 @@
             "good": 40.7,
             "needsImprovement": 47.2,
             "poor": 12
+          }
+        }
+      }
+    },
+    {
+      "period": {
+        "first": "2026-07-26",
+        "last": "2026-08-22"
+      },
+      "date": "2026-08-22",
+      "metrics": {
+        "cls": {
+          "p75": 0,
+          "rating": "good",
+          "distribution": {
+            "good": 94.4,
+            "needsImprovement": 2.9,
+            "poor": 2.8
+          }
+        },
+        "ttfb": {
+          "p75": 641,
+          "rating": "good",
+          "distribution": {
+            "good": 84.7,
+            "needsImprovement": 11.7,
+            "poor": 3.6
+          }
+        },
+        "fcp": {
+          "p75": 1101,
+          "rating": "good",
+          "distribution": {
+            "good": 89,
+            "needsImprovement": 8.2,
+            "poor": 2.8
+          }
+        },
+        "lcp": {
+          "p75": 1099,
+          "rating": "good",
+          "distribution": {
+            "good": 95.1,
+            "needsImprovement": 4.3,
+            "poor": 0.6
+          }
+        },
+        "rtt": {
+          "p75": 159,
+          "rating": null,
+          "distribution": {
+            "good": 38.9,
+            "needsImprovement": 48.2,
+            "poor": 12.9
           }
         }
       }
