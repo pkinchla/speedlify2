@@ -27,17 +27,6 @@ permalink: /index.html
 {% if sites.orphans.length %}{% set toc = (toc.push({ id: "orphans", label: "Orphaned" }), toc) %}{% endif %}
 {% if sites.archived.length %}{% set toc = (toc.push({ id: "archived", label: "Archived" }), toc) %}{% endif %}
 
-{% if toc.length > 1 %}
-<nav class="contents contents-sticky" aria-label="On this page">
-	<span class="contents-label">On this page</span>
-	<ul>
-		{% for item in toc %}
-		<li><a href="#{{ item.id }}">{{ item.label }}</a></li>
-		{% endfor %}
-	</ul>
-</nav>
-{% endif %}
-
 {% if sites.groups.length > 1 or sites.moving.length or sites.orphans.length %}
 <section class="group" id="categories">
 	<div class="group-head">
@@ -79,6 +68,17 @@ permalink: /index.html
 	</ul>
 </nav>
 </section>
+{% endif %}
+
+{% if toc.length > 1 %}
+<nav class="contents contents-sticky" aria-label="On this page">
+	<span class="contents-label">On this page</span>
+	<ul>
+		{% for item in toc %}
+		<li><a href="#{{ item.id }}">{{ item.label }}</a></li>
+		{% endfor %}
+	</ul>
+</nav>
 {% endif %}
 
 <section class="group statbar-section" id="summary">
@@ -224,6 +224,30 @@ permalink: /index.html
 			that, so the order comes down to the last tiebreaker: Speed Index per KB,
 			plus TTFB and blocking time — a fast heavy site outranks a fast empty one.
 		</p>
+		{#
+			Stated rather than left to be noticed. A starter is a near-empty
+			demonstration of a stack, so full marks there is the expected result
+			rather than an achievement, and enough of them would crowd out the sites
+			this board exists to show. They are still ranked on their own category
+			page and in the overall leaderboard below.
+
+			Counted from the entries rather than hardcoded, so the sentence cannot
+			outlive the decision — a category dropping `excludeFromPerfectScores`
+			leaves nothing here to say.
+		#}
+		{% set excluded = [] %}
+		{% for entry in sites.entries %}
+			{% if entry.perfect and entry.excludedFromPerfectScores %}{% set excluded = (excluded.push(entry), excluded) %}{% endif %}
+		{% endfor %}
+		{% if excluded.length %}
+		<p class="muted small">
+			Excludes <a href="/group/11ty-starters/">starter projects</a>&nbsp;&mdash;
+			{{ excluded.length }} of them score {{ perfectTotal }} too. A starter is a
+			demonstration of a stack rather than a site someone runs, so a perfect
+			score there is the expected result. They still rank below and on their own
+			page.
+		</p>
+		{% endif %}
 	</div>
 
 	<div class="table-scroll">

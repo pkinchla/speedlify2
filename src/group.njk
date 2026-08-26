@@ -31,6 +31,23 @@ eleventyComputed:
 		{%- if group.lastMeasured %}, most recently {{ group.lastMeasured | since }} ago{% endif %}
 		{%- endif %}
 	</p>
+	{#
+		The other half of the note on the home page's Perfect scores board. Said
+		here too because this is where someone notices the absence: a starter with
+		full marks that is not on that board looks like an oversight unless the
+		page it *is* on explains itself.
+
+		Read from the category rather than counted from its rows, so it still says
+		so before anything here has been measured.
+	#}
+	{% if group.excludeFromPerfectScores %}
+	<p class="muted small">
+		Perfect scores here are kept off the <a href="/#leaderboard">home page's board</a>.
+		These are demonstrations of a stack rather than sites someone runs, so full
+		marks is the expected result. They rank normally on this page and in the
+		overall leaderboard.
+	</p>
+	{% endif %}
 </header>
 
 {# The same tiles as the home page, over this category alone. #}

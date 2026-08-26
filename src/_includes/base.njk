@@ -43,7 +43,7 @@ try { if (localStorage.getItem("speedlify-theme") === "light") document.document
 			{{ meta.description | replace(r/\.$/, "") }}
 			{%- if sites.coverage.measured %} — measured continuously.{% else %}.{% endif %}
 		</p>
-		<p class="masthead-subhed">
+		<div class="masthead-subhed masthead-tools">
 			<a href="/runs/">Measurement runs</a> · <a href="/embed/">Embed a score</a>
 			<!-- Hidden until scripted: without JS the choice cannot be stored,
 			     and a button that silently does nothing is worse than none. -->
@@ -61,7 +61,69 @@ try { if (localStorage.getItem("speedlify-theme") === "light") document.document
 			<i class="fa-solid fa-moon theme-icon theme-icon-moon" width="14" height="14" aria-hidden="true"></i>
 			<span class="theme-toggle-text">Light mode</span>
 		</button>
-		</p>
+		{#
+			Jump to a category, from any page.
+
+			`method="get"` with nowhere to get to: this is a static site, so nothing
+			turns `?group=hosts` into `/group/hosts/`. The action is the home page's
+			Categories list, which is the honest destination for an unscripted
+			submit — you asked to change category and you land on the list of them.
+			The script below upgrades that to going straight there. The fragment
+			survives because submission mutates only the query.
+
+			Labelled by `aria-label` rather than a visible <label>: the control sits
+			in a row of links where a word in front of it would read as another one.
+		#}
+		· <form class="cat-switch" method="get" action="/#categories">
+			<select id="cat-switch" name="group" aria-label="Jump to a category">
+				{#
+					On a category page the current one is selected, so the prompt would
+					have nothing to say — the way back out goes there instead. A path
+					rather than an id, which is how the script below tells the two
+					apart; anything starting with a slash is somewhere to go directly.
+
+					Everywhere else the first option is a prompt, so the control never
+					opens claiming the reader is somewhere they are not.
+				#}
+				{% if group %}<option value="/">All Websites</option>
+				{% else %}<option value="" selected>Categories&hellip;</option>{% endif %}
+				{% for g in sites.groups %}
+				<option value="{{ g.id }}"{% if group and g.id == group.id %} selected{% endif %}>{{ g.name }}</option>
+				{% endfor %}
+			</select>
+			{#
+				The unscripted path. Hidden by the script below, which navigates on
+				change and leaves nothing for it to do — the inverse of the theme
+				toggle above, which is hidden until scripted for the same reason:
+				a control that does nothing is worse than no control.
+			#}
+			<button type="submit">Go</button>
+		</form>
+		</div>
+		<script>
+		/* Upgrade the fallback submit into the navigation it wants to be. Also on
+		   change, so a mouse needs one action rather than two. */
+		(function () {
+			var form = document.querySelector(".cat-switch");
+			if (!form) return;
+			var select = form.elements.group;
+			function go(event) {
+				var value = select.value;
+				if (!value) return;
+				event.preventDefault();
+				// A leading slash is a destination in its own right — the Home entry.
+				// Anything else is a category id to be turned into its page.
+				location.href = value.charAt(0) === "/" ? value : "/group/" + encodeURIComponent(value) + "/";
+			}
+			form.addEventListener("submit", go);
+			select.addEventListener("change", go);
+
+			/* Nothing left for it to do once change navigates. Hidden here rather
+			   than in CSS so it survives for anyone the script did not reach. */
+			var submit = form.querySelector("button[type=submit]");
+			if (submit) submit.hidden = true;
+		})();
+		</script>
 	</div>
 </header>
 

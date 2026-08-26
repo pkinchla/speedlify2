@@ -359,6 +359,55 @@ th.col-trend { text-align: center !important; }
 .panel h3 { font-size: 0.95rem; margin: 1.5rem 0 0.5rem; }
 
 .detail-head { padding: 2rem 0 1.25rem; }
+
+/*
+ * Category switcher, above the heading it changes.
+ *
+ * Baseline-aligned rather than centred so the label, the control and the button
+ * sit on one line with the text around them. `accent-color` and `color-scheme`
+ * hand the select's own chrome to the theme — a UA-styled dropdown otherwise
+ * arrives light on a dark page, which is the one control on this site that
+ * would.
+ */
+/*
+ * In the masthead now, on the row with the theme toggle, so it is inline-flex
+ * rather than a block of its own — it has to sit in the middle of a line of
+ * links without breaking it.
+ */
+.cat-switch {
+	display: inline-flex;
+	align-items: baseline;
+	gap: 0.35rem;
+	font-size: inherit;
+}
+
+/*
+ * That row holds a form now, so it is a div rather than a p — a <form> is flow
+ * content and cannot live in a paragraph. Flex keeps the separators, the button
+ * and the select on one baseline, and lets the row wrap on a phone instead of
+ * pushing the masthead wide.
+ */
+.masthead-tools {
+	display: flex;
+	align-items: baseline;
+	flex-wrap: wrap;
+	gap: 0.35rem;
+}
+
+.cat-switch select,
+.cat-switch button {
+	font: inherit;
+	color: var(--text);
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: 4px;
+	/* 24px minimum target, from the block padding rather than a min-height. */
+	padding: 0.2rem 0.4rem;
+}
+
+.cat-switch select { color-scheme: inherit; accent-color: var(--accent, currentColor); }
+.cat-switch button { cursor: pointer; }
+.cat-switch button:hover { border-color: var(--border-strong); }
 .detail-head h1 { margin: 0 0 0.25rem; font-size: clamp(1.5rem, 4vw, 2rem); letter-spacing: -0.02em; }
 /* The site's place in a category, beside that category's name. A pill, matching
    the counts elsewhere, so it reads as a label on the link rather than as part
