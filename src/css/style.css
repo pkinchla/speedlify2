@@ -405,7 +405,16 @@ th.col-trend { text-align: center !important; }
 	width: 46.25px;
 	height: 46.25px;
 }
-.detail-rings .rings { gap: 0.4rem; }
+/*
+ * Six rings at a quarter again their table size overflow a narrow header, and
+ * a header that scrolls sideways is worse than one two rows deep. Scoped to
+ * this block rather than set on `.rings`: everywhere else they sit in a table
+ * cell whose column is sized for one row of them, where wrapping would push the
+ * row taller instead of the page wider.
+ *
+ * The `gap` is shared by both axes, so the wrapped row is already spaced.
+ */
+.detail-rings .rings { gap: 0.4rem; flex-wrap: wrap; }
 
 /*
  * With a screenshot the header becomes two columns: the text keeping its own
@@ -1737,13 +1746,23 @@ a.cat-chip:hover, a.cat-chip:focus-visible { color: var(--text); border-color: v
  */
 .nojs-diff {
 	margin: 0;
-	flex: 0 1 14em;
+	/* Allowed to grow, because it does not always share a line with the frames.
+	   Below about 704px the row cannot hold all three and this wraps onto a line
+	   of its own, where without grow it stayed at its 14em basis and left most of
+	   that line empty.
+
+	   Capped, because the same grow would otherwise take every spare pixel on a
+	   wide screen — at 1200px that is 500px of text column shoving the two
+	   frames out to the margins. 30em is a reading measure; past it the space is
+	   better left over. */
+	flex: 1 1 14em;
+	max-width: 30em;
 	min-width: 8em;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	text-align: center;
+	text-align: left;
 	gap: 0.25rem;
+	max-width: 26em;
 }
 
 .nojs-diff strong {
@@ -1757,6 +1776,7 @@ a.cat-chip:hover, a.cat-chip:focus-visible { color: var(--text); border-color: v
 	color: var(--text-muted-strong);
 	margin-block-end: 0.35rem;
 }
+
 
 /*
  * Sized by height, with the width falling out of the ratio, so the two frames
@@ -1786,4 +1806,66 @@ a.cat-chip:hover, a.cat-chip:focus-visible { color: var(--text); border-color: v
 	border: 1px solid var(--border);
 	border-radius: 3px;
 	background: var(--surface);
+}
+/*
+ * Under 470px: the two frames stay side by side and the figure drops below.
+ *
+ * Wrapping the frames apart is the one thing that must not happen — the whole
+ * section is a comparison, and a comparison you have to scroll between is two
+ * pictures rather than one point.
+ *
+ * Range syntax rather than `max-width: 469.98px`, because the bound is exactly
+ * "narrower than 470" and writing that as a fraction of a pixel is a fudge.
+ *
+ * A full-width basis on the figure does the work: it is last in the markup, so
+ * giving it a whole row of its own leaves the two frames sharing the one above
+ * rather than splitting the pair across a wrap. Heights are bounded rather than
+ * set here — the frames take the width they can get.
+ */
+@media (width < 470px) {
+	/* Grid, not flex, for this breakpoint only.
+	   The two frames have to shrink to sit side by side, and flexbox decides
+	   wrapping on the basis before any shrinking happens: at `auto` each frame's
+	   basis is the image's own 412px, so the pair overflows a phone and wraps
+	   apart — the one thing this query exists to prevent. Getting flex to
+	   cooperate means pinning the basis to half the row minus half the gap,
+	   which silently breaks the moment the gap changes.
+	   Two `minmax(0, 1fr)` tracks say the same thing without the arithmetic:
+	   equal columns, free to shrink below their content. */
+	.nojs-pair {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+		align-items: start;
+		gap: 0.75rem;
+	}
+
+
+	/* Both dimensions auto, bounded rather than set, so the ratio decides the
+	   shape and whichever bound is tighter decides the size. The frame shrinks
+	   with the column instead of keeping its height and losing its sides.
+
+	   `max-height` and not `height`: a fixed height here would force the box to
+	   the column's width at a shape the image does not have, and `contain` would
+	   letterbox it. Bounded, the picture just gets smaller.
+
+	   60vh so the pair never fills a phone screen on its own, and 24em so it
+	   stops growing on a tall narrow window. `contain` rather than the base
+	   rule's `cover` because at this size nothing may be cropped away — a
+	   clipped comparison is a misleading one. */
+	.nojs-shot img {
+		width: auto;
+		height: auto;
+		max-width: 100%;
+		max-height: min(60vh, 24em);
+		object-fit: contain;
+	}
+}
+
+@media (width < 700px) {
+	/* Spanning both columns rather than taking a third: the markup already puts
+	   it after both frames, so a full-width row of its own is all it needs. */
+	.nojs-diff {
+		grid-column: 1 / -1;
+		align-items: flex-start;
+	}
 }

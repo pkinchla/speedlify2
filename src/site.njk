@@ -472,12 +472,22 @@ eleventyComputed:
 		The rendered page is what everybody expects a screenshot to be; putting it
 		second makes it read as the answer to the picture beside it rather than as
 		the subject the no-JS shot is a footnote to.
+
+		The figure comes last, after both, because it is the conclusion drawn from
+		the pair rather than a label on either — you read the two, then how far
+		apart they are.
 	#}
 	<div class="nojs-pair">
 		<figure class="nojs-shot">
 			<figcaption>Scripts disabled</figcaption>
 			<img src="{{ entry.ownScreenshot.noJs.src }}"
 				width="{{ entry.ownScreenshot.noJs.width or 800 }}" height="{{ entry.ownScreenshot.noJs.height or 600 }}"
+				alt="" loading="lazy" decoding="async">
+		</figure>
+		<figure class="nojs-shot">
+			<figcaption>As rendered</figcaption>
+			<img src="{{ entry.ownScreenshot.src }}"
+				width="{{ entry.ownScreenshot.width or 800 }}" height="{{ entry.ownScreenshot.height or 600 }}"
 				alt="" loading="lazy" decoding="async">
 		</figure>
 		{% if entry.ownScreenshot.difference !== null %}
@@ -493,12 +503,6 @@ eleventyComputed:
 				can account for a large figure.</span>
 		</p>
 		{% endif %}
-		<figure class="nojs-shot">
-			<figcaption>As rendered</figcaption>
-			<img src="{{ entry.ownScreenshot.src }}"
-				width="{{ entry.ownScreenshot.width or 800 }}" height="{{ entry.ownScreenshot.height or 600 }}"
-				alt="" loading="lazy" decoding="async">
-		</figure>
 	</div>
 </section>
 {% endif %}
