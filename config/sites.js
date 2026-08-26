@@ -373,6 +373,18 @@ export default {
 			enabled: true,
 			description:
 				'Community-submitted sites from the <a href="https://github.com/11ty/11ty-community">11ty/11ty-community</a> repository.',
+
+			// Where someone adds a site to this category, and what that act is
+			// called. The list is imported from an issue template upstream, so the
+			// answer is a form rather than a pull request against this repository —
+			// which is not something a reader could guess from the description.
+			//
+			// Categories without this get no call to action: for the hand-written
+			// ones the answer really is "open a PR", and a button saying so is a
+			// worse version of the repository link in the footer.
+			submitUrl: "https://github.com/11ty/11ty-community/issues/new?template=built-with-eleventy.yml",
+			submitLabel: "Add your site",
+
 			...POLITE,
 			...WEEKLY,
 			// for storage reasons
@@ -415,6 +427,14 @@ export default {
 			name: "Build Awesome Starters",
 			description:
 				"Starter projects and templates built with Eleventy. Measured apart from the community list because a starter is a demonstration of a stack rather than a site someone runs.",
+
+			// A directory of data files in 11ty/docs rather than an issue form:
+			// this list is imported from there, so a starter is added by adding a
+			// file upstream. See EXTRA_STARTERS above for the ones we carry that
+			// upstream does not.
+			submitUrl: "https://github.com/11ty/docs/tree/main/src/_data/starters",
+			submitLabel: "Add a starter",
+
 			...POLITE,
 			...WEEKLY,
 

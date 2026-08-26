@@ -657,11 +657,63 @@ eleventyComputed:
 
 	{% if entry.labVsField %}
 	<h3>Lab vs field</h3>
+	{#
+		Two bars against one scale, so the comparison is a length rather than a
+		subtraction the reader performs. Both are widths of the larger of the two,
+		which is the only scale on which "twice as long" looks twice as long.
+
+		The lab bar is neutral and the field bar carries its Core Web Vitals
+		rating: the lab number has no verdict attached — it is a simulation — while
+		the field number is the one Google grades.
+	#}
+	{% set lvfMax = entry.labVsField.lab if entry.labVsField.lab > entry.labVsField.field else entry.labVsField.field %}
+	<div class="lvf-compare">
+		<div class="lvf-row">
+			<span class="lvf-name">Lab</span>
+			<span class="bar"><span class="bar-fill lvf-fill-lab" style="width: {{ (entry.labVsField.lab / lvfMax * 100) | round }}%"></span></span>
+			<span class="lvf-ms">{{ entry.labVsField.lab | ms }}</span>
+		</div>
+		<div class="lvf-row">
+			<span class="lvf-name">Field p75</span>
+			<span class="bar"><span class="bar-fill lvf-fill-{{ entry.latest.field.metrics.lcp.rating | ratingClass }}" style="width: {{ (entry.labVsField.field / lvfMax * 100) | round }}%"></span></span>
+			<span class="lvf-ms">{{ entry.labVsField.field | ms }}</span>
+		</div>
+	</div>
 	<p class="muted small">
-		Lab LCP {{ entry.labVsField.lab | ms }} · field p75 {{ entry.labVsField.field | ms }} ·
-		real users are <strong>{{ entry.labVsField.ratio }}×</strong>
-		{{ "slower" if entry.labVsField.fieldWorse else "faster" }} than the lab.
-		{% if entry.labVsField.fieldWorse and entry.labVsField.ratio > 1.5 %}
+		{#
+			The multiple, then what it implies — rather than "N× faster", which only
+			reads correctly in one direction: a field number worse than the lab
+			gives a figure below 1, and "0.33× slower" is not a sentence.
+
+			And not "faster than the test says", which sounds like the test was
+			wrong. It was not: it measured a mid-range phone on a throttled
+			connection, deliberately. A field number better than that says something
+			about who is visiting, not about the accuracy of the lab — hence
+			"likely", since this is an inference about an audience rather than a
+			measurement of one.
+		#}
+		The lab is <strong>{{ entry.labVsField.ratio }}×</strong> the field number —
+		{#
+			Within a tenth either way is not a finding. `fieldWorse` is a strict
+			comparison, so without this band a site a single millisecond apart would
+			be told its audience is below average.
+
+			Tested on the rounded ratio, which is the one displayed: a reader seeing
+			0.9x should get the same verdict as anyone else seeing 0.9x, rather than
+			two sites reading identically and being described differently.
+		#}
+		{% if entry.labVsField.ratio >= 0.9 and entry.labVsField.ratio <= 1.1 %}
+		real users likely have similar hardware or network connectivity to the lab test.
+		{%- else %}
+		real users likely have {{ "below" if entry.labVsField.fieldWorse else "above" }}-average
+		hardware or network connectivity.
+		{%- endif %}
+		{#
+			1.5x worse or more, expressed the way round the ratio now runs: 1/1.5
+			is 0.667, which one decimal renders as 0.7 — so the test has to include
+			it rather than sit below a value the data can no longer produce.
+		#}
+		{% if entry.labVsField.fieldWorse and entry.labVsField.ratio <= 0.7 %}
 		A gap this wide usually means real users are on slower devices or networks
 		than the simulated ones — the lab number is flattering you.
 		{% endif %}

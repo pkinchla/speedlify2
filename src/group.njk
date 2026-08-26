@@ -12,7 +12,17 @@ eleventyComputed:
 {% from "statbar.njk" import statbar %}
 
 <header class="detail-head">
-	<h2 class="page-hed">{{ group.name }}</h2>
+	{#
+		The heading and the way in, on one row. Right-aligned rather than under
+		the description, because it is the one thing on this page a reader might
+		have come to *do* — everything else here is something to read.
+	#}
+	<div class="group-title">
+		<h2 class="page-hed">{{ group.name }}</h2>
+		{% if group.submitUrl %}
+		<a class="cta" href="{{ group.submitUrl }}">{{ group.submitLabel }}</a>
+		{% endif %}
+	</div>
 	{#
 		`safe` because a description may carry a link — the community list names
 		the repository it comes from, and that is worth being clickable. These
@@ -170,7 +180,7 @@ eleventyComputed:
 				<th class="col-lcp"><span class="lcp-head">LCP</span></th>
 				<th>CLS</th><th>TBT</th>
 				<th>Weight</th><th>Req</th>
-				<th class="col-lvf" title="Real-user LCP against the lab's. Below 1x real users are faster than the simulated device; above 1x the lab number is flattering the site. Only where CrUX has field data">Lab vs field</th>
+				<th class="col-lvf" title="The lab LCP as a multiple of the real-user p75. Above 1x the lab is slower than reality; below 1x the lab number is flattering the site. Only where CrUX has field data">Lab vs field</th>
 				<th class="col-nojs" title="Share of pixels that differ between the page as rendered and the same page with scripts disabled. A shifted layout counts, so a noscript banner alone can account for a large figure. Only measured where a no-JS capture is stored">No-JS ∆</th>
 			</tr>
 		</thead>
@@ -246,6 +256,18 @@ eleventyComputed:
 	</table>
 	</div>
 
+	{#
+		Right after the ranked table, for a reader who has finished the leaderboard
+		itself — but only when there is an overflow list below to separate it from
+		the one at the end of the page. Without that list the two would sit a
+		paragraph apart, which reads as a stutter rather than as two exits.
+	#}
+	{% if group.submitUrl and rest.length %}
+	<p class="cta-footer">
+		<a class="cta" href="{{ group.submitUrl }}">{{ group.submitLabel }}</a>
+	</p>
+	{% endif %}
+
 	{% if rest.length %}
 	{#
 		Names, not numbers. These rows were left out because the table was too long
@@ -277,6 +299,17 @@ eleventyComputed:
 		</li>
 		{% endfor %}
 	</ul>
+	{% endif %}
+
+	{#
+		Last on the page, after the overflow list as well as the table. Someone who
+		has read both and still not found their own site is exactly who this is
+		for, and by then the header is a thousand rows away.
+	#}
+	{% if group.submitUrl %}
+	<p class="cta-footer">
+		<a class="cta" href="{{ group.submitUrl }}">{{ group.submitLabel }}</a>
+	</p>
 	{% endif %}
 </section>
 {% endif %}

@@ -58,6 +58,13 @@
 	--pill: 50px;
 	--mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
 	--sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+	/* Build Awesome's balloon green, and a near-black from the same family for
+	   text sitting on it. Identical in both themes: it is a brand colour, not a
+	   surface, so it should not shift when the page does. */
+	--brand: #00a776;
+	--brand-bright: #00b880;
+	--brand-text: #052b20;
 }
 
 :root[data-theme="light"] {
@@ -361,6 +368,67 @@ th.col-trend { text-align: center !important; }
 .detail-head { padding: 2rem 0 1.25rem; }
 
 /*
+ * Category heading, with the way in beside it. Wraps on a narrow screen, where
+ * the button lands under the heading rather than squeezing it.
+ */
+.group-title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 0.75rem 1rem;
+	margin-block-end: 1em;
+}
+
+/*
+ * The one thing on a category page that is an action rather than a reading.
+ * Solid rather than outlined, because it is competing with a table of a
+ * thousand rows for attention and an outline loses.
+ *
+ * Build Awesome's own green, from BRAND_COLORS in buildawesome.config.js — the
+ * same value the balloon is drawn in, so the page's one loud element is loud in
+ * the project's colour rather than an invented one.
+ *
+ * The text is near-black rather than white, which is the reflex for a coloured
+ * button and would be wrong here: white on this green is 3.09:1, and at
+ * 0.9rem/650 the label is not large text, so it needs 4.5. The dark green-black
+ * below reaches 4.95:1 and belongs to the same family.
+ *
+ * One thing to know if the green is ever lightened: it sits at 2.99:1 against
+ * the light theme's #fbfbfd, a hair under the 3:1 that non-text contrast wants
+ * for a control's own edge. The label inside carries the accessible contrast;
+ * the shape is helped by its size and position rather than by its edge.
+ */
+.cta {
+	flex: none;
+	display: inline-block;
+	padding: 0.75rem 1.75rem;
+	border-radius: var(--pill);
+	background: var(--brand);
+	color: var(--brand-text);
+	font-size: 0.9rem;
+	font-weight: 650;
+	text-decoration: none;
+	white-space: nowrap;
+
+	&:hover,
+	&:focus-visible {
+		/* Lighter, not darker: darkening this green closes on the text sitting on
+		   it — #00805b would drop the label to 3.09:1. Going up keeps the pair
+		   legible and still reads as a response. */
+		background: var(--brand-bright);
+		color: var(--brand-text);
+		text-decoration: none;
+	}
+}
+
+/* After the table, centred — there is nothing beside it to align to. */
+.cta-footer {
+	margin-block: 1.5rem 0;
+	text-align: center;
+}
+
+/*
  * Category switcher, above the heading it changes.
  *
  * Baseline-aligned rather than centred so the label, the control and the button
@@ -383,15 +451,28 @@ th.col-trend { text-align: center !important; }
 
 /*
  * That row holds a form now, so it is a div rather than a p — a <form> is flow
- * content and cannot live in a paragraph. Flex keeps the separators, the button
- * and the select on one baseline, and lets the row wrap on a phone instead of
+ * content and cannot live in a paragraph. Flex keeps the links, the button and
+ * the select on one baseline, and lets the row wrap on a phone instead of
  * pushing the masthead wide.
+ *
+ * The gap does the separating. It used to be interpuncts typed between the
+ * items, which a flex row turns into children of their own — so they wrapped
+ * onto lines by themselves and were read out as "middle dot" by a screen
+ * reader. Space says the same thing to everyone.
  */
 .masthead-tools {
 	display: flex;
 	align-items: baseline;
 	flex-wrap: wrap;
-	gap: 0.35rem;
+	/* The column gap is wide enough to read as separation on its own; the row
+	   gap only has to keep wrapped lines from touching. */
+	gap: 0.35rem 1.1rem;
+
+	/* The form and any other block child bring their own margins, which would
+	   fight the gap and offset one item from the rest of the row. */
+	& > * {
+		margin: 0;
+	}
 }
 
 .cat-switch select,
@@ -623,6 +704,53 @@ th.col-trend { text-align: center !important; }
 .bar { display: block; height: 8px; background: color-mix(in srgb, var(--border) 70%, transparent); border-radius: 4px; overflow: hidden; }
 .bar-fill { display: block; height: 100%; background: var(--accent); border-radius: 4px; }
 .bar-warn .bar-fill { background: var(--average); }
+
+/*
+ * Lab against field, as two bars on one scale.
+ *
+ * The same three-column shape as .breakdown-row above — label, track, figure —
+ * because it is the same kind of statement and the page should not invent a
+ * second way to say it. Narrower label column: "Lab" and "Field p75" are short
+ * where a resource type is not.
+ */
+.lvf-compare {
+	display: flex;
+	flex-direction: column;
+	gap: 0.4rem;
+	margin-block: 0.6rem 0.75rem;
+	max-width: 44em;
+}
+
+.lvf-row {
+	display: grid;
+	grid-template-columns: minmax(60px, 96px) 1fr minmax(64px, auto);
+	gap: 0.75rem;
+	align-items: center;
+	font-size: 0.85rem;
+
+	& .bar {
+		/* Taller than the resource breakdown's: there are two of these rather
+		   than a dozen, and the whole point is comparing their lengths. */
+		height: 12px;
+	}
+}
+
+.lvf-name { color: var(--text-muted); white-space: nowrap; }
+.lvf-ms { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+/*
+ * The lab bar is deliberately colourless. It is a simulation of one mid-range
+ * phone, and colouring it good or poor would dress a test condition up as a
+ * verdict — the rating belongs to the field number underneath it, which is the
+ * one real users produced and Google grades.
+ */
+.lvf-fill-lab { background: var(--text-muted); }
+.lvf-fill-good { background: var(--good); }
+.lvf-fill-average { background: var(--average); }
+.lvf-fill-poor { background: var(--poor); }
+/* ratingClass falls back to "none" for a rating CrUX did not supply. Without a
+   rule the fill would inherit nothing and the bar would read as zero-length. */
+.lvf-fill-none { background: var(--border-strong); }
 
 /* ------------------------------------------------------ site of the day */
 
@@ -1168,7 +1296,7 @@ th.col-trend { text-align: center !important; }
 .col-nojs { white-space: nowrap; }
 
 /*
- * Lab against field, as a multiplier.
+ * Lab against field, as a multiplier: lab LCP over field p75.
  *
  * Only the direction that is bad gets a colour. Under 1x — real users faster
  * than the simulated phone — is the ordinary case here, 176 sites against 17,
@@ -1281,6 +1409,15 @@ th.col-rings { text-align: left !important; }
  */
 .masthead-subhed { max-width: 68ch; margin-inline: auto; }
 .panel > p, .group-head p, .detail-head p { max-width: 90ch; }
+
+/*
+ * Narrow: the row of links, the theme toggle and the category form wrap onto
+ * two or three lines, and a wrapped row packed left leaves a ragged edge under
+ * a masthead that is otherwise centred. Centring the lines keeps it composed.
+ */
+@media (max-width: 640px) {
+	.masthead-subhed { justify-content: center; }
+}
 
 /* ------------------------------------------------------- built with / host */
 
