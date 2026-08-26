@@ -756,7 +756,15 @@ describe("perfect scores", () => {
 	});
 });
 
-describe("legacy API filenames", () => {
+/*
+ * These assert against the real config/legacy-api-urls.json — the contract is
+ * with hashes deployed on pages we do not control, so a fixture would only be
+ * asserting our own arithmetic. `npm run reset` deletes that file, and a fork
+ * without the compatibility data has nothing here to test.
+ */
+const hasLegacyData = fs.existsSync(new URL("../config/legacy-api-urls.json", import.meta.url));
+
+describe("legacy API filenames", { skip: hasLegacyData ? false : "no legacy API data in this instance" }, () => {
 	/**
 	 * The compatibility route is a contract with pages we do not control: a
 	 * deployed <speedlify-score> hardcodes this hash in its markup. The original
