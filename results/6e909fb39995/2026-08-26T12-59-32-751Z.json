@@ -1,0 +1,22 @@
+{
+  "url": "https://parts.cuscousainc.com/",
+  "name": "parts.cuscousainc.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787749172751,
+  "date": "2026-08-26T12:59:32.751Z",
+  "runId": "2026-08-26T12-50-04-578Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 0,
+  "durationMs": 283394,
+  "error": "ERRORED_DOCUMENT_REQUEST: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 404)",
+  "errors": [
+    "lighthouse timed out after 120000ms",
+    "Failed to fetch browser webSocket URL from http://127.0.0.1:46065/json/version: fetch failed",
+    "ERRORED_DOCUMENT_REQUEST: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 404)"
+  ],
+  "field": null,
+  "axe": null,
+  "consecutiveFailures": 9
+}
