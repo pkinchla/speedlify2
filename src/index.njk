@@ -261,6 +261,7 @@ permalink: /index.html
 				<th class="col-rings" title="The four Lighthouse categories, then violating nodes from a full axe run and the Core Web Vitals verdict from real users. The ranking breaks ties the other way round: Core Web Vitals first, then axe">Scores</th>
 				<th class="col-trend">Trend</th>
 				<th class="col-lcp"><span class="lcp-head">LCP</span></th>
+				<th class="col-lvf" title="Real-user LCP against the lab's. Below 1x real users are faster than the simulated device; above 1x the lab number is flattering the site. Only where CrUX has field data">Lab vs field</th>
 				<th>CLS</th>
 				<th>TBT</th>
 				<th>Weight</th>
@@ -348,6 +349,7 @@ permalink: /index.html
 					</td>
 					<td class="col-trend">{% sparkline entry.trends.performance %}</td>
 					<td class="num col-lcp"><span class="lcp-cell"><span class="lcp-value">{{ entry.latest.lab.timings.lcp | ms }}</span>{% lcpBar entry.latest.lab.lcpBreakdown, entry.latest.lab.timings.lcp %}</span></td>
+					<td class="num">{% if entry.labVsField %}<span class="lvf{{ ' lvf-worse' if entry.labVsField.fieldWorse }}" title="Lab LCP {{ entry.labVsField.lab | ms }}, field p75 {{ entry.labVsField.field | ms }}">{{ entry.labVsField.ratio }}&times;</span>{% else %}<span class="muted">&mdash;</span>{% endif %}</td>
 					<td class="num">{{ entry.latest.lab.timings.cls | unit("") }}</td>
 					<td class="num">{{ entry.latest.lab.timings.tbt | ms }}</td>
 					<td class="num">{{ entry.latest.lab.weight.total | bytes }}</td>
@@ -359,7 +361,7 @@ permalink: /index.html
 						<span class="cat-chips">{% for name in entry.groupNames %}<a class="cat-chip" href="/group/{{ entry.groups[loop.index0] }}/">{{ name }}</a>{% endfor %}</span>
 					</td>
 				{% else %}
-					<td class="num muted" colspan="11">
+					<td class="num muted" colspan="12">
 						{% if entry.currentlyFailing %}every attempt failed{% else %}awaiting first measurement{% endif %}
 					</td>
 				{% endif %}

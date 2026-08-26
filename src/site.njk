@@ -277,8 +277,12 @@ eleventyComputed:
 {% set hasNoJs = entry.ownScreenshot.noJs and not entry.interstitial %}
 {% if hasNoJs %}{% set toc = (toc.push({ id: "without-javascript", label: "Without JavaScript" }), toc) %}{% endif %}
 {% set toc = (toc.push({ id: "lab", label: "Lab metrics" }), toc) %}
-{% if hasField %}{% set toc = (toc.push({ id: "field", label: "Field data" }), toc) %}{% endif %}
-{% if hasFieldHistory %}{% set toc = (toc.push({ id: "field-history", label: "Field history" }), toc) %}{% endif %}
+{#
+	One entry: the history is a subsection of Field data now, and a table of
+	contents that lists a heading and its own subheading side by side reads as
+	two destinations when it is one.
+#}
+{% if hasField or hasFieldHistory %}{% set toc = (toc.push({ id: "field", label: "Field data" }), toc) %}{% endif %}
 {% set toc = (toc.push({ id: "weight", label: "Page weight" }), toc) %}
 {% set toc = (toc.push({ id: "health", label: "Page health" }), toc) %}
 {% set toc = (toc.push({ id: "hygiene", label: "Hygiene" }), toc) %}
@@ -594,11 +598,18 @@ eleventyComputed:
 	{% endif %}
 </section>
 
-{% if hasField %}
+{#
+	Either half is enough to earn the section: a site CrUX has stopped reporting
+	still has the weeks it did report, and that history is the whole reason to
+	come here. Each half is gated separately below.
+#}
+{% if hasField or hasFieldHistory %}
 <section class="panel" id="field">
 	<h2>
-		Field data <span class="tag">Chrome UX Report, {{ entry.latest.field.scope }}-level</span>
+		Field data
+		{%- if hasField %} <span class="tag">Chrome UX Report, {{ entry.latest.field.scope }}-level</span>{% endif %}
 	</h2>
+	{% if hasField %}
 	<p class="muted small">
 		Real Chrome users, 28-day trailing window
 		({{ entry.latest.field.collectionPeriod.first }} → {{ entry.latest.field.collectionPeriod.last }}).
@@ -656,12 +667,10 @@ eleventyComputed:
 		{% endif %}
 	</p>
 	{% endif %}
-</section>
-{% endif %}
+	{% endif %}
 
-{% if hasFieldHistory %}
-<section class="panel" id="field-history">
-	<h2>Field history <span class="tag">{{ entry.fieldHistory.series.length }} weeks</span></h2>
+	{% if hasFieldHistory %}
+	<h3 id="field-history">Field history <span class="tag">{{ entry.fieldHistory.series.length }} weeks</span></h3>
 	<p class="muted small">
 		Weekly p75 from the CrUX History API, backfilled in a single request.
 	</p>
@@ -686,6 +695,7 @@ eleventyComputed:
 		</tbody>
 	</table>
 	</div>
+	{% endif %}
 </section>
 {% endif %}
 
