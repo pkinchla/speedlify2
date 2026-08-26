@@ -11,6 +11,14 @@
      listed because both are real: a stored choice of "light" flips :root to
      color-scheme: light a few lines further down. -->
 <meta name="color-scheme" content="dark light">
+<!-- Safari tints its toolbar with this. The masthead is what sits under it —
+     sticky, and painted `--surface` — so this tracks that.
+
+     No `media="(prefers-color-scheme: …)"` pair, which is the usual way to write
+     this: that only works for a site whose theme follows the OS, and this one is
+     dark unconditionally until someone chooses otherwise. The value is kept in
+     step by the script below instead. -->
+<meta name="theme-color" content="#383838">
 <title>{% if title %}{{ title }} · {% endif %}{{ meta.title }}</title>
 <meta name="description" content="{{ description or meta.description }}">
 {% if buildawesome.env.runMode == "build" %}
@@ -23,6 +31,17 @@
 /* Applied before first paint so a light-mode reader never sees a dark flash.
    Dark is the default; only a stored choice of "light" changes anything. */
 try { if (localStorage.getItem("speedlify-theme") === "light") document.documentElement.dataset.theme = "light"; } catch (e) {}
+/* Read from the stylesheet rather than repeated here, so the toolbar cannot
+   drift from the masthead when --surface changes. Safe this early: a script
+   after a stylesheet waits for it, so the custom property already resolves. */
+function speedlifyThemeColor() {
+	try {
+		var meta = document.querySelector('meta[name="theme-color"]');
+		var surface = getComputedStyle(document.documentElement).getPropertyValue("--surface").trim();
+		if (meta && surface) meta.setAttribute("content", surface);
+	} catch (e) {}
+}
+speedlifyThemeColor();
 </script>
 </head>
 <body>
@@ -184,6 +203,8 @@ try { if (localStorage.getItem("speedlify-theme") === "light") document.document
 
 		try { localStorage.setItem("speedlify-theme", light ? "light" : "dark"); } catch (e) {}
 		label();
+		// Safari's toolbar follows the masthead across the switch too.
+		if (typeof speedlifyThemeColor === "function") speedlifyThemeColor();
 	});
 })();
 </script>
