@@ -1,0 +1,296 @@
+{
+  "url": "https://www.wix.com/",
+  "name": "Wix",
+  "group": "builders",
+  "groupName": "Website Builders",
+  "timestamp": 1787755749834,
+  "date": "2026-08-26T14:49:09.834Z",
+  "runId": "2026-08-26T14-43-21-389Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 86738,
+  "error": null,
+  "variance": {
+    "min": 37,
+    "max": 73,
+    "spread": 36,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.wix.com/",
+    "finalUrl": "https://www.wix.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 70,
+      "accessibility": 93,
+      "best-practices": 96,
+      "seo": 92,
+      "agentic-browsing": 67
+    },
+    "timings": {
+      "fcp": 3516,
+      "lcp": 4434,
+      "si": 3516,
+      "tbt": 307,
+      "tti": 12374,
+      "cls": 0.003,
+      "ttfb": 657,
+      "maxPotentialFid": 151,
+      "serverResponseTime": 30,
+      "networkRtt": 0.4,
+      "networkServerLatency": 173.2
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 31.4,
+      "elementRenderDelay": 295.6
+    },
+    "weight": {
+      "total": 2746150,
+      "requests": 311,
+      "mainDocument": 309106,
+      "byType": {
+        "total": {
+          "bytes": 2743242,
+          "requests": 310
+        },
+        "script": {
+          "bytes": 887672,
+          "requests": 105
+        },
+        "other": {
+          "bytes": 864208,
+          "requests": 119
+        },
+        "image": {
+          "bytes": 556072,
+          "requests": 78
+        },
+        "document": {
+          "bytes": 309106,
+          "requests": 1
+        },
+        "font": {
+          "bytes": 119430,
+          "requests": 4
+        },
+        "stylesheet": {
+          "bytes": 6754,
+          "requests": 3
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 2743242,
+          "requests": 310
+        }
+      },
+      "scripts": 105,
+      "stylesheets": 3,
+      "fonts": 4
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 141462,
+      "mainThreadMs": 25.2,
+      "top": [
+        {
+          "entity": "Other Google APIs/SDKs",
+          "bytes": 99093,
+          "mainThreadMs": 14.7
+        },
+        {
+          "entity": "Sentry",
+          "bytes": 42369,
+          "mainThreadMs": 10.5
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 10266.9,
+      "byGroup": {
+        "other": 4333.7,
+        "scriptEvaluation": 3358.4,
+        "styleLayout": 1398.8,
+        "parseHTML": 410.7,
+        "scriptParseCompile": 374.7,
+        "paintCompositeRender": 338.6,
+        "garbageCollection": 52
+      },
+      "bootupMs": 2899.1,
+      "longTasks": 20,
+      "longestTaskMs": 200
+    },
+    "dom": {
+      "elements": 5181,
+      "depth": 33,
+      "maxChildren": 55
+    },
+    "waste": {
+      "unusedJsBytes": 229217,
+      "unusedCssBytes": 31157,
+      "legacyJsBytes": 12551,
+      "duplicatedJsBytes": 28767,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 1068.0999999999997,
+      "poorlyCachedCount": 7
+    },
+    "accessibility": {
+      "failingCount": 3,
+      "applicableCount": 35,
+      "failingNodes": 5,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 2
+        },
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "nodes": 2
+        },
+        {
+          "id": "presentation-role-conflict",
+          "title": "Elements with `role=\"none\"` or `role=\"presentation\"` have conflicts",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 2,
+      "baselineLimitedFeatures": 55
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2484.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-26T14:49:38.630Z",
+      "runtimeMs": 25613.2
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-28",
+      "last": "2026-08-24"
+    },
+    "metrics": {
+      "lcp": {
+        "p75": 3457,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 60.3,
+          "needsImprovement": 19.9,
+          "poor": 19.8
+        }
+      },
+      "rtt": {
+        "p75": 184,
+        "rating": null,
+        "distribution": {
+          "good": 34.5,
+          "needsImprovement": 52,
+          "poor": 13.5
+        }
+      },
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 94.7,
+          "needsImprovement": 1.6,
+          "poor": 3.7
+        }
+      },
+      "ttfb": {
+        "p75": 960,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 69.6,
+          "needsImprovement": 20.3,
+          "poor": 10.1
+        }
+      },
+      "fcp": {
+        "p75": 2375,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 64.8,
+          "needsImprovement": 17.5,
+          "poor": 17.7
+        }
+      },
+      "inp": {
+        "p75": 461,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 45,
+          "needsImprovement": 31.7,
+          "poor": 23.3
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "navigationTimedOut": false,
+    "generator": {
+      "id": "wix",
+      "name": "Wix",
+      "icon": "Wix",
+      "version": null,
+      "source": "meta",
+      "raw": "Wix.com Website Builder"
+    },
+    "interstitial": null,
+    "host": null,
+    "headers": {
+      "via": "1.1 google",
+      "x-served-by": "cache-bfi-krnt7300117-BFI"
+    },
+    "violations": 3,
+    "passes": 5338,
+    "incomplete": 126,
+    "violationRules": 2,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 2,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "presentation-role-conflict",
+        "impact": "minor",
+        "nodes": 1,
+        "help": "Elements marked as presentational should be consistently ignored"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
