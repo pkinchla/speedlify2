@@ -16,7 +16,8 @@ on:
     # freshnessHours of 24 (see config/sites.js) — batch=20 across a single
     # shard clears the whole list in one run, so there is nothing for an
     # hourly cadence to buy here.
-    - cron: "0 0 * * *"
+    - cron: "17 0 * * *"
+      timezone: "America/New_York"
   workflow_dispatch:
     inputs:
       batch:
