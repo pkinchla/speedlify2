@@ -1,0 +1,286 @@
+{
+  "url": "https://www.duda.co/",
+  "name": "Duda",
+  "group": "builders",
+  "groupName": "Website Builders",
+  "timestamp": 1787753095471,
+  "date": "2026-08-26T14:04:55.471Z",
+  "runId": "2026-08-26T13-54-09-279Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 334641,
+  "error": null,
+  "variance": {
+    "min": 26,
+    "max": 31,
+    "spread": 5,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.duda.co/",
+    "finalUrl": "https://www.duda.co/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 30,
+      "accessibility": 93,
+      "best-practices": 54,
+      "seo": 100,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 4719,
+      "lcp": 17856,
+      "si": 8515,
+      "tbt": 2251,
+      "tti": 36806,
+      "cls": 0.002,
+      "ttfb": 1220,
+      "maxPotentialFid": 350,
+      "serverResponseTime": 1050,
+      "networkRtt": 53,
+      "networkServerLatency": 620.1
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 1111.3,
+      "elementRenderDelay": 469.7
+    },
+    "weight": {
+      "total": 15535473,
+      "requests": 308,
+      "mainDocument": 82527,
+      "byType": {
+        "total": {
+          "bytes": 15533106,
+          "requests": 304
+        },
+        "media": {
+          "bytes": 9438875,
+          "requests": 14
+        },
+        "script": {
+          "bytes": 2839188,
+          "requests": 88
+        },
+        "image": {
+          "bytes": 2636129,
+          "requests": 105
+        },
+        "font": {
+          "bytes": 314940,
+          "requests": 10
+        },
+        "other": {
+          "bytes": 113923,
+          "requests": 70
+        },
+        "stylesheet": {
+          "bytes": 105729,
+          "requests": 14
+        },
+        "document": {
+          "bytes": 84322,
+          "requests": 3
+        },
+        "third-party": {
+          "bytes": 15263669,
+          "requests": 299
+        }
+      },
+      "scripts": 89,
+      "stylesheets": 14,
+      "fonts": 11
+    },
+    "thirdParty": {
+      "count": 35,
+      "bytes": 18774835,
+      "mainThreadMs": 2569.7,
+      "top": [
+        {
+          "entity": "cdn-website.com",
+          "bytes": 16251995,
+          "mainThreadMs": 134.1
+        },
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 679543,
+          "mainThreadMs": 330.6
+        },
+        {
+          "entity": "audioeye.com",
+          "bytes": 297004,
+          "mainThreadMs": 1377.6
+        },
+        {
+          "entity": "multiscreensite.com",
+          "bytes": 246895,
+          "mainThreadMs": 0.1
+        },
+        {
+          "entity": "Facebook",
+          "bytes": 230061,
+          "mainThreadMs": 117.6
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 23716.1,
+      "byGroup": {
+        "scriptEvaluation": 11393.7,
+        "other": 6982.9,
+        "styleLayout": 2717.6,
+        "paintCompositeRender": 1213.7,
+        "scriptParseCompile": 796.6,
+        "garbageCollection": 413.7,
+        "parseHTML": 197.9
+      },
+      "bootupMs": 11694.4,
+      "longTasks": 20,
+      "longestTaskMs": 350
+    },
+    "dom": {
+      "elements": 2090,
+      "depth": 31,
+      "maxChildren": 83
+    },
+    "waste": {
+      "unusedJsBytes": 986846,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 72383,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 77484,
+      "unminifiedCssBytes": 2611,
+      "renderBlockingMs": 5073,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 724478.0908333336,
+      "poorlyCachedCount": 33
+    },
+    "accessibility": {
+      "failingCount": 3,
+      "applicableCount": 31,
+      "failingNodes": 4,
+      "failing": [
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "nodes": 2
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 3,
+      "baselineLimitedFeatures": 76
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2603.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-26T14:04:56.757Z",
+      "runtimeMs": 74861.7
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-28",
+      "last": "2026-08-24"
+    },
+    "metrics": {
+      "inp": {
+        "p75": 253,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 68.9,
+          "needsImprovement": 23.5,
+          "poor": 7.6
+        }
+      },
+      "lcp": {
+        "p75": 2632,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 72.8,
+          "needsImprovement": 16.6,
+          "poor": 10.6
+        }
+      },
+      "rtt": {
+        "p75": 163,
+        "rating": null,
+        "distribution": {
+          "good": 35.6,
+          "needsImprovement": 53.5,
+          "poor": 10.9
+        }
+      },
+      "cls": {
+        "p75": 0.02,
+        "rating": "good",
+        "distribution": {
+          "good": 89,
+          "needsImprovement": 7.4,
+          "poor": 3.6
+        }
+      },
+      "ttfb": {
+        "p75": 1075,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 62.2,
+          "needsImprovement": 27.4,
+          "poor": 10.4
+        }
+      },
+      "fcp": {
+        "p75": 2333,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 61.5,
+          "needsImprovement": 22.6,
+          "poor": 15.9
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": null,
+    "host": null,
+    "headers": {},
+    "violations": null,
+    "passes": null,
+    "incomplete": null,
+    "violationRules": null,
+    "version": null,
+    "top": [],
+    "error": "Navigation timeout of 120000 ms exceeded"
+  },
+  "consecutiveFailures": 0
+}

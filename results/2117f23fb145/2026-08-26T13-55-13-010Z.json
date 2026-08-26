@@ -1,0 +1,310 @@
+{
+  "url": "https://railway.com/",
+  "name": "Railway",
+  "group": "hosts",
+  "groupName": "Web Hosts",
+  "timestamp": 1787752513010,
+  "date": "2026-08-26T13:55:13.010Z",
+  "runId": "2026-08-26T13-54-09-279Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 72649,
+  "error": null,
+  "variance": {
+    "min": 28,
+    "max": 39,
+    "spread": 11,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://railway.com/",
+    "finalUrl": "https://railway.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 38,
+      "accessibility": 93,
+      "best-practices": 73,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 3661,
+      "lcp": 6330,
+      "si": 4365,
+      "tbt": 3368,
+      "tti": 20688,
+      "cls": 0.04,
+      "ttfb": 630,
+      "maxPotentialFid": 1227,
+      "serverResponseTime": 9,
+      "networkRtt": 1.8,
+      "networkServerLatency": 80.9
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 10.8,
+      "resourceLoadDelay": 17.8,
+      "resourceLoadDuration": 26.3,
+      "elementRenderDelay": 191.2
+    },
+    "weight": {
+      "total": 3656832,
+      "requests": 287,
+      "mainDocument": 59200,
+      "byType": {
+        "total": {
+          "bytes": 3651619,
+          "requests": 285
+        },
+        "script": {
+          "bytes": 2414392,
+          "requests": 205
+        },
+        "image": {
+          "bytes": 923755,
+          "requests": 52
+        },
+        "font": {
+          "bytes": 184759,
+          "requests": 6
+        },
+        "stylesheet": {
+          "bytes": 60325,
+          "requests": 8
+        },
+        "document": {
+          "bytes": 59200,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 9188,
+          "requests": 13
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 422716,
+          "requests": 23
+        }
+      },
+      "scripts": 206,
+      "stylesheets": 8,
+      "fonts": 6
+    },
+    "thirdParty": {
+      "count": 7,
+      "bytes": 422716,
+      "mainThreadMs": 432.3,
+      "top": [
+        {
+          "entity": "Google Fonts",
+          "bytes": 187757,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 154158,
+          "mainThreadMs": 179.3
+        },
+        {
+          "entity": "Osano CMP",
+          "bytes": 74688,
+          "mainThreadMs": 247.2
+        },
+        {
+          "entity": "Fathom Analytics",
+          "bytes": 3192,
+          "mainThreadMs": 1.8
+        },
+        {
+          "entity": "Google/Doubleclick Ads",
+          "bytes": 2699,
+          "mainThreadMs": 4
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 11296,
+      "byGroup": {
+        "scriptEvaluation": 5940,
+        "other": 3097.1,
+        "styleLayout": 1112.7,
+        "garbageCollection": 491.8,
+        "scriptParseCompile": 320.7,
+        "paintCompositeRender": 245.7,
+        "parseHTML": 87.9
+      },
+      "bootupMs": 5935.4,
+      "longTasks": 20,
+      "longestTaskMs": 1618
+    },
+    "dom": {
+      "elements": 8384,
+      "depth": 23,
+      "maxChildren": 143
+    },
+    "waste": {
+      "unusedJsBytes": 1069006,
+      "unusedCssBytes": 51822,
+      "legacyJsBytes": 27815,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 1541,
+      "renderBlockingCount": 6,
+      "poorlyCachedBytes": 935914.4,
+      "poorlyCachedCount": 52
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 20,
+      "failingNodes": 4,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 3
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 4,
+      "baselineLimitedFeatures": 56
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2561.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-26T13:55:59.891Z",
+      "runtimeMs": 19175.4
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-28",
+      "last": "2026-08-24"
+    },
+    "metrics": {
+      "inp": {
+        "p75": 597,
+        "rating": "poor",
+        "distribution": {
+          "good": 38,
+          "needsImprovement": 31.1,
+          "poor": 30.9
+        }
+      },
+      "lcp": {
+        "p75": 2042,
+        "rating": "good",
+        "distribution": {
+          "good": 82.3,
+          "needsImprovement": 10,
+          "poor": 7.7
+        }
+      },
+      "rtt": {
+        "p75": 321,
+        "rating": null,
+        "distribution": {
+          "good": 14.4,
+          "needsImprovement": 54.1,
+          "poor": 31.5
+        }
+      },
+      "cls": {
+        "p75": 0.03,
+        "rating": "good",
+        "distribution": {
+          "good": 83.7,
+          "needsImprovement": 6.9,
+          "poor": 9.4
+        }
+      },
+      "ttfb": {
+        "p75": 593,
+        "rating": "good",
+        "distribution": {
+          "good": 82.9,
+          "needsImprovement": 11.3,
+          "poor": 5.8
+        }
+      },
+      "fcp": {
+        "p75": 1715,
+        "rating": "good",
+        "distribution": {
+          "good": 77,
+          "needsImprovement": 13.6,
+          "poor": 9.4
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": null,
+    "interstitial": null,
+    "host": {
+      "id": "railway",
+      "name": "Railway",
+      "icon": "Railway",
+      "source": "server"
+    },
+    "headers": {
+      "server": "railway-hikari"
+    },
+    "violations": 53,
+    "passes": 8187,
+    "incomplete": 86,
+    "violationRules": 3,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 50,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 2,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should have one main landmark"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
