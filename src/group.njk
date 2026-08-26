@@ -243,7 +243,7 @@ eleventyComputed:
 					<td class="num">{{ entry.latest.lab.timings.tbt | ms }}</td>
 					<td class="num">{{ entry.latest.lab.weight.total | bytes }}</td>
 					<td class="num">{{ entry.latest.lab.weight.requests | num }}</td>
-					<td class="num">{% if entry.labVsField %}<span class="lvf{{ ' lvf-worse' if entry.labVsField.fieldWorse }}" title="Lab LCP {{ entry.labVsField.lab | ms }}, field p75 {{ entry.labVsField.field | ms }}">{{ entry.labVsField.ratio }}&times;</span>{% else %}<span class="muted">&mdash;</span>{% endif %}</td>
+					<td class="num">{% if entry.labVsField %}<span class="lvf" title="Lab LCP {{ entry.labVsField.lab | ms }}, field p75 {{ entry.labVsField.field | ms }}">{{ entry.labVsField.ratio }}&times;</span>{% else %}<span class="muted">&mdash;</span>{% endif %}</td>
 					<td class="num">{% if entry.ownScreenshot and entry.ownScreenshot.difference !== null %}{{ entry.ownScreenshot.difference }}%{% else %}<span class="muted">&mdash;</span>{% endif %}</td>
 				{% else %}
 					{# 11 either way: dropping the rank column removes a cell from this row too,

@@ -1298,14 +1298,13 @@ th.col-trend { text-align: center !important; }
 /*
  * Lab against field, as a multiplier: lab LCP over field p75.
  *
- * Only the direction that is bad gets a colour. Under 1x — real users faster
- * than the simulated phone — is the ordinary case here, 176 sites against 17,
- * and colouring the majority would say nothing. Over 1x means the lab number is
- * flattering the site, which is the one reading worth catching an eye.
+ * Uncoloured on purpose. Every other coloured thing on these rows is a verdict —
+ * a Lighthouse band, a Core Web Vitals pass, an axe count — and this is not one.
+ * A ratio far from 1 says the audience differs from the simulated device, which
+ * is a fact about who visits rather than something the site did well or badly.
  */
 .col-lvf { white-space: nowrap; }
 .lvf { font-variant-numeric: tabular-nums; color: var(--text-muted-strong); }
-.lvf-worse { color: var(--poor-text); font-weight: 600; }
 /* The heading sits over the rings, which start at the cell's left edge — the
    right-aligned numbers below are the total, not the column. */
 th.col-rings { text-align: left !important; }
