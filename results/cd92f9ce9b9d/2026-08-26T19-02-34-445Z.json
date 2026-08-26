@@ -1,0 +1,259 @@
+{
+  "url": "https://hex.pm/",
+  "name": "Hex",
+  "group": "package-managers",
+  "groupName": "Package Managers",
+  "timestamp": 1787770954445,
+  "date": "2026-08-26T19:02:34.445Z",
+  "runId": "2026-08-26T19-02-22-243Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 37531,
+  "error": null,
+  "variance": {
+    "min": 70,
+    "max": 71,
+    "spread": 1,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://hex.pm/",
+    "finalUrl": "https://hex.pm/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 70,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 2993,
+      "lcp": 7725,
+      "si": 2993,
+      "tbt": 0,
+      "tti": 7725,
+      "cls": 0.008,
+      "ttfb": 675,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 95,
+      "networkRtt": 0.1,
+      "networkServerLatency": 183.7
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 96.5,
+      "resourceLoadDelay": 10.9,
+      "resourceLoadDuration": 370.9,
+      "elementRenderDelay": 26.2
+    },
+    "weight": {
+      "total": 2522967,
+      "requests": 16,
+      "mainDocument": 15945,
+      "byType": {
+        "total": {
+          "bytes": 2522967,
+          "requests": 16
+        },
+        "image": {
+          "bytes": 2333932,
+          "requests": 7
+        },
+        "font": {
+          "bytes": 79833,
+          "requests": 2
+        },
+        "script": {
+          "bytes": 60114,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 32698,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 15945,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 445,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 81129,
+          "requests": 3
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 2,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 81129,
+      "mainThreadMs": 0,
+      "top": [
+        {
+          "entity": "Google Fonts",
+          "bytes": 81129,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 732.1,
+      "byGroup": {
+        "other": 393.4,
+        "styleLayout": 129,
+        "scriptEvaluation": 103.1,
+        "paintCompositeRender": 44.7,
+        "parseHTML": 32.4,
+        "scriptParseCompile": 29.4
+      },
+      "bootupMs": 121.4,
+      "longTasks": 2,
+      "longestTaskMs": 119
+    },
+    "dom": {
+      "elements": 608,
+      "depth": 16,
+      "maxChildren": 8
+    },
+    "waste": {
+      "unusedJsBytes": 42453,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 1256,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 3284.4,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 21,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 23
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2488,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-26T19:02:59.860Z",
+      "runtimeMs": 9123.4
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-28",
+      "last": "2026-08-24"
+    },
+    "metrics": {
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 99.6,
+          "needsImprovement": 0.4,
+          "poor": 0
+        }
+      },
+      "ttfb": {
+        "p75": 463,
+        "rating": "good",
+        "distribution": {
+          "good": 89.9,
+          "needsImprovement": 7.9,
+          "poor": 2.2
+        }
+      },
+      "fcp": {
+        "p75": 732,
+        "rating": "good",
+        "distribution": {
+          "good": 96.1,
+          "needsImprovement": 2.2,
+          "poor": 1.7
+        }
+      },
+      "lcp": {
+        "p75": 1093,
+        "rating": "good",
+        "distribution": {
+          "good": 93.2,
+          "needsImprovement": 5.6,
+          "poor": 1.3
+        }
+      },
+      "rtt": {
+        "p75": 156,
+        "rating": null,
+        "distribution": {
+          "good": 40,
+          "needsImprovement": 48.4,
+          "poor": 11.6
+        }
+      },
+      "inp": {
+        "p75": 90,
+        "rating": "good",
+        "distribution": {
+          "good": 94.6,
+          "needsImprovement": 4,
+          "poor": 1.4
+        },
+        "scope": "origin"
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 3,
+    "borrowedFromOrigin": [
+      "inp"
+    ]
+  },
+  "axe": {
+    "navigationTimedOut": false,
+    "generator": null,
+    "interstitial": null,
+    "host": null,
+    "headers": {
+      "via": "1.1 google"
+    },
+    "violations": 0,
+    "passes": 717,
+    "incomplete": 1,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

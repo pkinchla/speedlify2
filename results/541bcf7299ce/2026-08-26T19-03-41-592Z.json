@@ -1,0 +1,267 @@
+{
+  "url": "https://npmx.dev/",
+  "name": "npmx",
+  "group": "package-managers",
+  "groupName": "Package Managers",
+  "timestamp": 1787771021592,
+  "date": "2026-08-26T19:03:41.592Z",
+  "runId": "2026-08-26T19-02-22-243Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 32172,
+  "error": null,
+  "variance": {
+    "min": 51,
+    "max": 79,
+    "spread": 28,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://npmx.dev/",
+    "finalUrl": "https://npmx.dev/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 77,
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1737,
+      "lcp": 4887,
+      "si": 1737,
+      "tbt": 252,
+      "tti": 5182,
+      "cls": 0.003,
+      "ttfb": 612,
+      "maxPotentialFid": 412,
+      "serverResponseTime": 2,
+      "networkRtt": 0.1,
+      "networkServerLatency": 12.4
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 3.5,
+      "elementRenderDelay": 453.9
+    },
+    "weight": {
+      "total": 12933085,
+      "requests": 159,
+      "mainDocument": 13771,
+      "byType": {
+        "total": {
+          "bytes": 12933085,
+          "requests": 151
+        },
+        "image": {
+          "bytes": 11575477,
+          "requests": 10
+        },
+        "other": {
+          "bytes": 757665,
+          "requests": 39
+        },
+        "script": {
+          "bytes": 412959,
+          "requests": 88
+        },
+        "font": {
+          "bytes": 114787,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 58426,
+          "requests": 10
+        },
+        "document": {
+          "bytes": 13771,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 11388572,
+          "requests": 5
+        }
+      },
+      "scripts": 88,
+      "stylesheets": 10,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 11388572,
+      "mainThreadMs": 0,
+      "top": [
+        {
+          "entity": "tenor.com",
+          "bytes": 11388572,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 2736,
+      "byGroup": {
+        "other": 1149.9,
+        "scriptEvaluation": 1038.8,
+        "styleLayout": 325.1,
+        "parseHTML": 119.2,
+        "paintCompositeRender": 59.8,
+        "scriptParseCompile": 30.8,
+        "garbageCollection": 12.4
+      },
+      "bootupMs": 1002.3,
+      "longTasks": 11,
+      "longestTaskMs": 412
+    },
+    "dom": {
+      "elements": 373,
+      "depth": 13,
+      "maxChildren": 19
+    },
+    "waste": {
+      "unusedJsBytes": 56922,
+      "unusedCssBytes": 45821,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 56966,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 300,
+      "renderBlockingCount": 6,
+      "poorlyCachedBytes": 9110857.600000001,
+      "poorlyCachedCount": 5
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 25,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 0,
+      "bfCacheFailures": 1,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 61
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2400.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-26T19:03:53.673Z",
+      "runtimeMs": 9368
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-28",
+      "last": "2026-08-24"
+    },
+    "metrics": {
+      "inp": {
+        "p75": 177,
+        "rating": "good",
+        "distribution": {
+          "good": 78.5,
+          "needsImprovement": 18.9,
+          "poor": 2.6
+        }
+      },
+      "lcp": {
+        "p75": 1070,
+        "rating": "good",
+        "distribution": {
+          "good": 95.5,
+          "needsImprovement": 3.1,
+          "poor": 1.3
+        }
+      },
+      "rtt": {
+        "p75": 135,
+        "rating": null,
+        "distribution": {
+          "good": 38.4,
+          "needsImprovement": 54.9,
+          "poor": 6.7
+        }
+      },
+      "cls": {
+        "p75": 0.02,
+        "rating": "good",
+        "distribution": {
+          "good": 87.3,
+          "needsImprovement": 11.8,
+          "poor": 0.9
+        }
+      },
+      "ttfb": {
+        "p75": 448,
+        "rating": "good",
+        "distribution": {
+          "good": 89.9,
+          "needsImprovement": 7.2,
+          "poor": 2.9
+        }
+      },
+      "fcp": {
+        "p75": 894,
+        "rating": "good",
+        "distribution": {
+          "good": 95.4,
+          "needsImprovement": 2.1,
+          "poor": 2.5
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "navigationTimedOut": false,
+    "generator": {
+      "id": "nuxt",
+      "name": "Nuxt",
+      "icon": "Nuxt",
+      "version": null,
+      "source": "dom",
+      "raw": null
+    },
+    "interstitial": null,
+    "host": {
+      "id": "vercel",
+      "name": "Vercel",
+      "icon": "Vercel",
+      "source": "x-vercel-id"
+    },
+    "headers": {
+      "server": "Vercel",
+      "x-vercel-id": "sfo1::z4xz8-1787771051569-1dcb56e4c45e"
+    },
+    "violations": 0,
+    "passes": 350,
+    "incomplete": 1,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
