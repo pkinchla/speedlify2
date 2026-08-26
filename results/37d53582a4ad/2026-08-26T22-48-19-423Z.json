@@ -1,0 +1,88 @@
+{
+  "url": "https://www.solidjs.com/",
+  "name": "SolidJS",
+  "group": "ssg",
+  "groupName": "Site Generators",
+  "timestamp": 1787784499423,
+  "date": "2026-08-26T22:48:19.423Z",
+  "runId": "2026-08-26T22-44-23-727Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 0,
+  "durationMs": 28060,
+  "error": "TRACING_ALREADY_STARTED: An internal Chrome error occurred. Please restart Chrome and try re-running Lighthouse.",
+  "errors": [
+    "TRACING_ALREADY_STARTED: An internal Chrome error occurred. Please restart Chrome and try re-running Lighthouse.",
+    "TRACING_ALREADY_STARTED: An internal Chrome error occurred. Please restart Chrome and try re-running Lighthouse.",
+    "TRACING_ALREADY_STARTED: An internal Chrome error occurred. Please restart Chrome and try re-running Lighthouse."
+  ],
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-28",
+      "last": "2026-08-24"
+    },
+    "metrics": {
+      "cls": {
+        "p75": 0.02,
+        "rating": "good",
+        "distribution": {
+          "good": 95.9,
+          "needsImprovement": 1.4,
+          "poor": 2.7
+        }
+      },
+      "ttfb": {
+        "p75": 702,
+        "rating": "good",
+        "distribution": {
+          "good": 77.9,
+          "needsImprovement": 15.2,
+          "poor": 6.8
+        }
+      },
+      "fcp": {
+        "p75": 1700,
+        "rating": "good",
+        "distribution": {
+          "good": 77.9,
+          "needsImprovement": 14.2,
+          "poor": 7.9
+        }
+      },
+      "inp": {
+        "p75": 102,
+        "rating": "good",
+        "distribution": {
+          "good": 94.1,
+          "needsImprovement": 4.7,
+          "poor": 1.2
+        }
+      },
+      "lcp": {
+        "p75": 1804,
+        "rating": "good",
+        "distribution": {
+          "good": 86.5,
+          "needsImprovement": 8.9,
+          "poor": 4.7
+        }
+      },
+      "rtt": {
+        "p75": 141,
+        "rating": null,
+        "distribution": {
+          "good": 46.7,
+          "needsImprovement": 44.9,
+          "poor": 8.4
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 3
+  },
+  "axe": null,
+  "consecutiveFailures": 1
+}
