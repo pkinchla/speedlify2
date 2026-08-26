@@ -21,6 +21,7 @@
 <meta name="theme-color" content="#383838">
 <title>{% if title %}{{ title }} · {% endif %}{{ meta.title }}</title>
 <meta name="description" content="{{ description or meta.description }}">
+<meta name="generator" content="{{ buildawesome.generator }}">
 {% if buildawesome.env.runMode == "build" %}
 <style>{% include "../css/style.css" %}</style>
 {% else %}
