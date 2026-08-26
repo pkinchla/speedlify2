@@ -667,6 +667,14 @@ eleventyComputed:
 		the field number is the one Google grades.
 	#}
 	{% set lvfMax = entry.labVsField.lab if entry.labVsField.lab > entry.labVsField.field else entry.labVsField.field %}
+	{#
+		Recomputed from the two stored millisecond figures rather than read from
+		`labVsField.ratio`, which is rounded to a tenth for the leaderboards — a
+		column of a thousand rows wants a figure you can scan, and this is one
+		site, where 1.17 says more than 1.2. Both numbers it is derived from are on
+		screen directly above, so the arithmetic is checkable.
+	#}
+	{% set lvfRatio = entry.labVsField.lab / entry.labVsField.field %}
 	<div class="lvf-compare">
 		<div class="lvf-row">
 			<span class="lvf-name">Lab</span>
@@ -692,7 +700,7 @@ eleventyComputed:
 			"likely", since this is an inference about an audience rather than a
 			measurement of one.
 		#}
-		The lab is <strong>{{ entry.labVsField.ratio }}×</strong> the field number —
+		The lab is <strong>{{ lvfRatio | round(2) }}×</strong> the field number —
 		{#
 			Within a tenth either way is not a finding. `fieldWorse` is a strict
 			comparison, so without this band a site a single millisecond apart would
@@ -702,7 +710,7 @@ eleventyComputed:
 			0.9x should get the same verdict as anyone else seeing 0.9x, rather than
 			two sites reading identically and being described differently.
 		#}
-		{% if entry.labVsField.ratio >= 0.9 and entry.labVsField.ratio <= 1.1 %}
+		{% if lvfRatio >= 0.9 and lvfRatio <= 1.1 %}
 		real users likely have similar hardware or network connectivity to the lab test.
 		{%- else %}
 		real users likely have {{ "below" if entry.labVsField.fieldWorse else "above" }}-average
@@ -713,7 +721,7 @@ eleventyComputed:
 			is 0.667, which one decimal renders as 0.7 — so the test has to include
 			it rather than sit below a value the data can no longer produce.
 		#}
-		{% if entry.labVsField.fieldWorse and entry.labVsField.ratio <= 0.7 %}
+		{% if entry.labVsField.fieldWorse and lvfRatio <= 0.7 %}
 		A gap this wide usually means real users are on slower devices or networks
 		than the simulated ones — the lab number is flattering you.
 		{% endif %}
