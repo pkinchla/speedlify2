@@ -43,12 +43,6 @@ const ICONS_DIR = "src/icons";
 const BRAND_COLORS = {
 	// Build Awesome's balloon, from its own mark.
 	BuildAwesome: "00A776",
-
-	// Gatsby's own purple is rebeccapurple, #663399, which lands at luminance
-	// 0.075 — over the floor below, so it is used, but only just, and it reads
-	// as a smudge on a #2e2e2e page. This is Astro's purple: the same hue with
-	// enough lightness to be legible.
-	Gatsby: "BC52EE",
 };
 
 /**
