@@ -168,9 +168,9 @@ eleventyComputed:
 				<th class="col-rings" title="The four Lighthouse categories, then violating nodes from a full axe run and the Core Web Vitals verdict from real users. The ranking breaks ties the other way round: Core Web Vitals first, then axe">Scores</th>
 				<th class="col-trend">Perf trend</th>
 				<th class="col-lcp"><span class="lcp-head">LCP</span></th>
-				<th class="col-lvf" title="Real-user LCP against the lab's. Below 1x real users are faster than the simulated device; above 1x the lab number is flattering the site. Only where CrUX has field data">Lab vs field</th>
 				<th>CLS</th><th>TBT</th>
 				<th>Weight</th><th>Req</th>
+				<th class="col-lvf" title="Real-user LCP against the lab's. Below 1x real users are faster than the simulated device; above 1x the lab number is flattering the site. Only where CrUX has field data">Lab vs field</th>
 				<th class="col-nojs" title="Share of pixels that differ between the page as rendered and the same page with scripts disabled. A shifted layout counts, so a noscript banner alone can account for a large figure. Only measured where a no-JS capture is stored">No-JS ∆</th>
 			</tr>
 		</thead>
@@ -229,11 +229,11 @@ eleventyComputed:
 					</td>
 					<td class="col-trend">{% sparkline entry.trends.performance %}</td>
 					<td class="num col-lcp"><span class="lcp-cell"><span class="lcp-value">{{ entry.latest.lab.timings.lcp | ms }}</span>{% lcpBar entry.latest.lab.lcpBreakdown, entry.latest.lab.timings.lcp %}</span></td>
-					<td class="num">{% if entry.labVsField %}<span class="lvf{{ ' lvf-worse' if entry.labVsField.fieldWorse }}" title="Lab LCP {{ entry.labVsField.lab | ms }}, field p75 {{ entry.labVsField.field | ms }}">{{ entry.labVsField.ratio }}&times;</span>{% else %}<span class="muted">&mdash;</span>{% endif %}</td>
 					<td class="num">{{ entry.latest.lab.timings.cls | unit("") }}</td>
 					<td class="num">{{ entry.latest.lab.timings.tbt | ms }}</td>
 					<td class="num">{{ entry.latest.lab.weight.total | bytes }}</td>
 					<td class="num">{{ entry.latest.lab.weight.requests | num }}</td>
+					<td class="num">{% if entry.labVsField %}<span class="lvf{{ ' lvf-worse' if entry.labVsField.fieldWorse }}" title="Lab LCP {{ entry.labVsField.lab | ms }}, field p75 {{ entry.labVsField.field | ms }}">{{ entry.labVsField.ratio }}&times;</span>{% else %}<span class="muted">&mdash;</span>{% endif %}</td>
 					<td class="num">{% if entry.ownScreenshot and entry.ownScreenshot.difference !== null %}{{ entry.ownScreenshot.difference }}%{% else %}<span class="muted">&mdash;</span>{% endif %}</td>
 				{% else %}
 					{# 11 either way: dropping the rank column removes a cell from this row too,

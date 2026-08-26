@@ -1166,6 +1166,18 @@ th.col-trend { text-align: center !important; }
 /* Two words in a column of one-word headings — left to wrap it would set the
    whole header row two lines deep for one cell. */
 .col-nojs { white-space: nowrap; }
+
+/*
+ * Lab against field, as a multiplier.
+ *
+ * Only the direction that is bad gets a colour. Under 1x — real users faster
+ * than the simulated phone — is the ordinary case here, 176 sites against 17,
+ * and colouring the majority would say nothing. Over 1x means the lab number is
+ * flattering the site, which is the one reading worth catching an eye.
+ */
+.col-lvf { white-space: nowrap; }
+.lvf { font-variant-numeric: tabular-nums; color: var(--text-muted-strong); }
+.lvf-worse { color: var(--poor-text); font-weight: 600; }
 /* The heading sits over the rings, which start at the cell's left edge — the
    right-aligned numbers below are the total, not the column. */
 th.col-rings { text-align: left !important; }
