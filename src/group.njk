@@ -152,6 +152,7 @@ eleventyComputed:
 				<th class="col-trend">Perf trend</th>
 				<th class="col-lcp"><span class="lcp-head">LCP</span></th><th>CLS</th><th>TBT</th>
 				<th>Weight</th><th>Req</th>
+				<th class="col-nojs" title="Share of pixels that differ between the page as rendered and the same page with scripts disabled. A shifted layout counts, so a noscript banner alone can account for a large figure. Only measured where a no-JS capture is stored">No-JS ∆</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -213,10 +214,11 @@ eleventyComputed:
 					<td class="num">{{ entry.latest.lab.timings.tbt | ms }}</td>
 					<td class="num">{{ entry.latest.lab.weight.total | bytes }}</td>
 					<td class="num">{{ entry.latest.lab.weight.requests | num }}</td>
+					<td class="num">{% if entry.ownScreenshot and entry.ownScreenshot.difference !== null %}{{ entry.ownScreenshot.difference }}%{% else %}<span class="muted">&mdash;</span>{% endif %}</td>
 				{% else %}
-					{# 9 either way: dropping the rank column removes a cell from this row too, so
-   the span covers the same remainder. #}
-				<td colspan="9" class="muted">not measured yet</td>
+					{# 10 either way: dropping the rank column removes a cell from this row too,
+   so the span covers the same remainder. #}
+				<td colspan="10" class="muted">not measured yet</td>
 				{% endif %}
 			</tr>
 		{% endfor %}

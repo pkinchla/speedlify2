@@ -117,7 +117,7 @@ body {
  * table needs ~1195px with the current columns, so this leaves headroom for
  * another one or two before it starts scrolling again.
  */
-.wrap { max-width: 1400px; margin: 0 auto; padding: 0 1.25rem; }
+.wrap { max-width: 1460px; margin: 0 auto; padding: 0 1.25rem; }
 /* Content only. The masthead and footer share `.wrap` and set their own
    vertical rhythm, and the masthead is sticky — padding there would deepen the
    bar that follows you down the page. */
@@ -1114,6 +1114,9 @@ th.col-trend { text-align: center !important; }
  */
 .rings { display: inline-flex; gap: 0.3rem; align-items: center; vertical-align: middle; }
 .col-rings { text-align: right !important; white-space: nowrap; }
+/* Two words in a column of one-word headings — left to wrap it would set the
+   whole header row two lines deep for one cell. */
+.col-nojs { white-space: nowrap; }
 /* The heading sits over the rings, which start at the cell's left edge — the
    right-aligned numbers below are the total, not the column. */
 th.col-rings { text-align: left !important; }

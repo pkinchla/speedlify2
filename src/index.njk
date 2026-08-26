@@ -241,6 +241,7 @@ permalink: /index.html
 				<th>TBT</th>
 				<th>Weight</th>
 				<th>Req</th>
+				<th class="col-nojs" title="Share of pixels that differ between the page as rendered and the same page with scripts disabled. A shifted layout counts, so a noscript banner alone can account for a large figure. Only measured where a no-JS capture is stored">No-JS ∆</th>
 				{#
 					Last, and only on this table. The board is drawn from every
 					category at once, so "which list is this from?" is a question only
@@ -327,13 +328,14 @@ permalink: /index.html
 					<td class="num">{{ entry.latest.lab.timings.tbt | ms }}</td>
 					<td class="num">{{ entry.latest.lab.weight.total | bytes }}</td>
 					<td class="num">{{ entry.latest.lab.weight.requests | num }}</td>
+					<td class="num">{% if entry.ownScreenshot and entry.ownScreenshot.difference !== null %}{{ entry.ownScreenshot.difference }}%{% else %}<span class="muted">&mdash;</span>{% endif %}</td>
 					<td class="col-cats">
 						{#- Names and ids are index-aligned, so the id for a name is its
 						    position in the other list. #}
 						<span class="cat-chips">{% for name in entry.groupNames %}<a class="cat-chip" href="/group/{{ entry.groups[loop.index0] }}/">{{ name }}</a>{% endfor %}</span>
 					</td>
 				{% else %}
-					<td class="num muted" colspan="10">
+					<td class="num muted" colspan="11">
 						{% if entry.currentlyFailing %}every attempt failed{% else %}awaiting first measurement{% endif %}
 					</td>
 				{% endif %}
