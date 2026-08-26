@@ -1,0 +1,297 @@
+{
+  "url": "https://eslint.org/",
+  "name": "ESLint",
+  "group": "test-runners",
+  "groupName": "Test Runners",
+  "timestamp": 1787706892030,
+  "date": "2026-08-26T01:14:52.030Z",
+  "runId": "2026-08-26T01-14-08-475Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 27319,
+  "error": null,
+  "variance": {
+    "min": 70,
+    "max": 74,
+    "spread": 4,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://eslint.org/",
+    "finalUrl": "https://eslint.org/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 74,
+      "accessibility": 97,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 23
+    },
+    "timings": {
+      "fcp": 1526,
+      "lcp": 3926,
+      "si": 1951,
+      "tbt": 40,
+      "tti": 4508,
+      "cls": 0.272,
+      "ttfb": 626,
+      "maxPotentialFid": 101,
+      "serverResponseTime": 25,
+      "networkRtt": 0.2,
+      "networkServerLatency": 57.2
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 26.8,
+      "elementRenderDelay": 161.9
+    },
+    "weight": {
+      "total": 914366,
+      "requests": 32,
+      "mainDocument": 18054,
+      "byType": {
+        "total": {
+          "bytes": 911501,
+          "requests": 29
+        },
+        "font": {
+          "bytes": 522688,
+          "requests": 6
+        },
+        "script": {
+          "bytes": 227837,
+          "requests": 10
+        },
+        "image": {
+          "bytes": 126040,
+          "requests": 9
+        },
+        "document": {
+          "bytes": 18054,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 15909,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 973,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 374563,
+          "requests": 9
+        }
+      },
+      "scripts": 10,
+      "stylesheets": 1,
+      "fonts": 6
+    },
+    "thirdParty": {
+      "count": 5,
+      "bytes": 374563,
+      "mainThreadMs": 65.8,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 167908,
+          "mainThreadMs": 45.8
+        },
+        {
+          "entity": "GitHub",
+          "bytes": 81198,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "JSDelivr CDN",
+          "bytes": 78401,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Cloudflare CDN",
+          "bytes": 35403,
+          "mainThreadMs": 20
+        },
+        {
+          "entity": "opencollective.com",
+          "bytes": 11653,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1012.2,
+      "byGroup": {
+        "other": 289.6,
+        "styleLayout": 283,
+        "scriptEvaluation": 272.3,
+        "paintCompositeRender": 78.9,
+        "scriptParseCompile": 65.4,
+        "parseHTML": 22.9
+      },
+      "bootupMs": 292.5,
+      "longTasks": 2,
+      "longestTaskMs": 101
+    },
+    "dom": {
+      "elements": 578,
+      "depth": 13,
+      "maxChildren": 18
+    },
+    "waste": {
+      "unusedJsBytes": 70604,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 7405,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 90316.05,
+      "poorlyCachedCount": 6
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 33,
+      "failingNodes": 3,
+      "failing": [
+        {
+          "id": "aria-prohibited-attr",
+          "title": "Elements use prohibited ARIA attributes",
+          "nodes": 3
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 25
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 3036,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-26T01:15:03.102Z",
+      "runtimeMs": 7336.1
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-27",
+      "last": "2026-08-23"
+    },
+    "metrics": {
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 81.7,
+          "needsImprovement": 5,
+          "poor": 13.3
+        }
+      },
+      "ttfb": {
+        "p75": 617,
+        "rating": "good",
+        "distribution": {
+          "good": 87.9,
+          "needsImprovement": 9.3,
+          "poor": 2.9
+        }
+      },
+      "fcp": {
+        "p75": 1416,
+        "rating": "good",
+        "distribution": {
+          "good": 86.6,
+          "needsImprovement": 9.1,
+          "poor": 4.3
+        }
+      },
+      "inp": {
+        "p75": 106,
+        "rating": "good",
+        "distribution": {
+          "good": 89.9,
+          "needsImprovement": 8.4,
+          "poor": 1.7
+        }
+      },
+      "lcp": {
+        "p75": 1434,
+        "rating": "good",
+        "distribution": {
+          "good": 90.6,
+          "needsImprovement": 5.5,
+          "poor": 3.9
+        }
+      },
+      "rtt": {
+        "p75": 148,
+        "rating": null,
+        "distribution": {
+          "good": 36.5,
+          "needsImprovement": 55.2,
+          "poor": 8.3
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": null,
+    "interstitial": null,
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0XT5GA9KBDAMYMVBQGQF8S6"
+    },
+    "violations": 4,
+    "passes": 1150,
+    "incomplete": 10,
+    "violationRules": 2,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "aria-prohibited-attr",
+        "impact": "serious",
+        "nodes": 3,
+        "help": "Elements must only use permitted ARIA attributes"
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "All page content should be contained by landmarks"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
