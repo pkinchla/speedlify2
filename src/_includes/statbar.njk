@@ -81,7 +81,7 @@
 				<span class="recents-dots" aria-hidden="true">
 					{% for band in site.bands %}<span class="recents-dot recents-dot-{{ band }}"></span>{% endfor %}
 				</span>
-				<span class="recents-age">{{ site.timestamp | since }}</span>
+				<span class="recents-age"><time datetime="{{ site.timestamp | iso }}">{{ site.timestamp | since }}</time></span>
 			</li>
 			{% endfor %}
 		</ol>

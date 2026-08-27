@@ -87,7 +87,7 @@ eleventyComputed:
 			{#- No dash and no full stop: the age is a pill rather than the end of a
 			    sentence, and punctuation either side of it reads as stray marks. #}
 			Data from {{ entry.latest.date | date("long") }}
-			<span class="age-pill{{ ' stale' if entry.dataStale }}">{{ entry.latest.date | since }} old</span>
+			<span class="age-pill{{ ' stale' if entry.dataStale }}"><time datetime="{{ entry.latest.date | iso }}">{{ entry.latest.date | since }}</time> old</span>
 			{%- if entry.dataStale %}, older than the {{ sites.coverage.staleAfterHours }}h freshness target{% endif %}
 		{% else %}
 			No successful measurement yet.
@@ -155,7 +155,7 @@ eleventyComputed:
 
 {% if entry.stale and entry.latest %}
 <div class="notice notice-warn">
-	<strong>This data is {{ entry.latest.date | since }} old.</strong>
+	<strong>This data is <time datetime="{{ entry.latest.date | iso }}">{{ entry.latest.date | since }}</time> old.</strong>
 	<p>
 		Sites are measured on a rolling schedule, so figures here are the newest
 		successful measurement rather than a reading taken just now. Comparisons
@@ -217,7 +217,7 @@ eleventyComputed:
 	</strong>
 	<code>{{ entry.lastError }}</code>
 	{% if entry.latest %}
-	<p>Numbers below are from the last successful run, {{ entry.latest.date | since }} old.</p>
+	<p>Numbers below are from the last successful run, <time datetime="{{ entry.latest.date | iso }}">{{ entry.latest.date | since }}</time> old.</p>
 	{% else %}
 	<p>There is no successful measurement for this site yet.</p>
 	{% endif %}

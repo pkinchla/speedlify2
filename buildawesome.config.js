@@ -333,6 +333,23 @@ export default async function ($config) {
 	 * "5h ago") make a column of values hard to scan. Anywhere the surrounding
 	 * sentence needs a word, the template supplies it.
 	 */
+	/**
+	 * A timestamp as the machine-readable form `<time datetime>` wants.
+	 *
+	 * Ages on this site are computed at build time and frozen into the HTML —
+	 * "13m old" stays 13m however long the page sits open. Pairing each one with
+	 * its own timestamp costs nothing now and is what a script would need to
+	 * recompute them later, or to render them in the reader's own time zone.
+	 *
+	 * Both forms occur: measurement records carry an ISO string, while anything
+	 * derived in the report carries epoch milliseconds.
+	 */
+	$config.addFilter("iso", (v) => {
+		if (!v) return "";
+		const d = v instanceof Date ? v : new Date(typeof v === "number" ? v : String(v));
+		return Number.isNaN(d.getTime()) ? "" : d.toISOString();
+	});
+
 	$config.addFilter("since", (v) => {
 		if (!v) return "never";
 

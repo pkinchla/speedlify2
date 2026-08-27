@@ -153,7 +153,7 @@ speedlifyThemeColor();
 			the stamp and the source link rather than above every page's content.
 		#}
 		<p>
-			Built <time datetime="{{ sites.generated }}">{{ sites.generated | date("long") }}</time>{% if meta.repo %} ·
+			Built <time datetime="{{ sites.generated | iso }}">{{ sites.generated | date("long") }}</time>{% if meta.repo %} ·
 			<a href="{{ meta.repo }}">Source on GitHub</a>{% endif %}
 			{%- if sites.coverage.measured %} ·
 			<strong>{{ sites.coverage.measured }}/{{ sites.coverage.total }}</strong>
