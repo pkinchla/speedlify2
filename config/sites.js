@@ -134,6 +134,102 @@ const WEEKLY = { freshnessHours: 24 * 7, staleAfterHours: 24 * 7 * 2 };
  */
 const POLITE = { rateLimit: { delayMs: 3000, hostCooldownMs: 60000 } };
 
+/*
+ * The four tooling categories' site lists, named so the combined category below
+ * can reference them rather than repeat them. Each still has its own page; the
+ * union is an additional view, not a replacement.
+ */
+const SSG_SITES = [
+				{ name: "Eleventy", url: "https://www.11ty.dev/" },
+				{ name: "Astro", url: "https://astro.build/" },
+				{ name: "Svelte", url: "https://svelte.dev/" },
+				{ name: "Hugo", url: "https://gohugo.io/" },
+				{ name: "Jekyll", url: "https://jekyllrb.com/" },
+				{ name: "VuePress", url: "https://vuepress.vuejs.org/" },
+				{ name: "VitePress", url: "https://vitepress.dev/" },
+				{ name: "Docusaurus", url: "https://docusaurus.io/" },
+				{ name: "Gridsome", url: "https://gridsome.org/" },
+				{ name: "Next.js", url: "https://nextjs.org/" },
+				{ name: "Gatsby", url: "https://www.gatsbyjs.com/" },
+				{ name: "React Router", url: "https://reactrouter.com/" },
+				{ name: "Lume", url: "https://lume.land/" },
+				{ name: "Hexo", url: "https://hexo.io/" },
+				{ name: "Remix", url: "https://remix.run/" },
+				{ name: "SolidJS", url: "https://www.solidjs.com/" },
+				{ name: "Qwik", url: "https://qwik.dev/" },
+				{ name: "TanStack", url: "https://tanstack.com/" },
+				{ name: "Nuxt", url: "https://nuxt.com/" },
+
+				// Added here rather than in the imported order above: the upstream
+				// list predates it.
+				{ name: "Zola", url: "https://www.getzola.org/" },
+			];
+
+const TEST_RUNNER_SITES = [
+				{ name: "QUnit", url: "https://qunitjs.com/" },
+				{ name: "webhint", url: "https://webhint.io/" },
+				{ name: "Mocha", url: "https://mochajs.org/" },
+				{ name: "ESLint", url: "https://eslint.org/" },
+				{ name: "Istanbul", url: "https://istanbul.js.org/" },
+				{ name: "gulp", url: "https://gulpjs.com/" },
+				{ name: "Grunt", url: "https://gruntjs.com/" },
+				{ name: "WebdriverIO", url: "https://webdriver.io/" },
+				{ name: "Intern", url: "https://theintern.io/" },
+			];
+
+const PACKAGE_MANAGER_SITES = [
+				{ name: "npm", url: "https://www.npmjs.com/" },
+				{ name: "Yarn", url: "https://yarnpkg.com/" },
+				{ name: "JSR", url: "https://jsr.io/" },
+				{ name: "npmx", url: "https://npmx.dev/" },
+				{ name: "PyPI", url: "https://pypi.org/" },
+				{ name: "crates.io", url: "https://crates.io/" },
+				{ name: "Packagist", url: "https://packagist.org/" },
+				{ name: "RubyGems", url: "https://rubygems.org/" },
+				{ name: "Maven Central", url: "https://central.sonatype.com/" },
+				{ name: "NuGet", url: "https://www.nuget.org/" },
+				{ name: "pkg.go.dev", url: "https://pkg.go.dev/" },
+				{ name: "pub.dev", url: "https://pub.dev/" },
+				{ name: "Hex", url: "https://hex.pm/" },
+				{ name: "Homebrew", url: "https://brew.sh/" },
+
+				/*
+				 * Documentation sites, not package browsers (left out for now)
+				 */
+				// { name: "pnpm", url: "https://pnpm.io/" },
+				// { name: "vlt", url: "https://www.vlt.io/" },
+				// { name: "jspm", url: "https://jspm.org/" },
+				// { name: "uv", url: "https://docs.astral.sh/uv/" },
+				// { name: "Chocolatey", url: "https://chocolatey.org/" },
+			];
+
+const HOST_SITES = [
+				{ name: "Netlify", url: "https://www.netlify.com/", groups: ["11ty-emeritus"] },
+				{ name: "Vercel", url: "https://vercel.com/" },
+				{ name: "Cloudflare", url: "https://www.cloudflare.com/" },
+				{ name: "Cloudflare Pages", url: "https://pages.cloudflare.com/" },
+				{ name: "GitHub Pages", url: "https://pages.github.com/" },
+				{ name: "GitLab Pages", url: "https://docs.gitlab.com/user/project/pages/" },
+				{ name: "Fly.io", url: "https://fly.io/" },
+				{ name: "Render", url: "https://render.com/" },
+				{ name: "Railway", url: "https://railway.com/" },
+				{ name: "Deno Deploy", url: "https://deno.com/deploy" },
+				{ name: "Fastly", url: "https://www.fastly.com/" },
+				{ name: "Bunny", url: "https://bunny.net/" },
+				{ name: "DigitalOcean", url: "https://www.digitalocean.com/" },
+				{ name: "Heroku", url: "https://www.heroku.com/" },
+				{ name: "Surge", url: "https://surge.sh/" },
+				{ name: "Neocities", url: "https://neocities.org/" },
+				{ name: "Codeberg Pages", url: "https://codeberg.page/" },
+
+				// Product pages rather than roots: these three are hosting products
+				// inside far larger sites, and the company's front door would be
+				// measuring something else entirely.
+				{ name: "Firebase Hosting", url: "https://firebase.google.com/products/hosting" },
+				{ name: "AWS Amplify", url: "https://aws.amazon.com/amplify/" },
+				{ name: "Azure Static Web Apps", url: "https://azure.microsoft.com/en-us/products/app-service/static" },
+			];
+
 export default {
 	// Read by lib/config.js, which marks the matching sites as it flattens the
 	// groups — one place rather than a filter on each category's list.
@@ -209,57 +305,68 @@ export default {
 	//
 	// A site listed in a disabled category and nowhere else drops out of the
 	// corpus entirely, so its history will read as orphaned meanwhile.
+	/*
+	 * Addresses that used to mean something, and where they go now.
+	 *
+	 * Two kinds, both for the same reason: a URL people linked to and search
+	 * engines remember should not become a 404.
+	 *
+	 * The bare paths are the original Speedlify's scheme, where a category was
+	 * served from the root — `/ssg/` rather than `/group/ssg/`. This instance
+	 * replaced that site at the same domain, so those links are still out there.
+	 *
+	 * The `/group/` one is a category folded into another: Test Runners was nine
+	 * sites, wholly contained in Developer Tooling, where they sit beside the
+	 * generators and hosts they are used with.
+	 *
+	 * Destinations are checked at report time against the categories and sites
+	 * that actually exist — see lib/report.js — so an entry pointing at something
+	 * since renamed is dropped rather than published as a link to nowhere.
+	 */
+	redirects: {
+		"/ssg/": "/group/ssg/",
+		"/test-runners/": "/group/dev-tooling/",
+		"/zachleat.com/": "/group/zachleat/",
+		"/sample/": "/site/www-speedlify-dev/",
+
+		"/group/test-runners/": "/group/dev-tooling/",
+	},
+
 	groups: {
+		/*
+		 * Site Generators, Test Runners, Package Managers and Web Hosts, in one
+		 * place.
+		 *
+		 * An additional view rather than a replacement: every site here is still
+		 * on its own category page, and still ranked there against its own kind.
+		 * What this adds is the comparison those pages cannot make — a generator's
+		 * site against the host it deploys to against the registry it publishes
+		 * to, all built by people who do this for a living.
+		 *
+		 * Listed first, which makes it every member's primary category: `groups`
+		 * is walked in order and the first match wins. So a hosting company reads
+		 * "Developer Tooling" on the leaderboard, with "Web Hosts" as the second
+		 * chip — the general label first, the specific one after it.
+		 *
+		 * The sites are the same objects the four use, so a URL added to one of
+		 * them appears here on the next build without a second edit.
+		 */
+		"dev-tooling": {
+			name: "Developer Tooling",
+			enabled: true,
+			description:
+				"Site generators, test runners, package managers and web hosts together. The people who build the tools, measured on the sites they use to sell them.",
+			...DAILY,
+			sites: [...SSG_SITES, ...TEST_RUNNER_SITES, ...PACKAGE_MANAGER_SITES, ...HOST_SITES],
+		},
+
 		ssg: {
 			name: "Site Generators",
 			enabled: true,
 			description: "Home pages for popular site generators and frameworks.",
 			...DAILY,
 			// The list from https://www.speedlify.dev/ssg/, in its order.
-			sites: [
-				{ name: "Eleventy", url: "https://www.11ty.dev/" },
-				{ name: "Astro", url: "https://astro.build/" },
-				{ name: "Svelte", url: "https://svelte.dev/" },
-				{ name: "Hugo", url: "https://gohugo.io/" },
-				{ name: "Jekyll", url: "https://jekyllrb.com/" },
-				{ name: "VuePress", url: "https://vuepress.vuejs.org/" },
-				{ name: "VitePress", url: "https://vitepress.dev/" },
-				{ name: "Docusaurus", url: "https://docusaurus.io/" },
-				{ name: "Gridsome", url: "https://gridsome.org/" },
-				{ name: "Next.js", url: "https://nextjs.org/" },
-				{ name: "Gatsby", url: "https://www.gatsbyjs.com/" },
-				{ name: "React Router", url: "https://reactrouter.com/" },
-				{ name: "Lume", url: "https://lume.land/" },
-				{ name: "Hexo", url: "https://hexo.io/" },
-				{ name: "Remix", url: "https://remix.run/" },
-				{ name: "SolidJS", url: "https://www.solidjs.com/" },
-				{ name: "Qwik", url: "https://qwik.dev/" },
-				{ name: "TanStack", url: "https://tanstack.com/" },
-				{ name: "Nuxt", url: "https://nuxt.com/" },
-
-				// Added here rather than in the imported order above: the upstream
-				// list predates it.
-				{ name: "Zola", url: "https://www.getzola.org/" },
-			],
-		},
-
-		"test-runners": {
-			name: "Test Runners",
-			enabled: true,
-			description: "Home pages for JavaScript test runners and linters.",
-			...DAILY,
-			// The list from https://www.speedlify.dev/test-runners/, in its order.
-			sites: [
-				{ name: "QUnit", url: "https://qunitjs.com/" },
-				{ name: "webhint", url: "https://webhint.io/" },
-				{ name: "Mocha", url: "https://mochajs.org/" },
-				{ name: "ESLint", url: "https://eslint.org/" },
-				{ name: "Istanbul", url: "https://istanbul.js.org/" },
-				{ name: "gulp", url: "https://gulpjs.com/" },
-				{ name: "Grunt", url: "https://gruntjs.com/" },
-				{ name: "WebdriverIO", url: "https://webdriver.io/" },
-				{ name: "Intern", url: "https://theintern.io/" },
-			],
+			sites: SSG_SITES,
 		},
 
 		"package-managers": {
@@ -268,31 +375,7 @@ export default {
 			description:
 				"Package browsers: the searchable front ends to a package registry. Every one of these has a similar job \u2014 a search box over a package index.",
 			...DAILY,
-			sites: [
-				{ name: "npm", url: "https://www.npmjs.com/" },
-				{ name: "Yarn", url: "https://yarnpkg.com/" },
-				{ name: "JSR", url: "https://jsr.io/" },
-				{ name: "npmx", url: "https://npmx.dev/" },
-				{ name: "PyPI", url: "https://pypi.org/" },
-				{ name: "crates.io", url: "https://crates.io/" },
-				{ name: "Packagist", url: "https://packagist.org/" },
-				{ name: "RubyGems", url: "https://rubygems.org/" },
-				{ name: "Maven Central", url: "https://central.sonatype.com/" },
-				{ name: "NuGet", url: "https://www.nuget.org/" },
-				{ name: "pkg.go.dev", url: "https://pkg.go.dev/" },
-				{ name: "pub.dev", url: "https://pub.dev/" },
-				{ name: "Hex", url: "https://hex.pm/" },
-				{ name: "Homebrew", url: "https://brew.sh/" },
-
-				/*
-				 * Documentation sites, not package browsers (left out for now)
-				 */
-				// { name: "pnpm", url: "https://pnpm.io/" },
-				// { name: "vlt", url: "https://www.vlt.io/" },
-				// { name: "jspm", url: "https://jspm.org/" },
-				// { name: "uv", url: "https://docs.astral.sh/uv/" },
-				// { name: "Chocolatey", url: "https://chocolatey.org/" },
-			],
+			sites: PACKAGE_MANAGER_SITES,
 		},
 
 		hosts: {
@@ -301,32 +384,7 @@ export default {
 			description:
 				"Home pages of the hosting and deploy platforms this project detects in the Host column.",
 			...DAILY,
-			sites: [
-				{ name: "Netlify", url: "https://www.netlify.com/", groups: ["11ty-emeritus"] },
-				{ name: "Vercel", url: "https://vercel.com/" },
-				{ name: "Cloudflare", url: "https://www.cloudflare.com/" },
-				{ name: "Cloudflare Pages", url: "https://pages.cloudflare.com/" },
-				{ name: "GitHub Pages", url: "https://pages.github.com/" },
-				{ name: "GitLab Pages", url: "https://docs.gitlab.com/user/project/pages/" },
-				{ name: "Fly.io", url: "https://fly.io/" },
-				{ name: "Render", url: "https://render.com/" },
-				{ name: "Railway", url: "https://railway.com/" },
-				{ name: "Deno Deploy", url: "https://deno.com/deploy" },
-				{ name: "Fastly", url: "https://www.fastly.com/" },
-				{ name: "Bunny", url: "https://bunny.net/" },
-				{ name: "DigitalOcean", url: "https://www.digitalocean.com/" },
-				{ name: "Heroku", url: "https://www.heroku.com/" },
-				{ name: "Surge", url: "https://surge.sh/" },
-				{ name: "Neocities", url: "https://neocities.org/" },
-				{ name: "Codeberg Pages", url: "https://codeberg.page/" },
-
-				// Product pages rather than roots: these three are hosting products
-				// inside far larger sites, and the company's front door would be
-				// measuring something else entirely.
-				{ name: "Firebase Hosting", url: "https://firebase.google.com/products/hosting" },
-				{ name: "AWS Amplify", url: "https://aws.amazon.com/amplify/" },
-				{ name: "Azure Static Web Apps", url: "https://azure.microsoft.com/en-us/products/app-service/static" },
-			],
+			sites: HOST_SITES,
 		},
 
 		builders: {

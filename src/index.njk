@@ -216,7 +216,15 @@ permalink: /index.html
 {% endfor %}
 <section class="group" id="leaderboard">
 	<div class="group-head">
-		<h2>Perfect scores</h2>
+		{#
+			The row count beside the heading. `shown` is every qualifying site, not
+			a page of them, so this is the size of the board rather than of a view
+			onto it — and it answers the first question the table raises without
+			making anyone scroll to the end to count.
+		#}
+		<h2>Perfect scores
+			<span class="head-count" title="{{ shown.length | num }} of {{ sites.stats.measured | num }} measured {{ sites.stats.measured | plural('site') }} score {{ perfectTotal }} with nothing amber or red beside it">{{ shown.length | num }} {{ shown.length | plural('site') }}</span>
+		</h2>
 		<p class="muted">
 			{{ perfectTotal }} in all {{ metrics.SCORES.length }} Lighthouse categories, no axe
 			violations, and no Core Web Vital failing real users. Sites CrUX has no data

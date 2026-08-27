@@ -1582,6 +1582,26 @@ th.col-rings { text-align: left !important; }
 }
 
 /*
+ * A count beside a section heading. Same pill as .cat-rank, which is the shape
+ * this site already uses for "a number attached to a label" — sized in `em` so
+ * it tracks whatever heading it is set in rather than fixing itself to one.
+ */
+.head-count {
+	display: inline-block;
+	vertical-align: baseline;
+	margin-left: 0.35em;
+	padding: 0.1em 0.55em;
+	border-radius: var(--pill);
+	background: color-mix(in srgb, var(--text-muted) 15%, transparent);
+	color: var(--text-muted-strong);
+	font-size: 0.5em;
+	font-weight: 600;
+	font-variant-numeric: tabular-nums;
+	letter-spacing: 0;
+	white-space: nowrap;
+}
+
+/*
  * Anchored sections sit clear of the top edge when jumped to.
  *
  * Deliberately no `scroll-behavior: smooth`. With the whole address book on one
