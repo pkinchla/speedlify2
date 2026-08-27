@@ -1,0 +1,218 @@
+{
+  "url": "https://11tytips.netlify.app/",
+  "name": "11tytips.netlify.app",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787846891951,
+  "date": "2026-08-27T16:08:11.951Z",
+  "runId": "2026-08-27T16-06-23-307Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 21978,
+  "error": null,
+  "variance": {
+    "min": 87,
+    "max": 92,
+    "spread": 5,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://11tytips.netlify.app/",
+    "finalUrl": "https://11tytips.netlify.app/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 90,
+      "accessibility": 98,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 82
+    },
+    "timings": {
+      "fcp": 1517,
+      "lcp": 1662,
+      "si": 1517,
+      "tbt": 0,
+      "tti": 1662,
+      "cls": 0.191,
+      "ttfb": 605,
+      "maxPotentialFid": 24,
+      "serverResponseTime": 4,
+      "networkRtt": 0.1,
+      "networkServerLatency": 11.8
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 6.1,
+      "elementRenderDelay": 74.1
+    },
+    "weight": {
+      "total": 70703,
+      "requests": 17,
+      "mainDocument": 5580,
+      "byType": {
+        "total": {
+          "bytes": 70703,
+          "requests": 17
+        },
+        "font": {
+          "bytes": 39629,
+          "requests": 2
+        },
+        "script": {
+          "bytes": 13740,
+          "requests": 4
+        },
+        "document": {
+          "bytes": 7084,
+          "requests": 2
+        },
+        "other": {
+          "bytes": 4581,
+          "requests": 4
+        },
+        "stylesheet": {
+          "bytes": 3905,
+          "requests": 4
+        },
+        "image": {
+          "bytes": 1764,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 3002,
+          "requests": 3
+        }
+      },
+      "scripts": 4,
+      "stylesheets": 4,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 2793,
+      "mainThreadMs": 0,
+      "top": [
+        {
+          "entity": "Netlify",
+          "bytes": 1764,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "instant.page",
+          "bytes": 1029,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 441,
+      "byGroup": {
+        "other": 176.5,
+        "styleLayout": 160.1,
+        "scriptEvaluation": 51.1,
+        "paintCompositeRender": 24.4,
+        "parseHTML": 19.8,
+        "scriptParseCompile": 5.6,
+        "garbageCollection": 3.5
+      },
+      "bootupMs": 31.6,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 218,
+      "depth": 7,
+      "maxChildren": 17
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 3,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 18,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": null,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 9
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2488.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-27T16:08:26.903Z",
+      "runtimeMs": 5914.4
+    }
+  },
+  "field": null,
+  "axe": {
+    "navigationTimedOut": false,
+    "generator": null,
+    "interstitial": null,
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M11ZNTQJJ6HY8105AJX3KF62"
+    },
+    "violations": 61,
+    "passes": 242,
+    "incomplete": 4,
+    "violationRules": 2,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 60,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should have one main landmark"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
