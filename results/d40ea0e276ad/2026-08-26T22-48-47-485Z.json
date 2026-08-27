@@ -1,0 +1,88 @@
+{
+  "url": "https://aws.amazon.com/amplify",
+  "name": "AWS Amplify",
+  "group": "hosts",
+  "groupName": "Web Hosts",
+  "timestamp": 1787784527485,
+  "date": "2026-08-26T22:48:47.485Z",
+  "runId": "2026-08-26T22-44-23-727Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 0,
+  "durationMs": 47648,
+  "error": "TRACING_ALREADY_STARTED: An internal Chrome error occurred. Please restart Chrome and try re-running Lighthouse.",
+  "errors": [
+    "TRACING_ALREADY_STARTED: An internal Chrome error occurred. Please restart Chrome and try re-running Lighthouse.",
+    "TRACING_ALREADY_STARTED: An internal Chrome error occurred. Please restart Chrome and try re-running Lighthouse.",
+    "TRACING_ALREADY_STARTED: An internal Chrome error occurred. Please restart Chrome and try re-running Lighthouse."
+  ],
+  "field": {
+    "source": "crux",
+    "scope": "origin",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-28",
+      "last": "2026-08-24"
+    },
+    "metrics": {
+      "fcp": {
+        "p75": 3670,
+        "rating": "poor",
+        "distribution": {
+          "good": 38,
+          "needsImprovement": 26.9,
+          "poor": 35.1
+        }
+      },
+      "inp": {
+        "p75": 319,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 60.3,
+          "needsImprovement": 26.3,
+          "poor": 13.4
+        }
+      },
+      "lcp": {
+        "p75": 4040,
+        "rating": "poor",
+        "distribution": {
+          "good": 49.8,
+          "needsImprovement": 24.8,
+          "poor": 25.4
+        }
+      },
+      "rtt": {
+        "p75": 156,
+        "rating": null,
+        "distribution": {
+          "good": 36,
+          "needsImprovement": 53.9,
+          "poor": 10
+        }
+      },
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 88.2,
+          "needsImprovement": 9,
+          "poor": 2.8
+        }
+      },
+      "ttfb": {
+        "p75": 1300,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 48.6,
+          "needsImprovement": 38.9,
+          "poor": 12.5
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 3
+  },
+  "axe": null,
+  "consecutiveFailures": 1
+}

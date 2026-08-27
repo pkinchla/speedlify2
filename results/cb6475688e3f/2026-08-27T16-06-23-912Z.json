@@ -1,0 +1,283 @@
+{
+  "url": "https://gulpjs.com/",
+  "name": "gulp",
+  "group": "test-runners",
+  "groupName": "Test Runners",
+  "timestamp": 1787846783912,
+  "date": "2026-08-27T16:06:23.912Z",
+  "runId": "2026-08-27T16-06-17-292Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 29898,
+  "error": null,
+  "variance": {
+    "min": 67,
+    "max": 79,
+    "spread": 12,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://gulpjs.com/",
+    "finalUrl": "https://gulpjs.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 74,
+      "accessibility": 96,
+      "best-practices": 100,
+      "seo": 92,
+      "agentic-browsing": 94
+    },
+    "timings": {
+      "fcp": 2468,
+      "lcp": 3893,
+      "si": 2468,
+      "tbt": 333,
+      "tti": 5112,
+      "cls": 0.106,
+      "ttfb": 611,
+      "maxPotentialFid": 265,
+      "serverResponseTime": 84,
+      "networkRtt": 0.3,
+      "networkServerLatency": 52.5
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 86.1,
+      "resourceLoadDelay": 9.7,
+      "resourceLoadDuration": 20.1,
+      "elementRenderDelay": 148.5
+    },
+    "weight": {
+      "total": 766858,
+      "requests": 43,
+      "mainDocument": 5620,
+      "byType": {
+        "total": {
+          "bytes": 766858,
+          "requests": 43
+        },
+        "script": {
+          "bytes": 452872,
+          "requests": 7
+        },
+        "image": {
+          "bytes": 218544,
+          "requests": 18
+        },
+        "other": {
+          "bytes": 35282,
+          "requests": 12
+        },
+        "font": {
+          "bytes": 32231,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 22309,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 5620,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 347875,
+          "requests": 8
+        }
+      },
+      "scripts": 7,
+      "stylesheets": 2,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 3,
+      "bytes": 347875,
+      "mainThreadMs": 100.2,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 292853,
+          "mainThreadMs": 81.5
+        },
+        {
+          "entity": "Google Fonts",
+          "bytes": 34109,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Google Analytics",
+          "bytes": 20913,
+          "mainThreadMs": 18.7
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1266.1,
+      "byGroup": {
+        "scriptEvaluation": 745.1,
+        "other": 233.5,
+        "scriptParseCompile": 145.8,
+        "styleLayout": 107.6,
+        "paintCompositeRender": 19.7,
+        "parseHTML": 14.4
+      },
+      "bootupMs": 868.1,
+      "longTasks": 4,
+      "longestTaskMs": 265
+    },
+    "dom": {
+      "elements": 247,
+      "depth": 11,
+      "maxChildren": 26
+    },
+    "waste": {
+      "unusedJsBytes": 182193,
+      "unusedCssBytes": 13832,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 1103,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 272777.17000000004,
+      "poorlyCachedCount": 24
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 26,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 13
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2479.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-27T16:06:44.992Z",
+      "runtimeMs": 7215.4
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-29",
+      "last": "2026-08-25"
+    },
+    "metrics": {
+      "rtt": {
+        "p75": 193,
+        "rating": null,
+        "distribution": {
+          "good": 34.9,
+          "needsImprovement": 50.9,
+          "poor": 14.2
+        }
+      },
+      "cls": {
+        "p75": 0.08,
+        "rating": "good",
+        "distribution": {
+          "good": 88,
+          "needsImprovement": 9.4,
+          "poor": 2.6
+        }
+      },
+      "ttfb": {
+        "p75": 1343,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 45.3,
+          "needsImprovement": 45.3,
+          "poor": 9.5
+        }
+      },
+      "fcp": {
+        "p75": 2131,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 59.9,
+          "needsImprovement": 33.5,
+          "poor": 6.6
+        }
+      },
+      "lcp": {
+        "p75": 2320,
+        "rating": "good",
+        "distribution": {
+          "good": 81.6,
+          "needsImprovement": 12.9,
+          "poor": 5.6
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 2
+  },
+  "axe": {
+    "navigationTimedOut": false,
+    "generator": {
+      "id": "docusaurus",
+      "name": "Docusaurus",
+      "icon": "Docusaurus",
+      "version": "3.2.1",
+      "source": "meta",
+      "raw": "Docusaurus v3.2.1"
+    },
+    "interstitial": null,
+    "host": {
+      "id": "github",
+      "name": "GitHub Pages",
+      "icon": "Github",
+      "source": "x-github-request-id"
+    },
+    "headers": {
+      "cf-ray": "a31c53437dfddcfe-SJC",
+      "server": "cloudflare",
+      "x-github-request-id": "4651:25CDF8:F1870A:FFDAFD:6A906090"
+    },
+    "violations": 1,
+    "passes": 314,
+    "incomplete": 0,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

@@ -1,0 +1,88 @@
+{
+  "url": "https://webdriver.io/",
+  "name": "WebdriverIO",
+  "group": "test-runners",
+  "groupName": "Test Runners",
+  "timestamp": 1787784398543,
+  "date": "2026-08-26T22:46:38.543Z",
+  "runId": "2026-08-26T22-44-23-727Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 0,
+  "durationMs": 100875,
+  "error": "TRACING_ALREADY_STARTED: An internal Chrome error occurred. Please restart Chrome and try re-running Lighthouse.",
+  "errors": [
+    "TRACING_ALREADY_STARTED: An internal Chrome error occurred. Please restart Chrome and try re-running Lighthouse.",
+    "TRACING_ALREADY_STARTED: An internal Chrome error occurred. Please restart Chrome and try re-running Lighthouse.",
+    "TRACING_ALREADY_STARTED: An internal Chrome error occurred. Please restart Chrome and try re-running Lighthouse."
+  ],
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-28",
+      "last": "2026-08-24"
+    },
+    "metrics": {
+      "cls": {
+        "p75": 0.01,
+        "rating": "good",
+        "distribution": {
+          "good": 93.1,
+          "needsImprovement": 6,
+          "poor": 0.9
+        }
+      },
+      "ttfb": {
+        "p75": 591,
+        "rating": "good",
+        "distribution": {
+          "good": 84,
+          "needsImprovement": 8.2,
+          "poor": 7.8
+        }
+      },
+      "fcp": {
+        "p75": 1724,
+        "rating": "good",
+        "distribution": {
+          "good": 78.1,
+          "needsImprovement": 10.7,
+          "poor": 11.2
+        }
+      },
+      "inp": {
+        "p75": 264,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 66.6,
+          "needsImprovement": 27.3,
+          "poor": 6.1
+        }
+      },
+      "lcp": {
+        "p75": 2021,
+        "rating": "good",
+        "distribution": {
+          "good": 81.7,
+          "needsImprovement": 11.4,
+          "poor": 6.9
+        }
+      },
+      "rtt": {
+        "p75": 150,
+        "rating": null,
+        "distribution": {
+          "good": 35.2,
+          "needsImprovement": 60.1,
+          "poor": 4.7
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 3
+  },
+  "axe": null,
+  "consecutiveFailures": 1
+}

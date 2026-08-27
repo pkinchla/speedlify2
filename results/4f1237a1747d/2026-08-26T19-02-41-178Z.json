@@ -1,0 +1,316 @@
+{
+  "url": "https://packagist.org/",
+  "name": "Packagist",
+  "group": "package-managers",
+  "groupName": "Package Managers",
+  "timestamp": 1787770961178,
+  "date": "2026-08-26T19:02:41.178Z",
+  "runId": "2026-08-26T19-02-40-105Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 25533,
+  "error": null,
+  "variance": {
+    "min": 91,
+    "max": 97,
+    "spread": 6,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://packagist.org/",
+    "finalUrl": "https://packagist.org/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 96,
+      "accessibility": 81,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 44
+    },
+    "timings": {
+      "fcp": 1071,
+      "lcp": 1671,
+      "si": 1071,
+      "tbt": 76,
+      "tti": 3341,
+      "cls": 0.109,
+      "ttfb": 621,
+      "maxPotentialFid": 176,
+      "serverResponseTime": 137,
+      "networkRtt": 0,
+      "networkServerLatency": 103.1
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 138.6,
+      "elementRenderDelay": 77.9
+    },
+    "weight": {
+      "total": 463049,
+      "requests": 17,
+      "mainDocument": 6064,
+      "byType": {
+        "total": {
+          "bytes": 463049,
+          "requests": 17
+        },
+        "script": {
+          "bytes": 184585,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 125976,
+          "requests": 6
+        },
+        "font": {
+          "bytes": 86119,
+          "requests": 5
+        },
+        "stylesheet": {
+          "bytes": 34384,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 25921,
+          "requests": 3
+        },
+        "document": {
+          "bytes": 6064,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 4704,
+          "requests": 1
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 1,
+      "fonts": 5
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 4704,
+      "mainThreadMs": 0.2,
+      "top": [
+        {
+          "entity": "Algolia",
+          "bytes": 4704,
+          "mainThreadMs": 0.2
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 525.3,
+      "byGroup": {
+        "scriptEvaluation": 213.7,
+        "other": 137.4,
+        "styleLayout": 84.2,
+        "scriptParseCompile": 43.6,
+        "parseHTML": 31.5,
+        "paintCompositeRender": 14.8
+      },
+      "bootupMs": 255.6,
+      "longTasks": 2,
+      "longestTaskMs": 176
+    },
+    "dom": {
+      "elements": 707,
+      "depth": 21,
+      "maxChildren": 20
+    },
+    "waste": {
+      "unusedJsBytes": 97486,
+      "unusedCssBytes": 31950,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 300,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 4,
+      "applicableCount": 21,
+      "failingNodes": 16,
+      "failing": [
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "nodes": 9
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 5
+        },
+        {
+          "id": "html-has-lang",
+          "title": "`<html>` element does not have a `[lang]` attribute",
+          "nodes": 1
+        },
+        {
+          "id": "tabindex",
+          "title": "Some elements have a `[tabindex]` value greater than 0",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": null,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 10
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2994,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-26T19:02:58.029Z",
+      "runtimeMs": 6990.8
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-28",
+      "last": "2026-08-24"
+    },
+    "metrics": {
+      "inp": {
+        "p75": 183,
+        "rating": "good",
+        "distribution": {
+          "good": 77.6,
+          "needsImprovement": 17.6,
+          "poor": 4.8
+        }
+      },
+      "lcp": {
+        "p75": 2533,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 74,
+          "needsImprovement": 14.8,
+          "poor": 11.2
+        }
+      },
+      "rtt": {
+        "p75": 261,
+        "rating": null,
+        "distribution": {
+          "good": 13.7,
+          "needsImprovement": 64.4,
+          "poor": 21.9
+        }
+      },
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 96.1,
+          "needsImprovement": 1,
+          "poor": 2.9
+        }
+      },
+      "ttfb": {
+        "p75": 1654,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 40.6,
+          "needsImprovement": 37.7,
+          "poor": 21.7
+        }
+      },
+      "fcp": {
+        "p75": 2471,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 58.7,
+          "needsImprovement": 24.1,
+          "poor": 17.3
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "navigationTimedOut": false,
+    "generator": null,
+    "interstitial": null,
+    "host": {
+      "id": "bunny",
+      "name": "Bunny CDN",
+      "icon": null,
+      "source": "server"
+    },
+    "headers": {
+      "server": "BunnyCDN-IL1-1235"
+    },
+    "violations": 18,
+    "passes": 340,
+    "incomplete": 7,
+    "violationRules": 6,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "link-in-text-block",
+        "impact": "serious",
+        "nodes": 9,
+        "help": "Links must be distinguishable without relying on color"
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 5,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "html-has-lang",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "<html> element must have a lang attribute"
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "tabindex",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Elements should not have tabindex greater than zero"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

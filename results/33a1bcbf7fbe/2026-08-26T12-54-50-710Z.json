@@ -1,0 +1,22 @@
+{
+  "url": "https://jak2k.eu/",
+  "name": "jak2k.eu",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787748890710,
+  "date": "2026-08-26T12:54:50.710Z",
+  "runId": "2026-08-26T12-50-04-578Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 0,
+  "durationMs": 279040,
+  "error": "lighthouse timed out after 120000ms",
+  "errors": [
+    "PROTOCOL_TIMEOUT",
+    "lighthouse timed out after 120000ms",
+    "lighthouse timed out after 120000ms"
+  ],
+  "field": null,
+  "axe": null,
+  "consecutiveFailures": 9
+}

@@ -1,0 +1,239 @@
+{
+  "url": "https://istanbul.js.org/",
+  "name": "Istanbul",
+  "group": "test-runners",
+  "groupName": "Test Runners",
+  "timestamp": 1787841041100,
+  "date": "2026-08-27T14:30:41.100Z",
+  "runId": "2026-08-27T14-29-48-947Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 25107,
+  "error": null,
+  "variance": {
+    "min": 71,
+    "max": 74,
+    "spread": 3,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://istanbul.js.org/",
+    "finalUrl": "https://istanbul.js.org/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 74,
+      "accessibility": 84,
+      "best-practices": 96,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1630,
+      "lcp": 5022,
+      "si": 1630,
+      "tbt": 298,
+      "tti": 5022,
+      "cls": 0.042,
+      "ttfb": 624,
+      "maxPotentialFid": 348,
+      "serverResponseTime": 19,
+      "networkRtt": 0,
+      "networkServerLatency": 24
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 20.5,
+      "elementRenderDelay": 119
+    },
+    "weight": {
+      "total": 567416,
+      "requests": 11,
+      "mainDocument": 5915,
+      "byType": {
+        "total": {
+          "bytes": 567416,
+          "requests": 10
+        },
+        "script": {
+          "bytes": 326412,
+          "requests": 4
+        },
+        "image": {
+          "bytes": 230257,
+          "requests": 3
+        },
+        "document": {
+          "bytes": 9049,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 1698,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "other": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 3134,
+          "requests": 4
+        }
+      },
+      "scripts": 4,
+      "stylesheets": 1,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 0,
+      "bytes": 0,
+      "mainThreadMs": 0,
+      "top": []
+    },
+    "mainThread": {
+      "total": 689.5,
+      "byGroup": {
+        "scriptEvaluation": 218.2,
+        "styleLayout": 177.1,
+        "scriptParseCompile": 150.1,
+        "other": 121.9,
+        "parseHTML": 12,
+        "paintCompositeRender": 10.1
+      },
+      "bootupMs": 359.7,
+      "longTasks": 2,
+      "longestTaskMs": 348
+    },
+    "dom": {
+      "elements": 68,
+      "depth": 13,
+      "maxChildren": 6
+    },
+    "waste": {
+      "unusedJsBytes": 68716,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 511836.4166666667,
+      "poorlyCachedCount": 5
+    },
+    "accessibility": {
+      "failingCount": 3,
+      "applicableCount": 15,
+      "failingNodes": 10,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 8
+        },
+        {
+          "id": "frame-title",
+          "title": "`<frame>` or `<iframe>` elements do not have a title",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 2,
+      "baselineLimitedFeatures": 5
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2475,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-27T14:30:49.858Z",
+      "runtimeMs": 6766.7
+    }
+  },
+  "field": null,
+  "axe": {
+    "navigationTimedOut": false,
+    "generator": {
+      "id": null,
+      "name": "Phenomic",
+      "icon": null,
+      "version": "0.16.2",
+      "source": "meta",
+      "raw": "Phenomic 0.16.2"
+    },
+    "interstitial": null,
+    "host": {
+      "id": "github",
+      "name": "GitHub Pages",
+      "icon": "Github",
+      "source": "x-github-request-id"
+    },
+    "headers": {
+      "cf-ray": "a31bc6ed995ccf1b-SJC",
+      "server": "cloudflare",
+      "via": "1.1 varnish",
+      "x-fastly-request-id": "449e628d7448514aeff320076a76471dae90f7f5",
+      "x-github-request-id": "4090:206AF8:1F8C2:2F20F:6A903EBF",
+      "x-served-by": "cache-sjc10043-SJC"
+    },
+    "violations": 12,
+    "passes": 160,
+    "incomplete": 0,
+    "violationRules": 4,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 8,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 2,
+        "help": "Document should have one main landmark"
+      },
+      {
+        "id": "frame-title",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Frames must have an accessible name"
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "All page content should be contained by landmarks"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

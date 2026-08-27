@@ -1,0 +1,40 @@
+{
+  "timestamp": 1787696797936,
+  "height": 498,
+  "width": 250,
+  "frames": [
+    {
+      "timing": 831,
+      "file": "e687bc0fd368.jpg"
+    },
+    {
+      "timing": 1663,
+      "file": "e687bc0fd368.jpg"
+    },
+    {
+      "timing": 2494,
+      "file": "181f7c09dbd6.jpg"
+    },
+    {
+      "timing": 3326,
+      "file": "8bdfd78757b3.jpg"
+    },
+    {
+      "timing": 4157,
+      "file": "b4225ccdc983.jpg"
+    },
+    {
+      "timing": 4988,
+      "file": "9e96e5a39b35.jpg"
+    },
+    {
+      "timing": 5820,
+      "file": "0f7f815dbcf0.jpg"
+    },
+    {
+      "timing": 6651,
+      "file": "041af4bc8f41.jpg"
+    }
+  ],
+  "final": "041af4bc8f41.jpg"
+}

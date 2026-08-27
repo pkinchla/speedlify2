@@ -1,0 +1,39 @@
+---
+pagination:
+  data: sites.redirects
+  size: 1
+  alias: redirect
+permalink: "{{ redirect.from }}"
+eleventyExcludeFromCollections: true
+---
+{#
+	An address that used to mean something, at the address it used to have.
+
+	Both kinds land here: the original Speedlify's category paths, which this
+	instance replaced at the same domain, and any category since folded into
+	another.
+
+	A static host has no way to answer with a 301, so this is the substitute: a
+	`refresh` of 0 seconds, which browsers follow immediately, plus a canonical
+	link so a crawler consolidates the two rather than indexing both. The prose
+	is for the case where neither happens — a reader with the meta refresh
+	disabled gets a sentence and a link rather than a blank page.
+
+	Deliberately not the site's own layout. It is a doorway, not a page: loading
+	the masthead, the stylesheet and the category switcher for something nobody
+	sees for more than a moment is work spent on a redirect.
+#}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="refresh" content="0; url={{ redirect.to }}">
+<link rel="canonical" href="{{ meta.url }}{{ redirect.to }}">
+<meta name="robots" content="noindex, follow">
+<title>Moved to {{ redirect.name }}</title>
+</head>
+<body>
+<p>This page has moved to <a href="{{ redirect.to }}">{{ redirect.name }}</a>.</p>
+</body>
+</html>

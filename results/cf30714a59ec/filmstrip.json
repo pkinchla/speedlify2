@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD:results/cf30714a59ec/filmstrip.json
   "timestamp": 1787843902056,
+=======
+  "timestamp": 1787804241190,
+>>>>>>> 7c6fe24bea72fcb798d9986c545d53d54cc25777:results/1a93a37f4ae4/filmstrip.json
   "height": 498,
   "width": 250,
   "frames": [
@@ -9,6 +13,7 @@
     },
     {
       "timing": 750,
+<<<<<<< HEAD:results/cf30714a59ec/filmstrip.json
       "file": "657f3ac90b95.jpg"
     },
     {
@@ -18,6 +23,17 @@
     {
       "timing": 1500,
       "file": "9115ac584b88.jpg"
+=======
+      "file": "16faa78ae415.jpg"
+    },
+    {
+      "timing": 1125,
+      "file": "ca48ac5856b7.jpg"
+    },
+    {
+      "timing": 1500,
+      "file": "ca48ac5856b7.jpg"
+>>>>>>> 7c6fe24bea72fcb798d9986c545d53d54cc25777:results/1a93a37f4ae4/filmstrip.json
     },
     {
       "timing": 1875,

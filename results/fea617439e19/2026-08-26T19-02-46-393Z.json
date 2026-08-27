@@ -1,0 +1,288 @@
+{
+  "url": "https://brew.sh/",
+  "name": "Homebrew",
+  "group": "package-managers",
+  "groupName": "Package Managers",
+  "timestamp": 1787770966393,
+  "date": "2026-08-26T19:02:46.393Z",
+  "runId": "2026-08-26T19-02-33-695Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 27264,
+  "error": null,
+  "variance": {
+    "min": 75,
+    "max": 100,
+    "spread": 25,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://brew.sh/",
+    "finalUrl": "https://brew.sh/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 99,
+      "accessibility": 96,
+      "best-practices": 100,
+      "seo": 92,
+      "agentic-browsing": 67
+    },
+    "timings": {
+      "fcp": 1626,
+      "lcp": 1626,
+      "si": 1797,
+      "tbt": 15,
+      "tti": 1941,
+      "cls": 0.006,
+      "ttfb": 603,
+      "maxPotentialFid": 79,
+      "serverResponseTime": 6,
+      "networkRtt": 16,
+      "networkServerLatency": 77.8
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 450.2,
+      "elementRenderDelay": 301.4
+    },
+    "weight": {
+      "total": 1695447,
+      "requests": 9,
+      "mainDocument": 7762,
+      "byType": {
+        "total": {
+          "bytes": 1695447,
+          "requests": 9
+        },
+        "image": {
+          "bytes": 1644802,
+          "requests": 3
+        },
+        "script": {
+          "bytes": 34218,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 8665,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 7762,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "other": {
+          "bytes": 0,
+          "requests": 1
+        },
+        "third-party": {
+          "bytes": 37582,
+          "requests": 3
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 2,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 37582,
+      "mainThreadMs": 17,
+      "top": [
+        {
+          "entity": "Cloudflare CDN",
+          "bytes": 37582,
+          "mainThreadMs": 17
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1178.4,
+      "byGroup": {
+        "other": 457.8,
+        "styleLayout": 337.3,
+        "scriptEvaluation": 258.2,
+        "parseHTML": 91.7,
+        "scriptParseCompile": 17.1,
+        "paintCompositeRender": 16.5
+      },
+      "bootupMs": 271.6,
+      "longTasks": 6,
+      "longestTaskMs": 167
+    },
+    "dom": {
+      "elements": 330,
+      "depth": 12,
+      "maxChildren": 42
+    },
+    "waste": {
+      "unusedJsBytes": 25662,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 1512594.4166666665,
+      "poorlyCachedCount": 4
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 24,
+      "failingNodes": 26,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 26
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": null,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 8
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 1937,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-26T19:02:50.433Z",
+      "runtimeMs": 10809.5
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-28",
+      "last": "2026-08-24"
+    },
+    "metrics": {
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 95,
+          "needsImprovement": 3.8,
+          "poor": 1.2
+        }
+      },
+      "ttfb": {
+        "p75": 656,
+        "rating": "good",
+        "distribution": {
+          "good": 80.1,
+          "needsImprovement": 14.4,
+          "poor": 5.5
+        }
+      },
+      "fcp": {
+        "p75": 1313,
+        "rating": "good",
+        "distribution": {
+          "good": 86.5,
+          "needsImprovement": 8.6,
+          "poor": 4.9
+        }
+      },
+      "inp": {
+        "p75": 121,
+        "rating": "good",
+        "distribution": {
+          "good": 89.1,
+          "needsImprovement": 9.5,
+          "poor": 1.5
+        }
+      },
+      "lcp": {
+        "p75": 1349,
+        "rating": "good",
+        "distribution": {
+          "good": 93.2,
+          "needsImprovement": 4.5,
+          "poor": 2.3
+        }
+      },
+      "rtt": {
+        "p75": 196,
+        "rating": null,
+        "distribution": {
+          "good": 28.7,
+          "needsImprovement": 56.9,
+          "poor": 14.4
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "navigationTimedOut": false,
+    "generator": {
+      "id": "jekyll",
+      "name": "Jekyll",
+      "icon": "Jekyll",
+      "version": "4.4.1",
+      "source": "meta",
+      "raw": "Jekyll v4.4.1"
+    },
+    "interstitial": null,
+    "host": {
+      "id": "github",
+      "name": "GitHub Pages",
+      "icon": "Github",
+      "source": "x-github-request-id"
+    },
+    "headers": {
+      "server": "GitHub.com",
+      "via": "1.1 varnish",
+      "x-fastly-request-id": "fbc154a0a482f7199513dcf0e2c82b5c9fb407b7",
+      "x-github-request-id": "B02E:DB2AE:9F1A89:AA0712:6A8CD40B",
+      "x-served-by": "cache-sjc10052-SJC"
+    },
+    "violations": 32,
+    "passes": 651,
+    "incomplete": 15,
+    "violationRules": 2,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 26,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      },
+      {
+        "id": "scrollable-region-focusable",
+        "impact": "serious",
+        "nodes": 6,
+        "help": "Scrollable region must have keyboard access"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

@@ -1,0 +1,275 @@
+{
+  "url": "https://fly.io/",
+  "name": "Fly.io",
+  "group": "hosts",
+  "groupName": "Web Hosts",
+  "timestamp": 1787841052822,
+  "date": "2026-08-27T14:30:52.822Z",
+  "runId": "2026-08-27T14-29-45-989Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 37640,
+  "error": null,
+  "variance": {
+    "min": 53,
+    "max": 55,
+    "spread": 2,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://fly.io/",
+    "finalUrl": "https://fly.io/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 54,
+      "accessibility": 100,
+      "best-practices": 77,
+      "seo": 92,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1547,
+      "lcp": 12519,
+      "si": 1547,
+      "tbt": 904,
+      "tti": 15735,
+      "cls": 0,
+      "ttfb": 604,
+      "maxPotentialFid": 823,
+      "serverResponseTime": 12,
+      "networkRtt": 80.8,
+      "networkServerLatency": 116.9
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 103,
+      "resourceLoadDelay": 33.1,
+      "resourceLoadDuration": 86.5,
+      "elementRenderDelay": 182.1
+    },
+    "weight": {
+      "total": 2787071,
+      "requests": 44,
+      "mainDocument": 22827,
+      "byType": {
+        "total": {
+          "bytes": 2787071,
+          "requests": 43
+        },
+        "script": {
+          "bytes": 1326162,
+          "requests": 10
+        },
+        "image": {
+          "bytes": 1012631,
+          "requests": 9
+        },
+        "font": {
+          "bytes": 304643,
+          "requests": 7
+        },
+        "stylesheet": {
+          "bytes": 104330,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 27680,
+          "requests": 4
+        },
+        "other": {
+          "bytes": 11625,
+          "requests": 12
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 266347,
+          "requests": 7
+        }
+      },
+      "scripts": 10,
+      "stylesheets": 1,
+      "fonts": 7
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 245127,
+      "mainThreadMs": 68.9,
+      "top": [
+        {
+          "entity": "Stripe",
+          "bytes": 244742,
+          "mainThreadMs": 68.5
+        },
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 385,
+          "mainThreadMs": 0.4
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 3201.2,
+      "byGroup": {
+        "scriptEvaluation": 1628.4,
+        "other": 810.3,
+        "scriptParseCompile": 434.5,
+        "styleLayout": 199.2,
+        "parseHTML": 56.9,
+        "garbageCollection": 49.8,
+        "paintCompositeRender": 22.1
+      },
+      "bootupMs": 2032.1,
+      "longTasks": 13,
+      "longestTaskMs": 823
+    },
+    "dom": {
+      "elements": 438,
+      "depth": 11,
+      "maxChildren": 19
+    },
+    "waste": {
+      "unusedJsBytes": 610896,
+      "unusedCssBytes": 100673,
+      "legacyJsBytes": 16635,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 624,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 561820.925,
+      "poorlyCachedCount": 9
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 30,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": null,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "http/1.1",
+      "legacyHttpRequests": 28,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 41
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2468,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-27T14:30:54.156Z",
+      "runtimeMs": 11817.6
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-29",
+      "last": "2026-08-25"
+    },
+    "metrics": {
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 99.6,
+          "needsImprovement": 0.1,
+          "poor": 0.2
+        }
+      },
+      "ttfb": {
+        "p75": 834,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 73.7,
+          "needsImprovement": 19.7,
+          "poor": 6.6
+        }
+      },
+      "fcp": {
+        "p75": 2139,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 66.6,
+          "needsImprovement": 21.2,
+          "poor": 12.2
+        }
+      },
+      "inp": {
+        "p75": 136,
+        "rating": "good",
+        "distribution": {
+          "good": 85.5,
+          "needsImprovement": 12.5,
+          "poor": 2.1
+        }
+      },
+      "lcp": {
+        "p75": 2578,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 73.8,
+          "needsImprovement": 15.2,
+          "poor": 11
+        }
+      },
+      "rtt": {
+        "p75": 189,
+        "rating": null,
+        "distribution": {
+          "good": 31.9,
+          "needsImprovement": 54.7,
+          "poor": 13.4
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "navigationTimedOut": false,
+    "generator": null,
+    "interstitial": null,
+    "host": {
+      "id": "fly",
+      "name": "Fly.io",
+      "icon": "Flydotio",
+      "source": "fly-request-id"
+    },
+    "headers": {
+      "fly-request-id": "01M11T42KPGPHCSTRJDCT8XNN7-iad",
+      "server": "Fly/c97294087 (2026-08-27)",
+      "via": "1.1 fly.io"
+    },
+    "violations": 1,
+    "passes": 703,
+    "incomplete": 59,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "scrollable-region-focusable",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Scrollable region must have keyboard access"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

@@ -1,0 +1,304 @@
+{
+  "url": "https://yarnpkg.com/",
+  "name": "Yarn",
+  "group": "package-managers",
+  "groupName": "Package Managers",
+  "timestamp": 1787771110675,
+  "date": "2026-08-26T19:05:10.675Z",
+  "runId": "2026-08-26T19-02-22-243Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 30531,
+  "error": null,
+  "variance": {
+    "min": 49,
+    "max": 71,
+    "spread": 22,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://yarnpkg.com/",
+    "finalUrl": "https://yarnpkg.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 64,
+      "accessibility": 93,
+      "best-practices": 100,
+      "seo": 92,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1114,
+      "lcp": 9937,
+      "si": 3448,
+      "tbt": 403,
+      "tti": 10728,
+      "cls": 0.002,
+      "ttfb": 664,
+      "maxPotentialFid": 321,
+      "serverResponseTime": 16,
+      "networkRtt": 0.1,
+      "networkServerLatency": 248.7
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 17.5,
+      "resourceLoadDelay": 105.4,
+      "resourceLoadDuration": 226.4,
+      "elementRenderDelay": 62.1
+    },
+    "weight": {
+      "total": 1699108,
+      "requests": 32,
+      "mainDocument": 6955,
+      "byType": {
+        "total": {
+          "bytes": 1699108,
+          "requests": 30
+        },
+        "image": {
+          "bytes": 965781,
+          "requests": 10
+        },
+        "script": {
+          "bytes": 610322,
+          "requests": 7
+        },
+        "stylesheet": {
+          "bytes": 57932,
+          "requests": 1
+        },
+        "font": {
+          "bytes": 45507,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 12611,
+          "requests": 10
+        },
+        "document": {
+          "bytes": 6955,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 57860,
+          "requests": 4
+        }
+      },
+      "scripts": 7,
+      "stylesheets": 1,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 3,
+      "bytes": 57860,
+      "mainThreadMs": 34.1,
+      "top": [
+        {
+          "entity": "datadoghq-browser-agent.com",
+          "bytes": 52299,
+          "mainThreadMs": 34.1
+        },
+        {
+          "entity": "GitHub",
+          "bytes": 5425,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "browser-intake-datadoghq.eu",
+          "bytes": 136,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 4683.3,
+      "byGroup": {
+        "other": 3252.5,
+        "scriptEvaluation": 924.8,
+        "scriptParseCompile": 334,
+        "styleLayout": 75.1,
+        "paintCompositeRender": 51.6,
+        "garbageCollection": 26.1,
+        "parseHTML": 19.1
+      },
+      "bootupMs": 1245.3,
+      "longTasks": 6,
+      "longestTaskMs": 321
+    },
+    "dom": {
+      "elements": 163,
+      "depth": 11,
+      "maxChildren": 10
+    },
+    "waste": {
+      "unusedJsBytes": 291839,
+      "unusedCssBytes": 49926,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 155141,
+      "unminifiedCssBytes": 12740,
+      "renderBlockingMs": 300,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 1143598.5183333333,
+      "poorlyCachedCount": 19
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 24,
+      "failingNodes": 7,
+      "failing": [
+        {
+          "id": "image-alt",
+          "title": "Image elements do not have `[alt]` attributes",
+          "nodes": 6
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 23
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2424.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-26T19:05:21.969Z",
+      "runtimeMs": 8779.5
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-28",
+      "last": "2026-08-24"
+    },
+    "metrics": {
+      "fcp": {
+        "p75": 1659,
+        "rating": "good",
+        "distribution": {
+          "good": 78.4,
+          "needsImprovement": 13.6,
+          "poor": 8
+        }
+      },
+      "inp": {
+        "p75": 205,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 74,
+          "needsImprovement": 20.9,
+          "poor": 5.2
+        }
+      },
+      "lcp": {
+        "p75": 1946,
+        "rating": "good",
+        "distribution": {
+          "good": 83.6,
+          "needsImprovement": 11.8,
+          "poor": 4.5
+        }
+      },
+      "rtt": {
+        "p75": 193,
+        "rating": null,
+        "distribution": {
+          "good": 24.3,
+          "needsImprovement": 62.9,
+          "poor": 12.8
+        }
+      },
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 94.8,
+          "needsImprovement": 4.3,
+          "poor": 0.9
+        }
+      },
+      "ttfb": {
+        "p75": 780,
+        "rating": "good",
+        "distribution": {
+          "good": 76.4,
+          "needsImprovement": 16.7,
+          "poor": 6.9
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "navigationTimedOut": false,
+    "generator": {
+      "id": "docusaurus",
+      "name": "Docusaurus",
+      "icon": "Docusaurus",
+      "version": "3.7.0",
+      "source": "meta",
+      "raw": "Docusaurus v3.7.0"
+    },
+    "interstitial": null,
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "cf-ray": "a3151bf249eacf22-SJC",
+      "server": "cloudflare",
+      "x-nf-request-id": "01M0ZQDCVF41JKP96NH6NHNMMY"
+    },
+    "violations": 7,
+    "passes": 174,
+    "incomplete": 10,
+    "violationRules": 2,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "image-alt",
+        "impact": "critical",
+        "nodes": 6,
+        "help": "Images must have alternative text"
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Heading levels should only increase by one"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

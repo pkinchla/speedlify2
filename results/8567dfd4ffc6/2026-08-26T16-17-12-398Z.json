@@ -1,0 +1,282 @@
+{
+  "url": "https://www.gatsbyjs.com/",
+  "name": "Gatsby",
+  "group": "ssg",
+  "groupName": "Site Generators",
+  "timestamp": 1787761032398,
+  "date": "2026-08-26T16:17:12.398Z",
+  "runId": "2026-08-26T16-17-05-781Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 29389,
+  "error": null,
+  "variance": {
+    "min": 64,
+    "max": 85,
+    "spread": 21,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.gatsbyjs.com/",
+    "finalUrl": "https://www.gatsbyjs.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 85,
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 92,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 935,
+      "lcp": 4048,
+      "si": 935,
+      "tbt": 180,
+      "tti": 4363,
+      "cls": 0,
+      "ttfb": 604,
+      "maxPotentialFid": 248,
+      "serverResponseTime": 3,
+      "networkRtt": 0.1,
+      "networkServerLatency": 4.1
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 5,
+      "resourceLoadDelay": 63.8,
+      "resourceLoadDuration": 4.6,
+      "elementRenderDelay": 225.9
+    },
+    "weight": {
+      "total": 469277,
+      "requests": 43,
+      "mainDocument": 32258,
+      "byType": {
+        "total": {
+          "bytes": 469277,
+          "requests": 42
+        },
+        "script": {
+          "bytes": 342520,
+          "requests": 28
+        },
+        "font": {
+          "bytes": 55666,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 32258,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 20130,
+          "requests": 8
+        },
+        "image": {
+          "bytes": 18703,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 9476,
+          "requests": 4
+        }
+      },
+      "scripts": 28,
+      "stylesheets": 0,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 9476,
+      "mainThreadMs": 0,
+      "top": [
+        {
+          "entity": "ctfassets.net",
+          "bytes": 9476,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1164.8,
+      "byGroup": {
+        "scriptEvaluation": 576.3,
+        "other": 224.6,
+        "scriptParseCompile": 171.6,
+        "styleLayout": 107,
+        "parseHTML": 47.6,
+        "paintCompositeRender": 28.1,
+        "garbageCollection": 9.5
+      },
+      "bootupMs": 585.2,
+      "longTasks": 4,
+      "longestTaskMs": 248
+    },
+    "dom": {
+      "elements": 331,
+      "depth": 13,
+      "maxChildren": 10
+    },
+    "waste": {
+      "unusedJsBytes": 62437,
+      "unusedCssBytes": 12112,
+      "legacyJsBytes": 12307,
+      "duplicatedJsBytes": 15721,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 29,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 2,
+      "baselineLimitedFeatures": 23
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2505,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-26T16:17:33.489Z",
+      "runtimeMs": 7154.4
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-28",
+      "last": "2026-08-24"
+    },
+    "metrics": {
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 98.3,
+          "needsImprovement": 0.3,
+          "poor": 1.4
+        }
+      },
+      "ttfb": {
+        "p75": 980,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 66.2,
+          "needsImprovement": 27.7,
+          "poor": 6.2
+        }
+      },
+      "fcp": {
+        "p75": 1284,
+        "rating": "good",
+        "distribution": {
+          "good": 87.2,
+          "needsImprovement": 8.8,
+          "poor": 4
+        }
+      },
+      "inp": {
+        "p75": 102,
+        "rating": "good",
+        "distribution": {
+          "good": 96.4,
+          "needsImprovement": 2.4,
+          "poor": 1.2
+        }
+      },
+      "lcp": {
+        "p75": 1932,
+        "rating": "good",
+        "distribution": {
+          "good": 86.5,
+          "needsImprovement": 9.6,
+          "poor": 3.9
+        }
+      },
+      "rtt": {
+        "p75": 196,
+        "rating": null,
+        "distribution": {
+          "good": 31.6,
+          "needsImprovement": 51.2,
+          "poor": 17.2
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "navigationTimedOut": false,
+    "generator": {
+      "id": "gatsby",
+      "name": "Gatsby",
+      "icon": "Gatsby",
+      "version": "4.24.6",
+      "source": "meta",
+      "raw": "Gatsby 4.24.6"
+    },
+    "interstitial": null,
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M0ZDST2PNNAK44PTQT0KAYVY"
+    },
+    "violations": 3,
+    "passes": 329,
+    "incomplete": 9,
+    "violationRules": 2,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "aria-allowed-role",
+        "impact": "minor",
+        "nodes": 2,
+        "help": "ARIA role should be appropriate for the element"
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "All page content should be contained by landmarks"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

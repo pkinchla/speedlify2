@@ -1,0 +1,231 @@
+{
+  "url": "https://2019.nejsconf.com/",
+  "name": "2019.nejsconf.com",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787846943165,
+  "date": "2026-08-27T16:09:03.165Z",
+  "runId": "2026-08-27T16-06-23-307Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 23603,
+  "error": null,
+  "variance": {
+    "min": 92,
+    "max": 95,
+    "spread": 3,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://2019.nejsconf.com/",
+    "finalUrl": "https://2019.nejsconf.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 94,
+      "accessibility": 94,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 799,
+      "lcp": 3156,
+      "si": 799,
+      "tbt": 13,
+      "tti": 3156,
+      "cls": 0.017,
+      "ttfb": 606,
+      "maxPotentialFid": 63,
+      "serverResponseTime": 7,
+      "networkRtt": 0.1,
+      "networkServerLatency": 6.3
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 8.7,
+      "resourceLoadDelay": 23.9,
+      "resourceLoadDuration": 27.5,
+      "elementRenderDelay": 81.8
+    },
+    "weight": {
+      "total": 490396,
+      "requests": 32,
+      "mainDocument": 3867,
+      "byType": {
+        "total": {
+          "bytes": 490396,
+          "requests": 32
+        },
+        "image": {
+          "bytes": 400117,
+          "requests": 26
+        },
+        "font": {
+          "bytes": 77444,
+          "requests": 3
+        },
+        "script": {
+          "bytes": 6960,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 3867,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 2008,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "other": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 84609,
+          "requests": 5
+        }
+      },
+      "scripts": 1,
+      "stylesheets": 1,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 84609,
+      "mainThreadMs": 0.9,
+      "top": [
+        {
+          "entity": "Adobe TypeKit",
+          "bytes": 84609,
+          "mainThreadMs": 0.9
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 584.4,
+      "byGroup": {
+        "other": 332.3,
+        "styleLayout": 160.1,
+        "paintCompositeRender": 47.1,
+        "scriptEvaluation": 32.1,
+        "parseHTML": 10.1,
+        "scriptParseCompile": 2.8
+      },
+      "bootupMs": 28.9,
+      "longTasks": 1,
+      "longestTaskMs": 63
+    },
+    "dom": {
+      "elements": 228,
+      "depth": 8,
+      "maxChildren": 17
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 6400.5,
+      "poorlyCachedCount": 2
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 14,
+      "failingNodes": 2,
+      "failing": [
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 1
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2480.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-27T16:09:19.277Z",
+      "runtimeMs": 6413.7
+    }
+  },
+  "field": null,
+  "axe": {
+    "navigationTimedOut": false,
+    "generator": null,
+    "interstitial": null,
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "server": "Netlify",
+      "x-nf-request-id": "01M11ZQE4MYQJ4PQR0FJGWQFCR"
+    },
+    "violations": 12,
+    "passes": 556,
+    "incomplete": 30,
+    "violationRules": 4,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 9,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Heading levels should only increase by one"
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should have one main landmark"
+      },
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Page should contain a level-one heading"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

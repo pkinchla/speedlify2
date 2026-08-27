@@ -1,0 +1,287 @@
+{
+  "url": "https://webflow.com/",
+  "name": "Webflow",
+  "group": "builders",
+  "groupName": "Website Builders",
+  "timestamp": 1787752995381,
+  "date": "2026-08-26T14:03:15.381Z",
+  "runId": "2026-08-26T13-54-09-279Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 66121,
+  "error": null,
+  "variance": {
+    "min": 28,
+    "max": 31,
+    "spread": 3,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://webflow.com/",
+    "finalUrl": "https://webflow.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 29,
+      "accessibility": 100,
+      "best-practices": 73,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 6465,
+      "lcp": 22689,
+      "si": 9619,
+      "tbt": 1953,
+      "tti": 24525,
+      "cls": 0,
+      "ttfb": 622,
+      "maxPotentialFid": 543,
+      "serverResponseTime": 159,
+      "networkRtt": 63.7,
+      "networkServerLatency": 218.3
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 269.7,
+      "elementRenderDelay": 2177.4
+    },
+    "weight": {
+      "total": 3296054,
+      "requests": 186,
+      "mainDocument": 109025,
+      "byType": {
+        "total": {
+          "bytes": 3296054,
+          "requests": 186
+        },
+        "script": {
+          "bytes": 1885273,
+          "requests": 69
+        },
+        "image": {
+          "bytes": 978293,
+          "requests": 59
+        },
+        "font": {
+          "bytes": 214321,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 114863,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 55967,
+          "requests": 7
+        },
+        "other": {
+          "bytes": 47337,
+          "requests": 46
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 3158390,
+          "requests": 182
+        }
+      },
+      "scripts": 69,
+      "stylesheets": 7,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 30,
+      "bytes": 3152552,
+      "mainThreadMs": 1077.8,
+      "top": [
+        {
+          "entity": "website-files.com",
+          "bytes": 1384535,
+          "mainThreadMs": 71.8
+        },
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 520943,
+          "mainThreadMs": 295.1
+        },
+        {
+          "entity": "Facebook",
+          "bytes": 232338,
+          "mainThreadMs": 137.8
+        },
+        {
+          "entity": "transcend-cdn.com",
+          "bytes": 163583,
+          "mainThreadMs": 79.8
+        },
+        {
+          "entity": "qualified.com",
+          "bytes": 127466,
+          "mainThreadMs": 46.2
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 10397.9,
+      "byGroup": {
+        "scriptEvaluation": 4905.5,
+        "other": 2224.7,
+        "styleLayout": 1971.9,
+        "scriptParseCompile": 633.5,
+        "paintCompositeRender": 372.7,
+        "parseHTML": 175.7,
+        "garbageCollection": 113.8
+      },
+      "bootupMs": 5108.6,
+      "longTasks": 20,
+      "longestTaskMs": 543
+    },
+    "dom": {
+      "elements": 3824,
+      "depth": 25,
+      "maxChildren": 37
+    },
+    "waste": {
+      "unusedJsBytes": 627216,
+      "unusedCssBytes": 23182,
+      "legacyJsBytes": 58294,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 4885,
+      "renderBlockingCount": 4,
+      "poorlyCachedBytes": 788046.3387500006,
+      "poorlyCachedCount": 62
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 32,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": null,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 2,
+      "baselineLimitedFeatures": 60
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2617,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-26T14:03:16.728Z",
+      "runtimeMs": 20518.4
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-28",
+      "last": "2026-08-24"
+    },
+    "metrics": {
+      "inp": {
+        "p75": 350,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 51.9,
+          "needsImprovement": 34.1,
+          "poor": 14.1
+        }
+      },
+      "lcp": {
+        "p75": 5071,
+        "rating": "poor",
+        "distribution": {
+          "good": 42.4,
+          "needsImprovement": 21.4,
+          "poor": 36.2
+        }
+      },
+      "rtt": {
+        "p75": 178,
+        "rating": null,
+        "distribution": {
+          "good": 30.8,
+          "needsImprovement": 58.6,
+          "poor": 10.6
+        }
+      },
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 90.4,
+          "needsImprovement": 8.1,
+          "poor": 1.5
+        }
+      },
+      "ttfb": {
+        "p75": 1765,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 46.6,
+          "needsImprovement": 29.2,
+          "poor": 24.2
+        }
+      },
+      "fcp": {
+        "p75": 4423,
+        "rating": "poor",
+        "distribution": {
+          "good": 38.2,
+          "needsImprovement": 19.8,
+          "poor": 42.1
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": {
+      "id": "webflow",
+      "name": "Webflow",
+      "icon": "Webflow",
+      "version": null,
+      "source": "meta",
+      "raw": "Webflow"
+    },
+    "interstitial": null,
+    "host": null,
+    "headers": {
+      "cf-ray": "a313614a6a56c927-IAD"
+    },
+    "violations": 1,
+    "passes": 2401,
+    "incomplete": 101,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

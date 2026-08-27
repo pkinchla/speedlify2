@@ -1,0 +1,253 @@
+{
+  "url": "https://2022.barcampomaha.org/",
+  "name": "2022.barcampomaha.org",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787846969767,
+  "date": "2026-08-27T16:09:29.767Z",
+  "runId": "2026-08-27T16-06-23-307Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 27823,
+  "error": null,
+  "variance": {
+    "min": 78,
+    "max": 80,
+    "spread": 2,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://2022.barcampomaha.org/",
+    "finalUrl": "https://2022.barcampomaha.org/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 80,
+      "accessibility": 81,
+      "best-practices": 100,
+      "seo": 92,
+      "agentic-browsing": 98
+    },
+    "timings": {
+      "fcp": 2823,
+      "lcp": 4138,
+      "si": 2823,
+      "tbt": 8,
+      "tti": 4502,
+      "cls": 0.078,
+      "ttfb": 609,
+      "maxPotentialFid": 62,
+      "serverResponseTime": 3,
+      "networkRtt": 0.2,
+      "networkServerLatency": 129.9
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 4.9,
+      "resourceLoadDelay": 145.1,
+      "resourceLoadDuration": 22.9,
+      "elementRenderDelay": 62.7
+    },
+    "weight": {
+      "total": 574426,
+      "requests": 55,
+      "mainDocument": 6990,
+      "byType": {
+        "total": {
+          "bytes": 574426,
+          "requests": 55
+        },
+        "image": {
+          "bytes": 384704,
+          "requests": 19
+        },
+        "script": {
+          "bytes": 83166,
+          "requests": 5
+        },
+        "font": {
+          "bytes": 78200,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 18678,
+          "requests": 25
+        },
+        "document": {
+          "bytes": 8347,
+          "requests": 2
+        },
+        "other": {
+          "bytes": 1331,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 161829,
+          "requests": 9
+        }
+      },
+      "scripts": 5,
+      "stylesheets": 25,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 84019,
+      "mainThreadMs": 0.3,
+      "top": [
+        {
+          "entity": "Google Fonts",
+          "bytes": 79171,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Unpkg",
+          "bytes": 4848,
+          "mainThreadMs": 0.3
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 2641.6,
+      "byGroup": {
+        "styleLayout": 1418.2,
+        "other": 789.6,
+        "paintCompositeRender": 307.1,
+        "scriptEvaluation": 90.7,
+        "parseHTML": 34.2,
+        "scriptParseCompile": 1.8
+      },
+      "bootupMs": 84,
+      "longTasks": 2,
+      "longestTaskMs": 62
+    },
+    "dom": {
+      "elements": 226,
+      "depth": 8,
+      "maxChildren": 29
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 1082,
+      "renderBlockingCount": 25,
+      "poorlyCachedBytes": 228,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 3,
+      "applicableCount": 15,
+      "failingNodes": 6,
+      "failing": [
+        {
+          "id": "image-alt",
+          "title": "Image elements do not have `[alt]` attributes",
+          "nodes": 4
+        },
+        {
+          "id": "frame-title",
+          "title": "`<frame>` or `<iframe>` elements do not have a title",
+          "nodes": 1
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 13
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2500,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-27T16:09:39.750Z",
+      "runtimeMs": 7764.3
+    }
+  },
+  "field": null,
+  "axe": {
+    "navigationTimedOut": false,
+    "generator": null,
+    "interstitial": null,
+    "host": {
+      "id": "vercel",
+      "name": "Vercel",
+      "icon": "Vercel",
+      "source": "x-vercel-id"
+    },
+    "headers": {
+      "server": "Vercel",
+      "x-vercel-id": "iad1::jzs8s-1787846995330-4f8380b4fba8"
+    },
+    "violations": 10,
+    "passes": 502,
+    "incomplete": 14,
+    "violationRules": 6,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "image-alt",
+        "impact": "critical",
+        "nodes": 4,
+        "help": "Images must have alternative text"
+      },
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "nodes": 2,
+        "help": "Page should contain a level-one heading"
+      },
+      {
+        "id": "frame-title",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Frames must have an accessible name"
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Heading levels should only increase by one"
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "All page content should be contained by landmarks"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

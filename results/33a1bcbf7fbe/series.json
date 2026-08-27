@@ -1,0 +1,11 @@
+{"version":1,"url":"https://jak2k.eu/","updated":"2026-08-26T12:59:29.790Z","points":[
+{"t":1787268660383,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":1,"runs":0,"reqRuns":3,"ms":20827},
+{"t":1787323356446,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":2,"runs":0,"reqRuns":3,"ms":20706},
+{"t":1787347764723,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":3,"runs":0,"reqRuns":3,"ms":20370},
+{"t":1787370318555,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":4,"runs":0,"reqRuns":3,"ms":21015},
+{"t":1787402455664,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":5,"runs":0,"reqRuns":3,"ms":19684},
+{"t":1787463202636,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":6,"runs":0,"reqRuns":3,"ms":21209},
+{"t":1787550109018,"error":"CHROME_INTERSTITIAL_ERROR: Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests.","fails":7,"runs":0,"reqRuns":3,"ms":20412},
+{"t":1787650717578,"error":"lighthouse timed out after 120000ms","fails":8,"runs":0,"reqRuns":3,"ms":280956},
+{"t":1787748890710,"error":"lighthouse timed out after 120000ms","fails":9,"runs":0,"reqRuns":3,"ms":279040}
+]}

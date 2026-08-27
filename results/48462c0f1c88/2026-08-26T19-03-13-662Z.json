@@ -1,0 +1,285 @@
+{
+  "url": "https://crates.io/",
+  "name": "crates.io",
+  "group": "package-managers",
+  "groupName": "Package Managers",
+  "timestamp": 1787770993662,
+  "date": "2026-08-26T19:03:13.662Z",
+  "runId": "2026-08-26T19-02-33-695Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 27279,
+  "error": null,
+  "variance": {
+    "min": 72,
+    "max": 95,
+    "spread": 23,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://crates.io/",
+    "finalUrl": "https://crates.io/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 95,
+      "accessibility": 96,
+      "best-practices": 100,
+      "seo": 92,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1583,
+      "lcp": 2773,
+      "si": 1583,
+      "tbt": 69,
+      "tti": 2803,
+      "cls": 0.01,
+      "ttfb": 608,
+      "maxPotentialFid": 141,
+      "serverResponseTime": 117,
+      "networkRtt": 0.2,
+      "networkServerLatency": 8.3
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 118.2,
+      "elementRenderDelay": 496.7
+    },
+    "weight": {
+      "total": 203878,
+      "requests": 64,
+      "mainDocument": 2488,
+      "byType": {
+        "total": {
+          "bytes": 199121,
+          "requests": 52
+        },
+        "script": {
+          "bytes": 83482,
+          "requests": 35
+        },
+        "font": {
+          "bytes": 74644,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 18600,
+          "requests": 8
+        },
+        "other": {
+          "bytes": 17257,
+          "requests": 4
+        },
+        "image": {
+          "bytes": 2650,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 2488,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 6212,
+          "requests": 1
+        }
+      },
+      "scripts": 35,
+      "stylesheets": 8,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 6212,
+      "mainThreadMs": 0,
+      "top": [
+        {
+          "entity": "rust-lang.org",
+          "bytes": 6212,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1288.8,
+      "byGroup": {
+        "other": 403.1,
+        "scriptEvaluation": 299.2,
+        "styleLayout": 269.1,
+        "paintCompositeRender": 247.4,
+        "parseHTML": 65.4,
+        "scriptParseCompile": 4.6
+      },
+      "bootupMs": 299.2,
+      "longTasks": 2,
+      "longestTaskMs": 141
+    },
+    "dom": {
+      "elements": 658,
+      "depth": 12,
+      "maxChildren": 10
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 150,
+      "renderBlockingCount": 4,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 27,
+      "failingNodes": 160,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "nodes": 100
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "nodes": 60
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 21
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2449.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-26T19:03:31.475Z",
+      "runtimeMs": 7886.8
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-28",
+      "last": "2026-08-24"
+    },
+    "metrics": {
+      "ttfb": {
+        "p75": 1065,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 60.9,
+          "needsImprovement": 31.6,
+          "poor": 7.5
+        }
+      },
+      "fcp": {
+        "p75": 1879,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 72.5,
+          "needsImprovement": 20,
+          "poor": 7.5
+        }
+      },
+      "inp": {
+        "p75": 105,
+        "rating": "good",
+        "distribution": {
+          "good": 92.1,
+          "needsImprovement": 6,
+          "poor": 1.9
+        }
+      },
+      "lcp": {
+        "p75": 1983,
+        "rating": "good",
+        "distribution": {
+          "good": 85.8,
+          "needsImprovement": 10,
+          "poor": 4.3
+        }
+      },
+      "rtt": {
+        "p75": 180,
+        "rating": null,
+        "distribution": {
+          "good": 36.9,
+          "needsImprovement": 51.5,
+          "poor": 11.6
+        }
+      },
+      "cls": {
+        "p75": 0.21,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 66.4,
+          "needsImprovement": 10.6,
+          "poor": 23
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "navigationTimedOut": false,
+    "generator": {
+      "id": "sveltekit",
+      "name": "SvelteKit",
+      "icon": "Svelte",
+      "version": null,
+      "source": "dom",
+      "raw": null
+    },
+    "interstitial": null,
+    "host": {
+      "id": null,
+      "name": "Heroku",
+      "icon": null,
+      "source": "server"
+    },
+    "headers": {
+      "server": "Heroku",
+      "via": "1.1 heroku-router, 1.1 varnish",
+      "x-served-by": "cache-sjc1000137-SJC, cache-sjc1000113-SJC"
+    },
+    "violations": 100,
+    "passes": 1422,
+    "incomplete": 2,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 100,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

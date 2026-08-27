@@ -12,7 +12,17 @@ eleventyComputed:
 {% from "statbar.njk" import statbar %}
 
 <header class="detail-head">
-	<h2 class="page-hed">{{ group.name }}</h2>
+	{#
+		The heading and the way in, on one row. Right-aligned rather than under
+		the description, because it is the one thing on this page a reader might
+		have come to *do* — everything else here is something to read.
+	#}
+	<div class="group-title">
+		<h2 class="page-hed">{{ group.name }}</h2>
+		{% if group.submitUrl %}
+		<a class="cta" href="{{ group.submitUrl }}">{{ group.submitLabel }}</a>
+		{% endif %}
+	</div>
 	{#
 		`safe` because a description may carry a link — the community list names
 		the repository it comes from, and that is worth being clickable. These
@@ -28,9 +38,26 @@ eleventyComputed:
 	<p class="muted">
 		{{ group.measured }} of {{ group.entries.length | countOf("site") }} measured
 		{%- if group.freshnessHours %} · each site {{ group.freshnessHours | cadence }}
-		{%- if group.lastMeasured %}, most recently {{ group.lastMeasured | since }} ago{% endif %}
+		{%- if group.lastMeasured %}, most recently <time datetime="{{ group.lastMeasured | iso }}">{{ group.lastMeasured | since }}</time> ago{% endif %}
 		{%- endif %}
 	</p>
+	{#
+		The other half of the note on the home page's Perfect scores board. Said
+		here too because this is where someone notices the absence: a starter with
+		full marks that is not on that board looks like an oversight unless the
+		page it *is* on explains itself.
+
+		Read from the category rather than counted from its rows, so it still says
+		so before anything here has been measured.
+	#}
+	{% if group.excludeFromPerfectScores %}
+	<p class="muted small">
+		Perfect scores here are kept off the <a href="/#leaderboard">home page's board</a>.
+		These are demonstrations of a stack rather than sites someone runs, so full
+		marks is the expected result. They rank normally on this page and in the
+		overall leaderboard.
+	</p>
+	{% endif %}
 </header>
 
 {# The same tiles as the home page, over this category alone. #}
@@ -150,8 +177,11 @@ eleventyComputed:
 				<th class="col-stack" title="Who serves the site, detected from its response headers on the same page load">Host</th>
 				<th class="col-rings" title="The four Lighthouse categories, then violating nodes from a full axe run and the Core Web Vitals verdict from real users. The ranking breaks ties the other way round: Core Web Vitals first, then axe">Scores</th>
 				<th class="col-trend">Perf trend</th>
-				<th class="col-lcp"><span class="lcp-head">LCP</span></th><th>CLS</th><th>TBT</th>
+				<th class="col-lcp"><span class="lcp-head">LCP</span></th>
+				<th>CLS</th><th>TBT</th>
 				<th>Weight</th><th>Req</th>
+				<th class="col-lvf" title="The lab LCP as a multiple of the real-user p75. Above 1x the lab is slower than reality; below 1x the lab number is flattering the site. Only where CrUX has field data">Lab vs field</th>
+				<th class="col-nojs" title="Share of pixels that differ between the page as rendered and the same page with scripts disabled. A shifted layout counts, so a noscript banner alone can account for a large figure. Only measured where a no-JS capture is stored">No-JS ∆</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -170,7 +200,7 @@ eleventyComputed:
 						{% if avatar %}<img class="favicon" src="{{ avatar }}" width="32" height="32" alt="" loading="lazy" decoding="async">{% endif %}
 						<span title="{{ entry.displayUrl }}">{{ entry.displayUrl }}</span>
 					</a>
-					{% if entry.latest %}<span class="updated-tag {{ 'stale-age' if entry.dataStale }}" title="Measured {{ entry.latest.date | date('long') }}">{{ entry.latest.date | since }}</span>{% else %}<span class="updated-tag never">never</span>{% endif %}
+					{% if entry.latest %}<span class="updated-tag {{ 'stale-age' if entry.dataStale }}" title="Measured {{ entry.latest.date | date('long') }}"><time datetime="{{ entry.latest.date | iso }}">{{ entry.latest.date | since }}</time></span>{% else %}<span class="updated-tag never">never</span>{% endif %}
 					{% if entry.currentlyFailing %}<span class="badge badge-error" title="{{ entry.lastError }}">failing</span>{% endif %}
 					{% if entry.redirectTo and entry.redirectTo != entry.url %}<span class="badge badge-redirect" title="Measured through a redirect to {{ entry.redirectTo }}{% if entry.redirectConfirmed %} — confirmed, so history will follow it{% else %} — {{ entry.redirectReason }}{% endif %}">&#8618; redirect</span>
 					{% elif entry.canonicalUrl %}<span class="badge badge-redirect" title="Measured through a redirect to {{ entry.canonicalUrl }} — the site's canonical form of this URL">&#8618; redirect</span>{% endif %}
@@ -213,16 +243,30 @@ eleventyComputed:
 					<td class="num">{{ entry.latest.lab.timings.tbt | ms }}</td>
 					<td class="num">{{ entry.latest.lab.weight.total | bytes }}</td>
 					<td class="num">{{ entry.latest.lab.weight.requests | num }}</td>
+					<td class="num">{% if entry.labVsField %}<span class="lvf" title="Lab LCP {{ entry.labVsField.lab | ms }}, field p75 {{ entry.labVsField.field | ms }}">{{ entry.labVsField.ratio }}&times;</span>{% else %}<span class="muted">&mdash;</span>{% endif %}</td>
+					<td class="num">{% if entry.ownScreenshot and entry.ownScreenshot.difference !== null %}{{ entry.ownScreenshot.difference }}%{% else %}<span class="muted">&mdash;</span>{% endif %}</td>
 				{% else %}
-					{# 9 either way: dropping the rank column removes a cell from this row too, so
-   the span covers the same remainder. #}
-				<td colspan="9" class="muted">not measured yet</td>
+					{# 11 either way: dropping the rank column removes a cell from this row too,
+   so the span covers the same remainder. #}
+				<td colspan="11" class="muted">not measured yet</td>
 				{% endif %}
 			</tr>
 		{% endfor %}
 		</tbody>
 	</table>
 	</div>
+
+	{#
+		Right after the ranked table, for a reader who has finished the leaderboard
+		itself — but only when there is an overflow list below to separate it from
+		the one at the end of the page. Without that list the two would sit a
+		paragraph apart, which reads as a stutter rather than as two exits.
+	#}
+	{% if group.submitUrl and rest.length %}
+	<p class="cta-footer">
+		<a class="cta" href="{{ group.submitUrl }}">{{ group.submitLabel }}</a>
+	</p>
+	{% endif %}
 
 	{% if rest.length %}
 	{#
@@ -255,6 +299,17 @@ eleventyComputed:
 		</li>
 		{% endfor %}
 	</ul>
+	{% endif %}
+
+	{#
+		Last on the page, after the overflow list as well as the table. Someone who
+		has read both and still not found their own site is exactly who this is
+		for, and by then the header is a thousand rows away.
+	#}
+	{% if group.submitUrl %}
+	<p class="cta-footer">
+		<a class="cta" href="{{ group.submitUrl }}">{{ group.submitLabel }}</a>
+	</p>
 	{% endif %}
 </section>
 {% endif %}

@@ -27,17 +27,6 @@ permalink: /index.html
 {% if sites.orphans.length %}{% set toc = (toc.push({ id: "orphans", label: "Orphaned" }), toc) %}{% endif %}
 {% if sites.archived.length %}{% set toc = (toc.push({ id: "archived", label: "Archived" }), toc) %}{% endif %}
 
-{% if toc.length > 1 %}
-<nav class="contents contents-sticky" aria-label="On this page">
-	<span class="contents-label">On this page</span>
-	<ul>
-		{% for item in toc %}
-		<li><a href="#{{ item.id }}">{{ item.label }}</a></li>
-		{% endfor %}
-	</ul>
-</nav>
-{% endif %}
-
 {% if sites.groups.length > 1 or sites.moving.length or sites.orphans.length %}
 <section class="group" id="categories">
 	<div class="group-head">
@@ -47,8 +36,14 @@ permalink: /index.html
 	   screen reader announces is the one on the page. #}
 	<nav class="contents contents-categories" aria-labelledby="categories-heading">
 	<ul>
+		{#
+			`hideFromCategoryList` is about this list and nothing else — the category
+			keeps its page, its place in the switcher, and every ranking its sites
+			appear in. It is an editorial decision about what belongs on a front
+			page, not a way to retire a category.
+		#}
 		{% for group in sites.groups %}
-		{% if group.entries.length %}
+		{% if group.entries.length and not group.hideFromCategoryList %}
 		<li>
 			<a href="/group/{{ group.id }}/">{{ group.name }}</a>
 			{#
@@ -65,7 +60,7 @@ permalink: /index.html
 				round — a figure worth showing rather than leaving to be inferred.
 			#}
 			{% if group.lastMeasured %}
-			<span class="contents-age" title="Most recently measured site in {{ group.name }}: {{ group.lastMeasured | date('long') }}">{{ group.lastMeasured | since }} ago</span>
+			<span class="contents-age" title="Most recently measured site in {{ group.name }}: {{ group.lastMeasured | date('long') }}"><time datetime="{{ group.lastMeasured | iso }}">{{ group.lastMeasured | since }}</time> ago</span>
 			{% endif %}
 		</li>
 		{% endif %}
@@ -79,6 +74,17 @@ permalink: /index.html
 	</ul>
 </nav>
 </section>
+{% endif %}
+
+{% if toc.length > 1 %}
+<nav class="contents contents-sticky" aria-label="On this page">
+	<span class="contents-label">On this page</span>
+	<ul>
+		{% for item in toc %}
+		<li><a href="#{{ item.id }}">{{ item.label }}</a></li>
+		{% endfor %}
+	</ul>
+</nav>
 {% endif %}
 
 <section class="group statbar-section" id="summary">
@@ -216,7 +222,15 @@ permalink: /index.html
 {% endfor %}
 <section class="group" id="leaderboard">
 	<div class="group-head">
-		<h2>Perfect scores</h2>
+		{#
+			The row count beside the heading. `shown` is every qualifying site, not
+			a page of them, so this is the size of the board rather than of a view
+			onto it — and it answers the first question the table raises without
+			making anyone scroll to the end to count.
+		#}
+		<h2>Perfect scores
+			<span class="head-count" title="{{ shown.length | num }} of {{ sites.stats.measured | num }} measured {{ sites.stats.measured | plural('site') }} score {{ perfectTotal }} with nothing amber or red beside it">{{ shown.length | num }} {{ shown.length | plural('site') }}</span>
+		</h2>
 		<p class="muted">
 			{{ perfectTotal }} in all {{ metrics.SCORES.length }} Lighthouse categories, no axe
 			violations, and no Core Web Vital failing real users. Sites CrUX has no data
@@ -224,6 +238,30 @@ permalink: /index.html
 			that, so the order comes down to the last tiebreaker: Speed Index per KB,
 			plus TTFB and blocking time — a fast heavy site outranks a fast empty one.
 		</p>
+		{#
+			Stated rather than left to be noticed. A starter is a near-empty
+			demonstration of a stack, so full marks there is the expected result
+			rather than an achievement, and enough of them would crowd out the sites
+			this board exists to show. They are still ranked on their own category
+			page and in the overall leaderboard below.
+
+			Counted from the entries rather than hardcoded, so the sentence cannot
+			outlive the decision — a category dropping `excludeFromPerfectScores`
+			leaves nothing here to say.
+		#}
+		{% set excluded = [] %}
+		{% for entry in sites.entries %}
+			{% if entry.perfect and entry.excludedFromPerfectScores %}{% set excluded = (excluded.push(entry), excluded) %}{% endif %}
+		{% endfor %}
+		{% if excluded.length %}
+		<p class="muted small">
+			Excludes <a href="/group/11ty-starters/">starter projects</a>&nbsp;&mdash;
+			{{ excluded.length }} of them score {{ perfectTotal }} too. A starter is a
+			demonstration of a stack rather than a site someone runs, so a perfect
+			score there is the expected result. They still rank below and on their own
+			page.
+		</p>
+		{% endif %}
 	</div>
 
 	<div class="table-scroll">
@@ -241,6 +279,8 @@ permalink: /index.html
 				<th>TBT</th>
 				<th>Weight</th>
 				<th>Req</th>
+				<th class="col-lvf" title="The lab LCP as a multiple of the real-user p75. Above 1x the lab is slower than reality; below 1x the lab number is flattering the site. Only where CrUX has field data">Lab vs field</th>
+				<th class="col-nojs" title="Share of pixels that differ between the page as rendered and the same page with scripts disabled. A shifted layout counts, so a noscript banner alone can account for a large figure. Only measured where a no-JS capture is stored">No-JS ∆</th>
 				{#
 					Last, and only on this table. The board is drawn from every
 					category at once, so "which list is this from?" is a question only
@@ -279,7 +319,7 @@ permalink: /index.html
 						{% if avatar %}<img class="favicon" src="{{ avatar }}" width="32" height="32" alt="" loading="lazy" decoding="async">{% endif %}
 						<span title="{{ entry.displayUrl }}">{{ entry.displayUrl }}</span>
 					</a>
-					{% if entry.latest %}<span class="updated-tag {{ 'stale-age' if entry.dataStale }}" title="Measured {{ entry.latest.date | date('long') }}">{{ entry.latest.date | since }}</span>{% else %}<span class="updated-tag never">never</span>{% endif %}
+					{% if entry.latest %}<span class="updated-tag {{ 'stale-age' if entry.dataStale }}" title="Measured {{ entry.latest.date | date('long') }}"><time datetime="{{ entry.latest.date | iso }}">{{ entry.latest.date | since }}</time></span>{% else %}<span class="updated-tag never">never</span>{% endif %}
 					{% if entry.currentlyFailing %}<span class="badge badge-error" title="{{ entry.lastError }}">failing</span>{% endif %}
 					{% if entry.redirectTo and entry.redirectTo != entry.url %}<span class="badge badge-redirect" title="Measured through a redirect to {{ entry.redirectTo }}{% if entry.redirectConfirmed %} — confirmed, so history will follow it{% else %} — {{ entry.redirectReason }}{% endif %}">&#8618; redirect</span>
 					{% elif entry.canonicalUrl %}<span class="badge badge-redirect" title="Measured through a redirect to {{ entry.canonicalUrl }} — the site's canonical form of this URL">&#8618; redirect</span>{% endif %}
@@ -327,13 +367,15 @@ permalink: /index.html
 					<td class="num">{{ entry.latest.lab.timings.tbt | ms }}</td>
 					<td class="num">{{ entry.latest.lab.weight.total | bytes }}</td>
 					<td class="num">{{ entry.latest.lab.weight.requests | num }}</td>
+					<td class="num">{% if entry.labVsField %}<span class="lvf" title="Lab LCP {{ entry.labVsField.lab | ms }}, field p75 {{ entry.labVsField.field | ms }}">{{ entry.labVsField.ratio }}&times;</span>{% else %}<span class="muted">&mdash;</span>{% endif %}</td>
+					<td class="num">{% if entry.ownScreenshot and entry.ownScreenshot.difference !== null %}{{ entry.ownScreenshot.difference }}%{% else %}<span class="muted">&mdash;</span>{% endif %}</td>
 					<td class="col-cats">
 						{#- Names and ids are index-aligned, so the id for a name is its
 						    position in the other list. #}
 						<span class="cat-chips">{% for name in entry.groupNames %}<a class="cat-chip" href="/group/{{ entry.groups[loop.index0] }}/">{{ name }}</a>{% endfor %}</span>
 					</td>
 				{% else %}
-					<td class="num muted" colspan="10">
+					<td class="num muted" colspan="12">
 						{% if entry.currentlyFailing %}every attempt failed{% else %}awaiting first measurement{% endif %}
 					</td>
 				{% endif %}

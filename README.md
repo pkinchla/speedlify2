@@ -12,6 +12,63 @@ npm run backfill    # seed ~25 weeks of CrUX field history (needs CRUX_API_KEY)
 npm start           # generate the report, then build and serve at localhost:8080
 ```
 
+## Starting your own instance
+
+**Use this template**, don't fork. A fork carries every commit of this repository
+and stays linked to it; the template button gives you a repository with a single
+commit that is yours. Nothing in this project can undo a fork's history from the
+inside, so this is the one step that has to happen on GitHub rather than here.
+
+Then, before you measure anything:
+
+```bash
+npm install
+npm run reset
+```
+
+`npm run reset` empties this instance out of your copy. Run it first — without
+it, `npm run measure` spends its first batch on sites from the list above rather
+than yours. It prints everything it intends to do and waits for you to type
+`reset`, and it:
+
+- deletes `results/`, which is roughly 30 MB of measurements belonging to this
+  instance, and the run logs beside it
+- replaces `config/sites.js` with [`config/sites.example.js`](config/sites.example.js)
+  — three sites in one category, enough to run
+- removes the imported site lists in `config/` (about 1,500 URLs from the
+  Eleventy community, starters and emeritus lists) and the scripts that generate
+  them
+- clears the priority queue and the built `report.json`
+
+It leaves the code, the workflows, `src/`, `lib/` and your git history alone. Run
+it twice and the second run tells you there is nothing to do.
+
+```bash
+npm run reset -- --dry-run   # show the plan, change nothing
+npm run reset -- --yes       # skip the confirmation, for scripting
+```
+
+Two things to set afterwards, both read from the environment with this
+instance's values as fallbacks — see [`src/_data/meta.js`](src/_data/meta.js):
+
+```bash
+SPEEDLIFY_SITE_URL=https://example.com   # where your instance is published
+SPEEDLIFY_REPO_URL=https://github.com/you/your-repo
+```
+
+Then edit `config/sites.js` and you are running your own instance:
+
+```bash
+npm run measure
+npm start
+```
+
+One inherited design worth knowing about: every measurement is committed, on
+purpose — `measure` and `publish` are separate workflows on separate checkouts,
+and the repository is the only channel between them. Your repository will grow
+the same way this one has. [`npm run clean`](#sizing-it) prunes old measurements
+when that starts to matter.
+
 ## How it works
 
 Three independent steps. None waits for another, and none needs a previous one to have completed fully.

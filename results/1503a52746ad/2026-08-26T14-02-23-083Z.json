@@ -1,0 +1,288 @@
+{
+  "url": "https://nordcraft.com/",
+  "name": "Nordcraft",
+  "group": "builders",
+  "groupName": "Website Builders",
+  "timestamp": 1787752943083,
+  "date": "2026-08-26T14:02:23.083Z",
+  "runId": "2026-08-26T13-54-09-279Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 52294,
+  "error": null,
+  "variance": {
+    "min": 51,
+    "max": 54,
+    "spread": 3,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://nordcraft.com/",
+    "finalUrl": "https://nordcraft.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 51,
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 100,
+      "agentic-browsing": 98
+    },
+    "timings": {
+      "fcp": 3635,
+      "lcp": 11360,
+      "si": 3635,
+      "tbt": 585,
+      "tti": 12241,
+      "cls": 0.068,
+      "ttfb": 634,
+      "maxPotentialFid": 476,
+      "serverResponseTime": 280,
+      "networkRtt": 0.3,
+      "networkServerLatency": 139.8
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 281.8,
+      "resourceLoadDelay": 30.3,
+      "resourceLoadDuration": 161.2,
+      "elementRenderDelay": 1688.3
+    },
+    "weight": {
+      "total": 5454149,
+      "requests": 150,
+      "mainDocument": 120591,
+      "byType": {
+        "total": {
+          "bytes": 5454149,
+          "requests": 150
+        },
+        "media": {
+          "bytes": 2828779,
+          "requests": 2
+        },
+        "image": {
+          "bytes": 1849318,
+          "requests": 78
+        },
+        "script": {
+          "bytes": 394706,
+          "requests": 8
+        },
+        "font": {
+          "bytes": 202455,
+          "requests": 5
+        },
+        "document": {
+          "bytes": 120591,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 49254,
+          "requests": 4
+        },
+        "other": {
+          "bytes": 9046,
+          "requests": 52
+        },
+        "third-party": {
+          "bytes": 181820,
+          "requests": 7
+        }
+      },
+      "scripts": 8,
+      "stylesheets": 4,
+      "fonts": 5
+    },
+    "thirdParty": {
+      "count": 3,
+      "bytes": 181820,
+      "mainThreadMs": 0.7,
+      "top": [
+        {
+          "entity": "toddle.site",
+          "bytes": 173592,
+          "mainThreadMs": 0.7
+        },
+        {
+          "entity": "JSDelivr CDN",
+          "bytes": 4915,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "toddle.dev",
+          "bytes": 3313,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 5214.6,
+      "byGroup": {
+        "styleLayout": 1698.3,
+        "other": 1628.1,
+        "scriptEvaluation": 1115.8,
+        "paintCompositeRender": 465.8,
+        "garbageCollection": 155.8,
+        "parseHTML": 125.1,
+        "scriptParseCompile": 25.7
+      },
+      "bootupMs": 1130.9,
+      "longTasks": 14,
+      "longestTaskMs": 476
+    },
+    "dom": {
+      "elements": 3667,
+      "depth": 24,
+      "maxChildren": 112
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 47682,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 4384,
+      "unminifiedCssBytes": 14640,
+      "renderBlockingMs": 300,
+      "renderBlockingCount": 3,
+      "poorlyCachedBytes": 2613680.9299999992,
+      "poorlyCachedCount": 83
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 27,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": null,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 1,
+      "baselineLimitedFeatures": 41
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2579,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-26T14:02:42.240Z",
+      "runtimeMs": 14726.1
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-28",
+      "last": "2026-08-24"
+    },
+    "metrics": {
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 92,
+          "needsImprovement": 5.3,
+          "poor": 2.7
+        }
+      },
+      "ttfb": {
+        "p75": 2165,
+        "rating": "poor",
+        "distribution": {
+          "good": 40,
+          "needsImprovement": 25,
+          "poor": 35
+        }
+      },
+      "fcp": {
+        "p75": 2899,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 48,
+          "needsImprovement": 28,
+          "poor": 24
+        }
+      },
+      "lcp": {
+        "p75": 3489,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 50.1,
+          "needsImprovement": 28.7,
+          "poor": 21.3
+        }
+      },
+      "rtt": {
+        "p75": 228,
+        "rating": null,
+        "distribution": {
+          "good": 30.4,
+          "needsImprovement": 55.3,
+          "poor": 14.3
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 2
+  },
+  "axe": {
+    "generator": null,
+    "interstitial": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a31360e1b83ce66c-LAX",
+      "server": "cloudflare",
+      "x-powered-by": "Nordcraft"
+    },
+    "violations": 173,
+    "passes": 2613,
+    "incomplete": 56,
+    "violationRules": 3,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 170,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "scrollable-region-focusable",
+        "impact": "serious",
+        "nodes": 2,
+        "help": "Scrollable region must have keyboard access"
+      },
+      {
+        "id": "image-redundant-alt",
+        "impact": "minor",
+        "nodes": 1,
+        "help": "Alternative text of images should not be repeated as text"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

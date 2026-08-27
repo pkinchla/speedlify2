@@ -43,12 +43,6 @@ const ICONS_DIR = "src/icons";
 const BRAND_COLORS = {
 	// Build Awesome's balloon, from its own mark.
 	BuildAwesome: "00A776",
-
-	// Gatsby's own purple is rebeccapurple, #663399, which lands at luminance
-	// 0.075 — over the floor below, so it is used, but only just, and it reads
-	// as a smudge on a #2e2e2e page. This is Astro's purple: the same hue with
-	// enough lightness to be legible.
-	Gatsby: "BC52EE",
 };
 
 /**
@@ -177,10 +171,18 @@ function formatBytes(v) {
 }
 
 export default async function ($config) {
+	/*
+	 * Where this instance is served from.
+	 *
+	 * "/" for a custom domain, which is what speedlify.dev is. A fork on GitHub
+	 * Pages without one is served at `user.github.io/repo/`, where root-relative
+	 * URLs would resolve a directory too high and 404 the whole site — so the
+	 * path has to be known at build time. `publish.yml` sets this from
+	 * `actions/configure-pages`, which reports the path it is about to publish
+	 * under: empty for a custom domain, "/repo" for a project page.
+	 */
 	$config.addPlugin(HtmlBasePlugin, {
-		// for GitHub Actions in a subdirectory (not for speedlify.dev)
-		// baseHref: process.env.GITHUB_ACTIONS ? "speedlify2" : "/",
-		baseHref: "/",
+		baseHref: process.env.SPEEDLIFY_BASE_HREF || "/"
 	});
 
 	/*
@@ -204,17 +206,23 @@ export default async function ($config) {
 	$config.addPassthroughCopy({ "src/css": "css" });
 	$config.addPassthroughCopy({ "src/js": "js" });
 
+<<<<<<< HEAD
 	// Netlify reads this from the publish directory root, not from src/ —
 	// see src/_headers for what it's for.
 	$config.addPassthroughCopy({ "src/_headers": "_headers" });
 
 	// Lighthouse's screenshots of each site, captured during measurement and
 	// stored beside the numbers. Copied rather than passed through an image
+=======
+	// Lighthouse's filmstrip frames for each site, captured during measurement
+	// and stored beside the numbers. Copied rather than passed through an image
+>>>>>>> 7c6fe24bea72fcb798d9986c545d53d54cc25777
 	// pipeline: they are already small JPEGs at the size they are shown, and
 	// they are named by a hash of their own bytes, so the URL changes only when
 	// the picture does.
 	$config.addPassthroughCopy("results/*/frames");
 
+<<<<<<< HEAD
 	// Our own full-page screenshot for a `screenshotBlocked` site — see
 	// readOwnScreenshot in lib/report.js, which points `ownScreenshot.src` at
 	// `/results/<hash>/<file>` on the assumption this copies it through. Same
@@ -223,6 +231,16 @@ export default async function ($config) {
 	// but it's one file per site rather than a set, so a re-measure just
 	// overwrites it in place.
 	$config.addPassthroughCopy("results/*/screenshot.*");
+=======
+	// The pair from the axe pass — the page as rendered, and with scripts
+	// disabled — which sit beside the frames directory rather than inside it.
+	//
+	// The extension is part of the glob because these are not hash-named: the
+	// filename is fixed and the format is the capture's choice, so a switch away
+	// from WebP upstream has to keep being copied. See writeScreenshots in
+	// lib/store.js, which sweeps the file of the old type when that happens.
+	$config.addPassthroughCopy("results/*/screenshot*.{webp,jpg,jpeg,png,avif}");
+>>>>>>> 7c6fe24bea72fcb798d9986c545d53d54cc25777
 
 	// Emulated passthrough copy: during `--serve`, files are served from where
 	// they already are instead of being copied into the output first. Opt-in —
@@ -245,6 +263,13 @@ export default async function ($config) {
 	//
 	// The report is the only input; rebuild when it changes.
 	$config.addWatchTarget(process.env.SPEEDLIFY_REPORT_FILE || "report.json");
+
+	/*
+	 * Keep the watcher out of the dataset.
+	 * Depends on https://github.com/11ty/buildawesome/issues/4351 in v4.0.0-alpha.11
+	 */
+	$config.watchIgnores.add("results/**");
+	$config.watchIgnores.add("logs/**");
 
 	// 8080 is a busy port on most machines, and this project is often running
 	// alongside whatever else is being measured.
@@ -328,6 +353,23 @@ export default async function ($config) {
 	 * "5h ago") make a column of values hard to scan. Anywhere the surrounding
 	 * sentence needs a word, the template supplies it.
 	 */
+	/**
+	 * A timestamp as the machine-readable form `<time datetime>` wants.
+	 *
+	 * Ages on this site are computed at build time and frozen into the HTML —
+	 * "13m old" stays 13m however long the page sits open. Pairing each one with
+	 * its own timestamp costs nothing now and is what a script would need to
+	 * recompute them later, or to render them in the reader's own time zone.
+	 *
+	 * Both forms occur: measurement records carry an ISO string, while anything
+	 * derived in the report carries epoch milliseconds.
+	 */
+	$config.addFilter("iso", (v) => {
+		if (!v) return "";
+		const d = v instanceof Date ? v : new Date(typeof v === "number" ? v : String(v));
+		return Number.isNaN(d.getTime()) ? "" : d.toISOString();
+	});
+
 	$config.addFilter("since", (v) => {
 		if (!v) return "never";
 

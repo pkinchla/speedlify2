@@ -1,0 +1,309 @@
+{
+  "url": "https://jekyllrb.com/",
+  "name": "Jekyll",
+  "group": "ssg",
+  "groupName": "Site Generators",
+  "timestamp": 1787840989418,
+  "date": "2026-08-27T14:29:49.418Z",
+  "runId": "2026-08-27T14-29-48-314Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 23118,
+  "error": null,
+  "variance": {
+    "min": 80,
+    "max": 99,
+    "spread": 19,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://jekyllrb.com/",
+    "finalUrl": "https://jekyllrb.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 99,
+      "accessibility": 93,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 902,
+      "lcp": 2104,
+      "si": 902,
+      "tbt": 57,
+      "tti": 3703,
+      "cls": 0,
+      "ttfb": 602,
+      "maxPotentialFid": 164,
+      "serverResponseTime": 3,
+      "networkRtt": 0.1,
+      "networkServerLatency": 20.1
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 4.4,
+      "elementRenderDelay": 75.3
+    },
+    "weight": {
+      "total": 367577,
+      "requests": 12,
+      "mainDocument": 3772,
+      "byType": {
+        "total": {
+          "bytes": 365794,
+          "requests": 11
+        },
+        "script": {
+          "bytes": 228801,
+          "requests": 3
+        },
+        "image": {
+          "bytes": 72706,
+          "requests": 3
+        },
+        "font": {
+          "bytes": 46399,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 14078,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 3772,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 38,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 228839,
+          "requests": 4
+        }
+      },
+      "scripts": 3,
+      "stylesheets": 1,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 3,
+      "bytes": 228839,
+      "mainThreadMs": 63.3,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 159721,
+          "mainThreadMs": 42.4
+        },
+        {
+          "entity": "JSDelivr CDN",
+          "bytes": 48205,
+          "mainThreadMs": 9.2
+        },
+        {
+          "entity": "Google Analytics",
+          "bytes": 20913,
+          "mainThreadMs": 11.7
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 537,
+      "byGroup": {
+        "scriptEvaluation": 283.5,
+        "other": 101.8,
+        "scriptParseCompile": 65.8,
+        "styleLayout": 65.8,
+        "parseHTML": 14.4,
+        "paintCompositeRender": 5.7
+      },
+      "bootupMs": 311,
+      "longTasks": 2,
+      "longestTaskMs": 164
+    },
+    "dom": {
+      "elements": 143,
+      "depth": 9,
+      "maxChildren": 11
+    },
+    "waste": {
+      "unusedJsBytes": 98321,
+      "unusedCssBytes": 12062,
+      "legacyJsBytes": 7613,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 150,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 142561.1666666667,
+      "poorlyCachedCount": 8
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 20,
+      "failingNodes": 8,
+      "failing": [
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "nodes": 7
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 9
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2450,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-27T14:30:05.604Z",
+      "runtimeMs": 6127.4
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-29",
+      "last": "2026-08-25"
+    },
+    "metrics": {
+      "ttfb": {
+        "p75": 578,
+        "rating": "good",
+        "distribution": {
+          "good": 84.3,
+          "needsImprovement": 13.4,
+          "poor": 2.3
+        }
+      },
+      "fcp": {
+        "p75": 1166,
+        "rating": "good",
+        "distribution": {
+          "good": 90.2,
+          "needsImprovement": 6.1,
+          "poor": 3.7
+        }
+      },
+      "inp": {
+        "p75": 75,
+        "rating": "good",
+        "distribution": {
+          "good": 98.2,
+          "needsImprovement": 0.8,
+          "poor": 1
+        }
+      },
+      "lcp": {
+        "p75": 1147,
+        "rating": "good",
+        "distribution": {
+          "good": 95.5,
+          "needsImprovement": 3.2,
+          "poor": 1.3
+        }
+      },
+      "rtt": {
+        "p75": 183,
+        "rating": null,
+        "distribution": {
+          "good": 31.5,
+          "needsImprovement": 56.1,
+          "poor": 12.4
+        }
+      },
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 99.6,
+          "needsImprovement": 0.2,
+          "poor": 0.2
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "navigationTimedOut": false,
+    "generator": {
+      "id": "jekyll",
+      "name": "Jekyll",
+      "icon": "Jekyll",
+      "version": "4.4.1",
+      "source": "meta",
+      "raw": "Jekyll v4.4.1"
+    },
+    "interstitial": null,
+    "host": {
+      "id": "github",
+      "name": "GitHub Pages",
+      "icon": "Github",
+      "source": "x-github-request-id"
+    },
+    "headers": {
+      "server": "GitHub.com",
+      "via": "1.1 varnish",
+      "x-fastly-request-id": "a0f8ebfb815057a82f0d6643aa3561ae0fdd5905",
+      "x-github-request-id": "DB40:2F5596:2119A:2FA64:6A8FA5AA",
+      "x-served-by": "cache-sjc1000096-SJC"
+    },
+    "violations": 12,
+    "passes": 207,
+    "incomplete": 1,
+    "violationRules": 3,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "link-in-text-block",
+        "impact": "serious",
+        "nodes": 7,
+        "help": "Links must be distinguishable without relying on color"
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 4,
+        "help": "All page content should be contained by landmarks"
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should have one main landmark"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

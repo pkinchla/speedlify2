@@ -1,0 +1,22 @@
+{
+  "url": "https://research.cloudflare.com/",
+  "name": "research.cloudflare.com",
+  "group": "11ty-emeritus",
+  "groupName": "11ty Emeritus",
+  "timestamp": 1787752690065,
+  "date": "2026-08-26T13:58:10.065Z",
+  "runId": "2026-08-26T13-54-14-052Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 0,
+  "durationMs": 220016,
+  "error": "lighthouse timed out after 120000ms",
+  "errors": [
+    "PAGE_HUNG: Lighthouse was unable to reliably load the URL you requested because the page stopped responding.",
+    "PAGE_HUNG: Lighthouse was unable to reliably load the URL you requested because the page stopped responding.",
+    "lighthouse timed out after 120000ms"
+  ],
+  "field": null,
+  "axe": null,
+  "consecutiveFailures": 9
+}

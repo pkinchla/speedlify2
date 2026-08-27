@@ -58,6 +58,13 @@
 	--pill: 50px;
 	--mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
 	--sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+	/* Build Awesome's balloon green, and a near-black from the same family for
+	   text sitting on it. Identical in both themes: it is a brand colour, not a
+	   surface, so it should not shift when the page does. */
+	--brand: #00a776;
+	--brand-bright: #00b880;
+	--brand-text: #052b20;
 }
 
 :root[data-theme="light"] {
@@ -117,7 +124,7 @@ body {
  * table needs ~1195px with the current columns, so this leaves headroom for
  * another one or two before it starts scrolling again.
  */
-.wrap { max-width: 1400px; margin: 0 auto; padding: 0 1.25rem; }
+.wrap { max-width: 1550px; margin: 0 auto; padding: 0 1.25rem; }
 /* Content only. The masthead and footer share `.wrap` and set their own
    vertical rhythm, and the masthead is sticky — padding there would deepen the
    bar that follows you down the page. */
@@ -359,6 +366,133 @@ th.col-trend { text-align: center !important; }
 .panel h3 { font-size: 0.95rem; margin: 1.5rem 0 0.5rem; }
 
 .detail-head { padding: 2rem 0 1.25rem; }
+
+/*
+ * Category heading, with the way in beside it. Wraps on a narrow screen, where
+ * the button lands under the heading rather than squeezing it.
+ */
+.group-title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 0.75rem 1rem;
+	margin-block-end: 1em;
+}
+
+/*
+ * The one thing on a category page that is an action rather than a reading.
+ * Solid rather than outlined, because it is competing with a table of a
+ * thousand rows for attention and an outline loses.
+ *
+ * Build Awesome's own green, from BRAND_COLORS in buildawesome.config.js — the
+ * same value the balloon is drawn in, so the page's one loud element is loud in
+ * the project's colour rather than an invented one.
+ *
+ * The text is near-black rather than white, which is the reflex for a coloured
+ * button and would be wrong here: white on this green is 3.09:1, and at
+ * 0.9rem/650 the label is not large text, so it needs 4.5. The dark green-black
+ * below reaches 4.95:1 and belongs to the same family.
+ *
+ * One thing to know if the green is ever lightened: it sits at 2.99:1 against
+ * the light theme's #fbfbfd, a hair under the 3:1 that non-text contrast wants
+ * for a control's own edge. The label inside carries the accessible contrast;
+ * the shape is helped by its size and position rather than by its edge.
+ */
+.cta {
+	flex: none;
+	display: inline-block;
+	padding: 0.75rem 1.75rem;
+	border-radius: var(--pill);
+	background: var(--brand);
+	color: var(--brand-text);
+	font-size: 0.9rem;
+	font-weight: 650;
+	text-decoration: none;
+	white-space: nowrap;
+
+	&:hover,
+	&:focus-visible {
+		/* Lighter, not darker: darkening this green closes on the text sitting on
+		   it — #00805b would drop the label to 3.09:1. Going up keeps the pair
+		   legible and still reads as a response. */
+		background: var(--brand-bright);
+		color: var(--brand-text);
+		text-decoration: none;
+	}
+}
+
+/* After the table, centred — there is nothing beside it to align to. */
+.cta-footer {
+	margin-block: 1.5rem 0;
+	text-align: center;
+	/* `.panel > p` caps prose at 90ch, and this is a direct child of a panel —
+	   so without this the button centres inside that measure rather than inside
+	   the panel, and lands visibly left of centre on a wide screen. */
+	max-width: none;
+}
+
+/*
+ * Category switcher, above the heading it changes.
+ *
+ * Baseline-aligned rather than centred so the label, the control and the button
+ * sit on one line with the text around them. `accent-color` and `color-scheme`
+ * hand the select's own chrome to the theme — a UA-styled dropdown otherwise
+ * arrives light on a dark page, which is the one control on this site that
+ * would.
+ */
+/*
+ * In the masthead now, on the row with the theme toggle, so it is inline-flex
+ * rather than a block of its own — it has to sit in the middle of a line of
+ * links without breaking it.
+ */
+.cat-switch {
+	display: inline-flex;
+	align-items: baseline;
+	gap: 0.35rem;
+	font-size: inherit;
+}
+
+/*
+ * That row holds a form now, so it is a div rather than a p — a <form> is flow
+ * content and cannot live in a paragraph. Flex keeps the links, the button and
+ * the select on one baseline, and lets the row wrap on a phone instead of
+ * pushing the masthead wide.
+ *
+ * The gap does the separating. It used to be interpuncts typed between the
+ * items, which a flex row turns into children of their own — so they wrapped
+ * onto lines by themselves and were read out as "middle dot" by a screen
+ * reader. Space says the same thing to everyone.
+ */
+.masthead-tools {
+	display: flex;
+	align-items: baseline;
+	flex-wrap: wrap;
+	/* The column gap is wide enough to read as separation on its own; the row
+	   gap only has to keep wrapped lines from touching. */
+	gap: 0.35rem 1.1rem;
+
+	/* The form and any other block child bring their own margins, which would
+	   fight the gap and offset one item from the rest of the row. */
+	& > * {
+		margin: 0;
+	}
+}
+
+.cat-switch select,
+.cat-switch button {
+	font: inherit;
+	color: var(--text);
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: 4px;
+	/* 24px minimum target, from the block padding rather than a min-height. */
+	padding: 0.2rem 0.4rem;
+}
+
+.cat-switch select { color-scheme: inherit; accent-color: var(--accent, currentColor); }
+.cat-switch button { cursor: pointer; }
+.cat-switch button:hover { border-color: var(--border-strong); }
 .detail-head h1 { margin: 0 0 0.25rem; font-size: clamp(1.5rem, 4vw, 2rem); letter-spacing: -0.02em; }
 /* The site's place in a category, beside that category's name. A pill, matching
    the counts elsewhere, so it reads as a label on the link rather than as part
@@ -405,7 +539,16 @@ th.col-trend { text-align: center !important; }
 	width: 46.25px;
 	height: 46.25px;
 }
-.detail-rings .rings { gap: 0.4rem; }
+/*
+ * Six rings at a quarter again their table size overflow a narrow header, and
+ * a header that scrolls sideways is worse than one two rows deep. Scoped to
+ * this block rather than set on `.rings`: everywhere else they sit in a table
+ * cell whose column is sized for one row of them, where wrapping would push the
+ * row taller instead of the page wider.
+ *
+ * The `gap` is shared by both axes, so the wrapped row is already spaced.
+ */
+.detail-rings .rings { gap: 0.4rem; flex-wrap: wrap; }
 
 /*
  * With a screenshot the header becomes two columns: the text keeping its own
@@ -419,7 +562,11 @@ th.col-trend { text-align: center !important; }
  */
 .detail-head.has-shot {
 	display: grid;
-	grid-template-columns: minmax(0, 1fr) 200px;
+	/* One number for the column and the image inside it. They have to agree —
+	   a wider image than its track overflows the grid — and having said it
+	   twice is how they stop agreeing. */
+	--shot-width: 300px;
+	grid-template-columns: minmax(0, 1fr) var(--shot-width);
 	gap: 1.25rem;
 	align-items: start;
 }
@@ -429,9 +576,15 @@ th.col-trend { text-align: center !important; }
 .detail-shot-link:hover .detail-shot { border-color: var(--border-strong); }
 
 .detail-shot {
-	width: 200px;
-	/* Square, matching the service's default 1:1 — stated so the space is
-	   reserved before the image arrives rather than after. */
+	width: var(--shot-width, 300px);
+	/* Square, and stated rather than inherited so the space is reserved before
+	   the image arrives rather than after.
+
+	   Not the capture's own ratio: those are 412x823 portrait now, matching the
+	   phone Lighthouse measures on, and a thumbnail that tall would push the
+	   rings and the URL beside it down the page. `cover` with a top anchor crops
+	   to the masthead instead, which is the part that identifies a site — and it
+	   handles the older 1:1 pictures from the screenshot service unchanged. */
 	height: auto;
 	aspect-ratio: 1;
 	object-fit: cover;
@@ -446,7 +599,7 @@ th.col-trend { text-align: center !important; }
    first, so it stacks heading-then-image without any reordering. */
 @media (max-width: 34rem) {
 	.detail-head.has-shot { grid-template-columns: minmax(0, 1fr); }
-	.detail-shot { width: 100%; max-width: 260px; }
+	.detail-shot { width: 100%; max-width: var(--shot-width, 300px); }
 }
 
 /* ------------------------------------------------------------------- cards */
@@ -555,6 +708,53 @@ th.col-trend { text-align: center !important; }
 .bar { display: block; height: 8px; background: color-mix(in srgb, var(--border) 70%, transparent); border-radius: 4px; overflow: hidden; }
 .bar-fill { display: block; height: 100%; background: var(--accent); border-radius: 4px; }
 .bar-warn .bar-fill { background: var(--average); }
+
+/*
+ * Lab against field, as two bars on one scale.
+ *
+ * The same three-column shape as .breakdown-row above — label, track, figure —
+ * because it is the same kind of statement and the page should not invent a
+ * second way to say it. Narrower label column: "Lab" and "Field p75" are short
+ * where a resource type is not.
+ */
+.lvf-compare {
+	display: flex;
+	flex-direction: column;
+	gap: 0.4rem;
+	margin-block: 0.6rem 0.75rem;
+	max-width: 44em;
+}
+
+.lvf-row {
+	display: grid;
+	grid-template-columns: minmax(60px, 96px) 1fr minmax(64px, auto);
+	gap: 0.75rem;
+	align-items: center;
+	font-size: 0.85rem;
+
+	& .bar {
+		/* Taller than the resource breakdown's: there are two of these rather
+		   than a dozen, and the whole point is comparing their lengths. */
+		height: 12px;
+	}
+}
+
+.lvf-name { color: var(--text-muted); white-space: nowrap; }
+.lvf-ms { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+/*
+ * The lab bar is deliberately colourless. It is a simulation of one mid-range
+ * phone, and colouring it good or poor would dress a test condition up as a
+ * verdict — the rating belongs to the field number underneath it, which is the
+ * one real users produced and Google grades.
+ */
+.lvf-fill-lab { background: var(--text-muted); }
+.lvf-fill-good { background: var(--good); }
+.lvf-fill-average { background: var(--average); }
+.lvf-fill-poor { background: var(--poor); }
+/* ratingClass falls back to "none" for a rating CrUX did not supply. Without a
+   rule the fill would inherit nothing and the bar would read as zero-length. */
+.lvf-fill-none { background: var(--border-strong); }
 
 /* ------------------------------------------------------ site of the day */
 
@@ -1095,6 +1295,20 @@ th.col-trend { text-align: center !important; }
  */
 .rings { display: inline-flex; gap: 0.3rem; align-items: center; vertical-align: middle; }
 .col-rings { text-align: right !important; white-space: nowrap; }
+/* Two words in a column of one-word headings — left to wrap it would set the
+   whole header row two lines deep for one cell. */
+.col-nojs { white-space: nowrap; }
+
+/*
+ * Lab against field, as a multiplier: lab LCP over field p75.
+ *
+ * Uncoloured on purpose. Every other coloured thing on these rows is a verdict —
+ * a Lighthouse band, a Core Web Vitals pass, an axe count — and this is not one.
+ * A ratio far from 1 says the audience differs from the simulated device, which
+ * is a fact about who visits rather than something the site did well or badly.
+ */
+.col-lvf { white-space: nowrap; }
+.lvf { font-variant-numeric: tabular-nums; color: var(--text-muted-strong); }
 /* The heading sits over the rings, which start at the cell's left edge — the
    right-aligned numbers below are the total, not the column. */
 th.col-rings { text-align: left !important; }
@@ -1198,6 +1412,15 @@ th.col-rings { text-align: left !important; }
  */
 .masthead-subhed { max-width: 68ch; margin-inline: auto; }
 .panel > p, .group-head p, .detail-head p { max-width: 90ch; }
+
+/*
+ * Narrow: the row of links, the theme toggle and the category form wrap onto
+ * two or three lines, and a wrapped row packed left leaves a ragged edge under
+ * a masthead that is otherwise centred. Centring the lines keeps it composed.
+ */
+@media (max-width: 640px) {
+	.masthead-subhed { justify-content: center; }
+}
 
 /* ------------------------------------------------------- built with / host */
 
@@ -1360,6 +1583,26 @@ th.col-rings { text-align: left !important; }
 	font-size: 0.72rem;
 	font-variant-numeric: tabular-nums;
 	color: var(--text-muted);
+}
+
+/*
+ * A count beside a section heading. Same pill as .cat-rank, which is the shape
+ * this site already uses for "a number attached to a label" — sized in `em` so
+ * it tracks whatever heading it is set in rather than fixing itself to one.
+ */
+.head-count {
+	display: inline-block;
+	vertical-align: baseline;
+	margin-left: 0.35em;
+	padding: 0.1em 0.55em;
+	border-radius: var(--pill);
+	background: color-mix(in srgb, var(--text-muted) 15%, transparent);
+	color: var(--text-muted-strong);
+	font-size: 0.5em;
+	font-weight: 600;
+	font-variant-numeric: tabular-nums;
+	letter-spacing: 0;
+	white-space: nowrap;
 }
 
 /*
@@ -1694,3 +1937,159 @@ a.cat-chip:hover, a.cat-chip:focus-visible { color: var(--text); border-color: v
 }
 /* Same again — 2.02:1 over the failing row's tint. */
 .updated-tag.never { color: var(--text-muted-strong); }
+
+/*
+ * The two screenshots on a site page, as rendered and with scripts disabled.
+ *
+ * Two columns that collapse to one below the breakpoint rather than a scroller:
+ * there are only ever two frames, and the whole point is seeing them at once.
+ * Stacked on a phone still reads as a comparison; a horizontal scroll would
+ * show one at a time, which is the one arrangement that defeats it.
+ */
+.nojs-pair {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 1rem;
+	margin-block: 1rem;
+}
+
+.nojs-shot {
+	margin: 0;
+	min-width: 0;
+}
+
+/*
+ * The figure between the two frames, which is where it belongs: it describes
+ * the distance from one to the other, and reading it in the gap makes that
+ * relationship the sentence rather than a caption above the pair.
+ *
+ * A flex item among the frames, so it takes the middle column and centres
+ * against them. It stays legible when the row wraps on a narrow screen, where
+ * source order puts it between the two stacked pictures.
+ */
+.nojs-diff {
+	margin: 0;
+	/* Allowed to grow, because it does not always share a line with the frames.
+	   Below about 704px the row cannot hold all three and this wraps onto a line
+	   of its own, where without grow it stayed at its 14em basis and left most of
+	   that line empty.
+
+	   Capped, because the same grow would otherwise take every spare pixel on a
+	   wide screen — at 1200px that is 500px of text column shoving the two
+	   frames out to the margins. 30em is a reading measure; past it the space is
+	   better left over. */
+	flex: 1 1 14em;
+	max-width: 30em;
+	min-width: 8em;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	gap: 0.25rem;
+	max-width: 26em;
+}
+
+.nojs-diff strong {
+	font-size: 1.5rem;
+	font-variant-numeric: tabular-nums;
+	letter-spacing: -0.02em;
+}
+
+.nojs-shot figcaption {
+	font-size: 0.8em;
+	color: var(--text-muted-strong);
+	margin-block-end: 0.35rem;
+}
+
+
+/*
+ * Sized by height, with the width falling out of the ratio, so the two frames
+ * are always the same size as each other and always the same size from site to
+ * site — a comparison between two pictures only works if neither is scaled.
+ *
+ * 412x823 is the phone Lighthouse measures on, mirrored in lib/axe.js. Stated
+ * here rather than left to the intrinsic ratio so the row reserves its space
+ * before either image arrives.
+ *
+ * The border matters more than it looks: a page that renders nothing without
+ * JavaScript is a white rectangle, and without an edge it reads as a missing
+ * image rather than as the answer.
+ */
+.nojs-shot img {
+	display: block;
+	width: auto;
+	/* Tall enough to read, and capped so a tall window does not turn the pair
+	   into a wall. */
+	height: min(60vh, 26em);
+	aspect-ratio: 412 / 823;
+	/* Only bites if a capture is not the ratio above — a desktop run is 1350x940
+	   — where cropping to the top beats distorting the page. */
+	object-fit: cover;
+	object-position: top center;
+	max-width: 100%;
+	border: 1px solid var(--border);
+	border-radius: 3px;
+	background: var(--surface);
+}
+/*
+ * Under 470px: the two frames stay side by side and the figure drops below.
+ *
+ * Wrapping the frames apart is the one thing that must not happen — the whole
+ * section is a comparison, and a comparison you have to scroll between is two
+ * pictures rather than one point.
+ *
+ * Range syntax rather than `max-width: 469.98px`, because the bound is exactly
+ * "narrower than 470" and writing that as a fraction of a pixel is a fudge.
+ *
+ * A full-width basis on the figure does the work: it is last in the markup, so
+ * giving it a whole row of its own leaves the two frames sharing the one above
+ * rather than splitting the pair across a wrap. Heights are bounded rather than
+ * set here — the frames take the width they can get.
+ */
+@media (width < 470px) {
+	/* Grid, not flex, for this breakpoint only.
+	   The two frames have to shrink to sit side by side, and flexbox decides
+	   wrapping on the basis before any shrinking happens: at `auto` each frame's
+	   basis is the image's own 412px, so the pair overflows a phone and wraps
+	   apart — the one thing this query exists to prevent. Getting flex to
+	   cooperate means pinning the basis to half the row minus half the gap,
+	   which silently breaks the moment the gap changes.
+	   Two `minmax(0, 1fr)` tracks say the same thing without the arithmetic:
+	   equal columns, free to shrink below their content. */
+	.nojs-pair {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+		align-items: start;
+		gap: 0.75rem;
+	}
+
+
+	/* Both dimensions auto, bounded rather than set, so the ratio decides the
+	   shape and whichever bound is tighter decides the size. The frame shrinks
+	   with the column instead of keeping its height and losing its sides.
+
+	   `max-height` and not `height`: a fixed height here would force the box to
+	   the column's width at a shape the image does not have, and `contain` would
+	   letterbox it. Bounded, the picture just gets smaller.
+
+	   60vh so the pair never fills a phone screen on its own, and 24em so it
+	   stops growing on a tall narrow window. `contain` rather than the base
+	   rule's `cover` because at this size nothing may be cropped away — a
+	   clipped comparison is a misleading one. */
+	.nojs-shot img {
+		width: auto;
+		height: auto;
+		max-width: 100%;
+		max-height: min(60vh, 24em);
+		object-fit: contain;
+	}
+}
+
+@media (width < 700px) {
+	/* Spanning both columns rather than taking a third: the markup already puts
+	   it after both frames, so a full-width row of its own is all it needs. */
+	.nojs-diff {
+		grid-column: 1 / -1;
+		align-items: flex-start;
+	}
+}

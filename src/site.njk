@@ -44,9 +44,10 @@ eleventyComputed:
 {% set shotWidth = 650 %}
 {% set shotHeight = 650 %}
 {#
-	Our own capture first, where we have one. It exists only for sites the
-	screenshot service is served a bot check by, and it is the picture our own
-	Chrome saw — the real page, taken on the same run as the numbers beside it.
+	Our own capture first, where we have one: the picture our own Chrome saw,
+	taken on the same page load as the numbers beside it. Every site gets one
+	from the axe pass now, so the service below is only for sites that have not
+	come round for measurement since — see lib/axe.js.
 
 	No performance floor on this branch: that floor exists because the service
 	renders on a timer and photographs half-drawn pages, and our capture is a
@@ -86,7 +87,7 @@ eleventyComputed:
 			{#- No dash and no full stop: the age is a pill rather than the end of a
 			    sentence, and punctuation either side of it reads as stray marks. #}
 			Data from {{ entry.latest.date | date("long") }}
-			<span class="age-pill{{ ' stale' if entry.dataStale }}">{{ entry.latest.date | since }} old</span>
+			<span class="age-pill{{ ' stale' if entry.dataStale }}"><time datetime="{{ entry.latest.date | iso }}">{{ entry.latest.date | since }}</time> old</span>
 			{%- if entry.dataStale %}, older than the {{ sites.coverage.staleAfterHours }}h freshness target{% endif %}
 		{% else %}
 			No successful measurement yet.
@@ -154,7 +155,7 @@ eleventyComputed:
 
 {% if entry.stale and entry.latest %}
 <div class="notice notice-warn">
-	<strong>This data is {{ entry.latest.date | since }} old.</strong>
+	<strong>This data is <time datetime="{{ entry.latest.date | iso }}">{{ entry.latest.date | since }}</time> old.</strong>
 	<p>
 		Sites are measured on a rolling schedule, so figures here are the newest
 		successful measurement rather than a reading taken just now. Comparisons
@@ -216,7 +217,7 @@ eleventyComputed:
 	</strong>
 	<code>{{ entry.lastError }}</code>
 	{% if entry.latest %}
-	<p>Numbers below are from the last successful run, {{ entry.latest.date | since }} old.</p>
+	<p>Numbers below are from the last successful run, <time datetime="{{ entry.latest.date | iso }}">{{ entry.latest.date | since }}</time> old.</p>
 	{% else %}
 	<p>There is no successful measurement for this site yet.</p>
 	{% endif %}
@@ -273,9 +274,15 @@ eleventyComputed:
 {% if hasCwv %}{% set toc = (toc.push({ id: "cwv", label: "Core Web Vitals" }), toc) %}{% endif %}
 {% set toc = (toc.push({ id: "scores", label: "Scores" }), toc) %}
 {% if hasFilmstrip %}{% set toc = (toc.push({ id: "filmstrip", label: "Filmstrip" }), toc) %}{% endif %}
+{% set hasNoJs = entry.ownScreenshot.noJs and not entry.interstitial %}
+{% if hasNoJs %}{% set toc = (toc.push({ id: "without-javascript", label: "Without JavaScript" }), toc) %}{% endif %}
 {% set toc = (toc.push({ id: "lab", label: "Lab metrics" }), toc) %}
-{% if hasField %}{% set toc = (toc.push({ id: "field", label: "Field data" }), toc) %}{% endif %}
-{% if hasFieldHistory %}{% set toc = (toc.push({ id: "field-history", label: "Field history" }), toc) %}{% endif %}
+{#
+	One entry: the history is a subsection of Field data now, and a table of
+	contents that lists a heading and its own subheading side by side reads as
+	two destinations when it is one.
+#}
+{% if hasField or hasFieldHistory %}{% set toc = (toc.push({ id: "field", label: "Field data" }), toc) %}{% endif %}
 {% set toc = (toc.push({ id: "weight", label: "Page weight" }), toc) %}
 {% set toc = (toc.push({ id: "health", label: "Page health" }), toc) %}
 {% set toc = (toc.push({ id: "hygiene", label: "Hygiene" }), toc) %}
@@ -427,6 +434,83 @@ eleventyComputed:
 </section>
 {% endif %}
 
+{% if hasNoJs %}
+{#
+	The same page twice: as the browser renders it, and with script execution
+	disabled before the navigation. Both are captured on the axe pass, at the
+	same viewport, moments apart — so the difference between them is JavaScript
+	and nothing else. Neither is a full-page capture, deliberately: a site that
+	renders nothing without JavaScript would otherwise produce a tall picture
+	beside a short one, and the comparison would be between two aspect ratios.
+
+	Not a claim about whether the site *should* work without JavaScript. Plenty
+	of these pages are applications, where the answer is obviously no. It is the
+	one thing a screenshot can show that a number cannot.
+
+	Decorative, like the screenshot at the top: the headings above each frame
+	carry the information, and they are text.
+#}
+<section class="panel" id="without-javascript">
+	<h2>Without JavaScript</h2>
+	<p class="muted small">
+		The same load, photographed twice at
+		{{ entry.ownScreenshot.width or 800 }}&times;{{ entry.ownScreenshot.height or 600 }}: once with
+		scripts disabled, once as rendered.
+	</p>
+	{#
+		The share of pixels that differ between the two captures.
+
+		Described as visual difference and not as "how much of this page needs
+		JavaScript", because the two are not the same thing and the gap between
+		them is large. A page that renders identically but carries a <noscript>
+		banner has its whole layout pushed down by the height of that banner, so
+		nearly every pixel moves and the figure lands above 50% — pypi.org is the
+		case in point, and it works fine without scripts.
+
+		Not banded green-to-red either: a high number is unremarkable for an
+		application and damning for a blog, and this page cannot tell which it is
+		looking at. The figure is stated and left alone.
+	#}
+	{#
+		Scripts disabled first, so the eye lands on it before the familiar one.
+		The rendered page is what everybody expects a screenshot to be; putting it
+		second makes it read as the answer to the picture beside it rather than as
+		the subject the no-JS shot is a footnote to.
+
+		The figure comes last, after both, because it is the conclusion drawn from
+		the pair rather than a label on either — you read the two, then how far
+		apart they are.
+	#}
+	<div class="nojs-pair">
+		<figure class="nojs-shot">
+			<figcaption>Scripts disabled</figcaption>
+			<img src="{{ entry.ownScreenshot.noJs.src }}"
+				width="{{ entry.ownScreenshot.noJs.width or 800 }}" height="{{ entry.ownScreenshot.noJs.height or 600 }}"
+				alt="" loading="lazy" decoding="async">
+		</figure>
+		<figure class="nojs-shot">
+			<figcaption>As rendered</figcaption>
+			<img src="{{ entry.ownScreenshot.src }}"
+				width="{{ entry.ownScreenshot.width or 800 }}" height="{{ entry.ownScreenshot.height or 600 }}"
+				alt="" loading="lazy" decoding="async">
+		</figure>
+		{% if entry.ownScreenshot.difference !== null %}
+		<p class="nojs-diff">
+			<strong>{{ entry.ownScreenshot.difference }}%</strong>
+			<span class="muted small">of pixels differ &mdash;
+				{% if entry.ownScreenshot.difference >= 95 %}they have almost nothing in common
+				{%- elif entry.ownScreenshot.difference >= 50 %}the page changes substantially
+				{%- elif entry.ownScreenshot.difference >= 10 %}parts of the page change
+				{%- elif entry.ownScreenshot.difference > 0 %}they are nearly identical
+				{%- else %}they are identical{% endif %}.
+				A shifted layout counts as difference, so a &lt;noscript&gt; banner alone
+				can account for a large figure.</span>
+		</p>
+		{% endif %}
+	</div>
+</section>
+{% endif %}
+
 {% macro trendtable(rows, entryData, prefix="") %}
 <div class="table-scroll">
 <table class="grid">
@@ -514,11 +598,18 @@ eleventyComputed:
 	{% endif %}
 </section>
 
-{% if hasField %}
+{#
+	Either half is enough to earn the section: a site CrUX has stopped reporting
+	still has the weeks it did report, and that history is the whole reason to
+	come here. Each half is gated separately below.
+#}
+{% if hasField or hasFieldHistory %}
 <section class="panel" id="field">
 	<h2>
-		Field data <span class="tag">Chrome UX Report, {{ entry.latest.field.scope }}-level</span>
+		Field data
+		{%- if hasField %} <span class="tag">Chrome UX Report, {{ entry.latest.field.scope }}-level</span>{% endif %}
 	</h2>
+	{% if hasField %}
 	<p class="muted small">
 		Real Chrome users, 28-day trailing window
 		({{ entry.latest.field.collectionPeriod.first }} → {{ entry.latest.field.collectionPeriod.last }}).
@@ -565,23 +656,81 @@ eleventyComputed:
 	</div>
 
 	{% if entry.labVsField %}
-	<h3>Lab vs field</h3>
+	<h3>Lab vs field <span class="tag">LCP</span></h3>
+	{#
+		Two bars against one scale, so the comparison is a length rather than a
+		subtraction the reader performs. Both are widths of the larger of the two,
+		which is the only scale on which "twice as long" looks twice as long.
+
+		The lab bar is neutral and the field bar carries its Core Web Vitals
+		rating: the lab number has no verdict attached — it is a simulation — while
+		the field number is the one Google grades.
+	#}
+	{% set lvfMax = entry.labVsField.lab if entry.labVsField.lab > entry.labVsField.field else entry.labVsField.field %}
+	{#
+		Recomputed from the two stored millisecond figures rather than read from
+		`labVsField.ratio`, which is rounded to a tenth for the leaderboards — a
+		column of a thousand rows wants a figure you can scan, and this is one
+		site, where 1.17 says more than 1.2. Both numbers it is derived from are on
+		screen directly above, so the arithmetic is checkable.
+	#}
+	{% set lvfRatio = entry.labVsField.lab / entry.labVsField.field %}
+	<div class="lvf-compare">
+		<div class="lvf-row">
+			<span class="lvf-name">Lab</span>
+			<span class="bar"><span class="bar-fill lvf-fill-lab" style="width: {{ (entry.labVsField.lab / lvfMax * 100) | round }}%"></span></span>
+			<span class="lvf-ms">{{ entry.labVsField.lab | ms }}</span>
+		</div>
+		<div class="lvf-row">
+			<span class="lvf-name">Field p75</span>
+			<span class="bar"><span class="bar-fill lvf-fill-{{ entry.latest.field.metrics.lcp.rating | ratingClass }}" style="width: {{ (entry.labVsField.field / lvfMax * 100) | round }}%"></span></span>
+			<span class="lvf-ms">{{ entry.labVsField.field | ms }}</span>
+		</div>
+	</div>
 	<p class="muted small">
-		Lab LCP {{ entry.labVsField.lab | ms }} · field p75 {{ entry.labVsField.field | ms }} ·
-		real users are <strong>{{ entry.labVsField.ratio }}×</strong>
-		{{ "slower" if entry.labVsField.fieldWorse else "faster" }} than the lab.
-		{% if entry.labVsField.fieldWorse and entry.labVsField.ratio > 1.5 %}
+		{#
+			The multiple, then what it implies — rather than "N× faster", which only
+			reads correctly in one direction: a field number worse than the lab
+			gives a figure below 1, and "0.33× slower" is not a sentence.
+
+			And not "faster than the test says", which sounds like the test was
+			wrong. It was not: it measured a mid-range phone on a throttled
+			connection, deliberately. A field number better than that says something
+			about who is visiting, not about the accuracy of the lab — hence
+			"likely", since this is an inference about an audience rather than a
+			measurement of one.
+		#}
+		The lab LCP is <strong>{{ lvfRatio | round(2) }}×</strong> the field p75 —
+		{#
+			Within a tenth either way is not a finding. `fieldWorse` is a strict
+			comparison, so without this band a site a single millisecond apart would
+			be told its audience is below average.
+
+			Tested on the rounded ratio, which is the one displayed: a reader seeing
+			0.9x should get the same verdict as anyone else seeing 0.9x, rather than
+			two sites reading identically and being described differently.
+		#}
+		{% if lvfRatio >= 0.9 and lvfRatio <= 1.1 %}
+		real users likely have similar hardware or network connectivity to the lab test.
+		{%- else %}
+		real users likely have {{ "below" if entry.labVsField.fieldWorse else "above" }}-average
+		hardware or network connectivity.
+		{%- endif %}
+		{#
+			1.5x worse or more, expressed the way round the ratio now runs: 1/1.5
+			is 0.667, which one decimal renders as 0.7 — so the test has to include
+			it rather than sit below a value the data can no longer produce.
+		#}
+		{% if entry.labVsField.fieldWorse and lvfRatio <= 0.7 %}
 		A gap this wide usually means real users are on slower devices or networks
 		than the simulated ones — the lab number is flattering you.
 		{% endif %}
 	</p>
 	{% endif %}
-</section>
-{% endif %}
+	{% endif %}
 
-{% if hasFieldHistory %}
-<section class="panel" id="field-history">
-	<h2>Field history <span class="tag">{{ entry.fieldHistory.series.length }} weeks</span></h2>
+	{% if hasFieldHistory %}
+	<h3 id="field-history">Field history <span class="tag">{{ entry.fieldHistory.series.length }} weeks</span></h3>
 	<p class="muted small">
 		Weekly p75 from the CrUX History API, backfilled in a single request.
 	</p>
@@ -606,6 +755,7 @@ eleventyComputed:
 		</tbody>
 	</table>
 	</div>
+	{% endif %}
 </section>
 {% endif %}
 
