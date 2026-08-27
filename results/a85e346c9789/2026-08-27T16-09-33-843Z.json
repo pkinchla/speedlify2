@@ -1,0 +1,22 @@
+{
+  "url": "https://design.saschadiercks.de/",
+  "name": "design.saschadiercks.de",
+  "group": "11ty-community",
+  "groupName": "Built Awesome",
+  "timestamp": 1787846973843,
+  "date": "2026-08-27T16:09:33.843Z",
+  "runId": "2026-08-27T16-06-17-292Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 0,
+  "durationMs": 17387,
+  "error": "INSECURE_DOCUMENT_REQUEST: The URL you have provided does not have a valid security certificate. net::ERR_CERT_COMMON_NAME_INVALID",
+  "errors": [
+    "INSECURE_DOCUMENT_REQUEST: The URL you have provided does not have a valid security certificate. net::ERR_CERT_COMMON_NAME_INVALID",
+    "INSECURE_DOCUMENT_REQUEST: The URL you have provided does not have a valid security certificate. net::ERR_CERT_COMMON_NAME_INVALID",
+    "INSECURE_DOCUMENT_REQUEST: The URL you have provided does not have a valid security certificate. net::ERR_CERT_COMMON_NAME_INVALID"
+  ],
+  "field": null,
+  "axe": null,
+  "consecutiveFailures": 10
+}
