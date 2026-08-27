@@ -656,7 +656,7 @@ eleventyComputed:
 	</div>
 
 	{% if entry.labVsField %}
-	<h3>Lab vs field</h3>
+	<h3>Lab vs field <span class="tag">LCP</span></h3>
 	{#
 		Two bars against one scale, so the comparison is a length rather than a
 		subtraction the reader performs. Both are widths of the larger of the two,
@@ -700,7 +700,7 @@ eleventyComputed:
 			"likely", since this is an inference about an audience rather than a
 			measurement of one.
 		#}
-		The lab is <strong>{{ lvfRatio | round(2) }}×</strong> the field number —
+		The lab LCP is <strong>{{ lvfRatio | round(2) }}×</strong> the field p75 —
 		{#
 			Within a tenth either way is not a finding. `fieldWorse` is a strict
 			comparison, so without this band a site a single millisecond apart would

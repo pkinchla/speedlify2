@@ -22,6 +22,7 @@ const EXTRA_STARTERS = [
 	"https://eleventy-test-bed-dollplayer2501.netlify.app/",
 	"https://eleventy-step.netlify.app/",
 	"https://multilingual.lea-tortay.com/",
+	"https://yetty.netlify.app/",
 ];
 const STARTERS = [...new Set([...starters.urls, ...EXTRA_STARTERS])];
 
