@@ -315,21 +315,16 @@ export default {
 	 * served from the root — `/ssg/` rather than `/group/ssg/`. This instance
 	 * replaced that site at the same domain, so those links are still out there.
 	 *
-	 * The `/group/` one is a category folded into another: Test Runners was nine
-	 * sites, wholly contained in Developer Tooling, where they sit beside the
-	 * generators and hosts they are used with.
-	 *
 	 * Destinations are checked at report time against the categories and sites
 	 * that actually exist — see lib/report.js — so an entry pointing at something
 	 * since renamed is dropped rather than published as a link to nowhere.
 	 */
 	redirects: {
 		"/ssg/": "/group/ssg/",
-		"/test-runners/": "/group/dev-tooling/",
+		"/test-runners/": "/group/test-runners/",
 		"/zachleat.com/": "/group/zachleat/",
 		"/sample/": "/site/www-speedlify-dev/",
 
-		"/group/test-runners/": "/group/dev-tooling/",
 	},
 
 	groups: {
@@ -367,6 +362,21 @@ export default {
 			...DAILY,
 			// The list from https://www.speedlify.dev/ssg/, in its order.
 			sites: SSG_SITES,
+		},
+
+		"test-runners": {
+			name: "Test Runners",
+			enabled: true,
+			description: "Home pages for JavaScript test runners and linters.",
+			...DAILY,
+
+			// Off the home page's list: nine sites of a kind most readers are not
+			// looking for, and they are all in Developer Tooling above, where they
+			// sit beside the generators and hosts they are used with. The category
+			// keeps its page for anyone who wants the nine on their own.
+			hideFromCategoryList: true,
+
+			sites: TEST_RUNNER_SITES,
 		},
 
 		"package-managers": {
@@ -407,6 +417,12 @@ export default {
 		},
 
 		zachleat: {
+			// Kept off the home page's category list, but still in the switcher and
+			// still at its own URL. One person's own sites is a different kind of
+			// thing from the categories around it — a working notebook rather than
+			// a comparison anybody else came for — and the list reads better
+			// without it than it does with an explanation of it.
+			hideFromCategoryList: true,
 			name: "zachleat.com",
 			enabled: true,
 			description: "Pages from zachleat.com.",
@@ -529,6 +545,10 @@ export default {
 		},
 
 		"11ty-emeritus": {
+			// Off the home page's list. These sites left; a front page listing
+			// "the ones that stopped" beside the categories people came for reads
+			// as a scoreboard of departures rather than as a record.
+			hideFromCategoryList: true,
 			name: "11ty Emeritus",
 
 			// Not a competition. These sites left, and ranking what they scored on

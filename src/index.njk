@@ -36,8 +36,14 @@ permalink: /index.html
 	   screen reader announces is the one on the page. #}
 	<nav class="contents contents-categories" aria-labelledby="categories-heading">
 	<ul>
+		{#
+			`hideFromCategoryList` is about this list and nothing else — the category
+			keeps its page, its place in the switcher, and every ranking its sites
+			appear in. It is an editorial decision about what belongs on a front
+			page, not a way to retire a category.
+		#}
 		{% for group in sites.groups %}
-		{% if group.entries.length %}
+		{% if group.entries.length and not group.hideFromCategoryList %}
 		<li>
 			<a href="/group/{{ group.id }}/">{{ group.name }}</a>
 			{#

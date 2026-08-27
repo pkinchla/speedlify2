@@ -426,6 +426,10 @@ th.col-trend { text-align: center !important; }
 .cta-footer {
 	margin-block: 1.5rem 0;
 	text-align: center;
+	/* `.panel > p` caps prose at 90ch, and this is a direct child of a panel —
+	   so without this the button centres inside that measure rather than inside
+	   the panel, and lands visibly left of centre on a wide screen. */
+	max-width: none;
 }
 
 /*

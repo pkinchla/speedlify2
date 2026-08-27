@@ -103,8 +103,25 @@ speedlifyThemeColor();
 					somewhere they are not.
 				#}
 				{% if not group %}<option value="" selected>Categories&hellip;</option>{% endif %}
+				{#
+					Two passes over the same list rather than one.
+
+					A category hidden from the home page's list is still reachable
+					here — that is the point of the flag — but it belongs after the
+					ones a reader arrived expecting, not interleaved with them. Two
+					loops is the whole mechanism: Nunjucks has no sort-by-field that
+					can be trusted for this (its `selectattr` ignores the test it is
+					given), so anything cleverer would have to happen in the report.
+				#}
 				{% for g in sites.groups %}
+					{% if not g.hideFromCategoryList %}
 				<option value="{{ g.id }}"{% if group and g.id == group.id %} selected{% endif %}>{{ g.name }}</option>
+					{% endif %}
+				{% endfor %}
+				{% for g in sites.groups %}
+					{% if g.hideFromCategoryList %}
+				<option value="{{ g.id }}"{% if group and g.id == group.id %} selected{% endif %}>{{ g.name }}</option>
+					{% endif %}
 				{% endfor %}
 			</select>
 			{#
