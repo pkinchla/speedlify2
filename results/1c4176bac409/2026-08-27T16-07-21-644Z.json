@@ -1,0 +1,296 @@
+{
+  "url": "https://nuxt.com/",
+  "name": "Nuxt",
+  "group": "ssg",
+  "groupName": "Site Generators",
+  "timestamp": 1787846841644,
+  "date": "2026-08-27T16:07:21.644Z",
+  "runId": "2026-08-27T16-06-21-320Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 72639,
+  "error": null,
+  "variance": {
+    "min": 33,
+    "max": 41,
+    "spread": 8,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://nuxt.com/",
+    "finalUrl": "https://nuxt.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 34,
+      "accessibility": 96,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 67
+    },
+    "timings": {
+      "fcp": 4142,
+      "lcp": 11942,
+      "si": 4927,
+      "tbt": 5118,
+      "tti": 14313,
+      "cls": 0.014,
+      "ttfb": 692,
+      "maxPotentialFid": 3093,
+      "serverResponseTime": 13,
+      "networkRtt": 9,
+      "networkServerLatency": 91.6
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 126.9,
+      "elementRenderDelay": 1222
+    },
+    "weight": {
+      "total": 3945874,
+      "requests": 318,
+      "mainDocument": 43090,
+      "byType": {
+        "total": {
+          "bytes": 3945874,
+          "requests": 280
+        },
+        "other": {
+          "bytes": 3079501,
+          "requests": 49
+        },
+        "script": {
+          "bytes": 663530,
+          "requests": 183
+        },
+        "image": {
+          "bytes": 93415,
+          "requests": 42
+        },
+        "document": {
+          "bytes": 43090,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 39481,
+          "requests": 4
+        },
+        "font": {
+          "bytes": 26857,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 1563,
+          "requests": 2
+        }
+      },
+      "scripts": 183,
+      "stylesheets": 4,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 2,
+      "bytes": 1563,
+      "mainThreadMs": 0,
+      "top": [
+        {
+          "entity": "GitHub",
+          "bytes": 1207,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "Carbon Ads",
+          "bytes": 356,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 13529.5,
+      "byGroup": {
+        "scriptEvaluation": 8907.5,
+        "other": 2386,
+        "styleLayout": 1392,
+        "garbageCollection": 423.9,
+        "paintCompositeRender": 223.4,
+        "parseHTML": 145.5,
+        "scriptParseCompile": 51.3
+      },
+      "bootupMs": 8790.3,
+      "longTasks": 20,
+      "longestTaskMs": 3093
+    },
+    "dom": {
+      "elements": 1722,
+      "depth": 24,
+      "maxChildren": 24
+    },
+    "waste": {
+      "unusedJsBytes": 1858294,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 144338,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 300,
+      "renderBlockingCount": 3,
+      "poorlyCachedBytes": 1156.7083333333335,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 34,
+      "failingNodes": 2,
+      "failing": [
+        {
+          "id": "aria-valid-attr-value",
+          "title": "`[aria-*]` attributes do not have valid values",
+          "nodes": 1
+        },
+        {
+          "id": "td-has-header",
+          "title": "`<td>` elements in a large `<table>` do not have table headers.",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 0,
+      "bfCacheFailures": 1,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 55
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2495,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-27T16:07:22.932Z",
+      "runtimeMs": 22914.8
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-29",
+      "last": "2026-08-25"
+    },
+    "metrics": {
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 97,
+          "needsImprovement": 1.9,
+          "poor": 1.2
+        }
+      },
+      "ttfb": {
+        "p75": 1331,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 49.7,
+          "needsImprovement": 36.6,
+          "poor": 13.7
+        }
+      },
+      "fcp": {
+        "p75": 2194,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 61.7,
+          "needsImprovement": 26.4,
+          "poor": 11.9
+        }
+      },
+      "inp": {
+        "p75": 871,
+        "rating": "poor",
+        "distribution": {
+          "good": 42.6,
+          "needsImprovement": 19.9,
+          "poor": 37.5
+        }
+      },
+      "lcp": {
+        "p75": 2224,
+        "rating": "good",
+        "distribution": {
+          "good": 81,
+          "needsImprovement": 12.9,
+          "poor": 6.1
+        }
+      },
+      "rtt": {
+        "p75": 196,
+        "rating": null,
+        "distribution": {
+          "good": 21.4,
+          "needsImprovement": 65.9,
+          "poor": 12.7
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "navigationTimedOut": false,
+    "generator": {
+      "id": "nuxt",
+      "name": "Nuxt",
+      "icon": "Nuxt",
+      "version": null,
+      "source": "dom",
+      "raw": null
+    },
+    "interstitial": null,
+    "host": {
+      "id": "vercel",
+      "name": "Vercel",
+      "icon": "Vercel",
+      "source": "x-vercel-id"
+    },
+    "headers": {
+      "server": "Vercel",
+      "x-vercel-id": "pdx1::ls7nc-1787846908832-dc44b825f39a"
+    },
+    "violations": 2,
+    "passes": 2678,
+    "incomplete": 44,
+    "violationRules": 2,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "aria-valid-attr-value",
+        "impact": "critical",
+        "nodes": 1,
+        "help": "ARIA attributes must conform to valid values"
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
