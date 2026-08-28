@@ -206,41 +206,30 @@ export default async function ($config) {
 	$config.addPassthroughCopy({ "src/css": "css" });
 	$config.addPassthroughCopy({ "src/js": "js" });
 
-<<<<<<< HEAD
 	// Netlify reads this from the publish directory root, not from src/ —
 	// see src/_headers for what it's for.
 	$config.addPassthroughCopy({ "src/_headers": "_headers" });
 
-	// Lighthouse's screenshots of each site, captured during measurement and
-	// stored beside the numbers. Copied rather than passed through an image
-=======
 	// Lighthouse's filmstrip frames for each site, captured during measurement
 	// and stored beside the numbers. Copied rather than passed through an image
->>>>>>> 7c6fe24bea72fcb798d9986c545d53d54cc25777
 	// pipeline: they are already small JPEGs at the size they are shown, and
 	// they are named by a hash of their own bytes, so the URL changes only when
 	// the picture does.
 	$config.addPassthroughCopy("results/*/frames");
 
-<<<<<<< HEAD
-	// Our own full-page screenshot for a `screenshotBlocked` site — see
-	// readOwnScreenshot in lib/report.js, which points `ownScreenshot.src` at
-	// `/results/<hash>/<file>` on the assumption this copies it through. Same
-	// reasoning as the frames line above: already the size it's shown at, named
-	// by content hash isn't guaranteed here (Lighthouse names it `screenshot.*`),
-	// but it's one file per site rather than a set, so a re-measure just
-	// overwrites it in place.
-	$config.addPassthroughCopy("results/*/screenshot.*");
-=======
-	// The pair from the axe pass — the page as rendered, and with scripts
-	// disabled — which sit beside the frames directory rather than inside it.
+	// Our own screenshots of a site: the axe pass's pair (page as rendered,
+	// and with scripts disabled) — see readOwnScreenshot in lib/report.js,
+	// which points `ownScreenshot.src` / `ownScreenshot.noJs.src` at
+	// `/results/<hash>/<file>` on the assumption this copies it through. This
+	// is also what a `screenshotBlocked` site (see config/sites.js) falls
+	// back to instead of the external screenshot service. They sit beside the
+	// frames directory rather than inside it.
 	//
 	// The extension is part of the glob because these are not hash-named: the
 	// filename is fixed and the format is the capture's choice, so a switch away
 	// from WebP upstream has to keep being copied. See writeScreenshots in
 	// lib/store.js, which sweeps the file of the old type when that happens.
 	$config.addPassthroughCopy("results/*/screenshot*.{webp,jpg,jpeg,png,avif}");
->>>>>>> 7c6fe24bea72fcb798d9986c545d53d54cc25777
 
 	// Emulated passthrough copy: during `--serve`, files are served from where
 	// they already are instead of being copied into the output first. Opt-in —

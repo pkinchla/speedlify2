@@ -1,0 +1,264 @@
+{
+  "url": "https://astro.build/",
+  "name": "Astro",
+  "group": "ssg",
+  "groupName": "Site Generators",
+  "timestamp": 1787596705340,
+  "date": "2026-08-24T18:38:25.340Z",
+  "runId": "2026-08-24T18-38-24-753Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 30317,
+  "error": null,
+  "variance": {
+    "min": 82,
+    "max": 99,
+    "spread": 17,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://astro.build/",
+    "finalUrl": "https://astro.build/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 83,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1431,
+      "lcp": 4609,
+      "si": 1431,
+      "tbt": 0,
+      "tti": 4617,
+      "cls": 0,
+      "ttfb": 634,
+      "maxPotentialFid": 33,
+      "serverResponseTime": 64,
+      "networkRtt": 0.2,
+      "networkServerLatency": 56
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 65.4,
+      "elementRenderDelay": 197.4
+    },
+    "weight": {
+      "total": 738516,
+      "requests": 25,
+      "mainDocument": 82280,
+      "byType": {
+        "total": {
+          "bytes": 738516,
+          "requests": 24
+        },
+        "image": {
+          "bytes": 429517,
+          "requests": 9
+        },
+        "font": {
+          "bytes": 195987,
+          "requests": 3
+        },
+        "document": {
+          "bytes": 82280,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 21071,
+          "requests": 2
+        },
+        "script": {
+          "bytes": 8985,
+          "requests": 8
+        },
+        "other": {
+          "bytes": 676,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 3189,
+          "requests": 2
+        }
+      },
+      "scripts": 8,
+      "stylesheets": 2,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 3189,
+      "mainThreadMs": 1.6,
+      "top": [
+        {
+          "entity": "Fathom Analytics",
+          "bytes": 3189,
+          "mainThreadMs": 1.6
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 660,
+      "byGroup": {
+        "other": 292.8,
+        "styleLayout": 228.7,
+        "parseHTML": 49.8,
+        "paintCompositeRender": 46,
+        "scriptEvaluation": 39.2,
+        "scriptParseCompile": 3.5
+      },
+      "bootupMs": 25.1,
+      "longTasks": 2,
+      "longestTaskMs": 96
+    },
+    "dom": {
+      "elements": 1802,
+      "depth": 18,
+      "maxChildren": 20
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 21616.699999999997,
+      "poorlyCachedCount": 8
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 31,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 42
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2341,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-24T18:38:36.791Z",
+      "runtimeMs": 8616.3
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-26",
+      "last": "2026-08-22"
+    },
+    "metrics": {
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 96.4,
+          "needsImprovement": 3.2,
+          "poor": 0.4
+        }
+      },
+      "ttfb": {
+        "p75": 518,
+        "rating": "good",
+        "distribution": {
+          "good": 86.3,
+          "needsImprovement": 9.3,
+          "poor": 4.4
+        }
+      },
+      "fcp": {
+        "p75": 1181,
+        "rating": "good",
+        "distribution": {
+          "good": 88.3,
+          "needsImprovement": 7.5,
+          "poor": 4.2
+        }
+      },
+      "inp": {
+        "p75": 115,
+        "rating": "good",
+        "distribution": {
+          "good": 92.9,
+          "needsImprovement": 6.2,
+          "poor": 1
+        }
+      },
+      "lcp": {
+        "p75": 1169,
+        "rating": "good",
+        "distribution": {
+          "good": 93.7,
+          "needsImprovement": 4.1,
+          "poor": 2.2
+        }
+      },
+      "rtt": {
+        "p75": 149,
+        "rating": null,
+        "distribution": {
+          "good": 40,
+          "needsImprovement": 51.8,
+          "poor": 8.2
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": {
+      "id": "astro",
+      "name": "Astro",
+      "icon": "Astro",
+      "version": "7.2.4",
+      "source": "meta",
+      "raw": "Astro v7.2.4"
+    },
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a30479fffc37b477-ORD",
+      "server": "cloudflare"
+    },
+    "violations": 0,
+    "passes": 1693,
+    "incomplete": 52,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

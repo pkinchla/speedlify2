@@ -1,0 +1,301 @@
+{
+  "url": "https://docusaurus.io/",
+  "name": "Docusaurus",
+  "group": "ssg",
+  "groupName": "Site Generators",
+  "timestamp": 1787437271759,
+  "date": "2026-08-22T22:21:11.759Z",
+  "runId": "2026-08-22T22-20-18-919Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 33298,
+  "error": null,
+  "variance": {
+    "min": 62,
+    "max": 82,
+    "spread": 20,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://docusaurus.io/",
+    "finalUrl": "https://docusaurus.io/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 80,
+      "accessibility": 98,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 1530,
+      "lcp": 3998,
+      "si": 1578,
+      "tbt": 307,
+      "tti": 5295,
+      "cls": 0,
+      "ttfb": 465,
+      "maxPotentialFid": 443,
+      "serverResponseTime": 36,
+      "networkRtt": 0.7,
+      "networkServerLatency": 24.5
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 37.2,
+      "elementRenderDelay": 160.3
+    },
+    "weight": {
+      "total": 772775,
+      "requests": 49,
+      "mainDocument": 11110,
+      "byType": {
+        "total": {
+          "bytes": 772775,
+          "requests": 43
+        },
+        "script": {
+          "bytes": 476661,
+          "requests": 7
+        },
+        "image": {
+          "bytes": 153900,
+          "requests": 14
+        },
+        "other": {
+          "bytes": 91074,
+          "requests": 18
+        },
+        "stylesheet": {
+          "bytes": 36900,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 14240,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 273063,
+          "requests": 7
+        }
+      },
+      "scripts": 7,
+      "stylesheets": 2,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 3,
+      "bytes": 266832,
+      "mainThreadMs": 66.8,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 170289,
+          "mainThreadMs": 66.8
+        },
+        {
+          "entity": "YouTube",
+          "bytes": 64584,
+          "mainThreadMs": 0
+        },
+        {
+          "entity": "unavatar.io",
+          "bytes": 31959,
+          "mainThreadMs": 0
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 2004.8,
+      "byGroup": {
+        "scriptEvaluation": 878.3,
+        "other": 451,
+        "styleLayout": 313,
+        "scriptParseCompile": 215.1,
+        "paintCompositeRender": 90.4,
+        "parseHTML": 43.9,
+        "garbageCollection": 13
+      },
+      "bootupMs": 1034.5,
+      "longTasks": 6,
+      "longestTaskMs": 443
+    },
+    "dom": {
+      "elements": 436,
+      "depth": 13,
+      "maxChildren": 22
+    },
+    "waste": {
+      "unusedJsBytes": 118652,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 930,
+      "renderBlockingCount": 2,
+      "poorlyCachedBytes": 51513.15833333333,
+      "poorlyCachedCount": 3
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 27,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "nodes": 1
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 44
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2474.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-08-22T22:21:24.822Z",
+      "runtimeMs": 9389.6
+    }
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-07-24",
+      "last": "2026-08-20"
+    },
+    "metrics": {
+      "rtt": {
+        "p75": 174,
+        "rating": null,
+        "distribution": {
+          "good": 34.3,
+          "needsImprovement": 53.5,
+          "poor": 12.2
+        }
+      },
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 97,
+          "needsImprovement": 0.9,
+          "poor": 2.1
+        }
+      },
+      "ttfb": {
+        "p75": 734,
+        "rating": "good",
+        "distribution": {
+          "good": 77.9,
+          "needsImprovement": 17.4,
+          "poor": 4.6
+        }
+      },
+      "fcp": {
+        "p75": 1483,
+        "rating": "good",
+        "distribution": {
+          "good": 82.6,
+          "needsImprovement": 11.1,
+          "poor": 6.3
+        }
+      },
+      "inp": {
+        "p75": 233,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 70.3,
+          "needsImprovement": 22.4,
+          "poor": 7.3
+        }
+      },
+      "lcp": {
+        "p75": 1495,
+        "rating": "good",
+        "distribution": {
+          "good": 90.9,
+          "needsImprovement": 6.5,
+          "poor": 2.6
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "generator": {
+      "id": "docusaurus",
+      "name": "Docusaurus",
+      "icon": "Docusaurus",
+      "version": "3.10.1",
+      "source": "meta",
+      "raw": "Docusaurus v3.10.1"
+    },
+    "host": {
+      "id": "netlify",
+      "name": "Netlify",
+      "icon": "Netlify",
+      "source": "x-nf-request-id"
+    },
+    "headers": {
+      "cf-ray": "a2f545a97dc4c071-ORD",
+      "server": "cloudflare",
+      "x-nf-request-id": "01M0NS1HFNQTHW9SJCWJEWATEF"
+    },
+    "violations": 3,
+    "passes": 664,
+    "incomplete": 5,
+    "violationRules": 3,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "aria-allowed-role",
+        "impact": "minor",
+        "nodes": 1,
+        "help": "ARIA role should be appropriate for the element"
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Heading levels should only increase by one"
+      },
+      {
+        "id": "nested-interactive",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Interactive controls must not be nested"
+      }
+    ],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

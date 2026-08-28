@@ -1,15 +1,5 @@
 {
   "file": "screenshot.webp",
   "width": 412,
-<<<<<<< HEAD:results/dc592ed13700/screenshot.json
   "height": 2317
-=======
-  "height": 823,
-  "noJs": {
-    "file": "screenshot-nojs.webp",
-    "width": 412,
-    "height": 823
-  },
-  "difference": 92.2
->>>>>>> 7c6fe24bea72fcb798d9986c545d53d54cc25777:results/0819da5a78dc/screenshot.json
 }
