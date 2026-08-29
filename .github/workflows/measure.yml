@@ -12,10 +12,7 @@ name: Measure
 
 on:
   schedule:
-    # 12:17 AM EDT (Summer) -> 4:17 AM UTC
-    - cron: "17 4 * * *"
-    # 12:17 AM EST (Winter) -> 5:17 AM UTC
-    - cron: "17 5 * * *"
+    - cron: "0 0 * * *"
       timezone: "America/New_York"
   workflow_dispatch:
     inputs:
