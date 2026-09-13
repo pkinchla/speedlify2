@@ -1,0 +1,187 @@
+{
+  "url": "https://sevenpx.design/drawings",
+  "name": "sevenpx.design",
+  "group": "sevenpx",
+  "groupName": "sevenpx.design",
+  "timestamp": 1788486564481,
+  "date": "2026-09-04T01:49:24.481Z",
+  "runId": "2026-09-04T01-48-16-398Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 20638,
+  "error": null,
+  "variance": {
+    "min": 71,
+    "max": 73,
+    "spread": 2,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://sevenpx.design/drawings",
+    "finalUrl": "https://sevenpx.design/drawings/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 72,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 67
+    },
+    "timings": {
+      "fcp": 3537,
+      "lcp": 5555,
+      "si": 3537,
+      "tbt": 0,
+      "tti": 5555,
+      "cls": 0,
+      "ttfb": 605,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 7,
+      "networkRtt": 0,
+      "networkServerLatency": 5.1
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 14.1,
+      "elementRenderDelay": 85.7
+    },
+    "weight": {
+      "total": 955682,
+      "requests": 14,
+      "mainDocument": 165315,
+      "byType": {
+        "total": {
+          "bytes": 923782,
+          "requests": 13
+        },
+        "font": {
+          "bytes": 699514,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 165315,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 56747,
+          "requests": 8
+        },
+        "stylesheet": {
+          "bytes": 2128,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 78,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 0,
+          "requests": 0
+        }
+      },
+      "scripts": 8,
+      "stylesheets": 1,
+      "fonts": 2
+    },
+    "thirdParty": {
+      "count": 0,
+      "bytes": 0,
+      "mainThreadMs": 0,
+      "top": []
+    },
+    "mainThread": {
+      "total": 253.2,
+      "byGroup": {
+        "other": 125.4,
+        "scriptEvaluation": 69.9,
+        "styleLayout": 36.4,
+        "parseHTML": 12.7,
+        "paintCompositeRender": 7.4,
+        "scriptParseCompile": 1.4
+      },
+      "bootupMs": 66.8,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 374,
+      "depth": 8,
+      "maxChildren": 149
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 150,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 23,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 755.1,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 14
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2802.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-09-04T01:49:32.586Z",
+      "runtimeMs": 5983.7
+    }
+  },
+  "field": null,
+  "axe": {
+    "navigationTimedOut": false,
+    "generator": null,
+    "interstitial": null,
+    "host": {
+      "id": null,
+      "name": "deployd",
+      "icon": null,
+      "source": "server"
+    },
+    "headers": {
+      "server": "deployd",
+      "via": "HTTP/2 ord.vultr.prod.deno-cluster.net"
+    },
+    "violations": 0,
+    "passes": 479,
+    "incomplete": 8,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

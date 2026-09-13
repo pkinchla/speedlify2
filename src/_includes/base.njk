@@ -199,7 +199,7 @@ speedlifyThemeColor();
 </footer>
 
 <script>
-/* The only scripted behaviour on the site. Everything else — including the
+/* Two scripted behaviours on the site. Everything else — including the
    sparklines and score rings — is rendered at build time. */
 (function () {
 	var root = document.documentElement;
@@ -229,6 +229,49 @@ speedlifyThemeColor();
 		// Safari's toolbar follows the masthead across the switch too.
 		if (typeof speedlifyThemeColor === "function") speedlifyThemeColor();
 	});
+})();
+
+/*
+ * The `since` filter (buildawesome.config.js) runs once, at build time, and
+ * its result is frozen into the HTML. That is fine immediately after a
+ * build, but this site only rebuilds when a measurement run commits new
+ * results — a category that goes a few cycles without a stale-enough site to
+ * remeasure can sit on the same build for hours, and every age on the page
+ * quietly falls behind the real one.
+ *
+ * Every one of those ages already carries the ISO instant it was measured
+ * from, in the sibling `datetime` attribute the `iso` filter writes — that
+ * pairing exists for exactly this. So this corrects the build-time guess to
+ * the true one on the reader's own clock, the same arithmetic the `since`
+ * filter used and the one <speedlify2-score> embed already does client-side.
+ * One pass on load is enough: nobody rereads an age tag often enough for a
+ * running interval to be worth the wake-ups.
+ */
+(function () {
+	var times = document.querySelectorAll("time.since[datetime]");
+	if (!times.length) return;
+
+	function since(iso) {
+		var then = new Date(iso).getTime();
+		if (Number.isNaN(then)) return null;
+
+		var diff = Date.now() - then;
+		var minutes = Math.floor(diff / 60000);
+		if (minutes < 60) return Math.max(1, minutes) + "m";
+
+		var hours = Math.floor(diff / 3600000);
+		if (hours < 48) return hours + "h";
+
+		return Math.floor(diff / 86400000) + "d";
+	}
+
+	for (var i = 0; i < times.length; i++) {
+		var el = times[i];
+		var value = since(el.getAttribute("datetime"));
+		// Leave the build-time text in place rather than blank it — a stale
+		// age is still more useful than no age.
+		if (value) el.textContent = value;
+	}
 })();
 </script>
 
