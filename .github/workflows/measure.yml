@@ -12,7 +12,9 @@ name: Measure
 
 on:
   schedule:
-    - cron: "0 * * * *"
+    # 12:00am EST (UTC-5). GitHub Actions cron is fixed UTC and does not shift
+    # for daylight saving, so during EDT this runs at 1:00am local time.
+    - cron: "0 5 * * *"
   workflow_dispatch:
     inputs:
       batch:
