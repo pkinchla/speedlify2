@@ -1,0 +1,196 @@
+{
+  "url": "https://paulkinchla.com/",
+  "name": "paulkinchla.com",
+  "group": "paulkinchladotcom",
+  "groupName": "paulkinchla.com",
+  "timestamp": 1789638479407,
+  "date": "2026-09-17T09:47:59.407Z",
+  "runId": "2026-09-17T09-46-51-317Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 22418,
+  "error": null,
+  "variance": {
+    "min": 99,
+    "max": 99,
+    "spread": 0,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://paulkinchla.com/",
+    "finalUrl": "https://paulkinchla.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 975,
+      "lcp": 2191,
+      "si": 975,
+      "tbt": 0,
+      "tti": 2199,
+      "cls": 0,
+      "ttfb": 616,
+      "maxPotentialFid": 21,
+      "serverResponseTime": 18,
+      "networkRtt": 0,
+      "networkServerLatency": 16.2
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 22.2,
+      "resourceLoadDelay": 10.3,
+      "resourceLoadDuration": 18.4,
+      "elementRenderDelay": 48.8
+    },
+    "weight": {
+      "total": 225103,
+      "requests": 10,
+      "mainDocument": 22679,
+      "byType": {
+        "total": {
+          "bytes": 225103,
+          "requests": 9
+        },
+        "font": {
+          "bytes": 163502,
+          "requests": 3
+        },
+        "image": {
+          "bytes": 24435,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 22679,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 12181,
+          "requests": 2
+        },
+        "other": {
+          "bytes": 2306,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 0,
+          "requests": 0
+        }
+      },
+      "scripts": 2,
+      "stylesheets": 0,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 0,
+      "bytes": 0,
+      "mainThreadMs": 0,
+      "top": []
+    },
+    "mainThread": {
+      "total": 298.8,
+      "byGroup": {
+        "other": 162.8,
+        "styleLayout": 52.6,
+        "scriptEvaluation": 38.8,
+        "parseHTML": 31.8,
+        "paintCompositeRender": 11.5,
+        "scriptParseCompile": 1.3
+      },
+      "bootupMs": 14.6,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 168,
+      "depth": 12,
+      "maxChildren": 9
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 0,
+      "poorlyCachedCount": 0
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 26,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 43
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2459,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-09-17T09:48:07.504Z",
+      "runtimeMs": 6713.7
+    }
+  },
+  "field": null,
+  "axe": {
+    "navigationTimedOut": false,
+    "generator": {
+      "id": "wordpress",
+      "name": "WordPress",
+      "icon": "Wordpress",
+      "version": "7.0.4",
+      "source": "meta",
+      "raw": "WordPress 7.0.4"
+    },
+    "interstitial": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a3c731d21d7105f6-IAD",
+      "server": "cloudflare"
+    },
+    "violations": 0,
+    "passes": 241,
+    "incomplete": 1,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
