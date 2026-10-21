@@ -1,0 +1,202 @@
+{
+  "url": "https://paulkinchla.com/about",
+  "name": "paulkinchla.com",
+  "group": "paulkinchladotcom",
+  "groupName": "paulkinchla.com",
+  "timestamp": 1791372598363,
+  "date": "2026-10-07T11:29:58.363Z",
+  "runId": "2026-10-07T11-28-30-136Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 22387,
+  "error": null,
+  "variance": {
+    "min": 81,
+    "max": 93,
+    "spread": 12,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://paulkinchla.com/about",
+    "finalUrl": "https://paulkinchla.com/about/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 93,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1868,
+      "lcp": 3059,
+      "si": 1868,
+      "tbt": 0,
+      "tti": 3059,
+      "cls": 0,
+      "ttfb": 470,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 25,
+      "networkRtt": 0,
+      "networkServerLatency": 28.8
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 50,
+      "resourceLoadDelay": 7.4,
+      "resourceLoadDuration": 28.6,
+      "elementRenderDelay": 20
+    },
+    "weight": {
+      "total": 313675,
+      "requests": 16,
+      "mainDocument": 26773,
+      "byType": {
+        "total": {
+          "bytes": 313675,
+          "requests": 15
+        },
+        "font": {
+          "bytes": 163491,
+          "requests": 3
+        },
+        "image": {
+          "bytes": 98886,
+          "requests": 4
+        },
+        "document": {
+          "bytes": 26773,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 22391,
+          "requests": 3
+        },
+        "other": {
+          "bytes": 2134,
+          "requests": 4
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 10212,
+          "requests": 1
+        }
+      },
+      "scripts": 3,
+      "stylesheets": 0,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 10212,
+      "mainThreadMs": 2.8,
+      "top": [
+        {
+          "entity": "Cloudflare",
+          "bytes": 10212,
+          "mainThreadMs": 2.8
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 254.2,
+      "byGroup": {
+        "other": 94.5,
+        "scriptEvaluation": 63.7,
+        "styleLayout": 56.6,
+        "parseHTML": 24.3,
+        "paintCompositeRender": 13.9,
+        "scriptParseCompile": 1.1
+      },
+      "bootupMs": 11.9,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 676,
+      "depth": 12,
+      "maxChildren": 388
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 10708,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 4084.8,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 28,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 769.6,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 53
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 4170,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-10-07T11:30:06.781Z",
+      "runtimeMs": 6054.5
+    }
+  },
+  "field": null,
+  "axe": {
+    "navigationTimedOut": false,
+    "generator": {
+      "id": "wordpress",
+      "name": "WordPress",
+      "icon": "Wordpress",
+      "version": "7.1.2",
+      "source": "meta",
+      "raw": "WordPress 7.1.2"
+    },
+    "interstitial": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a46c92b25f20eb64-ORD",
+      "server": "cloudflare"
+    },
+    "violations": 0,
+    "passes": 5321,
+    "incomplete": 19,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

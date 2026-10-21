@@ -1,0 +1,203 @@
+{
+  "url": "https://paulkinchla.com/blog/2020/10/28/javascript-still-a-ghost",
+  "name": "paulkinchla.com",
+  "group": "paulkinchladotcom",
+  "groupName": "paulkinchla.com",
+  "timestamp": 1791022247828,
+  "date": "2026-10-03T10:10:47.828Z",
+  "runId": "2026-10-03T10-10-41-766Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 27937,
+  "error": null,
+  "variance": {
+    "min": 92,
+    "max": 95,
+    "spread": 3,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://paulkinchla.com/blog/2020/10/28/javascript-still-a-ghost",
+    "finalUrl": "https://paulkinchla.com/blog/2020/10/28/javascript-still-a-ghost/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 95,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1875,
+      "lcp": 2731,
+      "si": 1875,
+      "tbt": 0,
+      "tti": 2731,
+      "cls": 0,
+      "ttfb": 460,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 16,
+      "networkRtt": 0.1,
+      "networkServerLatency": 13.8
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 28,
+      "resourceLoadDelay": 11.3,
+      "resourceLoadDuration": 22.5,
+      "elementRenderDelay": 51
+    },
+    "weight": {
+      "total": 227817,
+      "requests": 14,
+      "mainDocument": 27540,
+      "byType": {
+        "total": {
+          "bytes": 227817,
+          "requests": 13
+        },
+        "font": {
+          "bytes": 163504,
+          "requests": 3
+        },
+        "script": {
+          "bytes": 31074,
+          "requests": 4
+        },
+        "document": {
+          "bytes": 27540,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 3536,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 2163,
+          "requests": 4
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 10212,
+          "requests": 1
+        }
+      },
+      "scripts": 4,
+      "stylesheets": 0,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 10212,
+      "mainThreadMs": 7.1,
+      "top": [
+        {
+          "entity": "Cloudflare",
+          "bytes": 10212,
+          "mainThreadMs": 7.1
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 497.3,
+      "byGroup": {
+        "other": 154.7,
+        "scriptEvaluation": 148.4,
+        "styleLayout": 133,
+        "parseHTML": 37.6,
+        "paintCompositeRender": 20,
+        "scriptParseCompile": 1.9,
+        "garbageCollection": 1.6
+      },
+      "bootupMs": 125.6,
+      "longTasks": 1,
+      "longestTaskMs": 58
+    },
+    "dom": {
+      "elements": 767,
+      "depth": 12,
+      "maxChildren": 124
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 10708,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 4084.8,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 26,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 760.2,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 54
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2494.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-10-03T10:11:07.193Z",
+      "runtimeMs": 6850.3
+    }
+  },
+  "field": null,
+  "axe": {
+    "navigationTimedOut": false,
+    "generator": {
+      "id": "wordpress",
+      "name": "WordPress",
+      "icon": "Wordpress",
+      "version": "7.1.2",
+      "source": "meta",
+      "raw": "WordPress 7.1.2"
+    },
+    "interstitial": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a44b295a2fb07b83-SJC",
+      "server": "cloudflare"
+    },
+    "violations": 0,
+    "passes": 1127,
+    "incomplete": 1,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}

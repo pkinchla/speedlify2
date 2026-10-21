@@ -1,0 +1,202 @@
+{
+  "url": "https://paulkinchla.com/blog/2020/10/28/javascript-still-a-ghost",
+  "name": "paulkinchla.com",
+  "group": "paulkinchladotcom",
+  "groupName": "paulkinchla.com",
+  "timestamp": 1791111079680,
+  "date": "2026-10-04T10:51:19.680Z",
+  "runId": "2026-10-04T10-51-13-124Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 28069,
+  "error": null,
+  "variance": {
+    "min": 93,
+    "max": 95,
+    "spread": 2,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://paulkinchla.com/blog/2020/10/28/javascript-still-a-ghost",
+    "finalUrl": "https://paulkinchla.com/blog/2020/10/28/javascript-still-a-ghost/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 95,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1836,
+      "lcp": 2740,
+      "si": 1836,
+      "tbt": 0,
+      "tti": 2741,
+      "cls": 0,
+      "ttfb": 462,
+      "maxPotentialFid": 39,
+      "serverResponseTime": 16,
+      "networkRtt": 0.1,
+      "networkServerLatency": 12.7
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 32,
+      "resourceLoadDelay": 10,
+      "resourceLoadDuration": 12.7,
+      "elementRenderDelay": 56.6
+    },
+    "weight": {
+      "total": 227797,
+      "requests": 14,
+      "mainDocument": 27539,
+      "byType": {
+        "total": {
+          "bytes": 227797,
+          "requests": 13
+        },
+        "font": {
+          "bytes": 163491,
+          "requests": 3
+        },
+        "script": {
+          "bytes": 31072,
+          "requests": 4
+        },
+        "document": {
+          "bytes": 27539,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 3534,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 2161,
+          "requests": 4
+        },
+        "stylesheet": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 10212,
+          "requests": 1
+        }
+      },
+      "scripts": 4,
+      "stylesheets": 0,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 10212,
+      "mainThreadMs": 6.7,
+      "top": [
+        {
+          "entity": "Cloudflare",
+          "bytes": 10212,
+          "mainThreadMs": 6.7
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 470.3,
+      "byGroup": {
+        "other": 146.2,
+        "scriptEvaluation": 133.7,
+        "styleLayout": 130.1,
+        "parseHTML": 35.6,
+        "paintCompositeRender": 23.4,
+        "scriptParseCompile": 1.3
+      },
+      "bootupMs": 111.5,
+      "longTasks": 1,
+      "longestTaskMs": 55
+    },
+    "dom": {
+      "elements": 767,
+      "depth": 12,
+      "maxChildren": 124
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 10708,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 4084.8,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 26,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 761.6,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 54
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2472,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-10-04T10:51:32.231Z",
+      "runtimeMs": 6819.5
+    }
+  },
+  "field": null,
+  "axe": {
+    "navigationTimedOut": false,
+    "generator": {
+      "id": "wordpress",
+      "name": "WordPress",
+      "icon": "Wordpress",
+      "version": "7.1.2",
+      "source": "meta",
+      "raw": "WordPress 7.1.2"
+    },
+    "interstitial": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a453a21a5e254ae3-IAD",
+      "server": "cloudflare"
+    },
+    "violations": 0,
+    "passes": 1127,
+    "incomplete": 1,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
