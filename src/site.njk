@@ -829,7 +829,7 @@ eleventyComputed:
 	<p class="muted small">
 		<strong>{{ entry.axe.violations }}</strong> violating node{{ "s" if entry.axe.violations != 1 }}
 		across {{ entry.axe.violationRules }} rule{{ "s" if entry.axe.violationRules != 1 }},
-		{{ entry.axe.passes }} passing. This is a standalone axe run, stricter than the
+		{% if entry.axe.passes != null %}{{ entry.axe.passes }} passing{% else %}passes not counted (too many to return){% endif %}. This is a standalone axe run, stricter than the
 		subset Lighthouse folds into its score above — and it is the second tiebreaker
 		in the ranking.
 	</p>
