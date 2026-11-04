@@ -1,0 +1,193 @@
+{
+  "url": "https://sevenpx.design/drawings",
+  "name": "sevenpx.design",
+  "group": "sevenpx",
+  "groupName": "sevenpx.design",
+  "timestamp": 1793796329150,
+  "date": "2026-11-04T12:45:29.150Z",
+  "runId": "2026-11-04T12-43-58-091Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 21464,
+  "error": null,
+  "variance": {
+    "min": 85,
+    "max": 87,
+    "spread": 2,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://sevenpx.design/drawings",
+    "finalUrl": "https://sevenpx.design/drawings/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 86,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 67
+    },
+    "timings": {
+      "fcp": 2164,
+      "lcp": 3954,
+      "si": 2164,
+      "tbt": 0,
+      "tti": 3954,
+      "cls": 0.026,
+      "ttfb": 468,
+      "maxPotentialFid": 17,
+      "serverResponseTime": 25,
+      "networkRtt": 0,
+      "networkServerLatency": 19.2
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 44.4,
+      "elementRenderDelay": 82.1
+    },
+    "weight": {
+      "total": 482835,
+      "requests": 17,
+      "mainDocument": 38894,
+      "byType": {
+        "total": {
+          "bytes": 465932,
+          "requests": 16
+        },
+        "font": {
+          "bytes": 349940,
+          "requests": 1
+        },
+        "script": {
+          "bytes": 73456,
+          "requests": 11
+        },
+        "document": {
+          "bytes": 38894,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 2752,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 890,
+          "requests": 2
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 10351,
+          "requests": 1
+        }
+      },
+      "scripts": 11,
+      "stylesheets": 1,
+      "fonts": 1
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 10351,
+      "mainThreadMs": 4.8,
+      "top": [
+        {
+          "entity": "Cloudflare",
+          "bytes": 10351,
+          "mainThreadMs": 4.8
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 342.1,
+      "byGroup": {
+        "other": 153.6,
+        "scriptEvaluation": 117.1,
+        "styleLayout": 41.6,
+        "parseHTML": 15.2,
+        "scriptParseCompile": 7.6,
+        "paintCompositeRender": 6.9
+      },
+      "bootupMs": 79.8,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 375,
+      "depth": 8,
+      "maxChildren": 149
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 10475,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 168,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 4140.400000000001,
+      "poorlyCachedCount": 1
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 23,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 768,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 22
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 2442.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-11-04T12:45:37.274Z",
+      "runtimeMs": 6260.8
+    }
+  },
+  "field": null,
+  "axe": {
+    "navigationTimedOut": false,
+    "generator": null,
+    "interstitial": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a553b7cdcfa91e1a-ORD",
+      "server": "cloudflare"
+    },
+    "violations": 0,
+    "passes": 479,
+    "incomplete": 8,
+    "violationRules": 0,
+    "version": "4.13.0",
+    "top": [],
+    "error": null
+  },
+  "consecutiveFailures": 0
+}
